@@ -3,9 +3,9 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from probe import cms,media,fetch,public
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'review-output';OUT.mkdir(exist_ok=True)
-BANNED_HOSTS={'apiyutu.com','apilj.com','api.ddapi.cc','lbapi9.com','api.huosuapi.cc'}
+BANNED_HOSTS={'apiyutu.com','apilj.com','api.ddapi.cc','lbapi9.com','api.huosuapi.cc','api.guangsuapi.com'}
 # Limit the correction to general libraries. No live upstream home/list is imported.
-HOSTS={'api.guangsuapi.com','360zy.com','ffzy.tv'}
+HOSTS={'360zy.com','ffzy.tv'}
 BLOCK=re.compile(r'伦理|倫理|理论片|理論片|成人|色情|三級|三级|福利|擦边|擦邊|写真|寫真|热舞|熱舞|两性|兩性|无码|無碼|有码|有碼|传媒|傳媒|自拍|主播秀|萝莉|蘿莉|AV明星|巨乳|人妻|性爱|性愛|无码|无码|SM调教',re.I)
 CATS=['电视剧','电影','综艺','动漫','纪录片']
 def norm(s):return re.sub(r'[\s\W_]+','',unicodedata.normalize('NFKC',str(s)))

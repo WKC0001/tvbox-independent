@@ -24,17 +24,21 @@ jobs:
         run: |
           node scripts/validate.cjs
           python3 scripts/test_layout.py
-      - name: Test owned homepage and live CMS integration
+      - name: Test reviewed homepage and content gate
         run: |
           curl --fail --location https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar --output java/json.jar
           mkdir -p java/classes
           javac -encoding UTF-8 -source 8 -target 8 -cp java/json.jar -d java/classes java/stubs/android/content/Context.java java/stubs/com/github/catvod/crawler/Spider.java java/src/com/github/catvod/spider/*.java java/test/*.java
-          java -cp java/classes:java/json.jar HomeTest
+          (cd java && java -cp classes:json.jar HomeTest)
           java -cp java/classes:java/json.jar HomeIntegration
       - name: Publish npm package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --registry=https://registry.npmjs.org/ --access public
+      - name: Mark superseded independent versions as unsafe
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm deprecate 'wkc0001-tvbox-independent@<0.3.0' '内容审核不足，停止使用旧版；请导入0.3.0或更新的审核版。' --registry=https://registry.npmjs.org/
       - name: Verify registry and CDN
         run: node scripts/verify-cdn.cjs
       - uses: actions/upload-artifact@v4

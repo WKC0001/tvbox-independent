@@ -1,0 +1,34 @@
+{
+  "version": "0.3.0",
+  "policy": "Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin",
+  "reviewed_titles": 8,
+  "categories": {
+    "电视剧": 3,
+    "电影": 5
+  },
+  "removed_providers": [
+    "玉兔",
+    "辣椒",
+    "滴滴",
+    "乐播",
+    "火速",
+    "光速"
+  ],
+  "live_channels": 46,
+  "live_routes": 58,
+  "live_groups": {
+    "央视": 4,
+    "地方": 36,
+    "少儿与纪录": 3,
+    "卫视": 3
+  },
+  "live_policy": "Known broadcaster host suffix allowlist plus successful fresh HLS/media probe; anonymous relay/unknown programmes excluded",
+  "limits": [
+    "Poster review and 4–5 sampled frames of first episode only; no full-episode/full-series certification",
+    "Remote media may change; runtime URLs do not guarantee future content",
+    "No Android device playback test or mainland ISP verification",
+    "CCTV1–17 coverage is incomplete; no anonymous relay added to fill gaps"
+  ],
+  "original_repo_modified": false,
+  "original_npm_modified": false
+}

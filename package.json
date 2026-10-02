@@ -1,15 +1,15 @@
 {
   "name": "wkc0001-tvbox-independent",
-  "version": "0.2.2",
-  "description": "WKC owned category homepage and classified FM影视 live configuration",
+  "version": "0.3.0",
+  "description": "WKC fixed reviewed title catalogue and selected broadcaster live snapshot",
   "license": "UNLICENSED",
   "files": [
     "api.json",
     "live.m3u",
     "home.jpg",
+    "posters",
     "manifest.json",
-    "reports/enrichment-report.json",
-    "reports/original-source-audit.json"
+    "reports/content-review.json"
   ],
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 import unittest
-from assemble import label,live_sort
+from channel_layout import label,live_sort
 from probe import parse_live
 class LayoutTest(unittest.TestCase):
  def entry(self,name,url='https://live.ottiptv.cc/huya/100',group='其他'):

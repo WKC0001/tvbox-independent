@@ -1,21 +1,50 @@
 {
-  "package": "wkc0001-tvbox-independent",
-  "version": "0.2.2",
-  "vod_sites": 19,
-  "home_categories": [
-    "电视剧",
-    "电影",
-    "综艺",
-    "动漫",
-    "纪录片",
-    "短剧"
+  "version": "0.3.0",
+  "policy": "Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin",
+  "reviewed_titles": 8,
+  "categories": {
+    "电视剧": 3,
+    "电影": 5
+  },
+  "removed_providers": [
+    "玉兔",
+    "辣椒",
+    "滴滴",
+    "乐播",
+    "火速",
+    "光速"
   ],
-  "live_channels": 734,
-  "live_routes": 954,
-  "generated_at": "2026-10-02T22:08:20Z",
+  "live_channels": 46,
+  "live_routes": 58,
+  "live_groups": {
+    "央视": 4,
+    "地方": 36,
+    "少儿与纪录": 3,
+    "卫视": 3
+  },
+  "live_policy": "Known broadcaster host suffix allowlist plus successful fresh HLS/media probe; anonymous relay/unknown programmes excluded",
+  "limits": [
+    "Poster review and 4–5 sampled frames of first episode only; no full-episode/full-series certification",
+    "Remote media may change; runtime URLs do not guarantee future content",
+    "No Android device playback test or mainland ISP verification",
+    "CCTV1–17 coverage is incomplete; no anonymous relay added to fill gaps"
+  ],
+  "original_repo_modified": false,
+  "original_npm_modified": false,
+  "package": "wkc0001-tvbox-independent",
+  "generated_at": "2026-10-02T23:10:20Z",
+  "catalog_sha256": "4e92fb94da4b70a178b8cfffecb35d2adc71238aa934179d09f9fdf00c1c423f",
   "files": {
-    "api.json": "bf82e330c7e522f2179110efc4005c769c6c10c146ddebd884abcf98f5499299",
-    "live.m3u": "267d202f958cd99a5cb29652d33b6be5914f0dd78c62dbd99b7ecc81bce920ad",
-    "home.jpg": "9298b327464712621e95e225180b4310728960a888f09cbeb1c1d36ce6ec436a"
+    "api.json": "737b898d6f76054697b9c72e81dfe5b129a80659fad89b5a04baa27beaa9d296",
+    "live.m3u": "ba6e626ab9d2d2ca79d5441fc45aeeb73de8cfa015a2f8e46d017b92df5e7e76",
+    "home.jpg": "79c8ad219f0ed4399ef39ae085f191c3684cede5a57aecdf468b64d5206b9545",
+    "posters/wkc_da00b75fa9e263.jpg": "998a30429e5b2913e310687c1a6edc95c47ef1dfa89d12bd4137b6f25d211fbc",
+    "posters/wkc_149b66c9a4af14.jpg": "cdadeb0db098b9ee2ac7719b6ff86b42dfcbbe086e48b5c27964bab0d84467ba",
+    "posters/wkc_6fa37f485a4967.jpg": "5669f88616a31f76079ed456861255ab2017515e25bc3c95542da1fb5832a29d",
+    "posters/wkc_3bda296ad3d4b8.jpg": "b2f75807b39981a1b0b88f76ae4164e8505a25428005a20484851a1112f16c92",
+    "posters/wkc_7e184d61d11e43.jpg": "07dd982e8eab93a99290c28ecf49ec1de9dac70a4ed9f4bac61951100e910c8e",
+    "posters/wkc_d157f17b39aeeb.jpg": "42e354ab019de5e2d907a2a4842ca30acd039b6ca3513530c241547519d45077",
+    "posters/wkc_d18b061d9e7b7b.jpg": "707a6000369c009b9c7547e2f1e13948d9f5f2ebc025245eab4d45bb49afca24",
+    "posters/wkc_35d92d7e622748.jpg": "ad77d1588eb6e691ff622efef90409e2292e8ad82b049bd6f10d4098f4bb3010"
   }
 }

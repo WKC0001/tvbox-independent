@@ -1,18 +1,10 @@
-name: audit-and-enrich
+name: discovery-disabled-pending-content-review
 on:
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  probe:
+  disabled:
     runs-on: ubuntu-latest
-    timeout-minutes: 22
     steps:
-      - uses: actions/checkout@v4
-      - name: Audit original and test candidates
-        run: python3 scripts/probe.py
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: enrichment-probes
-          path: probe-output/
+      - run: echo "Legacy CMS admission is disabled. Only manually reviewed fixed catalogues may be published."

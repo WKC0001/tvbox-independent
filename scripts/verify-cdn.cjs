@@ -4,7 +4,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const pkg=JSON.parse(fs.readFileSync('package.json'));
 const VERSION=pkg.version;
 const base = 'https://cdn.jsdelivr.net/npm/'+pkg.name;
-const targets = [['api.json','latest'],['api.json',VERSION],['live.m3u',VERSION],['home.jpg',VERSION],['manifest.json',VERSION]];
+const targets = [['api.json',VERSION],['live.m3u',VERSION],['home.jpg',VERSION],['manifest.json',VERSION],...Object.keys(JSON.parse(fs.readFileSync('manifest.json')).files).filter(x=>x.startsWith('posters/')).map(x=>[x,VERSION])];
 async function main() {
   let metadata;
   for (let attempt=0;attempt<40;attempt++) {
@@ -34,12 +34,10 @@ async function main() {
     }));
     console.log(JSON.stringify(checks));
     if (checks.every(x=>x.matches)) break;
-    if (attempt%6===0) {
-      try {const purge=await fetch('https://purge.jsdelivr.net/npm/'+pkg.name+'@latest/api.json',{signal:AbortSignal.timeout(10000)});console.log('Latest purge',purge.status,(await purge.text()).slice(0,400));}catch(e){console.log('Purge',e.message);}
-    }
     await delay(10000);
   }
-  const result={package:metadata.name,version:metadata.version,
+  let latest;try{const r=await fetch(base+'@latest/api.json',{signal:AbortSignal.timeout(15000)});latest={status:r.status,matches:r.ok&&Buffer.from(await r.arrayBuffer()).equals(fs.readFileSync('api.json'))};}catch(e){latest={matches:false,error:e.message};}
+  const result={latest,package:metadata.name,version:metadata.version,
     api_url:base+'@latest/api.json',fixed_api_url:base+'@'+VERSION+'/api.json',live_url:base+'@'+VERSION+'/live.m3u',
     tarball:metadata.dist.tarball,tarball_shasum:metadata.dist.shasum,
     source_monitor_modified:false,original_npm_package_modified:false,checks};

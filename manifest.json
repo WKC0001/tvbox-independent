@@ -1,15 +1,21 @@
 {
-  "version": "0.1.0",
-  "owner": "WKC0001",
-  "generated_at": "2026-10-02T21:24:47Z",
-  "api_sha256": "44321718716c0042f9e0cff8e4767b59c4e648cf8b755e0fb43cc87b56ebdfe4",
-  "live_sha256": "6efdcff2bee44cbbc9ba89bd84d12b9e047851b11f539451c68f88607d2c1a12",
-  "sites": 5,
-  "channels": 59,
-  "vod_media_verified": false,
-  "app_runtime_verified": false,
-  "scheduled_updates": false,
-  "source_repository_modified": false,
   "package": "wkc0001-tvbox-independent",
-  "distribution": "npm/jsDelivr"
+  "version": "0.2.0",
+  "vod_sites": 19,
+  "home_categories": [
+    "电视剧",
+    "电影",
+    "综艺",
+    "动漫",
+    "纪录片",
+    "短剧"
+  ],
+  "live_channels": 734,
+  "live_routes": 954,
+  "generated_at": "2026-10-02T22:08:20Z",
+  "files": {
+    "api.json": "e6830a68648b35834103cb27b1445faa9b6fdf1bb2bd5e429458d006eb68b2e6",
+    "live.m3u": "7957e1a90ca9cd2f13be96c052db672767e10785ba72d8f9ec7f20b85b21346c",
+    "home.jar": "9298b327464712621e95e225180b4310728960a888f09cbeb1c1d36ce6ec436a"
+  }
 }

@@ -1,19 +1,21 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-const base = 'https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent';
-const targets = [['api.json','latest'],['api.json','0.1.0'],['live.m3u','0.1.0'],['live.m3u','latest'],['manifest.json','0.1.0']];
+const pkg=JSON.parse(fs.readFileSync('package.json'));
+const VERSION=pkg.version;
+const base = 'https://cdn.jsdelivr.net/npm/'+pkg.name;
+const targets = [['api.json','latest'],['api.json',VERSION],['live.m3u',VERSION],['home.jar',VERSION],['manifest.json',VERSION]];
 async function main() {
   let metadata;
   for (let attempt=0;attempt<40;attempt++) {
     try {
-      const response=await fetch('https://registry.npmjs.org/wkc0001-tvbox-independent/0.1.0?check='+Date.now(),{signal:AbortSignal.timeout(15000)});
+      const response=await fetch('https://registry.npmjs.org/'+pkg.name+'/'+VERSION+'?check='+Date.now(),{signal:AbortSignal.timeout(15000)});
       if (response.ok) { metadata=await response.json();break; }
       console.log('Registry pending',response.status,'attempt',attempt+1);
     } catch(e) {console.log('Registry request',e.message);}
-    await delay(15000);
+    await delay(10000);
   }
-  if (!metadata || metadata.version!=='0.1.0') throw Error('npm version not readable within verification budget');
+  if (!metadata || metadata.version!==VERSION) throw Error('npm version not readable within verification budget');
   console.log('npm version readable:',metadata.version);
   const tar=await fetch(metadata.dist.tarball,{signal:AbortSignal.timeout(30000)});
   if (!tar.ok) throw Error('tarball '+tar.status);
@@ -35,10 +37,10 @@ async function main() {
     if (attempt===0) await Promise.all(targets.map(async ([file,version])=>{
       try {await fetch(`https://purge.jsdelivr.net/npm/wkc0001-tvbox-independent@${version}/${file}`,{signal:AbortSignal.timeout(10000)});} catch(e){}
     }));
-    await delay(15000);
+    await delay(10000);
   }
   const result={package:metadata.name,version:metadata.version,
-    api_url:base+'@latest/api.json',fixed_api_url:base+'@0.1.0/api.json',live_url:base+'@0.1.0/live.m3u',
+    api_url:base+'@latest/api.json',fixed_api_url:base+'@'+VERSION+'/api.json',live_url:base+'@'+VERSION+'/live.m3u',
     tarball:metadata.dist.tarball,tarball_shasum:metadata.dist.shasum,
     source_monitor_modified:false,original_npm_package_modified:false,checks};
   fs.writeFileSync('cdn-verification.json',JSON.stringify(result,null,2)+'\n');

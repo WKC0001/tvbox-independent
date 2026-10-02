@@ -1,18 +1,9 @@
 {
   "name": "wkc0001-tvbox-independent",
-  "version": "0.1.0",
-  "description": "WKC independent FM 5.6.8 configuration and live snapshot",
+  "version": "0.2.0",
+  "description": "WKC owned category homepage and classified FM影视 live configuration",
   "license": "UNLICENSED",
-  "files": [
-    "api.json",
-    "live.m3u",
-    "manifest.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WKC0001/tvbox-independent.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+  "files": ["api.json", "live.m3u", "home.jar", "manifest.json", "reports/enrichment-report.json", "reports/original-source-audit.json"],
+  "repository": {"type":"git", "url":"git+https://github.com/WKC0001/tvbox-independent.git"},
+  "publishConfig": {"access":"public"}
 }

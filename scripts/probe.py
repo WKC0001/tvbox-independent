@@ -100,7 +100,12 @@ def main():
   b,_,_=fetch('https://cdn.jsdelivr.net/npm/wkc0001-tvbox@latest/api.json',15)
   (OUT/'original-api.json').write_bytes(b);raw=json.loads(b)
   print('ORIGINAL',len(raw.get('sites',[])),len(raw.get('lives',[])),flush=True)
- except Exception as e:raise RuntimeError('Original current URL audit failed: '+str(e))
+ except Exception as e:
+  cached=Path('input/original-api-snapshot.json')
+  if not cached.exists():raise RuntimeError('Original current URL audit failed, no saved inventory: '+str(e))
+  raw=json.loads(cached.read_text());(OUT/'original-api.json').write_text(json.dumps(raw,ensure_ascii=False,indent=2))
+  (OUT/'original-fetch-warning.json').write_text(json.dumps({'live_fetch':False,'cached_inventory':True,'reason':str(e)}))
+  print('Original URL unavailable; use saved inventory and continue independent probes',flush=True)
  candidates=json.loads(Path('input/cms-candidates.json').read_text())
  for s in raw.get('sites',[]):
   if s.get('type')==1 and public(str(s.get('api',''))):candidates.append({'name':s.get('name'),'api':s['api'],'origins':[{'name':'original-current-config'}]})

@@ -1,0 +1,69 @@
+{
+  "feeds": [
+    {
+      "name": "original-own-live",
+      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox@latest/live.m3u",
+      "channels": 1028,
+      "ok": true
+    },
+    {
+      "name": "countries/cn.m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/cn.m3u",
+      "channels": 145,
+      "ok": true
+    },
+    {
+      "name": "countries/hk.m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/hk.m3u",
+      "channels": 18,
+      "ok": true
+    },
+    {
+      "name": "countries/mo.m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/mo.m3u",
+      "channels": 7,
+      "ok": true
+    },
+    {
+      "name": "countries/tw.m3u",
+      "url": "https://iptv-org.github.io/iptv/countries/tw.m3u",
+      "channels": 25,
+      "ok": true
+    },
+    {
+      "name": "languages/zho.m3u",
+      "url": "https://iptv-org.github.io/iptv/languages/zho.m3u",
+      "channels": 213,
+      "ok": true
+    },
+    {
+      "name": "vbskycn",
+      "url": "https://cdn.jsdelivr.net/gh/vbskycn/iptv@master/tv/iptv4.m3u",
+      "channels": 544,
+      "ok": true
+    },
+    {
+      "name": "Guovin",
+      "url": "https://cdn.jsdelivr.net/gh/Guovin/iptv@gd/output/result.m3u",
+      "channels": 1616,
+      "ok": true
+    },
+    {
+      "name": "suxuang",
+      "url": "https://cdn.jsdelivr.net/gh/suxuang/myIPTV@main/ipv4.m3u",
+      "channels": 1211,
+      "ok": true
+    },
+    {
+      "name": "Kimentanm",
+      "url": "https://cdn.jsdelivr.net/gh/Kimentanm/aptv@master/m3u/iptv.m3u",
+      "channels": 119,
+      "ok": true
+    }
+  ],
+  "raw_routes": 4985,
+  "unique_urls": 3083,
+  "tested_routes": 2000,
+  "generated_at": "2026-10-02T22:08:20Z",
+  "vantage": "GitHub Actions Ubuntu network; not China ISP or device playback"
+}

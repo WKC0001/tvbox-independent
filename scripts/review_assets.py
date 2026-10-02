@@ -9,10 +9,10 @@ def work(item):
   b=urlopen(Request(v['vod_pic'],headers={'User-Agent':'Mozilla/5.0'}),timeout=10).read(2000000);(OUT/f'poster-{i}.jpg').write_bytes(b);result['poster']=f'poster-{i}.jpg'
  except Exception:pass
  url=v['vod_play_url'].split('#')[0].split('$',1)[1]
- for sec in [3,60]:
+ for sec in [300,900,1800]:
   target=OUT/f'frame-{i}-{sec}.jpg'
   try:
-   p=subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-rw_timeout','7000000','-user_agent','okhttp/4.12.0','-i',url,'-ss',str(sec),'-frames:v','1','-vf','scale=480:-1','-y',str(target)],timeout=35,capture_output=True)
+   p=subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-rw_timeout','7000000','-user_agent','okhttp/4.12.0','-ss',str(sec),'-i',url,'-frames:v','1','-vf','scale=480:-1','-y',str(target)],timeout=35,capture_output=True)
    if p.returncode==0 and target.exists():result['frames'].append(target.name)
   except Exception:pass
  print('ASSET',i,result['name'],len(result['frames']),flush=True);return result

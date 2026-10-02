@@ -6,4 +6,4 @@ javac -encoding UTF-8 -source 8 -target 8 -cp json.jar -d classes stubs/android/
 java -cp classes:json.jar HomeTest
 jar cf home-classes.jar -C classes com/github/catvod/spider
 java -cp "${D8_JAR:?D8_JAR required}" com.android.tools.r8.D8 --min-api 24 --no-desugaring --output dex home-classes.jar
-jar cf ../home.jar -C dex classes.dex
+jar cf ../home.jpg -C dex classes.dex

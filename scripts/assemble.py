@@ -144,8 +144,8 @@ def main():
     if e.get('headers',{}).get(k):lines.append('#EXTVLCOPT:'+h+'='+e['headers'][k])
    lines.append(e['url'])
  (ROOT/'live.m3u').write_text('\n'.join(lines)+'\n')
- md5=hashlib.md5((ROOT/'home.jar').read_bytes()).hexdigest()
- api={'spider':BASE+'home.jar;md5;'+md5,'sites':sites,'lives':[{'name':'WKC｜分类直播','url':BASE+'live.m3u','ua':'okhttp/4.12.0','timeout':10}], 'parses':[],'flags':[]}
+ md5=hashlib.md5((ROOT/'home.jpg').read_bytes()).hexdigest()
+ api={'spider':BASE+'home.jpg;md5;'+md5,'sites':sites,'lives':[{'name':'WKC｜分类直播','url':BASE+'live.m3u','ua':'okhttp/4.12.0','timeout':10}], 'parses':[],'flags':[]}
  dump(ROOT/'api.json',api)
  groups={g:sum(x['group']==g for x in summary) for g in GROUPS}
  cctv_missing=[f'CCTV-{n}' for n in range(1,18) if not any(s['group']=='央视' and re.match(f'^CCTV-{n}(?: |$)',s['name']) for s in summary)]
@@ -156,7 +156,7 @@ def main():
  report={'version':VERSION,'vod_sites':len(accepted),'vod_provider_families':len(primary),'home_sites':1,'vod_media_verified':sum(s['media_verified'] for s in accepted),'vod_order':ranking,'live_channels':len(summary),'live_routes':sum(s['routes'] for s in summary),'live_groups':groups,'live_channel_list':summary,'missing_cctv':cctv_missing,'missing_satellite':sat_missing,'cctv5plus_present':any('CCTV-5+' in s['name'] for s in summary),'raw_routes':load(probe/'input-report.json')['raw_routes'],'tested_routes':len(live),'passed_routes':sum(x['ok'] for x in live),'failed_routes':sum(not x['ok'] for x in live),'normalization_count':sum(aliasesmerged.values()),'excluded_nsfw_or_placeholder':len(excluded),'tested_at':load(probe/'input-report.json')['generated_at'],'validation':'CMS list, exact/negative search, detail, categories, direct M3U8 line filter; sampled HLS child/segment bytes; JVM homepage failover/dedup/routing tests. No device first-frame, UI, or China ISP certification.','update_policy':'manual test release; no scheduled polling enabled'}
  dump(reports/'enrichment-report.json',report)
  for f in ['vod-probes.json','input-report.json']:dump(reports/f,load(probe/f))
- manifest={'package':PACKAGE,'version':VERSION,'vod_sites':len(sites),'home_categories':api['sites'][0]['categories'],'live_channels':len(summary),'live_routes':report['live_routes'],'generated_at':report['tested_at'],'files':{n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in ['api.json','live.m3u','home.jar']}}
+ manifest={'package':PACKAGE,'version':VERSION,'vod_sites':len(sites),'home_categories':api['sites'][0]['categories'],'live_channels':len(summary),'live_routes':report['live_routes'],'generated_at':report['tested_at'],'files':{n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in ['api.json','live.m3u','home.jpg']}}
  dump(ROOT/'manifest.json',manifest)
  print(json.dumps({k:report[k] for k in ['vod_sites','vod_provider_families','vod_media_verified','live_channels','live_routes','live_groups','missing_cctv','missing_satellite']},ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

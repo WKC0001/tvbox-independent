@@ -1,10 +1,10 @@
-# WKC 独立聚合源 0.2.1：内容、排序与维护说明
+# WKC 独立聚合源 0.2.2：内容、排序与维护说明
 
 本版独立于 source-monitor 和 wkc0001-tvbox 原包。仅发布到 WKC0001/tvbox-independent 与 wkc0001-tvbox-independent，原仓库、原包不修改。
 
 ## 导入
 
-本次测试建议导入固定版：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.2.1/api.json
+本次测试建议导入固定版：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.2.2/api.json
 
 长期入口：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/api.json
 
@@ -75,6 +75,8 @@
 | 国际 | 59 |
 
 央视 1–17 和 CCTV-5+ 均有通过本次样本检查的线路。宁夏卫视、兵团卫视未找到通过检查的线路，列入缺失报告，不填入不可播放的占位频道。港台电视、TVBS、凤凰、翡翠等部分别名已合并；“特种兵之火凤凰”“沙滩翡翠湾”不会误分到港澳台。春晚、游戏、景观流单独分组。上游错误的台名或多个年份的同名轮播，不能凭 HTTP 200 判断内容正确，需要实播核对。
+
+首页插件文件 home.jpg 实际是包含 DEX 的插件归档，沿用原配置 cfg.jpg 的分发形式，并用 MD5 校验内容；它不是海报图片。源码在本仓库 java/src。
 
 ## 检查与限制
 

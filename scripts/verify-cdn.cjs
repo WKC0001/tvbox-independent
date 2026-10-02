@@ -4,7 +4,7 @@ const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const pkg=JSON.parse(fs.readFileSync('package.json'));
 const VERSION=pkg.version;
 const base = 'https://cdn.jsdelivr.net/npm/'+pkg.name;
-const targets = [['api.json','latest'],['api.json',VERSION],['live.m3u',VERSION],['home.jar',VERSION],['manifest.json',VERSION]];
+const targets = [['api.json','latest'],['api.json',VERSION],['live.m3u',VERSION],['home.jpg',VERSION],['manifest.json',VERSION]];
 async function main() {
   let metadata;
   for (let attempt=0;attempt<40;attempt++) {
@@ -22,7 +22,7 @@ async function main() {
   const bytes=Buffer.from(await tar.arrayBuffer());
   if (crypto.createHash('sha1').update(bytes).digest('hex')!==metadata.dist.shasum) throw Error('npm tarball shasum');
   let checks;
-  for (let attempt=0;attempt<10;attempt++) {
+  for (let attempt=0;attempt<40;attempt++) {
     checks=await Promise.all(targets.map(async ([file,version])=>{
       const url=`${base}@${version}/${file}`;
       try {
@@ -34,9 +34,9 @@ async function main() {
     }));
     console.log(JSON.stringify(checks));
     if (checks.every(x=>x.matches)) break;
-    if (attempt===0) await Promise.all(targets.map(async ([file,version])=>{
-      try {await fetch(`https://purge.jsdelivr.net/npm/wkc0001-tvbox-independent@${version}/${file}`,{signal:AbortSignal.timeout(10000)});} catch(e){}
-    }));
+    if (attempt%6===0) {
+      try {const purge=await fetch('https://purge.jsdelivr.net/npm/'+pkg.name+'@latest/api.json',{signal:AbortSignal.timeout(10000)});console.log('Latest purge',purge.status,(await purge.text()).slice(0,400));}catch(e){console.log('Purge',e.message);}
+    }
     await delay(10000);
   }
   const result={package:metadata.name,version:metadata.version,

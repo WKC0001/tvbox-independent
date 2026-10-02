@@ -1109,7 +1109,7 @@ https://live.streamingfast.net/osmflivech1.m3u8
 http://php.jdshipin.com/TVOD/iptv.php?id=hoytv
 #EXTINF:-1 tvg-id="HOYTV.fqzone.tv" group-title="港澳台",HOY TV
 http://r.jdshipin.com/sFw4S
-#EXTINF:-1 tvg-id="LotusTV.mo@SD" group-title="港澳台",Lotus TV
+#EXTINF:-1 tvg-id="LotusTV.mo@SD" group-title="港澳台" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36",Lotus TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/Lotus/HLSv3-FTA/Lotus.m3u8
 #EXTINF:-1 tvg-id="PetClubTV.hk@SD" group-title="港澳台",Pet Club TV

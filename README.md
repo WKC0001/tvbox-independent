@@ -1,10 +1,10 @@
-# WKC 独立聚合源 0.2.0：内容、排序与维护说明
+# WKC 独立聚合源 0.2.1：内容、排序与维护说明
 
 本版独立于 source-monitor 和 wkc0001-tvbox 原包。仅发布到 WKC0001/tvbox-independent 与 wkc0001-tvbox-independent，原仓库、原包不修改。
 
 ## 导入
 
-本次测试建议导入固定版：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.2.0/api.json
+本次测试建议导入固定版：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.2.1/api.json
 
 长期入口：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/api.json
 

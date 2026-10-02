@@ -137,7 +137,9 @@ def main():
  for (g,n),es in sorted(channels.items(),key=live_sort):
   ident=es[0].get('id','');summary.append({'group':g,'name':n,'routes':len(es),'origins':list(dict.fromkeys(e['origin'] for e in es)),'urls':[e['url'] for e in es]})
   for e in es:
-   lines.append(f'#EXTINF:-1 tvg-id="{ident}" group-title="{g}",{n}')
+   ua=e.get('headers',{}).get('User-Agent','')
+   attr=(' http-user-agent="'+ua.replace('"','')+'"') if ua else ''
+   lines.append(f'#EXTINF:-1 tvg-id="{ident}" group-title="{g}"{attr},{n}')
    for k,h in [('User-Agent','http-user-agent'),('Referer','http-referrer')]:
     if e.get('headers',{}).get(k):lines.append('#EXTVLCOPT:'+h+'='+e['headers'][k])
    lines.append(e['url'])

@@ -86,7 +86,13 @@ def parse_live(text,origin):
  for raw in text.splitlines():
   line=raw.strip()
   if line.startswith('#EXTINF'):
-   meta,_,name=line.partition(',');a=dict(re.findall(r'([\w-]+)="([^"]*)"',meta));info={'name':name,'id':a.get('tvg-id',''),'source_group':a.get('group-title',''),'origin':origin};headers={}
+   quoted=False;pos=None
+   for i,ch in enumerate(line):
+    if ch=='"':quoted=not quoted
+    elif ch==',' and not quoted:pos=i;break
+   if pos is None:continue
+   meta,name=line[:pos],line[pos+1:];a=dict(re.findall(r'([\w-]+)="([^"]*)"',meta));info={'name':name,'id':a.get('tvg-id',''),'source_group':a.get('group-title',''),'origin':origin};headers={}
+   if a.get('http-user-agent'):headers['User-Agent']=a['http-user-agent']
   elif line.startswith('#EXTVLCOPT:http-user-agent='):headers['User-Agent']=line.split('=',1)[1]
   elif line.startswith('#EXTVLCOPT:http-referrer='):headers['Referer']=line.split('=',1)[1]
   elif line and not line.startswith('#') and info:

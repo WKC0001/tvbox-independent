@@ -1,6 +1,6 @@
 {
   "package": "wkc0001-tvbox-independent",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "vod_sites": 19,
   "home_categories": [
     "电视剧",
@@ -14,8 +14,8 @@
   "live_routes": 954,
   "generated_at": "2026-10-02T22:08:20Z",
   "files": {
-    "api.json": "e6830a68648b35834103cb27b1445faa9b6fdf1bb2bd5e429458d006eb68b2e6",
-    "live.m3u": "7957e1a90ca9cd2f13be96c052db672767e10785ba72d8f9ec7f20b85b21346c",
+    "api.json": "f923b5c0958d54d4dcb53adca658ad283b2b482e2afe69b99aace5112b3bd666",
+    "live.m3u": "267d202f958cd99a5cb29652d33b6be5914f0dd78c62dbd99b7ecc81bce920ad",
     "home.jar": "9298b327464712621e95e225180b4310728960a888f09cbeb1c1d36ce6ec436a"
   }
 }

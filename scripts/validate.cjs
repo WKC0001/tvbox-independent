@@ -17,7 +17,7 @@ assert(report.vod_provider_families>=6);assert.equal(report.missing_cctv.length,
 let channels=new Set(),routes=new Set();
 const text=fs.readFileSync('live.m3u','utf8');let label='';
 for(const line of text.split('\n')){
- if(line.startsWith('#EXTINF')){label=line.match(/group-title="([^"]+)"/)[1]+'|'+line.split(',').slice(1).join(',');channels.add(label);}
+ if(line.startsWith('#EXTINF')){label=line.match(/group-title="([^"]+)"/)[1]+'|'+line.substring(line.lastIndexOf(',')+1);channels.add(label);}
  if(/^https?:/.test(line)){assert(!routes.has(line),'duplicate live URL');routes.add(line);}
 }
 assert.equal(new Set(report.live_channel_list.map(x=>x.name)).size,report.live_channels,'duplicate channel names across groups');

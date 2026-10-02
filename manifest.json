@@ -1,0 +1,15 @@
+{
+  "version": "0.1.0",
+  "owner": "WKC0001",
+  "generated_at": "2026-10-02T21:24:47Z",
+  "api_sha256": "44321718716c0042f9e0cff8e4767b59c4e648cf8b755e0fb43cc87b56ebdfe4",
+  "live_sha256": "6efdcff2bee44cbbc9ba89bd84d12b9e047851b11f539451c68f88607d2c1a12",
+  "sites": 5,
+  "channels": 59,
+  "vod_media_verified": false,
+  "app_runtime_verified": false,
+  "scheduled_updates": false,
+  "source_repository_modified": false,
+  "package": "wkc0001-tvbox-independent",
+  "distribution": "npm/jsDelivr"
+}

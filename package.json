@@ -1,0 +1,18 @@
+{
+  "name": "wkc0001-tvbox-independent",
+  "version": "0.1.0",
+  "description": "WKC independent FM 5.6.8 configuration and live snapshot",
+  "license": "UNLICENSED",
+  "files": [
+    "api.json",
+    "live.m3u",
+    "manifest.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WKC0001/tvbox-independent.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

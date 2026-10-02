@@ -1,0 +1,42 @@
+name: publish-independent-npm
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: publish-independent
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: 'https://registry.npmjs.org/'
+      - name: Validate independent artifacts
+        run: |
+          node - <<'JS'
+          const fs=require('fs'),crypto=require('crypto');
+          const api=JSON.parse(fs.readFileSync('api.json'));
+          const manifest=JSON.parse(fs.readFileSync('manifest.json'));
+          const keys=api.sites.map(x=>x.key);
+          if(keys.length!==5 || keys.some(x=>!x) || new Set(keys).size!==keys.length) throw Error('site keys');
+          if(api.spider || api.sites.some(x=>![0,1].includes(x.type))) throw Error('unexpected spider dependency');
+          if(!api.lives[0].url.includes('wkc0001-tvbox-independent@0.1.0/live.m3u')) throw Error('live URL');
+          for (const name of ['api','live']) {
+            const file=name==='api'?'api.json':'live.m3u';
+            const digest=crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
+            if(digest!==manifest[name+'_sha256']) throw Error('hash '+file);
+          }
+          if(!fs.readFileSync('live.m3u','utf8').startsWith('#EXTM3U')) throw Error('playlist');
+          JS
+      - name: Publish npm package
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish --registry=https://registry.npmjs.org/ --access public
+      - name: Verify registry package
+        run: |
+          npm view wkc0001-tvbox-independent@0.1.0 version dist.tarball --json

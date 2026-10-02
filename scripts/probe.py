@@ -1,4 +1,4 @@
-import concurrent.futures as cf, hashlib, json, re, time, unicodedata, ipaddress
+import concurrent.futures as cf, hashlib, json, re, time, unicodedata, ipaddress, os
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlsplit,urlunsplit,urlencode,parse_qsl,urljoin
@@ -53,7 +53,13 @@ def vod_probe(x):
  try:
   o,ms=cms(x['api'],ac='list',pg=1);classes=o.get('class',[]);items=o['list'];assert items,'empty CMS'
   ids=','.join(str(v['vod_id']) for v in items[:3]);d,_=cms(x['api'],ac='detail',ids=ids)
-  flags=list(dict.fromkeys(f for v in d['list'] for f in str(v.get('vod_play_from','')).split('$$$') if 'm3u8' in f.lower()))
+  flags=[]
+  for v in d['list']:
+   fs=str(v.get('vod_play_from','')).split('$$$');ls=str(v.get('vod_play_url','')).split('$$$')
+   for f,line in zip(fs,ls):
+    urls=[ep.split('$',1)[-1] for ep in line.split('#')[:2]]
+    if 'm3u8' in f.lower() or (urls and all(public(u) and urlsplit(u).path.lower().endswith('.m3u8') for u in urls)):flags.append(f)
+  flags=list(dict.fromkeys(flags))
   assert flags,'no direct m3u8 line';flag=flags[0];u=query(x['api'],**{'from':flag})
   filtered,_=cms(u,ac='detail',ids=ids)
   assert all(str(v.get('vod_play_from',''))==flag for v in filtered['list']),'line filter ignored'
@@ -65,7 +71,7 @@ def vod_probe(x):
   for c in classes:
    k=category(str(c.get('type_name','')))
    if k:mapping[k].append(str(c['type_id']))
-  assert sum(bool(v) for v in mapping.values())>=3,'incomplete categories'
+  assert classes,'missing categories'
   checks=[]
   for v in filtered['list'][:2]:
    ep=str(v.get('vod_play_url','')).split('#')[0];p=ep.split('$',1)[-1]
@@ -104,6 +110,7 @@ def main():
   if identity not in unique:unique[identity]=x
  with cf.ThreadPoolExecutor(10) as ex:vod=list(ex.map(vod_probe,unique.values()))
  (OUT/'vod-probes.json').write_text(json.dumps(vod,ensure_ascii=False,indent=2))
+ if os.getenv('VOD_ONLY')=='1':return
  for l in raw.get('lives',[]):
   if 'wkc0001-tvbox@' in str(l.get('url','')):feeds.append(('original-own-live',l['url']))
  feeds += [(x,'https://iptv-org.github.io/iptv/'+x) for x in ['countries/cn.m3u','countries/hk.m3u','countries/mo.m3u','countries/tw.m3u','languages/zho.m3u']]

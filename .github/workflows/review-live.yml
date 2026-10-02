@@ -1,0 +1,18 @@
+name: review-broadcast-live
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - run: python3 scripts/review_live.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-review
+          path: live-review/

@@ -2,11 +2,11 @@
  "wkc_r_01eaa69d23ab": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044523,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -15,11 +15,11 @@
  "wkc_r_02be45ef8fcb": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044523,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -28,11 +28,11 @@
  "wkc_r_088065fb2488": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -41,11 +41,11 @@
  "wkc_r_09efb21b2445": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -54,11 +54,11 @@
  "wkc_r_0dacd72dfec7": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5497,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -67,11 +67,11 @@
  "wkc_r_1f49d1e951e9": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5493,
+   "last_ok_ts": 1791044522,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -80,11 +80,11 @@
  "wkc_r_2189cbccc68d": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -93,11 +93,11 @@
  "wkc_r_23e75c6d97b8": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5493,
+   "last_ok_ts": 1791044522,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -106,11 +106,11 @@
  "wkc_r_24ecd6383f48": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5535,
+   "last_ok_ts": 1791044569,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -119,11 +119,11 @@
  "wkc_r_2bd03167e0ee": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5535,
+   "last_ok_ts": 1791044569,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -131,25 +131,25 @@
  },
  "wkc_r_2cf21f0996a7": {
   "default": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 1,
    "isolated": false,
    "last_fail_ts": 1791039029,
    "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "maintenance probe failed",
+   "last_ok_ts": 1791044524,
+   "last_reason": "",
    "network": "default",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "wkc_r_2e57ec89c88f": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -158,11 +158,11 @@
  "wkc_r_32ccb654d3c3": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -171,11 +171,11 @@
  "wkc_r_36bd3276f90a": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5535,
+   "last_ok_ts": 1791044569,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -184,11 +184,11 @@
  "wkc_r_37a6101a47c2": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -197,11 +197,11 @@
  "wkc_r_3b6c75a501a3": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -210,11 +210,11 @@
  "wkc_r_3e73952f3833": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5516,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -223,11 +223,11 @@
  "wkc_r_4310f81f0274": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -236,11 +236,11 @@
  "wkc_r_4714d2f87dcd": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -248,25 +248,25 @@
  },
  "wkc_r_49f59417b6f9": {
   "default": {
-   "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_fail": 1,
+   "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": null,
+   "last_fail_ts": 1791044546,
    "last_ok_gap": null,
    "last_ok_ts": 1791039030,
-   "last_reason": "",
+   "last_reason": "maintenance probe failed",
    "network": "default",
-   "state": "healthy"
+   "state": "degraded"
   }
  },
  "wkc_r_4a07d2f52b91": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5495,
+   "last_ok_ts": 1791044524,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -274,25 +274,25 @@
  },
  "wkc_r_513ce809887e": {
   "default": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 2,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791039030,
+   "last_fail_ts": 1791044528,
    "last_ok_gap": null,
    "last_ok_ts": null,
    "last_reason": "maintenance probe failed",
    "network": "default",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "wkc_r_544bcf9d0355": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -301,11 +301,11 @@
  "wkc_r_59eb25589964": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -314,11 +314,11 @@
  "wkc_r_63eb370d938f": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044523,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -327,11 +327,11 @@
  "wkc_r_66cb7c2b0123": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -340,11 +340,11 @@
  "wkc_r_69fc6c5af6ea": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5495,
+   "last_ok_ts": 1791044524,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -353,11 +353,11 @@
  "wkc_r_6c7f1d515c67": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -366,11 +366,11 @@
  "wkc_r_6d0ce791d6fa": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044523,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -379,11 +379,11 @@
  "wkc_r_71a1b3023fa0": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -392,11 +392,11 @@
  "wkc_r_7491cfb70cee": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044523,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -405,11 +405,11 @@
  "wkc_r_78886a38f665": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039028,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044522,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -418,11 +418,11 @@
  "wkc_r_79c2cc4561b7": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5496,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -431,11 +431,11 @@
  "wkc_r_7eef340c3919": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -444,11 +444,11 @@
  "wkc_r_8192f6456608": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5497,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -457,11 +457,11 @@
  "wkc_r_88106aa3395d": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5497,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -470,11 +470,11 @@
  "wkc_r_8b303c177177": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5493,
+   "last_ok_ts": 1791044522,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -483,11 +483,11 @@
  "wkc_r_950958943e44": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -496,11 +496,11 @@
  "wkc_r_9b7c032c5248": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5494,
+   "last_ok_ts": 1791044523,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -509,11 +509,11 @@
  "wkc_r_a63cc98f9432": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5493,
+   "last_ok_ts": 1791044522,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -521,25 +521,25 @@
  },
  "wkc_r_a721baf382a3": {
   "default": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 1,
    "isolated": false,
    "last_fail_ts": 1791039032,
    "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "maintenance probe failed",
+   "last_ok_ts": 1791044546,
+   "last_reason": "",
    "network": "default",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "wkc_r_abb31e5f6a72": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5497,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -548,11 +548,11 @@
  "wkc_r_b4a3eec2dee1": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -561,11 +561,11 @@
  "wkc_r_bc45e27233cd": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5497,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -573,25 +573,25 @@
  },
  "wkc_r_bf7654df4533": {
   "default": {
-   "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_fail": 1,
+   "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": null,
+   "last_fail_ts": 1791044546,
    "last_ok_gap": null,
    "last_ok_ts": 1791039034,
-   "last_reason": "",
+   "last_reason": "maintenance probe failed",
    "network": "default",
-   "state": "healthy"
+   "state": "degraded"
   }
  },
  "wkc_r_bfb1a21917e2": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -600,11 +600,11 @@
  "wkc_r_cf0320023401": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5495,
+   "last_ok_ts": 1791044524,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -613,11 +613,11 @@
  "wkc_r_d8430a942ed8": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5497,
+   "last_ok_ts": 1791044526,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -626,11 +626,11 @@
  "wkc_r_dc1b99fe50f7": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -639,11 +639,11 @@
  "wkc_r_dcead426c330": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -652,11 +652,11 @@
  "wkc_r_e492418ed42e": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039031,
+   "last_ok_gap": 5515,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -665,11 +665,11 @@
  "wkc_r_e7963088e75c": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039030,
+   "last_ok_gap": 5498,
+   "last_ok_ts": 1791044528,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -677,25 +677,25 @@
  },
  "wkc_r_f1d25a300b17": {
   "default": {
-   "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_fail": 1,
+   "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": null,
+   "last_fail_ts": 1791044546,
    "last_ok_gap": null,
    "last_ok_ts": 1791039031,
-   "last_reason": "",
+   "last_reason": "maintenance probe failed",
    "network": "default",
-   "state": "healthy"
+   "state": "degraded"
   }
  },
  "wkc_r_f237dc0c264b": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039029,
+   "last_ok_gap": 5495,
+   "last_ok_ts": 1791044524,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -704,11 +704,11 @@
  "wkc_r_f333cf0f32fd": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -717,11 +717,11 @@
  "wkc_r_f68199213a98": {
   "default": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791039034,
+   "last_ok_gap": 5512,
+   "last_ok_ts": 1791044546,
    "last_reason": "",
    "network": "default",
    "state": "healthy"
@@ -729,15 +729,15 @@
  },
  "wkc_r_f85526213bcb": {
   "default": {
-   "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_fail": 1,
+   "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": null,
+   "last_fail_ts": 1791044546,
    "last_ok_gap": null,
    "last_ok_ts": 1791039030,
-   "last_reason": "",
+   "last_reason": "maintenance probe failed",
    "network": "default",
-   "state": "healthy"
+   "state": "degraded"
   }
  }
 }

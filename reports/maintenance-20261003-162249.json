@@ -1,0 +1,309 @@
+{
+ "mode": "full",
+ "at": "2026-10-03T16:21:58Z",
+ "release": "0.4.1",
+ "release_closure": {
+  "api.json": true,
+  "live.m3u": true,
+  "home.jpg": true
+ },
+ "routes": {
+  "wkc_r_78886a38f665": {
+   "channel": "CCTV-13 新闻",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_23e75c6d97b8": {
+   "channel": "CGTN英语",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_1f49d1e951e9": {
+   "channel": "浙江卫视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_8b303c177177": {
+   "channel": "河北卫视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_a63cc98f9432": {
+   "channel": "内蒙古卫视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_9b7c032c5248": {
+   "channel": "东丰综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_63eb370d938f": {
+   "channel": "九台综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_02be45ef8fcb": {
+   "channel": "哈尔滨新闻综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_01eaa69d23ab": {
+   "channel": "哈尔滨生活",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_6d0ce791d6fa": {
+   "channel": "嘉兴新闻综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_7491cfb70cee": {
+   "channel": "四平广播电视台综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_4a07d2f52b91": {
+   "channel": "广州新闻",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_cf0320023401": {
+   "channel": "广州综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_2cf21f0996a7": {
+   "channel": "广州综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_f237dc0c264b": {
+   "channel": "德惠综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_69fc6c5af6ea": {
+   "channel": "柳河综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_88106aa3395d": {
+   "channel": "桦甸综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_abb31e5f6a72": {
+   "channel": "浙江国际",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_0dacd72dfec7": {
+   "channel": "浙江教科影视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_bc45e27233cd": {
+   "channel": "浙江民生休闲",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_8192f6456608": {
+   "channel": "浙江钱江都市",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_d8430a942ed8": {
+   "channel": "珲春新闻",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_79c2cc4561b7": {
+   "channel": "白城新闻综合频道",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_513ce809887e": {
+   "channel": "白山公共",
+   "ok": false,
+   "state": "down"
+  },
+  "wkc_r_950958943e44": {
+   "channel": "舒兰新闻综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_7eef340c3919": {
+   "channel": "辉南新闻综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_32ccb654d3c3": {
+   "channel": "靖宇综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_71a1b3023fa0": {
+   "channel": "龙井综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_e7963088e75c": {
+   "channel": "之江纪录",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_4310f81f0274": {
+   "channel": "浙江少儿",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_09efb21b2445": {
+   "channel": "康巴卫视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_49f59417b6f9": {
+   "channel": "余姚姚江文化",
+   "ok": false,
+   "state": "degraded"
+  },
+  "wkc_r_f85526213bcb": {
+   "channel": "余姚新闻综合",
+   "ok": false,
+   "state": "degraded"
+  },
+  "wkc_r_3e73952f3833": {
+   "channel": "兴隆综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_59eb25589964": {
+   "channel": "文旅频道",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_37a6101a47c2": {
+   "channel": "新闻综合频道",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_3b6c75a501a3": {
+   "channel": "新闻综合频道",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_6c7f1d515c67": {
+   "channel": "江津新闻综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_bfb1a21917e2": {
+   "channel": "江苏公共新闻",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_f1d25a300b17": {
+   "channel": "河源综合",
+   "ok": false,
+   "state": "degraded"
+  },
+  "wkc_r_66cb7c2b0123": {
+   "channel": "浙江 I 绍兴综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_2189cbccc68d": {
+   "channel": "浙江国际",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_dcead426c330": {
+   "channel": "浙江教科",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_e492418ed42e": {
+   "channel": "浙江新闻",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_2e57ec89c88f": {
+   "channel": "浙江经济",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_a721baf382a3": {
+   "channel": "CCTV-1 综合",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_f68199213a98": {
+   "channel": "CCTV-12 社会与法",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_bf7654df4533": {
+   "channel": "CCTV新影-中学生",
+   "ok": false,
+   "state": "degraded"
+  },
+  "wkc_r_088065fb2488": {
+   "channel": "之江纪录",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_dc1b99fe50f7": {
+   "channel": "湖南卫视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_4714d2f87dcd": {
+   "channel": "青海卫视",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_f333cf0f32fd": {
+   "channel": "新疆卫视维吾尔语",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_b4a3eec2dee1": {
+   "channel": "新疆卫视哈萨克语",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_544bcf9d0355": {
+   "channel": "新疆卫视哈萨克语",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_24ecd6383f48": {
+   "channel": "新疆卫视哈萨克语",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_36bd3276f90a": {
+   "channel": "新疆卫视少儿频道",
+   "ok": true,
+   "state": "healthy"
+  },
+  "wkc_r_2bd03167e0ee": {
+   "channel": "Zhejiang TV International",
+   "ok": true,
+   "state": "healthy"
+  }
+ },
+ "batch_anomaly": {
+  "flag": false,
+  "healthy_now": 56,
+  "healthy_prev": 57,
+  "drop": 0.018
+ },
+ "summary": {
+  "probed": 57,
+  "down": 1,
+  "closure_ok": true,
+  "batch_anomaly_flag": false
+ }
+}

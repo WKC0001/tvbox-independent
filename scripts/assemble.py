@@ -1,15 +1,31 @@
 """Build ONLY the fixed catalogue after manual poster/frame review. No CMS discovery admission."""
-import json,hashlib,time,re
+import json,hashlib,time,re,sys
 from pathlib import Path
 from urllib.parse import urlsplit
 from collections import defaultdict,Counter
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from catalog.ids import work_id
+from policy.content_policy import ContentPolicy,host_of
 from channel_layout import label,live_sort
-ROOT=Path(__file__).resolve().parents[1]
+POLICY=ContentPolicy(ROOT/'policy/blocked-sources.json')
 def dump(p,v):p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
 def main():
  pkg=json.loads((ROOT/'package.json').read_text());base=f"https://cdn.jsdelivr.net/npm/{pkg['name']}@{pkg['version']}/"
  reviewed=json.loads((ROOT/'input/approved-catalog.json').read_text());assert reviewed['visual_review_complete']
  rows=reviewed['list'];assert rows and all(v['approved'] for v in rows)
+ # 门禁防线：批准目录逐行过内容策略 + 封禁域名双重扫描（域名+提供方名）
+ for v in rows:
+  st,why=POLICY.title_state(v['vod_name'],v.get('vod_content',''));assert st!='blocked',f"批准目录污点: {v['vod_name']} {why}"
+  st,why=POLICY.provider_state(str(v.get('vod_play_from','')),'https://placeholder.invalid/');assert st!='blocked',f"批准目录封禁提供方: {v.get('vod_play_from')} {why}"
+  for ep in str(v.get('vod_play_url','')).split('#'):
+   u=ep.split('$',1)[-1];h=host_of(u)
+   st,_=POLICY.provider_state('',u);assert st!='blocked',f"批准目录命中封禁域名 {h}: {v['vod_name']}"
+ # 稳定 ID：work_id 由片名+年份派生，必须唯一（同名同年重复=上游数据缺陷）
+ seen_wids=set()
+ for v in rows:
+  v['work_id']=work_id(v['vod_name'],v.get('vod_year',''))
+  assert v['work_id'] not in seen_wids,f"重复 work_id: {v['vod_name']}({v.get('vod_year')})"
+  seen_wids.add(v['work_id'])
  data=json.dumps(rows,ensure_ascii=False,separators=(',',':'));digest=hashlib.sha256(data.encode()).hexdigest()
  (ROOT/'java/src/com/github/catvod/spider/ApprovedCatalogue.java').write_text('package com.github.catvod.spider; public final class ApprovedCatalogue { public static final String SHA256="'+digest+'"; }\n')
  channels=defaultdict(list);seen=set()
@@ -29,17 +45,23 @@ def main():
   if host.endswith('jlntv.cn') and not any(x in name for x in ['综合','新闻','卫视','公共']):name+='综合'
   if name.startswith('CGTN'):g='央视'
   if g not in ['央视','卫视','地方','少儿与纪录']:continue
+  st,_=POLICY.provider_state('',e['url'])
+  if st=='blocked':continue  # 封禁注册表域名防线（直播线路）
   # Canonical HLS identity ignores rendition and dated auth query; a channel retains one route per stream identity.
   p=urlsplit(e['url']);path=re.sub(r'/channel0+(\d+)',r'/channel\1',p.path);path=re.sub(r'/(?:sd|hd|1080p|720p)(?=/|\.m3u8)','',path)
   identity=(host,path)
   if identity in seen:continue
   seen.add(identity);channels[(g,name)].append(e)
- lines=['#EXTM3U'];route_count=0
+ lines=['#EXTM3U'];route_count=0;route_registry=[]
  for (g,name),es in sorted(channels.items(),key=live_sort):
+  cid='wkc_c_'+__import__('hashlib').sha256((name+'|'+g).encode()).hexdigest()[:12]
   for e in es:
    attrs=f'group-title="{g}"';agent=e.get('headers',{}).get('User-Agent')
    if agent:attrs+=' http-user-agent="'+agent.replace('"','')+'"'
    lines.extend([f'#EXTINF:-1 {attrs},{name}',e['url']]);route_count+=1
+   rid='wkc_r_'+__import__('hashlib').sha256(urlsplit(e['url']).netloc.lower().encode()).hexdigest()[:8]+__import__('hashlib').sha256(e['url'].encode()).hexdigest()[:8]
+   route_registry.append({'route_id':rid,'channel_id':cid,'channel':name,'group':g,'url':e['url'],'headers':e.get('headers',{}),'upstream_host':urlsplit(e['url']).hostname})
+ (ROOT/'reports/route-registry.json').write_text(json.dumps({'routes':route_registry,'policy':'route_id 指纹与播放 URL 分离；channel_id 对应实际频道身份；HD/SD 同频道收敛','channels':len(channels)},ensure_ascii=False,indent=2)+'\n')
  (ROOT/'live.m3u').write_text('\n'.join(lines)+'\n')
  api={'spider':base+'home.jpg','sites':[{'key':'wkc_reviewed_home','name':'WKC · 已审核片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'filterable':0,'ext':{'catalog_json':data}}], 'lives':[{'name':'WKC · 精选电视直播','type':0,'url':base+'live.m3u','playerType':1}], 'parses':[], 'flags':[], 'rules':[]}
  if (ROOT/'home.jpg').exists():api['spider']+=';md5;'+hashlib.md5((ROOT/'home.jpg').read_bytes()).hexdigest()

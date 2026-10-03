@@ -24,6 +24,8 @@ jobs:
         run: |
           node scripts/validate.cjs
           python3 scripts/test_layout.py
+      - name: Content gate and health state machine tests
+        run: python3 -m unittest discover -s tests -v
       - name: Test reviewed homepage and content gate
         run: |
           curl --fail --location https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar --output java/json.jar

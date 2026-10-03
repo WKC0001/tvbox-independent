@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updated_at": "2026-10-03T20:30:00Z",
+  "policy": "blocked 来源不因探活成功自动恢复；换名/换域名不得绕过；恢复必须走人工复审并更新本文件",
+  "blocked_providers": [
+    {"name": "玉兔", "reason": "确认纯成人库：全部分类为成人内容", "evidence": "分类表全量检测（source-monitor 守卫 2026-10-03）", "domains": ["apiyutu.com"], "name_aliases": ["玉兔资源", "玉兔|采集", "yuatu", "yuetu"]},
+    {"name": "滴滴", "reason": "确认纯成人库：26/28 分类为成人内容", "evidence": "分类表全量检测", "domains": ["api.ddapi.cc", "ddapi.cc", "ddzyapi.com"], "name_aliases": ["滴滴资源", "滴滴|采集"]},
+    {"name": "乐播", "reason": "确认纯成人库：15/17 分类为成人内容", "evidence": "分类表全量检测", "domains": ["lbapi9.com", "leboapi.com"], "name_aliases": ["乐播资源", "乐播|采集", "lebo"]},
+    {"name": "火速", "reason": "确认纯成人库：全部分类为伦理内容", "evidence": "分类表全量检测", "domains": ["api.huosuapi.cc", "huosuapi.com"], "name_aliases": ["火速资源", "火速|采集"]},
+    {"name": "辣椒", "reason": "确认纯成人库：分类为 JAV 女优名录", "evidence": "分类表全量检测", "domains": ["apilj.com", "lajiaoapi.com"], "name_aliases": ["辣椒资源", "辣椒|采集", "apilj"]},
+    {"name": "光速", "reason": "历史封禁：审核不足", "evidence": "历史审核记录", "domains": ["api.guangsuapi.com", "guangsuapi.com"], "name_aliases": ["光速资源", "光速|采集"]},
+    {"name": "155", "reason": "确认纯成人库：白名单检测安全分类占比≈0，分类为黑话（多人群交/女优情报等）", "evidence": "白名单模式守卫 2026-10-03", "domains": ["155api.com"], "name_aliases": ["155|采集", "155资源"]},
+    {"name": "JKUN", "reason": "确认纯成人库：黑话分类（口交自慰/SWAG/黑丝诱惑等）", "evidence": "白名单模式守卫 2026-10-03", "domains": ["jkunzyapi.com"], "name_aliases": ["jkun|采集", "jkun资源"]},
+    {"name": "小鸡", "reason": "确认纯成人库：黑话分类（口交自慰/群交多P/人兽等）", "evidence": "白名单模式守卫 2026-10-03", "domains": ["api.xiaojizy.live", "xiaojizy.com"], "name_aliases": ["小鸡资源", "小鸡|采集", "xiaojizy"]},
+    {"name": "新极品", "reason": "确认纯成人库：黑话分类（撸管必看/人兽乱交等）", "evidence": "白名单模式守卫 2026-10-03", "domains": ["jipinvip1.com", "jipinzy.com"], "name_aliases": ["新极品资源", "极品|采集", "新极品|采集"]},
+    {"name": "番茄", "reason": "确认纯成人库：黑话分类（淫乱学生妹/东京热/一本道等）", "evidence": "白名单模式守卫 2026-10-03", "domains": ["fqzy.me", "fanqiezy.com"], "name_aliases": ["番茄资源", "番茄|采集"]},
+    {"name": "百花", "reason": "确认纯成人库：白名单检测安全分类占比≈0", "evidence": "白名单模式守卫 2026-10-03", "domains": ["bhziyuan.com"], "name_aliases": ["百花资源", "百花|采集"]},
+    {"name": "麻豆", "reason": "确认成人厂商源", "evidence": "资源组成人标签", "domains": ["madouzy.com", "mdzyapi.com"], "name_aliases": ["麻豆资源", "麻豆传媒"]},
+    {"name": "黑料", "reason": "确认成人/低俗源", "evidence": "资源组成人标签", "domains": ["heiliaozy.com"], "name_aliases": ["黑料资源", "黑料|采集"]}
+  ],
+  "unverified_providers": [
+    {"name": "速播", "reason": "分类表拉取失败，未经内容检测；fail-closed 不入池，人工复审后升级", "domains": ["subocj.com"], "name_aliases": ["速播|采集", "速播资源"]},
+    {"name": "鲨鱼", "reason": "分类表拉取失败，未经内容检测；fail-closed 不入池", "domains": ["shayuapi.com"], "name_aliases": ["鲨鱼|采集", "鲨鱼资源"]},
+    {"name": "樱花", "reason": "分类表拉取失败（403），未经内容检测；fail-closed 不入池", "domains": ["m3u8.apiyhzy.com", "apiyhzy.com"], "name_aliases": ["樱花|采集", "樱花资源"]},
+    {"name": "猫眼", "reason": "分类表拉取失败，未经内容检测；fail-closed 不入池", "domains": ["api.maoyanapi.top", "maoyanapi.top"], "name_aliases": ["猫眼|采集", "猫眼资源"]},
+    {"name": "爱坤", "reason": "分类表拉取失败（SSL），未经内容检测；fail-closed 不入池", "domains": ["ikunzyapi.com"], "name_aliases": ["爱坤|采集", "爱坤资源"]},
+    {"name": "细胞网", "reason": "分类表拉取失败（SSL），未经内容检测；fail-closed 不入池", "domains": ["www.xxibaozyw.com", "xxibaozyw.com"], "name_aliases": ["细胞网|采集", "细胞网资源"]},
+    {"name": "大地", "reason": "分类表拉取失败且历史播放探测异常；fail-closed 不入池", "domains": ["dadiapi.com"], "name_aliases": ["大地资源", "大地|采集"]}
+  ]
+}

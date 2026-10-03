@@ -1,1 +1,1 @@
-package com.github.catvod.spider; public final class ApprovedCatalogue { public static final String SHA256="4e92fb94da4b70a178b8cfffecb35d2adc71238aa934179d09f9fdf00c1c423f"; }
+package com.github.catvod.spider; public final class ApprovedCatalogue { public static final String SHA256="d031ce17d7344c6ca015a2e73f956d0a5ee0b2e3a78f57b078d0816cee356d34"; }

@@ -33,10 +33,10 @@
   "original_repo_modified": false,
   "original_npm_modified": false,
   "package": "wkc0001-tvbox-independent",
-  "generated_at": "2026-10-02T23:12:43Z",
-  "catalog_sha256": "4e92fb94da4b70a178b8cfffecb35d2adc71238aa934179d09f9fdf00c1c423f",
+  "generated_at": "2026-10-03T12:33:20Z",
+  "catalog_sha256": "d031ce17d7344c6ca015a2e73f956d0a5ee0b2e3a78f57b078d0816cee356d34",
   "files": {
-    "api.json": "737b898d6f76054697b9c72e81dfe5b129a80659fad89b5a04baa27beaa9d296",
+    "api.json": "efb625abf6b8c1095432782c23e631ecbfc0b1cbbed67b021a414534f4afe30f",
     "live.m3u": "cece8c6f4a972277d9868ce1c6150d2858101a8ae01427ddaa4850e01dc91236",
     "home.jpg": "79c8ad219f0ed4399ef39ae085f191c3684cede5a57aecdf468b64d5206b9545",
     "posters/wkc_da00b75fa9e263.jpg": "998a30429e5b2913e310687c1a6edc95c47ef1dfa89d12bd4137b6f25d211fbc",

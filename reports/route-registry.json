@@ -1,0 +1,267 @@
+{
+  "routes": [
+    {
+      "route_id": "wkc_r_dd1a7a394f050c1d",
+      "channel_id": "wkc_c_06338c29db7c",
+      "channel": "CCTV-13 新闻",
+      "group": "央视",
+      "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    },
+    {
+      "route_id": "wkc_r_25ae2196c2dccea7",
+      "channel_id": "wkc_c_2c9fa24f7c43",
+      "channel": "CGTN英语",
+      "group": "央视",
+      "url": "http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8",
+      "headers": {},
+      "upstream_host": "english-livetx.cgtn.com"
+    },
+    {
+      "route_id": "wkc_r_dd1a7a394937de7b",
+      "channel_id": "wkc_c_ebc469a20109",
+      "channel": "浙江卫视",
+      "group": "卫视",
+      "url": "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    },
+    {
+      "route_id": "wkc_r_669e933ec54282dd",
+      "channel_id": "wkc_c_297f4ae981e6",
+      "channel": "河北卫视",
+      "group": "卫视",
+      "url": "http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8",
+      "headers": {},
+      "upstream_host": "event.pull.hebtv.com"
+    },
+    {
+      "route_id": "wkc_r_c18558c8f404c391",
+      "channel_id": "wkc_c_96b92379a5cf",
+      "channel": "内蒙古卫视",
+      "group": "卫视",
+      "url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
+      "headers": {},
+      "upstream_host": "play1-qk.nmtv.cn"
+    },
+    {
+      "route_id": "wkc_r_c734fa40db88d640",
+      "channel_id": "wkc_c_0d7fe3ef197c",
+      "channel": "东丰综合",
+      "group": "地方",
+      "url": "http://stream5.jlntv.cn/df/sd/live.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream5.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_f98d8b9bf930735f",
+      "channel_id": "wkc_c_b6ae871e7cd1",
+      "channel": "九台综合",
+      "group": "地方",
+      "url": "http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8",
+      "headers": {},
+      "upstream_host": "stream10.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_f9f3f739a697f97e",
+      "channel_id": "wkc_c_1df3a14fed9d",
+      "channel": "哈尔滨新闻综合",
+      "group": "地方",
+      "url": "http://stream.hrbtv.net/xwzh/sd/live.m3u8?zheild",
+      "headers": {},
+      "upstream_host": "stream.hrbtv.net"
+    },
+    {
+      "route_id": "wkc_r_f9f3f7396289d725",
+      "channel_id": "wkc_c_4ef17652d24d",
+      "channel": "哈尔滨生活",
+      "group": "地方",
+      "url": "http://stream.hrbtv.net/shpd/sd/live.m3u8?zheild",
+      "headers": {},
+      "upstream_host": "stream.hrbtv.net"
+    },
+    {
+      "route_id": "wkc_r_d89dabde1b31923a",
+      "channel_id": "wkc_c_135010171484",
+      "channel": "嘉兴新闻综合",
+      "group": "地方",
+      "url": "http://live.zohi.tv/video/s10001-fztv-1/index.m3u8",
+      "headers": {},
+      "upstream_host": "live.zohi.tv"
+    },
+    {
+      "route_id": "wkc_r_a1afa6da8931daa1",
+      "channel_id": "wkc_c_55acc2d62cf1",
+      "channel": "四平广播电视台综合",
+      "group": "地方",
+      "url": "http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598",
+      "headers": {},
+      "upstream_host": "stream2.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_2378ee6dd4dbfd78",
+      "channel_id": "wkc_c_cdb8bd413121",
+      "channel": "广州新闻",
+      "group": "地方",
+      "url": "http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3",
+      "headers": {},
+      "upstream_host": "tencentplay.gztv.com"
+    },
+    {
+      "route_id": "wkc_r_2378ee6d42eb8302",
+      "channel_id": "wkc_c_0cf64a8fad3d",
+      "channel": "广州综合",
+      "group": "地方",
+      "url": "https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488",
+      "headers": {},
+      "upstream_host": "tencentplay.gztv.com"
+    },
+    {
+      "route_id": "wkc_r_10db8c8db5271eed",
+      "channel_id": "wkc_c_0cf64a8fad3d",
+      "channel": "广州综合",
+      "group": "地方",
+      "url": "https://tencentplaybusiness.gztv.com/live/zonghes.m3u8",
+      "headers": {},
+      "upstream_host": "tencentplaybusiness.gztv.com"
+    },
+    {
+      "route_id": "wkc_r_17628c5eb2781bcb",
+      "channel_id": "wkc_c_2e2a3729f73a",
+      "channel": "德惠综合",
+      "group": "地方",
+      "url": "http://stream11.jlntv.cn/dehuitv/sd/live.m3u8",
+      "headers": {},
+      "upstream_host": "stream11.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_c734fa40fc479a72",
+      "channel_id": "wkc_c_e3c85628d444",
+      "channel": "柳河综合",
+      "group": "地方",
+      "url": "http://stream5.jlntv.cn/lh/sd/live.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream5.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_f98d8b9b3d520bb0",
+      "channel_id": "wkc_c_544f7bcd9d5a",
+      "channel": "桦甸综合",
+      "group": "地方",
+      "url": "http://stream10.jlntv.cn/huadian/sd/live.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream10.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_dd1a7a39836b3077",
+      "channel_id": "wkc_c_20f0b77bb895",
+      "channel": "浙江国际",
+      "group": "地方",
+      "url": "http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    },
+    {
+      "route_id": "wkc_r_dd1a7a397ed61953",
+      "channel_id": "wkc_c_782dccd2986f",
+      "channel": "浙江民生休闲",
+      "group": "地方",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    },
+    {
+      "route_id": "wkc_r_dd1a7a3995fe30c1",
+      "channel_id": "wkc_c_c87e67ee560e",
+      "channel": "浙江钱江都市",
+      "group": "地方",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    },
+    {
+      "route_id": "wkc_r_041e3ebbd54e02e2",
+      "channel_id": "wkc_c_63a20dbde170",
+      "channel": "珲春新闻",
+      "group": "地方",
+      "url": "http://stream8.jlntv.cn/hctv/sd/live.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream8.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_a1afa6da87d052d2",
+      "channel_id": "wkc_c_7b49acd90f77",
+      "channel": "白城新闻综合",
+      "group": "地方",
+      "url": "https://stream2.jlntv.cn/baicheng1/sd/live.m3u8",
+      "headers": {},
+      "upstream_host": "stream2.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_041e3ebb8bd14fea",
+      "channel_id": "wkc_c_1ef32608fdd3",
+      "channel": "白山公共",
+      "group": "地方",
+      "url": "http://stream8.jlntv.cn/baishan2/playlist.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream8.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_041e3ebb2a7fbaf3",
+      "channel_id": "wkc_c_7f3b1d3f41e3",
+      "channel": "舒兰新闻综合",
+      "group": "地方",
+      "url": "http://stream8.jlntv.cn/shulan/sd/live.m3u8?_upt=332db6421699196585",
+      "headers": {},
+      "upstream_host": "stream8.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_c734fa4015395575",
+      "channel_id": "wkc_c_a3cea6162557",
+      "channel": "辉南新闻综合",
+      "group": "地方",
+      "url": "http://stream5.jlntv.cn/hn/sd/live.m3u8",
+      "headers": {},
+      "upstream_host": "stream5.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_041e3ebba7384735",
+      "channel_id": "wkc_c_5c8ad027c0ae",
+      "channel": "靖宇综合",
+      "group": "地方",
+      "url": "http://stream8.jlntv.cn/jytv/sd/live.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream8.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_041e3ebbefd17390",
+      "channel_id": "wkc_c_fcc45addbede",
+      "channel": "龙井综合",
+      "group": "地方",
+      "url": "http://stream8.jlntv.cn/ljtv/sd/live.m3u8?zjild",
+      "headers": {},
+      "upstream_host": "stream8.jlntv.cn"
+    },
+    {
+      "route_id": "wkc_r_dd1a7a392ecdec07",
+      "channel_id": "wkc_c_bf89de43ab9f",
+      "channel": "之江纪录",
+      "group": "少儿与纪录",
+      "url": "http://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    },
+    {
+      "route_id": "wkc_r_dd1a7a39c423829b",
+      "channel_id": "wkc_c_4a5852380e4b",
+      "channel": "浙江少儿",
+      "group": "少儿与纪录",
+      "url": "https://ali-m-l.cztv.com/channels/lantian/channel008/1080p.m3u8",
+      "headers": {},
+      "upstream_host": "ali-m-l.cztv.com"
+    }
+  ],
+  "policy": "route_id 指纹与播放 URL 分离；channel_id 对应实际频道身份；HD/SD 同频道收敛",
+  "channels": 28
+}

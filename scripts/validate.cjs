@@ -6,6 +6,16 @@ const sha=crypto.createHash('sha256').update(data).digest('hex');assert(sha===ma
 const ids=new Set(),names=new Set();for(const r of rows){assert(r.approved===true);assert(!ids.has(r.vod_id));assert(!names.has(r.vod_name));ids.add(r.vod_id);names.add(r.vod_name);assert(r.vod_pic.startsWith(`https://cdn.jsdelivr.net/npm/${pkg.name}@${pkg.version}/posters/`));assert(!/伦理|理论片|福利|成人|色情/.test(r.category+r.vod_name));}
 for(const [f,hash]of Object.entries(manifest.files))assert(crypto.createHash('sha256').update(fs.readFileSync(f)).digest('hex')===hash,'File hash: '+f);
 assert(api.spider.split(';md5;')[1]===crypto.createHash('md5').update(fs.readFileSync('home.jpg')).digest('hex'));console.log('CONTENT_SNAPSHOT_VALIDATED',rows.length);
+// 阶段2 硬校验：禁止 @latest；work_id 存在且唯一；封禁注册表域名不得出现在任何下发地址
+assert(!/@latest/.test(JSON.stringify(api)),'api.json 含 @latest 引用');
+const wids=new Set();for(const r of rows){assert(r.work_id&&/^wkc_w_[0-9a-f]{12}$/.test(r.work_id),'缺 work_id: '+r.vod_name);assert(!wids.has(r.work_id),'重复 work_id: '+r.vod_name);wids.add(r.work_id);}
+const blocked=JSON.parse(fs.readFileSync('policy/blocked-sources.json','utf8'));
+const bDom=blocked.blocked_providers.flatMap(e=>e.domains.map(d=>d.toLowerCase()));
+const uDom=blocked.unverified_providers.flatMap(e=>e.domains.map(d=>d.toLowerCase()));
+function hostOf(u){try{return new URL(u).hostname.toLowerCase()}catch(e){return ''}}
+for(const r of rows){const h=hostOf(r.vod_play_url.split('#')[0].split('$')[1]||'');for(const d of bDom)assert(!(h===d||h.endsWith('.'+d)),'批准目录命中封禁域名: '+h);}
+const liveRoutes=fs.readFileSync('live.m3u','utf8').split(/\r?\n/).filter(l=>/^https?:/.test(l));
+for(const u of liveRoutes){const h=hostOf(u);for(const d of bDom)assert(!(h===d||h.endsWith('.'+d)),'直播命中封禁域名: '+h);for(const d of uDom)assert(!(h===d||h.endsWith('.'+d)),'直播命中未验证注册表域名: '+h);}
 
 const approvedLive=JSON.parse(fs.readFileSync('input/approved-live.json'));
 const allowedLive=new Set(approvedLive.filter(r=>r.frame_review_pass&&r.fresh_probe.ok).map(r=>r.url));

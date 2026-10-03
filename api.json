@@ -19,7 +19,8 @@
       "name": "WKC · 精选电视直播",
       "type": 0,
       "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.3.0/live.m3u",
-      "playerType": 1
+      "playerType": 1,
+      "epg": "http://epg.51zmt.top:8000/api/diyp/"
     }
   ],
   "parses": [],

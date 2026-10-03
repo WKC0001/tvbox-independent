@@ -5,9 +5,10 @@ class LayoutTest(unittest.TestCase):
  def entry(self,name,url='https://live.ottiptv.cc/huya/100',group='其他'):
   return {'name':name,'id':'','url':url,'source_group':group}
  def test_ambiguous_program_and_scenery(self):
-  self.assertEqual(label(self.entry('特种兵之火凤凰'))[0],'影视轮播')
-  self.assertEqual(label(self.entry('福建漳州醉美沙滩翡翠湾'))[0],'风景慢直播')
-  self.assertEqual(label(self.entry('1987年春晚'))[0],'综艺轮播')
+  # 新目录策略：影视轮播/综艺轮播/风景慢直播不再入目录（匿名轮播与风景机位剔除）
+  self.assertIsNone(label(self.entry('特种兵之火凤凰')))
+  self.assertIsNone(label(self.entry('福建漳州醉美沙滩翡翠湾')))
+  self.assertIsNone(label(self.entry('1987年春晚')))
  def test_aliases_and_wrong_upstream_group(self):
   self.assertEqual(label(self.entry('敦化一套',group='纪录频道'))[0],'地方')
   self.assertEqual(label(self.entry('TVBS-Asia'))[:2],label(self.entry('TVBS亚洲'))[:2])

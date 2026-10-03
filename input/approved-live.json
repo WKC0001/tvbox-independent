@@ -448,5 +448,437 @@
     },
     "frame_review_pass": true,
     "frame_sha256": "da6408111641a5e7735d5e86d3efbf1cd5f2e3e80af0727e898e139e3b186923"
+  },
+  {
+    "name": "康巴卫视",
+    "id": "KangbaTV.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://110.185.237.164:8888/hls/30/index.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 424
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "余姚姚江文化",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 1202
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "余姚新闻综合",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao1/720p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 618
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "兴隆综合",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://jwcdnqx.hebyun.com.cn/live/xlzh/1500k/tzwj_video.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 853
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "文旅频道",
+    "id": "LanzhouCultureTourismChannel.cn",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 665
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新闻综合频道",
+    "id": "ChifengComprehensiveNewsChanel.cn",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://play1-qk.nmtv.cn/live/1735546697341033.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 386
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新闻综合频道",
+    "id": "LanzhouComprehensiveNewsChannel.cn",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://liveplus.lzr.com.cn/xwzh/HD/live.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 737
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "江津新闻综合",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://222.179.155.21:1935/ch1.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 1172
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "江苏公共新闻",
+    "id": "JiangsuPublicNewsChannel.cn",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 486
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "河源综合",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 843
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "浙江 I 绍兴综合",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 607
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "浙江国际",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 327
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "浙江教科",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 376
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "浙江新闻",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 388
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "浙江经济",
+    "id": "",
+    "source_group": "地方",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 424
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "CCTV-1 综合",
+    "id": "CCTV1.cn",
+    "source_group": "央视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://74.91.26.218:82/live/cctv1hd.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 2030
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "CCTV-12 社会与法",
+    "id": "CCTV12.cn",
+    "source_group": "央视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://74.91.26.218:82/live/cctv12hd.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 1535
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "CCTV新影-中学生",
+    "id": "CNDFilmMiddleSchoolChannel.cn",
+    "source_group": "央视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 261
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "之江纪录",
+    "id": "",
+    "source_group": "纪录",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 700
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "湖南卫视",
+    "id": "HunanTV.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/dWlwPTEyNy4wLjAuMSZ1aWQ9cWluZy1jbXMmbm5fdGltZXpvbmU9OCZjZG5leF9pZD1hbF9obHNfbGR2dCZ1dWlkPTliODY4NmU5ZTM2YzYwMmMmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 78
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "青海卫视",
+    "id": "QinghaiTV.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://hls-qhmh.lanzhousobey.cn/qhmh/mhds.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 599
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新疆卫视维吾尔语",
+    "id": "XinjiangTV2.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://hls.quklive.com/live/play-sh-21.quklive.com/1777511615189085.m3u8?auth_key=2092871636-a39d8614688744d0b170b856b086ba80-0-33900446b83fa0b5befeb6bedbcd51a0",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 380
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新疆卫视哈萨克语",
+    "id": "XinjiangTV3.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 692
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新疆卫视哈萨克语",
+    "id": "XinjiangTV3.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 838
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新疆卫视哈萨克语",
+    "id": "XinjiangTV3.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://st-video.xjmty.com/fs/livedit/e55abfa37af26e19/8ce9971c2177b3dd.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 6569
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "新疆卫视少儿频道",
+    "id": "XinjiangTV8.cn",
+    "source_group": "卫视",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "http://120.70.60.179:9901/tsfile/live/1002_1.m3u8?authid=0&key=txiptv&playlive=1",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 880
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
+  },
+  {
+    "name": "Zhejiang TV International",
+    "id": "ZhejiangInternationalChannel.cn",
+    "source_group": "新闻国际",
+    "origin": "iptv-org@7e810ceb735f",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8",
+    "headers": {},
+    "fresh_probe": {
+      "ok": true,
+      "level": "HLS + media segment",
+      "ms": 652
+    },
+    "frame_review_pass": true,
+    "frame_review": "visual-agent",
+    "frame_note": "agent visual inspection of tiled frames 2026-10-03"
   }
 ]

@@ -22,6 +22,7 @@ FILES = [
     "scripts/channel_layout.py", "scripts/probe.py", "scripts/review_catalog.py",
     "scripts/review_live.py", "scripts/review_assets.py", "scripts/verify-cdn.cjs",
     "scripts/cdn-diagnostic.cjs", "scripts/api_push.py",
+    "scripts/live_harvest.py", "scripts/live_review_frames.py", "scripts/live_merge.py",
     "tests/test_content_gate.py", "tests/test_health.py", "tests/__init__.py",
     "java/build.sh", "java/src/com/github/catvod/spider/ApprovedCatalogue.java",
     "java/src/com/github/catvod/spider/Init.java",
@@ -35,7 +36,9 @@ FILES = [
     "input/approved-catalog.json", "input/approved-live.json",
     "input/channel-metadata.json", "input/reviewed-titles.json",
     "input/review-candidates.json", "input/review-live.json",
+    "input/review-live-decisions.json", "input/live-allowed-hosts.json",
     "reports/content-review.json", "reports/route-registry.json",
+    "reports/live-gaps.json",
     ".gitignore", "README.md",
 ]
 

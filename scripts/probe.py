@@ -3,7 +3,10 @@ from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlsplit,urlunsplit,urlencode,parse_qsl,urljoin
 from collections import defaultdict
-OUT=Path('probe-output');OUT.mkdir(exist_ok=True)
+OUT=Path('probe-output')
+try:OUT.mkdir(exist_ok=True)
+except OSError:  # 沙箱 broker 对已存在目录可能误报（errno 不可靠）：目录确实在则忽略
+    if not OUT.is_dir():raise
 def fetch(url,timeout=9,limit=4000000,headers=None):
  t=time.monotonic()
  try:

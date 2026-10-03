@@ -9,3 +9,5 @@ java/json.jar
 .commit-msg
 .commit-expected-head
 .DS_Store
+frames/
+probe-output/

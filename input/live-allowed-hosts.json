@@ -1,0 +1,24 @@
+{
+ "hosts": [
+  "cgtn.com",
+  "cztv.com",
+  "cztvcloud.com",
+  "gztv.com",
+  "hebtv.com",
+  "hebyun.com.cn",
+  "hrbtv.net",
+  "hyrtv.cn",
+  "jlntv.cn",
+  "jstv.com",
+  "lanzhousobey.cn",
+  "lzr.com.cn",
+  "mgtv.com",
+  "nmtv.cn",
+  "quklive.com",
+  "shaoxing.com.cn",
+  "xjmty.com",
+  "zohi.tv",
+  "zxstv.com.cn"
+ ],
+ "policy": "broadcaster/verified relay suffixes only; extend only after probe+segment+visual frame review"
+}

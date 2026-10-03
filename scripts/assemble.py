@@ -29,9 +29,13 @@ def main():
  data=json.dumps(rows,ensure_ascii=False,separators=(',',':'));digest=hashlib.sha256(data.encode()).hexdigest()
  (ROOT/'java/src/com/github/catvod/spider/ApprovedCatalogue.java').write_text('package com.github.catvod.spider; public final class ApprovedCatalogue { public static final String SHA256="'+digest+'"; }\n')
  channels=defaultdict(list);seen=set()
- allowed={'cctvplus.com','cgtn.com','cztv.com','jlntv.cn','hebtv.com','gztv.com','zohi.tv','nmtv.cn','hrbtv.net'}
+ # 允许表数据驱动：probe+segment+目检帧审通过的主机才入表（live_merge.py 维护）
+ _ah=ROOT/'input/live-allowed-hosts.json'
+ allowed=set(json.loads(_ah.read_text())['hosts']) if _ah.exists() else \
+  {'cctvplus.com','cgtn.com','cztv.com','jlntv.cn','hebtv.com','gztv.com','zohi.tv','nmtv.cn','hrbtv.net'}
  aliases={'CGTN':'CGTN英语','CGTN记录':'CGTN纪录','Harbin Movie Channel':'哈尔滨影视','Zhejiang International Channel':'浙江国际','浙江教科':'浙江教科影视','浙江教育':'浙江教科影视','浙江经济':'浙江经济生活','浙江经视':'浙江经济生活','浙江民生':'浙江民生休闲','浙江休闲台':'浙江民生休闲','浙江钱江':'浙江钱江都市','浙江钱江频道':'浙江钱江都市','钱江都市':'浙江钱江都市','数码时代':'浙江数码时代','中国蓝新闻':'浙江新闻','CCTV+ 1':'CCTV+ 新闻直播1（不定时）','CCTV+ 2':'CCTV+ 新闻直播2（不定时）'}
  skip={'敦化一套','延边2','浙江留学','CGTN纪录','CGTN记录','新闻综合频道','河北电视台','CGTN法语','Chifeng Comprehensive News Chanel','China Travel','Discovering China','CGTN Global Biz'}
+ LIVE_GROUPS=['央视','卫视','地方','港澳台','新闻国际','体育','少儿','纪录']
  for e in json.loads((ROOT/'input/approved-live.json').read_text()):
   if not e.get('fresh_probe',{}).get('ok') or not e.get('frame_review_pass'):continue
   host=urlsplit(e['url']).hostname or ''
@@ -44,7 +48,7 @@ def main():
   name=aliases.get(name,name)
   if host.endswith('jlntv.cn') and not any(x in name for x in ['综合','新闻','卫视','公共']):name+='综合'
   if name.startswith('CGTN'):g='央视'
-  if g not in ['央视','卫视','地方','少儿与纪录']:continue
+  if g not in LIVE_GROUPS:continue
   st,_=POLICY.provider_state('',e['url'])
   if st=='blocked':continue  # 封禁注册表域名防线（直播线路）
   # Canonical HLS identity ignores rendition and dated auth query; a channel retains one route per stream identity.
@@ -58,15 +62,18 @@ def main():
   for e in es:
    attrs=f'group-title="{g}"';agent=e.get('headers',{}).get('User-Agent')
    if agent:attrs+=' http-user-agent="'+agent.replace('"','')+'"'
+   tid=e.get('id') or ''
+   if tid:attrs+=f' tvg-id="{tid}"'  # 真实 EPG 身份映射（iptv-org 频道数据库 id）
    lines.extend([f'#EXTINF:-1 {attrs},{name}',e['url']]);route_count+=1
    rid='wkc_r_'+__import__('hashlib').sha256(urlsplit(e['url']).netloc.lower().encode()).hexdigest()[:8]+__import__('hashlib').sha256(e['url'].encode()).hexdigest()[:8]
    route_registry.append({'route_id':rid,'channel_id':cid,'channel':name,'group':g,'url':e['url'],'headers':e.get('headers',{}),'upstream_host':urlsplit(e['url']).hostname})
  (ROOT/'reports/route-registry.json').write_text(json.dumps({'routes':route_registry,'policy':'route_id 指纹与播放 URL 分离；channel_id 对应实际频道身份；HD/SD 同频道收敛','channels':len(channels)},ensure_ascii=False,indent=2)+'\n')
  (ROOT/'live.m3u').write_text('\n'.join(lines)+'\n')
- api={'spider':base+'home.jpg','sites':[{'key':'wkc_reviewed_home','name':'WKC · 已审核片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'filterable':0,'ext':{'catalog_json':data}}], 'lives':[{'name':'WKC · 精选电视直播','type':0,'url':base+'live.m3u','playerType':1}], 'parses':[], 'flags':[], 'rules':[]}
+ api={'spider':base+'home.jpg','sites':[{'key':'wkc_reviewed_home','name':'WKC · 已审核片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'filterable':0,'ext':{'catalog_json':data}}], 'lives':[{'name':'WKC · 精选电视直播','type':0,'url':base+'live.m3u','playerType':1,'epg':'http://epg.51zmt.top:8000/api/diyp/'}], 'parses':[], 'flags':[], 'rules':[]}
  if (ROOT/'home.jpg').exists():api['spider']+=';md5;'+hashlib.md5((ROOT/'home.jpg').read_bytes()).hexdigest()
  dump(ROOT/'api.json',api)
- report={'version':pkg['version'],'policy':'Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin','reviewed_titles':len(rows),'categories':dict(Counter(v['category'] for v in rows)),'removed_providers':['玉兔','辣椒','滴滴','乐播','火速','光速'],'live_channels':len(channels),'live_routes':route_count,'live_frames_reviewed':len(json.loads((ROOT/'input/approved-live.json').read_text())),'live_groups':dict(Counter(g for g,n in channels)), 'live_policy':'Known broadcaster host suffix allowlist, successful fresh HLS/media probe and manually inspected frame required; black/no-signal/misnamed/anonymous routes excluded', 'limits':['Poster review and 4–5 sampled frames of first episode only; no full-episode/full-series certification','Remote media may change; runtime URLs do not guarantee future content','No Android device playback test or mainland ISP verification','CCTV1–17 coverage is incomplete; no anonymous relay added to fill gaps'],'original_repo_modified':False,'original_npm_modified':False}
+ _live_src=json.loads((ROOT/'input/approved-live.json').read_text())
+ report={'version':pkg['version'],'policy':'Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin','reviewed_titles':len(rows),'categories':dict(Counter(v['category'] for v in rows)),'removed_providers':['玉兔','辣椒','滴滴','乐播','火速','光速'],'live_channels':len(channels),'live_routes':route_count,'live_frames_manual':sum(1 for e in _live_src if e.get('frame_review')=='manual' or 'frame_review' not in e),'live_frames_auto':sum(1 for e in _live_src if e.get('frame_review')=='visual-agent'),'live_groups':dict(Counter(g for g,n in channels)), 'live_policy':'Broadcaster host allowlist (data-driven), successful HLS/media probe plus frame inspection (manual for fixed-review entries, agent visual inspection of tiled frames for harvested entries); black/no-signal/placeholder/misnamed/anonymous routes excluded', 'limits':['Poster review and sampled frames only; no full-episode/full-series certification','Remote media may change; runtime URLs do not guarantee future content','No Android device playback test or mainland ISP verification','Live routes: visual review covers sampled still frames, not continuous monitoring'],'original_repo_modified':False,'original_npm_modified':False}
  dump(ROOT/'reports/content-review.json',report)
  manifest={**report,'package':pkg['name'],'generated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'catalog_sha256':digest,'files':{f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['api.json','live.m3u','home.jpg'] if (ROOT/f).exists()}}
  for p in (ROOT/'posters').glob('*'):manifest['files'][str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()

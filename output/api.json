@@ -1,5 +1,5 @@
 {
-  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.1/cfg.jpg;md5;342d65cfd61e754855528357bfa627f4",
+  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.2/cfg.jpg;md5;342d65cfd61e754855528357bfa627f4",
   "hosts": [],
   "logo": "",
   "rules": [
@@ -85,7 +85,7 @@
               "vip.dytt-tv.com",
               "vip.dytt-tvs.com"
             ],
-            "reviewed_at": 1791050811,
+            "reviewed_at": 1791062356,
             "policy": "normal-film-v1"
           }
         ]
@@ -235,7 +235,7 @@
           "vip.dytt-tv.com",
           "vip.dytt-tvs.com"
         ],
-        "reviewed_at": 1791050811,
+        "reviewed_at": 1791062356,
         "policy": "normal-film-v1"
       }
     }
@@ -244,7 +244,7 @@
     {
       "name": "WKC电视直播",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.1/live.m3u",
+      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.2/live.m3u",
       "epg": "http://epg.51zmt.top:8000/api/diyp/?ch={id}&date={date}",
       "playerType": 2,
       "timeout": 15

@@ -415,8 +415,18 @@
     "reason": "no admissible route"
   },
   {
+    "channel_id": "tv_0071e048a888dcf4da5a",
+    "name": "福建公共",
+    "reason": "no admissible route"
+  },
+  {
     "channel_id": "tv_8480bf26def06d5b92dd",
     "name": "福建新闻",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_0fb00aa4cc7d7120af35",
+    "name": "福建旅游",
     "reason": "no admissible route"
   },
   {
@@ -487,6 +497,11 @@
   {
     "channel_id": "tv_8db5781c11b419b30cf3",
     "name": "1905电影网",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_6a4ba647236ed7a0b4a9",
+    "name": "1905电影网(国内)",
     "reason": "no admissible route"
   },
   {

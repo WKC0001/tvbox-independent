@@ -57,7 +57,13 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           set -euo pipefail
-          npm publish "$(node -p "require('./package.json').name + '-' + require('./package.json').version + '.tgz'")" --ignore-scripts --access public --tag next
+          NAME="$(node -p "require('./package.json').name")"
+          VERSION="$(node -p "require('./package.json').version")"
+          if npm view "$NAME@$VERSION" version >/dev/null 2>&1; then
+            echo "$NAME@$VERSION already exists on the registry; skipping npm publish so a re-run can finish verification."
+          else
+            npm publish "$NAME-$VERSION.tgz" --ignore-scripts --access public --tag next
+          fi
       - name: Verify exact registry and CDN bytes
         run: node scripts/verify-cdn.cjs
       - name: Save exact published resources

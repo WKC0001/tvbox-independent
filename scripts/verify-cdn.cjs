@@ -4,7 +4,20 @@ const path=require('path');const root=path.resolve(__dirname,'..');
 const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json')));
 const local=path.join(root,'output');const report={package:pkg.name,version:pkg.version,checks:[]};
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
-async function get(url){let last;for(let i=0;i<8;i++){try{const r=await fetch(url,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw Error('HTTP '+r.status);return Buffer.from(await r.arrayBuffer());}catch(e){last=e;if(i<7)await new Promise(r=>setTimeout(r,5000));}}throw last;}
+async function get(url){
+ const tries=20,limit=180000,started=Date.now();let last;
+ for(let i=0;i<tries;i++){
+  try{const r=await fetch(url,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw Error('HTTP '+r.status);return Buffer.from(await r.arrayBuffer());}
+  catch(e){
+   last=e;
+   if(Date.now()-started>limit)break;
+   const wait=Math.min(3000*Math.pow(1.3,i),15000);
+   console.log(`retry ${i+1}/${tries} in ${Math.round(wait/1000)}s: ${url} (${e.message})`);
+   await new Promise(r=>setTimeout(r,wait));
+  }
+ }
+ throw Error('Unreachable after retries: '+url+' ('+(last&&last.message)+')');
+}
 function tarFiles(buffer){const out={};for(let i=0;i+512<=buffer.length;){const h=buffer.subarray(i,i+512);if(h.every(b=>b===0))break;const name=h.subarray(0,100).toString().split('\0')[0],size=parseInt(h.subarray(124,136).toString().replace(/\0/g,'').trim()||'0',8);if(!Number.isFinite(size))throw Error('Bad tar size');out[name]=buffer.subarray(i+512,i+512+size);i+=512+Math.ceil(size/512)*512;}return out;}
 (async()=>{try{
  if(pkg.name!=='wkc0001-tvbox-independent')throw Error('Wrong package');

@@ -113,6 +113,8 @@ def main():
  generated_at=previous.get('generated_at') if same_version else None
  if not generated_at:generated_at=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())
  manifest={**report,'package':pkg['name'],'generated_at':generated_at,'catalog_sha256':digest,'files':{f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['api.json','live.m3u','home.jpg'] if (ROOT/f).exists()}}
- for p in (ROOT/'posters').glob('*'):manifest['files'][str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()
+ for p in sorted((ROOT/'posters').glob('*')):manifest['files'][str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()
+ # Preserve the published JSON ordering when the snapshot content is unchanged.
+ if same_version and manifest==previous:manifest=previous
  dump(ROOT/'manifest.json',manifest);print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

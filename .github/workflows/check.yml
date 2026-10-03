@@ -1,0 +1,38 @@
+name: check-repository-state
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: independent-repository-check
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify every pinned build tool is still obtainable and unchanged
+        run: python scripts/prepare_tools.py
+      - name: Run the content-gate, registry and health test suites
+        run: |
+          set -euo pipefail
+          python -m unittest discover -s tests/multisite -v
+          python -m unittest tests.test_health -v
+      - name: Verify published bytes for an already released version
+        run: |
+          set -euo pipefail
+          VERSION="$(node -p "require('./package.json').version")"
+          if npm view "wkc0001-tvbox-independent@$VERSION" version >/dev/null 2>&1; then
+            node scripts/verify-cdn.cjs
+          else
+            echo "$VERSION is an unpublished candidate; skipping the published-bytes check."
+          fi

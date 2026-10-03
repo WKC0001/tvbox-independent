@@ -39,15 +39,22 @@ jobs:
       - name: Update network-specific health before ranking
         run: python -m checker.audit --network github --mode '${{ steps.mode.outputs.value }}' --workers 20
       - name: Save audit evidence without deleting channel identities
+        id: evidence
         if: always()
         run: |
           git config user.name maintenance-bot
           git config user.email actions@users.noreply.github.com
           git add state/provider-audit.json state/multisite-health.json reports/audit-github.json
-          git diff --cached --quiet || git commit -m 'chore: refresh independent health evidence [skip ci]'
-          git push
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Health evidence is unchanged; no new candidate is warranted."
+          else
+            git commit -m 'chore: refresh independent health evidence [skip ci]'
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
       - name: Prepare a fresh fixed-version candidate after full checks
-        if: success() && steps.mode.outputs.value == 'full'
+        if: success() && steps.mode.outputs.value == 'full' && steps.evidence.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

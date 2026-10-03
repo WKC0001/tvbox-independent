@@ -3,8 +3,8 @@
     "id": "tv_6dfa67ba53cc1cafa4f3",
     "name": "CCTV-1",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV1",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-1.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -22,14 +22,15 @@
       "r_19f8e5b971d296a79d72"
     ],
     "directory_id": "CCTV1.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_652495b046ace45121d0",
     "name": "CCTV-3",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV3",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-3.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -42,14 +43,15 @@
       "r_7dfabe31de21c487d614"
     ],
     "directory_id": "CCTV3.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_09768f60670c551cd24f",
     "name": "CCTV-2",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV2",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-2.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -63,14 +65,15 @@
       "r_9e9ac96680b83d0cfdd5"
     ],
     "directory_id": "CCTV2.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_77df6ef0ec0ddad4d4bc",
     "name": "CCTV-4",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV4",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-4.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -79,14 +82,15 @@
     "routes": [
       "r_fbe4600f2a1ff54605b4",
       "r_b318b28d7b1771c61cb3"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_3dd45b63d5a7e2020344",
     "name": "CCTV-5",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV5",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-5.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -97,14 +101,15 @@
       "r_1bc7cafc3304fdef0e5b"
     ],
     "directory_id": "CCTV5.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_7ae30e99c9d85543b529",
     "name": "CCTV-5+",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV5+",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-5+.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -116,14 +121,15 @@
       "r_b1c025ca902c941a1c63"
     ],
     "directory_id": "CCTV5Plus.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_2399c831ebd4e028caf7",
     "name": "CCTV-6",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV6",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-6.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -138,14 +144,15 @@
       "r_d997803505964d067828"
     ],
     "directory_id": "CCTV6.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_b282d415b843c1853d48",
     "name": "CCTV-7",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV7",
+    "epg_source": "diyp:51zmt",
     "logo": "https://i.imgur.com/CKcPMQC.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -158,14 +165,15 @@
       "r_5d2e5348a1d91910391d"
     ],
     "directory_id": "CCTV7.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_372962d0edf69fcf7614",
     "name": "CCTV-8",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV8",
+    "epg_source": "diyp:51zmt",
     "logo": "https://i.imgur.com/GyHaZ8X.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -177,14 +185,15 @@
       "r_397291373c0b8e7d5dda"
     ],
     "directory_id": "CCTV8.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_57b898badd23b5d7a4b0",
     "name": "CCTV-9",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV9",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-9.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -198,14 +207,15 @@
       "r_a3634188e0fce60475ac"
     ],
     "directory_id": "CCTV9.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_084f5878ba947013e5b0",
     "name": "CCTV-10",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV10",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-10.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -218,14 +228,15 @@
       "r_d897727c5c7f135005fe"
     ],
     "directory_id": "CCTV10.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_aed7fb8a09fb4b0f84e5",
     "name": "CCTV-11",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV11",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-11.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -238,14 +249,15 @@
       "r_30792b90b1f189629fcb"
     ],
     "directory_id": "CCTV11.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_18411345b40114fba6f4",
     "name": "CCTV-12",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV12",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-12.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -259,14 +271,15 @@
       "r_24b423e253cbc1d02316"
     ],
     "directory_id": "CCTV12.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_de86a5aa9739f4edfad0",
     "name": "CCTV-13",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV13",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-13.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -282,14 +295,15 @@
       "r_16a1b1e3fda4b16d39af"
     ],
     "directory_id": "CCTV13.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_12f316801b5268501ee1",
     "name": "CCTV-14",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV14",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-14.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -302,14 +316,15 @@
       "r_5e1e7fde7364e2f07192"
     ],
     "directory_id": "CCTV14.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_998b2d3ebaf296b87b23",
     "name": "CCTV-15",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV15",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-15.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -323,14 +338,15 @@
       "r_fa0b6940138e70502854"
     ],
     "directory_id": "CCTV15.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_3f28dd743ca5fdd47267",
     "name": "CCTV-16",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV16",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-16.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -345,14 +361,15 @@
       "r_1b868db8210e73992165"
     ],
     "directory_id": "CCTV16.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_cef3218bd08dfcab25ff",
     "name": "CCTV-17",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV17",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CCTV-17.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -365,7 +382,8 @@
       "r_d3230c6b5d1f4cf056a9"
     ],
     "directory_id": "CCTV17.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_e2f2be0d1606aacb3519",
@@ -427,8 +445,8 @@
     "id": "tv_fe2d9c56ab1f4da38764",
     "name": "央视台球",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "央视台球",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/央视台球.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -441,14 +459,15 @@
       "r_83f9b6eaa2a277eda9b2"
     ],
     "directory_id": "CCTVBilliards.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_68556e7af9679e0b90e6",
     "name": "风云音乐",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "风云音乐",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/风云音乐.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -461,14 +480,15 @@
       "r_9c118d44d7c96c1a0f65"
     ],
     "directory_id": "CCTVStormMusic.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_34165e336b569b59f889",
     "name": "第一剧场",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "第一剧场",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/第一剧场.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -482,14 +502,15 @@
       "r_c9e01d18720bedad54b4"
     ],
     "directory_id": "CCTVTheFirstTheater.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_38c6bbf91f4896020194",
     "name": "风云剧场",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "风云剧场",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/风云剧场.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -502,14 +523,15 @@
       "r_8b1820513b66340e194c"
     ],
     "directory_id": "CCTVStormTheater.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_ec0f331cbe1e3377e887",
     "name": "怀旧剧场",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "怀旧剧场",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/怀旧剧场.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -523,14 +545,15 @@
       "r_765cc611bf337cd558ab"
     ],
     "directory_id": "CCTVNostalgiaTheater.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_a0cb9138110d8bdf7f06",
     "name": "女性时尚",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "女性时尚",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/女性时尚.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -541,14 +564,15 @@
       "r_0d6b2a9f342e7c26fc5c",
       "r_f0e40da88fc9515ff347",
       "r_88b6364e0a3b7fbf26a0"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_49631a9753f3f64b3d62",
     "name": "高尔夫网球",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "高尔夫网球",
+    "epg_source": "diyp:51zmt",
     "logo": "https://i.imgur.com/iqJJTmH.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -561,14 +585,15 @@
       "r_5fba10c1b1b0e3f1a975"
     ],
     "directory_id": "CCTVGolfTennis.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_00a780e9926a4d051e1d",
     "name": "风云足球",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "风云足球",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/风云足球.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -581,14 +606,15 @@
       "r_1f578fe6eef020ca9096"
     ],
     "directory_id": "CCTVStormFootball.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_2440c745d0f5a23bc687",
     "name": "世界地理",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "世界地理",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/世界地理.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -598,14 +624,15 @@
     "routes": [
       "r_b09b25e92e138fc57ad9",
       "r_b488dfd6927613b4752d"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_a1c4aeb463a4cc012495",
     "name": "兵器科技",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "兵器科技",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/兵器科技.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -618,7 +645,8 @@
       "r_0f5a62561c5516a3eb42"
     ],
     "directory_id": "CCTVWeaponTechnology.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_b845f708c3476d8b3c66",
@@ -669,8 +697,8 @@
     "id": "tv_c21f3f6b282aeedbf768",
     "name": "CCTV-4K",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV4K",
+    "epg_source": "diyp:51zmt",
     "logo": "https://i.imgur.com/fxusYlX.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -681,14 +709,15 @@
       "r_7f225cb7bad9b2bb6352"
     ],
     "directory_id": "CCTV4K.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_920edcadee1e7e9629a7",
     "name": "CCTV-8K",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CCTV8K",
+    "epg_source": "diyp:51zmt",
     "logo": "https://i.imgur.com/fxVPMJF.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -699,7 +728,8 @@
       "r_0b3cacdc0dab1d61dce1"
     ],
     "directory_id": "CCTV8K.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_425ea4c4e86e2309a7d9",
@@ -756,8 +786,8 @@
     "id": "tv_e334d1d17b271cf4562a",
     "name": "广东卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广东卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/广东卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -771,7 +801,8 @@
       "r_de333e1a19f8eac1206c"
     ],
     "directory_id": "GuangdongSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_da4eac4c9099968ebb1f",
@@ -792,8 +823,8 @@
     "id": "tv_9d6534967755d2e9b91d",
     "name": "浙江卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "浙江卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/浙江卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -806,14 +837,15 @@
       "r_76f01955a29433d387d3"
     ],
     "directory_id": "ZhejiangSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_9a9a664b8fa0479e67bd",
     "name": "湖南卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "湖南卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/湖南卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -827,14 +859,15 @@
       "r_09158fe59db2f83b680d"
     ],
     "directory_id": "HunanTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_e1712f78f36d0842bbf0",
     "name": "北京卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "北京卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/北京卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -846,14 +879,15 @@
       "r_42fd558d906670451164"
     ],
     "directory_id": "BeijingSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_01580dda5929a3105a9b",
     "name": "湖北卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "湖北卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/湖北卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -863,14 +897,15 @@
       "r_745624a2b782586e6494",
       "r_961330789198a15a6f3a",
       "r_b95dd3c14f37b957566a"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c6115aadba0ca4b684d2",
     "name": "黑龙江卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "黑龙江卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/黑龙江卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -880,14 +915,15 @@
       "r_12f782ae425df5cdc582",
       "r_b305094b6be6edfafb63",
       "r_68ed20f3864656144b53"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_d8c9e1a1b791a9e0a4d2",
     "name": "安徽卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "安徽卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/安徽卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -899,14 +935,15 @@
       "r_c4d6f5757b2288a3d15e",
       "r_952f1c130306aae69d4b",
       "r_778f13de415fa4844639"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_deaffc4c8303764ba447",
     "name": "重庆卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "重庆卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/重庆卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -917,14 +954,15 @@
       "r_c9496475727714e7a3f8"
     ],
     "directory_id": "ChongqingSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_b46ca0d8931641a2910e",
     "name": "东方卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "东方卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/东方卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -935,14 +973,15 @@
       "r_5f671807fafb070edc0c"
     ],
     "directory_id": "DragonTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_9554c8902995fbc09b59",
     "name": "东南卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "东南卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/东南卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -952,14 +991,15 @@
       "r_16eab13af69d27f329b9",
       "r_18a02723fa86211175fa",
       "r_52836c06c281fc9bdcc3"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c992d84e1a44f5b8f09b",
     "name": "甘肃卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "甘肃卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/甘肃卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -971,14 +1011,15 @@
       "r_4c1abc64ac79f73cd905"
     ],
     "directory_id": "GansuSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_9ead5a3254a59e007c02",
     "name": "广西卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广西卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/广西卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -988,14 +1029,15 @@
       "r_6a43e4c8ea2e3d95da20",
       "r_470e496b93cc30f18059",
       "r_fcc5cc4bfee590f11619"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_09501ba7a05816f51e7c",
     "name": "贵州卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "贵州卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/贵州卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1005,7 +1047,8 @@
       "r_1af3166b87b3fcae8135",
       "r_0d5846afb4699e13a36a",
       "r_a88548d460dfa7aebc7a"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_6443bf9e0d35700032d3",
@@ -1026,8 +1069,8 @@
     "id": "tv_a06c54d4e53311e5d186",
     "name": "河北卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河北卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/河北卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1042,14 +1085,15 @@
       "r_987a165420529c6a6e4b"
     ],
     "directory_id": "HebeiTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_8fe989f23de85de94a9b",
     "name": "河南卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河南卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/河南卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1059,14 +1103,15 @@
       "r_597f0ad68f59e8bafbca",
       "r_c634fbc6ab2be20d1169",
       "r_1870ebf26efe6522a0b3"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_d74b7ab1c9806257e39c",
     "name": "吉林卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "吉林卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/吉林卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1078,14 +1123,15 @@
       "r_8aed3ffe96e511e7c271"
     ],
     "directory_id": "JilinSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_4558fcda19c1a99e8636",
     "name": "江苏卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "江苏卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/江苏卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1097,14 +1143,15 @@
       "r_e13e0d344a2ac3e994da"
     ],
     "directory_id": "JiangsuSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_def3925f4f88eeed8243",
     "name": "江西卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "江西卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/江西卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1114,14 +1161,15 @@
       "r_45f31c544822101795f8",
       "r_0805c61bb2dec6da2cd8",
       "r_cdf1fe2cd6c4023a53e6"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c542d7281261bce086f0",
     "name": "辽宁卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/辽宁卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1131,14 +1179,15 @@
       "r_fe9847e8211c9bcbdbe0",
       "r_c59a00b1a988a0e98751",
       "r_1b052a2de6e9daf82ab9"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_9e9cf40f5170fa20fcd5",
     "name": "内蒙古卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "内蒙古卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/内蒙古卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1153,14 +1202,15 @@
       "r_4910485a05d88d46a265"
     ],
     "directory_id": "NeiMonggolTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c58d5aad3ed9b3937d54",
     "name": "宁夏卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "宁夏卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/宁夏卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1172,14 +1222,15 @@
       "r_a6d76e678f7ca1255339"
     ],
     "directory_id": "NingxiaSatelliteChannel.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_5b39cf25d99e1cdbda75",
     "name": "青海卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "青海卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/青海卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1190,14 +1241,15 @@
       "r_cee4b8b760015c8a008f",
       "r_f34a8f3583b99c2c546d",
       "r_eeeb0610cbae21c2fd98"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_463fac588ee24708254d",
     "name": "山东卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "山东卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/山东卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1209,14 +1261,15 @@
       "r_8a54bed178f274e560fe"
     ],
     "directory_id": "ShandongSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_9077713250bce5593cbf",
     "name": "山西卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "山西卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/山西卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1226,14 +1279,15 @@
       "r_32939f9302141b2e142b",
       "r_7d4661fa83ee9dab7d9c",
       "r_6f484987190229d27628"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_fceb78f1770f22d7a626",
     "name": "陕西卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "陕西卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/陕西卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1245,14 +1299,15 @@
       "r_6284b5699217e95c9fee"
     ],
     "directory_id": "ShaanxiSatelitalTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_a3e5aaefb19b065b3787",
     "name": "四川卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "四川卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/四川卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1262,14 +1317,15 @@
       "r_205731fe1568c6834e60",
       "r_f45b6a1eb7a6bb80ec28",
       "r_9b55371424d86e5ee9b7"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_032b961037ba7e954470",
     "name": "深圳卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "深圳卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/深圳卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1281,14 +1337,15 @@
       "r_dd5ba1351b7589053f57"
     ],
     "directory_id": "ShenzhenSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_d98cddf6388a5d1d6821",
     "name": "三沙卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "三沙卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/三沙卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1298,14 +1355,15 @@
       "r_acd51595a1c2c9d24a48",
       "r_58874670abc39e12c625",
       "r_47680d2e6385b52cb082"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_334d194db5f810bbca9c",
     "name": "天津卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "天津卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/天津卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1315,14 +1373,15 @@
       "r_4e341bdca65ce67a24c3",
       "r_0f0e0a5c7ee51ab20b38",
       "r_3bfa4b2a2905fbac126e"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c541dfd4e1a56bb8ba0d",
     "name": "西藏卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "西藏卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/西藏卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1332,14 +1391,15 @@
       "r_3ca42398b6897910a7b8",
       "r_9c4f1f87b4b03fe66ae9",
       "r_44aedafd14da2b967a19"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_128f1f24b204eeef8cef",
     "name": "新疆卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "新疆卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/新疆卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1349,14 +1409,15 @@
       "r_14d602feb550c39c49ee",
       "r_f422da6211d57d0ad48f",
       "r_137111a3624351e8cf54"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_93a23960616caee230d2",
     "name": "云南卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "云南卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/云南卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1368,14 +1429,15 @@
       "r_0b1f599b5908989d2952"
     ],
     "directory_id": "YunnanSatelliteTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_28bae6690f390e385646",
     "name": "大湾区卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "大湾区卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/大湾区卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1387,14 +1449,15 @@
       "r_ec03decbc93e568183c2",
       "r_ce54db488642b16a5f1b",
       "r_f4b2a753a2e206664892"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_44a2db5024fac69877be",
     "name": "厦门卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "厦门卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/厦门卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1404,14 +1467,15 @@
       "r_6c79cc24cf02e71be521",
       "r_2cda082346e6cb28d82b",
       "r_e07f9e2e83326802cc59"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_cba82f1247b39516f7a9",
     "name": "农林卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "农林卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/陕西农林卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1422,14 +1486,15 @@
     "routes": [
       "r_8a5570cf43a03be3c780",
       "r_45e9a689fa8ae979eeeb"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c7a1bc43187300722013",
     "name": "海峡卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "海峡卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/福建海峡卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1443,14 +1508,15 @@
       "r_e136ab2140cca624955b"
     ],
     "directory_id": "FujianStraitsTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_47fa500ac88bd669e63a",
     "name": "延边卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "延边卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/logo/raw/master/mylogo/延边卫视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1460,14 +1526,15 @@
       "r_65dcbf96f4bf8de73daf",
       "r_37888db11fbcc491ca96",
       "r_fca01cc2d659ddf4e6cb"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_10cda9ae47a49b035e31",
     "name": "凤凰中文",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "凤凰中文",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/凤凰卫视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1482,14 +1549,15 @@
       "r_5047b8d45fbebec24a25"
     ],
     "directory_id": "PhoenixChineseChannel.hk",
-    "country": "HK"
+    "country": "HK",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_d3d2c2222efc68de4ae1",
     "name": "人间卫视",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "人间卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/TVlogo/raw/main/img/BLTV.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1498,7 +1566,8 @@
     "routes": [
       "r_9a351c9b41f0ff3cc55e",
       "r_486174d5fbd7b86f9106"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_5b4087163dd0558ca070",
@@ -1538,8 +1607,8 @@
     "id": "tv_ffd59568c1bca574bb1e",
     "name": "CHC动作电影",
     "group": "电影剧场",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CHC动作电影",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/CHC动作电影.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1551,7 +1620,8 @@
       "r_4050ed2c64de90411c04"
     ],
     "directory_id": "CHCAction.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_a051d1fe7de6a73d8dd3",
@@ -1587,8 +1657,8 @@
     "id": "tv_82b6987703fc8cd8ba21",
     "name": "天映经典",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "天映经典",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/天映经典.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1596,7 +1666,8 @@
     ],
     "routes": [
       "r_30f7b45c8785f033a5b3"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_de84b7dda37ec476ce61",
@@ -1634,8 +1705,8 @@
     "id": "tv_0d28abca670ceaca8bff",
     "name": "哈尔滨影视",
     "group": "地方·黑龙江",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "哈尔滨影视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/哈尔滨影视.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1647,7 +1718,8 @@
       "r_c70a308222054d3e15d7"
     ],
     "directory_id": "HarbinMovieChannel.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_723a9a653f38f9d7a44b",
@@ -1683,8 +1755,8 @@
     "id": "tv_0ba8c9a7c769856bc780",
     "name": "广东体育",
     "group": "体育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广东体育",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/广东体育.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1694,14 +1766,15 @@
       "r_5dd7a88fb984cbc1c646",
       "r_fe89d5043bd964eda1b6",
       "r_789a09a9728c2964bbfa"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_7da3af94c1e8f5be4358",
     "name": "天津体育",
     "group": "体育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "天津体育",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/天津体育.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1710,7 +1783,8 @@
     "routes": [
       "r_93dcaa6c2b4b16c2a5c5",
       "r_a3be980f1748e1a25387"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_d014626368f60b0754e6",
@@ -1746,8 +1820,8 @@
     "id": "tv_2eefa36d25fa899ae5aa",
     "name": "天元围棋",
     "group": "体育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "天元围棋",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/天元围棋.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1755,7 +1829,8 @@
     ],
     "routes": [
       "r_036abaf813448e3c670a"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_c4d7d89b92b8b383f100",
@@ -1799,8 +1874,8 @@
     "id": "tv_247beca7b23a365c8712",
     "name": "翡翠台",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "翡翠台",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/翡翠台.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1813,14 +1888,15 @@
       "r_37b58ab04af49ed3d52e"
     ],
     "directory_id": "Jade.hk",
-    "country": "HK"
+    "country": "HK",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_6df4bcb0bf16b5ec0f48",
     "name": "明珠台",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "明珠台",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/明珠台.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1833,14 +1909,15 @@
       "r_a46f4978ecfe16332e27"
     ],
     "directory_id": "Pearl.hk",
-    "country": "HK"
+    "country": "HK",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_213d4c27ad9d8629556f",
     "name": "凤凰资讯",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "凤凰资讯",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/logo/raw/master/mylogo/凤凰资讯台.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1853,7 +1930,8 @@
       "r_3a690695aa7a5d705817"
     ],
     "directory_id": "PhoenixInfoNewsChannel.hk",
-    "country": "HK"
+    "country": "HK",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_dec589903fce0407a506",
@@ -1893,8 +1971,8 @@
     "id": "tv_810fdf181a02214532be",
     "name": "CGTN西语",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CGTN西语",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/CGTN西语.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1903,14 +1981,15 @@
     "routes": [
       "r_7fc48dbf80205879fd2f",
       "r_cf08d8047ad9e4808e7a"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_034705cd4ea173640078",
     "name": "CGTN法语",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CGTN法语",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/CGTN法语.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1919,14 +1998,15 @@
     "routes": [
       "r_7fc48dbf80205879fd2f",
       "r_0719f6b2da12a9ab317e"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_25d4aa864f3c7bcf9200",
     "name": "CGTN",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CGTN",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/CGTN.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -1940,14 +2020,15 @@
       "r_189c74acb8a39ff8d490"
     ],
     "directory_id": "CGTN.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_6211d7df2f0f6beb27a7",
     "name": "CGTN阿语",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CGTN阿语",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/CGTN阿语.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1956,7 +2037,8 @@
     "routes": [
       "r_8c6f0bd0447605d21c06",
       "r_7fc48dbf80205879fd2f"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_0d29bf51e4a041e6ffac",
@@ -1981,8 +2063,8 @@
     "id": "tv_61c5217afa0c987fc460",
     "name": "CGTN俄语",
     "group": "央视及教育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "CGTN俄语",
+    "epg_source": "diyp:51zmt",
     "logo": "",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -1990,7 +2072,8 @@
     ],
     "routes": [
       "r_57985972635e60ff17e0"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_e018870441ee660bf6bb",
@@ -2078,8 +2161,8 @@
     "id": "tv_156adc15dd2d5abe16c5",
     "name": "台视新闻",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "台视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/台视新闻.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2087,14 +2170,15 @@
     ],
     "routes": [
       "r_e68c0956b0de7863888e"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_894ff1a51f6ac01d6294",
     "name": "三立戏剧",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "三立戏剧",
+    "epg_source": "diyp:51zmt",
     "logo": "",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2102,7 +2186,8 @@
     ],
     "routes": [
       "r_c294e77d52e52b05218a"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_68ee3c9ef8d1ba3d37c1",
@@ -2123,8 +2208,8 @@
     "id": "tv_1e897fa879776dd25cad",
     "name": "纬来精采",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "纬来精采",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/epglogo/raw/master/gangaotai/Weilai7.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2132,14 +2217,15 @@
     ],
     "routes": [
       "r_a660714b8622b0e28ba3"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_d3211a2ecdf7bd8f0208",
     "name": "TVBS新闻台",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "TVBS新闻台",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/TVlogo/raw/main/img/TVBS1.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2147,7 +2233,8 @@
     ],
     "routes": [
       "r_14d96fb8477695cf2a3f"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_a7a84eab7e4346745f33",
@@ -2168,8 +2255,8 @@
     "id": "tv_a3327caf3d736f011000",
     "name": "八大戏剧台",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "八大戏剧台",
+    "epg_source": "diyp:51zmt",
     "logo": "https://epg.pw/media/images/channel/2023/07/20/large/20230720155115252575_13.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2177,7 +2264,8 @@
     ],
     "routes": [
       "r_65c2eb739d6f44cecaf5"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_aff7beb49f4424992615",
@@ -2280,8 +2368,8 @@
     "id": "tv_8606195b74edea7e99d2",
     "name": "大立电视台",
     "group": "其他电视·待核验",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "大立电视台",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/TVlogo/raw/main/img/dalitv.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2289,7 +2377,8 @@
     ],
     "routes": [
       "r_9d4368d2993196c63314"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_af68d3ee465501c2bd71",
@@ -2415,8 +2504,8 @@
     "id": "tv_e518ad67c45c81532645",
     "name": "Trace Sports",
     "group": "国际",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "TraceSports",
+    "epg_source": "diyp:51zmt",
     "logo": "http://epg.51zmt.top:8000/tb1/gt/TRACESportStars.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2424,7 +2513,8 @@
     ],
     "routes": [
       "r_81a62d25c60cbd35731d"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_cd36d3a19767f5afdd59",
@@ -2597,8 +2687,8 @@
     "id": "tv_7fe466f8448aa5cdcc1e",
     "name": "广东民生",
     "group": "地方·广东",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广东民生",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/广东民生.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2606,14 +2696,15 @@
     ],
     "routes": [
       "r_1dfa4b9ddc3e4b4c1a5e"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_85eff42ca9c3bb058074",
     "name": "浙江民生休闲",
     "group": "地方·浙江",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "浙江民生休闲",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/浙江民生休闲.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2623,7 +2714,8 @@
     "routes": [
       "r_33f8cc3767ba5d55305b",
       "r_4f921c3ab2690dc64358"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_989e2441feaf45d8fd5f",
@@ -2736,14 +2828,15 @@
     "id": "tv_20814f7e5d49110e94d9",
     "name": "山东生活",
     "group": "地方·山东",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "山东生活",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/山东生活.png",
     "identity_status": "television-name-with-audio-route-needs-replacement",
     "aliases": [
       "山东生活"
     ],
-    "routes": []
+    "routes": [],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_220078d86d51261048b8",
@@ -2764,8 +2857,8 @@
     "id": "tv_1f87feeacbef63263276",
     "name": "哈尔滨新闻综合",
     "group": "地方·黑龙江",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "哈尔滨新闻综合",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/哈尔滨新闻综合.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -2777,14 +2870,15 @@
       "r_c8216a0789a4aef8cee4"
     ],
     "directory_id": "HarbinComprehensiveNewsChannel.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_6178e21b7dcd84b187d6",
     "name": "快乐垂钓",
     "group": "其他电视·待核验",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "快乐垂钓",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/快乐垂钓.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2792,7 +2886,8 @@
     ],
     "routes": [
       "r_c542c6475d03ea6d5775"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_e2ecdcd9ae0d3b7bbef5",
@@ -2813,8 +2908,8 @@
     "id": "tv_088565e0b8a0f7c8d486",
     "name": "哈尔滨生活",
     "group": "地方·黑龙江",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "哈尔滨生活",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/哈尔滨生活.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2822,7 +2917,8 @@
     ],
     "routes": [
       "r_df2b6c177b9eae33d9e6"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_6a9cc3c6ec75be20d88e",
@@ -2919,8 +3015,8 @@
     "id": "tv_1be6f26584eae7fb4a5f",
     "name": "广州新闻",
     "group": "地方·广东",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广州新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://tb.zbds.top/logo/广州新闻.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -2928,7 +3024,8 @@
     ],
     "routes": [
       "r_8e7fabde22dd78af5649"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_f9c9598cb88fdd829f3b",
@@ -3611,8 +3708,8 @@
     "id": "tv_a8785506b9cec2d5eefd",
     "name": "广东新闻",
     "group": "地方·广东",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广东新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/广东新闻.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -3620,7 +3717,8 @@
     ],
     "routes": [
       "r_03c8e1bbde6161174d6b"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_8d69575cbfee1f671f62",
@@ -3711,8 +3809,8 @@
     "id": "tv_dc51a97e03b4eac19d8d",
     "name": "浙江少儿",
     "group": "少儿动漫",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "浙江少儿",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/TVlogo/raw/main/img/Zhejiang6.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -3720,7 +3818,8 @@
     ],
     "routes": [
       "r_79d5672c0e01460c1faf"
-    ]
+    ],
+    "epg_checked_at": 1791058591
   },
   {
     "id": "tv_c9d25b1c4d55c06120d1",
@@ -3836,8 +3935,8 @@
     "id": "tv_fe4bb7a046f53254d464",
     "name": "浙江公共新闻",
     "group": "地方·浙江",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "浙江公共新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/浙江公共新闻.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -3845,7 +3944,8 @@
     ],
     "routes": [
       "r_8acdb1e10ad673c5dd13"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_311a80cad13d09e13747",
@@ -4300,8 +4400,8 @@
     "id": "tv_7efa3049f6d2dec2dc1d",
     "name": "第一财经",
     "group": "地方·上海",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "第一财经",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/上海第一财经.png",
     "identity_status": "television-name-with-audio-route-needs-replacement",
     "aliases": [
@@ -4310,14 +4410,15 @@
     ],
     "routes": [
       "r_b470901a96b06e25b7ba"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_43bcdf9ae8b5d9c64a2f",
     "name": "东方影视",
     "group": "地方·上海",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "东方影视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/东方影视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4325,7 +4426,8 @@
     ],
     "routes": [
       "r_8a3c08e97deda24baec4"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_b42f503488a53da9966a",
@@ -4406,8 +4508,8 @@
     "id": "tv_36c9a6816245f836d378",
     "name": "欢笑剧场",
     "group": "电影剧场",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "欢笑剧场",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/欢笑剧场.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -4417,7 +4519,8 @@
       "r_1472e34785c16ec275bd"
     ],
     "directory_id": "LaughterTheater.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_3c7f5724e8309b7513f9",
@@ -4454,8 +4557,8 @@
     "id": "tv_90f4c2ccd33174adc35e",
     "name": "都市剧场",
     "group": "电影剧场",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "都市剧场",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/都市剧场.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -4465,7 +4568,8 @@
       "r_969b6c0485ff1b05ca4f"
     ],
     "directory_id": "CityTheaterChannel.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_8afd7bc08ce745be9c74",
@@ -4486,8 +4590,8 @@
     "id": "tv_7dc469fcc2e760c52fe8",
     "name": "重庆新闻",
     "group": "地方·重庆",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "重庆新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/重庆新闻.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4495,7 +4599,8 @@
     ],
     "routes": [
       "r_10568d30b4a05d9acb4a"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_86e998d392de0b0fde1f",
@@ -4531,8 +4636,8 @@
     "id": "tv_57df145fa094cf43f89d",
     "name": "南京教科",
     "group": "地方·江苏",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "南京教科",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/南京教科.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4540,14 +4645,15 @@
     ],
     "routes": [
       "r_0d2d536b991665fd8d8e"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_4ec06b59bbb6bca9f6f4",
     "name": "南京新闻综合",
     "group": "地方·江苏",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "南京新闻综合",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/南京新闻综合.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4555,7 +4661,8 @@
     ],
     "routes": [
       "r_7bf1e4ff25554b94feb3"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_378d877c700ad0bd20ec",
@@ -4761,8 +4868,8 @@
     "id": "tv_466e5e782b025ca4f540",
     "name": "辽宁北方",
     "group": "地方·辽宁",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁北方",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/辽宁北方.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4770,7 +4877,8 @@
     ],
     "routes": [
       "r_bb73746e7e45a245e27c"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_5dc487e0509970dbe9f3",
@@ -4819,8 +4927,8 @@
     "id": "tv_bbbdaa9d303f2500d958",
     "name": "辽宁生活",
     "group": "地方·辽宁",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁生活",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/辽宁生活.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4828,14 +4936,15 @@
     ],
     "routes": [
       "r_40b7a5f3622064e48120"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_21874d00b671d68dee8d",
     "name": "辽宁经济",
     "group": "地方·辽宁",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁经济",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/辽宁经济.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4843,14 +4952,15 @@
     ],
     "routes": [
       "r_db2daa2a2187761f352d"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_2510de88559510f21b72",
     "name": "辽宁都市",
     "group": "地方·辽宁",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁都市",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/辽宁都市.png",
     "identity_status": "television-name-with-audio-route-needs-replacement",
     "aliases": [
@@ -4858,14 +4968,15 @@
     ],
     "routes": [
       "r_a5b58ff76d82f519f182"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_f2afc66f849cf026b61c",
     "name": "辽宁影视剧",
     "group": "地方·辽宁",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁影视剧",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/辽宁影视剧.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4873,7 +4984,8 @@
     ],
     "routes": [
       "r_4876303b532e39e4b80c"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_44d5c681abe126adc908",
@@ -4909,8 +5021,8 @@
     "id": "tv_6ea20b2d9a6ff560ba84",
     "name": "湖南电影",
     "group": "地方·湖南",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "湖南电影",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/湖南电影.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4918,7 +5030,8 @@
     ],
     "routes": [
       "r_ae201e4dffdd2d876aed"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_eca827ef23f0af0f4580",
@@ -4967,8 +5080,8 @@
     "id": "tv_fdca5242205377d01dbb",
     "name": "广西新闻",
     "group": "地方·广西",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "广西新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/广西新闻.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4978,14 +5091,15 @@
       "r_aca548c0e1857f765a21",
       "r_811953f4c933e1ae39b5",
       "r_9b6f848dde0ee150408e"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_5cc9766892f0dc4fb20a",
     "name": "武汉文体",
     "group": "地方·湖北",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "武汉文体",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/武汉文体.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -4993,7 +5107,8 @@
     ],
     "routes": [
       "r_2caa65a64e9cf1e27c5b"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_5a7c024a0dd937b4b0fe",
@@ -5356,14 +5471,15 @@
     "id": "tv_8480bf26def06d5b92dd",
     "name": "福建新闻",
     "group": "地方·福建",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "福建新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/福建新闻.png",
     "identity_status": "television-name-with-audio-route-needs-replacement",
     "aliases": [
       "福建新闻"
     ],
-    "routes": []
+    "routes": [],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_0071e048a888dcf4da5a",
@@ -5384,8 +5500,8 @@
     "id": "tv_0fb00aa4cc7d7120af35",
     "name": "福建旅游",
     "group": "地方·福建",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "福建旅游",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/福建旅游.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5393,7 +5509,8 @@
     ],
     "routes": [
       "r_47b7e2d895ebb29370f0"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_8ae5a1c175456f03ae83",
@@ -5427,21 +5544,22 @@
     "id": "tv_c601a400d2f7136d1f7b",
     "name": "海南新闻",
     "group": "地方·海南",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "海南新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/海南新闻.png",
     "identity_status": "television-name-with-audio-route-needs-replacement",
     "aliases": [
       "海南新闻"
     ],
-    "routes": []
+    "routes": [],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_43c5ca4f3dd610da5fec",
     "name": "梨园",
     "group": "文化生活",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "梨园",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/梨园.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5449,7 +5567,8 @@
     ],
     "routes": [
       "r_2bba44f7904adc76200d"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_bd0ac5ee6d720a8bf942",
@@ -5470,8 +5589,8 @@
     "id": "tv_98297716ce7fd218b70f",
     "name": "福州生活",
     "group": "地方·福建",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "福州生活",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/福州生活.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5479,14 +5598,15 @@
     ],
     "routes": [
       "r_5dcec2cc02b95c73a5fb"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_be41c6ededfe914eb706",
     "name": "河南都市",
     "group": "地方·河南",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河南都市",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/河南都市.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5494,7 +5614,8 @@
     ],
     "routes": [
       "r_201cebb81ac77b8dbc9b"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_6476c31ba8c8f33fe4eb",
@@ -5575,8 +5696,8 @@
     "id": "tv_2dcd2fa671144a7a4aa6",
     "name": "河南民生",
     "group": "地方·河南",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河南民生",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/河南民生.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5584,7 +5705,8 @@
     ],
     "routes": [
       "r_5cc9ea0d8118d2f6d3ef"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_80f5b8bb10ed3041424b",
@@ -5606,8 +5728,8 @@
     "id": "tv_8fed462bc346e05b704c",
     "name": "河北都市",
     "group": "地方·河北",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河北都市",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/河北都市.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5616,7 +5738,8 @@
     "routes": [
       "r_5e05b0792c3ee15bb77e",
       "r_12ac202abfa6666132be"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_47d0050322e3d59b203e",
@@ -5918,8 +6041,8 @@
     "id": "tv_70eb56916c00d77d8e5b",
     "name": "山东教育",
     "group": "地方·山东",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "山东教育",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/山东教育.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -5927,7 +6050,8 @@
     ],
     "routes": [
       "r_d9bab25feccacb7ea88a"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_7e69155cb96abd0c1069",
@@ -6165,14 +6289,15 @@
     "id": "tv_3ac4a6d5e919c7b68253",
     "name": "黑龙江少儿",
     "group": "少儿动漫",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "黑龙江少儿",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/黑龙江少儿.png",
     "identity_status": "television-name-with-audio-route-needs-replacement",
     "aliases": [
       "黑龙江少儿"
     ],
-    "routes": []
+    "routes": [],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_3dc41bd5960eaf8e5229",
@@ -6266,8 +6391,8 @@
     "id": "tv_7a5dc467b6eeb43ed850",
     "name": "ViuTV",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "ViuTV",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/logo/raw/master/mylogo/ViuTV.png",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -6278,7 +6403,8 @@
       "r_06da23bc0e7efef83314"
     ],
     "directory_id": "ViuTV.hk",
-    "country": "HK"
+    "country": "HK",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_456a649fe906197d65cb",
@@ -6299,8 +6425,8 @@
     "id": "tv_8a2fd734896b13b5788f",
     "name": "东森超视",
     "group": "港澳台",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "东森超视",
+    "epg_source": "diyp:51zmt",
     "logo": "https://www.xn--rgv465a.top/tvlogo/东森超视.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6308,7 +6434,8 @@
     ],
     "routes": [
       "r_e1f04d4a1654ae8cdbad"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_d4ac93a2bafcddc1e183",
@@ -6523,8 +6650,8 @@
     "id": "tv_686b1ab30eac12d2ed5b",
     "name": "四海钓鱼",
     "group": "体育",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "四海钓鱼",
+    "epg_source": "diyp:51zmt",
     "logo": "",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6532,7 +6659,8 @@
     ],
     "routes": [
       "r_a453eccd3a96ea2a254d"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_0297eb327ca0de8c459a",
@@ -6553,8 +6681,8 @@
     "id": "tv_33c87dc741c7f598f3f2",
     "name": "新视觉",
     "group": "电影剧场",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "新视觉",
+    "epg_source": "diyp:51zmt",
     "logo": "https://gitee.com/suxuang/TVlogo/raw/main/img/xsj.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6562,7 +6690,8 @@
     ],
     "routes": [
       "r_ea9c38558ee2d00576eb"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_165054f12b91fee4606c",
@@ -6613,8 +6742,8 @@
     "id": "tv_816d6da115f25fc68f4a",
     "name": "河北少儿",
     "group": "少儿动漫",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河北少儿",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/河北少儿.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6622,7 +6751,8 @@
     ],
     "routes": [
       "r_b9ff2d6bfa347f2591a5"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_3e70ac30fac6ae82e02c",
@@ -6658,8 +6788,8 @@
     "id": "tv_3b9a97e540ed9c86f890",
     "name": "中华特产",
     "group": "文化生活",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "中华特产",
+    "epg_source": "diyp:51zmt",
     "logo": "",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6667,14 +6797,15 @@
     ],
     "routes": [
       "r_dfb0f9dc75f7b4186183"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_d9b99dab3339155392fe",
     "name": "环球旅游",
     "group": "文化生活",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "环球旅游",
+    "epg_source": "diyp:51zmt",
     "logo": "",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6682,7 +6813,8 @@
     ],
     "routes": [
       "r_3b655a5b6efd25a6db26"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_9e48b5b429398544028b",
@@ -6720,8 +6852,8 @@
     "id": "tv_aef5d033219597ec4212",
     "name": "辽宁公共",
     "group": "地方·辽宁",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "辽宁公共",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/辽宁公共.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6729,7 +6861,8 @@
     ],
     "routes": [
       "r_c7e6acbfccfc87233a90"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_bb165e16fb4cab6e11fe",
@@ -6765,8 +6898,8 @@
     "id": "tv_e81c75101a775e3eec4b",
     "name": "河北经济",
     "group": "地方·河北",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "河北经济",
+    "epg_source": "diyp:51zmt",
     "logo": "https://live.fanmingming.cn/tv/河北经济.png",
     "identity_status": "imported-needs-review",
     "aliases": [
@@ -6774,7 +6907,8 @@
     ],
     "routes": [
       "r_ac2aa390b0f8013876a2"
-    ]
+    ],
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_35b30ac6df40bd7a1894",
@@ -7248,8 +7382,8 @@
     "id": "tv_54b980ea6b2207228a8e",
     "name": "兰州新闻综合",
     "group": "地方·甘肃",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "兰州新闻",
+    "epg_source": "diyp:51zmt",
     "logo": "https://p3-pc.douyinpic.com/img/aweme-avatar/tos-cn-avt-0015_c2a13a952c0111b21f081d672798c8ed~c5_300x300.jpeg?from=2956013662",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -7259,7 +7393,8 @@
       "r_cc2f7c56262a7eb85cfd"
     ],
     "directory_id": "LanzhouComprehensiveNewsChannel.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_001d35d8700d5ca09af6",
@@ -7297,8 +7432,8 @@
     "id": "tv_a680e6d5ea88b0168bf5",
     "name": "康巴卫视",
     "group": "卫视",
-    "epg_id": "",
-    "epg_source": "",
+    "epg_id": "康巴卫视",
+    "epg_source": "diyp:51zmt",
     "logo": "",
     "identity_status": "directory-name-match",
     "aliases": [
@@ -7308,7 +7443,8 @@
       "r_1957a4ac0edc59be6bcb"
     ],
     "directory_id": "KangbaTV.cn",
-    "country": "CN"
+    "country": "CN",
+    "epg_checked_at": 1791057379
   },
   {
     "id": "tv_482e926a38d84a70457c",

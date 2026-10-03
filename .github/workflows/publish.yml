@@ -66,11 +66,13 @@ jobs:
           fi
       - name: Verify exact registry and CDN bytes
         run: node scripts/verify-cdn.cjs
-      - name: Save exact published resources
+      - name: Save exact published resources and derived evidence
         run: |
           git config user.name maintenance-bot
           git config user.email actions@users.noreply.github.com
-          git add package.json output/api.json output/cfg.jpg output/live.m3u output/dc.json output/manifest.json reports/plugin-verification.json reports/build-dependencies.json
+          git add package.json output/api.json output/cfg.jpg output/live.m3u output/dc.json output/manifest.json \
+                  reports/plugin-verification.json reports/build-dependencies.json \
+                  reports/live-gaps.json reports/bench-sites.json reports/epg-gaps.json
           git diff --cached --quiet || git commit -m 'chore: freeze verified candidate resources [skip ci]'
           git push
       - uses: actions/upload-artifact@v4
@@ -81,4 +83,6 @@ jobs:
             output/
             reports/plugin-verification.json
             reports/build-dependencies.json
+            reports/live-gaps.json
+            reports/epg-gaps.json
             cdn-verification.json

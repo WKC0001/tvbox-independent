@@ -42,6 +42,55 @@ class TelevisionTests(unittest.TestCase):
         self.assertEqual(sum(s['status']=='excluded' for s in sites),18)
         self.assertEqual(sum(s['status']!='excluded' for s in sites),43)
 
+class GuideTests(unittest.TestCase):
+    POLICY={'sources':['diyp:51zmt'],'max_age_days':21}
+    def channel(self, **epg):
+        channels,routes,_=import_registry(parse_m3u('#EXTINF:-1 group-title="卫视",湖南卫视\nhttps://example/a.m3u8','t'))
+        channels[0].update(epg)
+        return channels,routes
+    def guide(self, channels, routes, now=1001):
+        text,_=playlist(channels,routes,{},epg={**self.POLICY,'now':now})
+        return text
+    def test_import_never_invents_a_guide(self):
+        channels,routes,_=import_registry(parse_m3u('#EXTINF:-1 tvg-id="湖南卫视",湖南卫视\nhttps://x/a.m3u8','t'))
+        self.assertEqual(channels[0]['epg_id'],'')
+        self.assertEqual(channels[0]['epg_checked_at'],0)
+        self.assertNotIn('tvg-id',self.guide(channels,routes,now=10**9))
+    def test_fresh_verified_mapping_is_emitted(self):
+        self.assertIn('tvg-id="湖南卫视"',self.guide(*self.channel(epg_id='湖南卫视',epg_source='diyp:51zmt',epg_checked_at=1000)))
+    def test_stale_confirmation_degrades_to_no_guide(self):
+        channels,routes=self.channel(epg_id='湖南卫视',epg_source='diyp:51zmt',epg_checked_at=1000)
+        self.assertNotIn('tvg-id',self.guide(channels,routes,now=1000+21*86400))
+    def test_unknown_source_is_not_a_guide(self):
+        self.assertNotIn('tvg-id',self.guide(*self.channel(epg_id='湖南卫视',epg_source='naming-rule',epg_checked_at=1000)))
+    def test_missing_or_future_evidence_is_not_a_guide(self):
+        self.assertNotIn('tvg-id',self.guide(*self.channel(epg_id='湖南卫视',epg_source='diyp:51zmt')))
+        self.assertNotIn('tvg-id',self.guide(*self.channel(epg_id='湖南卫视',epg_source='diyp:51zmt',epg_checked_at=99999)))
+    def test_without_a_source_policy_nothing_is_emitted(self):
+        channels,routes=self.channel(epg_id='湖南卫视',epg_source='diyp:51zmt',epg_checked_at=1000)
+        text,_=playlist(channels,routes,{})
+        self.assertNotIn('tvg-id',text)
+
+class RepositoryGuideStateTests(unittest.TestCase):
+    """The shipped registry must stay auditable: an id is only ever stored with its source and date."""
+    def setUp(self):
+        self.channels=json.loads((ROOT/'registry/channels.json').read_text())
+        self.sources=set(json.loads((ROOT/'policy/operations.json').read_text())['epg_sources'])
+    def test_every_stored_id_carries_its_source_and_confirmation_time(self):
+        for c in self.channels:
+            if c.get('epg_id'):
+                self.assertIn(c.get('epg_source'),self.sources,c['name'])
+                self.assertGreater(c.get('epg_checked_at') or 0,0,c['name'])
+            else:
+                self.assertEqual(c.get('epg_source'),'',c['name'])
+    def test_stored_ids_are_behless_api_handles_not_generated_names(self):
+        for c in self.channels:
+            self.assertNotIn('.fqzone.tv',c.get('epg_id') or '',c['name'])
+    def test_match_report_agrees_with_the_registry(self):
+        report=json.loads((ROOT/'reports/epg-match.json').read_text())
+        self.assertEqual(report['channels_with_epg_id'],sum(1 for c in self.channels if c.get('epg_id')))
+        self.assertEqual(report['inspected'],len(self.channels))
+
 class ContentTests(unittest.TestCase):
     def test_no_substring_category_admission(self):
         for s in ('里番动漫','伦理片','成人动漫','午夜福利电影','新闻资讯','体育赛事','预告片'):

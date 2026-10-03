@@ -5,5 +5,10 @@
   "max_live_routes": 3,
   "minimum_dynamic_providers": 3,
   "provider_evidence_max_age_days": 7,
-  "new_provider_requires_review": true
+  "new_provider_requires_review": true,
+  "epg_sources": [
+    "diyp:51zmt"
+  ],
+  "epg_evidence_max_age_days": 35,
+  "epg_template": "http://epg.51zmt.top:8000/api/diyp/?ch={id}&date={date}"
 }

@@ -174,7 +174,7 @@ def import_registry(records):
             continue
         if channel_id not in channels:
             channels[channel_id] = {'id':channel_id,'name':name,'group':group(name,row['group']),
-                 'epg_id':'','epg_source':'','logo':row['attributes'].get('tvg-logo',''),
+                 'epg_id':'','epg_source':'','epg_checked_at':0,'logo':row['attributes'].get('tvg-logo',''),
                  'identity_status':'imported-needs-review','aliases':[], 'routes':[]}
         channel=channels[channel_id]
         if row['name'] not in channel['aliases']:channel['aliases'].append(row['name'])
@@ -200,8 +200,30 @@ def sort_key(channel):
     return (GROUPS.index(g) if g in GROUPS else len(GROUPS) if g.startswith('地方') else len(GROUPS)+1,g,number,n)
 
 
-def playlist(channels, routes, health, network='domestic', max_routes=3):
+def epg_identity(channel, now, max_age_days, sources):
+    """The guide id this channel may publish, or '' when no source currently vouches for it.
+
+    A stored id is not evidence by itself: it must come from a source we actually query, and
+    that source must have confirmed it recently. Everything else degrades to "no guide" rather
+    than to a wrong guide, which is why nothing here is ever derived from the channel name.
+    """
+    value = channel.get('epg_id')
+    if not value: return ''
+    if channel.get('epg_source') not in sources: return ''
+    checked = channel.get('epg_checked_at') or 0
+    if not isinstance(checked, int) or checked <= 0: return ''
+    if checked > now: return ''
+    if now - checked >= max_age_days * 86400: return ''
+    return value
+
+
+def playlist(channels, routes, health, network='domestic', max_routes=3, epg=None):
     def quote(value): return str(value).replace('"',"'").replace('\n',' ').replace('\r',' ')
+    # Without an explicit source policy nothing can be verified, so no guide id is emitted at all.
+    epg = epg or {}
+    sources = set(epg.get('sources') or ())
+    now = int(epg.get('now') or 0)
+    max_age = epg.get('max_age_days') or 0
     lines=['#EXTM3U']; gaps=[]; route_map={r['id']:r for r in routes}
     for ch in sorted(channels,key=sort_key):
         if ch.get('review')=='excluded': continue
@@ -220,7 +242,8 @@ def playlist(channels, routes, health, network='domestic', max_routes=3):
         # Keep real imported routes when the network cannot prove them; never synthesize media URLs.
         for r in candidates[:max_routes]:
             attrs={'tvg-name':ch['name'],'group-title':ch['group']}
-            if ch.get('epg_id'): attrs['tvg-id']=ch['epg_id']
+            guide=epg_identity(ch,now,max_age,sources)
+            if guide: attrs['tvg-id']=guide
             if ch.get('local_logo'): attrs['tvg-logo']=ch['local_logo']
             lines.append('#EXTINF:-1 '+' '.join(k+'="'+quote(v)+'"' for k,v in attrs.items())+','+quote(ch['name']))
             mapped={'User-Agent':'http-user-agent','Referer':'http-referrer','Origin':'http-origin'}

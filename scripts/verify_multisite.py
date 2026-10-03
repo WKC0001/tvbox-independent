@@ -1,8 +1,9 @@
-"""Validate actual shipped DEX, source coverage, fixed-version closure and manifest."""
-import hashlib,json,re,struct,sys,zlib
+"""Validate actual shipped DEX, source coverage, fixed-version closure, guide ids and manifest."""
+import hashlib,json,re,struct,sys,time,zlib
 from pathlib import Path
 from zipfile import ZipFile
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
+from checker.television import epg_identity
 
 
 def dex_classes(data):
@@ -50,8 +51,35 @@ def verify(directory=ROOT/'output'):
     assert '.fqzone.tv' not in playlist,'Unverified generated EPG ids reintroduced'
     assert '@latest' not in json.dumps(api),'Mixed-version dependencies'
     assert playlist.count('#EXTINF:')>200,'Unexpected television coverage collapse'
+    # Re-check every shipped guide id the way the player will consume it: the id must be exactly
+    # what the registry plus the source policy can prove right now, so a stale or invented id fails.
+    policy=json.loads((ROOT/'policy/operations.json').read_text())
+    guide=policy['epg_template'];age=policy['epg_evidence_max_age_days'];sources=set(policy['epg_sources'])
+    assert api['lives'][0].get('epg')==guide,'Live EPG template missing or changed'
+    for token in ('{id}','{date}'):assert token in guide,'EPG template lost the '+token+' placeholder'
+    assert 'tvg-id=""' not in playlist,'Empty guide id emitted'
+    registry=json.loads((ROOT/'registry/channels.json').read_text())
+    channels={c['name']:c for c in registry};now=int(time.time())
+    def proven(channel):return epg_identity(channel,now,age,sources)
+    shipped=set();entries=0
+    for line in playlist.splitlines():
+        if not line.startswith('#EXTINF:'):continue
+        attrs=dict(re.findall(r'([\w-]+)="([^"]*)"',line))
+        channel=channels.get(attrs.get('tvg-name',''))
+        assert channel is not None,'Playlist entry has no registry channel: '+line
+        expected=proven(channel)
+        assert attrs.get('tvg-id','')==expected,'Shipped guide id disagrees with the verified registry: '+line
+        if expected:shipped.add(expected);entries+=1
+    verified={proven(c) for c in registry if proven(c)}
+    assert manifest['epg_guide_entries']==entries,'Manifest guide entry count disagrees with the shipped playlist'
+    assert manifest['epg_channels_shipped']==len(shipped),'Manifest shipped guide count disagrees with the shipped playlist'
+    assert manifest['epg_channels_verified']==len(verified),'Verified guide count disagrees with the registry'
+    assert manifest['epg_gaps']==sum(1 for c in registry if c.get('review')!='excluded' and not proven(c)),'Guide gap count disagrees with the registry'
+    assert shipped<=verified,'A shipped guide id is absent from the verified registry'
     result={'passed':True,'version':manifest['version'],'dex_classes':len(classes),'sites':len(keys),
-            'playlist_routes':playlist.count('#EXTINF:'),'files':manifest['files'],'android_app_test':'separate acceptance required'}
+            'playlist_routes':playlist.count('#EXTINF:'),'epg_channels_shipped':len(shipped),
+            'epg_guide_entries':entries,'epg_channels_verified':manifest['epg_channels_verified'],
+            'epg_gaps':manifest['epg_gaps'],'files':manifest['files'],'android_app_test':'separate acceptance required'}
     (ROOT/'reports/plugin-verification.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2));return result
 

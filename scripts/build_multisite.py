@@ -3,6 +3,7 @@ import hashlib
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
@@ -12,7 +13,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 from checker.content import BLOCK,GENRES
-from checker.television import playlist
+from checker.television import playlist,epg_identity
 from checker.health import effective
 
 
@@ -147,16 +148,35 @@ def main():
     base='https://cdn.jsdelivr.net/npm/'+package['name']+'@'+package['version']+'/'
     home={'key':'点我切源','name':'WKC┃片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,
           'ext':{'providers':[x['ext'] for x in cms_providers]}}
+    # The player substitutes {id} with each channel's tvg-id and {date} with the day being viewed.
+    guide=policy.get('epg_template') or ''
+    for token in ('{id}','{date}'):
+        if token not in guide:raise SystemExit('EPG template must keep the '+token+' placeholder')
+    epg={'now':now,'sources':policy.get('epg_sources') or [],'max_age_days':policy.get('epg_evidence_max_age_days',0)}
     config={'spider':base+'cfg.jpg;md5;'+hashlib.md5((out/'cfg.jpg').read_bytes()).hexdigest(),
             'hosts':[],'logo':'','rules':read('registry/baseline/api.json')['rules'],
-            'sites':[home]+active,'lives':[{'name':'WKC电视直播','type':0,'url':base+'live.m3u','playerType':2,'timeout':15}]}
-    text,gaps=playlist(read('registry/channels.json'),read('registry/routes.json'),health,
-                       network=policy['preferred_live_network'],max_routes=policy['max_live_routes'])
+            'sites':[home]+active,
+            'lives':[{'name':'WKC电视直播','type':0,'url':base+'live.m3u','epg':guide,
+                      'playerType':2,'timeout':15}]}
+    channels=read('registry/channels.json')
+    text,gaps=playlist(channels,read('registry/routes.json'),health,
+                       network=policy['preferred_live_network'],max_routes=policy['max_live_routes'],epg=epg)
     (out/'live.m3u').write_text(text);dump(out/'api.json',config)
     dump(out/'dc.json',{'urls':[{'url':base+'api.json','name':'WKC 自有聚合'}]})
     dump(ROOT/'reports/live-gaps.json',gaps);dump(ROOT/'reports/bench-sites.json',bench)
+    # A channel that plays but has no confirmed guide is a visible gap, never a silent one.
+    covered={c['name'] for c in channels if epg_identity(c,now,epg['max_age_days'],set(epg['sources']))}
+    epg_gaps=[{'channel_id':c['id'],'name':c['name'],'group':c['group'],'reason':'no source confirmed a guide id'}
+              for c in channels if c.get('review')!='excluded' and c['name'] not in covered]
+    dump(ROOT/'reports/epg-gaps.json',epg_gaps)
+    # One channel can occupy several playlist lines, so count both: lines a player will resolve
+    # and the distinct channels behind them. Collapsing these two numbers hides real coverage loss.
+    guide_ids=re.findall(r'tvg-id="([^"]*)"',text)
     runtime={'files':{},'version':package['version'],'package':package['name'],'format':'multi-site-v1','site_count':len(config['sites']),
-             'channel_count':len(read('registry/channels.json')),'known_live_gaps':len(gaps),'native_bridge_restored':True,
+             'channel_count':len(channels),'known_live_gaps':len(gaps),'native_bridge_restored':True,
+             'epg_source':sorted(epg['sources']),'epg_max_age_days':epg['max_age_days'],
+             'epg_channels_verified':len(covered),'epg_channels_shipped':len(set(guide_ids)),'epg_guide_entries':len(guide_ids),
+             'epg_gaps':len(epg_gaps),
              'android_app_acceptance':False,'network_evidence':sorted({n for x in audits.values() for n in x})}
     for name in ('api.json','cfg.jpg','live.m3u','dc.json'):runtime['files'][name]=hashlib.sha256((out/name).read_bytes()).hexdigest()
     dump(out/'manifest.json',runtime)
@@ -167,7 +187,9 @@ def main():
     for name in (*runtime['files'],'manifest.json'):shutil.copyfile(out/name,stage/name)
     pkg={**package,'files':list(runtime['files'])+['manifest.json']};dump(stage/'package.json',pkg)
     dump(ROOT/'reports/build-dependencies.json',{k:hashlib.sha256(v.read_bytes()).hexdigest() for k,v in deps.items() if v.is_file()})
-    print('BUILT',package['version'],len(config['sites']),'dynamic sites',len(gaps),'live route gaps')
+    print('BUILT',package['version'],len(config['sites']),'dynamic sites',len(gaps),'live route gaps;',
+          runtime['epg_channels_shipped'],'of',runtime['epg_channels_verified'],'verified channels carry a guide',
+          f"({runtime['epg_guide_entries']} playlist lines)")
 
 
 if __name__=='__main__':main()

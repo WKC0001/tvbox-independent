@@ -19,7 +19,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-24.04
-    timeout-minutes: 35
+    timeout-minutes: 50
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -36,20 +36,34 @@ jobs:
           else MODE=full; fi
           if [ "$MODE" = weekly ]; then MODE=full; fi
           echo "value=$MODE" >> "$GITHUB_OUTPUT"
+          if [ "$SCHEDULE" = '17 19 * * 5' ] || [ "$INPUT_MODE" = 'weekly' ]; then
+            echo "epg=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "epg=false" >> "$GITHUB_OUTPUT"
+          fi
       - name: Update network-specific health before ranking
         run: python -m checker.audit --network github --mode '${{ steps.mode.outputs.value }}' --workers 20
+      - name: Re-confirm television guide ids against the programme source
+        if: steps.mode.outputs.epg == 'true'
+        # The source throttles bulk querying, so each run re-verifies one slice of the registry and
+        # resumes from the cursor next time. The matcher keeps a working mapping whenever the source
+        # cannot answer, so an outage never erases verified data; best-effort keeps health landing.
+        continue-on-error: true
+        run: python scripts/epg_match.py --workers 3 --window 160
       - name: Save audit evidence without deleting channel identities
         id: evidence
         if: always()
         run: |
           git config user.name maintenance-bot
           git config user.email actions@users.noreply.github.com
-          git add state/provider-audit.json state/multisite-health.json reports/audit-github.json
-          if git diff --cached --quiet; then
+          git add state/provider-audit.json state/multisite-health.json reports/audit-github.json \
+                  registry/channels.json reports/epg-match.json state/epg-cursor.json
+          # The rotation cursor moves every run; only a real guide change justifies a new candidate.
+          if git diff --cached --quiet -- registry/channels.json reports/epg-match.json; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Health evidence is unchanged; no new candidate is warranted."
+            echo "Guide registry and health evidence are unchanged; no new candidate is warranted."
           else
-            git commit -m 'chore: refresh independent health evidence [skip ci]'
+            git commit -m 'chore: refresh independent health and guide evidence [skip ci]'
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi

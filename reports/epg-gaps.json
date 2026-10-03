@@ -1,0 +1,1988 @@
+[
+  {
+    "channel_id": "tv_e2f2be0d1606aacb3519",
+    "name": "CETV-1",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e871452eee6a4d27805f",
+    "name": "CETV-3",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5e99cf2273e931aa67e4",
+    "name": "文化精品",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b845f708c3476d8b3c66",
+    "name": "电视指南",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c308e4c7d00500e27ea7",
+    "name": "中国交通",
+    "group": "文化生活",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2cabc531b63397c1cad8",
+    "name": "CCTV中学生",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_425ea4c4e86e2309a7d9",
+    "name": "CCTV+ 2",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_fb50bc2f132bf566ba2f",
+    "name": "CCTV+ 1",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7d58f2ffd5bf3ac7d460",
+    "name": "CCTV-Health",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_da4eac4c9099968ebb1f",
+    "name": "香港卫视",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6443bf9e0d35700032d3",
+    "name": "海南卫视",
+    "group": "卫视",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5b4087163dd0558ca070",
+    "name": "澳门卫视",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_212414058d906f01a61c",
+    "name": "CHC家庭影院",
+    "group": "电影剧场",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a051d1fe7de6a73d8dd3",
+    "name": "NewTV动作电影",
+    "group": "电影剧场",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7d9e6aade4af9586189a",
+    "name": "黑莓电影",
+    "group": "电影剧场",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_de84b7dda37ec476ce61",
+    "name": "无线星河",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_321df96427c2876b7738",
+    "name": "CHC电影",
+    "group": "电影剧场",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_723a9a653f38f9d7a44b",
+    "name": "韩国电影1",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6b9b76aa3aefcfb2d34d",
+    "name": "韩国电影2",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d014626368f60b0754e6",
+    "name": "精品体育",
+    "group": "体育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5f5977725c35134e4ecf",
+    "name": "足球频道",
+    "group": "体育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c4d7d89b92b8b383f100",
+    "name": "浙江国际",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f22bc37219eceb0a5130",
+    "name": "广西国际",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_dec589903fce0407a506",
+    "name": "凤凰香港",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b5cfb0f8db11ffbcd83e",
+    "name": "TVBS亚洲",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0d29bf51e4a041e6ffac",
+    "name": "CGTN纪录",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e018870441ee660bf6bb",
+    "name": "澳视澳门",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_81ff8e3e5ca638760730",
+    "name": "澳视卫星",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f6bb9685bc89a7f8fd54",
+    "name": "TVB Plus",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9a82c8d92de9ba5ea9c0",
+    "name": "华丽翡翠台",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5698557ebbc9b4c6c446",
+    "name": "HOY TV",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_68ee3c9ef8d1ba3d37c1",
+    "name": "环球电视",
+    "group": "其他电视·待核验",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a7a84eab7e4346745f33",
+    "name": "美亚C+",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_aff7beb49f4424992615",
+    "name": "耀才财经",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a74fe15b45406f3c2ff8",
+    "name": "ASTRO AOD",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7b47266dc62e56ad6a56",
+    "name": "无线新闻台",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1d633db5d2443c6b5564",
+    "name": "RTHK32",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_199603b2a20ead197312",
+    "name": "翡翠台北美版",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d33a44223f2e528d9381",
+    "name": "RTHK31",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_af68d3ee465501c2bd71",
+    "name": "亚洲武侠",
+    "group": "其他电视·待核验",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9cfc08efe8355114de8c",
+    "name": "TVB娱乐新闻台",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6305ad04e714eb804f56",
+    "name": "WionNews",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_713a855ec3483ed29078",
+    "name": "CBC News",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_49144796d7c70c40303d",
+    "name": "CNA",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2181985feb6f001affc6",
+    "name": "ABC News Live",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_cb2e3989f2e5faac63dd",
+    "name": "Bloomberg Asia",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_22c5a404a847ba1a5006",
+    "name": "Arirang",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_cd36d3a19767f5afdd59",
+    "name": "Newsmax",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0f0a736bc322b1e488f8",
+    "name": "Wild Earth",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f5ba49040d5b2e86d17b",
+    "name": "RT News(英语国际)",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_dee3a4e5ff6f510a0df3",
+    "name": "RT Español(西语)",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_35822f1894f92e915000",
+    "name": "RT Français(法语)",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_28dfab5b175b91996436",
+    "name": "RT Arabic(阿语)",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c9cb362ebc9e7d3b9517",
+    "name": "RT Doc-Русский(俄语纪录)",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5f34b05e6bc5532d417f",
+    "name": "RT Documentary(英语纪录)",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2a7ab8e9d290c3c16393",
+    "name": "RT Balkan (塞尔维亚语)",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ec18ec48ed95119efafc",
+    "name": "RT DE(德语)",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f996698888717ae2fcba",
+    "name": "TV BRICS Chinese",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_989e2441feaf45d8fd5f",
+    "name": "绍兴公共",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2ac88ed7f5b894deb936",
+    "name": "衢江新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_84c87a93e97a7ec7457f",
+    "name": "平湖新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_be730cca8372c15401cc",
+    "name": "永嘉新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c86cc34a431bd3e0794e",
+    "name": "上虞文化影院",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8bb8acea2db602502f67",
+    "name": "上虞新商都",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bda9a483470853138a1d",
+    "name": "武进生活",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_220078d86d51261048b8",
+    "name": "安徽导视",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e2ecdcd9ae0d3b7bbef5",
+    "name": "万荣综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6a9cc3c6ec75be20d88e",
+    "name": "哈尔滨都市咨询",
+    "group": "地方·黑龙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8f9d255d7bdf6f33a04e",
+    "name": "哈尔滨资讯",
+    "group": "地方·黑龙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5506ca2897b5b7faaab5",
+    "name": "东丰综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1b3bcbc234f97d562bd8",
+    "name": "奎屯哈萨克语",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_191d15bee1f4f348f82b",
+    "name": "句容党建",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9b1f8f7fd931a7caf1b6",
+    "name": "句容生活",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f9c9598cb88fdd829f3b",
+    "name": "哈尔滨娱乐",
+    "group": "地方·黑龙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_207a92de096fb927aa9f",
+    "name": "古县综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f12e97c0c47a2277996b",
+    "name": "可克达拉综合",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0da041013452c9492e33",
+    "name": "九台综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f17b4c882173cb112473",
+    "name": "延边2",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_64ecfab2b1ae349415d9",
+    "name": "东莞新闻综合",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_93849e5cc9c2bf430ba1",
+    "name": "梅河口综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d663ed88e59c22bb1a27",
+    "name": "柳河综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ace9776e729456db1ee7",
+    "name": "怀仁综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6abe9bb2b2664672b305",
+    "name": "德惠综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5cb2e5ec384727c2c938",
+    "name": "句容影院",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f9156279907bebfc2bf5",
+    "name": "敦化一套",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_961ca31087b988d88cb3",
+    "name": "江夏新闻综合",
+    "group": "地方·湖北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d5a0218595aa0ce86ba0",
+    "name": "双辽综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_dd4cde7cda9e13cd159d",
+    "name": "来宾综合",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_fe1ad95213f83672e007",
+    "name": "武进新闻",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e08ddb9b7c21e9879958",
+    "name": "河源公共",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5c42be855aa453cf6d82",
+    "name": "汪清综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_98633df159a8b88efee6",
+    "name": "玛纳斯综合",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_31f96fb0c5851d00f8ae",
+    "name": "璧山综合",
+    "group": "地方·重庆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_13b80366821b54cc4007",
+    "name": "舒兰新闻综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4c5d59bb4eb7003d4dee",
+    "name": "兵团五师双河新闻综合",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8ed1be59b04642e991cb",
+    "name": "津南一套",
+    "group": "地方·天津",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5a2fb199df45ac332d16",
+    "name": "东莞生活资讯",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_348ca166dd847f3c8f58",
+    "name": "甘南县综合",
+    "group": "地方·黑龙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_78951f2c4b9eb771df12",
+    "name": "河源综合",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4169ab6f07ad69e4ea23",
+    "name": "晋江电视台",
+    "group": "地方·福建",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f0eeaaeed902a0480c5f",
+    "name": "邢台生活",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6536c1cd352fbb3bd1f2",
+    "name": "衡阳新闻综合",
+    "group": "地方·湖南",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_66778b7fcbe9328f001e",
+    "name": "铜梁综合",
+    "group": "地方·重庆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_770086d69e9904eb53c1",
+    "name": "大宁综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_736a3cb205c908d8d1c5",
+    "name": "钱江都市",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6a2ad2b0ca1be22da568",
+    "name": "龙井综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7feb6ab4f03dc6c4e5d5",
+    "name": "靖宇综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_facd81eab8c3c853d7a4",
+    "name": "桦甸综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7d634b2888f31562692b",
+    "name": "长白山电视台",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1c4c9c67ea73666ed4ec",
+    "name": "通化县综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e8ad3e153dec32f1bd3f",
+    "name": "辉南新闻综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_16bc48110c2cc919f7e0",
+    "name": "磐石综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_154ed9ee49a76fea87da",
+    "name": "浙江留学",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_33210d09eef15ef24aac",
+    "name": "长子综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ec972b6d7f7fde6c2956",
+    "name": "仁寿综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_094fc8f32ecb4e5fff3c",
+    "name": "长影频道",
+    "group": "电影剧场",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4ffdc4318fa0de5393b1",
+    "name": "广东珠江",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8d69575cbfee1f671f62",
+    "name": "广州竞赛",
+    "group": "体育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_21537564ff2afdc71745",
+    "name": "广州综合",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a713158f9b2cb55fbe73",
+    "name": "浙江经济生活",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bc8ab5b3d4d63b0a0ff6",
+    "name": "浙江教育",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ccb3e348dd1b1f824a68",
+    "name": "浙江新闻",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c9d25b1c4d55c06120d1",
+    "name": "之江纪录",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_efedc466bd7c7ac769c2",
+    "name": "浙江教科影视",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ffdb97763f460155da35",
+    "name": "湖州文化娱乐",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d860bebe9bb7131a9af8",
+    "name": "湖州新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2d988476c4ad122fbfa8",
+    "name": "浙江生活",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0a61d68d1f8c03de5e59",
+    "name": "数码时代",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f8e0deac50c83e347cdd",
+    "name": "浙江休闲台",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_311a80cad13d09e13747",
+    "name": "嘉兴新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b342d7b0d16e75a7a43d",
+    "name": "象山综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_32b55cb1123ba7d85c82",
+    "name": "湖州公共民生",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c17cce05cbfbd233e410",
+    "name": "龙游新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_fc407dfd9354b455a767",
+    "name": "诸暨新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9f51ba953e114e221291",
+    "name": "萧山生活",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3eedc406cb36729b8bd6",
+    "name": "遂昌综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9b053bdb14efec41a1c3",
+    "name": "洞头综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7c500d5324a6c1cf5978",
+    "name": "海宁新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5e50d1c3cc8a0b5d21ae",
+    "name": "青田电视台",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_85c7e7913cf5f7eff697",
+    "name": "新昌生活",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_df6a81ae4bc5177d93c3",
+    "name": "庆元综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7019f71a308cf710a95b",
+    "name": "松阳综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bc472d13cce0725dc332",
+    "name": "文成新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_69dc4e04102a2ed29a0d",
+    "name": "龙游生活娱乐",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b39014b8a31b905b4bc9",
+    "name": "普陀新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b9ad30666b9f31ec78e0",
+    "name": "象山新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e5e980ba7ff075f07294",
+    "name": "缙云新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a9f07cbac83462b3a2f4",
+    "name": "兰溪新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_99a20f1546d143f7694b",
+    "name": "浙江遂昌",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e7cd2abe6c466e4efd7c",
+    "name": "嵊州新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_dbec817a686689aa45c2",
+    "name": "中国蓝新闻",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_715a247f8e92fcddd1ef",
+    "name": "余杭未来E",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_354dfcc9db112e39329e",
+    "name": "北京新闻",
+    "group": "地方·北京",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f39726e5b42fd49e1fd5",
+    "name": "东阳影视生活",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_070618b91d91a7a975b3",
+    "name": "武义新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_85662bf781adf34ff043",
+    "name": "北京科教",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_cb9fc047602c239f98a4",
+    "name": "云和新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0d01d2991d9f3395a128",
+    "name": "缙云综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1b24c0a5836fe93db571",
+    "name": "开化新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b42f503488a53da9966a",
+    "name": "普陀电视台",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ba4f07be6d1a707cfb49",
+    "name": "开化国家公园",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_992b44d5828a6c23a2ad",
+    "name": "文成综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_56fdf70947d676ad4867",
+    "name": "新闻综合",
+    "group": "其他电视·待核验",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8b1f1df074f9b7709923",
+    "name": "余杭综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3c7f5724e8309b7513f9",
+    "name": "嵊泗综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_879824ef277a1712b2bd",
+    "name": "余姚新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8afd7bc08ce745be9c74",
+    "name": "纪实人文",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_86e998d392de0b0fde1f",
+    "name": "余姚综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ca10c5acda0f96a7dd89",
+    "name": "南京少儿",
+    "group": "少儿动漫",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_378d877c700ad0bd20ec",
+    "name": "新沂生活",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_32226d5dd4b4ec9f1a2b",
+    "name": "新沂新闻",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_46f4dd085de757570e9c",
+    "name": "徐州新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_80bd1ab46779d4bcfb62",
+    "name": "宜兴新闻",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8821366a35325839c605",
+    "name": "沭阳综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b9e86c279d99bcad4469",
+    "name": "涟水综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e154bc56983fb44dcc1e",
+    "name": "江苏公共",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_174eff4e07230b6c1079",
+    "name": "苏州新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b3b1f728cd63b459ded8",
+    "name": "苏州4K",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ccefb26a3029c50d0988",
+    "name": "苏州社会经济",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_943bc0f5ee347916ad2e",
+    "name": "苏州文化生活",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9b2baf91ed011e0f1ed8",
+    "name": "江苏体育",
+    "group": "体育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d514ce00fee257df29e8",
+    "name": "苏州生活资讯",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5dc487e0509970dbe9f3",
+    "name": "滨海新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_04d17fb5b8ac64f6c235",
+    "name": "靖江新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ac7ba199e4a8dffba645",
+    "name": "朝阳新闻综合",
+    "group": "地方·辽宁",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_44d5c681abe126adc908",
+    "name": "辽宁教育青少",
+    "group": "地方·辽宁",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f5475ae865ef6c8b6642",
+    "name": "镇江二套社会民生",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_eca827ef23f0af0f4580",
+    "name": "连云港新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_639a3932699f974f079a",
+    "name": "镇江新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_42896215dd47ea1dde2c",
+    "name": "武汉一台新闻综合",
+    "group": "地方·湖北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5a7c024a0dd937b4b0fe",
+    "name": "荆门新闻综合",
+    "group": "地方·湖北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a5f2863a0693ee9c34c5",
+    "name": "灌阳新闻综合",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a595b2ac3535ac8f7fae",
+    "name": "南宁都市生活",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d95fe9a1bfa1cd5f79a2",
+    "name": "乐至综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_455b3a643941fddbb1bf",
+    "name": "叙州新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_69966e8592ecc585c5bd",
+    "name": "宾阳综合",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ecd6df85562e1bdb673f",
+    "name": "田东综合",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4a2568b1ce059a90354a",
+    "name": "四川科教",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3a12021ccf338254b17d",
+    "name": "广安公共",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_75840aa44b133dbcebe9",
+    "name": "旺苍新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4a3deb793d37723f48fc",
+    "name": "松潘新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_195e05f88eab4460170f",
+    "name": "名山综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5bb8b217157317e6a95e",
+    "name": "井研综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f8711bf1d176cf0db10e",
+    "name": "汶川新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7747cbc9a314667b4b09",
+    "name": "沐川综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0b7f7296a720cdc6d326",
+    "name": "金川新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bc8b4d4f2ef1d831f3b8",
+    "name": "营山电视台",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_51dcf49be727f5eda025",
+    "name": "泸县新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_44d7c8e77fa9c220aa10",
+    "name": "青川综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_caedf27078cba44036d3",
+    "name": "荥经综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_04a3af724aa7e5aefd20",
+    "name": "陕西公共",
+    "group": "地方·陕西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8b3b60e22e9718442083",
+    "name": "三明新闻综合",
+    "group": "地方·福建",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c281f8249e5fe8617d88",
+    "name": "云霄综合",
+    "group": "地方·福建",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_77e418da36bc7487cd4d",
+    "name": "南宁影视娱乐",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0071e048a888dcf4da5a",
+    "name": "福建公共",
+    "group": "地方·福建",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8ae5a1c175456f03ae83",
+    "name": "福州少儿",
+    "group": "少儿动漫",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c5efeb6ba9bd096b72d7",
+    "name": "福建经济",
+    "group": "地方·福建",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bd0ac5ee6d720a8bf942",
+    "name": "雅安新闻综合",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6476c31ba8c8f33fe4eb",
+    "name": "邯郸科技教育",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0655722b36021945c1c8",
+    "name": "邯郸新闻",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c8d985b3644c6b5c53f2",
+    "name": "衡水公共",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_40394e97758dfa8744e1",
+    "name": "邢台综合",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_64ecbffff27f5af40398",
+    "name": "滦平新闻",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_80f5b8bb10ed3041424b",
+    "name": "河北农民",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_47d0050322e3d59b203e",
+    "name": "任丘综合",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a2e6a1037dae424bc9c8",
+    "name": "兴隆综合",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d27387c37bf24c4daeea",
+    "name": "平泉综合",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3e20373149db61387637",
+    "name": "昌黎综合",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_fa3368dc27bf1dd91850",
+    "name": "清河经济综艺",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6ebe4cdcef67d4f796b4",
+    "name": "甘肃经济",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bc3e85d3b0439516bbcc",
+    "name": "甘肃都市",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_84ff52dc9d28fe3ed7e6",
+    "name": "安顺新闻",
+    "group": "地方·贵州",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7df2e4bd1b3245bc58c0",
+    "name": "伊犁维吾尔",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_632300c70d04b00fca82",
+    "name": "伊犁哈萨克",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_868d959d431aa06251f0",
+    "name": "伊犁经济法制",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_fb0c9bf00bde2770b35d",
+    "name": "白银综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7113903e55a41f734388",
+    "name": "渭源新闻",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1fb3c0881921a526eb5e",
+    "name": "嘉峪关综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_af4e752b2b8e8e157b37",
+    "name": "秦安综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f1c413599e292e98fdf7",
+    "name": "张掖新闻综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1ffee622876461afb80d",
+    "name": "西峰综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d9f6cf06c86f7194d76e",
+    "name": "天祝综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c0d92439ce2a45e65679",
+    "name": "永昌综合",
+    "group": "地方·甘肃",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f96444606095d10ec1e7",
+    "name": "太谷新闻综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7e69155cb96abd0c1069",
+    "name": "汾西综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e14d4e4d24ffaf704600",
+    "name": "定襄综合",
+    "group": "地方·山西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8df5a8d3f681620c6f71",
+    "name": "固镇新闻",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_587e58b4b58b814ff88a",
+    "name": "铜陵新闻综合",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_52bfbd583266139be732",
+    "name": "黄山公共生活",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_510b83dcf43889dd9d8b",
+    "name": "黄山新闻综合",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_cecffc3027dbb5cf4d12",
+    "name": "宿州新闻综合",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_96411675ccb44000f2fd",
+    "name": "宿州科教",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ed3c12f7453db37a394c",
+    "name": "六安新闻综合",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e6cd0b6402e737ca362f",
+    "name": "六安公共",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2fdfa2c0e3c4e7df73cc",
+    "name": "长白朝语",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_229799c4d78a18e951a9",
+    "name": "吉林乡村",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5863869685a73fb1bab5",
+    "name": "祁门综合",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5a16b0ce324f333d2c1e",
+    "name": "亳州新闻",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_da3cec696970a6584d3b",
+    "name": "亳州农村",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b0172db2b5940fa26fa8",
+    "name": "通海电视台",
+    "group": "地方·云南",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3dc41bd5960eaf8e5229",
+    "name": "西宁新闻综合",
+    "group": "地方·青海",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0d01a0d915fba6b9b799",
+    "name": "黑龙江新闻",
+    "group": "地方·黑龙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ab3afce7497f3796e028",
+    "name": "易门综合",
+    "group": "地方·云南",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d321e6490c329703147f",
+    "name": "广德生活",
+    "group": "地方·安徽",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4a3e7008350d429a311e",
+    "name": "七台河新闻综合",
+    "group": "地方·黑龙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6bc6d4f010147129753f",
+    "name": "纬来体育",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_456a649fe906197d65cb",
+    "name": "三立新闻",
+    "group": "港澳台",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d4ac93a2bafcddc1e183",
+    "name": "音乐现场",
+    "group": "文化生活",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_95b06b64f017750bafb1",
+    "name": "南国都市",
+    "group": "其他电视·待核验",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e833ec6273c1298e53d7",
+    "name": "韩国EBS少儿",
+    "group": "少儿动漫",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d3fb49df1f3b88a45283",
+    "name": "奎屯汉语",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c54a828b07254545427d",
+    "name": "江津新闻",
+    "group": "地方·重庆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8baa34779658ffc106bb",
+    "name": "辉南新闻",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_921b40f541ca9ca9d07a",
+    "name": "兵团五师双河影",
+    "group": "地方·新疆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6854098a47f8e3eb5509",
+    "name": "音乐欣赏",
+    "group": "文化生活",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ed4ca08e1f2f93ed0520",
+    "name": "珲春新闻",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ce85a317b2e0c69585e9",
+    "name": "白山公共",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_16d1e650175fba6abd60",
+    "name": "舒兰新闻",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_168bff72f63b76381549",
+    "name": "河北4K",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_1668afc6558c8be38b2f",
+    "name": "重温经典",
+    "group": "电影剧场",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_c15aafa980a8cbdd2e65",
+    "name": "乐游频道",
+    "group": "地方·上海",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0297eb327ca0de8c459a",
+    "name": "纪实科教",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_165054f12b91fee4606c",
+    "name": "新纪实",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_8db5781c11b419b30cf3",
+    "name": "1905电影网",
+    "group": "其他电视·待核验",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_6a4ba647236ed7a0b4a9",
+    "name": "1905电影网(国内)",
+    "group": "其他电视·待核验",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3e70ac30fac6ae82e02c",
+    "name": "BRTV纪实科教",
+    "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_593fb016d258f5134737",
+    "name": "优优宝贝",
+    "group": "少儿动漫",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9e48b5b429398544028b",
+    "name": "生态环境",
+    "group": "文化生活",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bbda504e246408c6e14a",
+    "name": "车迷频道",
+    "group": "文化生活",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bb165e16fb4cab6e11fe",
+    "name": "金川乡村",
+    "group": "地方·四川",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d7738aea4dd74897b4ad",
+    "name": "茶友频道",
+    "group": "文化生活",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_35b30ac6df40bd7a1894",
+    "name": "河北公共",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3de8968f04002c681663",
+    "name": "河北影视",
+    "group": "地方·河北",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b1191782552b4df4670d",
+    "name": "ABN China",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_f5ba43896ceea48c7174",
+    "name": "Angel TV Chinese",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_76cb71cbf552a90ea80d",
+    "name": "Ando TV",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_9f2fd1d4f0d1d775b8b5",
+    "name": "Bread TV",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5990fad08ccdcdfbe980",
+    "name": "Baicheng TV",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_7676d1657c562b529747",
+    "name": "Anshun Comprehensive News Channel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_956509578acb5f7e659d",
+    "name": "Chaozhou Public Channel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ab872c34840df905ca47",
+    "name": "Chifeng Comprehensive News Chanel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_398b51051dda1c601a35",
+    "name": "Chuxiong News Channel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_401bd5c381e417cc5776",
+    "name": "东方国际",
+    "group": "地方·上海",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_eb67142a558d60c39b56",
+    "name": "Guangxi Variety & Travel Channel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4d72e7717d4aa471b9cd",
+    "name": "Hebi News Channel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_faa2d4bc8038ed0cff6d",
+    "name": "Kangba TV",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_faa6677e7e5d1e91e719",
+    "name": "QTV-6",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_4ab01d08a718aafd6f3f",
+    "name": "QTV-1",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_16ce59fd0ba13df4eca8",
+    "name": "QTV-4",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_b96d0c7febe27b36cc11",
+    "name": "QTV-3",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_0eb1f56d8ca6ec116a62",
+    "name": "QTV-2",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3346f17e762c96259d8b",
+    "name": "QTV-5",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_41be35c19d1f59f88cc4",
+    "name": "Xinjiang TV 2",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_eb6d6b8eaf252270c0f2",
+    "name": "Xinjiang TV 3",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bd493aadb7fb4fb0d146",
+    "name": "VoA TV China",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_80af15ebf7a852623275",
+    "name": "Xinjiang TV 8",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e7a88f49b1ad3401ff2a",
+    "name": "Siping TV",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_19d04e4f96349671de6f",
+    "name": "Xizang TV Tibetan",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_2b886124554cc8dafd83",
+    "name": "Lanzhou Culture & Tourism Channel",
+    "group": "国际",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_001d35d8700d5ca09af6",
+    "name": "四平综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a7d73262923a4b0a3d99",
+    "name": "白城新闻综合",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_482e926a38d84a70457c",
+    "name": "余姚姚江文化",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d32881c339ad83d8a699",
+    "name": "文旅频道",
+    "group": "地方·其他",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_d87c808b24ce0c3573aa",
+    "name": "新闻综合频道",
+    "group": "地方·其他",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_32b7e055fdbbc49fb0fc",
+    "name": "江津新闻综合",
+    "group": "地方·重庆",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3c6513a3947728856dd7",
+    "name": "江苏公共新闻",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_fd2223c329d9d61c12fc",
+    "name": "绍兴新闻综合",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a7bec738c45f755c2d92",
+    "name": "CCTV新影-中学生",
+    "group": "央视及教育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_3109db3acbd3a642c275",
+    "name": "新疆卫视维吾尔语",
+    "group": "卫视",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_465fbdbaf1b8b771246b",
+    "name": "新疆卫视哈萨克语",
+    "group": "卫视",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_efce0680617f73ae5cdd",
+    "name": "新疆卫视少儿频道",
+    "group": "卫视",
+    "reason": "no source confirmed a guide id"
+  }
+]

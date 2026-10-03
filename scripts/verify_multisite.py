@@ -51,6 +51,14 @@ def verify(directory=ROOT/'output'):
     assert '.fqzone.tv' not in playlist,'Unverified generated EPG ids reintroduced'
     assert '@latest' not in json.dumps(api),'Mixed-version dependencies'
     assert playlist.count('#EXTINF:')>200,'Unexpected television coverage collapse'
+    # A route that was proven to answer with someone else's channel must not be handed to a player
+    # through any path, and the count of those routes has to be visible in the published metadata.
+    routes=json.loads((ROOT/'registry/routes.json').read_text())
+    withheld={r['url'] for r in routes if r.get('review')=='quarantined'}
+    assert not withheld.intersection({line.split('|')[0] for line in playlist.splitlines() if '://' in line}),\
+        'Quarantined live route reached the playlist'
+    assert manifest['live_routes_total']==len(routes),'Manifest route total disagrees with the registry'
+    assert manifest['live_routes_quarantined']==len(withheld),'Manifest quarantine count disagrees with the registry'
     # Re-check every shipped guide id the way the player will consume it: the id must be exactly
     # what the registry plus the source policy can prove right now, so a stale or invented id fails.
     policy=json.loads((ROOT/'policy/operations.json').read_text())

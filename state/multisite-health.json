@@ -13,6 +13,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv2, served 107/cctv2/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -129,6 +140,17 @@
    "latency_ms": 160,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested hnws, served 102/107/byt/hnws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -783,6 +805,17 @@
    "latency_ms": 195,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested jiangxiweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -1556,6 +1589,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested tjws, served 107/byt/mkt/tjws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -1818,6 +1862,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cqws, served 102/107/byt/cqws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -2052,6 +2107,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested xjws, served 107/byt/mkt/xjws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -2129,6 +2195,17 @@
    "latency_ms": 159,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested xinjiangweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -2680,6 +2757,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested dnws, served 107/byt/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 1,
    "consecutive_ok": 0,
@@ -3026,6 +3114,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested guizhouweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -3140,6 +3239,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv5, served 107/cctv5/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -3217,6 +3327,17 @@
    "latency_ms": 1386,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ysjp, served 102/107/byt/mkt/ysjp/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -3491,6 +3612,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested fyzq, served 102/107/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -3529,6 +3661,17 @@
    "latency_ms": 1071,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested gdws, served byt/gdws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -3604,6 +3747,17 @@
    "latency_ms": 159,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested sichuanweishi4k/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -4027,6 +4181,17 @@
    "latency_ms": 1250,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested yangshiwenhuajingpin/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -4702,6 +4867,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested xmws, served mkt/xmws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -5061,6 +5237,17 @@
    "latency_ms": 194,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested shanxiweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -5449,6 +5636,17 @@
    "latency_ms": 1069,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv12, served 107/byt/cctv12md/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 1,
@@ -5908,6 +6106,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested chcjt, served chcjt/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -6333,6 +6542,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested xizangweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -6371,6 +6591,17 @@
    "latency_ms": 1049,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv3, served 107/byt/cctv3/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -6447,6 +6678,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested chcdz, served 102/107/byt/chcdz/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -6522,6 +6764,17 @@
    "latency_ms": 1071,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ystq, served byt/mkt/yss/ystq (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -6834,6 +7087,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested bjws, served 107/bjws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -7141,6 +7405,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested gxws, served 102/107/byt/gxws/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -7296,6 +7571,17 @@
    "latency_ms": 189,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested fujianlvyou/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 1,
@@ -7690,6 +7976,17 @@
    "latency_ms": 1065,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ynws, served 102/107/mkt/ynws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -8577,6 +8874,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested szws, served 102/107/mkt/szws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -8807,6 +9115,17 @@
    "latency_ms": 1043,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ssws, served 107/byt/mkt/ssws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -9042,6 +9361,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested chcjt, served 107/byt/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -9159,6 +9489,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested nmgws, served 102/107/byt/nmgws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -9233,6 +9574,17 @@
    "latency_ms": 1044,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv7, served 107/byt/cctv7/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 1,
@@ -9363,6 +9715,17 @@
    "latency_ms": 1077,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested jsws, served 107/byt/jsws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -9598,6 +9961,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested fengyunyinyue/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -9636,6 +10010,17 @@
    "latency_ms": 154,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested dfws, served 107/byt/dfws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -9753,6 +10138,17 @@
    "latency_ms": 1465,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested gefwq, served 107/byt/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -10061,6 +10457,17 @@
    "latency_ms": 1033,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv9, served 107/byt/cctv9/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -11308,6 +11715,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested fengyunjuchang/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -11346,6 +11764,17 @@
    "latency_ms": 167,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested zjws, served 107/byt/yss/zjws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -11538,6 +11967,17 @@
    "latency_ms": 1064,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested diyijuchang/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -11767,6 +12207,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested hbws, served 107/byt/hbws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -11922,6 +12373,17 @@
    "latency_ms": 175,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested fujianxiangcungonggong/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 1,
@@ -12975,6 +13437,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested sxws, served 107/byt/mkt/sxws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 1,
    "consecutive_ok": 0,
@@ -13592,6 +14065,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested jlws, served 107/byt/jlws/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -13938,6 +14422,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv8k, served cctv8k/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -14054,6 +14549,17 @@
    "latency_ms": 1424,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested nxss, served 107/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -15257,6 +15763,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ningxiaweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -15487,6 +16004,17 @@
    "latency_ms": 1462,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv16, served 102/byt/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -15945,6 +16473,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested nxws, served 107/byt/mkt/nxws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -16139,6 +16678,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested scws, served 107/byt/mkt/scws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -16177,6 +16727,17 @@
    "latency_ms": 1059,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested gxxw, served 107/byt/gxxw/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 1,
@@ -16371,6 +16932,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested xzws, served 107/byt/mkt/xzws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -16484,6 +17056,17 @@
    "latency_ms": 1436,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cetv3, served 107/byt/cetv3/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -17332,6 +17915,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested shaanxiweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -17788,6 +18382,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested sdws, served 102/107/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -17826,6 +18431,17 @@
    "latency_ms": 1065,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested gzws, served 107/byt/gzws/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -18331,6 +18947,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ynws, served mkt/ynws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -18693,6 +19320,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested hljws, served 102/107/hljws/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -19036,6 +19674,17 @@
    "latency_ms": 467,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested bingqikeji/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -20049,6 +20698,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested ahws, served 107/ahws/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -20166,6 +20826,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested lnws, served 107/byt/lnws/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -20282,6 +20953,17 @@
    "latency_ms": 1064,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested haws, served 107/byt/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -20436,6 +21118,17 @@
    "latency_ms": 154,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested qhws, served 102/107/mkt/qhws (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -20592,6 +21285,17 @@
    "latency_ms": 1036,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested dyjc, served byt/dyjc/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -21018,6 +21722,17 @@
    "latency_ms": 1068,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested jxws, served 102/107/byt/jxws/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -21873,6 +22588,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested 1905/live3ypyz30e7v1r0, served aad (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -22178,6 +22904,17 @@
    "latency_ms": 5338,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested 1905/liveoyy31h24h48ne, served aad (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -22486,6 +23223,17 @@
    "latency_ms": 1043,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested xmws, served 107/mkt/xmws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -23285,6 +24033,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested neimengguweishi/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -23566,6 +24325,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested huaijiujuchang/01wgor41rrimmmkznsd0uoaxjrwetzdxivtvk, served error_account_pirated (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,
@@ -23642,6 +24412,17 @@
    "latency_ms": 163,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested nfws, served 107/mkt/nfws/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -24544,6 +25325,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv9, served cctv9md/mkt (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 1,
    "consecutive_ok": 0,
@@ -25002,6 +25794,17 @@
    "latency_ms": 1071,
    "network": "github",
    "state": "healthy"
+  },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch: requested cctv4, served byt/mkt/yss (8/8 re-tests)",
+   "network": "global",
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,

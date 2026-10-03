@@ -50,6 +50,14 @@ jobs:
         # cannot answer, so an outage never erases verified data; best-effort keeps health landing.
         continue-on-error: true
         run: python scripts/epg_match.py --workers 3 --window 160
+      - name: Verify every live route answers with the channel it claims
+        if: steps.mode.outputs.value == 'full'
+        # A source can answer a request for one channel with an advertisement loop, and that stream
+        # is valid HLS, so reachability and latency ranking cannot tell it apart. Only identity can,
+        # and with the fastest source winning the ranking an ad source will otherwise outrank the
+        # real one. Best-effort: an unreachable source must never stop health evidence from landing.
+        continue-on-error: true
+        run: python scripts/verify_live_identity.py --workers 12 --apply
       - name: Save audit evidence without deleting channel identities
         id: evidence
         if: always()
@@ -57,7 +65,8 @@ jobs:
           git config user.name maintenance-bot
           git config user.email actions@users.noreply.github.com
           git add state/provider-audit.json state/multisite-health.json reports/audit-github.json \
-                  registry/channels.json reports/epg-match.json state/epg-cursor.json
+                  registry/channels.json reports/epg-match.json state/epg-cursor.json \
+                  registry/routes.json reports/live-identity.json
           # Re-confirming a mapping rewrites the time it was confirmed. That renews real evidence and
           # is worth committing, but it ships a byte-identical release, so only a change in what users
           # receive (or in health evidence) may open a new candidate.

@@ -103,6 +103,56 @@ class RepositoryGuideStateTests(unittest.TestCase):
         changed=[{**c,'epg_id':''} if c.get('epg_id') else c for c in self.channels]
         if changed!=self.channels:self.assertNotEqual(digest(changed),digest(self.channels))
 
+class RouteIdentityTests(unittest.TestCase):
+    """A source that answers with a different channel must never reach the shipped playlist.
+
+    The sampled aggregator serves a home-shopping feed for most requests and the real channel
+    for the rest, so every byte it returns is valid HLS and reachability alone cannot tell the
+    two apart. These assertions keep the identity evidence and the registry in step.
+    """
+    def setUp(self):
+        self.channels=json.loads((ROOT/'registry/channels.json').read_text())
+        self.routes=json.loads((ROOT/'registry/routes.json').read_text())
+        self.policy=json.loads((ROOT/'policy/operations.json').read_text())
+    def quarantined(self):
+        return {r['id']:r for r in self.routes
+                if r.get('review')=='quarantined' and 'identity' in (r.get('quarantine_reason') or '')}
+    def test_quarantine_records_what_the_route_actually_served(self):
+        for rid,route in self.quarantined().items():
+            reason=route['quarantine_reason']
+            served=reason.split('served ',1)[1].split(' (',1)[0] if 'served ' in reason else ''
+            self.assertTrue(served and served!='unknown',reason)
+            self.assertIn('requested ',reason,rid)
+            self.assertIn('re-tests',reason,rid)
+    def test_quarantined_routes_are_never_emitted(self):
+        text,_=playlist(self.channels,self.routes,{},
+                        network=self.policy['preferred_live_network'],
+                        max_routes=self.policy['max_live_routes'])
+        blocked={r['url'] for r in self.quarantined().values()}
+        self.assertTrue(blocked,'no identity quarantine is recorded')
+        for line in text.splitlines():
+            if '://' in line:
+                self.assertNotIn(line.split('|')[0],blocked,line)
+    def test_report_agrees_with_the_registry(self):
+        report=json.loads((ROOT/'reports/live-identity.json').read_text())
+        self.assertEqual(set(report['quarantined']),set(self.quarantined()))
+        self.assertEqual(report['routes_checked'],len(report['results']))
+        self.assertTrue(set(report['quarantined']).issubset({r['id'] for r in report['results']}))
+        self.assertTrue(set(report['quarantined']).issubset({c['id'] for c in report['confirmation']}))
+    def test_only_opaque_names_are_unverifiable(self):
+        from scripts.verify_live_identity import identity_tokens,judgeable,normalize,same_channel
+        # The ad lineup serves bare numeric ids, so those must stay comparable.
+        for value in ('107','102','mkt','dfws'):
+            self.assertTrue(judgeable(value),value)
+        for value in ('617290047','bc185d1ef1e52892','0b1b95c9-3543-4af9-9fdb-cf45f1602f17'):
+            self.assertFalse(judgeable(value),value)
+        self.assertEqual(normalize('dfwshd'),'dfws')
+        self.assertEqual(normalize('cctv5hd'),'cctv5')
+        self.assertFalse(same_channel('dfws','mkt'))
+        self.assertTrue(same_channel('cctv5','cctv5md'))
+        # A generic path with the channel in the query is still a named request.
+        self.assertEqual(identity_tokens('http://h:82/gslb/zbdq5.m3u8?id=cctv8k'),['zbdq5','cctv8k'])
+
 class ContentTests(unittest.TestCase):
     def test_no_substring_category_admission(self):
         for s in ('里番动漫','伦理片','成人动漫','午夜福利电影','新闻资讯','体育赛事','预告片'):

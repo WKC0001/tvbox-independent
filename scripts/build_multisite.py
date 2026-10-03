@@ -159,7 +159,8 @@ def main():
             'lives':[{'name':'WKC电视直播','type':0,'url':base+'live.m3u','epg':guide,
                       'playerType':2,'timeout':15}]}
     channels=read('registry/channels.json')
-    text,gaps=playlist(channels,read('registry/routes.json'),health,
+    routes=read('registry/routes.json')
+    text,gaps=playlist(channels,routes,health,
                        network=policy['preferred_live_network'],max_routes=policy['max_live_routes'],epg=epg)
     (out/'live.m3u').write_text(text);dump(out/'api.json',config)
     dump(out/'dc.json',{'urls':[{'url':base+'api.json','name':'WKC 自有聚合'}]})
@@ -174,6 +175,7 @@ def main():
     guide_ids=re.findall(r'tvg-id="([^"]*)"',text)
     runtime={'files':{},'version':package['version'],'package':package['name'],'format':'multi-site-v1','site_count':len(config['sites']),
              'channel_count':len(channels),'known_live_gaps':len(gaps),'native_bridge_restored':True,
+             'live_routes_total':len(routes),'live_routes_quarantined':sum(1 for r in routes if r.get('review')=='quarantined'),
              'epg_source':sorted(epg['sources']),'epg_max_age_days':epg['max_age_days'],
              'epg_channels_verified':len(covered),'epg_channels_shipped':len(set(guide_ids)),'epg_guide_entries':len(guide_ids),
              'epg_gaps':len(epg_gaps),

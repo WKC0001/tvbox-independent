@@ -30,13 +30,17 @@ public final class CryptoBridge {
             byte[] digest = MessageDigest.getInstance("SHA-256").digest(data);
             StringBuilder hex = new StringBuilder();
             for (byte b : digest) hex.append(String.format("%02x", b & 255));
-            File lib = new File(Init.context().getCacheDir(), "ftycrypto-" + hex + ".so");
-            if (!lib.isFile() || lib.length() != data.length) {
-                if (lib.exists() && !lib.delete()) throw new IllegalStateException("Cannot replace crypto library");
+            // Android binds each loaded native library to its defining class loader.
+            // FM creates new loaders after config reloads, so each requires its own inode.
+            File lib = File.createTempFile("ftycrypto-" + hex + "-", ".so", Init.context().getCacheDir());
+            try {
                 try (FileOutputStream out = new FileOutputStream(lib)) { out.write(data); }
                 if (!lib.setReadOnly()) throw new IllegalStateException("Cannot protect crypto library");
+                System.load(lib.getAbsolutePath());
+            } finally {
+                // The mapped library remains valid after unlink on Android/Linux.
+                lib.delete();
             }
-            System.load(lib.getAbsolutePath());
             loaded = true;
         } catch (Exception e) {
             throw new IllegalStateException("Cannot load bundled crypto library", e);

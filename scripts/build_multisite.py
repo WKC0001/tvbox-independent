@@ -24,11 +24,16 @@ def run(*args):subprocess.run([str(x) for x in args],cwd=ROOT,check=True)
 def dependencies():
     defaults={'JAVA_HOME':'/private/tmp/apktools/jdk-17.0.20.1+1/Contents/Home',
               'D8_JAR':'/private/tmp/apktools/bt/android-14/lib/d8.jar',
-              'SMALI_JAR':'/private/tmp/apktools/apktool3.jar',
+              'SMALI_JAR':str(ROOT/'.build-tools/smali-tools.jar'),
               'JSON_JAR':str(ROOT.parents[1]/'enrichment/java/json.jar')}
     d={k:Path(os.environ.get(k,v)) for k,v in defaults.items()}
     for k,v in d.items():
         if not v.exists():raise SystemExit('Missing '+k+': '+str(v))
+    expected={'SMALI_JAR':read('policy/build-tools.json')['assembled_sha256'],
+              'JSON_JAR':'3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed',
+              'D8_JAR':'d43c8a94c9b1f1da1a7cc49c32b81e8cee1708b37ee8b530a81a0688222b42c0'}
+    for key,sha in expected.items():
+        if hashlib.sha256(d[key].read_bytes()).hexdigest()!=sha:raise SystemExit('Pinned dependency checksum mismatch: '+key)
     return d
 
 

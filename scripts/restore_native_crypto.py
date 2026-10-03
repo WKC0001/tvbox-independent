@@ -91,6 +91,15 @@ def build(args):
             init = init.replace(marker, binding + "\n" + marker, 1)
         init_path.write_text(init)
 
+        # Disable the original author's remote announcement/configuration updater.
+        # The verified method decoded and fetched fantaiying7/sqmrts/z/ts.txt.
+        background_path = smali / PACKAGE / 'merge/cn.smali'
+        background = background_path.read_text()
+        background, count = re.subn(r'(?ms)^\.method static yq\(Landroid/content/Context;\)V\n.*?^\.end method',
+            '.method static yq(Landroid/content/Context;)V\n    .locals 0\n    return-void\n.end method', background)
+        if count != 1:raise ValueError('Expected legacy remote updater method missing')
+        background_path.write_text(background)
+
         # Compile-only stubs. They are never included in the resulting jar.
         stubs = {
             "android/os/Build.java": "package android.os; public class Build { public static String CPU_ABI; }",

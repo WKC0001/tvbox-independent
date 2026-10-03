@@ -1,0 +1,71 @@
+{
+  "smali_version": "3.0.9",
+  "assembled_sha256": "c363a12cc9657a74603442a575f3d6bd82aa107ca52e44243de572a2083de374",
+  "dependencies": [
+    {
+      "name": "smali-3.0.9.jar",
+      "url": "https://dl.google.com/dl/android/maven2/com/android/tools/smali/smali/3.0.9/smali-3.0.9.jar",
+      "sha256": "98e917b1b1e4f5aa48e74c97fee786645725e9b79e9842e3d7e50f65896553f1"
+    },
+    {
+      "name": "smali-baksmali-3.0.9.jar",
+      "url": "https://dl.google.com/dl/android/maven2/com/android/tools/smali/smali-baksmali/3.0.9/smali-baksmali-3.0.9.jar",
+      "sha256": "e7d0166945565a87f3997d1aea8779202dbb6cb0585a39ee20bab8a2f5ba87f6"
+    },
+    {
+      "name": "smali-dexlib2-3.0.9.jar",
+      "url": "https://dl.google.com/dl/android/maven2/com/android/tools/smali/smali-dexlib2/3.0.9/smali-dexlib2-3.0.9.jar",
+      "sha256": "8b547506f62f91d74b70f4beb4989b99e1ff61fc50b2525e9796ca35f0a351dc"
+    },
+    {
+      "name": "smali-util-3.0.9.jar",
+      "url": "https://dl.google.com/dl/android/maven2/com/android/tools/smali/smali-util/3.0.9/smali-util-3.0.9.jar",
+      "sha256": "4673762894ba4156081fc5c642f74d6e78aef8b1a9c7702d691e3171d8cc1153"
+    },
+    {
+      "name": "guava-31.1-android.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/google/guava/guava/31.1-android/guava-31.1-android.jar",
+      "sha256": "32ac2ed709d96d278b5d2e3e5cea178fa4939939c525fb647532f013308db309"
+    },
+    {
+      "name": "failureaccess-1.0.1.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar",
+      "sha256": "a171ee4c734dd2da837e4b16be9df4661afab72a41adaf31eb84dfdaf936ca26"
+    },
+    {
+      "name": "listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar",
+      "sha256": "b372a037d4230aa57fbeffdef30fd6123f9c0c2db85d0aced00c91b974f33f99"
+    },
+    {
+      "name": "jcommander-1.64.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/beust/jcommander/1.64/jcommander-1.64.jar",
+      "sha256": "156be736199c990321d9ff77090b199629cfc9865e2d6c13f7cd291bb1641817"
+    },
+    {
+      "name": "antlr-3.5.2.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/antlr/antlr/3.5.2/antlr-3.5.2.jar",
+      "sha256": "5ac36c2acfb0a0f3d37dafe20b5b570f2643e2d000c648d44503c2738be643df"
+    },
+    {
+      "name": "antlr-runtime-3.5.2.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/antlr/antlr-runtime/3.5.2/antlr-runtime-3.5.2.jar",
+      "sha256": "ce3fc8ecb10f39e9a3cddcbb2ce350d272d9cd3d0b1e18e6fe73c3b9389c8734"
+    },
+    {
+      "name": "stringtemplate-3.2.1.jar",
+      "url": "https://repo.maven.apache.org/maven2/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar",
+      "sha256": "f66ce72e965e5301cb0f020e54d2ba6ad76feb91b3cbfc30dbbf00c06a6df6d7"
+    },
+    {
+      "name": "antlr-2.7.7.jar",
+      "url": "https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar",
+      "sha256": "88fbda4b912596b9f56e8e12e580cc954bacfb51776ecfddd3e18fc1cf56dc4c"
+    },
+    {
+      "name": "jsr305-3.0.2.jar",
+      "url": "https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar",
+      "sha256": "766ad2a0783f2687962c8ad74ceecc38a28b9f72a2d085ee438b7813e928d0c7"
+    }
+  ]
+}

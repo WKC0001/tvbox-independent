@@ -5,8 +5,8 @@
   "sites": 8,
   "playlist_routes": 650,
   "files": {
-    "api.json": "688ab3807f7882f9cae3edb167cfcb35e14b8cda73c6a752e3c4b801283b0dfa",
-    "cfg.jpg": "8fa27fca0177dfb45ef640f84a2d2b0f9fdc34d78943082392a85fe197be5766",
+    "api.json": "005adcc1d263dc50092ab4ff43963c6bcce8f5b79f651c4030508631938eebfd",
+    "cfg.jpg": "9b02393c065b1e0f641c143b6e256c1d450f8315ef41a70a293f48b79467392f",
     "live.m3u": "52d3c562feb75da772f5798dd79cebfda0e9390e59f3f246696ac5c5b23cdb38",
     "dc.json": "0ecd29624ae7600c29414cee2362da4dae3fbc50a64f94d89100b170b3ca118b"
   },

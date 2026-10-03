@@ -1,0 +1,11 @@
+{
+  "two_local_builds_identical": true,
+  "version": "0.5.0",
+  "toolchain": "smali 3.0.9, assembled deterministically by scripts/prepare_tools.py from policy/build-tools.json (13 pinned upstream jars)",
+  "assembled_smali_tools_sha256": "c363a12cc9657a74603442a575f3d6bd82aa107ca52e44243de572a2083de374",
+  "plugin_sha256": "9b02393c065b1e0f641c143b6e256c1d450f8315ef41a70a293f48b79467392f",
+  "api_json_sha256": "005adcc1d263dc50092ab4ff43963c6bcce8f5b79f651c4030508631938eebfd",
+  "live_m3u_sha256": "52d3c562feb75da772f5798dd79cebfda0e9390e59f3f246696ac5c5b23cdb38",
+  "dc_json_sha256": "0ecd29624ae7600c29414cee2362da4dae3fbc50a64f94d89100b170b3ca118b",
+  "method": "two consecutive local builds on the same machine; every artifact compared byte-for-byte"
+}

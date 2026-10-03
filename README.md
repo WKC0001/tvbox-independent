@@ -55,7 +55,7 @@ GitHub Actions 的 `publish.yml` 构建真实 Android DEX、执行回归检查�
 /Users/ckw/.workbuddy/binaries/python/envs/default/bin/python scripts/build_release.py
 ```
 
-构建需要 JDK17、D8、apktool3.0.3、org.json20240303；CI 下载并核对固定依赖，路径可用 `JAVA_HOME / D8_JAR / SMALI_JAR / JSON_JAR` 指定。编译桩和测试类不进入插件。
+构建需要 JDK17、D8(build-tools 34.0.0)、smali 3.0.9、org.json20240303；路径可用 `JAVA_HOME / D8_JAR / SMALI_JAR / JSON_JAR` 指定。`SMALI_JAR` 不再指向 apktool：apktool 3.x 的发行包不含 baksmali/smali 入口，2.x 的捆绑版本无法按字节复现。改为 `scripts/prepare_tools.py` 按 `policy/build-tools.json` 从 Google Maven（smali 4 件）和 Maven Central（guava/antlr/jcommander 等 9 件）逐件下载并校验 sha256，再确定性地装配成 `.build-tools/smali-tools.jar`；装配结果的 sha256 锁在同一个文件里，构建时复查。编译桩和测试类不进入插件。
 
 自动维护每两小时轮换轻量探测，每天北京时间 07:00 全量检查，周末再全量检查。健康按网络保存；单次失败降级，连续失败移出当前输出，恢复要求间隔至少十分钟的两次成功。超过七天的证据失效。大面积异常阻止普通候选发布，上一版保持有效。`local-direct` 表示本机直连，`github` 表示 Actions，均不等于已验证所有国内运营商。
 

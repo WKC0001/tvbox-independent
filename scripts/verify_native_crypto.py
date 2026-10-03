@@ -46,8 +46,14 @@ def main():
         assert before.keys() <= after.keys(), "Existing classes removed"
         assert after.keys() - before.keys() <= expected_new, "Unexpected classes added"
         changed = {f"L{PACKAGE}/{name};" for name in ("Init", "DexNative", "HideUtils", "CryptoBridge")}
+        changed.add(f"L{PACKAGE}/merge/cn;")
         for descriptor in before.keys() - changed:
             assert before[descriptor] == after[descriptor], f"Unrelated bytecode changed: {descriptor}"
+        pattern=r'(?ms)^\.method static yq\(Landroid/content/Context;\)V\n.*?^\.end method'
+        key=f'L{PACKAGE}/merge/cn;'
+        assert re.sub(pattern,'UPDATER',before[key])==re.sub(pattern,'UPDATER',after[key]),'Unrelated updater-class method changed'
+        updater=re.search(pattern,after[key]).group()
+        assert 'invoke-' not in updater and 'return-void' in updater,'Original-author remote updater active'
         spider = root / "after" / PACKAGE
         native = (spider / "DexNative.smali").read_text()
         for signature in NATIVES:
@@ -64,8 +70,9 @@ def main():
         assert '"Guard"' in init and "->substring(II)" in init
         crypto = (spider / "CryptoBridge.smali").read_text()
         assert "Ljava/lang/System;->load(Ljava/lang/String;)V" in crypto
+        assert "Ljava/io/File;->createTempFile(" in crypto, "Class loaders must use separate native files"
         assert "->getLoader(" not in crypto and "->getSpider(" not in crypto
-        print(f"PASS: {len(before)} existing classes preserved; only Init/DexNative changed, two bridge classes added")
+        print(f"PASS: {len(before)} existing classes preserved; bridge restored and only the legacy remote updater disabled")
         print("PASS: all eight JNI descriptors, five wrappers, reflection binding, assets, and Guard mapping")
         print(f"jar md5: {hashlib.md5(args.jar.read_bytes()).hexdigest()}")
 

@@ -39,8 +39,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p .build-tools
-          curl --fail --location --retry 3 https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar -o .build-tools/apktool.jar
-          echo '29fc610eed9dd349e75d40fd5af02538e0118b08d56a61ef6f53f8256adadc9a  .build-tools/apktool.jar' | sha256sum --check
+          python scripts/prepare_tools.py
           curl --fail --location --retry 3 https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar -o .build-tools/json.jar
           echo '3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed  .build-tools/json.jar' | sha256sum --check
           if [ ! -f "$ANDROID_HOME/build-tools/34.0.0/lib/d8.jar" ]; then
@@ -48,7 +47,7 @@ jobs:
           fi
           echo "D8_JAR=$ANDROID_HOME/build-tools/34.0.0/lib/d8.jar" >> "$GITHUB_ENV"
           echo "JSON_JAR=$GITHUB_WORKSPACE/.build-tools/json.jar" >> "$GITHUB_ENV"
-          echo "SMALI_JAR=$GITHUB_WORKSPACE/.build-tools/apktool.jar" >> "$GITHUB_ENV"
+          echo "SMALI_JAR=$GITHUB_WORKSPACE/.build-tools/smali-tools.jar" >> "$GITHUB_ENV"
       - name: Verify registry, build actual DEX, validate complete release
         run: python scripts/build_release.py
       - name: Pack clean npm stage

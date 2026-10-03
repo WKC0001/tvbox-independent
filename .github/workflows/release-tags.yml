@@ -1,0 +1,34 @@
+name: promote-or-rollback-verified-release
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Exact verified npm version
+        required: true
+      action:
+        type: choice
+        options: [promote, rollback]
+        default: promote
+permissions:
+  contents: read
+concurrency:
+  group: independent-release-state
+  cancel-in-progress: false
+jobs:
+  tag:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          registry-url: https://registry.npmjs.org/
+      - name: Check recorded APK acceptance
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: python scripts/check_acceptance.py
+      - name: Move latest to the accepted fixed release
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: npm dist-tag add "wkc0001-tvbox-independent@$RELEASE_VERSION" latest

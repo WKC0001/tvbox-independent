@@ -1296,36 +1296,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_bd6fa5e2c6de41a6cc10",
-    "url": "https://vd2.bdstatic.com/mda-sctj0f96cn79js4n/1080p/cae_h264/1774710384405617311/mda-sctj0f96cn79js4n.mp4",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 96
-      },
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 842
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_a413763c46bb5175ce21",
-    "url": "https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 97
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_502e31578f4a150edcfa",
     "url": "http://t.061899.xyz/tl/tl.php?id=zxs",
     "headers": {},
@@ -1802,19 +1772,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 156
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_2697208560dab2852177",
-    "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 157
       }
     ],
     "review": "inherited-television"
@@ -3136,19 +3093,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_7fcf4ba656353f9c023f",
-    "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5211790793651941963_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 259
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_30f7b45c8785f033a5b3",
     "url": "http://mag.trexlive.me:80/play/live.php?extension=ts&mac=00:1A:79:7E:2F:ED&stream=1919463",
     "headers": {},
@@ -3222,45 +3166,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_4f7810862e29ed10a664",
-    "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 268
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_ebd500d0680ff6912f2d",
-    "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 269
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_f480ccee167654589e24",
-    "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 270
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_d9946f86781aefd357c2",
     "url": "https://stream.ads.ottera.tv/playlist.m3u8?network_id=595",
     "headers": {},
@@ -3282,19 +3187,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 309
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_f8238db3528471a71dd6",
-    "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 316
       }
     ],
     "review": "inherited-television"
@@ -7545,32 +7437,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_774ce2c9163f9a80b63d",
-    "url": "http://173.208.234.146/live/vlxyj.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 719
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_0af9e12428731c3a8274",
-    "url": "http://173.208.234.146/live/vlshz.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 722
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_7858644ce13a6dcd5c14",
     "url": "https://live-auth.51kandianshi.com/szgd/csztv4k_hd.m3u8",
     "headers": {},
@@ -7592,19 +7458,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 731
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_82f07995115f85d87f4e",
-    "url": "http://173.208.234.146/live/lbchuangguandong.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 732
       }
     ],
     "review": "inherited-television"
@@ -7644,58 +7497,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 737
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_75a62c630137c8a9bf9d",
-    "url": "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/93fc12dbf14241c18c23da104fbade23/4000.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 738
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_3b7b72d91edca79d3625",
-    "url": "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 739
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_a2b0dae80a64ccc96356",
-    "url": "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 740
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_310d04a0203362722c4f",
-    "url": "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 741
       }
     ],
     "review": "inherited-television"
@@ -7831,19 +7632,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_03a3ce7dc249f29a2521",
-    "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 752
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_6dc4870cbc3fda4095f2",
     "url": "http://stream5.jlntv.cn/thx/sd/live.m3u8?zjild",
     "headers": {},
@@ -7870,19 +7658,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_abf1ce365131760aac93",
-    "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 755
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_63db8ca104533f787473",
     "url": "http://61.221.215.25:8800/hls/49/index.m3u8",
     "headers": {},
@@ -7891,32 +7666,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 756
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_333ffcdd19d4c51010f2",
-    "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 757
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_b1f2a87bfeccc28d43fd",
-    "url": "https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 760
       }
     ],
     "review": "inherited-television"
@@ -7995,19 +7744,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 768
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_c34356375cf02944746b",
-    "url": "https://newcntv.qcloudcdn.com/asp/hls/2000/0303000a/3/default/d2454bbb542d4613a9db478dab2addfd/2000.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 769
       }
     ],
     "review": "inherited-television"
@@ -8101,7 +7837,8 @@
         "record": 868
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "Decoded frame is a donation QR placeholder, not television programming"
   },
   {
     "id": "r_ddae211ed7ecc50b389c",
@@ -8112,19 +7849,6 @@
       {
         "origin": "source-monitor@0.1.26",
         "record": 869
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
-    "id": "r_65b4371808f747773358",
-    "url": "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 870
       }
     ],
     "review": "inherited-television"
@@ -8533,10 +8257,14 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_b44b50d94c58f563a00c",
+    "id": "r_af3bbd5f639954fb645f",
     "url": "https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8",
-    "headers": {},
-    "directives": [],
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+    },
+    "directives": [
+      "#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+    ],
     "origins": [
       {
         "origin": "source-monitor@0.1.26",
@@ -8702,19 +8430,6 @@
     "review": "inherited-television"
   },
   {
-    "id": "r_4ec5e9ebd5d06f7dd4a6",
-    "url": "https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8",
-    "headers": {},
-    "directives": [],
-    "origins": [
-      {
-        "origin": "source-monitor@0.1.26",
-        "record": 1015
-      }
-    ],
-    "review": "inherited-television"
-  },
-  {
     "id": "r_d1e418b86f7f566ee016",
     "url": "https://liveplus.lzr.com.cn/wlpd/HD/live.m3u8",
     "headers": {},
@@ -8739,5 +8454,252 @@
       }
     ],
     "review": "inherited-television"
+  },
+  {
+    "id": "r_16a1b1e3fda4b16d39af",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel21/1080p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 1
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_76f01955a29433d387d3",
+    "url": "http://ali-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 3
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_987a165420529c6a6e4b",
+    "url": "http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 4
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_4910485a05d88d46a265",
+    "url": "http://play1-qk.nmtv.cn/live/1769652018126032.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 5
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_252bea8456f2bc2857a4",
+    "url": "https://l.cztvcloud.com/channels/lantian/SXyuyao3/720p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 32
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_d00b782a844b78f5ff50",
+    "url": "http://222.179.155.21:1935/ch1.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 38
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_17bccd135b907e975d65",
+    "url": "https://jiangning-tv-playing-t.cm.jstv.com/jiangning-tv/jnxwzh.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 39
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_e8d3e21a5b5f5c03cf09",
+    "url": "https://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 40
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_67d84e2a0be3c7c022c2",
+    "url": "http://live.shaoxing.com.cn/video/s10001-sxtv1/index.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 41
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_954646fa8bd83bfecba0",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 42
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_bf64b0d5d9e573acc519",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 43
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_0f65c7cb074dc1bb366a",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 44
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_5d2fe57782ba92883720",
+    "url": "http://live-play.zxstv.com.cn/zhongxuesheng/zhongxuesheng.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 48
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_10e0eb96b29a34389551",
+    "url": "https://ali-m-l.cztv.com/channels/lantian/channel012/1080p.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 49
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_eeeb0610cbae21c2fd98",
+    "url": "https://hls-qhmh.lanzhousobey.cn/qhmh/mhds.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 51
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_e31f509d47a34c126eb0",
+    "url": "https://hls.quklive.com/live/play-sh-21.quklive.com/1777511615189085.m3u8?auth_key=2092871636-a39d8614688744d0b170b856b086ba80-0-33900446b83fa0b5befeb6bedbcd51a0",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 52
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_e51f063da8872e959312",
+    "url": "http://218.84.35.38:3000/m3u8/live/tctv-2/index.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 53
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_1500aa7c5e38c0da8a31",
+    "url": "http://120.70.60.179:9901/tsfile/live/1006_1.m3u8?authid=0&key=txiptv&playlive=1",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 54
+      }
+    ],
+    "review": "previous-frame-review"
+  },
+  {
+    "id": "r_2fa4d1e9d775f749f3f7",
+    "url": "https://st-video.xjmty.com/fs/livedit/e55abfa37af26e19/8ce9971c2177b3dd.m3u8",
+    "headers": {},
+    "directives": [],
+    "origins": [
+      {
+        "origin": "independent@0.4.1-reviewed",
+        "record": 55
+      }
+    ],
+    "review": "previous-frame-review"
   }
 ]

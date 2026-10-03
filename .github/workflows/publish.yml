@@ -1,14 +1,19 @@
 name: publish-independent-npm
 on:
   workflow_dispatch:
+    inputs:
+      bump:
+        description: Allocate a new patch version before building
+        type: boolean
+        default: false
   workflow_call:
     secrets:
       NPM_TOKEN:
         required: true
 permissions:
-  contents: read
+  contents: write
 concurrency:
-  group: publish-independent
+  group: independent-release-state
   cancel-in-progress: false
 jobs:
   publish:
@@ -19,7 +24,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-          registry-url: 'https://registry.npmjs.org/'
+          registry-url: https://registry.npmjs.org/
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -27,31 +32,48 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - name: Prepare Android compiler dependencies
-        shell: bash
+      - name: Allocate the next candidate version
+        if: inputs.bump == true
+        run: python scripts/release_version.py
+      - name: Prepare pinned Android compiler tools
         run: |
           set -euo pipefail
-          curl --fail --location https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar --output java/json.jar
+          mkdir -p .build-tools
+          curl --fail --location --retry 3 https://github.com/iBotPeaches/Apktool/releases/download/v3.0.3/apktool_3.0.3.jar -o .build-tools/apktool.jar
+          echo '29fc610eed9dd349e75d40fd5af02538e0118b08d56a61ef6f53f8256adadc9a  .build-tools/apktool.jar' | sha256sum --check
+          curl --fail --location --retry 3 https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar -o .build-tools/json.jar
+          echo '3cf6cd6892e32e2b4c1c39e0f52f5248a2f5b37646fdfbb79a66b46b618414ed  .build-tools/json.jar' | sha256sum --check
           if [ ! -f "$ANDROID_HOME/build-tools/34.0.0/lib/d8.jar" ]; then
             "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'build-tools;34.0.0'
           fi
-          test -f "$ANDROID_HOME/build-tools/34.0.0/lib/d8.jar"
           echo "D8_JAR=$ANDROID_HOME/build-tools/34.0.0/lib/d8.jar" >> "$GITHUB_ENV"
-      - name: Build and test the shipped Android plugin and final package
-        run: python3 scripts/build_release.py
-      - name: Pack the final release
-        run: npm pack --ignore-scripts
-      - name: "Publish candidate package with next tag"
+          echo "JSON_JAR=$GITHUB_WORKSPACE/.build-tools/json.jar" >> "$GITHUB_ENV"
+          echo "SMALI_JAR=$GITHUB_WORKSPACE/.build-tools/apktool.jar" >> "$GITHUB_ENV"
+      - name: Verify registry, build actual DEX, validate complete release
+        run: python scripts/build_release.py
+      - name: Pack clean npm stage
+        run: npm pack ./npmstage --ignore-scripts
+      - name: Publish fixed candidate
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish "$(node -p "require('./package.json').name + '-' + require('./package.json').version + '.tgz'")" --ignore-scripts --registry=https://registry.npmjs.org/ --access public --tag next
-      - name: Verify registry and CDN
+        run: |
+          set -euo pipefail
+          npm publish "$(node -p "require('./package.json').name + '-' + require('./package.json').version + '.tgz'")" --ignore-scripts --access public --tag next
+      - name: Verify exact registry and CDN bytes
         run: node scripts/verify-cdn.cjs
+      - name: Save exact published resources
+        run: |
+          git config user.name maintenance-bot
+          git config user.email actions@users.noreply.github.com
+          git add package.json output/api.json output/cfg.jpg output/live.m3u output/dc.json output/manifest.json reports/plugin-verification.json reports/build-dependencies.json
+          git diff --cached --quiet || git commit -m 'chore: freeze verified candidate resources [skip ci]'
+          git push
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: release-verification
           path: |
+            output/
+            reports/plugin-verification.json
+            reports/build-dependencies.json
             cdn-verification.json
-            home-integration.json
-            build-verification.json

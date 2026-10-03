@@ -1,0 +1,48 @@
+{
+  "checked_at": 1791053255,
+  "method": "Decoded first frame plus 30s and 180s frames; actual FM mobile playback for the flagged movie",
+  "exhaustive": false,
+  "approved_samples": [
+    "文采",
+    "奶酪",
+    "视界",
+    "剧圈",
+    "cms_bfzyapicom",
+    "cms_cjffzyapicom",
+    "cms_caijidyttzyapicom"
+  ],
+  "quarantined": [
+    {
+      "id": "cms_wwwmdzyapicom",
+      "reason": "Actual FM playback of 几近成年 contains embedded gambling promotion; screenshot reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_haohuazycom",
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_huyazynet",
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_jyzyapicom",
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_apixinlangapicom",
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_wwwhongniuzy2com",
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_jszyapicom",
+      "reason": "30-second frame contains embedded gambling sponsorship; reviewed 2026-10-04"
+    },
+    {
+      "id": "cms_apiguangsuapicom",
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
+    }
+  ]
+}

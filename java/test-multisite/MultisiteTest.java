@@ -1,0 +1,81 @@
+package com.github.catvod.spider;
+import java.util.*;
+import org.json.*;
+
+public final class MultisiteTest {
+    static int assertions;
+    static void check(boolean value,String message){assertions++;if(!value)throw new AssertionError(message);}
+    interface Action{void run()throws Exception;}
+    static void rejects(Action call)throws Exception{boolean rejected=false;try{call.run();}catch(Exception e){rejected=true;}check(rejected,"Expected rejection");}
+    static final class Fixture extends WkcCms {
+        boolean pollution=false;
+        protected JSONObject request(String... args)throws Exception{
+            Map<String,String> q=new HashMap<>();for(int i=0;i<args.length;i+=2)q.put(args[i],args[i+1]);
+            JSONArray classes=new JSONArray().put(new JSONObject().put("type_id","1").put("type_name","电影"))
+                .put(new JSONObject().put("type_id","6").put("type_name","动作片"))
+                .put(new JSONObject().put("type_id","9").put("type_name","里番动漫"));
+            JSONArray list=new JSONArray();
+            if(!"1".equals(q.get("t")))for(int i=0;i<31;i++){
+                String id=""+i;if(q.containsKey("ids")&&!id.equals(q.get("ids")))continue;
+                if(q.containsKey("wd")&&!"影片0".equals(q.get("wd")))continue;
+                JSONObject v=new JSONObject().put("vod_id",id).put("vod_name","影片"+i)
+                    .put("type_id",i==30||pollution?"9":"6").put("type_name",i==30||pollution?"里番动漫":"动作片")
+                    .put("vod_pic","https://images.example/poster.jpg")
+                    .put("vod_play_from","main$$$unapproved")
+                    .put("vod_play_url","正片$https://media.example/"+id+".m3u8$$$引流$https://unapproved.example/page");
+                list.put(v);
+            }
+            return new JSONObject().put("class",classes).put("list",list).put("page",q.getOrDefault("pg","1")).put("pagecount",12);
+        }
+    }
+    static final class FallbackFixture extends WkcCms {
+        String type;boolean fail;String received;
+        FallbackFixture(String type,boolean fail){this.type=type;this.fail=fail;}
+        protected void refresh(){types.put(type,"动作片");}
+        public String categoryContent(String t,String p,boolean f,HashMap<String,String> e)throws Exception{
+            received=e.get("type");
+            if(fail)throw new java.io.IOException("Provider outage");
+            if(!type.equals(received))throw new IllegalStateException("Untranslated category id");
+            return new JSONObject().put("list",new JSONArray().put(new JSONObject().put("vod_name","正常影片"))).toString();
+        }
+    }
+    public static void main(String[] args)throws Exception{
+        for(String s:new String[]{"里番动漫","伦理片","写真","成人动漫","18禁","Hentai"})check(WkcPolicy.genre(s)==null,"Unsafe category "+s);
+        check("电影".equals(WkcPolicy.genre("动作片")),"Normal action films");
+        check("动漫".equals(WkcPolicy.genre("国产动漫")),"Normal animation");
+        Fixture f=new Fixture();f.init(null,new JSONObject().put("id","test").put("api","https://cms.example/api")
+            .put("media_hosts",new JSONArray().put("media.example")).toString());
+        JSONObject home=new JSONObject(f.homeContent(true));
+        check(home.getJSONArray("list").length()==30,"Dynamic catalogue must not have old 23-title cap");
+        check(home.getJSONArray("class").length()==1,"Adult category removed");
+        check(!home.toString().contains("vod_play_url"),"Lists must not expose playable URLs");
+        JSONObject category=new JSONObject(f.categoryContent("电影","1",true,new HashMap<>()));
+        check(category.getJSONArray("list").length()==30,"Empty parent falls back to child");
+        check(new JSONObject(f.categoryContent("里番动漫","1",true,new HashMap<>())).getJSONArray("list").length()==0,"Direct blocked category");
+        check(new JSONObject(f.searchContent("影片0",false)).getJSONArray("list").length()==30,"Search filters mixed results");
+        check(new JSONObject(f.searchContent("成人",false)).getJSONArray("list").length()==0,"Adult query blocked");
+        String id=home.getJSONArray("list").getJSONObject(0).getString("vod_id");
+        JSONObject detail=new JSONObject(f.detailContent(Collections.singletonList(id))).getJSONArray("list").getJSONObject(0);
+        check("main".equals(detail.getString("vod_play_from")),"Unapproved domain removed");
+        String episode=detail.getString("vod_play_url").split("\\$",2)[1];
+        check(new JSONObject(f.playerContent("main",episode,new ArrayList<>())).getInt("parse")==0,"Approved direct playback");
+        rejects(()->f.detailContent(Collections.singletonList("30")));
+        rejects(()->f.detailContent(Collections.singletonList(WkcNet.pack(f.token("30")))));
+        rejects(()->f.playerContent("main","https://media.example/0.m3u8",new ArrayList<>()));
+        JSONObject forged=WkcNet.unpack(episode).put("url","https://unapproved.example/x.m3u8");
+        rejects(()->f.playerContent("main",WkcNet.pack(forged),new ArrayList<>()));
+        f.pollution=true;
+        rejects(()->f.detailContent(Collections.singletonList(id)));
+        rejects(()->f.playerContent("main",episode,new ArrayList<>()));
+        WkcHome dynamic=new WkcHome();FallbackFixture first=new FallbackFixture("6",true),second=new FallbackFixture("77",false);
+        dynamic.providers.add(first);dynamic.providers.add(second);
+        HashMap<String,String> subtype=new HashMap<>();subtype.put("type_name","动作片");
+        check(new JSONObject(dynamic.categoryContent("电影","1",true,subtype)).getJSONArray("list").length()==1,"Fallback translates subtype names");
+        check("6".equals(first.received)&&"77".equals(second.received),"Provider ids must not leak across fallback");
+        WkcNative nativeSite=new WkcNative();nativeSite.init(null,"{\"id\":\"test-native\",\"adapter\":\"JpysGuard\"}");
+        check(new JSONObject(nativeSite.searchContent("正常影片",false)).getJSONArray("list").length()==1,"Native legacy two-argument search");
+        check(new JSONObject(nativeSite.searchContent("正常影片",false,"1")).getJSONArray("list").length()==1,"Native page one uses supported overload");
+        check(new JSONObject(nativeSite.searchContent("色情",false)).getJSONArray("list").length()==0,"Native policy blocks adult query");
+        System.out.println("PASS: "+assertions+" dynamic CMS content-path assertions");
+    }
+}

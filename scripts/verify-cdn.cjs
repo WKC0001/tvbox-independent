@@ -1,49 +1,23 @@
-const fs = require('fs');
-const crypto = require('crypto');
-const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
-const pkg=JSON.parse(fs.readFileSync('package.json'));
-const VERSION=pkg.version;
-const base = 'https://cdn.jsdelivr.net/npm/'+pkg.name;
-const targets = [['api.json',VERSION],['live.m3u',VERSION],['home.jpg',VERSION],['manifest.json',VERSION],...Object.keys(JSON.parse(fs.readFileSync('manifest.json')).files).filter(x=>x.startsWith('posters/')).map(x=>[x,VERSION])];
-async function main() {
-  require('child_process').execFileSync(process.env.PYTHON || 'python3',['scripts/verify_plugin.py'],{stdio:'inherit'});
-  let metadata;
-  for (let attempt=0;attempt<40;attempt++) {
-    try {
-      const response=await fetch('https://registry.npmjs.org/'+pkg.name+'/'+VERSION+'?check='+Date.now(),{signal:AbortSignal.timeout(15000)});
-      if (response.ok) { metadata=await response.json();break; }
-      console.log('Registry pending',response.status,'attempt',attempt+1);
-    } catch(e) {console.log('Registry request',e.message);}
-    await delay(10000);
-  }
-  if (!metadata || metadata.version!==VERSION) throw Error('npm version not readable within verification budget');
-  console.log('npm version readable:',metadata.version);
-  const tar=await fetch(metadata.dist.tarball,{signal:AbortSignal.timeout(30000)});
-  if (!tar.ok) throw Error('tarball '+tar.status);
-  const bytes=Buffer.from(await tar.arrayBuffer());
-  if (crypto.createHash('sha1').update(bytes).digest('hex')!==metadata.dist.shasum) throw Error('npm tarball shasum');
-  let checks;
-  for (let attempt=0;attempt<40;attempt++) {
-    checks=await Promise.all(targets.map(async ([file,version])=>{
-      const url=`${base}@${version}/${file}`;
-      try {
-        const response=await fetch(url,{signal:AbortSignal.timeout(20000)});
-        const body=Buffer.from(await response.arrayBuffer());
-        const matches=response.ok && body.equals(fs.readFileSync(file));
-        return {file,version,url,status:response.status,matches,bytes:body.length,sha256:crypto.createHash('sha256').update(body).digest('hex')};
-      } catch(e) {return {file,version,url,matches:false,error:e.message};}
-    }));
-    console.log(JSON.stringify(checks));
-    if (checks.every(x=>x.matches)) break;
-    await delay(10000);
-  }
-  let latest;try{const r=await fetch(base+'@latest/api.json',{signal:AbortSignal.timeout(15000)});latest={status:r.status,matches:r.ok&&Buffer.from(await r.arrayBuffer()).equals(fs.readFileSync('api.json'))};}catch(e){latest={matches:false,error:e.message};}
-  const result={latest,package:metadata.name,version:metadata.version,
-    api_url:base+'@'+VERSION+'/api.json',latest_api_url:base+'@latest/api.json',fixed_api_url:base+'@'+VERSION+'/api.json',live_url:base+'@'+VERSION+'/live.m3u',
-    tarball:metadata.dist.tarball,tarball_shasum:metadata.dist.shasum,
-    source_monitor_modified:false,original_npm_package_modified:false,checks};
-  fs.writeFileSync('cdn-verification.json',JSON.stringify(result,null,2)+'\n');
-  if (!checks.every(x=>x.matches)) throw Error('CDN content mismatch/unavailable');
-  console.log('ALL_CDN_CHECKS_PASSED');
-}
-main().catch(e=>{console.error(e);process.exitCode=1});
+'use strict';
+const fs=require('fs'),crypto=require('crypto'),zlib=require('zlib');
+const path=require('path');const root=path.resolve(__dirname,'..');
+const pkg=JSON.parse(fs.readFileSync(path.join(root,'package.json')));
+const local=path.join(root,'output');const report={package:pkg.name,version:pkg.version,checks:[]};
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex');
+async function get(url){let last;for(let i=0;i<8;i++){try{const r=await fetch(url,{signal:AbortSignal.timeout(30000)});if(!r.ok)throw Error('HTTP '+r.status);return Buffer.from(await r.arrayBuffer());}catch(e){last=e;if(i<7)await new Promise(r=>setTimeout(r,5000));}}throw last;}
+function tarFiles(buffer){const out={};for(let i=0;i+512<=buffer.length;){const h=buffer.subarray(i,i+512);if(h.every(b=>b===0))break;const name=h.subarray(0,100).toString().split('\0')[0],size=parseInt(h.subarray(124,136).toString().replace(/\0/g,'').trim()||'0',8);if(!Number.isFinite(size))throw Error('Bad tar size');out[name]=buffer.subarray(i+512,i+512+size);i+=512+Math.ceil(size/512)*512;}return out;}
+(async()=>{try{
+ if(pkg.name!=='wkc0001-tvbox-independent')throw Error('Wrong package');
+ const meta=JSON.parse(await get('https://registry.npmjs.org/'+pkg.name+'/'+pkg.version));
+ const files=tarFiles(zlib.gunzipSync(await get(meta.dist.tarball)));
+ const manifest=JSON.parse(fs.readFileSync(path.join(local,'manifest.json')));
+ for(const file of [...Object.keys(manifest.files),'manifest.json']){
+  const expected=fs.readFileSync(path.join(local,file));const packed=files['package/'+file];
+  if(!packed||!packed.equals(expected))throw Error('Registry bytes mismatch: '+file);
+  const url='https://cdn.jsdelivr.net/npm/'+pkg.name+'@'+pkg.version+'/'+file;
+  const actual=await get(url);if(!actual.equals(expected))throw Error('CDN bytes mismatch: '+file);
+  report.checks.push({file,registry:true,cdn:true,sha256:sha(actual)});console.log('PASS',file);
+ }
+ report.passed=true;console.log('FIXED_VERSION_REGISTRY_CDN_VERIFIED');
+}catch(e){report.passed=false;report.error=String(e);console.error(e);process.exitCode=1;}
+finally{fs.writeFileSync(path.join(root,'cdn-verification.json'),JSON.stringify(report,null,2)+'\n');}})();

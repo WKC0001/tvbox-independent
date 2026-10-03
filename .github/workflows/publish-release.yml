@@ -3,7 +3,7 @@ name: publish-independent-compat
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   publish:
     uses: ./.github/workflows/publish.yml

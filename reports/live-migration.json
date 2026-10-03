@@ -861,7 +861,21 @@
     "old_id": "支持作者.fqzone.tv",
     "channel_id": "tv_f951b2212bfc16701216",
     "route_id": "r_bd6fa5e2c6de41a6cc10",
-    "action": "retained"
+    "action": "non-channel-promotion",
+    "original": {
+      "name": "支持作者",
+      "attributes": {
+        "tvg-id": "支持作者.fqzone.tv",
+        "tvg-name": "支持作者",
+        "group-title": "央视"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "央视",
+      "headers": {},
+      "directives": [],
+      "url": "https://vd2.bdstatic.com/mda-sctj0f96cn79js4n/1080p/cae_h264/1774710384405617311/mda-sctj0f96cn79js4n.mp4",
+      "source_record": 96
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -870,7 +884,22 @@
     "old_id": "熊猫直播.fqzone.tv",
     "channel_id": "tv_5da87d7d0ab6975af448",
     "route_id": "r_a413763c46bb5175ce21",
-    "action": "retained"
+    "action": "scenic-webcam",
+    "original": {
+      "name": "熊猫直播",
+      "attributes": {
+        "tvg-id": "熊猫直播.fqzone.tv",
+        "tvg-name": "熊猫直播",
+        "tvg-logo": "https://tb.zbds.top/logo/熊猫直播.png",
+        "group-title": "央视"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "央视",
+      "headers": {},
+      "directives": [],
+      "url": "https://gcwbndali.v.myalicdn.com/gcwbnd/ipanda1000_2/index.m3u8",
+      "source_record": 97
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -1410,7 +1439,22 @@
     "old_id": "东方卫视.fqzone.tv",
     "channel_id": "tv_b46ca0d8931641a2910e",
     "route_id": "r_2697208560dab2852177",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "东方卫视",
+      "attributes": {
+        "tvg-id": "东方卫视.fqzone.tv",
+        "tvg-name": "东方卫视",
+        "tvg-logo": "https://www.xn--rgv465a.top/tvlogo/东方卫视.png",
+        "group-title": "卫视"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "卫视",
+      "headers": {},
+      "directives": [],
+      "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5219953535631090825_hlsb.m3u8",
+      "source_record": 157
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -2328,7 +2372,22 @@
     "old_id": "经典电影.fqzone.tv",
     "channel_id": "tv_b7cb969e7b7dd10565af",
     "route_id": "r_7fcf4ba656353f9c023f",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "经典电影",
+      "attributes": {
+        "tvg-id": "经典电影.fqzone.tv",
+        "tvg-name": "经典电影",
+        "tvg-logo": "https://www.xn--rgv465a.top/tvlogo/经典电影.png",
+        "group-title": "电影"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "电影",
+      "headers": {},
+      "directives": [],
+      "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5211790793651941963_hlsb.m3u8",
+      "source_record": 259
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -2454,7 +2513,22 @@
     "old_id": "倩女幽魂妖魔道.fqzone.tv",
     "channel_id": "tv_c2e93cb0fb7fab0109c8",
     "route_id": "r_4f7810862e29ed10a664",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "倩女幽魂妖魔道",
+      "attributes": {
+        "tvg-id": "倩女幽魂妖魔道.fqzone.tv",
+        "tvg-name": "倩女幽魂妖魔道",
+        "tvg-logo": "https://tb.zbds.top/logo/倩女幽魂妖魔道.png",
+        "group-title": "电影"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "电影",
+      "headers": {},
+      "directives": [],
+      "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5232901391302199073_hlsb.m3u8",
+      "source_record": 268
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -2463,7 +2537,22 @@
     "old_id": "倩女幽魂人间道.fqzone.tv",
     "channel_id": "tv_09f4d378b05ca19f4b36",
     "route_id": "r_ebd500d0680ff6912f2d",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "倩女幽魂人间道",
+      "attributes": {
+        "tvg-id": "倩女幽魂人间道.fqzone.tv",
+        "tvg-name": "倩女幽魂人间道",
+        "tvg-logo": "https://tb.zbds.top/logo/倩女幽魂人间道.png",
+        "group-title": "电影"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "电影",
+      "headers": {},
+      "directives": [],
+      "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5250634317044855747_hlsb.m3u8",
+      "source_record": 269
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -2472,7 +2561,22 @@
     "old_id": "倩女幽魂道道道.fqzone.tv",
     "channel_id": "tv_c4069a99a5296898863c",
     "route_id": "r_f480ccee167654589e24",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "倩女幽魂道道道",
+      "attributes": {
+        "tvg-id": "倩女幽魂道道道.fqzone.tv",
+        "tvg-name": "倩女幽魂道道道",
+        "tvg-logo": "https://tb.zbds.top/logo/倩女幽魂道道道.png",
+        "group-title": "电影"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "电影",
+      "headers": {},
+      "directives": [],
+      "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5216294367991385255_hlsb.m3u8",
+      "source_record": 270
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -3531,7 +3635,22 @@
     "old_id": "龙门飞甲.fqzone.tv",
     "channel_id": "tv_3f7f643135f055274c2b",
     "route_id": "r_f8238db3528471a71dd6",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "龙门飞甲",
+      "attributes": {
+        "tvg-id": "龙门飞甲.fqzone.tv",
+        "tvg-name": "龙门飞甲",
+        "tvg-logo": "https://tb.zbds.top/logo/龙门飞甲.png",
+        "group-title": "电影"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "电影",
+      "headers": {},
+      "directives": [],
+      "url": "http://jsmov2.a.yximgs.com/bs3/video-hls/5203346449046555193_hlsb.m3u8",
+      "source_record": 316
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -5494,9 +5613,9 @@
     "record": 491,
     "old_name": "2026-08-27 14:06:22",
     "old_id": "2026-08-2714:06:22.fqzone.tv",
-    "channel_id": "tv_27ab46837e994effa86f",
+    "channel_id": "tv_6dfa67ba53cc1cafa4f3",
     "route_id": "r_19f8e5b971d296a79d72",
-    "action": "retained"
+    "action": "alias-normalized"
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8103,7 +8222,22 @@
     "old_id": "西游记.fqzone.tv",
     "channel_id": "tv_942c26cac8c24d7070c0",
     "route_id": "r_774ce2c9163f9a80b63d",
-    "action": "retained"
+    "action": "programme-carousel",
+    "original": {
+      "name": "西游记",
+      "attributes": {
+        "tvg-id": "西游记.fqzone.tv",
+        "tvg-name": "西游记",
+        "tvg-logo": "https://www.xn--rgv465a.top/tvlogo/西游记.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://173.208.234.146/live/vlxyj.m3u8",
+      "source_record": 719
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8160,7 +8294,22 @@
     "old_id": "水浒传.fqzone.tv",
     "channel_id": "tv_28d3922865644fd414d0",
     "route_id": "r_0af9e12428731c3a8274",
-    "action": "retained"
+    "action": "programme-carousel",
+    "original": {
+      "name": "水浒传",
+      "attributes": {
+        "tvg-id": "水浒传.fqzone.tv",
+        "tvg-name": "水浒传",
+        "tvg-logo": "https://www.xn--rgv465a.top/tvlogo/水浒传.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://173.208.234.146/live/vlshz.m3u8",
+      "source_record": 722
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8355,7 +8504,22 @@
     "old_id": "闯关东.fqzone.tv",
     "channel_id": "tv_d17751fe7c37f34765be",
     "route_id": "r_82f07995115f85d87f4e",
-    "action": "retained"
+    "action": "programme-carousel",
+    "original": {
+      "name": "闯关东",
+      "attributes": {
+        "tvg-id": "闯关东.fqzone.tv",
+        "tvg-name": "闯关东",
+        "tvg-logo": "https://www.xn--rgv465a.top/tvlogo/闯关东.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://173.208.234.146/live/lbchuangguandong.m3u8",
+      "source_record": 732
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8439,7 +8603,22 @@
     "old_id": "中国村庄.fqzone.tv",
     "channel_id": "tv_e38ff4e1e06be95d9f8e",
     "route_id": "r_75a62c630137c8a9bf9d",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "中国村庄",
+      "attributes": {
+        "tvg-id": "中国村庄.fqzone.tv",
+        "tvg-name": "中国村庄",
+        "tvg-logo": "https://tb.zbds.top/logo/中国村庄.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/93fc12dbf14241c18c23da104fbade23/4000.m3u8",
+      "source_record": 738
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8448,7 +8627,22 @@
     "old_id": "航拍中国第二季.fqzone.tv",
     "channel_id": "tv_dace527e75ee9201cd4b",
     "route_id": "r_3b7b72d91edca79d3625",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "航拍中国第二季",
+      "attributes": {
+        "tvg-id": "航拍中国第二季.fqzone.tv",
+        "tvg-name": "航拍中国第二季",
+        "tvg-logo": "https://tb.zbds.top/logo/航拍中国第二季.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://newcntv.qcloudcdn.com/asp/hls/4000/0303000a/3/default/2bdfdad540b342f592f9817cb7f3b79a/4000.m3u8",
+      "source_record": 739
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8457,7 +8651,22 @@
     "old_id": "人与自然.fqzone.tv",
     "channel_id": "tv_d4b924f839d7ab08f631",
     "route_id": "r_a2b0dae80a64ccc96356",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "人与自然",
+      "attributes": {
+        "tvg-id": "人与自然.fqzone.tv",
+        "tvg-name": "人与自然",
+        "tvg-logo": "https://tb.zbds.top/logo/人与自然.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/1425e1d505654cb48ba82b807b221193/1200.m3u8",
+      "source_record": 740
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8466,7 +8675,22 @@
     "old_id": "地理中国.fqzone.tv",
     "channel_id": "tv_90177341e2e4d26fa047",
     "route_id": "r_310d04a0203362722c4f",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "地理中国",
+      "attributes": {
+        "tvg-id": "地理中国.fqzone.tv",
+        "tvg-name": "地理中国",
+        "tvg-logo": "https://tb.zbds.top/logo/地理中国.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "http://newcntv.qcloudcdn.com/asp/hls/1200/0303000a/3/default/c6baf6f74bb944aeacee1065ea72c798/1200.m3u8",
+      "source_record": 741
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8565,7 +8789,22 @@
     "old_id": "1987年春晚.fqzone.tv",
     "channel_id": "tv_cd3a0b58f95624f33c70",
     "route_id": "r_03a3ce7dc249f29a2521",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "1987年春晚",
+      "attributes": {
+        "tvg-id": "1987年春晚.fqzone.tv",
+        "tvg-name": "1987年春晚",
+        "tvg-logo": "https://tb.zbds.top/logo/1987年春晚.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5195746663405928031_hlsb.m3u8",
+      "source_record": 752
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8592,7 +8831,22 @@
     "old_id": "1988年春晚.fqzone.tv",
     "channel_id": "tv_8344c200308db6bb3473",
     "route_id": "r_abf1ce365131760aac93",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "1988年春晚",
+      "attributes": {
+        "tvg-id": "1988年春晚.fqzone.tv",
+        "tvg-name": "1988年春晚",
+        "tvg-logo": "https://tb.zbds.top/logo/1988年春晚.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5216575810935394655_hlsb.m3u8",
+      "source_record": 755
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8610,7 +8864,22 @@
     "old_id": "1989年春晚.fqzone.tv",
     "channel_id": "tv_97fddcab1b134b50c26f",
     "route_id": "r_333ffcdd19d4c51010f2",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "1989年春晚",
+      "attributes": {
+        "tvg-id": "1989年春晚.fqzone.tv",
+        "tvg-name": "1989年春晚",
+        "tvg-logo": "https://tb.zbds.top/logo/1989年春晚.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://txmov2.a.kwimgs.com/bs3/video-hls/5194620763762726260_hlsb.m3u8",
+      "source_record": 757
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8667,7 +8936,22 @@
     "old_id": "飞碟之谜01.fqzone.tv",
     "channel_id": "tv_4da50c72cc84f7491022",
     "route_id": "r_b1f2a87bfeccc28d43fd",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "飞碟之谜01",
+      "attributes": {
+        "tvg-id": "飞碟之谜01.fqzone.tv",
+        "tvg-name": "飞碟之谜01",
+        "tvg-logo": "https://tb.zbds.top/logo/飞碟之谜01.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://hls.cntv.lxdns.com/asp/hls/2000/0303000a/3/default/f0a47e155d32450daa1d36a04fd7d262/2000.m3u8",
+      "source_record": 760
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -8778,7 +9062,22 @@
     "old_id": "飞碟之谜02.fqzone.tv",
     "channel_id": "tv_ec779caea7dfe96632bd",
     "route_id": "r_c34356375cf02944746b",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "飞碟之谜02",
+      "attributes": {
+        "tvg-id": "飞碟之谜02.fqzone.tv",
+        "tvg-name": "飞碟之谜02",
+        "tvg-logo": "https://tb.zbds.top/logo/飞碟之谜02.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://newcntv.qcloudcdn.com/asp/hls/2000/0303000a/3/default/d2454bbb542d4613a9db478dab2addfd/2000.m3u8",
+      "source_record": 769
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -10500,7 +10799,21 @@
     "old_id": "2026-09-2518:28:23.fqzone.tv",
     "channel_id": "tv_a7d5775fdc357e1f0c43",
     "route_id": "r_bd6fa5e2c6de41a6cc10",
-    "action": "retained"
+    "action": "non-channel-promotion",
+    "original": {
+      "name": "2026-09-25 18:28:23",
+      "attributes": {
+        "tvg-id": "2026-09-2518:28:23.fqzone.tv",
+        "tvg-name": "2026-09-2518:28:23",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://vd2.bdstatic.com/mda-sctj0f96cn79js4n/1080p/cae_h264/1774710384405617311/mda-sctj0f96cn79js4n.mp4",
+      "source_record": 842
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -10975,7 +11288,7 @@
     "record": 865,
     "old_name": "新视觉HD",
     "old_id": "新视觉HD.fqzone.tv",
-    "channel_id": "tv_473e6b3469f90b91d858",
+    "channel_id": "tv_33c87dc741c7f598f3f2",
     "route_id": "r_ea9c38558ee2d00576eb",
     "action": "retained"
   },
@@ -11037,7 +11350,22 @@
     "old_id": "2024年春晚.fqzone.tv",
     "channel_id": "tv_83976686243425befff0",
     "route_id": "r_65b4371808f747773358",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "2024年春晚",
+      "attributes": {
+        "tvg-id": "2024年春晚.fqzone.tv",
+        "tvg-name": "2024年春晚",
+        "tvg-logo": "https://tb.zbds.top/logo/2024年春晚.png",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://p2.bdstatic.com/rtmp.liveshow.lss-user.baidubce.com/live/stream_bduid_6488563992_8982723413/merged_1707497046297_88536_25144_41936.m3u8",
+      "source_record": 870
+    }
   },
   {
     "origin": "source-monitor@0.1.26",
@@ -12839,7 +13167,7 @@
     "old_name": "Nei Monggol TV (960p)",
     "old_id": "NEIMONGGOLTV(960P).fqzone.tv",
     "channel_id": "tv_9e9cf40f5170fa20fcd5",
-    "route_id": "r_b44b50d94c58f563a00c",
+    "route_id": "r_af3bbd5f639954fb645f",
     "action": "alias-normalized"
   },
   {
@@ -13748,7 +14076,21 @@
     "old_id": "春晚2025.fqzone.tv",
     "channel_id": "tv_d4f0c6206583d204c4f7",
     "route_id": "r_4ec5e9ebd5d06f7dd4a6",
-    "action": "retained"
+    "action": "on-demand-file",
+    "original": {
+      "name": "春晚2025",
+      "attributes": {
+        "tvg-id": "春晚2025.fqzone.tv",
+        "tvg-name": "春晚2025",
+        "group-title": "其他"
+      },
+      "origin": "source-monitor@0.1.26",
+      "group": "其他",
+      "headers": {},
+      "directives": [],
+      "url": "https://res.cctvnews.cctv.com/video/3005/record/cctv/merge1/133396667284143308839013005/8fbd6180bdef4da19f6155cf6b4652e1-4.m3u8",
+      "source_record": 1015
+    }
   },
   {
     "origin": "source-monitor@0.1.26",

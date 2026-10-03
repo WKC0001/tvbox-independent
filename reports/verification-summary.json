@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "version": "0.5.0",
+  "dex_classes": 1206,
+  "sites": 7,
+  "playlist_routes": 651,
+  "files": {
+    "api.json": "a6efa7398a4bcee04eb370541d5ada49f6c4bf4dcf37396fddf8d949447af8b9",
+    "cfg.jpg": "3efb33993685f1a1852b7c05c03efe406c8fa51c77491b02aae483f6bb8f598e",
+    "live.m3u": "1daf8808241a08ce61a113d7e885ebfb6bec75867f3829d2f16c856052d5eb9d",
+    "dc.json": "0ecd29624ae7600c29414cee2362da4dae3fbc50a64f94d89100b170b3ca118b"
+  },
+  "android_app_test": "separate acceptance required"
+}

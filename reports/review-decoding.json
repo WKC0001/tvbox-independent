@@ -1,0 +1,222 @@
+{
+  "network": "local-direct",
+  "exhaustive": false,
+  "results": [
+    {
+      "id": "cms_bfzyapicom_30",
+      "kind": "cms",
+      "url": "https://fengbao13.com/video/zhuanshengliaodedashengnvpinsiyinmanzijishenweishengnv/12a5e5a6107c/index.m3u8",
+      "source_id": "cms_bfzyapicom",
+      "offset": 30,
+      "checked_at": 1791052935,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 1.480000",
+      "audio_stream": "Stream #0:1[0x0](jpn): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.417000",
+      "frame": "cms_bfzyapicom_30.png"
+    },
+    {
+      "id": "cms_bfzyapicom_180",
+      "kind": "cms",
+      "url": "https://fengbao13.com/video/zhuanshengliaodedashengnvpinsiyinmanzijishenweishengnv/12a5e5a6107c/index.m3u8",
+      "source_id": "cms_bfzyapicom",
+      "offset": 180,
+      "checked_at": 1791052935,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 1.480000",
+      "audio_stream": "Stream #0:1[0x0](jpn): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.417000",
+      "frame": "cms_bfzyapicom_180.png"
+    },
+    {
+      "id": "cms_cjffzyapicom_30",
+      "kind": "cms",
+      "url": "https://vod.ffzy-bofang.com/20260926/3456_def7924e/index.m3u8",
+      "source_id": "cms_cjffzyapicom",
+      "offset": 30,
+      "checked_at": 1791052935,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, start 1.466733",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 1.445400",
+      "frame": "cms_cjffzyapicom_30.png"
+    },
+    {
+      "id": "cms_cjffzyapicom_180",
+      "kind": "cms",
+      "url": "https://vod.ffzy-bofang.com/20260926/3456_def7924e/index.m3u8",
+      "source_id": "cms_cjffzyapicom",
+      "offset": 180,
+      "checked_at": 1791052935,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, start 1.466733",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 1.445400",
+      "frame": "cms_cjffzyapicom_180.png"
+    },
+    {
+      "id": "cms_jszyapicom_30",
+      "kind": "cms",
+      "url": "https://vv.jisuzyv.com/play/7e53YM8b/index.m3u8",
+      "source_id": "cms_jszyapicom",
+      "offset": 30,
+      "checked_at": 1791052935,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 24 fps, 24 tbr, 90k tbn, start 1.483333",
+      "audio_stream": "Stream #0:1[0x0](jpn): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.460111",
+      "frame": "cms_jszyapicom_30.png"
+    },
+    {
+      "id": "cms_jszyapicom_180",
+      "kind": "cms",
+      "url": "https://vv.jisuzyv.com/play/7e53YM8b/index.m3u8",
+      "source_id": "cms_jszyapicom",
+      "offset": 180,
+      "checked_at": 1791052935,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 24 fps, 24 tbr, 90k tbn, start 1.483333",
+      "audio_stream": "Stream #0:1[0x0](jpn): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.460111",
+      "frame": "cms_jszyapicom_180.png"
+    },
+    {
+      "id": "cms_caijidyttzyapicom_30",
+      "kind": "cms",
+      "url": "https://vip.dytt-tvs.com/20261004/39708_4adc2d13/index.m3u8",
+      "source_id": "cms_caijidyttzyapicom",
+      "offset": 30,
+      "checked_at": 1791052938,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 90k tbn, start 1.483422",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 1.462089",
+      "frame": "cms_caijidyttzyapicom_30.png"
+    },
+    {
+      "id": "cms_caijidyttzyapicom_180",
+      "kind": "cms",
+      "url": "https://vip.dytt-tvs.com/20261004/39708_4adc2d13/index.m3u8",
+      "source_id": "cms_caijidyttzyapicom",
+      "offset": 180,
+      "checked_at": 1791052938,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 23.98 fps, 23.98 tbr, 90k tbn, start 1.483422",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 1.462089",
+      "frame": "cms_caijidyttzyapicom_180.png"
+    },
+    {
+      "id": "文采_30",
+      "kind": "native-upstream-only",
+      "url": "https://ppvod011.blbtgg.com/splitOut/20260912/1393451/V20260912182735148951393451/index.m3u8?auth_key=1791052305-53cc75e8878645588ef543e84d2ded62-0-a9abea4466a383f3efe51e445aa3c4f4",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "Origin": "https://www.ghw9zwp5.com",
+        "Referer": "https://www.ghw9zwp5.com"
+      },
+      "source_id": "文采",
+      "offset": 30,
+      "checked_at": 1791052942,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, start 1.466667",
+      "audio_stream": "Stream #0:1[0x0](eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.443444",
+      "frame": "文采_30.png"
+    },
+    {
+      "id": "文采_180",
+      "kind": "native-upstream-only",
+      "url": "https://ppvod011.blbtgg.com/splitOut/20260912/1393451/V20260912182735148951393451/index.m3u8?auth_key=1791052305-53cc75e8878645588ef543e84d2ded62-0-a9abea4466a383f3efe51e445aa3c4f4",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36",
+        "Origin": "https://www.ghw9zwp5.com",
+        "Referer": "https://www.ghw9zwp5.com"
+      },
+      "source_id": "文采",
+      "offset": 180,
+      "checked_at": 1791052942,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 30 fps, 30 tbr, 90k tbn, start 1.466667",
+      "audio_stream": "Stream #0:1[0x0](eng): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.443444",
+      "frame": "文采_180.png"
+    },
+    {
+      "id": "奶酪_30",
+      "kind": "native-upstream-only",
+      "url": "https://play.phimgood.com/20261003/32006_a727613d/index.m3u8",
+      "headers": {},
+      "source_id": "奶酪",
+      "offset": 30,
+      "checked_at": 1791052943,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, start 1.466733",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 1.445400",
+      "frame": "奶酪_30.png"
+    },
+    {
+      "id": "奶酪_180",
+      "kind": "native-upstream-only",
+      "url": "https://play.phimgood.com/20261003/32006_a727613d/index.m3u8",
+      "headers": {},
+      "source_id": "奶酪",
+      "offset": 180,
+      "checked_at": 1791052943,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 29.97 fps, 29.97 tbr, 90k tbn, start 1.466733",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 1.445400",
+      "frame": "奶酪_180.png"
+    },
+    {
+      "id": "视界_30",
+      "kind": "native-upstream-only",
+      "url": "https://super.ffzy-online6.com/20260924/41735_f253583b/index.m3u8",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6299.95 Safari/537.36"
+      },
+      "source_id": "视界",
+      "offset": 30,
+      "checked_at": 1791052945,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x816, 25 fps, 25 tbr, 90k tbn, start 1.480000",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.456778",
+      "frame": "视界_30.png"
+    },
+    {
+      "id": "视界_180",
+      "kind": "native-upstream-only",
+      "url": "https://super.ffzy-online6.com/20260924/41735_f253583b/index.m3u8",
+      "headers": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6299.95 Safari/537.36"
+      },
+      "source_id": "视界",
+      "offset": 180,
+      "checked_at": 1791052945,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x816, 25 fps, 25 tbr, 90k tbn, start 1.480000",
+      "audio_stream": "Stream #0:1[0x0](und): Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.456778",
+      "frame": "视界_180.png"
+    },
+    {
+      "id": "剧圈_30",
+      "kind": "native-upstream-only",
+      "url": "https://tyyszywvod2.com/videos/202607/12/6a527868e9e107f43626e3c8/002bd8/index.m3u8",
+      "headers": {
+        "User-Agent": "okhttp/3.14.9"
+      },
+      "source_id": "剧圈",
+      "offset": 30,
+      "checked_at": 1791052947,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 1.520000",
+      "audio_stream": "Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.496778",
+      "frame": "剧圈_30.png"
+    },
+    {
+      "id": "剧圈_180",
+      "kind": "native-upstream-only",
+      "url": "https://tyyszywvod2.com/videos/202607/12/6a527868e9e107f43626e3c8/002bd8/index.m3u8",
+      "headers": {
+        "User-Agent": "okhttp/3.14.9"
+      },
+      "source_id": "剧圈",
+      "offset": 180,
+      "checked_at": 1791052947,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 1.520000",
+      "audio_stream": "Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1.496778",
+      "frame": "剧圈_180.png"
+    }
+  ]
+}

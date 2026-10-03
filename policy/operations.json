@@ -1,0 +1,9 @@
+{
+  "preferred_live_network": "local-direct",
+  "automatic_candidates": true,
+  "automatic_latest": false,
+  "max_live_routes": 3,
+  "minimum_dynamic_providers": 3,
+  "provider_evidence_max_age_days": 7,
+  "new_provider_requires_review": true
+}

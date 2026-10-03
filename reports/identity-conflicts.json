@@ -1,0 +1,38 @@
+[
+  {
+    "channel_id": "tv_77df6ef0ec0ddad4d4bc",
+    "route_id": "r_7f225cb7bad9b2bb6352",
+    "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub",
+    "reason": "Frame confirms service; route associated only with corrected television identity",
+    "resolved": true,
+    "correct_channel": "CCTV-4K",
+    "evidence": "reports/identity-decoding.json"
+  },
+  {
+    "channel_id": "tv_372962d0edf69fcf7614",
+    "route_id": "r_0b3cacdc0dab1d61dce1",
+    "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k",
+    "reason": "Frame confirms service; route associated only with corrected television identity",
+    "resolved": true,
+    "correct_channel": "CCTV-8K",
+    "evidence": "reports/identity-decoding.json"
+  },
+  {
+    "channel_id": "tv_3dd45b63d5a7e2020344",
+    "route_id": "r_b1c025ca902c941a1c63",
+    "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub",
+    "reason": "Frame confirms service; route associated only with corrected television identity",
+    "resolved": true,
+    "correct_channel": "CCTV-5+",
+    "evidence": "reports/identity-decoding.json"
+  },
+  {
+    "channel_id": "tv_b3b1f728cd63b459ded8",
+    "route_id": "r_8c8ad1064c504e1c0b8d",
+    "url": "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8",
+    "reason": "Frame confirms service; route associated only with corrected television identity",
+    "resolved": true,
+    "correct_channel": "苏州新闻综合",
+    "evidence": "reports/identity-decoding.json"
+  }
+]

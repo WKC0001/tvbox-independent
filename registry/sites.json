@@ -49,6 +49,12 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052532,
+      "scope": "Actual Android native wrapper category/search/detail/player metadata checks",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {
@@ -66,6 +72,12 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "rfOIzPkSUkANv6AT2prC8en3+TzKx9TnlT8vaY37HhtYfAQe6C5xqrVuJPhQwYV6r3eRdMBGm3Qm6Th+BushR86B6KqJGXDsHazHw7alBG/7zUxkN1tK/NypRxnpBNoeUtpw4jcCGhytI75yO4g4zG6SOPA0RSwhksM0IF2friAkrHCWoW3v+0mdw6sjz4t4XB1Df7yL/R5cfaA/5LQYq3I8OkvMrJMU9Q1P7JXwx7NSF2zTyH/ANVmZ4u5m567DW1KVG7OuQjXPjZiOXTYk0+wjpfBRTf19yIq6q/C76k2Fs80joAMPw0ueDR+QHxtuDcTom2rmHkI1Fonkzi6BotbpUcbSi4PiIgmfdbvVwhG6Z+i4nvt+IYa48l5aLA7PLgDiERpuOs31aHaXlgFswT87XyTb8QaF4CuzKWJuXptwNTjvXAS9KHdxH49Ay+hfBAB2bCvUf4CMoldF2wZUv0mI2qY966erFpOFg+FOc7t88EUH8j8ACXQtHJiKC9RQ+SaLIF0="
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052532,
+      "scope": "Actual Android native wrapper category/search/detail/player metadata checks",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {
@@ -191,6 +203,12 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "rfOX1voDIQhH8epBwtCFsuby/mmdmIu8kGlnJc+7VkMRLQ1K+jMy+KN1MKQe0MZ6tmGSO5oFzD8/vWwiSqEpFczDqLrdGT3iH6fZmryrFzKijwYkJUMctdztE0O4CsgYZdBu8XhZSwuhSqqllQz4AZMa1l0sT+1NrbhNIxHkrY0upiYSTLNqEaledgZikMCviOXWr3cPBP4COOeoGUyJSJrrybmUppnWGeDAOHhHOVUSXjwSb+QQvcJIT2lmrf1Bk68myGs7qOqc19tD/rnzf2WOb2MzJZqtURBmUFgaW6ea2dL8OPSpSeVAvaGCAnqwuUNGE9hHpK8jfOs0bLJRdkFLnijAn5Q+ofVM5hgGb8c="
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052532,
+      "scope": "Actual Android native wrapper category/search/detail/player metadata checks",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {
@@ -209,6 +227,12 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "rfOX1voDIQhH8epBwpmIsuSluiuZl4+/lm1iJsy3HwNWMxpf9CY77fshI+kByoxy7DyPatUZ1jk0ty1p"
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052532,
+      "scope": "Actual Android native wrapper category/search/detail/player metadata checks",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {
@@ -485,6 +509,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052861,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Actual FM playback of 几近成年 contains embedded gambling promotion; screenshot reviewed 2026-10-04"
     }
   },
   {
@@ -569,6 +600,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052935,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
     }
   },
   {
@@ -661,6 +699,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052935,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
     }
   },
   {
@@ -878,6 +923,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052935,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
     }
   },
   {
@@ -978,6 +1030,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052935,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
     }
   },
   {
@@ -1099,6 +1158,12 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052281,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {
@@ -1146,6 +1211,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052935,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
     }
   },
   {
@@ -1242,6 +1314,12 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052281,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {
@@ -1287,6 +1365,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791053129,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "30-second frame contains embedded gambling sponsorship; reviewed 2026-10-04"
     }
   },
   {
@@ -1385,6 +1470,13 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052935,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "quarantined": true,
+      "reason": "Decoded video sample contains embedded gambling sponsorship text; frame reviewed 2026-10-04"
     }
   },
   {
@@ -1520,6 +1612,12 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791052281,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "visual_sample_review": "reports/content-sample-review.json"
     }
   },
   {

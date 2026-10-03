@@ -1,15 +1,14 @@
 {
   "name": "wkc0001-tvbox-independent",
-  "version": "0.4.1",
-  "description": "WKC fixed reviewed title catalogue and selected broadcaster live snapshot",
+  "version": "0.5.0",
+  "description": "Independent dynamic multi-site TVBox configuration and television registry",
   "license": "UNLICENSED",
   "files": [
     "api.json",
+    "cfg.jpg",
     "live.m3u",
-    "home.jpg",
-    "posters",
-    "manifest.json",
-    "reports/content-review.json"
+    "dc.json",
+    "manifest.json"
   ],
   "repository": {
     "type": "git",

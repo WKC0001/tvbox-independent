@@ -1,0 +1,86 @@
+{
+  "文采": {
+    "accepted": true,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": true,
+      "detail": true,
+      "player": true
+    },
+    "reason": ""
+  },
+  "奶酪": {
+    "accepted": true,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": true,
+      "detail": true,
+      "player": true
+    },
+    "reason": ""
+  },
+  "光影": {
+    "accepted": false,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": false,
+      "detail": true,
+      "player": false
+    },
+    "reason": "Search failure or insufficient classification metadata; candidate only"
+  },
+  "热播": {
+    "accepted": false,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": false,
+      "detail": true,
+      "player": true
+    },
+    "reason": "Search failure or insufficient classification metadata; candidate only"
+  },
+  "视界": {
+    "accepted": true,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": true,
+      "detail": true,
+      "player": true
+    },
+    "reason": ""
+  },
+  "剧圈": {
+    "accepted": true,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": true,
+      "detail": true,
+      "player": true
+    },
+    "reason": ""
+  },
+  "咕咕": {
+    "accepted": false,
+    "checked_at": 1791052532,
+    "evidence_sha256": "bd5d47f1aa782a9341b66bb96d09169b2d9cd04b4e73a82741445ac3972479ba",
+    "checks": {
+      "category": true,
+      "search": false,
+      "detail": true,
+      "player": true
+    },
+    "reason": "Search failure or insufficient classification metadata; candidate only"
+  }
+}

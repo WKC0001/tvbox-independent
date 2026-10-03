@@ -23,8 +23,6 @@ def main():
           'reason':excluded.get(s['key'],'awaiting functional and content checks'), 'config':s})
     write('registry/sites.json',sites)
     records=parse_m3u((ROOT/'registry/baseline/live.m3u').read_text(),'source-monitor@0.1.26')
-    # Previous independently reviewed broadcaster routes add backups, not an upstream build dependency.
-    previous=ROOT/'input/approved-live.json'
     write('reports/live-migration-raw.json',records)
     channels,routes,ledger=import_registry(records)
     write('registry/channels.json',channels);write('registry/routes.json',routes)

@@ -24,3 +24,6 @@ vendor/native-restored.jpg
 npmstage/
 reports/*.log
 registry/epg.xml
+.build-tools/
+output/api-test.json
+.migration-deletions.json

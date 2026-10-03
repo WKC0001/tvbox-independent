@@ -3,7 +3,8 @@ import hashlib
 import json
 import re
 import unicodedata
-from urllib.parse import urlsplit, unquote, parse_qsl
+from urllib.parse import urlsplit, unquote, parse_qsl, urlencode
+from checker.health import effective
 
 ALIASES = {
  'CCTV-6电影':'CCTV-6', 'CGTN英语':'CGTN', 'CGTN记录':'CGTN纪录',
@@ -27,16 +28,20 @@ ALIASES = {
  'Guangzhou TV':'广州综合', 'Lanzhou Comprehensive News Channel':'兰州新闻综合',
  'Zhejiang International Channel':'浙江国际', 'Dragon TV International':'东方国际',
  'Astro AOD':'ASTRO AOD', 'Viutv':'ViuTV',
+ 'CCTV-1 综合':'CCTV-1', 'CCTV-12 社会与法':'CCTV-12',
+ '四平广播电视台综合':'四平综合', '白城新闻综合频道':'白城新闻综合',
+ '浙江 I 绍兴综合':'绍兴新闻综合', 'Zhejiang TV International':'浙江国际',
+ '新视觉HD':'新视觉',
 }
 for _city in ('东丰','九台','双辽','柳河','桦甸','汪清','玛纳斯','磐石','通化县','靖宇','龙井'):
     ALIASES[_city] = _city + '综合'
 
 PROVINCES = {
- '浙江': '浙江 杭州 宁波 温州 嘉兴 湖州 绍兴 金华 衢州 舟山 台州 丽水 余姚 余杭 云和 庆元 开化 文成 新昌 普陀 松阳 永嘉 洞头 海宁 平湖 缙云 象山 诸暨 遂昌 衢江 龙游 上虞 武义 嵊州 嵊泗 义乌 钱江',
+ '浙江': '浙江 杭州 宁波 温州 嘉兴 湖州 绍兴 金华 衢州 舟山 台州 丽水 余姚 余杭 云和 庆元 开化 文成 新昌 普陀 松阳 永嘉 洞头 海宁 平湖 缙云 象山 诸暨 遂昌 衢江 龙游 上虞 武义 嵊州 嵊泗 义乌 钱江 萧山 青田 兰溪 东阳 数码时代 中国蓝',
  '江苏': '江苏 南京 苏州 徐州 无锡 常州 南通 连云港 淮安 盐城 扬州 镇江 泰州 宿迁 宜兴 新沂 沭阳 涟水 滨海 靖江 句容 武进',
  '吉林': '吉林 长春 四平 通化 白山 白城 松原 辽源 延边 九台 东丰 双辽 柳河 桦甸 汪清 磐石 舒兰 珲春 辉南 龙井 靖宇 德惠 敦化 梅河口 长白',
  '四川': '四川 成都 绵阳 乐山 宜宾 雅安 甘孜 阿坝 叙州 名山 广安 旺苍 汶川 沐川 泸县 金川 营山 松潘 青川 井研 荥经 乐至 仁寿',
- '河北': '河北 石家庄 唐山 秦皇岛 邯郸 邢台 保定 张家口 承德 沧州 廊坊 衡水 平泉 昌黎 滦平 清河 任丘',
+ '河北': '河北 石家庄 唐山 秦皇岛 邯郸 邢台 保定 张家口 承德 沧州 廊坊 衡水 平泉 昌黎 滦平 清河 任丘 兴隆',
  '广东': '广东 广州 深圳 珠海 汕头 佛山 韶关 湛江 肇庆 江门 茂名 惠州 梅州 汕尾 河源 阳江 清远 东莞 中山 潮州 揭阳 云浮',
  '安徽': '安徽 合肥 芜湖 蚌埠 淮南 马鞍山 淮北 铜陵 安庆 黄山 滁州 阜阳 宿州 六安 亳州 池州 宣城 固镇 广德 祁门',
  '甘肃': '甘肃 兰州 嘉峪关 金昌 白银 天水 武威 张掖 平凉 酒泉 庆阳 定西 陇南 天祝 永昌 渭源 秦安 西峰',
@@ -110,6 +115,14 @@ def exclusion(record):
         host == d or host.endswith('.'+d) for d in ('huya.com','douyu.com','yy.com','huya.live')):
         return 'platform-carousel'
     if re.search(r'斗鱼|虎牙|YY轮播', name, re.I): return 'platform-carousel'
+    if '/bs3/video-hls/' in p.path or '/asp/hls/' in p.path or '/video/3005/record/' in p.path:
+        return 'on-demand-file'
+    if re.search(r'春晚(?:19|20)\d\d|(?:19|20)\d\d年春晚',name):return 'on-demand-file'
+    if name=='支持作者' or (re.fullmatch(r'20\d\d-\d\d-\d\d .*',name) and p.path.endswith('.mp4')):
+        return 'non-channel-promotion'
+    if name in ('西游记','水浒传','闯关东') and p.hostname=='173.208.234.146':
+        return 'programme-carousel'
+    if host=='gcwbndali.v.myalicdn.com' and '/ipanda' in p.path:return 'scenic-webcam'
     if p.path.lower().endswith(('.mp4','.mkv','.avi','.flv','.mov')) and re.search(r'春晚|电影|之谜|求生|航拍|三国|西游|剧', name):
         return 'on-demand-file'
     if host == 'gcalic.v.myalicdn.com' and p.path.startswith('/gc/'):
@@ -121,6 +134,7 @@ def exclusion(record):
 
 
 def group(name, previous=''):
+    if name.startswith('ASTRO') or name.startswith('韩国电影'):return '国际'
     if name.startswith(('CCTV','CGTN','CETV')) or name in ('文化精品','怀旧剧场','第一剧场','世界地理','兵器科技','央视台球','女性时尚','电视指南','风云剧场','风云足球','风云音乐','高尔夫网球'):
         return '央视及教育'
     if name.startswith(('凤凰','TVB','TVBS','RTHK','HOY','Viu','澳视')) or re.search(r'翡翠|明珠台|无线|东森|三立|台视|纬来|八大|美亚|天映|香港|澳门|耀才|ASTRO|人间卫视', name):
@@ -128,8 +142,10 @@ def group(name, previous=''):
     if '卫视' in name: return '卫视'
     if re.search('体育|足球|围棋|钓鱼|竞赛', name): return '体育'
     if re.search('少儿|动漫|卡通|宝贝', name): return '少儿动漫'
-    if name.startswith(('CHC','NewTV','NEWTV')) or name in ('长影频道','电影八点档','黑莓电影','欢笑剧场','都市剧场'):
+    if name.startswith(('CHC','NewTV','NEWTV')) or name in ('长影频道','电影八点档','黑莓电影','欢笑剧场','都市剧场','重温经典','新视觉'):
         return '电影剧场'
+    if name in ('中国交通','中华特产','环球旅游','生态环境','车迷频道','茶友频道','音乐现场','音乐欣赏','梨园'):
+        return '文化生活'
     if re.search('纪录|纪实|科教|地理', name): return '纪录科教'
     for province, prefixes in PROVINCES.items():
         if any(name.startswith(w) for w in prefixes.split()): return '地方·' + province
@@ -142,6 +158,9 @@ def import_registry(records):
     channels, routes, migration = {}, {}, []
     for row in records:
         name = canonical(row['name'])
+        # Timestamp-labelled CCTV-1 stream: retain the actual channel instead of deleting the row.
+        if re.fullmatch(r'20\d\d-\d\d-\d\d .*',name) and dict(parse_qsl(urlsplit(row['url']).query)).get('id')=='cctv1hd':
+            name='CCTV-1'
         why = exclusion(row)
         channel_id = uid('tv_', name.casefold())
         route_id = uid('r_', row['url']+'\n'+json.dumps(row['headers'],sort_keys=True))
@@ -150,7 +169,7 @@ def import_registry(records):
                  'action':why or ('alias-normalized' if name != row['name'] else 'retained')}
         migration.append(entry)
         # Non-television entries remain fully accounted for in the migration ledger.
-        if why:
+        if why and why!='radio-route':
             entry['original'] = row
             continue
         if channel_id not in channels:
@@ -159,6 +178,10 @@ def import_registry(records):
                  'identity_status':'imported-needs-review','aliases':[], 'routes':[]}
         channel=channels[channel_id]
         if row['name'] not in channel['aliases']:channel['aliases'].append(row['name'])
+        if why=='radio-route':
+            entry['original']=row
+            channel['identity_status']='television-name-with-audio-route-needs-replacement'
+            continue
         if route_id not in channel['routes']:channel['routes'].append(route_id)
         elif not why:entry['action']='duplicate-route-merged'
         route=routes.setdefault(route_id, {'id':route_id,'url':row['url'],'headers':row['headers'],
@@ -167,14 +190,14 @@ def import_registry(records):
     return list(channels.values()), list(routes.values()), migration
 
 
-GROUPS = ['央视及教育','卫视','电影剧场','体育','少儿动漫','纪录科教','港澳台','国际']
+GROUPS = ['央视及教育','卫视','电影剧场','体育','少儿动漫','纪录科教','文化生活','港澳台','国际']
 
 
 def sort_key(channel):
     g=channel['group']; n=channel['name']
     m=re.fullmatch(r'CCTV-(\d+)([+K]?)',n)
     number=int(m[1])+(0.5 if m[2]=='+' else 30 if m[2]=='K' else 0) if m else 999
-    return (GROUPS.index(g) if g in GROUPS else 8 if g.startswith('地方') else 9,g,number,n)
+    return (GROUPS.index(g) if g in GROUPS else len(GROUPS) if g.startswith('地方') else len(GROUPS)+1,g,number,n)
 
 
 def playlist(channels, routes, health, network='domestic', max_routes=3):
@@ -187,8 +210,8 @@ def playlist(channels, routes, health, network='domestic', max_routes=3):
             evidence=health.get(r['id'],{})
             if any(v.get('isolated') for v in evidence.values()):return (99,999999)
             rec=evidence.get(network,{})
-            return ({'healthy':0,'degraded':1,'unverified':2,'down':3}.get(rec.get('state'),2),rec.get('latency_ms',999999))
-        candidates=[r for r in sorted(candidates,key=score) if score(r)[0]<99]
+            return ({'healthy':0,'degraded':1,'unverified':2,'down':3}.get(effective(rec),2),rec.get('latency_ms',999999))
+        candidates=[r for r in sorted(candidates,key=score) if score(r)[0]<3]
         if not candidates:
             gaps.append({'channel_id':ch['id'],'name':ch['name'],'reason':'no admissible route'})
             continue
@@ -206,5 +229,6 @@ def playlist(channels, routes, health, network='domestic', max_routes=3):
             for directive in r.get('directives',[]):
                 if not directive.startswith(('#EXTVLCOPT:http-user-agent=','#EXTVLCOPT:http-referrer=','#EXTVLCOPT:http-origin=')):
                     lines.append(directive)
-            lines.append(r['url'])
+            extra={k:v for k,v in r.get('headers',{}).items() if k not in mapped}
+            lines.append(r['url']+('|' + urlencode(extra) if extra else ''))
     return '\n'.join(lines)+'\n',gaps

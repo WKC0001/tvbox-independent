@@ -1,0 +1,4668 @@
+{
+  "cms_dbzytv": {
+    "local": {
+      "id": "cms_dbzytv",
+      "checked_at": 1791050161,
+      "accepted": false,
+      "name": "豆瓣 | 采集",
+      "reason": "CMS response must contain a list"
+    },
+    "local-direct": {
+      "id": "cms_dbzytv",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "豆瓣 | 采集",
+      "reason": "CMS response must contain a list"
+    },
+    "github": {
+      "id": "cms_dbzytv",
+      "checked_at": 1791050795,
+      "accepted": false,
+      "name": "豆瓣 | 采集",
+      "reason": "CMS response must contain a list"
+    }
+  },
+  "cms_apiniuniuzyme": {
+    "local": {
+      "id": "cms_apiniuniuzyme",
+      "checked_at": 1791050161,
+      "accepted": false,
+      "name": "牛牛 | 采集",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    "local-direct": {
+      "id": "cms_apiniuniuzyme",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "牛牛 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_apiniuniuzyme",
+      "checked_at": 1791050795,
+      "accepted": false,
+      "name": "牛牛 | 采集",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  "cms_zuidazyme": {
+    "local": {
+      "id": "cms_zuidazyme",
+      "checked_at": 1791050161,
+      "accepted": false,
+      "name": "最大 | 采集",
+      "reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_zuidazyme",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "最大 | 采集",
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "github": {
+      "id": "cms_zuidazyme",
+      "checked_at": 1791050795,
+      "accepted": false,
+      "name": "最大 | 采集",
+      "reason": "Media sample failed: HTTP Error 403: Forbidden"
+    }
+  },
+  "cms_wwwmdzyapicom": {
+    "local": {
+      "id": "cms_wwwmdzyapicom",
+      "checked_at": 1791050161,
+      "accepted": false,
+      "name": "魔都 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_wwwmdzyapicom",
+      "checked_at": 1791050563,
+      "accepted": true,
+      "name": "魔都 | 采集",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/",
+      "latency_ms": 6504,
+      "types": {
+        "1": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "2": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "3": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "4": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "5": {
+          "name": "动漫电影",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "10": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "17": {
+          "name": "惊悚片",
+          "genre": "电影"
+        },
+        "19": {
+          "name": "古装片",
+          "genre": "电影"
+        },
+        "20": {
+          "name": "历史片",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "22": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "23": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "24": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "26": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "27": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "28": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "29": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "31": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "32": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "33": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "34": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "35": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "36": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "37": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "短剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "play.modujx10.com",
+        "play.modujx11.com",
+        "play.modujx12.com",
+        "play.modujx13.com",
+        "play.modujx14.com",
+        "play.modujx15.com",
+        "play.modujx16.com",
+        "play.modujx17.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 6,
+          "type_pid": 0,
+          "type_name": "里番动漫"
+        },
+        {
+          "type_id": 18,
+          "type_pid": 7,
+          "type_name": "家庭片"
+        },
+        {
+          "type_id": 25,
+          "type_pid": 7,
+          "type_name": "短片"
+        },
+        {
+          "type_id": 39,
+          "type_pid": 7,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 40,
+          "type_pid": 0,
+          "type_name": "体育"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 40,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 0,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 80,
+      "blocked_item_count": 0,
+      "sample_title": "你好时光第二季",
+      "media_checks": [
+        {
+          "url": "https://play.modujx17.com/20260822/gWa6bAKT/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 21999,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "github": {
+      "id": "cms_wwwmdzyapicom",
+      "checked_at": 1791050795,
+      "accepted": true,
+      "name": "魔都 | 采集",
+      "api": "https://www.mdzyapi.com/api.php/provide/vod/",
+      "latency_ms": 1407,
+      "types": {
+        "1": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "2": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "3": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "4": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "5": {
+          "name": "动漫电影",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "10": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "17": {
+          "name": "惊悚片",
+          "genre": "电影"
+        },
+        "19": {
+          "name": "古装片",
+          "genre": "电影"
+        },
+        "20": {
+          "name": "历史片",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "22": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "23": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "24": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "26": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "27": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "28": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "29": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "31": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "32": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "33": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "34": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "35": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "36": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "37": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "短剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "play.modujx10.com",
+        "play.modujx11.com",
+        "play.modujx12.com",
+        "play.modujx13.com",
+        "play.modujx14.com",
+        "play.modujx15.com",
+        "play.modujx16.com",
+        "play.modujx17.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 6,
+          "type_pid": 0,
+          "type_name": "里番动漫"
+        },
+        {
+          "type_id": 18,
+          "type_pid": 7,
+          "type_name": "家庭片"
+        },
+        {
+          "type_id": 25,
+          "type_pid": 7,
+          "type_name": "短片"
+        },
+        {
+          "type_id": 39,
+          "type_pid": 7,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 40,
+          "type_pid": 0,
+          "type_name": "体育"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 40,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 0,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 80,
+      "blocked_item_count": 0,
+      "sample_title": "你好时光第二季",
+      "media_checks": [
+        {
+          "url": "https://play.modujx17.com/20260822/gWa6bAKT/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 1146,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_p2100net": {
+    "local": {
+      "id": "cms_p2100net",
+      "checked_at": 1791050161,
+      "accepted": false,
+      "name": "飘零 | 采集",
+      "reason": "HTTP Error 403: Forbidden"
+    },
+    "local-direct": {
+      "id": "cms_p2100net",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "飘零 | 采集",
+      "reason": "HTTP Error 403: Forbidden"
+    },
+    "github": {
+      "id": "cms_p2100net",
+      "checked_at": 1791050795,
+      "accepted": false,
+      "name": "飘零 | 采集",
+      "reason": "HTTP Error 403: Forbidden"
+    }
+  },
+  "cms_haohuazycom": {
+    "local": {
+      "id": "cms_haohuazycom",
+      "checked_at": 1791050161,
+      "accepted": false,
+      "name": "豪华 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_haohuazycom",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "豪华 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_haohuazycom",
+      "checked_at": 1791050795,
+      "accepted": true,
+      "name": "豪华 | 采集",
+      "api": "https://haohuazy.com/api.php/provide/vod/",
+      "latency_ms": 794,
+      "types": {
+        "1": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "2": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "3": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "4": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "5": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "6": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "7": {
+          "name": "马泰剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "17": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "20": {
+          "name": "内地剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "24": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "25": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "26": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "27": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "31": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "32": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "33": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "34": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "35": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "36": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "37": {
+          "name": "奇幻片",
+          "genre": "电影"
+        },
+        "38": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "50": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "play.hhuus.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 8,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 39,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 40,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 40,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 40,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 43,
+          "type_pid": 40,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 44,
+          "type_pid": 40,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 38,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 38,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 38,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 38,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 38,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 38,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 38,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 38,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "转生了的大圣女，拼死隐瞒自己身为圣女",
+      "media_checks": [
+        {
+          "url": "https://play.hhuus.com/play/e73ARxOe/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 532,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_iqiyizyapicom": {
+    "local": {
+      "id": "cms_iqiyizyapicom",
+      "checked_at": 1791050168,
+      "accepted": false,
+      "name": "爱奇艺 | 采集",
+      "reason": "Media sample failed: invalid HLS media segment"
+    },
+    "local-direct": {
+      "id": "cms_iqiyizyapicom",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "爱奇艺 | 采集",
+      "reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_iqiyizyapicom",
+      "checked_at": 1791050795,
+      "accepted": false,
+      "name": "爱奇艺 | 采集",
+      "reason": "Media sample failed: invalid HLS media segment"
+    }
+  },
+  "cms_huyazynet": {
+    "local": {
+      "id": "cms_huyazynet",
+      "checked_at": 1791050204,
+      "accepted": false,
+      "name": "虎牙 | 采集",
+      "reason": "Media sample failed: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "local-direct": {
+      "id": "cms_huyazynet",
+      "checked_at": 1791050563,
+      "accepted": false,
+      "name": "虎牙 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_huyazynet",
+      "checked_at": 1791050795,
+      "accepted": true,
+      "name": "虎牙 | 采集",
+      "api": "https://huyazy.net/api.php/provide/vod/",
+      "latency_ms": 401,
+      "types": {
+        "1": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "2": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "3": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "4": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "5": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "6": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "7": {
+          "name": "马泰剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "17": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "20": {
+          "name": "内地剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "24": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "25": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "26": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "27": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "38": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "39": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "40": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "41": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "47": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "1080p.huyall.com",
+        "hd.kuktxu.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 8,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 29,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 31,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 32,
+          "type_pid": 29,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 33,
+          "type_pid": 29,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 34,
+          "type_pid": 29,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 35,
+          "type_pid": 29,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 30,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 43,
+          "type_pid": 30,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 44,
+          "type_pid": 30,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 30,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 30,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 30,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 30,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 30,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 43,
+      "blocked_item_count": 0,
+      "sample_title": "转生了的大圣女，拼死隐瞒自己身为圣女",
+      "media_checks": [
+        {
+          "url": "https://hd.kuktxu.com/play/b680Qwze/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 2122,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_cjyayazynet": {
+    "local": {
+      "id": "cms_cjyayazynet",
+      "checked_at": 1791050204,
+      "accepted": false,
+      "name": "鸭鸭 | 采集",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    "local-direct": {
+      "id": "cms_cjyayazynet",
+      "checked_at": 1791050569,
+      "accepted": false,
+      "name": "鸭鸭 | 采集",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    "github": {
+      "id": "cms_cjyayazynet",
+      "checked_at": 1791050796,
+      "accepted": false,
+      "name": "鸭鸭 | 采集",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  "cms_360zycom": {
+    "local": {
+      "id": "cms_360zycom",
+      "checked_at": 1791050207,
+      "accepted": false,
+      "name": "360 | 采集",
+      "reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_360zycom",
+      "checked_at": 1791050600,
+      "accepted": false,
+      "name": "360 | 采集",
+      "reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_360zycom",
+      "checked_at": 1791050797,
+      "accepted": false,
+      "name": "360 | 采集",
+      "reason": "Media sample failed: invalid HLS media segment"
+    }
+  },
+  "cms_apiwujinapinet": {
+    "local": {
+      "id": "cms_apiwujinapinet",
+      "checked_at": 1791050225,
+      "accepted": false,
+      "name": "无尽 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_apiwujinapinet",
+      "checked_at": 1791050602,
+      "accepted": false,
+      "name": "无尽 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_apiwujinapinet",
+      "checked_at": 1791050797,
+      "accepted": false,
+      "name": "无尽 | 采集",
+      "reason": "Media sample failed: HTTP Error 403: Forbidden"
+    }
+  },
+  "cms_jyzyapicom": {
+    "local": {
+      "id": "cms_jyzyapicom",
+      "checked_at": 1791050253,
+      "accepted": false,
+      "name": "金鹰 | 采集",
+      "reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_jyzyapicom",
+      "checked_at": 1791050610,
+      "accepted": false,
+      "name": "金鹰 | 采集",
+      "reason": "Media sample failed: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "github": {
+      "id": "cms_jyzyapicom",
+      "checked_at": 1791050799,
+      "accepted": true,
+      "name": "金鹰 | 采集",
+      "api": "https://jyzyapi.com/api.php/provide/vod/",
+      "latency_ms": 286,
+      "types": {
+        "1": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "2": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "3": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "4": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "5": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "6": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "7": {
+          "name": "马泰剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "17": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "20": {
+          "name": "内地剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "24": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "25": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "26": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "27": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "36": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "37": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "39": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "45": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "hd.kuktxu.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 8,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 29,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 31,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 32,
+          "type_pid": 29,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 33,
+          "type_pid": 29,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 34,
+          "type_pid": 29,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 35,
+          "type_pid": 29,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 40,
+          "type_pid": 30,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 30,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 30,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 43,
+          "type_pid": 30,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 44,
+          "type_pid": 30,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 30,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 30,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 30,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "转生了的大圣女，拼死隐瞒自己身为圣女",
+      "media_checks": [
+        {
+          "url": "https://hd.kuktxu.com/play/b680Qwze/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 1686,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_suoniapicom": {
+    "local": {
+      "id": "cms_suoniapicom",
+      "checked_at": 1791050278,
+      "accepted": false,
+      "name": "索尼 | 采集 ",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_suoniapicom",
+      "checked_at": 1791050619,
+      "accepted": false,
+      "name": "索尼 | 采集 ",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_suoniapicom",
+      "checked_at": 1791050801,
+      "accepted": false,
+      "name": "索尼 | 采集 ",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  "cms_apixinlangapicom": {
+    "local": {
+      "id": "cms_apixinlangapicom",
+      "checked_at": 1791050289,
+      "accepted": false,
+      "name": "新浪资源(切)",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_apixinlangapicom",
+      "checked_at": 1791050619,
+      "accepted": true,
+      "name": "新浪资源(切)",
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "latency_ms": 6898,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "4": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "5": {
+          "name": "纪录片",
+          "genre": "纪录片"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "大陆剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "港澳剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "17": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "18": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "21": {
+          "name": "泰剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "38": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "39": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "40": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "41": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "42": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "43": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "44": {
+          "name": "奇幻片",
+          "genre": "电影"
+        },
+        "45": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "46": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "47": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "48": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "54": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "play.xluuss.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 22,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 23,
+          "type_pid": 0,
+          "type_name": "体育"
+        },
+        {
+          "type_id": 25,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 26,
+          "type_pid": 23,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 27,
+          "type_pid": 23,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 28,
+          "type_pid": 23,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 29,
+          "type_pid": 23,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 24,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 24,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 24,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 24,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 24,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 55,
+          "type_pid": 24,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 56,
+          "type_pid": 24,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 57,
+          "type_pid": 24,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "黑色五叶草第二季",
+      "media_checks": [
+        {
+          "url": "https://play.xluuss.com/play/bW68Vrna/index.m3u8",
+          "ok": false,
+          "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+          "decode_tested": false
+        },
+        {
+          "url": "https://play.xluuss.com/play/e5yWPvAe/index.m3u8",
+          "ok": false,
+          "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+          "decode_tested": false
+        },
+        {
+          "url": "https://play.xluuss.com/play/egJk0qDd/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 19744,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "github": {
+      "id": "cms_apixinlangapicom",
+      "checked_at": 1791050802,
+      "accepted": true,
+      "name": "新浪资源(切)",
+      "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+      "latency_ms": 241,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "4": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "5": {
+          "name": "纪录片",
+          "genre": "纪录片"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "大陆剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "港澳剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "17": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "18": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "21": {
+          "name": "泰剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "38": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "39": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "40": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "41": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "42": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "43": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "44": {
+          "name": "奇幻片",
+          "genre": "电影"
+        },
+        "45": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "46": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "47": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "48": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "54": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "play.xluuss.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 22,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 23,
+          "type_pid": 0,
+          "type_name": "体育"
+        },
+        {
+          "type_id": 25,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 26,
+          "type_pid": 23,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 27,
+          "type_pid": 23,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 28,
+          "type_pid": 23,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 29,
+          "type_pid": 23,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 24,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 24,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 24,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 24,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 24,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 55,
+          "type_pid": 24,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 56,
+          "type_pid": 24,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 57,
+          "type_pid": 24,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "黑色五叶草第二季",
+      "media_checks": [
+        {
+          "url": "https://play.xluuss.com/play/bW68Vrna/index.m3u8",
+          "ok": false,
+          "reason": "invalid encrypted segment response",
+          "decode_tested": false
+        },
+        {
+          "url": "https://play.xluuss.com/play/e5yWPvAe/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 475,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_tyyszycom": {
+    "local": {
+      "id": "cms_tyyszycom",
+      "checked_at": 1791050291,
+      "accepted": false,
+      "name": "影视 | 天涯",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    "local-direct": {
+      "id": "cms_tyyszycom",
+      "checked_at": 1791050619,
+      "accepted": false,
+      "name": "影视 | 天涯",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    "github": {
+      "id": "cms_tyyszycom",
+      "checked_at": 1791050803,
+      "accepted": false,
+      "name": "影视 | 天涯",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  "cms_1542191172329981": {
+    "local": {
+      "id": "cms_1542191172329981",
+      "checked_at": 1791050294,
+      "accepted": false,
+      "name": "影视 | 建安",
+      "reason": "HTTP Error 502: Bad Gateway"
+    },
+    "local-direct": {
+      "id": "cms_1542191172329981",
+      "checked_at": 1791050629,
+      "accepted": false,
+      "name": "影视 | 建安",
+      "reason": "Search ignored nonmatching keyword"
+    },
+    "github": {
+      "id": "cms_1542191172329981",
+      "checked_at": 1791050803,
+      "accepted": false,
+      "name": "影视 | 建安",
+      "reason": "Search ignored nonmatching keyword"
+    }
+  },
+  "cms_bfzyapicom": {
+    "local": {
+      "id": "cms_bfzyapicom",
+      "checked_at": 1791050296,
+      "accepted": false,
+      "name": "暴風 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_bfzyapicom",
+      "checked_at": 1791050634,
+      "accepted": true,
+      "name": "暴風 | 采集",
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "latency_ms": 6487,
+      "types": {
+        "20": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "22": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "23": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "24": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "25": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "26": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "27": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "28": {
+          "name": "纪录片",
+          "genre": "纪录片"
+        },
+        "30": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "31": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "32": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "33": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "34": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "35": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "36": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "37": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "38": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "39": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "40": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "41": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "42": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "43": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "44": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "45": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "46": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "47": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "48": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "49": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "50": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "58": {
+          "name": "短剧大全",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "bfeng10.com",
+        "bfeng11.com",
+        "c1.ddbbffcdn.com",
+        "c1.rrcdnbf2.com",
+        "c1.rrcdnbf3.com",
+        "c1.rrcdnbf4.com",
+        "c1.rrcdnbf5.com",
+        "c1.rrcdnbf6.com",
+        "fengbao12.com",
+        "fengbao13.com",
+        "p.bvvvvvvvvv1f.com",
+        "v.baofeng9.com",
+        "v.fengbao8.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 29,
+          "type_pid": 20,
+          "type_name": "理论片"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 0,
+          "type_name": "电影解说"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 54,
+          "type_pid": 53,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 55,
+          "type_pid": 53,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 56,
+          "type_pid": 53,
+          "type_name": "网球"
+        },
+        {
+          "type_id": 57,
+          "type_pid": 53,
+          "type_name": "斯诺克"
+        },
+        {
+          "type_id": 65,
+          "type_pid": 58,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 66,
+          "type_pid": 58,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 67,
+          "type_pid": 58,
+          "type_name": "现代言情"
+        },
+        {
+          "type_id": 68,
+          "type_pid": 58,
+          "type_name": "反转爽文"
+        },
+        {
+          "type_id": 69,
+          "type_pid": 58,
+          "type_name": "女恋总裁"
+        },
+        {
+          "type_id": 70,
+          "type_pid": 58,
+          "type_name": "闪婚离婚"
+        },
+        {
+          "type_id": 71,
+          "type_pid": 58,
+          "type_name": "都市脑洞"
+        },
+        {
+          "type_id": 72,
+          "type_pid": 58,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 73,
+          "type_pid": 0,
+          "type_name": "福利"
+        },
+        {
+          "type_id": 74,
+          "type_pid": 58,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 59,
+      "blocked_item_count": 0,
+      "sample_title": "僵尸搜寻中",
+      "media_checks": [
+        {
+          "url": "https://bfeng11.com/video/jiangshisouxunzhong/973076c2d369/index.m3u8",
+          "ok": true,
+          "level": [
+            "media-segment"
+          ],
+          "ms": 12153,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "github": {
+      "id": "cms_bfzyapicom",
+      "checked_at": 1791050803,
+      "accepted": true,
+      "name": "暴風 | 采集",
+      "api": "https://bfzyapi.com/api.php/provide/vod/",
+      "latency_ms": 776,
+      "types": {
+        "20": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "22": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "23": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "24": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "25": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "26": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "27": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "28": {
+          "name": "纪录片",
+          "genre": "纪录片"
+        },
+        "30": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "31": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "32": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "33": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "34": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "35": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "36": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "37": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "38": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "39": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "40": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "41": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "42": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "43": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "44": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "45": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "46": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "47": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "48": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "49": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "50": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "58": {
+          "name": "短剧大全",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "bfeng10.com",
+        "bfeng11.com",
+        "c1.ddbbffcdn.com",
+        "c1.rrcdnbf2.com",
+        "c1.rrcdnbf3.com",
+        "c1.rrcdnbf4.com",
+        "c1.rrcdnbf5.com",
+        "c1.rrcdnbf6.com",
+        "fengbao12.com",
+        "fengbao13.com",
+        "p.bvvvvvvvvv1f.com",
+        "v.baofeng9.com",
+        "v.fengbao8.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 29,
+          "type_pid": 20,
+          "type_name": "理论片"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 0,
+          "type_name": "电影解说"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 54,
+          "type_pid": 53,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 55,
+          "type_pid": 53,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 56,
+          "type_pid": 53,
+          "type_name": "网球"
+        },
+        {
+          "type_id": 57,
+          "type_pid": 53,
+          "type_name": "斯诺克"
+        },
+        {
+          "type_id": 65,
+          "type_pid": 58,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 66,
+          "type_pid": 58,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 67,
+          "type_pid": 58,
+          "type_name": "现代言情"
+        },
+        {
+          "type_id": 68,
+          "type_pid": 58,
+          "type_name": "反转爽文"
+        },
+        {
+          "type_id": 69,
+          "type_pid": 58,
+          "type_name": "女恋总裁"
+        },
+        {
+          "type_id": 70,
+          "type_pid": 58,
+          "type_name": "闪婚离婚"
+        },
+        {
+          "type_id": 71,
+          "type_pid": 58,
+          "type_name": "都市脑洞"
+        },
+        {
+          "type_id": 72,
+          "type_pid": 58,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 73,
+          "type_pid": 0,
+          "type_name": "福利"
+        },
+        {
+          "type_id": 74,
+          "type_pid": 58,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 59,
+      "blocked_item_count": 0,
+      "sample_title": "僵尸搜寻中",
+      "media_checks": [
+        {
+          "url": "https://bfeng11.com/video/jiangshisouxunzhong/973076c2d369/index.m3u8",
+          "ok": false,
+          "reason": "HTTP Error 404: Not Found",
+          "decode_tested": false
+        },
+        {
+          "url": "https://fengbao13.com/video/zhuanshengliaodedashengnvpinsiyinmanzijishenweishengnv/12a5e5a6107c/index.m3u8",
+          "ok": true,
+          "level": [
+            "media-segment"
+          ],
+          "ms": 1376,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_wwwhongniuzy2com": {
+    "local": {
+      "id": "cms_wwwhongniuzy2com",
+      "checked_at": 1791050308,
+      "accepted": false,
+      "name": "红牛资源(切)",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_wwwhongniuzy2com",
+      "checked_at": 1791050653,
+      "accepted": false,
+      "name": "红牛资源(切)",
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "github": {
+      "id": "cms_wwwhongniuzy2com",
+      "checked_at": 1791050804,
+      "accepted": true,
+      "name": "红牛资源(切)",
+      "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
+      "latency_ms": 252,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "5": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "6": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "13": {
+          "name": "港澳剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "17": {
+          "name": "泰剧",
+          "genre": "电视剧"
+        },
+        "18": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "19": {
+          "name": "纪录片",
+          "genre": "纪录片"
+        },
+        "20": {
+          "name": "动漫电影",
+          "genre": "电影"
+        },
+        "30": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "36": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "37": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "38": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "39": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "40": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "41": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "42": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "48": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "hn.bfvvs.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 21,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 29,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 31,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 32,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 33,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 34,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 35,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 43,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 44,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 45,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 46,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 47,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 49,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 50,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 51,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 62,
+      "blocked_item_count": 0,
+      "sample_title": "黑色五叶草第二季",
+      "media_checks": [
+        {
+          "url": "https://hn.bfvvs.com/play/dR6LNmYd/index.m3u8",
+          "ok": false,
+          "reason": "invalid encrypted segment response",
+          "decode_tested": false
+        },
+        {
+          "url": "https://hn.bfvvs.com/play/bYEMRMpb/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 2575,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_sdzyapicom": {
+    "local": {
+      "id": "cms_sdzyapicom",
+      "checked_at": 1791050328,
+      "accepted": false,
+      "name": "闪电资源(切)",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    "local-direct": {
+      "id": "cms_sdzyapicom",
+      "checked_at": 1791050656,
+      "accepted": false,
+      "name": "闪电资源(切)",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_sdzyapicom",
+      "checked_at": 1791050804,
+      "accepted": false,
+      "name": "闪电资源(切)",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    }
+  },
+  "cms_cjffzyapicom": {
+    "local": {
+      "id": "cms_cjffzyapicom",
+      "checked_at": 1791050335,
+      "accepted": false,
+      "name": "非凡 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_cjffzyapicom",
+      "checked_at": 1791050685,
+      "accepted": false,
+      "name": "非凡 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_cjffzyapicom",
+      "checked_at": 1791050805,
+      "accepted": true,
+      "name": "非凡 | 采集",
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+      "latency_ms": 898,
+      "types": {
+        "1": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "21": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "25": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "26": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "27": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "29": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "31": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "32": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "33": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "36": {
+          "name": "短剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "super.ffzy-online6.com",
+        "svip.feifei-play.com",
+        "vip.ffzy-online1.com",
+        "vip.ffzy-online3.com",
+        "vip.ffzy-online5.com",
+        "vip.ffzy-play10.com",
+        "vip.ffzy-play5.com",
+        "vip.ffzy-play6.com",
+        "vip.ffzy-play7.com",
+        "vip.ffzy-play9.com",
+        "vip.ffzy-plays.com",
+        "vod.feifei-kan.com",
+        "vod.ffzy-bofang.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 34,
+          "type_pid": 1,
+          "type_name": "伦理片"
+        }
+      ],
+      "safe_sample_count": 80,
+      "blocked_item_count": 0,
+      "sample_title": "魔法★探险家",
+      "media_checks": [
+        {
+          "url": "https://vip.ffzy-plays.com/20261004/59030_696ca064/index.m3u8",
+          "ok": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "decode_tested": false
+        },
+        {
+          "url": "https://vip.ffzy-plays.com/20261004/59029_cf37a52a/index.m3u8",
+          "ok": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "decode_tested": false
+        },
+        {
+          "url": "https://vip.ffzy-plays.com/20260926/58764_7f51ce8c/index.m3u8",
+          "ok": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "decode_tested": false
+        },
+        {
+          "url": "https://vip.ffzy-plays.com/20261003/59028_03b857b5/index.m3u8",
+          "ok": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "decode_tested": false
+        },
+        {
+          "url": "https://vod.ffzy-bofang.com/20260926/3456_def7924e/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 1759,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_jszyapicom": {
+    "local": {
+      "id": "cms_jszyapicom",
+      "checked_at": 1791050336,
+      "accepted": true,
+      "name": "影视 | 极速[直连]",
+      "api": "https://jszyapi.com/api.php/provide/vod/?ac=list",
+      "latency_ms": 6154,
+      "types": {
+        "1": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "2": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "3": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "4": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "5": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "6": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "7": {
+          "name": "马泰剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "17": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "20": {
+          "name": "内地剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "24": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "25": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "26": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "27": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "31": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "32": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "33": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "34": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "35": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "36": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "37": {
+          "name": "奇幻片",
+          "genre": "电影"
+        },
+        "38": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "50": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "vv.jisuzyv.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 8,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 29,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 39,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 40,
+          "type_pid": 29,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 29,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 29,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 43,
+          "type_pid": 29,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 38,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 38,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 38,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 38,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 38,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 38,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 38,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 54,
+          "type_pid": 38,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "迪迦奥特曼：最终圣战",
+      "media_checks": [
+        {
+          "url": "https://vv.jisuzyv.com/play/7e53YM8b/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 20494,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "local-direct": {
+      "id": "cms_jszyapicom",
+      "checked_at": 1791050686,
+      "accepted": true,
+      "name": "影视 | 极速[直连]",
+      "api": "https://jszyapi.com/api.php/provide/vod/?ac=list",
+      "latency_ms": 6628,
+      "types": {
+        "1": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "2": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "3": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "4": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "5": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "6": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "7": {
+          "name": "马泰剧",
+          "genre": "电视剧"
+        },
+        "9": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "14": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "15": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "16": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "17": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "20": {
+          "name": "内地剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "24": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "25": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "26": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "27": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "30": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "31": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "32": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "33": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "34": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "35": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "36": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "37": {
+          "name": "奇幻片",
+          "genre": "电影"
+        },
+        "38": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "50": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "vv.jisuzyv.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 8,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 29,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 39,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 40,
+          "type_pid": 29,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 29,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 29,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 43,
+          "type_pid": 29,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 38,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 38,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 38,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 38,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 38,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 38,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 38,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 54,
+          "type_pid": 38,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "迪迦奥特曼：最终圣战",
+      "media_checks": [
+        {
+          "url": "https://vv.jisuzyv.com/play/7e53YM8b/index.m3u8",
+          "ok": true,
+          "level": [
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 20419,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "github": {
+      "id": "cms_jszyapicom",
+      "checked_at": 1791050806,
+      "accepted": false,
+      "name": "影视 | 极速[直连]",
+      "reason": "Media sample failed: <urlopen error [Errno 111] Connection refused>"
+    }
+  },
+  "cms_apiapibdzycom": {
+    "local": {
+      "id": "cms_apiapibdzycom",
+      "checked_at": 1791050357,
+      "accepted": false,
+      "name": "百度",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "local-direct": {
+      "id": "cms_apiapibdzycom",
+      "checked_at": 1791050690,
+      "accepted": false,
+      "name": "百度",
+      "reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "github": {
+      "id": "cms_apiapibdzycom",
+      "checked_at": 1791050807,
+      "accepted": false,
+      "name": "百度",
+      "reason": "Media sample failed: HTTP Error 403: Forbidden"
+    }
+  },
+  "cms_apiguangsuapicom": {
+    "local": {
+      "id": "cms_apiguangsuapicom",
+      "checked_at": 1791050363,
+      "accepted": true,
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "latency_ms": 6275,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "大陆剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "港澳剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "动漫电影",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "泰剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "31": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "39": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "40": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "41": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "42": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "43": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "49": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "v.gsuus.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 25,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 30,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 32,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 33,
+          "type_pid": 30,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 34,
+          "type_pid": 30,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 35,
+          "type_pid": 30,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 36,
+          "type_pid": 30,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 44,
+          "type_pid": 31,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 31,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 31,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 31,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 31,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 31,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 31,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 31,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "天堂旗帜下",
+      "media_checks": [
+        {
+          "url": "https://v.gsuus.com/play/mbk2OY5a/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 9750,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "local-direct": {
+      "id": "cms_apiguangsuapicom",
+      "checked_at": 1791050703,
+      "accepted": true,
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "latency_ms": 5808,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "大陆剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "港澳剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "动漫电影",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "泰剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "31": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "39": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "40": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "41": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "42": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "43": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "49": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "v.gsuus.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 25,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 30,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 32,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 33,
+          "type_pid": 30,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 34,
+          "type_pid": 30,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 35,
+          "type_pid": 30,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 36,
+          "type_pid": 30,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 44,
+          "type_pid": 31,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 31,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 31,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 31,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 31,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 31,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 31,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 31,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "转生了的大圣女，拼死隐瞒自己身为圣女",
+      "media_checks": [
+        {
+          "url": "https://v.gsuus.com/play/b4x9Orkb/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 5072,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "github": {
+      "id": "cms_apiguangsuapicom",
+      "checked_at": 1791050808,
+      "accepted": true,
+      "name": "光速资源(切)",
+      "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+      "latency_ms": 286,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "电视剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "大陆剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "港澳剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "韩剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "动漫电影",
+          "genre": "电影"
+        },
+        "21": {
+          "name": "日剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "泰剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "31": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "39": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "40": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "41": {
+          "name": "中国动漫",
+          "genre": "动漫"
+        },
+        "42": {
+          "name": "日本动漫",
+          "genre": "动漫"
+        },
+        "43": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "49": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "v.gsuus.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 25,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 30,
+          "type_pid": 0,
+          "type_name": "体育赛事"
+        },
+        {
+          "type_id": 32,
+          "type_pid": 0,
+          "type_name": "预告片"
+        },
+        {
+          "type_id": 33,
+          "type_pid": 30,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 34,
+          "type_pid": 30,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 35,
+          "type_pid": 30,
+          "type_name": "台球"
+        },
+        {
+          "type_id": 36,
+          "type_pid": 30,
+          "type_name": "其他赛事"
+        },
+        {
+          "type_id": 44,
+          "type_pid": 31,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 31,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 46,
+          "type_pid": 31,
+          "type_name": "穿越年代"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 31,
+          "type_name": "言情总裁"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 31,
+          "type_name": "重生民国"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 31,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 51,
+          "type_pid": 31,
+          "type_name": "擦边短剧"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 31,
+          "type_name": "AI漫剧"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "转生了的大圣女，拼死隐瞒自己身为圣女",
+      "media_checks": [
+        {
+          "url": "https://v.gsuus.com/play/b4x9Orkb/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 697,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_cjlziapicom": {
+    "local": {
+      "id": "cms_cjlziapicom",
+      "checked_at": 1791050382,
+      "accepted": false,
+      "name": "量子 | 采集",
+      "reason": "HTTP Error 500: Internal Server Error"
+    },
+    "local-direct": {
+      "id": "cms_cjlziapicom",
+      "checked_at": 1791050704,
+      "accepted": false,
+      "name": "量子 | 采集",
+      "reason": "Media sample failed: HTTP Error 404: Not Found"
+    },
+    "github": {
+      "id": "cms_cjlziapicom",
+      "checked_at": 1791050809,
+      "accepted": false,
+      "name": "量子 | 采集",
+      "reason": "Media sample failed: HTTP Error 404: Not Found"
+    }
+  },
+  "cms_wwwlovedannet": {
+    "local": {
+      "id": "cms_wwwlovedannet",
+      "checked_at": 1791050382,
+      "accepted": false,
+      "name": "艾旦 | 采集",
+      "reason": "The read operation timed out"
+    },
+    "local-direct": {
+      "id": "cms_wwwlovedannet",
+      "checked_at": 1791050705,
+      "accepted": false,
+      "name": "艾旦 | 采集",
+      "reason": "The read operation timed out"
+    },
+    "github": {
+      "id": "cms_wwwlovedannet",
+      "checked_at": 1791050811,
+      "accepted": false,
+      "name": "艾旦 | 采集",
+      "reason": "Media sample failed: HTTP Error 403: Forbidden"
+    }
+  },
+  "cms_caijidyttzyapicom": {
+    "local": {
+      "id": "cms_caijidyttzyapicom",
+      "checked_at": 1791050382,
+      "accepted": true,
+      "name": "天堂 | 采集",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
+      "latency_ms": 10271,
+      "types": {
+        "1": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "21": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "25": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "26": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "27": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "29": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "31": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "32": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "33": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "36": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "动画片",
+          "genre": "动漫"
+        }
+      },
+      "media_hosts": [
+        "play.phimgood.com",
+        "vip.dytt-cine.com",
+        "vip.dytt-cinema.com",
+        "vip.dytt-hot.com",
+        "vip.dytt-kan.com",
+        "vip.dytt-luck.com",
+        "vip.dytt-network.com",
+        "vip.dytt-see.com",
+        "vip.dytt-tv.com",
+        "vip.dytt-tvs.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 34,
+          "type_pid": 1,
+          "type_name": "伦理片"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "乱马1/2第三季",
+      "media_checks": [
+        {
+          "url": "https://vip.dytt-tvs.com/20261004/39708_4adc2d13/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 13929,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "local-direct": {
+      "id": "cms_caijidyttzyapicom",
+      "checked_at": 1791050710,
+      "accepted": true,
+      "name": "天堂 | 采集",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
+      "latency_ms": 7071,
+      "types": {
+        "1": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "21": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "25": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "26": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "27": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "29": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "31": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "32": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "33": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "36": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "动画片",
+          "genre": "动漫"
+        }
+      },
+      "media_hosts": [
+        "play.phimgood.com",
+        "vip.dytt-cine.com",
+        "vip.dytt-cinema.com",
+        "vip.dytt-hot.com",
+        "vip.dytt-kan.com",
+        "vip.dytt-luck.com",
+        "vip.dytt-network.com",
+        "vip.dytt-see.com",
+        "vip.dytt-tv.com",
+        "vip.dytt-tvs.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 34,
+          "type_pid": 1,
+          "type_name": "伦理片"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "乱马1/2第三季",
+      "media_checks": [
+        {
+          "url": "https://vip.dytt-tvs.com/20261004/39708_4adc2d13/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 14540,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    },
+    "github": {
+      "id": "cms_caijidyttzyapicom",
+      "checked_at": 1791050811,
+      "accepted": true,
+      "name": "天堂 | 采集",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
+      "latency_ms": 333,
+      "types": {
+        "1": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "21": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "25": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "26": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "27": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "29": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "31": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "32": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "33": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "36": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "动画片",
+          "genre": "动漫"
+        }
+      },
+      "media_hosts": [
+        "play.phimgood.com",
+        "vip.dytt-cine.com",
+        "vip.dytt-cinema.com",
+        "vip.dytt-hot.com",
+        "vip.dytt-kan.com",
+        "vip.dytt-luck.com",
+        "vip.dytt-network.com",
+        "vip.dytt-see.com",
+        "vip.dytt-tv.com",
+        "vip.dytt-tvs.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 34,
+          "type_pid": 1,
+          "type_name": "伦理片"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "乱马1/2第三季",
+      "media_checks": [
+        {
+          "url": "https://vip.dytt-tvs.com/20261004/39708_4adc2d13/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 3093,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review"
+    }
+  },
+  "cms_mtzyme": {
+    "local": {
+      "id": "cms_mtzyme",
+      "checked_at": 1791050402,
+      "accepted": false,
+      "name": "茅台 | 采集",
+      "reason": "CMS response must contain a list"
+    },
+    "local-direct": {
+      "id": "cms_mtzyme",
+      "checked_at": 1791050721,
+      "accepted": false,
+      "name": "茅台 | 采集",
+      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>"
+    },
+    "github": {
+      "id": "cms_mtzyme",
+      "checked_at": 1791050811,
+      "accepted": false,
+      "name": "茅台 | 采集",
+      "reason": "CMS response must contain a list"
+    }
+  }
+}

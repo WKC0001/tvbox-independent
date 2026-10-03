@@ -78,7 +78,11 @@ def main():
         previous=ROOT/'state/provider-audit.json';providers=json.loads(previous.read_text()) if previous.exists() else {}
         for item in report['sites']:
             health.update(state,'site:'+item['id'],args.network,item['accepted'],ts=now,reason=item.get('reason',''))
-            providers.setdefault(item['id'],{})[args.network]=item
+            old=providers.setdefault(item['id'],{}).get(args.network,{})
+            if item['accepted']:item['last_success']={k:v for k,v in item.items() if k!='last_success'}
+            elif old.get('last_success'):item['last_success']=old['last_success']
+            elif old.get('accepted'):item['last_success']=old
+            providers[item['id']][args.network]=item
         write('state/provider-audit.json',providers)
     if args.mode in ('live','full','light'):
         routes=json.loads((ROOT/'registry/routes.json').read_text())

@@ -1,74 +1,507 @@
-{
- "targets_without_route": [
-  "凤凰资讯",
-  "凤凰中文",
-  "CGTN俄语",
-  "金鹰纪实",
-  "CCTV-11",
-  "北京卫视",
-  "哈哈炫动",
-  "CGTN纪录",
-  "CCTV-6",
-  "黑龙江卫视",
-  "CCTV-10",
-  "重庆卫视",
-  "甘肃卫视",
-  "贵州卫视",
-  "TVB翡翠台",
-  "广西卫视",
-  "CCTV-7",
-  "纪实人文",
-  "深圳卫视",
-  "BTV体育",
-  "湖北卫视",
-  "优漫卡通",
-  "云南卫视",
-  "天津卫视",
-  "CGTN法语",
-  "港台电视32",
-  "山西卫视",
-  "CGTN西语",
-  "山东卫视",
-  "金鹰卡通",
-  "CCTV-14",
-  "CCTV-4",
-  "厦门卫视",
-  "凤凰香港",
-  "CCTV-5",
-  "CCTV-3",
-  "兵团卫视",
-  "陕西卫视",
-  "港台电视31",
-  "河南卫视",
-  "澳门莲花",
-  "福建体育",
-  "宁夏卫视",
-  "澳视澳门",
-  "五星体育",
-  "TVB明珠台",
-  "吉林卫视",
-  "凤凰卫视香港台",
-  "嘉佳卡通",
-  "上海纪实",
-  "CCTV-15",
-  "湖南金鹰纪实",
-  "CCTV-17",
-  "西藏卫视",
-  "海南卫视",
-  "CCTV-2",
-  "辽宁卫视",
-  "东方卫视",
-  "安徽卫视",
-  "CGTN阿拉伯语",
-  "CCTV-8",
-  "江西卫视",
-  "四川卫视",
-  "福建东南卫视",
-  "CCTV-16",
-  "广东卫视",
-  "CCTV-9",
-  "卡酷少儿",
-  "广东体育"
- ],
- "total_targets": 80
-}
+[
+  {
+    "channel_id": "tv_fb50bc2f132bf566ba2f",
+    "name": "CCTV+ 1",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_2cabc531b63397c1cad8",
+    "name": "CCTV中学生",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_a7bec738c45f755c2d92",
+    "name": "CCTV新影-中学生",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_61c5217afa0c987fc460",
+    "name": "CGTN俄语",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_465fbdbaf1b8b771246b",
+    "name": "新疆卫视哈萨克语",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_3109db3acbd3a642c275",
+    "name": "新疆卫视维吾尔语",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_6443bf9e0d35700032d3",
+    "name": "海南卫视",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_33c87dc741c7f598f3f2",
+    "name": "新视觉",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_7d9e6aade4af9586189a",
+    "name": "黑莓电影",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_686b1ab30eac12d2ed5b",
+    "name": "四海钓鱼",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_9b2baf91ed011e0f1ed8",
+    "name": "江苏体育",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_593fb016d258f5134737",
+    "name": "优优宝贝",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_ca10c5acda0f96a7dd89",
+    "name": "南京少儿",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_e833ec6273c1298e53d7",
+    "name": "韩国EBS少儿",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_3ac4a6d5e919c7b68253",
+    "name": "黑龙江少儿",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_3e70ac30fac6ae82e02c",
+    "name": "BRTV纪实科教",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_85662bf781adf34ff043",
+    "name": "北京科教",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_96411675ccb44000f2fd",
+    "name": "宿州科教",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_8afd7bc08ce745be9c74",
+    "name": "纪实人文",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_0297eb327ca0de8c459a",
+    "name": "纪实科教",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_3b9a97e540ed9c86f890",
+    "name": "中华特产",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_d9b99dab3339155392fe",
+    "name": "环球旅游",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_9e48b5b429398544028b",
+    "name": "生态环境",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_d7738aea4dd74897b4ad",
+    "name": "茶友频道",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_bbda504e246408c6e14a",
+    "name": "车迷频道",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_d4ac93a2bafcddc1e183",
+    "name": "音乐现场",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_d33a44223f2e528d9381",
+    "name": "RTHK31",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_1d633db5d2443c6b5564",
+    "name": "RTHK32",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_f6bb9685bc89a7f8fd54",
+    "name": "TVB Plus",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_456a649fe906197d65cb",
+    "name": "三立新闻",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_a3327caf3d736f011000",
+    "name": "八大戏剧台",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_dec589903fce0407a506",
+    "name": "凤凰香港",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_aff7beb49f4424992615",
+    "name": "耀才财经",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_b1191782552b4df4670d",
+    "name": "ABN China",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_7676d1657c562b529747",
+    "name": "Anshun Comprehensive News Channel",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_713a855ec3483ed29078",
+    "name": "CBC News",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_4d72e7717d4aa471b9cd",
+    "name": "Hebi News Channel",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_4ab01d08a718aafd6f3f",
+    "name": "QTV-1",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_0eb1f56d8ca6ec116a62",
+    "name": "QTV-2",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_b96d0c7febe27b36cc11",
+    "name": "QTV-3",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_16ce59fd0ba13df4eca8",
+    "name": "QTV-4",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_3346f17e762c96259d8b",
+    "name": "QTV-5",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_faa6677e7e5d1e91e719",
+    "name": "QTV-6",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_28dfab5b175b91996436",
+    "name": "RT Arabic(阿语)",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_dee3a4e5ff6f510a0df3",
+    "name": "RT Español(西语)",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_35822f1894f92e915000",
+    "name": "RT Français(法语)",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_f5ba49040d5b2e86d17b",
+    "name": "RT News(英语国际)",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_0f0a736bc322b1e488f8",
+    "name": "Wild Earth",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_723a9a653f38f9d7a44b",
+    "name": "韩国电影1",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_c15aafa980a8cbdd2e65",
+    "name": "乐游频道",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_354dfcc9db112e39329e",
+    "name": "北京新闻",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_229799c4d78a18e951a9",
+    "name": "吉林乡村",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_93849e5cc9c2bf430ba1",
+    "name": "梅河口综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_455b3a643941fddbb1bf",
+    "name": "叙州新闻综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_da3cec696970a6584d3b",
+    "name": "亳州农村",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_e6cd0b6402e737ca362f",
+    "name": "六安公共",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_ed3c12f7453db37a394c",
+    "name": "六安新闻综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_cecffc3027dbb5cf4d12",
+    "name": "宿州新闻综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_587e58b4b58b814ff88a",
+    "name": "铜陵新闻综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_20814f7e5d49110e94d9",
+    "name": "山东生活",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_770086d69e9904eb53c1",
+    "name": "大宁综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_e08ddb9b7c21e9879958",
+    "name": "河源公共",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_78951f2c4b9eb771df12",
+    "name": "河源综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_69966e8592ecc585c5bd",
+    "name": "宾阳综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_a5f2863a0693ee9c34c5",
+    "name": "灌阳新闻综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_ecd6df85562e1bdb673f",
+    "name": "田东综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_3c6513a3947728856dd7",
+    "name": "江苏公共新闻",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_8821366a35325839c605",
+    "name": "沭阳综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_b9e86c279d99bcad4469",
+    "name": "涟水综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_04d17fb5b8ac64f6c235",
+    "name": "靖江新闻综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_c8d985b3644c6b5c53f2",
+    "name": "衡水公共",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_2dcd2fa671144a7a4aa6",
+    "name": "河南民生",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_be41c6ededfe914eb706",
+    "name": "河南都市",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_482e926a38d84a70457c",
+    "name": "余姚姚江文化",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_2d988476c4ad122fbfa8",
+    "name": "浙江生活",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_fd2223c329d9d61c12fc",
+    "name": "绍兴新闻综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_c601a400d2f7136d1f7b",
+    "name": "海南新闻",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_42896215dd47ea1dde2c",
+    "name": "武汉一台新闻综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_5cc9766892f0dc4fb20a",
+    "name": "武汉文体",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_6ebe4cdcef67d4f796b4",
+    "name": "甘肃经济",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_bc3e85d3b0439516bbcc",
+    "name": "甘肃都市",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_af4e752b2b8e8e157b37",
+    "name": "秦安综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_8b3b60e22e9718442083",
+    "name": "三明新闻综合",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_8480bf26def06d5b92dd",
+    "name": "福建新闻",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_c5efeb6ba9bd096b72d7",
+    "name": "福建经济",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_84ff52dc9d28fe3ed7e6",
+    "name": "安顺新闻",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_ac7ba199e4a8dffba645",
+    "name": "朝阳新闻综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_aef5d033219597ec4212",
+    "name": "辽宁公共",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_466e5e782b025ca4f540",
+    "name": "辽宁北方",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_f2afc66f849cf026b61c",
+    "name": "辽宁影视剧",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_44d5c681abe126adc908",
+    "name": "辽宁教育青少",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_bbbdaa9d303f2500d958",
+    "name": "辽宁生活",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_21874d00b671d68dee8d",
+    "name": "辽宁经济",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_2510de88559510f21b72",
+    "name": "辽宁都市",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_32b7e055fdbbc49fb0fc",
+    "name": "江津新闻综合",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_04a3af724aa7e5aefd20",
+    "name": "陕西公共",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_0d01a0d915fba6b9b799",
+    "name": "黑龙江新闻",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_8db5781c11b419b30cf3",
+    "name": "1905电影网",
+    "reason": "no admissible route"
+  },
+  {
+    "channel_id": "tv_af68d3ee465501c2bd71",
+    "name": "亚洲武侠",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_8606195b74edea7e99d2",
+    "name": "大立电视台",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_68ee3c9ef8d1ba3d37c1",
+    "name": "环球电视",
+    "reason": "no currently verified route on local-direct"
+  }
+]

@@ -5,17 +5,13 @@ permissions:
   contents: read
 jobs:
   verify:
-    runs-on: ubuntu-latest
-    timeout-minutes: 18
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      # Verify the exact fixed version, regardless of whether it uses next or latest.
-      - name: CDN byte-level verification
-        id: cdncheck
-        run: node scripts/verify-cdn.cjs
+      - run: node scripts/verify-cdn.cjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:

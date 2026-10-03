@@ -28,17 +28,19 @@ def new_record(network: str = "default", ts: int = None) -> dict:
 def load_state(path) -> dict:
     p = Path(path)
     if p.exists():
-        try:
-            return json.loads(p.read_text(encoding="utf-8"))
-        except Exception:
-            pass
+        data = json.loads(p.read_text(encoding="utf-8"))
+        if not isinstance(data, dict):
+            raise ValueError('Health state must be an object: ' + str(p))
+        return data
     return {}
 
 
 def save_state(path, state: dict) -> None:
     Path(path).parent.mkdir(parents=True, exist_ok=True)
-    Path(path).write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True) + "\n",
-                          encoding="utf-8")
+    p = Path(path)
+    staging = p.with_suffix('.tmp')
+    staging.write_text(json.dumps(state, ensure_ascii=False, indent=1, sort_keys=True) + "\n", encoding="utf-8")
+    staging.replace(p)
 
 
 def _get(state: dict, route_id: str, network: str, ts: int) -> dict:
@@ -65,6 +67,10 @@ def update(state: dict, route_id: str, network: str, ok: bool, ts: int = None,
         rec["last_reason"] = reason or "isolated by content review; recovery requires manual review"
         return rec
 
+    if rec.get('last_event_ts') is not None and ts <= rec['last_event_ts']:
+        return rec
+    rec['last_event_ts'] = ts
+
     if ok:
         gap = None
         if rec.get("last_ok_ts"):
@@ -81,7 +87,8 @@ def update(state: dict, route_id: str, network: str, ok: bool, ts: int = None,
                 rec["last_reason"] = "down: awaiting two successes ≥10min apart to restore"
         else:
             rec["state"] = "healthy"
-        rec["last_reason"] = ""
+        if rec["state"] == "healthy":
+            rec["last_reason"] = ""
     else:
         rec["last_fail_ts"] = ts
         rec["last_reason"] = reason or "probe failed"

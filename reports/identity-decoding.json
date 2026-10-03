@@ -1,0 +1,46 @@
+{
+  "network": "local-direct",
+  "exhaustive": false,
+  "results": [
+    {
+      "id": "r_7f225cb7bad9b2bb6352",
+      "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv4k.m3u8?auth=testpub",
+      "kind": "identity-check",
+      "checked_at": 1791053217,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv), 1920x1080, 25 fps, 25 tbr, 90k tbn, start 1836.015833",
+      "audio_stream": "Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 1835.990711",
+      "frame": "r_7f225cb7bad9b2bb6352.png"
+    },
+    {
+      "id": "r_0b3cacdc0dab1d61dce1",
+      "url": "http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv8k",
+      "kind": "identity-check",
+      "checked_at": 1791053217,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (Main) ([27][0][0][0] / 0x001B), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 9635.381511",
+      "audio_stream": "Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 48000 Hz, stereo, fltp, start 9635.399733",
+      "frame": "r_0b3cacdc0dab1d61dce1.png"
+    },
+    {
+      "id": "r_b1c025ca902c941a1c63",
+      "url": "http://38.75.136.137:98/gslb/dsdqpub/cctv5p.m3u8?auth=testpub",
+      "kind": "identity-check",
+      "checked_at": 1791053217,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p(tv), 1920x1080, 25 fps, 25 tbr, 90k tbn, start 5485.204622",
+      "audio_stream": "Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 44100 Hz, stereo, fltp, start 5485.167156",
+      "frame": "r_b1c025ca902c941a1c63.png"
+    },
+    {
+      "id": "r_8c8ad1064c504e1c0b8d",
+      "url": "https://live-auth.51kandianshi.com/szgd/csztv1.m3u8",
+      "kind": "identity-check",
+      "checked_at": 1791053217,
+      "decoded": true,
+      "video_stream": "Stream #0:0[0x0]: Video: h264 (High) ([27][0][0][0] / 0x001B), yuv420p, 1920x1080 [SAR 1:1 DAR 16:9], 25 fps, 25 tbr, 90k tbn, start 43043.373667",
+      "audio_stream": "Stream #0:1[0x0]: Audio: aac (LC) ([15][0][0][0] / 0x000F), 32000 Hz, stereo, fltp, start 43043.179667",
+      "frame": "r_8c8ad1064c504e1c0b8d.png"
+    }
+  ]
+}

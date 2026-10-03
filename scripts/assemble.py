@@ -106,7 +106,13 @@ def main():
  _live_src=json.loads((ROOT/'input/approved-live.json').read_text())
  report={'version':pkg['version'],'policy':'Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin','reviewed_titles':len(rows),'categories':dict(Counter(v['category'] for v in rows)),'removed_providers':['玉兔','辣椒','滴滴','乐播','火速','光速'],'live_channels':len(channels),'live_routes':route_count,'live_frames_manual':sum(1 for e in _live_src if e.get('frame_review')=='manual' or 'frame_review' not in e),'live_frames_auto':sum(1 for e in _live_src if e.get('frame_review')=='visual-agent'),'live_groups':dict(Counter(g for g,n in channels)), 'live_policy':'Broadcaster host allowlist (data-driven), successful HLS/media probe plus frame inspection (manual for fixed-review entries, agent visual inspection of tiled frames for harvested entries); black/no-signal/placeholder/misnamed/anonymous routes excluded', 'limits':['Poster review and sampled frames only; no full-episode/full-series certification','Remote media may change; runtime URLs do not guarantee future content','No Android device playback test or mainland ISP verification','Live routes: visual review covers sampled still frames, not continuous monitoring'],'original_repo_modified':False,'original_npm_modified':False}
  dump(ROOT/'reports/content-review.json',report)
- manifest={**report,'package':pkg['name'],'generated_at':time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime()),'catalog_sha256':digest,'files':{f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['api.json','live.m3u','home.jpg'] if (ROOT/f).exists()}}
+ # A version's snapshot time must survive rebuilding in CI; otherwise an
+ # unchanged manifest differs from both the published package and the CDN.
+ previous=json.loads((ROOT/'manifest.json').read_text()) if (ROOT/'manifest.json').exists() else {}
+ same_version=previous.get('package')==pkg['name'] and previous.get('version')==pkg['version']
+ generated_at=previous.get('generated_at') if same_version else None
+ if not generated_at:generated_at=time.strftime('%Y-%m-%dT%H:%M:%SZ',time.gmtime())
+ manifest={**report,'package':pkg['name'],'generated_at':generated_at,'catalog_sha256':digest,'files':{f:hashlib.sha256((ROOT/f).read_bytes()).hexdigest() for f in ['api.json','live.m3u','home.jpg'] if (ROOT/f).exists()}}
  for p in (ROOT/'posters').glob('*'):manifest['files'][str(p.relative_to(ROOT))]=hashlib.sha256(p.read_bytes()).hexdigest()
  dump(ROOT/'manifest.json',manifest);print(json.dumps(report,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()

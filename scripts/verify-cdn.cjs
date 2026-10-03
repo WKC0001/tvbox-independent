@@ -6,6 +6,7 @@ const VERSION=pkg.version;
 const base = 'https://cdn.jsdelivr.net/npm/'+pkg.name;
 const targets = [['api.json',VERSION],['live.m3u',VERSION],['home.jpg',VERSION],['manifest.json',VERSION],...Object.keys(JSON.parse(fs.readFileSync('manifest.json')).files).filter(x=>x.startsWith('posters/')).map(x=>[x,VERSION])];
 async function main() {
+  require('child_process').execFileSync(process.env.PYTHON || 'python3',['scripts/verify_plugin.py'],{stdio:'inherit'});
   let metadata;
   for (let attempt=0;attempt<40;attempt++) {
     try {
@@ -38,7 +39,7 @@ async function main() {
   }
   let latest;try{const r=await fetch(base+'@latest/api.json',{signal:AbortSignal.timeout(15000)});latest={status:r.status,matches:r.ok&&Buffer.from(await r.arrayBuffer()).equals(fs.readFileSync('api.json'))};}catch(e){latest={matches:false,error:e.message};}
   const result={latest,package:metadata.name,version:metadata.version,
-    api_url:base+'@latest/api.json',fixed_api_url:base+'@'+VERSION+'/api.json',live_url:base+'@'+VERSION+'/live.m3u',
+    api_url:base+'@'+VERSION+'/api.json',latest_api_url:base+'@latest/api.json',fixed_api_url:base+'@'+VERSION+'/api.json',live_url:base+'@'+VERSION+'/live.m3u',
     tarball:metadata.dist.tarball,tarball_shasum:metadata.dist.shasum,
     source_monitor_modified:false,original_npm_package_modified:false,checks};
   fs.writeFileSync('cdn-verification.json',JSON.stringify(result,null,2)+'\n');

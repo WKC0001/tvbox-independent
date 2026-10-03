@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.4.1",
   "policy": "Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin",
   "reviewed_titles": 23,
   "categories": {

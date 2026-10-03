@@ -1,5 +1,5 @@
 {
-  "version": "0.4.0",
+  "version": "0.4.1",
   "policy": "Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin",
   "reviewed_titles": 23,
   "categories": {
@@ -37,12 +37,12 @@
   "original_repo_modified": false,
   "original_npm_modified": false,
   "package": "wkc0001-tvbox-independent",
-  "generated_at": "2026-10-03T14:28:44Z",
-  "catalog_sha256": "04c6a0107b9f93da6727969168ee520763f8014323b09a36fa15d1a44d26ad8b",
+  "generated_at": "2026-10-03T16:02:39Z",
+  "catalog_sha256": "b9437d44055d1eee906683da6f3df791f8314b38d23b89b123c8f340a5fd0615",
   "files": {
-    "api.json": "28a373278285ad22347bfc3a6b5b2e44d647afaf94957326b946f6cc0e415bc5",
+    "api.json": "a243d103e1f7668f47e1295dfcb8e869c3eb1e031907492f517e02145c14def6",
     "live.m3u": "64241343178a8fb49c1aa13d2961d3571e5dcc0d9bcdc9764ea091449501b405",
-    "home.jpg": "79c8ad219f0ed4399ef39ae085f191c3684cede5a57aecdf468b64d5206b9545",
+    "home.jpg": "b1518e13e92a05e1f0c0ec832a3c6ac455954fc3b457e9a28535e477dc3afb9b",
     "posters/wkc_da00b75fa9e263.jpg": "998a30429e5b2913e310687c1a6edc95c47ef1dfa89d12bd4137b6f25d211fbc",
     "posters/wkc_wkc_w_ff1524.jpg": "dc85236c1aee422aa89aace9c366d06f8825bc72b2543e7e7b9b37c38664121c",
     "posters/wkc_wkc_w_e1df19.jpg": "afd296a4a0819faaade6c35c2ee4d08f313448bb6b9ed77f188901a686ab31c9",

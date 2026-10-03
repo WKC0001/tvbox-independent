@@ -5,6 +5,11 @@ review-output/
 cdn-verification.json
 home-integration.json
 java/classes/
+java/dex/
+java/home-classes.jar
+java/existing-*.dex
+build-verification.json
+*.tgz
 java/json.jar
 .commit-msg
 .commit-expected-head

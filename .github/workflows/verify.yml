@@ -12,24 +12,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      # main 领先已发布版本时 verify-cdn 比对必然失配——先记录结果，再按版本状态判定
+      # Verify the exact fixed version, regardless of whether it uses next or latest.
       - name: CDN byte-level verification
         id: cdncheck
-        continue-on-error: true
         run: node scripts/verify-cdn.cjs
-      - name: Judge by version state
-        run: |
-          LOCAL=$(node -p "require('./package.json').version")
-          PUBLISHED=$(curl -s https://registry.npmjs.org/wkc0001-tvbox-independent | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{try{console.log(JSON.parse(s)['dist-tags'].latest||'')}catch(e){console.log('')}})")
-          if [ "$LOCAL" != "$PUBLISHED" ]; then
-            echo "main($LOCAL) 领先已发布版本($PUBLISHED)：verify-cdn 失配属预期，发布后需重跑本工作流"
-          else
-            if [ "${{ steps.cdncheck.outcome }}" = "failure" ]; then
-              echo "已发布版本与 main 一致但 CDN 校验失败"
-              exit 1
-            fi
-            echo "已发布版本校验通过"
-          fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:

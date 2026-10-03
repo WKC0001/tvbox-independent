@@ -1,52 +1,10 @@
-name: publish-independent-npm
+# Compatibility entry point; all binary building and checks live in publish.yml.
+name: publish-independent-compat
 on:
   workflow_dispatch:
 permissions:
   contents: read
-concurrency:
-  group: publish-independent
-  cancel-in-progress: false
 jobs:
   publish:
-    runs-on: ubuntu-latest
-    timeout-minutes: 20
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-          registry-url: 'https://registry.npmjs.org/'
-      - uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-      - name: Validate snapshots and classification
-        run: |
-          node scripts/validate.cjs
-          python3 scripts/test_layout.py
-      - name: Content gate and health state machine tests
-        run: python3 -m unittest discover -s tests -v
-      - name: Test reviewed homepage and content gate
-        run: |
-          curl --fail --location https://repo.maven.apache.org/maven2/org/json/json/20240303/json-20240303.jar --output java/json.jar
-          mkdir -p java/classes
-          javac -encoding UTF-8 -source 8 -target 8 -cp java/json.jar -d java/classes java/stubs/android/content/Context.java java/stubs/com/github/catvod/crawler/Spider.java java/src/com/github/catvod/spider/*.java java/test/*.java
-          (cd java && java -cp classes:json.jar HomeTest)
-          java -cp java/classes:java/json.jar HomeIntegration
-      - name: "Publish npm package (candidate channel = next tag, latest promotion is a separate explicit step)"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --registry=https://registry.npmjs.org/ --access public --tag next
-      - name: Mark superseded independent versions as unsafe
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm deprecate 'wkc0001-tvbox-independent@<0.4.0' '内容审核不足，停止使用旧版；请导入0.4.0或更新的审核版。' --registry=https://registry.npmjs.org/
-      - name: Verify registry and CDN
-        run: node scripts/verify-cdn.cjs
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: release-verification
-          path: |
-            cdn-verification.json
-            home-integration.json
+    uses: ./.github/workflows/publish.yml
+    secrets: inherit

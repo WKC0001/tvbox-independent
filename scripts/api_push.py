@@ -4,7 +4,7 @@
 铁律：REPO 固定为 WKC0001/tvbox-independent。任何指向 source-monitor 的改动
 在此脚本层直接拒绝（提示词 §13）。不 force push；远端更新时以预期 HEAD 条件检查。
 """
-import base64, json, subprocess, sys
+import base64, hashlib, json, subprocess, sys, time
 from pathlib import Path
 
 REPO = "WKC0001/tvbox-independent"
@@ -25,6 +25,9 @@ FILES = [
     "scripts/live_harvest.py", "scripts/live_review_frames.py", "scripts/live_merge.py",
     "scripts/vod_harvest.py", "scripts/vod_review_frames.py", "scripts/vod_merge.py",
     "scripts/maintenance.py", "scripts/admin_release.py", "state/health.json",
+    "scripts/build_release.py", "scripts/verify_plugin.py",
+    "tests/test_plugin_artifact.py", "tests/test_release_isolation.py",
+    "tests/fixtures/stale-home.jpg",
     "tests/test_content_gate.py", "tests/test_health.py", "tests/__init__.py",
     "java/build.sh", "java/src/com/github/catvod/spider/ApprovedCatalogue.java",
     "java/src/com/github/catvod/spider/Init.java",
@@ -35,7 +38,7 @@ FILES = [
     ".github/workflows/enrich.yml", ".github/workflows/vod-enrich.yml",
     ".github/workflows/review-content.yml", ".github/workflows/review-live.yml",
     ".github/workflows/review-assets.yml", ".github/workflows/cdn-diagnostic.yml",
-    ".github/workflows/publish-release.yml", ".github/workflows/maintenance.yml",
+    ".github/workflows/publish.yml", ".github/workflows/publish-release.yml", ".github/workflows/maintenance.yml",
     "input/approved-catalog.json", "input/approved-live.json",
     "input/channel-metadata.json", "input/reviewed-titles.json",
     "input/review-candidates.json", "input/review-live.json",
@@ -50,14 +53,33 @@ FILES = [
 
 def gh(method, path, data=None):
     cmd = ["gh", "api", "-X", method, f"repos/{REPO}/{path}"]
+    payload = None
     if data is not None:
         cmd += ["--input", "-"]
-        r = subprocess.run(cmd, input=json.dumps(data).encode(), capture_output=True)
-    else:
-        r = subprocess.run(cmd, capture_output=True)
-    if r.returncode != 0:
-        sys.exit(f"gh {method} {path} 失败: {r.stderr.decode()[:500]}")
-    return json.loads(r.stdout or b"{}")
+        payload = json.dumps(data).encode()
+    # These Git object requests are content-addressed; repeating the same ref
+    # update is also safe. Never retry authentication or non-fast-forward errors.
+    for attempt in range(4):
+        try:
+            r = subprocess.run(cmd, input=payload, capture_output=True, timeout=60)
+        except subprocess.TimeoutExpired:
+            if attempt == 3:
+                sys.exit(f"gh {method} {path} timed out after retries")
+            print(f"[retry] {method} {path}: timeout ({attempt + 1}/3)", flush=True)
+            time.sleep(2 ** (attempt + 1))
+            continue
+        if r.returncode == 0:
+            return json.loads(r.stdout or b"{}")
+        error = r.stderr.decode(errors="replace")
+        transient = any(x in error.lower() for x in (
+            "eof", "connection reset", "connection refused", "timed out",
+            "timeout", "tls handshake", "http 429", "http 500", "http 502",
+            "http 503", "http 504",
+        ))
+        if not transient or attempt == 3:
+            sys.exit(f"gh {method} {path} 失败: {error[:500]}")
+        print(f"[retry] {method} {path}: transient network error ({attempt + 1}/3)", flush=True)
+        time.sleep(2 ** (attempt + 1))
 
 
 def main():
@@ -76,13 +98,26 @@ def main():
     if missing:
         sys.exit(f"FILES 中文件缺失，拒绝部分推送: {missing}")
 
+    base_tree = ref["commit"]["commit"]["tree"]["sha"]
+    remote_tree = gh("GET", f"git/trees/{base_tree}?recursive=1")
+    if remote_tree.get("truncated"):
+        sys.exit("Remote tree is truncated; refuse an incomplete comparison")
+    existing = {item["path"]: item for item in remote_tree["tree"]}
     tree = []
     for f in FILES:
+        content = (ROOT / f).read_bytes()
+        blob_sha = hashlib.sha1(b"blob " + str(len(content)).encode() + b"\0" + content).hexdigest()
+        if existing.get(f, {}).get("sha") == blob_sha:
+            continue
+        print(f"[upload] {f}", flush=True)
         blob = gh("POST", "git/blobs",
-                  {"content": base64.b64encode((ROOT / f).read_bytes()).decode(),
+                  {"content": base64.b64encode(content).decode(),
                    "encoding": "base64"})
         tree.append({"path": f, "mode": "100644", "type": "blob", "sha": blob["sha"]})
-    new_tree = gh("POST", "git/trees", {"base_tree": ref["commit"]["commit"]["tree"]["sha"], "tree": tree})
+    if not tree:
+        print("[i] No file changes; nothing to push")
+        return
+    new_tree = gh("POST", "git/trees", {"base_tree": base_tree, "tree": tree})
     commit = gh("POST", "git/commits", {"message": msg, "tree": new_tree["sha"], "parents": [parent]})
     gh("PATCH", "git/refs/heads/main", {"sha": commit["sha"], "force": False})
     print(f"[✓] pushed {commit['sha'][:10]}")

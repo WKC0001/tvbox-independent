@@ -1,19 +1,30 @@
-# WKC 内容审核修正版
+# WKC 独立影视聚合源
 
-旧独立包 0.1.x–0.2.x 审核不足，停止使用。修正版为 0.3.0。
+本次源码修复版本为 0.4.1。须通过 Actions 发布并验证后才能导入；源码版本号不代表 npm/CDN 已发布。
 
-固定导入地址：https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.3.0/api.json
+## 修复内容
 
-点播改为固定片单：首页、分类、搜索、详情、播放统一使用已批准片目，插件校验整份片单的 SHA-256。运行时不浏览上游 CMS，也不导入上游搜索结果。海报随本包发布。
+0.4.0 的配置包含23部作品，home.jpg却仍绑定0.3.0的旧片单，APP初始化因此拒绝加载。现在由 scripts/build_release.py 统一生成片单、编译Java、转换DEX、打包home.jpg、重建配置与manifest，并验证实际下发DEX的校验常量。仅测试Java源码不足以证明插件可用。
 
-明确含成人内容的玉兔、辣椒、滴滴、乐播、火速整源移除；光速样本含博彩广告，移除。其他库含污染条目，不整体开放，仅可能收录逐项核实的固定片目。未知片目不展示。
+本次保留交接包已有23部作品、43个直播频道和44条线路，没有新增来源，也不将旧 source-monitor 配置整体恢复。
 
-当前收录8部固定点播（3部电视剧、5部电影），28个直播频道、29条线路。
+## 构建与发布
 
-直播采用可追溯的广播电视机构域名名单，重新探测 HLS/媒体并逐条检查抽取的画面，分类并合并同名频道。匿名转发、未知轮播及杂项直播不收录；CCTV1–17不保证齐全。
+准备 Java17、org.json 20240303、Android Build Tools34.0.0；设置 JAVA_HOME、JSON_JAR、D8_JAR，使用交接要求的项目 Python：
 
-抽帧与海报复核只是抽样，不代表每集、每分钟均完成审核。第三方媒体仍可能变更。尚未完成 FM 手机/TV 实机播放及国内运营商网络验证。
+```bash
+"$PYTHON" scripts/build_release.py
+npm pack --ignore-scripts
+```
 
-scripts/assemble.py 只接受人工批准的固定 input/approved-catalog.json，不从探活报告自动录用 CMS。发布通过 GitHub Actions publish-independent-npm。固定版本 CDN 与全部资源哈希必须核对成功；latest 缓存状态单独记录。
+唯一完整发布实现是 .github/workflows/publish.yml（publish-independent-npm）；publish-release.yml保留为兼容入口，调用同一实现。Actions会重新构建实际Android插件，再发布固定版本候选到 next，并核对registry和CDN字节。原0.4.0不能原版本覆盖，须使用尚未发布的新版本。
 
-原 source-monitor 仓库和 wkc0001-tvbox npm 包未修改。
+正式推荐固定版本api.json。latest只是别名；仅在其实际响应匹配时推荐。先验证国内网络与FM手机/TV端，不能把源码测试通过等同于设备或媒体全部可播。
+
+## 内容与维护边界
+
+首页、分类、搜索、详情只使用批准目录，未知ID/播放地址与片单篡改会被拒绝。既有审核是抽样证据，媒体仍由第三方提供，本次未重新核实所有剧集和直播画面。已有内容封禁保持。
+
+维护工作流按中国时间每日07:17全量检查，每两小时轻检查；每周六03:17做检查，不自动调用候选合并来批准内容。隔离线路在构建时剔除；旧固定版本不能远程撤回，需重新发布并通知用户换地址。
+
+原WKC0001/source-monitor仓库和wkc0001-tvbox npm包保持不变。

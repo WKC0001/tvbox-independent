@@ -1,25 +1,55 @@
 """Build ONLY the fixed catalogue after manual poster/frame review. No CMS discovery admission."""
-import json,hashlib,time,re,sys
+import json,hashlib,time,re,sys,copy
 from pathlib import Path
 from urllib.parse import urlsplit
 from collections import defaultdict,Counter
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
-from catalog.ids import work_id
+from catalog.ids import work_id,route_id,channel_id
+from checker import health
 from policy.content_policy import ContentPolicy,host_of
 from channel_layout import label,live_sort
 POLICY=ContentPolicy(ROOT/'policy/blocked-sources.json')
 def dump(p,v):p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
+def is_isolated(state,url):
+ return any(rec.get('isolated') for rec in state.get(route_id(url),{}).values())
+def without_isolated_media(rows,state):
+ out=[]
+ for v in rows:
+  flags=v['vod_play_from'].split('$$$');sources=v['vod_play_url'].split('$$$')
+  assert len(flags)==len(sources), 'Play-source and episode-list counts differ'
+  kept_flags=[];kept_sources=[]
+  for flag,source in zip(flags,sources):
+   eps=[]
+   for ep in source.split('#'):
+    assert '$' in ep, 'Malformed episode'
+    if not is_isolated(state,ep.split('$',1)[1]):eps.append(ep)
+   if eps:kept_flags.append(flag);kept_sources.append('#'.join(eps))
+  if kept_sources:
+   v['vod_play_from']='$$$'.join(kept_flags);v['vod_play_url']='$$$'.join(kept_sources);out.append(v)
+ return out
 def main():
  pkg=json.loads((ROOT/'package.json').read_text());base=f"https://cdn.jsdelivr.net/npm/{pkg['name']}@{pkg['version']}/"
  reviewed=json.loads((ROOT/'input/approved-catalog.json').read_text());assert reviewed['visual_review_complete']
- rows=reviewed['list'];assert rows and all(v['approved'] for v in rows)
+ rows=copy.deepcopy(reviewed['list']);assert rows and all(v['approved'] for v in rows)
+ state=health.load_state(ROOT/'state/health.json')
+ rows=without_isolated_media(rows,state)
+ assert rows, 'No approved non-isolated works remain; refuse empty VOD release'
+ # Package-owned poster assets move with the release, not with mutable upstream URLs.
+ for v in rows:
+  pic=urlsplit(v['vod_pic'])
+  prefix='/npm/'+pkg['name']+'@'
+  assert pic.scheme=='https' and pic.hostname=='cdn.jsdelivr.net' and pic.path.startswith(prefix), 'Poster must be a bundled reviewed asset'
+  relative=pic.path[len(prefix):].split('/',1)[1]
+  assert re.fullmatch(r'posters/[A-Za-z0-9_-]+\.(?:jpg|jpeg|png|webp)',relative) and (ROOT/relative).is_file(), 'Missing reviewed poster asset'
+  v['vod_pic']=base+relative
  # 门禁防线：批准目录逐行过内容策略 + 封禁域名双重扫描（域名+提供方名）
  for v in rows:
   st,why=POLICY.title_state(v['vod_name'],v.get('vod_content',''));assert st!='blocked',f"批准目录污点: {v['vod_name']} {why}"
   st,why=POLICY.provider_state(str(v.get('vod_play_from','')),'https://placeholder.invalid/');assert st!='blocked',f"批准目录封禁提供方: {v.get('vod_play_from')} {why}"
-  for ep in str(v.get('vod_play_url','')).split('#'):
-   u=ep.split('$',1)[-1];h=host_of(u)
-   st,_=POLICY.provider_state('',u);assert st!='blocked',f"批准目录命中封禁域名 {h}: {v['vod_name']}"
+  for source in str(v.get('vod_play_url','')).split('$$$'):
+   for ep in source.split('#'):
+    u=ep.split('$',1)[-1];h=host_of(u)
+    st,_=POLICY.provider_state('',u);assert st!='blocked',f"批准目录命中封禁域名 {h}: {v['vod_name']}"
  # 稳定 ID：work_id 由片名+年份派生，必须唯一（同名同年重复=上游数据缺陷）
  seen_wids=set()
  for v in rows:
@@ -38,6 +68,7 @@ def main():
  LIVE_GROUPS=['央视','卫视','地方','港澳台','新闻国际','体育','少儿','纪录']
  for e in json.loads((ROOT/'input/approved-live.json').read_text()):
   if not e.get('fresh_probe',{}).get('ok') or not e.get('frame_review_pass'):continue
+  if is_isolated(state,e['url']):continue
   host=urlsplit(e['url']).hostname or ''
   if not any(host==h or host.endswith('.'+h) for h in allowed):continue
   if host.endswith('cgtn.com') and e['url']!='http://english-livetx.cgtn.com/hls/yypdyyctzb_hd.m3u8':continue
@@ -58,18 +89,18 @@ def main():
   seen.add(identity);channels[(g,name)].append(e)
  lines=['#EXTM3U'];route_count=0;route_registry=[]
  for (g,name),es in sorted(channels.items(),key=live_sort):
-  cid='wkc_c_'+__import__('hashlib').sha256((name+'|'+g).encode()).hexdigest()[:12]
+  cid=channel_id(name,es[0].get('id',''))
   for e in es:
    attrs=f'group-title="{g}"';agent=e.get('headers',{}).get('User-Agent')
    if agent:attrs+=' http-user-agent="'+agent.replace('"','')+'"'
    tid=e.get('id') or ''
    if tid:attrs+=f' tvg-id="{tid}"'  # 真实 EPG 身份映射（iptv-org 频道数据库 id）
    lines.extend([f'#EXTINF:-1 {attrs},{name}',e['url']]);route_count+=1
-   rid='wkc_r_'+__import__('hashlib').sha256(urlsplit(e['url']).netloc.lower().encode()).hexdigest()[:8]+__import__('hashlib').sha256(e['url'].encode()).hexdigest()[:8]
+   rid=route_id(e['url'])
    route_registry.append({'route_id':rid,'channel_id':cid,'channel':name,'group':g,'url':e['url'],'headers':e.get('headers',{}),'upstream_host':urlsplit(e['url']).hostname})
  (ROOT/'reports/route-registry.json').write_text(json.dumps({'routes':route_registry,'policy':'route_id 指纹与播放 URL 分离；channel_id 对应实际频道身份；HD/SD 同频道收敛','channels':len(channels)},ensure_ascii=False,indent=2)+'\n')
  (ROOT/'live.m3u').write_text('\n'.join(lines)+'\n')
- api={'spider':base+'home.jpg','sites':[{'key':'wkc_reviewed_home','name':'WKC · 已审核片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'filterable':0,'ext':{'catalog_json':data}}], 'lives':[{'name':'WKC · 精选电视直播','type':0,'url':base+'live.m3u','playerType':1,'epg':'http://epg.51zmt.top:8000/api/diyp/'}], 'parses':[], 'flags':[], 'rules':[]}
+ api={'spider':base+'home.jpg','sites':[{'key':'wkc_reviewed_home','name':'WKC · 已审核片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,'filterable':0,'ext':{'catalog_json':data}}], 'lives':[{'name':'WKC · 精选电视直播','type':0,'url':base+'live.m3u','playerType':1,'epg':'http://epg.51zmt.top:8000/api/diyp/'}], 'parses':[], 'flags':[], 'rules':[]}
  if (ROOT/'home.jpg').exists():api['spider']+=';md5;'+hashlib.md5((ROOT/'home.jpg').read_bytes()).hexdigest()
  dump(ROOT/'api.json',api)
  _live_src=json.loads((ROOT/'input/approved-live.json').read_text())

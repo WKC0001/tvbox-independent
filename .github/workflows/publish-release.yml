@@ -33,7 +33,7 @@ jobs:
           javac -encoding UTF-8 -source 8 -target 8 -cp java/json.jar -d java/classes java/stubs/android/content/Context.java java/stubs/com/github/catvod/crawler/Spider.java java/src/com/github/catvod/spider/*.java java/test/*.java
           (cd java && java -cp classes:json.jar HomeTest)
           java -cp java/classes:java/json.jar HomeIntegration
-      - name: Publish npm package (candidate channel: next tag; latest promotion is a separate explicit step)
+      - name: "Publish npm package (candidate channel = next tag, latest promotion is a separate explicit step)"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npm publish --registry=https://registry.npmjs.org/ --access public --tag next

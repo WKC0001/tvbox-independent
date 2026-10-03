@@ -1,0 +1,1249 @@
+{
+ "provenance": {
+  "providers": {
+   "360": "https://360zy.com/api.php/provide/vod/",
+   "量子": "https://cj.lziapi.com/api.php/provide/vod/",
+   "暴风": "https://bfzyapi.com/api.php/provide/vod/",
+   "非凡": "https://cj.ffzyapi.com/api.php/provide/vod/",
+   "无尽": "https://api.wujinapi.me/api.php/provide/vod/"
+  },
+  "harvested_at": "2026-10-03T14:12:50Z"
+ },
+ "candidates": [
+  {
+   "vod_name": "中国奇谭",
+   "vod_year": "2023",
+   "category": "动漫",
+   "type_name": "国产动漫",
+   "vod_remarks": "全8集",
+   "vod_actor": "内详",
+   "vod_director": "陈廖宇,於水,胡睿,杨木,刘毛宁,陈莲华,周小琳,潘斌,顾杨,刘旷,徐宁",
+   "vod_content": "<p>短片集由八个植根于中国传统文化的独立的故事组成：《小妖怪的夏天》《鹅鹅鹅》《林林》《乡村巴士带走了王孩儿和神仙》《小满》《玉兔》《小卖部》《飞鸟与鱼》，在观众面前铺陈开一个极具中式想象力和审美魅力的“妖怪”故事集。其中故事纵览古今、展望未来，从古代故事到科幻想象、从乡土眷恋到唯美爱情、从生命母题到人性思考，展现着中式想象力、承载着中国民族文化与哲学。影片涵盖多种美术风格以及制作手法：既有传统的二维、剪纸、偶定格动画，又有CG、三渲二的现代技术，还有将素描与中国水墨韵味相结合的创新尝试，是创作者们对中国美学一次多视角的诠释。</p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20250203-1/0d0ff825685379f9960402f36c11e345.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 8,
+     "play_url": "第01集$https://vod1.maowushi.com/20250203/iZDNsSBb/index.m3u8#第02集$https://vod1.maowushi.com/20250206/TgLNj7Z8/index.m3u8#第03集$https://vod1.maowushi.com/20250208/HmN3G4nt/index.m3u8#第04集$https://vod1.maowushi.com/20250208/AkXOR9i0/index.m3u8#第05集$https://vod1.maowushi.com/20250208/Mr6ZXPNm/index.m3u8#第06集$https://vod1.maowushi.com/20250208/MGbgNb9d/index.m3u8#第07集$https://vod1.maowushi.com/20250208/WH1wsmbg/index.m3u8#第08集$https://vod1.maowushi.com/20250208/krJjLobh/index.m3u8",
+     "remarks": "全8集",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 37238,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 8,
+     "play_url": "第01集$https://vip.lz-cdn9.com/share/339e2f61ba171de04b12646bb30b329b#第02集$https://vip.lz-cdn9.com/share/2adee3823fe0b1c49ce2b4124cdcecda#第03集$https://vip.lz-cdn14.com/share/b3ca85cd30bca7607c9520accaa4ffcf#第04集$https://vip.lz-cdn14.com/share/6dce2d065c96e556331c1407a7491c7d#第05集$https://vip.lz-cdn14.com/share/cfabd33d7dd5a2843aa772b8b1cee186#第06集$https://vip.lz-cdn14.com/share/00a59ba9fb2b36cf6b940130aa4361a4#第07集$https://vip.lz-cdn14.com/share/a78cd673323dd4da94a6a78acb242ae9#第08集$https://vip.lz-cdn14.com/share/f80476be1013db988be6d5ecbe74f053",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 8,
+     "play_url": "第01集$https://vip.lz-cdn9.com/20230101/16815_5943d35f/index.m3u8#第02集$https://vip.lz-cdn9.com/20230101/16816_51e3c0ef/index.m3u8#第03集$https://vip.lz-cdn14.com/20230108/16985_8f1c0e50/index.m3u8#第04集$https://vip.lz-cdn14.com/20230115/17383_f7cef5b1/index.m3u8#第05集$https://vip.lz-cdn14.com/20230122/17798_65155ba3/index.m3u8#第06集$https://vip.lz-cdn14.com/20230129/18160_df6fac51/index.m3u8#第07集$https://vip.lz-cdn14.com/20230205/18489_eac2c074/index.m3u8#第08集$https://vip.lz-cdn14.com/20230212/18835_6b870795/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 13296,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 8,
+     "play_url": "第01集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第01集/index.m3u8#第02集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第02集/index.m3u8#第03集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第03集/index.m3u8#第04集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第04集/index.m3u8#第05集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第05集/index.m3u8#第06集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第06集/index.m3u8#第07集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第07集/index.m3u8#第08集$https://c1.ddbbffcdn.com/video/zhongguoqitan/第08集/index.m3u8",
+     "remarks": "更新至第08集",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 8,
+     "play_url": "第01集$https://vod.feifei-kan.com/share/dc363817786ff182b7bc59565d864523#第02集$https://vod.feifei-kan.com/share/80b618ebcac7aa97a6dac2ba65cb7e36#第03集$https://vod.feifei-kan.com/share/da54dd5a0398011cdfa50d559c2c0ef8#第04集$https://vod.feifei-kan.com/share/30ee748d38e21392de740e2f9dc686b6#第05集$https://vod.feifei-kan.com/share/bf1b2f4b901c21a1d8645018ea9aeb05#第06集$https://vod.feifei-kan.com/share/5bca8566db79f3788be9efd96c9ed70d#第07集$https://vod.feifei-kan.com/share/23b023b22d0bf47626029d5961328028#第08集$https://vod.feifei-kan.com/share/77bb14f6132ea06dea456584b7d5581e",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 8,
+     "play_url": "第01集$https://vod.feifei-kan.com/20230101/5727_5943d35f/index.m3u8#第02集$https://vod.feifei-kan.com/20230101/5728_51e3c0ef/index.m3u8#第03集$https://vod.feifei-kan.com/20230108/6022_8f1c0e50/index.m3u8#第04集$https://vod.feifei-kan.com/20230115/6263_f7cef5b1/index.m3u8#第05集$https://vod.feifei-kan.com/20230122/6825_65155ba3/index.m3u8#第06集$https://vod.feifei-kan.com/20230129/7108_df6fac51/index.m3u8#第07集$https://vod.feifei-kan.com/20230205/7337_eac2c074/index.m3u8#第08集$https://vod.feifei-kan.com/20230212/7634_6b870795/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 18698,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "cand_idx": "vod000",
+   "frames_captured": []
+  },
+  {
+   "vod_name": "哪吒闹海",
+   "vod_year": "1979",
+   "category": "动漫",
+   "type_name": "国产动漫",
+   "vod_remarks": "正片",
+   "vod_actor": "梁正晖,邱岳峰,毕克,富润生,尚华,于鼎",
+   "vod_director": "王树忱,严定宪,徐景达",
+   "vod_content": "<p>商末时期，陈塘关总兵李靖的夫人怀胎3年6个月，最终生下一个肉球，肉球中跳出一个伶俐可爱的男孩。李靖原当他是妖孽欲杀之而后快，幸太乙真人前来收之为徒，赐名哪吒，并赐以乾坤圈和混天绫两件宝贝。某年，天下大旱，甘露未降。哪吒和家将到东海洗澡玩耍。他用混天绫搅动海水，撼动龙宫，惹出巡海夜叉李艮和龙王三太子敖丙。几番言语不和，哪吒杀此二人，由此闯下通天大祸。四海龙王齐聚陈塘关索命，为救一方百姓，哪吒决定交出生命……本片根据《封神演义》故事改编，并荣获1980年电影百花奖最佳美术片奖；文化部1979年优秀影片奖、青年优秀创作奖；1983年菲律宾马尼拉国际电影节特别奖；1988年法国布尔波拉斯文化俱乐部青年国际动画电影节评委奖和宽银幕长动画片奖。</p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20241204-1/c0bae1e5c695e565d19b5d287a5ac3f5.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 1,
+     "play_url": "哪吒闹海$https://vod2.maowushi.com/20241202/KRsPQ0Uc/index.m3u8",
+     "remarks": "正片",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 104984,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD高清$https://vip.lzcdn2.com/share/ec8956637a99787bd197eacd77acce5e",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD高清$https://vip.lzcdn2.com/20220319/102_bc959cd3/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 35623,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 1,
+     "play_url": "HD国语$https://c1.rrcdnbf2.com/video/nazhanaohai/HD国语/index.m3u8",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-play6.com/share/b9b72b29352f3764ea4dec130772bd9d",
+     "remarks": "HD国语",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-play6.com/20221128/9065_875beaec/index.m3u8",
+     "remarks": "HD国语",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 48116,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod001",
+   "frames_captured": []
+  },
+  {
+   "vod_name": "天书奇谭",
+   "vod_year": "1983",
+   "category": "动漫",
+   "type_name": "国产动漫",
+   "vod_remarks": "HD",
+   "vod_actor": "丁建华,毕克,苏秀,程晓桦,施融,于鼎,杨成纯,孙渝烽,胡庆汉,尚华,刘广宁,乔榛,严崇德,伍经纬,童自荣,程玉珠,曹雷,王建新,杨文元,富润生,刘钦,刘风,翟巍,张欣,郭易峰,王肖兵",
+   "vod_director": "王树忱,钱运达",
+   "vod_content": "<p>　　天庭有珍奇书籍“天书”，被锁在石龛门里三千年。看守天书的袁公对天书的内容好奇不已，他乘无人之际，偷偷拿出观看。原来，天书上记录了一百〇八条法术，袁公偷偷下凡，把天书上的内容刻在石壁上。但本意造福人类的袁公此举却触犯了天条，遭到了玉帝的惩罚。<br/>　　炼丹炉里的仙丹不慎被三条狐狸偷吃了，她们变成精下凡骗人钱财，还假扮仙姑和官府勾结，欺压百姓，祸害人间。袁公便指引天赋异禀的蛋生——一个从蛋里跳出来的孩子修习天书上的法术，和狐狸精斗智斗勇，为民除害。</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20220525-1/cae5d4077aad90378eb6538209afd260.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip.lzcdn2.com/share/3783f31a590c99846281c4534e05bc6b",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip.lzcdn2.com/20220525/7547_ccff47b6/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 49722,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 1,
+     "play_url": "HD国语$https://c1.ddbbffcdn.com/video/tianshuqitan/HD国语/index.m3u8",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-play2.com/share/54bca824f5fa890e036fb9191bcdc324",
+     "remarks": "HD国语",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-play2.com/20221219/15359_28000a60/index.m3u8",
+     "remarks": "HD国语",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 82706,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod002",
+   "frames_captured": []
+  },
+  {
+   "vod_name": "葫芦兄弟",
+   "vod_year": "1986",
+   "category": "动漫",
+   "type_name": "国产动漫",
+   "vod_remarks": "全13集",
+   "vod_actor": "戴欣,朱艺,倪以临,战车",
+   "vod_director": "胡进庆,葛桂云,周克勤",
+   "vod_content": "<p>一个善良的老爷爷种了一棵葫芦树，在他的悉心照顾下，葫芦藤很快结出了七颗大葫芦。葫芦们都很有灵性，老爷爷来了他们争先恐后的叫爷爷，老爷爷十分开心。然而一天，山里的蛇精将老爷爷捉走了，葫芦们看着十分着急，却也无能为力。随后，葫芦们一个个开始成熟了，一天，最大的那个葫芦掉在地上，一个葫芦娃从里面蹦了出来。他向兄弟们挥挥手，决定单枪匹马闯蛇洞去救出爷爷。他能成功吗？</p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20241128-1/7f7f3ec7855435ba2139d743bb084440.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 13,
+     "play_url": "第01话$https://vod2.maowushi.com/20241128/aAyomgaL/index.m3u8#第02话$https://vod2.maowushi.com/20241128/j0T2ISsg/index.m3u8#第03话$https://vod2.maowushi.com/20241128/vxfn9vFg/index.m3u8#第04话$https://vod2.maowushi.com/20241128/MARACKpx/index.m3u8#第05话$https://vod2.maowushi.com/20241128/AQL4Lswn/index.m3u8#第06话$https://vod2.maowushi.com/20241128/48ypH5Rc/index.m3u8#第07话$https://vod2.maowushi.com/20241128/7PvERBzz/index.m3u8#第08话$https://vod2.maowushi.com/20241128/Y5H4XJee/index.m3u8#第09话$https://vod2.maowushi.com/20241128/OpKVHqVn/index.m3u8#第10话$https://vod2.maowushi.com/20241128/IvM2ntjA/index.m3u8#第11话$https://vod2.maowushi.com/20241128/dklIgBgG/index.m3u8#第12话$https://vod2.maowushi.com/20241128/K88nKg3Q/index.m3u8#第13话$https://vod2.maowushi.com/20241128/l1oNlbb6/index.m3u8",
+     "remarks": "全13集",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 17859,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 13,
+     "play_url": "第01集$https://v.cdnlz19.com/share/83f2550373f2f19492aa30fbd5b57512#第02集$https://v.cdnlz19.com/share/bc7316929fe1545bf0b98d114ee3ecb8#第03集$https://v.cdnlz19.com/share/490640b43519c77281cb2f8471e61a71#第04集$https://v.cdnlz19.com/share/81c8727c62e800be708dbf37c4695dff#第05集$https://v.cdnlz19.com/share/42d6c7d61481d1c21bd1635f59edae05#第06集$https://v.cdnlz19.com/share/5607fe8879e4fd269e88387e8cb30b7e#第07集$https://v.cdnlz19.com/share/db1915052d15f7815c8b88e879465a1e#第08集$https://v.cdnlz19.com/share/253f7b5d921338af34da817c00f42753#第09集$https://v.cdnlz19.com/share/3fb451ca2e89b3a13095b059d8705b15#第10集$https://v.cdnlz19.com/share/df12ecd077efc8c23881028604dbb8cc#第11集$https://v.cdnlz19.com/share/471c75ee6643a10934502bdafee198fb#第12集$https://v.cdnlz19.com/share/8c00dee24c9878fea090ed070b44f1ab#第13集$https://v.cdnlz19.com/share/e60e81c4cbe5171cd654662d9887aec2",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 13,
+     "play_url": "第01集$https://v.cdnlz19.com/20231002/1514_7a130e0c/index.m3u8#第02集$https://v.cdnlz19.com/20231002/1515_dfde65d2/index.m3u8#第03集$https://v.cdnlz19.com/20231002/1516_59b8453b/index.m3u8#第04集$https://v.cdnlz19.com/20231002/1517_c763a908/index.m3u8#第05集$https://v.cdnlz19.com/20231002/1518_596eaa7b/index.m3u8#第06集$https://v.cdnlz19.com/20231002/1519_12c6d011/index.m3u8#第07集$https://v.cdnlz19.com/20231002/1520_c659f944/index.m3u8#第08集$https://v.cdnlz19.com/20231002/1521_abae03d5/index.m3u8#第09集$https://v.cdnlz19.com/20231002/1522_1b264433/index.m3u8#第10集$https://v.cdnlz19.com/20231002/1523_4cf73eab/index.m3u8#第11集$https://v.cdnlz19.com/20231002/1524_a149a4a9/index.m3u8#第12集$https://v.cdnlz19.com/20231002/1525_3c1b7899/index.m3u8#第13集$https://v.cdnlz19.com/20231002/1526_b6ddfd27/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 6571,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 13,
+     "play_url": "第01集$https://c1.rrcdnbf5.com/video/huluxiongdi/第01集/index.m3u8#第02集$https://c1.rrcdnbf5.com/video/huluxiongdi/第02集/index.m3u8#第03集$https://c1.rrcdnbf4.com/video/huluxiongdi/第03集/index.m3u8#第04集$https://c1.rrcdnbf4.com/video/huluxiongdi/第04集/index.m3u8#第05集$https://c1.rrcdnbf4.com/video/huluxiongdi/第05集/index.m3u8#第06集$https://c1.rrcdnbf4.com/video/huluxiongdi/第06集/index.m3u8#第07集$https://c1.rrcdnbf5.com/video/huluxiongdi/第07集/index.m3u8#第08集$https://c1.rrcdnbf5.com/video/huluxiongdi/第08集/index.m3u8#第09集$https://c1.rrcdnbf5.com/video/huluxiongdi/第09集/index.m3u8#第10集$https://c1.rrcdnbf4.com/video/huluxiongdi/第10集/index.m3u8#第11集$https://c1.rrcdnbf5.com/video/huluxiongdi/第11集/index.m3u8#第12集$https://c1.rrcdnbf4.com/video/huluxiongdi/第12集/index.m3u8#第13集$https://c1.rrcdnbf4.com/video/huluxiongdi/第13集/index.m3u8",
+     "remarks": "更新至第13集",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 13,
+     "play_url": "第01集$https://vip.ffzy-online1.com/share/50299aa592ccef6eaa8b603bc587192e#第02集$https://vip.ffzy-online1.com/share/eee75242a3b87751a71bfb6ebce5cad0#第03集$https://vip.ffzy-online1.com/share/ce169541394fb573900fb1bf0e0e8d38#第04集$https://vip.ffzy-online1.com/share/8d7c30cf7b10b49f854c2a295a5c9413#第05集$https://vip.ffzy-online1.com/share/0608bbe8fc09e0880e7d866d513c7c53#第06集$https://vip.ffzy-online1.com/share/73a3d9df0329c89f402ea26d5fd86da8#第07集$https://vip.ffzy-online1.com/share/37b47bc2fe01ddcb1c4673a4419c7e13#第08集$https://vip.ffzy-online1.com/share/6b3a8f76ca145c9db850d0d318d381a6#第09集$https://vip.ffzy-online1.com/share/cd53dd33e57a598301a7c1c07e35a8d6#第10集$https://vip.ffzy-online1.com/share/07246f1add4748b2c3c031e2ec9262e0#第11集$https://vip.ffzy-online1.com/share/4184dfd001b86c06f7f048b37a1aef50#第12集$https://vip.ffzy-online1.com/share/d0241607c7a6d2011c767cfb35b8248d#第13集$https://vip.ffzy-online1.com/share/cd9015a609618aa8dcd0a7ff7941c475",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 13,
+     "play_url": "第01集$https://vip.ffzy-online1.com/20230215/24462_fdfb73e0/index.m3u8#第02集$https://vip.ffzy-online1.com/20230215/24463_dafadc97/index.m3u8#第03集$https://vip.ffzy-online1.com/20230215/24464_46de574e/index.m3u8#第04集$https://vip.ffzy-online1.com/20230215/24465_eab71754/index.m3u8#第05集$https://vip.ffzy-online1.com/20230215/24466_f08ad5f5/index.m3u8#第06集$https://vip.ffzy-online1.com/20230215/24468_e12e14af/index.m3u8#第07集$https://vip.ffzy-online1.com/20230215/24470_59e92352/index.m3u8#第08集$https://vip.ffzy-online1.com/20230215/24467_674114b2/index.m3u8#第09集$https://vip.ffzy-online1.com/20230215/24469_c9e60e08/index.m3u8#第10集$https://vip.ffzy-online1.com/20230215/24471_e3be5239/index.m3u8#第11集$https://vip.ffzy-online1.com/20230215/24474_fdbf7e65/index.m3u8#第12集$https://vip.ffzy-online1.com/20230215/24473_7f15756c/index.m3u8#第13集$https://vip.ffzy-online1.com/20230215/24472_e90dfded/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 8708,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    13,
+    13,
+    13,
+    13,
+    13,
+    13
+   ],
+   "cand_idx": "vod003",
+   "frames_captured": [
+    3,
+    300,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "功夫",
+   "vod_year": "2004",
+   "category": "电影",
+   "type_name": "动作片",
+   "vod_remarks": "HD",
+   "vod_actor": "周星驰,元秋,元华,黄圣依,梁小龙,陈国坤,田启文,林子聪,林雪,冯克安,释彦能,冯小刚,袁祥仁,张一白,赵志凌,董志华,何文辉,陈凯师,贾康熙,林子善,任珈锐,王仕颖",
+   "vod_director": "周星驰",
+   "vod_content": "<p>　　1940年代的上海，自小受尽欺辱的街头混混阿星（周星驰）为了能出人头地，可谓窥见机会的缝隙就往里钻，今次他盯上行动日益猖獗的黑道势力“斧头帮”，想借之大名成就大业。<br/>　　阿星假冒“斧头帮”成员试图在一个叫“猪笼城寨”的地方对居民敲诈，不想引来真的“斧头帮”与“猪笼城寨”居民的恩怨。“猪笼城寨”原是藏龙卧虎之处，居民中有许多身怀绝技者（元华、梁小龙等），他们隐藏于此本是为远离江湖恩怨，不想麻烦自动上身，躲都躲不及。而在观战正邪两派的斗争中，阿星逐渐领悟功夫的真谛。</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20220319-1/56c804e26c6704f2bbb7c216866d2c62.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip.lzcdn2.com/share/ea5d2f1c4608232e07d3aa3d998e5135",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip.lzcdn2.com/20220319/64_943f0f68/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 57211,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 1,
+     "play_url": "国语高清$https://c1.rrcdnbf6.com/video/gongfu/国语高清/index.m3u8",
+     "remarks": "",
+     "probe": null
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod004",
+   "frame_probe_failed": true
+  },
+  {
+   "vod_name": "战狼2",
+   "vod_year": "2017",
+   "category": "电影",
+   "type_name": "动作片",
+   "vod_remarks": "正片",
+   "vod_actor": "吴京,弗兰克·格里罗,吴刚,张翰,卢靖姗,丁海峰,淳于珊珊,余男,于谦,石兆琪,海蒂·莫尼梅克,奥列格·亚历山大罗维奇,艾伦·托尼,赛尔·哈里斯,高明,王森,苇青,程愫,张永达,郭秋成,杜建桥,周冠廷,安·詹姆斯,黛安娜·希拉,孙率航,张馨月,关海龙,安妮塔·斯图尔特,特雷弗·琼斯,奥斯汀·普里斯特,克莱·方特诺特,保罗·艾力卡,丹尼尔·哈格里夫,李镇男,庄小龙,陈云志,肯尼迪,",
+   "vod_director": "吴京",
+   "vod_content": "<p><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);\">　　由于一怒杀害了强拆牺牲战友房子的恶霸，屡立功勋的冷锋（吴京 饰）受到军事法庭的判决。在押期间，亲密爱人龙小云壮烈牺牲。出狱后，冷锋辗转来到非洲，他辗转各地，只为寻找杀害小云的凶手。在此期间，冷锋逗留的国家发生叛乱，叛徒红巾军大开杀戒，血流成河。中国派出海军执行撤侨任务，期间冷锋得知有一位陈博士被困在五十五公里外的医院，而叛军则试图抓住这位博士。而从另一位华侨（于谦 饰）口中得知，杀害小云的凶手正待在这个国家。</span><br/><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);\">　　在无法得到海军支援的情况下，冷锋只身闯入硝烟四起的战场。不屈不挠的战狼，与冷酷无情的敌人展开悬殊之战……</span></p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20231129-1/200bca8e4e37333fa09c9e6d07130c58.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vod2.maowushi.com/20231128/TnTM2dgx/index.m3u8",
+     "remarks": "正片",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 123017,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip1.lz-cdn6.com/share/d6e4f7092412810fe574f27408dbb8a2",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip1.lz-cdn6.com/20220810/21436_c7345def/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 73435,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 1,
+     "play_url": "HD国语$https://c1.rrcdnbf2.com/video/zhanlang2/HD国语/index.m3u8",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-play6.com/share/d4a897919a124958e699170b2b1dc8f2",
+     "remarks": "HD国语",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-play6.com/20221031/3109_5ae1e2e3/index.m3u8",
+     "remarks": "HD国语",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 100688,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod005",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900
+   ]
+  },
+  {
+   "vod_name": "星际穿越",
+   "vod_year": "2014",
+   "category": "电影",
+   "type_name": "科幻片",
+   "vod_remarks": "正片",
+   "vod_actor": "杰西卡·查斯坦,马修·麦康纳,蒂莫西·柴勒梅德,迈克尔·凯恩,大卫·奥伊罗,安妮·海瑟薇,艾伦·伯斯汀,乔什·斯图沃特,韦斯·本特利,杰夫·赫普内尔,托弗·戈瑞斯,大卫·吉亚西,布鲁克·史密斯,卡西·阿弗莱克,约翰·利思戈,麦肯吉·弗依,安德鲁·博尔巴,伊莱耶斯·加贝尔,马特·达蒙,科莱特·沃夫,莱雅·卡里恩斯,比尔·欧文,威廉姆·德瓦内,弗朗西斯·X·麦卡蒂,拉什·费加,利亚姆·迪金森,格里芬·弗雷泽,弗洛拉·诺兰",
+   "vod_director": "克里斯托弗·诺兰",
+   "vod_content": "<p><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; text-wrap: wrap; background-color: rgb(255, 255, 255);\">　近未来的地球黄沙遍野，小麦、秋葵等基础农作物相继因枯萎病灭绝，人类不再像从前那样仰望星空，放纵想象力和灵感的迸发，而是每日在沙尘暴的肆虐下倒数着所剩不多的光景。在家务农的前NASA宇航员库珀（马修·麦康纳 Matthew McConaughey 饰）接连在女儿墨菲（麦肯吉·弗依 Mackenzie Foy 饰）的书房发现奇怪的重力场现象，随即得知在某个未知区域内前NASA成员仍秘密进行一个拯救人类的计划。多年以前土星附近出现神秘虫洞，NASA借机将数名宇航员派遣到遥远的星系寻找适合居住的星球。在布兰德教授（迈克尔·凯恩 Michael Caine 饰）的劝说下，库珀忍痛告别了女儿，和其他三名专家教授女儿艾米莉亚·布兰德（安妮·海瑟薇 Anne Hathaway 饰）、罗米利（大卫·吉雅西 David Gyasi 饰）、多伊尔（韦斯·本特利 Wes Bentley 饰）搭乘宇宙飞船前往目前已知的最有希望的三颗星球考察。</span><br/><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; text-wrap: wrap; background-color: rgb(255, 255, 255);\">　　他们穿越遥远的星系银河，感受了一小时七年光阴的沧海桑田，窥见了未知星球和黑洞的壮伟与神秘。在浩瀚宇宙的绝望而孤独角落，总有一份超越了时空的笃定情怀将他们紧紧相连……</span></p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20240722-1/f1e254522c72ef8576c24bfd6c4db0bc.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 1,
+     "play_url": "星际穿越$https://vod2.maowushi.com/20240721/7mz1oDpH/index.m3u8",
+     "remarks": "正片",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 131072,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip.lzcdn2.com/share/34173cb38f07f89ddbebc2ac9128303f",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip.lzcdn2.com/20220318/30_654a94a0/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 97216,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod006",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    1800
+   ]
+  },
+  {
+   "vod_name": "流浪地球2",
+   "vod_year": "2023",
+   "category": "电影",
+   "type_name": "科幻片",
+   "vod_remarks": "正片",
+   "vod_actor": "吴京,刘德华,李雪健,沙溢,宁理,王智,朱颜曼滋,安地,王若熹 ,佟丽娅,伟大力,张衣,天使,克拉拉,叶展飞,倪腾,胡先煦,霍青,刘寅,国义骞,吴恩璇,王红卫,孔大山,徐建,刘佳沄,丁燕来,郜昂,严华,李仁,洪真,王磊,王一通,杨洪涛,赵叶索,李路琦,黄纪渊,郑楚一,吴静一,付嘉灏,瓦伦廷·沃罗布耶夫,李一冉,周强,朱超艺,何金和龙,何金和金,张涛,向进,李沛东",
+   "vod_director": "郭帆",
+   "vod_content": "<p>在并不遥远的未来，太阳急速衰老与膨胀，再过几百年整个太阳系将被它吞噬毁灭。为了应对这场史无前例的危机，地球各国放下芥蒂，成立联合政府，试图寻找人类存续的出路。通过摸索与考量，最终推着地球逃出太阳系的“移山计划”获得压倒性胜利。人们着手建造上万台巨大的行星发动机，带着地球踏上漫漫征程。满腔赤诚的刘培强（吴京饰）和韩朵朵（王智饰）历经层层考验成为航天员大队的一员，并由此相知相恋。但是漫漫征途的前方，仿佛有一股神秘的力量不断破坏者人类的自救计划。看似渺小的刘培强、量子科学家图恒宇（刘德华饰）、联合政府中国代表周喆直（李雪健饰）以及无数平凡的地球人，构成了这项伟大计划的重要一环……本片根据刘慈欣同名科幻小说改编。</p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20250126-1/a8b2c8679a5e7d3109d79d4a26bcfb54.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 1,
+     "play_url": "流浪地球2$https://vod1.maowushi.com/20250126/bsNWoNDb/index.m3u8",
+     "remarks": "正片",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 131072,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://hd.lz-cdn18.com/share/19de10adbaa1b2ee13f77f679fa1483a",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://hd.lz-cdn18.com/20230414/1866_7d8603d9/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 99667,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 1,
+     "play_url": "HD$https://c1.rrcdnbf6.com/video/liulangdiqiu2/HD/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 131072,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-online2.com/share/8b21b1c01bd1ec137671219ab3696da6",
+     "remarks": "HD国语",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语$https://vip.ffzy-online2.com/20230416/32868_9cb1983d/index.m3u8",
+     "remarks": "HD国语",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 131072,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod007",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "红海行动",
+   "vod_year": "2018",
+   "category": "电影",
+   "type_name": "动作片",
+   "vod_remarks": "正片",
+   "vod_actor": "张译,黄景瑜,海清,杜江,蒋璐霞,尹昉,王强,郭家豪,王雨甜,麦亨利,张涵予,王彦霖",
+   "vod_director": "林超贤",
+   "vod_content": "\n　　中东国家伊维亚共和国发生政变，武装冲突不断升级。刚刚在索马里执行完解救人质任务的海军护卫舰临沂号，受命前往伊维亚执行撤侨任务。舰长高云（张涵予饰）派出杨锐（张译饰）率领的蛟龙突击队登陆战区，护送华侨安全撤离。谁知恐怖组织扎卡却将撤侨部队逼入交火区，一场激烈的战斗在所难免。与此同时，法籍华人记者夏楠（海清饰）正在伊维亚追查威廉·柏森博士贩卖核原料的事实，而扎卡则突袭柏森博士所在的公司，意图抢走核原料。混战中，一名隶属柏森博士公司的中国员工成为人质。为了解救该人质，八名蛟龙队员必须潜入有150名恐怖分子的聚集点，他们用自己的信念和鲜血铸成中国军人顽强不屈的丰碑！\n",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20240113-1/861bc4ed857b4134af6556b15cce8f42.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 1,
+     "play_url": "正片$https://vod2.maowushi.com/20230718/dM0CBoHX/index.m3u8",
+     "remarks": "正片",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 125028,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip1.lz-cdn6.com/share/163eed792d21898baa691e38199babb8",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 1,
+     "play_url": "HD中字$https://vip1.lz-cdn6.com/20220616/15464_b2b75306/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 82639,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 1,
+     "play_url": "HD国语版$https://p.bvvvvvvvvv1f.com/video/honghaixingdong/HD国语版/index.m3u8",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语版$https://vip.ffzy-online.com/share/e17184bcb70dcf3942c54e0b537ffc6d",
+     "remarks": "HD",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 1,
+     "play_url": "HD国语版$https://vip.ffzy-online.com/20221017/1033_f134be03/index.m3u8",
+     "remarks": "HD",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 113432,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "cand_idx": "vod008",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    1800
+   ]
+  },
+  {
+   "vod_name": "三国演义",
+   "vod_year": "1994",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "全84集",
+   "vod_actor": "潘粤明,蒋恺,陈之辉,王璐瑶,苏可,李明,刘威,丁志勇,王长立,许娣,唐国强,杨立新,张山,徐少华,张光北,张浩,刘纯燕,李雨泽,吴俊全,魏宗万,张洪杰,李凤英,赵越,高扬,王卫国,洪宗义,王辉,吴刚,王光辉,石小满,段炼,刘桦,安亚平,何冰,李志毅,鲍大志,赵小川,吕中,李建义,濮存昕,林中华,刘龙,宋邦贵,陈友旺,赵树仁,何晴,王洪光,李洪涛,丁志城,曲敬国,李绪良,陆树铭,姬晨牧,翟万臣,陈红,鲍国安,毕彦君,马子俊,尹力,樊志起,修宗迪,石天生,曹力,韩善续,莫岐,张甲田,胡战利,崔岱,刘大刚,于",
+   "vod_director": "沈好放,张中一,张纪中,王扶林,张绍林,蔡晓晴,孙光明",
+   "vod_content": "<p><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);\">　东汉末年，山河动荡，刘汉王朝气数将尽。内有十常侍颠倒黑白，祸乱朝纲。外有张氏兄弟高呼“苍天已死，黄巾当立”的口号，掀起浩大的农民起义。一时间狼烟四起，刘家朝廷宛如大厦将倾，岌岌可危。</span><br/><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);\">　　正所谓乱世出英雄，曹操（鲍国安 饰）、公孙瓒、袁术、袁绍、吕布（张光北 饰）、刘备、孙策、关羽、张飞、诸葛亮（唐国强 饰）等各路豪杰不断涌现，从群雄逐鹿到赤壁之战，从魏蜀吴三国鼎立到三分归一统，波澜壮阔的三国时代的大幕缓缓拉开……</span><br/><span style=\"color: rgb(17, 17, 17); font-family: Helvetica, Arial, sans-serif; font-size: 13px; background-color: rgb(255, 255, 255);\">　　本片根据中国古典名著《三国演义》改编。</span></p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20240611-1/b967949e77960b159078b0b1e01b432b.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 84,
+     "play_url": "第01集$https://vod2.maowushi.com/20240611/UlH3oBf3/index.m3u8#第02集$https://vod2.maowushi.com/20240611/MPqDUOTm/index.m3u8#第03集$https://vod2.maowushi.com/20240611/2o9L4yJO/index.m3u8#第04集$https://vod2.maowushi.com/20240611/RUFEKa8T/index.m3u8#第05集$https://vod2.maowushi.com/20240611/Ak7Rw29r/index.m3u8#第06集$https://vod2.maowushi.com/20240611/iKRtLmEc/index.m3u8#第07集$https://vod2.maowushi.com/20240611/h7anP0rz/index.m3u8#第08集$https://vod2.maowushi.com/20240611/7NxnRFiu/index.m3u8#第09集$https://vod2.maowushi.com/20240611/XYVgBSe3/index.m3u8#第10集$https://vod2.maowushi.com/20240611/RjbgG9Q4/index.m3u8#第11集$https://vod2.maowushi.com/20240611/O3c3UEm6/index.m3u8#第12集$https://vod2.maowushi.com/20240611/WDhf0ZBA/index.m3u8#第13集$https://vod2.maowushi.com/20240611/7KhuHlHi/index.m3u8#第14集$https://vod2.maowushi.com/20240611/TkfkSu4q/index.m3u8#第15集$https://vod2.maowushi.com/20240611/XX4jrfeS/index.m3u8#第16集$https://vod2.maowushi.com/20240611/OScTvCJF/index.m3u8#第17集$https://vod2.maowushi.com/20240611/N8IklliJ/index.m3u8#第18集$https://vod2.maowushi.com/20240611/6qZUi5Te/index.m3u8#第19集$https://vod2.maowushi.com/20240611/UqZJBBii/index.m3u8#第20集$https://vod2.maowushi.com/20240611/Ao06ElLQ/index.m3u8#第21集$https://vod2.maowushi.com/20240611/Dpa78nXG/index.m3u8#第22集$https://vod2.maowushi.com/20240611/VvyH4iE4/index.m3u8#第23集$https://vod2.maowushi.com/20240611/tEAplBeC/index.m3u8#第24集$https://vod2.maowushi.com/20240611/ZNoHXXAC/index.m3u8#第25集$https://vod2.maowushi.com/20240611/keAkm2Ub/index.m3u8#第26集$https://vod2.maowushi.com/20240611/4OcpV4BG/index.m3u8#第27集$https://vod2.maowushi.com/20240611/OV7im65u/index.m3u8#第28集$https://vod2.maowushi.com/20240611/wcrnkvp9/index.m3u8#第29集$https://vod2.maowushi.com/20240611/Q6BXsIpp/index.m3u8#第30集$https://vod2.maowushi.com/20240611/OgWMUmBT/index.m3u8#第31集$https://vod2.maowushi.com/20240611/v8zwqn16/index.m3u8#第32集$https://vod2.maowushi.com/20240611/CJDLiAmO/index.m3u8#第33集$https://vod2.maowushi.com/20240611/EeZUWMVb/index.m3u8#第34集$https://vod2.maowushi.com/20240611/6cU5v8vR/index.m3u8#第35集$https://vod2.maowushi.com/20240611/60fTao95/index.m3u8#第36集$https://vod2.maowushi.com/20240611/HkLmsYGI/index.m3u8#第37集$https://vod2.maowushi.com/20240611/cvGSfyZt/index.m3u8#第38集$https://vod2.maowushi.com/20240611/6ToxqJ6N/index.m3u8#第39集$https://vod2.maowushi.com/20240611/ZMs6DHo7/index.m3u8#第40集$https://vod2.maowushi.com/20240611/2mA3GSej/index.m3u8#第41集$https://vod2.maowushi.com/20240611/B6WZKU6Z/index.m3u8#第42集$https://vod2.maowushi.com/20240611/9uUCPPXP/index.m3u8#第43集$https://vod2.maowushi.com/20240611/9StP5nFj/index.m3u8#第44集$https://vod2.maowushi.com/20240611/XuuMuMQc/index.m3u8#第45集$https://vod2.maowushi.com/20240611/lU3Wt1Xj/index.m3u8#第46集$https://vod2.maowushi.com/20240611/tLpbZZKm/index.m3u8#第47集$https://vod2.maowushi.com/20240611/l6yIULYG/index.m3u8#第48集$https://vod2.maowushi.com/20240611/SljH13YQ/index.m3u8#第49集$https://vod2.maowushi.com/20240611/opY5bPUF/index.m3u8#第50集$https://vod2.maowushi.com/20240611/FfpCSBy9/index.m3u8#第51集$https://vod2.maowushi.com/20240611/t6doI2NL/index.m3u8#第52集$https://vod2.maowushi.com/20240611/QCOUVgg3/index.m3u8#第53集$https://vod2.maowushi.com/20240611/aXbPqg43/index.m3u8#第54集$https://vod2.maowushi.com/20240611/rP11r61f/index.m3u8#第55集$https://vod2.maowushi.com/20240611/PJF2gpem/index.m3u8#第56集$https://vod2.maowushi.com/20240611/zUTyIjqZ/index.m3u8#第57集$https://vod2.maowushi.com/20240611/BtteHGbi/index.m3u8#第58集$https://vod2.maowushi.com/20240611/QFGcwA6g/index.m3u8#第59集$https://vod2.maowushi.com/20240611/4bKqvh3w/index.m3u8#第60集$https://vod2.maowushi.com/20240611/4CcLptCm/index.m3u8#第61集$https://vod2.maowushi.com/20240611/nKC8vCa2/index.m3u8#第62集$https://vod2.maowushi.com/20240611/YxRvv8rb/index.m3u8#第63集$https://vod2.maowushi.com/20240611/CpbrAVhF/index.m3u8#第64集$https://vod2.maowushi.com/20240611/QPnRSL4s/index.m3u8#第65集$https://vod2.maowushi.com/20240611/DGumbZes/index.m3u8#第66集$https://vod2.maowushi.com/20240611/9OfKS0y7/index.m3u8#第67集$https://vod2.maowushi.com/20240611/IlPJG1vH/index.m3u8#第68集$https://vod2.maowushi.com/20240611/uyjj0KDW/index.m3u8#第69集$https://vod2.maowushi.com/20240611/aXClUZFQ/index.m3u8#第70集$https://vod2.maowushi.com/20240611/WcfnqpUj/index.m3u8#第71集$https://vod2.maowushi.com/20240611/xm6KuKUw/index.m3u8#第72集$https://vod2.maowushi.com/20240611/3BgJGbhI/index.m3u8#第73集$https://vod2.maowushi.com/20240611/yMvfVcXH/index.m3u8#第74集$https://vod2.maowushi.com/20240611/tbgaEiSN/index.m3u8#第75集$https://vod2.maowushi.com/20240611/Fk7WcAFj/index.m3u8#第76集$https://vod2.maowushi.com/20240611/zaj0t3Nw/index.m3u8#第77集$https://vod2.maowushi.com/20240611/FshOSE56/index.m3u8#第78集$https://vod2.maowushi.com/20240611/Hhwd9WGr/index.m3u8#第79集$https://vod2.maowushi.com/20240611/7QctiAh8/index.m3u8#第80集$https://vod2.maowushi.com/20240611/Hu6pyauf/index.m3u8#第81集$https://vod2.maowushi.com/20240611/HzoYL5gE/index.m3u8#第82集$https://vod2.maowushi.com/20240611/E9RLUvN6/index.m3u8#第83集$https://vod2.maowushi.com/20240611/M4m1YMHA/index.m3u8#第84集$https://vod2.maowushi.com/20240611/Zb2TS6TM/index.m3u8",
+     "remarks": "全84集",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 52436,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 84,
+     "play_url": "第01集$https://vip1.lz-cdn6.com/share/efbc03446478901b90f5ea032f2e4c99#第02集$https://vip1.lz-cdn6.com/share/e940a3ba6df738388b772344a8a112e4#第03集$https://vip1.lz-cdn6.com/share/b35b31a24acc2da3bd9e3feb30fc7e79#第04集$https://vip1.lz-cdn6.com/share/fad68ee497f1cf9108b630e7ce630e6c#第05集$https://vip1.lz-cdn6.com/share/4b4a96575767e162b8c6013ec6712d40#第06集$https://vip1.lz-cdn6.com/share/f4f3bdcb2c623bae9976a83f8c83dcde#第07集$https://vip1.lz-cdn6.com/share/61340e853c1b55df76945afcbe5fcadb#第08集$https://vip1.lz-cdn6.com/share/060d6e6b635a8b27ff90e4ef041c2ae9#第09集$https://vip1.lz-cdn6.com/share/5a460d084470e30fa2ef883c10b34ad5#第10集$https://vip1.lz-cdn6.com/share/33a1fa551ec50395a7a5e2d76ced7f37#第11集$https://vip1.lz-cdn6.com/share/1841038227852628f1d604c0211494a6#第12集$https://vip1.lz-cdn6.com/share/025d5dcf6672b592a16f4533d4249bd8#第13集$https://vip1.lz-cdn6.com/share/0ba7bc92fcd57e337ebb9e74308c811f#第14集$https://vip1.lz-cdn6.com/share/4b7e4e5378747e86b6e55470411ccee2#第15集$https://vip1.lz-cdn6.com/share/bc06df8f21ab805ccb2a7d9f396ed918#第16集$https://vip1.lz-cdn6.com/share/ecd610837c2670b1acbe1d57821055b8#第17集$https://vip1.lz-cdn6.com/share/f230954603f7a3eea4a0884c786f1ae2#第18集$https://vip1.lz-cdn6.com/share/0d472bbe89e823508966d89beee51836#第19集$https://vip1.lz-cdn6.com/share/4bb1355f11b2e79ac2263ab2d443897c#第20集$https://vip1.lz-cdn6.com/share/5b774adc5ebc68abbd976c852cee460a#第21集$https://vip1.lz-cdn6.com/share/9cb5248c748f0956843723f498e9d6cd#第22集$https://vip1.lz-cdn6.com/share/1a648c37b026c65078b4f1aa96cfc215#第23集$https://vip1.lz-cdn6.com/share/38b8e8fe30cd2f6f7e79f6be6905fabb#第24集$https://vip1.lz-cdn6.com/share/9c151d7c2d511dfec70f3fd53171b5db#第25集$https://vip1.lz-cdn6.com/share/452e59f6084d94442fd8f653932afcb8#第26集$https://vip1.lz-cdn6.com/share/89588adb3079c3445d0da2882399365d#第27集$https://vip1.lz-cdn6.com/share/a40a65c95e95cccbda3367d81bd382de#第28集$https://vip1.lz-cdn6.com/share/ab2c46b4e3b73b8284d14f87c273b4c6#第29集$https://vip1.lz-cdn6.com/share/daccd87747bf3626e603e5750195c368#第30集$https://vip1.lz-cdn6.com/share/a7468b046115fc3c1b1211031cb07b13#第31集$https://vip1.lz-cdn6.com/share/9c347432b92d1b4667d2426b685d3079#第32集$https://vip1.lz-cdn6.com/share/fb0851c42060e233001707a719030e8c#第33集$https://vip1.lz-cdn6.com/share/18ef374dbe0ed691838cdf06d109e6cd#第34集$https://vip1.lz-cdn6.com/share/877e6815653b6f89f652dd3da06b9f3a#第35集$https://vip1.lz-cdn6.com/share/f31c62b1be87ee00a16b9e51482263a7#第36集$https://vip1.lz-cdn6.com/share/1c3c7c861862dbd98e6b1d7a11bfa9f9#第37集$https://vip1.lz-cdn6.com/share/6171f623206dfd1e35a131bd2d9e74ac#第38集$https://vip1.lz-cdn6.com/share/e50292f6504ef1d578f12d76de3ef250#第39集$https://vip1.lz-cdn6.com/share/06ab8d9df63b836129099247301c038b#第40集$https://vip1.lz-cdn6.com/share/0bdc3edd84a5ad81660345686552f38b#第41集$https://vip1.lz-cdn6.com/share/acdf0905e94f9293ba3bb21d991144aa#第42集$https://vip1.lz-cdn6.com/share/92ba85464fafd01ab6a82dbfe8d6f40b#第43集$https://vip1.lz-cdn6.com/share/ffd4a2bce01c12378a19a5127068d4c1#第44集$https://vip1.lz-cdn6.com/share/a487e1344b14e77fd3894b4e43464bd5#第45集$https://vip1.lz-cdn6.com/share/a797a65aa8651d8b93208615c6e0d01f#第46集$https://vip1.lz-cdn6.com/share/072e81e77edf6f7370bc290b32c9bb81#第47集$https://vip1.lz-cdn6.com/share/04a818cf87d55fb0a8728940e04faff5#第48集$https://vip1.lz-cdn6.com/share/d660eec0c442bdea55f0ab78d6517fda#第49集$https://vip1.lz-cdn6.com/share/4ee8fc10f6bc212f5729276168ba9d12#第50集$https://vip1.lz-cdn6.com/share/97db6295d0dc30bb8aeecab6177faced#第51集$https://vip1.lz-cdn6.com/share/11419fdaff2e04e1c87673ef257b8f7d#第52集$https://vip1.lz-cdn6.com/share/5001e11e24d2f4e723a67feb678f4e27#第53集$https://vip1.lz-cdn6.com/share/ef95e8a96e7ae66d9a053c3fb85f7230#第54集$https://vip1.lz-cdn6.com/share/ddcd0c0f094cd80726fd6d6567a1a01b#第55集$https://vip1.lz-cdn6.com/share/0a7cdeee9c8bba4d2e8dc8fbe67af750#第56集$https://vip1.lz-cdn6.com/share/0ead717779244d9aab5c1699308850d2#第57集$https://vip1.lz-cdn6.com/share/dde5af7b91bd434afa39458775de50ff#第58集$https://vip1.lz-cdn6.com/share/0226aa5193c66d9906300c6cf2bc45df#第59集$https://vip1.lz-cdn6.com/share/fec9ebe81dc34da06ac1f4eff8c8f130#第60集$https://vip1.lz-cdn6.com/share/101d3ee2395bb1d1aca582263378d26a#第61集$https://vip1.lz-cdn6.com/share/eb72d013ce941d098d78e1ed837a7b92#第62集$https://vip1.lz-cdn6.com/share/d5a1469d699bdf9fdc74cc29643034bf#第63集$https://vip1.lz-cdn6.com/share/c0f3a9cc8c0672341632498cdfb3fff9#第64集$https://vip1.lz-cdn6.com/share/82748072a2779538dfc56b11f67cc4bd#第65集$https://vip1.lz-cdn6.com/share/2d9c21926ca11570fefaf9d4dee3de87#第66集$https://vip1.lz-cdn6.com/share/72ed51c0351c080b21275e36ca9ce194#第67集$https://vip1.lz-cdn6.com/share/d06f17fd991dce7c7b7b5d73121b651e#第68集$https://vip1.lz-cdn6.com/share/fb0ffdcee679b597fd010bdfbaca55bf#第69集$https://vip1.lz-cdn6.com/share/7928930515844730f8e63b0634226df6#第70集$https://vip1.lz-cdn6.com/share/b75fccecb75be47415ce1244f0b2f993#第71集$https://vip1.lz-cdn6.com/share/c70a586e24e85c37424a19296bad06f7#第72集$https://vip1.lz-cdn6.com/share/17bf10483c4a1a9a3719c01732f06d9e#第73集$https://vip1.lz-cdn6.com/share/3c79e6d1c5a0a06382b27b1bc66da3ff#第74集$https://vip1.lz-cdn6.com/share/e836b5ebd3143577c69cda6109cc209e#第75集$https://vip1.lz-cdn6.com/share/641e0c2c35e72adecd8639eb76ebfa18#第76集$https://vip1.lz-cdn6.com/share/229b98b8f89fc6c194aa8bdb0b4b8c55#第77集$https://vip1.lz-cdn6.com/share/43514321536f88cdbe57368daaa688fd#第78集$https://vip1.lz-cdn6.com/share/9eb8eff225298ae9cdc871bff8b16b7d#第79集$https://vip1.lz-cdn6.com/share/3e2309f10cc986e761d11632be29f3ad#第80集$https://vip1.lz-cdn6.com/share/70e57eb7c5b31448a55580c15b574d9c#第81集$https://vip1.lz-cdn6.com/share/3641a12ac876f978794065b0fde96404#第82集$https://vip1.lz-cdn6.com/share/d749d0b67ad63cd0b51b761a33e94d1e#第83集$https://vip1.lz-cdn6.com/share/c41db02f5faeba46ececb7af7e687c0e#第84集$https://vip1.lz-cdn6.com/share/6041439a1a9478356ce148265b1aca7e",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 84,
+     "play_url": "第01集$https://vip1.lz-cdn6.com/20220821/23321_52c53b68/index.m3u8#第02集$https://vip1.lz-cdn6.com/20220821/23322_6fbf3eda/index.m3u8#第03集$https://vip1.lz-cdn6.com/20220821/23323_66ade890/index.m3u8#第04集$https://vip1.lz-cdn6.com/20220821/23324_340d36b1/index.m3u8#第05集$https://vip1.lz-cdn6.com/20220821/23325_5f5f4138/index.m3u8#第06集$https://vip1.lz-cdn6.com/20220821/23326_44505a63/index.m3u8#第07集$https://vip1.lz-cdn6.com/20220821/23327_367d6ae0/index.m3u8#第08集$https://vip1.lz-cdn6.com/20220821/23328_3f514c2f/index.m3u8#第09集$https://vip1.lz-cdn6.com/20220821/23329_f66e8501/index.m3u8#第10集$https://vip1.lz-cdn6.com/20220821/23330_72051172/index.m3u8#第11集$https://vip1.lz-cdn6.com/20220821/23331_63e75cff/index.m3u8#第12集$https://vip1.lz-cdn6.com/20220821/23332_639ea65f/index.m3u8#第13集$https://vip1.lz-cdn6.com/20220821/23333_4143fadc/index.m3u8#第14集$https://vip1.lz-cdn6.com/20220821/23334_c97443ac/index.m3u8#第15集$https://vip1.lz-cdn6.com/20220821/23335_c4040249/index.m3u8#第16集$https://vip1.lz-cdn6.com/20220821/23336_5becaa7c/index.m3u8#第17集$https://vip1.lz-cdn6.com/20220821/23337_972c3cf6/index.m3u8#第18集$https://vip1.lz-cdn6.com/20220821/23338_e3032797/index.m3u8#第19集$https://vip1.lz-cdn6.com/20220821/23339_9538d502/index.m3u8#第20集$https://vip1.lz-cdn6.com/20220821/23340_7de82d33/index.m3u8#第21集$https://vip1.lz-cdn6.com/20220821/23341_6b9137d0/index.m3u8#第22集$https://vip1.lz-cdn6.com/20220821/23342_c7533e9f/index.m3u8#第23集$https://vip1.lz-cdn6.com/20220821/23343_471e5137/index.m3u8#第24集$https://vip1.lz-cdn6.com/20220821/23344_7ab106fb/index.m3u8#第25集$https://vip1.lz-cdn6.com/20220821/23345_cdfec6ad/index.m3u8#第26集$https://vip1.lz-cdn6.com/20220821/23346_8a4cb915/index.m3u8#第27集$https://vip1.lz-cdn6.com/20220821/23347_9e19d416/index.m3u8#第28集$https://vip1.lz-cdn6.com/20220821/23348_f47241ce/index.m3u8#第29集$https://vip1.lz-cdn6.com/20220821/23349_6468251f/index.m3u8#第30集$https://vip1.lz-cdn6.com/20220821/23350_b0dd4148/index.m3u8#第31集$https://vip1.lz-cdn6.com/20220821/23351_4482ae94/index.m3u8#第32集$https://vip1.lz-cdn6.com/20220821/23352_4b0893ae/index.m3u8#第33集$https://vip1.lz-cdn6.com/20220821/23353_abd1f1df/index.m3u8#第34集$https://vip1.lz-cdn6.com/20220821/23354_f3012540/index.m3u8#第35集$https://vip1.lz-cdn6.com/20220821/23355_325973be/index.m3u8#第36集$https://vip1.lz-cdn6.com/20220821/23356_108bab0c/index.m3u8#第37集$https://vip1.lz-cdn6.com/20220821/23357_2d1e6e3e/index.m3u8#第38集$https://vip1.lz-cdn6.com/20220821/23358_abd9b6c8/index.m3u8#第39集$https://vip1.lz-cdn6.com/20220821/23359_31a740e2/index.m3u8#第40集$https://vip1.lz-cdn6.com/20220821/23360_b4c7eaaf/index.m3u8#第41集$https://vip1.lz-cdn6.com/20220821/23361_3cee2c97/index.m3u8#第42集$https://vip1.lz-cdn6.com/20220821/23362_e271c1f0/index.m3u8#第43集$https://vip1.lz-cdn6.com/20220821/23363_1d506e08/index.m3u8#第44集$https://vip1.lz-cdn6.com/20220821/23364_ad064e58/index.m3u8#第45集$https://vip1.lz-cdn6.com/20220821/23365_8ffe662d/index.m3u8#第46集$https://vip1.lz-cdn6.com/20220821/23366_e8b61041/index.m3u8#第47集$https://vip1.lz-cdn6.com/20220821/23367_dd51df94/index.m3u8#第48集$https://vip1.lz-cdn6.com/20220821/23368_16662c67/index.m3u8#第49集$https://vip1.lz-cdn6.com/20220821/23369_20de999c/index.m3u8#第50集$https://vip1.lz-cdn6.com/20220821/23370_479028ff/index.m3u8#第51集$https://vip1.lz-cdn6.com/20220821/23371_1499fdbc/index.m3u8#第52集$https://vip1.lz-cdn6.com/20220821/23372_8222ff82/index.m3u8#第53集$https://vip1.lz-cdn6.com/20220821/23373_3dbf0899/index.m3u8#第54集$https://vip1.lz-cdn6.com/20220821/23374_138a0fe3/index.m3u8#第55集$https://vip1.lz-cdn6.com/20220821/23375_841be7fd/index.m3u8#第56集$https://vip1.lz-cdn6.com/20220821/23376_e72c3062/index.m3u8#第57集$https://vip1.lz-cdn6.com/20220821/23377_9c0ba7ec/index.m3u8#第58集$https://vip1.lz-cdn6.com/20220821/23378_d06f0645/index.m3u8#第59集$https://vip1.lz-cdn6.com/20220821/23379_e7d99be1/index.m3u8#第60集$https://vip1.lz-cdn6.com/20220821/23380_02bea9ff/index.m3u8#第61集$https://vip1.lz-cdn6.com/20220821/23381_1550585a/index.m3u8#第62集$https://vip1.lz-cdn6.com/20220821/23382_40b974b4/index.m3u8#第63集$https://vip1.lz-cdn6.com/20220821/23383_c020cc1c/index.m3u8#第64集$https://vip1.lz-cdn6.com/20220821/23384_3c1540af/index.m3u8#第65集$https://vip1.lz-cdn6.com/20220821/23385_5b0157f2/index.m3u8#第66集$https://vip1.lz-cdn6.com/20220821/23386_93bf312f/index.m3u8#第67集$https://vip1.lz-cdn6.com/20220821/23387_34c02825/index.m3u8#第68集$https://vip1.lz-cdn6.com/20220821/23388_c7afa8e9/index.m3u8#第69集$https://vip1.lz-cdn6.com/20220821/23389_386e4778/index.m3u8#第70集$https://vip1.lz-cdn6.com/20220821/23390_80ee6472/index.m3u8#第71集$https://vip1.lz-cdn6.com/20220821/23391_63d153ed/index.m3u8#第72集$https://vip1.lz-cdn6.com/20220821/23392_99047c5a/index.m3u8#第73集$https://vip1.lz-cdn6.com/20220821/23393_7f449fb7/index.m3u8#第74集$https://vip1.lz-cdn6.com/20220821/23394_50478683/index.m3u8#第75集$https://vip1.lz-cdn6.com/20220821/23395_e457e305/index.m3u8#第76集$https://vip1.lz-cdn6.com/20220821/23396_391ceca5/index.m3u8#第77集$https://vip1.lz-cdn6.com/20220821/23397_4cab49ac/index.m3u8#第78集$https://vip1.lz-cdn6.com/20220821/23398_78af5ed8/index.m3u8#第79集$https://vip1.lz-cdn6.com/20220821/23399_cadbe2b9/index.m3u8#第80集$https://vip1.lz-cdn6.com/20220821/23400_e6a65bb7/index.m3u8#第81集$https://vip1.lz-cdn6.com/20220821/23401_d8f3896d/index.m3u8#第82集$https://vip1.lz-cdn6.com/20220821/23402_90bbfa54/index.m3u8#第83集$https://vip1.lz-cdn6.com/20220821/23403_8f057aac/index.m3u8#第84集$https://vip1.lz-cdn6.com/20220821/23404_8d858871/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 28264,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 84,
+     "play_url": "第01集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第01集/index.m3u8#第02集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第02集/index.m3u8#第03集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第03集/index.m3u8#第04集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第04集/index.m3u8#第05集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第05集/index.m3u8#第06集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第06集/index.m3u8#第07集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第07集/index.m3u8#第08集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第08集/index.m3u8#第09集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第09集/index.m3u8#第10集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第10集/index.m3u8#第11集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第11集/index.m3u8#第12集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第12集/index.m3u8#第13集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第13集/index.m3u8#第14集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第14集/index.m3u8#第15集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第15集/index.m3u8#第16集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第16集/index.m3u8#第17集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第17集/index.m3u8#第18集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第18集/index.m3u8#第19集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第19集/index.m3u8#第20集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第20集/index.m3u8#第21集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第21集/index.m3u8#第22集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第22集/index.m3u8#第23集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第23集/index.m3u8#第24集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第24集/index.m3u8#第25集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第25集/index.m3u8#第26集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第26集/index.m3u8#第27集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第27集/index.m3u8#第28集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第28集/index.m3u8#第29集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第29集/index.m3u8#第30集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第30集/index.m3u8#第31集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第31集/index.m3u8#第32集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第32集/index.m3u8#第33集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第33集/index.m3u8#第34集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第34集/index.m3u8#第35集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第35集/index.m3u8#第36集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第36集/index.m3u8#第37集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第37集/index.m3u8#第38集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第38集/index.m3u8#第39集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第39集/index.m3u8#第40集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第40集/index.m3u8#第41集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第41集/index.m3u8#第42集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第42集/index.m3u8#第43集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第43集/index.m3u8#第44集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第44集/index.m3u8#第45集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第45集/index.m3u8#第46集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第46集/index.m3u8#第47集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第47集/index.m3u8#第48集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第48集/index.m3u8#第49集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第49集/index.m3u8#第50集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第50集/index.m3u8#第51集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第51集/index.m3u8#第52集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第52集/index.m3u8#第53集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第53集/index.m3u8#第54集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第54集/index.m3u8#第55集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第55集/index.m3u8#第56集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第56集/index.m3u8#第57集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第57集/index.m3u8#第58集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第58集/index.m3u8#第59集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第59集/index.m3u8#第60集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第60集/index.m3u8#第61集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第61集/index.m3u8#第62集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第62集/index.m3u8#第63集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第63集/index.m3u8#第64集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第64集/index.m3u8#第65集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第65集/index.m3u8#第66集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第66集/index.m3u8#第67集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第67集/index.m3u8#第68集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第68集/index.m3u8#第69集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第69集/index.m3u8#第70集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第70集/index.m3u8#第71集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第71集/index.m3u8#第72集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第72集/index.m3u8#第73集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第73集/index.m3u8#第74集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第74集/index.m3u8#第75集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第75集/index.m3u8#第76集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第76集/index.m3u8#第77集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第77集/index.m3u8#第78集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第78集/index.m3u8#第79集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第79集/index.m3u8#第80集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第80集/index.m3u8#第81集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第81集/index.m3u8#第82集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第82集/index.m3u8#第83集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第83集/index.m3u8#第84集$https://c1.ddbbffcdn.com/video/sanguoyanyi/第84集/index.m3u8",
+     "remarks": "完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 84,
+     "play_url": "第01集$https://vip.ffzy-online3.com/share/4ca82b2a861f70cd15d83085b000dbde#第02集$https://vip.ffzy-online3.com/share/8aa2c95dc0a6833d2d0cb944555739cc#第03集$https://vip.ffzy-online3.com/share/b72a5a099433a2099fc3d92f6ad3accf#第04集$https://vip.ffzy-online3.com/share/7b99efbc101a6013d2c710028bca5cbf#第05集$https://vip.ffzy-online3.com/share/13d2b7361a27dbc9960ae158598a6a96#第06集$https://vip.ffzy-online3.com/share/7d4ba7006351436c35e283b0be8ff56c#第07集$https://vip.ffzy-online3.com/share/acc21473c4525b922286130ffbfe00b5#第08集$https://vip.ffzy-online3.com/share/36d5ef2a011f0b3e0e0fa139228bbe18#第09集$https://vip.ffzy-online3.com/share/c5df4f4eabf1cbcfeb50fbbf97c5289f#第10集$https://vip.ffzy-online3.com/share/392526094bcba21af9fd4102ce5ed092#第11集$https://vip.ffzy-online3.com/share/1ca5c750a30312d1919ae6a4d636dcc4#第12集$https://vip.ffzy-online3.com/share/4cc5400e63624c44fadeda99f57588a6#第13集$https://vip.ffzy-online3.com/share/b8c8c63d4b8856c7872b225e53a6656c#第14集$https://vip.ffzy-online3.com/share/c1285fcadc52c0d3dc8813fc2c2e2b2a#第15集$https://vip.ffzy-online3.com/share/b2ead76dfdc4ae56a2abd1896ec46291#第16集$https://vip.ffzy-online3.com/share/618faa1728eb2ef6e3733645273ab145#第17集$https://vip.ffzy-online3.com/share/de9621d4c6fa69ce8aaa90f00e9110c5#第18集$https://vip.ffzy-online3.com/share/3d7d9461075eb7c37fbbfcad1d7042c1#第19集$https://vip.ffzy-online3.com/share/598a90004bace6540f0e2230bdc47c09#第20集$https://vip.ffzy-online3.com/share/197f76fe309657064dbec74d9eea4be4#第21集$https://vip.ffzy-online3.com/share/2eacc82231f2e62f9acb38bece54635e#第22集$https://vip.ffzy-online3.com/share/ba053350fe56ed93e64b3e769062b680#第23集$https://vip.ffzy-online3.com/share/d785bf9067f8af9e078b93cf26de2b54#第24集$https://vip.ffzy-online3.com/share/30c0a496a57bcc2c7c6c481342526729#第25集$https://vip.ffzy-online3.com/share/b04c387c8384ca083a71b8da516f65f6#第26集$https://vip.ffzy-online3.com/share/310614fca8fb8e5491295336298c340f#第27集$https://vip.ffzy-online3.com/share/a47072176bca825aadacf648034e124b#第28集$https://vip.ffzy-online3.com/share/761b42cfff120aac30045f7a110d0256#第29集$https://vip.ffzy-online3.com/share/92ae5cfef57d9ef9a523753e45fc9b0b#第30集$https://vip.ffzy-online3.com/share/4249a84bdaf63c34332d1988244fb089#第31集$https://vip.ffzy-online3.com/share/3bf07985bf8a5a37fcf65989269e8edc#第32集$https://vip.ffzy-online3.com/share/36452e720502e4da486d2f9f6b48a7bb#第33集$https://vip.ffzy-online3.com/share/a4d5fad84ee90c1308cc37b52135d5db#第34集$https://vip.ffzy-online3.com/share/ac1ae6a547bf25a11284c7595eff6df7#第35集$https://vip.ffzy-online3.com/share/08ad21c6f9da6bdf51ae0b971f43d96d#第36集$https://vip.ffzy-online3.com/share/5bf73bc6c6e6775d472621264309a88b#第37集$https://vip.ffzy-online3.com/share/26d4b4313a7e5828856bc0791fca39a2#第38集$https://vip.ffzy-online3.com/share/a6e4f250fb5c56aaf215a236c64e5b0a#第39集$https://vip.ffzy-online3.com/share/fa3060edb66e6ff4507886f9912e1ab9#第40集$https://vip.ffzy-online3.com/share/6aaba9a124857622930ca4e50f5afed2#第41集$https://vip.ffzy-online3.com/share/c80d9ba4852b67046bee487bcd9802c0#第42集$https://vip.ffzy-online3.com/share/2d5951d1e3b31dfb7fd2dcc172df17fd#第43集$https://vip.ffzy-online3.com/share/63d5fb54a858dd033fe90e6e4a74b0f0#第44集$https://vip.ffzy-online3.com/share/f5a14d4963acf488e3a24780a84ac96c#第45集$https://vip.ffzy-online3.com/share/b5d3ad899f70013367f24e0b1fa75944#第46集$https://vip.ffzy-online3.com/share/4ccb2d64b8159636a44b29fe2e62a841#第47集$https://vip.ffzy-online3.com/share/2ccc2826b445aebac6f6b3f8013e7931#第48集$https://vip.ffzy-online3.com/share/fc1f073fe91403f00d2219185fdea79b#第49集$https://vip.ffzy-online3.com/share/2adafb1b5d684e6c15a2d063367be012#第50集$https://vip.ffzy-online3.com/share/c5ef831f5d34faafc22a23a602cf6e40#第51集$https://vip.ffzy-online3.com/share/65b0df23fd2d449ae1e4b2d27151d73b#第52集$https://vip.ffzy-online3.com/share/67ba02d73c54f0b83c05507b7fb7267f#第53集$https://vip.ffzy-online3.com/share/d98c1545b7619bd99b817cb3169cdfde#第54集$https://vip.ffzy-online3.com/share/654516d1b4df6917094de807156adc14#第55集$https://vip.ffzy-online3.com/share/0e1bacf07b14673fcdb553da51b999a5#第56集$https://vip.ffzy-online3.com/share/dffa23e3f38973de8a5a2bce627e261b#第57集$https://vip.ffzy-online3.com/share/4c5a99856a3c634a5a3beae02520cdc2#第58集$https://vip.ffzy-online3.com/share/3d36c07721a0a5a96436d6c536a132ec#第59集$https://vip.ffzy-online3.com/share/7873b66ca1d39eb8603c467fa05cfe86#第60集$https://vip.ffzy-online3.com/share/c14a2a57ead18f3532a5a8949382c536#第61集$https://vip.ffzy-online3.com/share/08425b881bcde94a383cd258cea331be#第62集$https://vip.ffzy-online3.com/share/22eda830d1051274a2581d6466c06e6c#第63集$https://vip.ffzy-online3.com/share/30893a5eb454815e3bf4a3406b1b80c0#第64集$https://vip.ffzy-online3.com/share/fb3deea8bff8902a6a092a4b532b4a68#第65集$https://vip.ffzy-online3.com/share/f91ceb5afe88b7ab6023892165de4033#第66集$https://vip.ffzy-online3.com/share/16837163fee34175358a47e0b51485ff#第67集$https://vip.ffzy-online3.com/share/af5baf594e9197b43c9f26f17b205e5b#第68集$https://vip.ffzy-online3.com/share/9d4c03631b8b0c85ae08bf05eda37d0f#第69集$https://vip.ffzy-online3.com/share/24bfde45b5790f04b1d096565157f6a4#第70集$https://vip.ffzy-online3.com/share/03c874ab55baa3c1f835d108415fac44#第71集$https://vip.ffzy-online3.com/share/64ff7983a47d331b13a81156e2f4d29d#第72集$https://vip.ffzy-online3.com/share/f169b1a771215329737c91f70b5bf05c#第73集$https://vip.ffzy-online3.com/share/b77375f945f272a2084c0119c871c13c#第74集$https://vip.ffzy-online3.com/share/38ccdf8d538de2d6a6deb2ed17d1f873#第75集$https://vip.ffzy-online3.com/share/0f34132b15dd02f282a11ea1e322a96d#第76集$https://vip.ffzy-online3.com/share/dd409260aea46a90e61b9a69fb9726ef#第77集$https://vip.ffzy-online3.com/share/e0cd3f16f9e883ca91c2a4c24f47b3d9#第78集$https://vip.ffzy-online3.com/share/d4b0a4ece86c42fe7c34d6eaa9aef588#第79集$https://vip.ffzy-online3.com/share/c2f599841f21aaefeeabd2a60ef7bfe8#第80集$https://vip.ffzy-online3.com/share/07b2ee9f02d5e6e8894377afb4feed32#第81集$https://vip.ffzy-online3.com/share/e564618b1a0f9a0e5b043f63d43fc065#第82集$https://vip.ffzy-online3.com/share/69dd2eff9b6a421d5ce262b093bdab23#第83集$https://vip.ffzy-online3.com/share/03924fb32bcc6248036e209a716e3339#第84集$https://vip.ffzy-online3.com/share/62db9e3397c76207a687c360e0243317",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 84,
+     "play_url": "第01集$https://vip.ffzy-online3.com/20230126/6123_b94abe2c/index.m3u8#第02集$https://vip.ffzy-online3.com/20230126/6122_d5272023/index.m3u8#第03集$https://vip.ffzy-online3.com/20230126/6128_f817e305/index.m3u8#第04集$https://vip.ffzy-online3.com/20230126/6130_5fa99fed/index.m3u8#第05集$https://vip.ffzy-online3.com/20230126/6141_34c3e33d/index.m3u8#第06集$https://vip.ffzy-online3.com/20230126/6142_2004ff72/index.m3u8#第07集$https://vip.ffzy-online3.com/20230126/6129_58ebc9ce/index.m3u8#第08集$https://vip.ffzy-online3.com/20230126/6132_7746c3dc/index.m3u8#第09集$https://vip.ffzy-online3.com/20230126/6133_dd9c6318/index.m3u8#第10集$https://vip.ffzy-online3.com/20230126/6131_1da754cb/index.m3u8#第11集$https://vip.ffzy-online3.com/20230126/6134_6434224f/index.m3u8#第12集$https://vip.ffzy-online3.com/20230126/6135_bf81825d/index.m3u8#第13集$https://vip.ffzy-online3.com/20230126/6137_23c9346d/index.m3u8#第14集$https://vip.ffzy-online3.com/20230126/6136_ea992bd4/index.m3u8#第15集$https://vip.ffzy-online3.com/20230126/6138_fa8caa9b/index.m3u8#第16集$https://vip.ffzy-online3.com/20230126/6139_3738beef/index.m3u8#第17集$https://vip.ffzy-online3.com/20230126/6143_e1acc6bf/index.m3u8#第18集$https://vip.ffzy-online3.com/20230126/6140_4e17fd01/index.m3u8#第19集$https://vip.ffzy-online3.com/20230126/6150_f045101d/index.m3u8#第20集$https://vip.ffzy-online3.com/20230126/6144_5fc57ae3/index.m3u8#第21集$https://vip.ffzy-online3.com/20230126/6156_89d20b98/index.m3u8#第22集$https://vip.ffzy-online3.com/20230126/6146_2b986d1e/index.m3u8#第23集$https://vip.ffzy-online3.com/20230126/6145_a1805f38/index.m3u8#第24集$https://vip.ffzy-online3.com/20230126/6148_2793425c/index.m3u8#第25集$https://vip.ffzy-online3.com/20230126/6149_c3e6b8f4/index.m3u8#第26集$https://vip.ffzy-online3.com/20230126/6147_87dcfac8/index.m3u8#第27集$https://vip.ffzy-online3.com/20230126/6155_6191ff7b/index.m3u8#第28集$https://vip.ffzy-online3.com/20230126/6151_395d849b/index.m3u8#第29集$https://vip.ffzy-online3.com/20230126/6152_dac85b43/index.m3u8#第30集$https://vip.ffzy-online3.com/20230126/6166_38f582d1/index.m3u8#第31集$https://vip.ffzy-online3.com/20230126/6154_4e34b8e3/index.m3u8#第32集$https://vip.ffzy-online3.com/20230126/6165_7ef4983e/index.m3u8#第33集$https://vip.ffzy-online3.com/20230126/6153_8df21b3f/index.m3u8#第34集$https://vip.ffzy-online3.com/20230126/6159_f8909df2/index.m3u8#第35集$https://vip.ffzy-online3.com/20230126/6158_361b9c07/index.m3u8#第36集$https://vip.ffzy-online3.com/20230126/6161_e36b1632/index.m3u8#第37集$https://vip.ffzy-online3.com/20230126/6157_cb8b5a1b/index.m3u8#第38集$https://vip.ffzy-online3.com/20230126/6163_d7c913cd/index.m3u8#第39集$https://vip.ffzy-online3.com/20230126/6160_067c8411/index.m3u8#第40集$https://vip.ffzy-online3.com/20230126/6162_cdebe9d5/index.m3u8#第41集$https://vip.ffzy-online3.com/20230126/6175_66ff490f/index.m3u8#第42集$https://vip.ffzy-online3.com/20230126/6164_7c0bb97a/index.m3u8#第43集$https://vip.ffzy-online3.com/20230126/6167_b13072b4/index.m3u8#第44集$https://vip.ffzy-online3.com/20230126/6168_a2450b20/index.m3u8#第45集$https://vip.ffzy-online3.com/20230126/6171_e2b3e459/index.m3u8#第46集$https://vip.ffzy-online3.com/20230126/6173_37348442/index.m3u8#第47集$https://vip.ffzy-online3.com/20230126/6170_290bd36d/index.m3u8#第48集$https://vip.ffzy-online3.com/20230126/6176_796fbc3e/index.m3u8#第49集$https://vip.ffzy-online3.com/20230126/6169_affd89f0/index.m3u8#第50集$https://vip.ffzy-online3.com/20230126/6172_1d1c081d/index.m3u8#第51集$https://vip.ffzy-online3.com/20230126/6174_ba5ebae4/index.m3u8#第52集$https://vip.ffzy-online3.com/20230126/6189_efee0ddf/index.m3u8#第53集$https://vip.ffzy-online3.com/20230126/6177_d498db23/index.m3u8#第54集$https://vip.ffzy-online3.com/20230126/6178_3ae94f25/index.m3u8#第55集$https://vip.ffzy-online3.com/20230126/6187_724f1548/index.m3u8#第56集$https://vip.ffzy-online3.com/20230126/6180_8fcf7146/index.m3u8#第57集$https://vip.ffzy-online3.com/20230126/6182_91f41244/index.m3u8#第58集$https://vip.ffzy-online3.com/20230126/6179_d7ed2149/index.m3u8#第59集$https://vip.ffzy-online3.com/20230126/6181_b5da3368/index.m3u8#第60集$https://vip.ffzy-online3.com/20230126/6183_71397d48/index.m3u8#第61集$https://vip.ffzy-online3.com/20230126/6184_43bf9c9e/index.m3u8#第62集$https://vip.ffzy-online3.com/20230126/6185_4d83a795/index.m3u8#第63集$https://vip.ffzy-online3.com/20230126/6188_32fe8a91/index.m3u8#第64集$https://vip.ffzy-online3.com/20230126/6186_adadef7e/index.m3u8#第65集$https://vip.ffzy-online3.com/20230126/6192_abf34e2e/index.m3u8#第66集$https://vip.ffzy-online3.com/20230126/6190_73e217dd/index.m3u8#第67集$https://vip.ffzy-online3.com/20230126/6194_cc17f330/index.m3u8#第68集$https://vip.ffzy-online3.com/20230126/6191_f2caa8bf/index.m3u8#第69集$https://vip.ffzy-online3.com/20230126/6193_65d4ed34/index.m3u8#第70集$https://vip.ffzy-online3.com/20230126/6195_5d00416c/index.m3u8#第71集$https://vip.ffzy-online3.com/20230126/6197_76efb5bf/index.m3u8#第72集$https://vip.ffzy-online3.com/20230126/6196_5bf0fbb4/index.m3u8#第73集$https://vip.ffzy-online3.com/20230126/6198_74099668/index.m3u8#第74集$https://vip.ffzy-online3.com/20230126/6202_5336585e/index.m3u8#第75集$https://vip.ffzy-online3.com/20230126/6211_d4b89345/index.m3u8#第76集$https://vip.ffzy-online3.com/20230126/6200_f51a603d/index.m3u8#第77集$https://vip.ffzy-online3.com/20230126/6201_c90fe4f6/index.m3u8#第78集$https://vip.ffzy-online3.com/20230126/6203_86390f52/index.m3u8#第79集$https://vip.ffzy-online3.com/20230126/6199_e9dcaabf/index.m3u8#第80集$https://vip.ffzy-online3.com/20230126/6204_daab00b5/index.m3u8#第81集$https://vip.ffzy-online3.com/20230126/6210_f3b8f53f/index.m3u8#第82集$https://vip.ffzy-online3.com/20230126/6208_373d73a2/index.m3u8#第83集$https://vip.ffzy-online3.com/20230126/6205_30079482/index.m3u8#第84集$https://vip.ffzy-online3.com/20230126/6207_748ccd35/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 38072,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    84,
+    84,
+    84,
+    84,
+    84,
+    84
+   ],
+   "cand_idx": "vod009",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "亮剑",
+   "vod_year": "2005",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "全30集",
+   "vod_actor": "李幼斌,何政军,张光北,童蕾,孙俪,战卫华,陆彭,张桐,由力,王全有,张笑君,梁林琳,杨联春,车晓彤,陈艺戈,江水,宗利群,张伟,陈旺林,袁满,张国荣,董祁明,王炎冰,蔡小龙,徐雷智,田勇,郭苏星,田春山,荣钦,柴孛志,赵中华,李江,张建祥,孟耿成,陈增祺,寒丰,袁乃旗,韩建平,常玉平,那志东",
+   "vod_director": "张前,陈健",
+   "vod_content": "<p>129师386旅独立团的团长李云龙（李幼斌饰）是个敢想敢干，不按规矩办事的愣头青，他脾气火爆，性格直爽，在他的带领下，整个独立团也呈现出敢于拼杀的不要命劲头。在他面前，不可一世的坂田连队、山崎大队、山本部队接连败下阵来，李云龙名声大噪，却也因屡次犯规而遭贬斥。抗日战争时期，他与国军358团团长楚云飞（张光北饰）惺惺相惜，却又不得不在徐蚌会战时一较高下，最终二人皆负重伤。养病期间，李云龙喜欢上善良可人的护士田雨（童蕾饰），两个革命战友从此走到一起。在随后几十年的日子里，这对夫妻以及他们的亲人、战友共同经历着这个国家的沧桑巨变……本片根据都梁的同名小说《亮剑》改编。</p>",
+   "vod_pic": "https://www.imgzy360.com:7788/upload/vod/20250528-1/294c0ab3b34078a4f19bc42943bcf8fb.jpg",
+   "routes": [
+    {
+     "provider": "360",
+     "episode_count": 30,
+     "play_url": "第01集$https://vod1.maowushi.com/20250528/P1Uqblll/index.m3u8#第02集$https://vod1.maowushi.com/20250528/KRfTIPIV/index.m3u8#第03集$https://vod1.maowushi.com/20250528/ZXDEBkZs/index.m3u8#第04集$https://vod1.maowushi.com/20250528/kvfi0sqV/index.m3u8#第05集$https://vod1.maowushi.com/20250528/F0DSnqzW/index.m3u8#第06集$https://vod1.maowushi.com/20250528/wRP9MRJZ/index.m3u8#第07集$https://vod1.maowushi.com/20250528/sHLxCtfS/index.m3u8#第08集$https://vod1.maowushi.com/20250528/YkmDGqxJ/index.m3u8#第09集$https://vod1.maowushi.com/20250528/YaNb9iZ6/index.m3u8#第10集$https://vod1.maowushi.com/20250528/ER7q06xm/index.m3u8#第11集$https://vod1.maowushi.com/20250528/hjhBFq9Y/index.m3u8#第12集$https://vod1.maowushi.com/20250528/KfiAcXia/index.m3u8#第13集$https://vod1.maowushi.com/20250528/zuAqW4Xb/index.m3u8#第14集$https://vod1.maowushi.com/20250528/GDdCPHxN/index.m3u8#第15集$https://vod1.maowushi.com/20250528/Y2y7j3YS/index.m3u8#第16集$https://vod1.maowushi.com/20250528/pdLDK1WW/index.m3u8#第17集$https://vod1.maowushi.com/20250528/PyLXgvZM/index.m3u8#第18集$https://vod1.maowushi.com/20250528/GtGeUy8A/index.m3u8#第19集$https://vod1.maowushi.com/20250528/t0i1L28h/index.m3u8#第20集$https://vod1.maowushi.com/20250528/lwIvYzjA/index.m3u8#第21集$https://vod1.maowushi.com/20250528/DDGPcvOh/index.m3u8#第22集$https://vod1.maowushi.com/20250528/xCB7F71v/index.m3u8#第23集$https://vod1.maowushi.com/20250528/YVzpuOJZ/index.m3u8#第24集$https://vod1.maowushi.com/20250528/AAUPvCLB/index.m3u8#第25集$https://vod1.maowushi.com/20250528/a83fjcRR/index.m3u8#第26集$https://vod1.maowushi.com/20250528/7Kqe3rE9/index.m3u8#第27集$https://vod1.maowushi.com/20250528/vd6iJnv1/index.m3u8#第28集$https://vod1.maowushi.com/20250528/b2qCJo8j/index.m3u8#第29集$https://vod1.maowushi.com/20250528/JOea3tND/index.m3u8#第30集$https://vod1.maowushi.com/20250528/GP6IUQJ8/index.m3u8",
+     "remarks": "全30集",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 58565,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "量子",
+     "episode_count": 30,
+     "play_url": "第01集$https://v.cdnlz19.com/share/d41e2a728f38a9616dab93f5c99a3940#第02集$https://v.cdnlz19.com/share/f619679ba92005bcb5c0d31e77fe4055#第03集$https://v.cdnlz19.com/share/ebcdc4e2a7e73118fab4921b78200b2b#第04集$https://v.cdnlz19.com/share/1087e958e1f1eb9ef2cd21cb270bb30b#第05集$https://v.cdnlz19.com/share/f0ba61470384eb03b493f0650c2f33ae#第06集$https://v.cdnlz19.com/share/dfc7ecce6a8dcc1a1575ccf3446b1985#第07集$https://v.cdnlz19.com/share/f24225f22f15bced3886d8fa30b6cca3#第08集$https://v.cdnlz19.com/share/7570a1928de2b6137980bde646329ba6#第09集$https://v.cdnlz19.com/share/ec571ab7b4d7949853f9bf65e19442d5#第10集$https://v.cdnlz19.com/share/40a0aa5c2c4ad38b70e4caf62ac90fe1#第11集$https://v.cdnlz19.com/share/81ab41f724391ef12094724fc6d8234f#第12集$https://v.cdnlz19.com/share/864d8d390024caafa47fed54b8ecd9b5#第13集$https://v.cdnlz19.com/share/8e3ecc6d79b651cabc3b9403543358dd#第14集$https://v.cdnlz19.com/share/f070d86251aaa3f977261bc44bce5341#第15集$https://v.cdnlz19.com/share/2ef610424f612b411a3e43f0917fb3a6#第16集$https://v.cdnlz19.com/share/1d83672fb9b3ff6aa2179a20fbf8a355#第17集$https://v.cdnlz19.com/share/c6a26fedc5f44d3e5dc218873d6ef84d#第18集$https://v.cdnlz19.com/share/a0c6cd885e0a0bd2ebfb8710f10c6bc8#第19集$https://v.cdnlz19.com/share/553986b255bf8bb6b0bdc1e400dbf7e4#第20集$https://v.cdnlz19.com/share/1ec50ed5e408db09c21f88566223c2b9#第21集$https://v.cdnlz19.com/share/e74df46fbad5c5dfe88af7f33125a3f7#第22集$https://v.cdnlz19.com/share/dd6e83b6da55d90f5740e0dd3f3e5a13#第23集$https://v.cdnlz19.com/share/edea466624e316fb14fd8bc274cdb051#第24集$https://v.cdnlz19.com/share/2a20ab109d1200c52d7bde56ad3e66e3#第25集$https://v.cdnlz19.com/share/b0a5b62f84451f65fd79ef6c0c79738b#第26集$https://v.cdnlz19.com/share/3582bcd4a5242afadea1ea3eaa26d4f1#第27集$https://v.cdnlz19.com/share/51a9f18aee2f0afe795224d681c9b5ac#第28集$https://v.cdnlz19.com/share/77a2de98440845afecb786997668d516#第29集$https://v.cdnlz19.com/share/b3101eef45fdacc2076e2043d1b3c39f#第30集$https://v.cdnlz19.com/share/2863298e1c75172824d2f5aa7517c899",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 30,
+     "play_url": "第01集$https://v.cdnlz19.com/20240905/43479_0e864f3d/index.m3u8#第02集$https://v.cdnlz19.com/20240905/43480_d7cb1ce4/index.m3u8#第03集$https://v.cdnlz19.com/20240905/43481_266b35ac/index.m3u8#第04集$https://v.cdnlz19.com/20240905/43482_ff1953e3/index.m3u8#第05集$https://v.cdnlz19.com/20240905/43483_49e574a4/index.m3u8#第06集$https://v.cdnlz19.com/20240905/43484_860cd952/index.m3u8#第07集$https://v.cdnlz19.com/20240905/43485_422c5e5f/index.m3u8#第08集$https://v.cdnlz19.com/20240905/43486_261917de/index.m3u8#第09集$https://v.cdnlz19.com/20240905/43487_447b1429/index.m3u8#第10集$https://v.cdnlz19.com/20240905/43488_10cbc19e/index.m3u8#第11集$https://v.cdnlz19.com/20240905/43489_cac3a67b/index.m3u8#第12集$https://v.cdnlz19.com/20240905/43490_e644e3c7/index.m3u8#第13集$https://v.cdnlz19.com/20240905/43491_01563f97/index.m3u8#第14集$https://v.cdnlz19.com/20240905/43492_82167d8f/index.m3u8#第15集$https://v.cdnlz19.com/20240905/43493_e9b05633/index.m3u8#第16集$https://v.cdnlz19.com/20240905/43494_109f8ff4/index.m3u8#第17集$https://v.cdnlz19.com/20240905/43495_bc54d333/index.m3u8#第18集$https://v.cdnlz19.com/20240905/43496_1918bf3d/index.m3u8#第19集$https://v.cdnlz19.com/20240905/43497_3c8f3142/index.m3u8#第20集$https://v.cdnlz19.com/20240905/43498_55b80d0f/index.m3u8#第21集$https://v.cdnlz19.com/20240905/43499_0dc7cfc3/index.m3u8#第22集$https://v.cdnlz19.com/20240905/43500_a00d2b45/index.m3u8#第23集$https://v.cdnlz19.com/20240905/43501_c3146f5e/index.m3u8#第24集$https://v.cdnlz19.com/20240905/43502_3af408ac/index.m3u8#第25集$https://v.cdnlz19.com/20240905/43503_bec7288a/index.m3u8#第26集$https://v.cdnlz19.com/20240905/43504_e45640f9/index.m3u8#第27集$https://v.cdnlz19.com/20240905/43505_feac7373/index.m3u8#第28集$https://v.cdnlz19.com/20240905/43506_6fdb2d94/index.m3u8#第29集$https://v.cdnlz19.com/20240905/43507_7b423189/index.m3u8#第30集$https://v.cdnlz19.com/20240905/43508_47977b8f/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 27796,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 30,
+     "play_url": "第01集$https://c1.ddbbffcdn.com/video/liangjian/第01集/index.m3u8#第02集$https://c1.ddbbffcdn.com/video/liangjian/第02集/index.m3u8#第03集$https://c1.ddbbffcdn.com/video/liangjian/第03集/index.m3u8#第04集$https://c1.ddbbffcdn.com/video/liangjian/第04集/index.m3u8#第05集$https://c1.ddbbffcdn.com/video/liangjian/第05集/index.m3u8#第06集$https://c1.ddbbffcdn.com/video/liangjian/第06集/index.m3u8#第07集$https://c1.ddbbffcdn.com/video/liangjian/第07集/index.m3u8#第08集$https://c1.ddbbffcdn.com/video/liangjian/第08集/index.m3u8#第09集$https://c1.ddbbffcdn.com/video/liangjian/第09集/index.m3u8#第10集$https://c1.ddbbffcdn.com/video/liangjian/第10集/index.m3u8#第11集$https://c1.ddbbffcdn.com/video/liangjian/第11集/index.m3u8#第12集$https://c1.ddbbffcdn.com/video/liangjian/第12集/index.m3u8#第13集$https://c1.ddbbffcdn.com/video/liangjian/第13集/index.m3u8#第14集$https://c1.ddbbffcdn.com/video/liangjian/第14集/index.m3u8#第15集$https://c1.ddbbffcdn.com/video/liangjian/第15集/index.m3u8#第16集$https://c1.ddbbffcdn.com/video/liangjian/第16集/index.m3u8#第17集$https://c1.ddbbffcdn.com/video/liangjian/第17集/index.m3u8#第18集$https://c1.ddbbffcdn.com/video/liangjian/第18集/index.m3u8#第19集$https://c1.ddbbffcdn.com/video/liangjian/第19集/index.m3u8#第20集$https://c1.ddbbffcdn.com/video/liangjian/第20集/index.m3u8#第21集$https://c1.ddbbffcdn.com/video/liangjian/第21集/index.m3u8#第22集$https://c1.ddbbffcdn.com/video/liangjian/第22集/index.m3u8#第23集$https://c1.ddbbffcdn.com/video/liangjian/第23集/index.m3u8#第24集$https://c1.ddbbffcdn.com/video/liangjian/第24集/index.m3u8#第25集$https://c1.ddbbffcdn.com/video/liangjian/第25集/index.m3u8#第26集$https://c1.ddbbffcdn.com/video/liangjian/第26集/index.m3u8#第27集$https://c1.ddbbffcdn.com/video/liangjian/第27集/index.m3u8#第28集$https://c1.ddbbffcdn.com/video/liangjian/第28集/index.m3u8#第29集$https://c1.ddbbffcdn.com/video/liangjian/第29集/index.m3u8#第30集$https://c1.ddbbffcdn.com/video/liangjian/第30集/index.m3u8",
+     "remarks": "完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 30,
+     "play_url": "第01集$https://vip.ffzy-play1.com/share/e82a71007130c199a90961842d15b339#第02集$https://vip.ffzy-play1.com/share/1488d8c03dfd3125db25b6aec94dcf92#第03集$https://vip.ffzy-play1.com/share/90b27fd52503158330234a43fe4384b5#第04集$https://vip.ffzy-play1.com/share/677a2cd14778044c4d697a7a2680f1d3#第05集$https://vip.ffzy-play1.com/share/10ccc3d6b30e89b173594526e81df7b9#第06集$https://vip.ffzy-play1.com/share/d2d9615c9699dcd1d1e15612e7ceca20#第07集$https://vip.ffzy-play1.com/share/44cf444ee51ab846b9e93ebf96bc5387#第08集$https://vip.ffzy-play1.com/share/53dfb877ef181a58891133970c05f636#第09集$https://vip.ffzy-play1.com/share/ebc7ffb1c6707e3a34305e245dc5f527#第10集$https://vip.ffzy-play1.com/share/44ebd6cc3f1c1732fe6babb0c15228df#第11集$https://vip.ffzy-play1.com/share/79b3ca4a68235c37fe2481738cabfeca#第12集$https://vip.ffzy-play1.com/share/daa76683a64d481e593441ee9f7b1150#第13集$https://vip.ffzy-play1.com/share/7fc0198b67cce188636277130d8f56cf#第14集$https://vip.ffzy-play1.com/share/57dd3b27ac1f94261bb338d61b3df823#第15集$https://vip.ffzy-play1.com/share/9ae82c26134ecd4981bda3c252fc1acf#第16集$https://vip.ffzy-play1.com/share/d1b8053e972c0a7c4d0d9fe847598725#第17集$https://vip.ffzy-play1.com/share/99f5a12273c3338adff0f524f2bcae03#第18集$https://vip.ffzy-play1.com/share/79dc556c0dce63a1ad0bdb477ccedd4b#第19集$https://vip.ffzy-play1.com/share/62415c82dd6c47e714f473f9b0475e62#第20集$https://vip.ffzy-play1.com/share/a84d6bab6b89b8c0bcfb4b9b933da05c#第21集$https://vip.ffzy-play1.com/share/6f5025169fec8d015379f68364f3da3b#第22集$https://vip.ffzy-play1.com/share/8750fe4b77c1bfd30a227637c5b482e4#第23集$https://vip.ffzy-play1.com/share/2b12fa2d64abbe1942370ba7f5e9226b#第24集$https://vip.ffzy-play1.com/share/8410d493ab02b59ce1f6b4803d9dbb38#第25集$https://vip.ffzy-play1.com/share/f9a5447b601e2dc232d1480a4447dc5d#第26集$https://vip.ffzy-play1.com/share/f0897e959b9ad043dbdc11f4b8f9a115#第27集$https://vip.ffzy-play1.com/share/e38e94558370e5c63fffebb8564b88f4#第28集$https://vip.ffzy-play1.com/share/4580593c772e8cda49fcf7668a785ac4#第29集$https://vip.ffzy-play1.com/share/3c46a684a9131056c455935ec42d489c#第30集$https://vip.ffzy-play1.com/share/cde209aad61260cbc84a76c3e86a5515",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 30,
+     "play_url": "第01集$https://vip.ffzy-play1.com/20230113/51806_72d20784/index.m3u8#第02集$https://vip.ffzy-play1.com/20230113/51805_af533edb/index.m3u8#第03集$https://vip.ffzy-play1.com/20230113/51807_0da1f48c/index.m3u8#第04集$https://vip.ffzy-play1.com/20230113/51808_a7b33163/index.m3u8#第05集$https://vip.ffzy-play1.com/20230113/51810_2431c74a/index.m3u8#第06集$https://vip.ffzy-play1.com/20230113/51809_5ea2d77d/index.m3u8#第07集$https://vip.ffzy-play1.com/20230113/51811_9de91146/index.m3u8#第08集$https://vip.ffzy-play1.com/20230113/51813_6979dace/index.m3u8#第09集$https://vip.ffzy-play1.com/20230113/51814_3a76dcf1/index.m3u8#第10集$https://vip.ffzy-play1.com/20230113/51812_5d88f883/index.m3u8#第11集$https://vip.ffzy-play1.com/20230113/51815_d5911146/index.m3u8#第12集$https://vip.ffzy-play1.com/20230113/51817_15691c0c/index.m3u8#第13集$https://vip.ffzy-play1.com/20230113/51816_75465ff8/index.m3u8#第14集$https://vip.ffzy-play1.com/20230113/51818_accc32b6/index.m3u8#第15集$https://vip.ffzy-play1.com/20230113/51820_125a3336/index.m3u8#第16集$https://vip.ffzy-play1.com/20230113/51819_5e7a7ba3/index.m3u8#第17集$https://vip.ffzy-play1.com/20230113/51823_9ec1a8a3/index.m3u8#第18集$https://vip.ffzy-play1.com/20230113/51821_4c1ffef1/index.m3u8#第19集$https://vip.ffzy-play1.com/20230113/51824_49ea57cc/index.m3u8#第20集$https://vip.ffzy-play1.com/20230113/51822_d0b9b4f5/index.m3u8#第21集$https://vip.ffzy-play1.com/20230113/51827_47acc56e/index.m3u8#第22集$https://vip.ffzy-play1.com/20230113/51826_734d9dca/index.m3u8#第23集$https://vip.ffzy-play1.com/20230113/51825_b2d2519a/index.m3u8#第24集$https://vip.ffzy-play1.com/20230113/51830_89f5b706/index.m3u8#第25集$https://vip.ffzy-play1.com/20230113/51829_ea6338b5/index.m3u8#第26集$https://vip.ffzy-play1.com/20230113/51828_238a266c/index.m3u8#第27集$https://vip.ffzy-play1.com/20230113/51833_07a1c600/index.m3u8#第28集$https://vip.ffzy-play1.com/20230113/51831_be7040f9/index.m3u8#第29集$https://vip.ffzy-play1.com/20230113/51832_54e2177f/index.m3u8#第30集$https://vip.ffzy-play1.com/20230113/51835_4bda68e3/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 35966,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    30,
+    30,
+    30,
+    30,
+    30,
+    30
+   ],
+   "cand_idx": "vod010",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "士兵突击",
+   "vod_year": "2006",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "已完结",
+   "vod_actor": "王宝强,陈思诚,段奕宏,张译,邢佳栋,张国强,李晨,范雷,高峰",
+   "vod_director": "康洪雷",
+   "vod_content": "<p>　　木讷的许三多（王宝强）没进军营，就因看见坦克时“举手投降”招来以“不抛弃、不放弃”精神闻名全团的“钢七连”连长高城（张国强）的反感，入营后，班长史今（张译）成为他的依靠，副班长也是老乡的伍六一（邢家栋）却因他的笨拙将其视为肉中刺。新兵训练结束后，许三多被分到偏远艰苦的后 勤管道维护班五班，一同来部队的老乡成才（陈思成）则去了钢七连。<br/>　　被现实打垮的五班班长老马（范雷）随随便便的一句话被许三多当作命令接收，凭借憨厚的执拗劲，他用六个月时间完成了一件所有人都认为不可能完成的任务，令五班整体感动，精神面貌焕然一新，自己也因此来到钢七连，重见班长史今。喜悦过后，一个个看似不可能跨过去的槛在他脚下一字排开。而在这一过程中，他从史今、伍六一、高城、老A袁朗（段奕宏）及吴哲（李晨）等人身上学到了很多很多，从一个“孬兵”变成了一个“好兵”。</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20221025-1/e199fb9f19c06fcc0b2bb9153898efc2.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 30,
+     "play_url": "第01集$https://vip1.lz-cdn.com/share/a5593d9c8b76cb79cf9da320681c6c25#第02集$https://vip1.lz-cdn.com/share/72ec488cc13c530187b1184f58c26a3f#第03集$https://vip1.lz-cdn.com/share/ab6e6f39240d7dc6387a0f2e0efc148e#第04集$https://vip1.lz-cdn.com/share/2b0a35b51e15d03eadb2665109246f6f#第05集$https://vip1.lz-cdn.com/share/ce3d865b7bb66f7728988e0220bd51bd#第06集$https://vip1.lz-cdn.com/share/82b05ac4ebef496529bb27f3c6786782#第07集$https://vip1.lz-cdn.com/share/aaf726bd3919e42a0712f5a22e449703#第08集$https://vip1.lz-cdn.com/share/59b2aface30c16993c3a1d5ac9591da7#第09集$https://vip1.lz-cdn.com/share/6ff4bf36c3cc15f967e403aa0f85f0cd#第10集$https://vip1.lz-cdn.com/share/14747ce6489fb4e8a58fe09fa2e91827#第11集$https://vip1.lz-cdn.com/share/d9ff4e5efa087c26ac440ffcf4ad83f9#第12集$https://vip1.lz-cdn.com/share/5f31aac2b5c1e3234a9eb40029ea0f11#第13集$https://vip1.lz-cdn.com/share/b13245211331d16e2a04423665d4b3a8#第14集$https://vip1.lz-cdn.com/share/fa17a68f853853baf9cf1ee222cfe999#第15集$https://vip1.lz-cdn.com/share/def71e2a9748f1ffcfd9f1a2df52557b#第16集$https://vip1.lz-cdn.com/share/f73f24c01342e629a5e21b754a4e1bbc#第17集$https://vip1.lz-cdn.com/share/6df0f11ac980d2c59e5b4dab6a8e7611#第18集$https://vip1.lz-cdn.com/share/e62dfd885dcb4b83dda5d4e336fdf520#第19集$https://vip1.lz-cdn.com/share/9d59637d4cc60029d3e9498f0d943286#第20集$https://vip1.lz-cdn.com/share/34005deb3eddd8787abaa56e1febced6#第21集$https://vip1.lz-cdn.com/share/49776c0398e040751f38ed636c127ab1#第22集$https://vip1.lz-cdn.com/share/6591c2bacb2f38c5a1da173a284be004#第23集$https://vip1.lz-cdn.com/share/595b8086058fbf22a5bdfc5b01273e2c#第24集$https://vip1.lz-cdn.com/share/f88d1feb40c2231c27c62c38957ae0fc#第25集$https://vip1.lz-cdn.com/share/061a107cb23e524a972dec77e905d9ca#第26集$https://vip1.lz-cdn.com/share/c0df98ebd81058683de4b89e9bda1fc5#第27集$https://vip1.lz-cdn.com/share/2ef976d606b9f3c03ce54885cc8f20dc#第28集$https://vip1.lz-cdn.com/share/8a0a18ee792712a3d3aa044dbfc581ee#第29集$https://vip1.lz-cdn.com/share/dfcd14fa8f9cf6f8590a59b72a890c7b#第30集$https://vip1.lz-cdn.com/share/5a56d275949eb284b4884f30ed88a045",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 30,
+     "play_url": "第01集$https://vip1.lz-cdn.com/20221024/35914_405dfc46/index.m3u8#第02集$https://vip1.lz-cdn.com/20221024/35915_bbd7d686/index.m3u8#第03集$https://vip1.lz-cdn.com/20221024/35916_adee7934/index.m3u8#第04集$https://vip1.lz-cdn.com/20221024/35917_67b539cc/index.m3u8#第05集$https://vip1.lz-cdn.com/20221024/35918_6a2561a4/index.m3u8#第06集$https://vip1.lz-cdn.com/20221024/35919_616d75b3/index.m3u8#第07集$https://vip1.lz-cdn.com/20221024/35920_7e71928b/index.m3u8#第08集$https://vip1.lz-cdn.com/20221024/35921_409ad5b6/index.m3u8#第09集$https://vip1.lz-cdn.com/20221024/35922_2a622b8f/index.m3u8#第10集$https://vip1.lz-cdn.com/20221024/35923_0e034026/index.m3u8#第11集$https://vip1.lz-cdn.com/20221024/35924_dd43e175/index.m3u8#第12集$https://vip1.lz-cdn.com/20221024/35925_bec942c9/index.m3u8#第13集$https://vip1.lz-cdn.com/20221024/35926_988c6fce/index.m3u8#第14集$https://vip1.lz-cdn.com/20221024/35927_5e17c9e1/index.m3u8#第15集$https://vip1.lz-cdn.com/20221024/35928_f25953f6/index.m3u8#第16集$https://vip1.lz-cdn.com/20221024/35929_61383402/index.m3u8#第17集$https://vip1.lz-cdn.com/20221024/35930_ebc87036/index.m3u8#第18集$https://vip1.lz-cdn.com/20221024/35931_e66f192d/index.m3u8#第19集$https://vip1.lz-cdn.com/20221024/35932_25629acb/index.m3u8#第20集$https://vip1.lz-cdn.com/20221024/35933_eee3d71c/index.m3u8#第21集$https://vip1.lz-cdn.com/20221024/35934_d9009c6b/index.m3u8#第22集$https://vip1.lz-cdn.com/20221024/35935_e85b7768/index.m3u8#第23集$https://vip1.lz-cdn.com/20221024/35936_46c75cdf/index.m3u8#第24集$https://vip1.lz-cdn.com/20221024/35937_494eb6c9/index.m3u8#第25集$https://vip1.lz-cdn.com/20221024/35938_5b9fb9b0/index.m3u8#第26集$https://vip1.lz-cdn.com/20221024/35939_70a428b2/index.m3u8#第27集$https://vip1.lz-cdn.com/20221024/35940_4a08d163/index.m3u8#第28集$https://vip1.lz-cdn.com/20221024/35941_d73c2da1/index.m3u8#第29集$https://vip1.lz-cdn.com/20221024/35942_901457d7/index.m3u8#第30集$https://vip1.lz-cdn.com/20221024/35943_ea9bf12a/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 28537,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 30,
+     "play_url": "第01集$https://vip.ffzy-play10.com/share/1b84c4cee2b8b3d823b30e2d604b1878#第02集$https://vip.ffzy-play10.com/share/62db9e3397c76207a687c360e0243317#第03集$https://vip.ffzy-play10.com/share/5446f217e9504bc593ad9dcf2ec88dda#第04集$https://vip.ffzy-play10.com/share/69dd2eff9b6a421d5ce262b093bdab23#第05集$https://vip.ffzy-play10.com/share/9a83eabfb7fa303a2d85dbc6f37483e5#第06集$https://vip.ffzy-play10.com/share/e564618b1a0f9a0e5b043f63d43fc065#第07集$https://vip.ffzy-play10.com/share/0f34132b15dd02f282a11ea1e322a96d#第08集$https://vip.ffzy-play10.com/share/05e97c207235d63ceb1db43c60db7bbb#第09集$https://vip.ffzy-play10.com/share/e275193bc089e9b3ca1aeef3c44be496#第10集$https://vip.ffzy-play10.com/share/913eb3f7a1d5e28b3f30b2dda4f5569e#第11集$https://vip.ffzy-play10.com/share/619427579e7b067421f6aa89d4a8990c#第12集$https://vip.ffzy-play10.com/share/9d1827dc5f75b9d65d80e25eb862e676#第13集$https://vip.ffzy-play10.com/share/852c296dfa59522f563aef29d8d0adf6#第14集$https://vip.ffzy-play10.com/share/02f063c236c7eef66324b432b748d15d#第15集$https://vip.ffzy-play10.com/share/90cc440b1b8caa520c562ac4e4bbcb51#第16集$https://vip.ffzy-play10.com/share/1a260649dac0ddb2290f609a13f4b814#第17集$https://vip.ffzy-play10.com/share/abd987257ff0eddc2bc6602538cb3c43#第18集$https://vip.ffzy-play10.com/share/0e1418311a013ebb344e7fcf8d199cc3#第19集$https://vip.ffzy-play10.com/share/9a0684d9dad4967ddd09594511de2c52#第20集$https://vip.ffzy-play10.com/share/69783ee76a92567d446143b811519068#第21集$https://vip.ffzy-play10.com/share/adfe565bb7839b83ea8812e860d73c79#第22集$https://vip.ffzy-play10.com/share/56f0b515214a7ec9f08a4bbf9a56f7ba#第23集$https://vip.ffzy-play10.com/share/f4e3ce3e7b581ff32e40968298ba013d#第24集$https://vip.ffzy-play10.com/share/bce9abf229ffd7e570818476ee5d7dde#第25集$https://vip.ffzy-play10.com/share/a7c9585703d275249f30a088cebba0ad#第26集$https://vip.ffzy-play10.com/share/0a17ad0fa0870b05f172deeb05efef8e#第27集$https://vip.ffzy-play10.com/share/196894366d827c56344bfe5186dbcf64#第28集$https://vip.ffzy-play10.com/share/575425a3f433138553be468c9d1ecba7#第29集$https://vip.ffzy-play10.com/share/c5c64c10cfd77b16a03aa81f09499f25#第30集$https://vip.ffzy-play10.com/share/91576cbf171986154e523305a69c79d3",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 30,
+     "play_url": "第01集$https://vip.ffzy-play10.com/20230104/6206_4541ae92/index.m3u8#第02集$https://vip.ffzy-play10.com/20230104/6207_7076be88/index.m3u8#第03集$https://vip.ffzy-play10.com/20230104/6209_37b3b4d1/index.m3u8#第04集$https://vip.ffzy-play10.com/20230104/6208_a2873ed3/index.m3u8#第05集$https://vip.ffzy-play10.com/20230104/6212_46c8eb51/index.m3u8#第06集$https://vip.ffzy-play10.com/20230104/6210_220d4566/index.m3u8#第07集$https://vip.ffzy-play10.com/20230104/6211_f07e6492/index.m3u8#第08集$https://vip.ffzy-play10.com/20230104/6214_7a5fc640/index.m3u8#第09集$https://vip.ffzy-play10.com/20230104/6213_4ee81d86/index.m3u8#第10集$https://vip.ffzy-play10.com/20230104/6215_4717a844/index.m3u8#第11集$https://vip.ffzy-play10.com/20230104/6216_0cfcb223/index.m3u8#第12集$https://vip.ffzy-play10.com/20230104/6217_8278f2a5/index.m3u8#第13集$https://vip.ffzy-play10.com/20230104/6219_3d2781b4/index.m3u8#第14集$https://vip.ffzy-play10.com/20230104/6218_f059c984/index.m3u8#第15集$https://vip.ffzy-play10.com/20230104/6220_28b83e1d/index.m3u8#第16集$https://vip.ffzy-play10.com/20230104/6222_170fdc63/index.m3u8#第17集$https://vip.ffzy-play10.com/20230104/6221_3fc2c9ac/index.m3u8#第18集$https://vip.ffzy-play10.com/20230104/6223_a50684b1/index.m3u8#第19集$https://vip.ffzy-play10.com/20230104/6225_2a897e5d/index.m3u8#第20集$https://vip.ffzy-play10.com/20230104/6224_e66aab0b/index.m3u8#第21集$https://vip.ffzy-play10.com/20230104/6226_2e11b76e/index.m3u8#第22集$https://vip.ffzy-play10.com/20230104/6227_e4453a7f/index.m3u8#第23集$https://vip.ffzy-play10.com/20230104/6228_b81e2971/index.m3u8#第24集$https://vip.ffzy-play10.com/20230104/6229_f4298940/index.m3u8#第25集$https://vip.ffzy-play10.com/20230104/6230_1aaec0db/index.m3u8#第26集$https://vip.ffzy-play10.com/20230104/6231_96f68642/index.m3u8#第27集$https://vip.ffzy-play10.com/20230104/6233_6fb320fe/index.m3u8#第28集$https://vip.ffzy-play10.com/20230104/6232_27f896d1/index.m3u8#第29集$https://vip.ffzy-play10.com/20230104/6235_b2999336/index.m3u8#第30集$https://vip.ffzy-play10.com/20230104/6234_209de239/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 38612,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    30,
+    30,
+    30,
+    30
+   ],
+   "cand_idx": "vod011",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    1800
+   ]
+  },
+  {
+   "vod_name": "大染坊",
+   "vod_year": "2003",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "已完结",
+   "vod_actor": "侯勇,罗钢,萨日娜,刘奕君,王思懿,孙俪,何伟,张秋歌",
+   "vod_director": "王文杰",
+   "vod_content": "<p>　　清朝末年，一派萧瑟之气。父母早亡无家可归的十五岁少年陈六子流落街头，靠着要饭存活。但六子天子聪颖，机智灵活，时不时去听听说书，了解外面的世界。某个冬天，六子得到了饭店伙计锁子叔的照顾，让六子感激了一生。冻得没办法的六子倒在了周村通和染坊门前，早晨出来扫雪的周掌柜，救下了六子，且把他认为义子，取名陈寿亭（侯勇 饰）。就这样，陈寿亭开始了在通和染坊的生活。时光荏苒，十年间，寿亭通过自己的勤奋和机智，熟练的掌握了染坊的所有技艺和事项，把通和染坊经营成了周村的最大染坊，引起了大亨染坊老板的觊觎。他想通过贿赂把寿亭挖过来，寿亭却意志坚定，连绑架他的土匪都对他心生敬佩。就这样，周村上下无人不知晓陈寿亭。<br/>　　大户卢家老爷看中了寿亭，想让其去青岛协助从德国归来学印染的儿子卢家驹（罗刚 饰）。寿亭因此走上了工业印染之路和创业之路……</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20220720-1/4abdea21b5370125357a9fa0634ad302.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 24,
+     "play_url": "第01集$https://vip1.lz-cdn1.com/share/b33eccca5bd3e0a03670f386ed90d603#第02集$https://vip1.lz-cdn1.com/share/fea93b2c5bcdbd7363cc3a126dfd0d33#第03集$https://vip1.lz-cdn1.com/share/397d991d3c5b8183562b39b2fab837b2#第04集$https://vip1.lz-cdn1.com/share/2fa8af078803491746235057c546c1b6#第05集$https://vip1.lz-cdn1.com/share/ba67e777107290283dcc9adaed9459e1#第06集$https://vip1.lz-cdn1.com/share/be100b06aa2c4c5164f9f1c4a4fe2781#第07集$https://vip1.lz-cdn1.com/share/00650747d878eecae4d468a880de38b2#第08集$https://vip1.lz-cdn1.com/share/d5c60496784f8d6c43344eb3bd18574b#第09集$https://vip1.lz-cdn1.com/share/0f06b381e883d28f330111747070706e#第10集$https://vip1.lz-cdn1.com/share/fa393b662023edc37bd15563ac2c2167#第11集$https://vip1.lz-cdn1.com/share/f4faae32a13a7dfc1a3a66680cae2c28#第12集$https://vip1.lz-cdn1.com/share/ebc2aa04e75e3caabda543a1317160c0#第13集$https://vip1.lz-cdn1.com/share/786ab8c4d7ee758f80d57e65582e609d#第14集$https://vip1.lz-cdn1.com/share/a8e5a72192378802318bf51063153729#第15集$https://vip1.lz-cdn1.com/share/b32a29fd7425fb6b46049bf9e240cda1#第16集$https://vip1.lz-cdn1.com/share/5226ac4e0683ad4f37000ec897761687#第17集$https://vip1.lz-cdn1.com/share/6e171103e852992b0d83f35dbb0d358e#第18集$https://vip1.lz-cdn1.com/share/713f96370f69fb23e3387062bc914719#第19集$https://vip1.lz-cdn1.com/share/fa2246fa0fdf0d3e270c86767b77ba1b#第20集$https://vip1.lz-cdn1.com/share/c4525d4b0ad85bb7ed6e5f31fbe008ce#第21集$https://vip1.lz-cdn1.com/share/59accb9fe696ce55e28b7d23a009e2d1#第22集$https://vip1.lz-cdn1.com/share/59f8c60b48c6ee178ca96d1e88e0460a#第23集$https://vip1.lz-cdn1.com/share/428b8e0c8ae876e78e551367212ae73b#第24集$https://vip1.lz-cdn1.com/share/aaadbe0f309ec995a89dd6e74c9d3dbc",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 24,
+     "play_url": "第01集$https://vip1.lz-cdn1.com/20220720/11846_9b13a168/index.m3u8#第02集$https://vip1.lz-cdn1.com/20220720/11847_d29364fb/index.m3u8#第03集$https://vip1.lz-cdn1.com/20220720/11848_1f05ad02/index.m3u8#第04集$https://vip1.lz-cdn1.com/20220720/11849_ea1e1fdd/index.m3u8#第05集$https://vip1.lz-cdn1.com/20220720/11852_8a90ca06/index.m3u8#第06集$https://vip1.lz-cdn1.com/20220720/11857_8d63e7a5/index.m3u8#第07集$https://vip1.lz-cdn1.com/20220720/11860_54ca1ce6/index.m3u8#第08集$https://vip1.lz-cdn1.com/20220720/11861_121cde47/index.m3u8#第09集$https://vip1.lz-cdn1.com/20220720/11862_84aabd63/index.m3u8#第10集$https://vip1.lz-cdn1.com/20220720/11865_190f4cc1/index.m3u8#第11集$https://vip1.lz-cdn1.com/20220720/11868_1380997f/index.m3u8#第12集$https://vip1.lz-cdn1.com/20220720/11871_d41859dc/index.m3u8#第13集$https://vip1.lz-cdn1.com/20220720/11874_68e00ecd/index.m3u8#第14集$https://vip1.lz-cdn1.com/20220720/11876_389f6f08/index.m3u8#第15集$https://vip1.lz-cdn1.com/20220720/11878_59fdd240/index.m3u8#第16集$https://vip1.lz-cdn1.com/20220720/11879_0caeac8c/index.m3u8#第17集$https://vip1.lz-cdn1.com/20220720/11880_a04025bd/index.m3u8#第18集$https://vip1.lz-cdn1.com/20220720/11881_a1cb8c37/index.m3u8#第19集$https://vip1.lz-cdn1.com/20220720/11882_b8bced4c/index.m3u8#第20集$https://vip1.lz-cdn1.com/20220720/11883_a420709b/index.m3u8#第21集$https://vip1.lz-cdn1.com/20220720/11884_35077db4/index.m3u8#第22集$https://vip1.lz-cdn1.com/20220720/11885_9df9f44b/index.m3u8#第23集$https://vip1.lz-cdn1.com/20220720/11887_fffafd91/index.m3u8#第24集$https://vip1.lz-cdn1.com/20220720/11886_55f3fe84/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 28225,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 24,
+     "play_url": "第01集$https://c1.rrcdnbf2.com/video/daranfang/第01集/index.m3u8#第02集$https://c1.rrcdnbf2.com/video/daranfang/第02集/index.m3u8#第03集$https://c1.rrcdnbf2.com/video/daranfang/第03集/index.m3u8#第04集$https://c1.rrcdnbf2.com/video/daranfang/第04集/index.m3u8#第05集$https://c1.rrcdnbf2.com/video/daranfang/第05集/index.m3u8#第06集$https://c1.rrcdnbf2.com/video/daranfang/第06集/index.m3u8#第07集$https://c1.rrcdnbf2.com/video/daranfang/第07集/index.m3u8#第08集$https://c1.rrcdnbf2.com/video/daranfang/第08集/index.m3u8#第09集$https://c1.rrcdnbf2.com/video/daranfang/第09集/index.m3u8#第10集$https://c1.rrcdnbf2.com/video/daranfang/第10集/index.m3u8#第11集$https://c1.rrcdnbf2.com/video/daranfang/第11集/index.m3u8#第12集$https://c1.rrcdnbf2.com/video/daranfang/第12集/index.m3u8#第13集$https://c1.rrcdnbf2.com/video/daranfang/第13集/index.m3u8#第14集$https://c1.rrcdnbf2.com/video/daranfang/第14集/index.m3u8#第15集$https://c1.rrcdnbf2.com/video/daranfang/第15集/index.m3u8#第16集$https://c1.rrcdnbf2.com/video/daranfang/第16集/index.m3u8#第17集$https://c1.rrcdnbf2.com/video/daranfang/第17集/index.m3u8#第18集$https://c1.rrcdnbf2.com/video/daranfang/第18集/index.m3u8#第19集$https://c1.rrcdnbf2.com/video/daranfang/第19集/index.m3u8#第20集$https://c1.rrcdnbf2.com/video/daranfang/第20集/index.m3u8#第21集$https://c1.rrcdnbf2.com/video/daranfang/第21集/index.m3u8#第22集$https://c1.rrcdnbf2.com/video/daranfang/第22集/index.m3u8#第23集$https://c1.rrcdnbf2.com/video/daranfang/第23集/index.m3u8#第24集$https://c1.rrcdnbf2.com/video/daranfang/第24集/index.m3u8",
+     "remarks": "完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 24,
+     "play_url": "第01集$https://vip.ffzy-play10.com/share/7250eb93b3c18cc9daa29cf58af7a004#第02集$https://vip.ffzy-play10.com/share/013a006f03dbc5392effeb8f18fda755#第03集$https://vip.ffzy-play10.com/share/301ad0e3bd5cb1627a2044908a42fdc2#第04集$https://vip.ffzy-play10.com/share/4d5b995358e7798bc7e9d9db83c612a5#第05集$https://vip.ffzy-play10.com/share/ab88b15733f543179858600245108dd8#第06集$https://vip.ffzy-play10.com/share/b0b183c207f46f0cca7dc63b2604f5cc#第07集$https://vip.ffzy-play10.com/share/f9028faec74be6ec9b852b0a542e2f39#第08集$https://vip.ffzy-play10.com/share/8f7d807e1f53eff5f9efbe5cb81090fb#第09集$https://vip.ffzy-play10.com/share/02a32ad2669e6fe298e607fe7cc0e1a0#第10集$https://vip.ffzy-play10.com/share/fc3cf452d3da8402bebb765225ce8c0e#第11集$https://vip.ffzy-play10.com/share/3d8e28caf901313a554cebc7d32e67e5#第12集$https://vip.ffzy-play10.com/share/fa83a11a198d5a7f0bf77a1987bcd006#第13集$https://vip.ffzy-play10.com/share/e97ee2054defb209c35fe4dc94599061#第14集$https://vip.ffzy-play10.com/share/b86e8d03fe992d1b0e19656875ee557c#第15集$https://vip.ffzy-play10.com/share/84f7e69969dea92a925508f7c1f9579a#第16集$https://vip.ffzy-play10.com/share/362e80d4df43b03ae6d3f8540cd63626#第17集$https://vip.ffzy-play10.com/share/f4552671f8909587cf485ea990207f3b#第18集$https://vip.ffzy-play10.com/share/fe8c15fed5f808006ce95eddb7366e35#第19集$https://vip.ffzy-play10.com/share/1efa39bcaec6f3900149160693694536#第20集$https://vip.ffzy-play10.com/share/22ac3c5a5bf0b520d281c122d1490650#第21集$https://vip.ffzy-play10.com/share/aff1621254f7c1be92f64550478c56e6#第22集$https://vip.ffzy-play10.com/share/92fb0c6d1758261f10d052e6e2c1123c#第23集$https://vip.ffzy-play10.com/share/f7e9050c92a851b0016442ab604b0488#第24集$https://vip.ffzy-play10.com/share/addfa9b7e234254d26e9c7f2af1005cb",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 24,
+     "play_url": "第01集$https://vip.ffzy-play10.com/20221204/832_73e64884/index.m3u8#第02集$https://vip.ffzy-play10.com/20221204/833_4ff52b31/index.m3u8#第03集$https://vip.ffzy-play10.com/20221204/834_213d9970/index.m3u8#第04集$https://vip.ffzy-play10.com/20221204/835_b8aaa1d7/index.m3u8#第05集$https://vip.ffzy-play10.com/20221204/836_72d7c256/index.m3u8#第06集$https://vip.ffzy-play10.com/20221204/837_e0a9c8d7/index.m3u8#第07集$https://vip.ffzy-play10.com/20221204/838_60dd7edb/index.m3u8#第08集$https://vip.ffzy-play10.com/20221204/839_9a23ae09/index.m3u8#第09集$https://vip.ffzy-play10.com/20221204/841_6a8b5616/index.m3u8#第10集$https://vip.ffzy-play10.com/20221204/842_d8b34cd4/index.m3u8#第11集$https://vip.ffzy-play10.com/20221204/843_3548f6a2/index.m3u8#第12集$https://vip.ffzy-play10.com/20221204/840_bb2595ae/index.m3u8#第13集$https://vip.ffzy-play10.com/20221204/844_a4780047/index.m3u8#第14集$https://vip.ffzy-play10.com/20221204/845_b769e6f4/index.m3u8#第15集$https://vip.ffzy-play10.com/20221204/846_c68268ac/index.m3u8#第16集$https://vip.ffzy-play10.com/20221204/848_639a894d/index.m3u8#第17集$https://vip.ffzy-play10.com/20221204/847_4836b6d8/index.m3u8#第18集$https://vip.ffzy-play10.com/20221204/849_4a0f36ce/index.m3u8#第19集$https://vip.ffzy-play10.com/20221204/850_1b217346/index.m3u8#第20集$https://vip.ffzy-play10.com/20221204/852_24e1ed8d/index.m3u8#第21集$https://vip.ffzy-play10.com/20221204/853_f780c897/index.m3u8#第22集$https://vip.ffzy-play10.com/20221204/851_39d47ba0/index.m3u8#第23集$https://vip.ffzy-play10.com/20221204/854_7c5cd909/index.m3u8#第24集$https://vip.ffzy-play10.com/20221204/855_19f7c24b/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 38234,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    24,
+    24,
+    24,
+    24,
+    24
+   ],
+   "cand_idx": "vod012",
+   "frames_captured": [
+    3,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "天道",
+   "vod_year": "2008",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "完结",
+   "vod_actor": "王志文,左小青,曾红生,石爻,郑强,王全有,施大生,李洪权,杨俊勇,方晓莉,赵会南,张伟,张红宇,潘小龙,蕴衡,赵淑珍,姚金飞,左金珠,江水,马源,赵广泉,陈志龙,邹笨笨,苏萌,薛勇,徐仕龙,陈韬,邱云鹤",
+   "vod_director": "张前",
+   "vod_content": "年轻的女警官芮小丹（左小青 饰）通过朋友结识了商界怪才丁元英（王志文 饰），并受托在古城照料丁元英的生活。丁元英异于常人的性格和让人瞠目结舌的才华深深吸引着芮小丹。　　借由对音乐的共同热爱和制备音箱的契机，芮小丹和丁元英建立了恋爱关系，并结识了几个古城的音乐发烧友。发烧友看中丁元英的奇才，想要利用他的才华帮助自己的农村老家脱贫。而小丹也希望丁元英用自己的智慧在这个极度贫困的农村写一个神话，作为送给她的礼物。　　丁元英答应了小丹的请求，带领几个发烧友重出江湖，给音响市场带来了巨变的同时，也生动的演绎了所谓天道的“道法自然，如来”。可是他的礼物完成时，那个收礼的人却已不在身边，他也有自己难以出离的天道。",
+   "vod_pic": "https://p.bfvp26.com/upload/vod/20230424-34/5399a2325d1492fd74990b2324faef9b.jpg",
+   "routes": [
+    {
+     "provider": "暴风",
+     "episode_count": 24,
+     "play_url": "第01集$https://c1.rrcdnbf2.com/video/tiandao/第01集/index.m3u8#第02集$https://c1.rrcdnbf2.com/video/tiandao/第02集/index.m3u8#第03集$https://c1.rrcdnbf2.com/video/tiandao/第03集/index.m3u8#第04集$https://c1.rrcdnbf2.com/video/tiandao/第04集/index.m3u8#第05集$https://c1.rrcdnbf2.com/video/tiandao/第05集/index.m3u8#第06集$https://c1.rrcdnbf2.com/video/tiandao/第06集/index.m3u8#第07集$https://c1.rrcdnbf2.com/video/tiandao/第07集/index.m3u8#第08集$https://c1.rrcdnbf2.com/video/tiandao/第08集/index.m3u8#第09集$https://c1.rrcdnbf2.com/video/tiandao/第09集/index.m3u8#第10集$https://c1.rrcdnbf2.com/video/tiandao/第10集/index.m3u8#第11集$https://c1.rrcdnbf2.com/video/tiandao/第11集/index.m3u8#第12集$https://c1.rrcdnbf2.com/video/tiandao/第12集/index.m3u8#第13集$https://c1.rrcdnbf2.com/video/tiandao/第13集/index.m3u8#第14集$https://c1.rrcdnbf2.com/video/tiandao/第14集/index.m3u8#第15集$https://c1.rrcdnbf2.com/video/tiandao/第15集/index.m3u8#第16集$https://c1.rrcdnbf2.com/video/tiandao/第16集/index.m3u8#第17集$https://c1.rrcdnbf2.com/video/tiandao/第17集/index.m3u8#第18集$https://c1.rrcdnbf2.com/video/tiandao/第18集/index.m3u8#第19集$https://c1.rrcdnbf2.com/video/tiandao/第19集/index.m3u8#第20集$https://c1.rrcdnbf2.com/video/tiandao/第20集/index.m3u8#第21集$https://c1.rrcdnbf2.com/video/tiandao/第21集/index.m3u8#第22集$https://c1.rrcdnbf2.com/video/tiandao/第22集/index.m3u8#第23集$https://c1.rrcdnbf2.com/video/tiandao/第23集/index.m3u8#第24集$https://c1.rrcdnbf2.com/video/tiandao/第24集/index.m3u8",
+     "remarks": "完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 24,
+     "play_url": "第01集$https://vip.ffzy-play1.com/share/37d5fa050fb58c769c3d89b398687e73#第02集$https://vip.ffzy-play1.com/share/67a9b6e59ac1105da3d7785693e2028d#第03集$https://vip.ffzy-play1.com/share/c45f8365d3c1c106f622f6f911d45a02#第04集$https://vip.ffzy-play1.com/share/ea234457334b3434acc6743903209aac#第05集$https://vip.ffzy-play1.com/share/9e69e41e77de02036b07dca91c05b099#第06集$https://vip.ffzy-play10.com/share/a3f61f3a8034cbfb5ecf0d785e750fb3#第07集$https://vip.ffzy-play1.com/share/d342e592123e65298902fdd15830ae13#第08集$https://vip.ffzy-play1.com/share/9844af29b862aa91e9cfac1a42ad63d0#第09集$https://vip.ffzy-play1.com/share/bafcc0f3168a2d49326da2ad2b1dce7f#第10集$https://vip.ffzy-play1.com/share/a4c4a62d6155855a5d075003ff696238#第11集$https://vip.ffzy-play1.com/share/b3999f2198b3a6ddc547b84352c90e9c#第12集$https://vip.ffzy-play1.com/share/88f4ee270f7b74877a1fd3ef65df2192#第13集$https://vip.ffzy-play1.com/share/91a37027eacd1e5e02870ff3c047c936#第14集$https://vip.ffzy-play1.com/share/f16ae7b81aea1828c86aa81e74c511de#第15集$https://vip.ffzy-play1.com/share/41296a5e3d7d6463387e976095cb1c15#第16集$https://vip.ffzy-play1.com/share/264e1eb9b741b6dba0e4eec88d14eed5#第17集$https://vip.ffzy-play1.com/share/8f48915bdbf89679682d1f382a1a3b71#第18集$https://vip.ffzy-play1.com/share/f37ef71e570a8c693cac4cfca7654f8e#第19集$https://vip.ffzy-play1.com/share/4320755a49efb20bbca206e4fea57140#第20集$https://vip.ffzy-play1.com/share/8038ffd434bda60b2d38cb52a38f8629#第21集$https://vip.ffzy-play1.com/share/a2f32c0381843529ca285ed87f5d1982#第22集$https://vip.ffzy-play1.com/share/2da5c2e08b359a58269cf225feef9a54#第23集$https://vip.ffzy-play10.com/share/cfe795a0a3c7bc1683f2efd8837dde0c#第24集$https://vip.ffzy-play1.com/share/d51e9369962ac774d36ccea0f29f9d65",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 24,
+     "play_url": "第01集$https://vip.ffzy-play1.com/20221218/37469_62db5efe/index.m3u8#第02集$https://vip.ffzy-play1.com/20221218/37468_0ec09bbc/index.m3u8#第03集$https://vip.ffzy-play1.com/20221218/37470_94f71c11/index.m3u8#第04集$https://vip.ffzy-play1.com/20221218/37471_1f187085/index.m3u8#第05集$https://vip.ffzy-play1.com/20221218/37472_94d87b94/index.m3u8#第06集$https://vip.ffzy-play10.com/20221223/4767_aca5d244/index.m3u8#第07集$https://vip.ffzy-play1.com/20221218/37473_a7c8b01a/index.m3u8#第08集$https://vip.ffzy-play1.com/20221218/37476_027d7bb8/index.m3u8#第09集$https://vip.ffzy-play1.com/20221218/37474_a4af76b9/index.m3u8#第10集$https://vip.ffzy-play1.com/20221218/37475_314013a8/index.m3u8#第11集$https://vip.ffzy-play1.com/20221218/37477_9d68b548/index.m3u8#第12集$https://vip.ffzy-play1.com/20221218/37479_9acd80c7/index.m3u8#第13集$https://vip.ffzy-play1.com/20221218/37478_811d6943/index.m3u8#第14集$https://vip.ffzy-play1.com/20221218/37482_8dd5a8e7/index.m3u8#第15集$https://vip.ffzy-play1.com/20221218/37481_ee9b2cdb/index.m3u8#第16集$https://vip.ffzy-play1.com/20221218/37480_9b122e07/index.m3u8#第17集$https://vip.ffzy-play1.com/20221218/37483_1ec917cd/index.m3u8#第18集$https://vip.ffzy-play1.com/20221218/37485_63cbf148/index.m3u8#第19集$https://vip.ffzy-play1.com/20221218/37484_78802e8f/index.m3u8#第20集$https://vip.ffzy-play1.com/20221218/37487_30964d14/index.m3u8#第21集$https://vip.ffzy-play1.com/20221218/37486_3c092424/index.m3u8#第22集$https://vip.ffzy-play1.com/20221218/37488_13449a0b/index.m3u8#第23集$https://vip.ffzy-play10.com/20221223/4765_67f63ef6/index.m3u8#第24集$https://vip.ffzy-play1.com/20221218/37489_82edb21f/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 36722,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    24,
+    24,
+    24
+   ],
+   "cand_idx": "vod013",
+   "frame_probe_failed": true
+  },
+  {
+   "vod_name": "狂飙",
+   "vod_year": "2023",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "已完结",
+   "vod_actor": "张译,张颂文,李一桐,张志坚,吴刚,倪大红,韩童生,李建义,石兆琪,李健,高叶,王骁,令卓,岳阳",
+   "vod_director": "徐纪周",
+   "vod_content": "<p>　　京海市一线刑警安欣（张译  饰），在与黑恶势力的斗争中，不断遭到保护伞的打击，始终无法将犯罪分子绳之以法。全国政法队伍教育整顿工作开展后，临江省派出指导组入驻京海，联合公检法司各部门，清除了政法队伍内部的腐败分子，粉碎了黑恶势力的保护伞，一举铲除了盘踞京海多年的强盛集团。</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20230114-1/f1fb8cb637333bc28c201a9f7461124b.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 39,
+     "play_url": "第01集$https://v.cdnlz29.com/share/f1b0775946bc0329b35b823b86eeb5f5#第02集$https://v.cdnlz29.com/share/2e7ceec8361275c4e31fee5fe422740b#第03集$https://v.cdnlz29.com/share/220c77af02f8ad8561b150d93000ddff#第04集$https://v.cdnlz29.com/share/81c2f886f91e18fe16d6f4e865877cb6#第05集$https://v.cdnlz29.com/share/2e74c2cf88f68a68c84e9509abc7ea56#第06集$https://v.cdnlz29.com/share/65f2a94c8c2d56d5b43a1a3d9d811102#第07集$https://v.cdnlz29.com/share/03fa2f7502f5f6b9169e67d17cbf51bb#第08集$https://v.cdnlz29.com/share/5a99158e0c52f9e7d290906c9d08268d#第09集$https://v.cdnlz29.com/share/de594ef5c314372edec29b93cab9d72e#第10集$https://v.cdnlz29.com/share/65fc9fb4897a89789352e211ca2d398f#第11集$https://v.cdnlz29.com/share/bbeb0c1b1fd44e392c7ce2fdbd137e87#第12集$https://v.cdnlz29.com/share/403ea2e851b9ab04a996beab4a480a30#第13集$https://v.cdnlz29.com/share/cdd96eedd7f695f4d61802f8105ba2b0#第14集$https://v.cdnlz29.com/share/058d6f2fbe951a5a56d96b1f1a6bca1c#第15集$https://v.cdnlz29.com/share/ad47a008a2f806aa6eb1b53852cd8b37#第16集$https://v.cdnlz29.com/share/7aee26c309def8c5a2a076eb250b8f36#第17集$https://v.cdnlz29.com/share/362387494f6be6613daea643a7706a42#第18集$https://v.cdnlz29.com/share/33267e5dc58fad346e92471c43fcccdc#第19集$https://v.cdnlz29.com/share/c315f0320b7cd4ec85756fac52d78076#第20集$https://v.cdnlz29.com/share/4bbdcc0e821637155ac4217bdab70d2e#第21集$https://v.cdnlz29.com/share/23fc4cba066f390a8cc729c7592b6ee8#第22集$https://v.cdnlz29.com/share/b1c00bcd4b5183705c134b3365f8c45e#第23集$https://v.cdnlz29.com/share/5e751896e527c862bf67251a474b3819#第24集$https://v.cdnlz29.com/share/08f38e0434442128fab5ead6217ca759#第25集$https://v.cdnlz29.com/share/361440528766bbaaaa1901845cf4152b#第26集$https://v.cdnlz29.com/share/ec1f850d934f440cfa8e4a18d2cf5463#第27集$https://v.cdnlz29.com/share/1d49780520898fe37f0cd6b41c5311bf#第28集$https://v.cdnlz29.com/share/47fd3c87f42f55d4b233417d49c34783#第29集$https://v.cdnlz29.com/share/9ff7c9eb9d37f434db778f59178012da#第30集$https://v.cdnlz29.com/share/a4613e8d72a61b3b69b32d040f89ad81#第31集$https://v.cdnlz29.com/share/cdcb2f5c7b071143529ef7f2705dfbc4#第32集$https://v.cdnlz29.com/share/78f7d96ea21ccae89a7b581295f34135#第33集$https://v.cdnlz29.com/share/22b1f2e0983160db6f7bb9f62f4dbb39#第34集$https://v.cdnlz29.com/share/5a45828dead8c065099cb653a2185df1#第35集$https://v.cdnlz29.com/share/d37124c4c79f357cb02c655671a432fa#第36集$https://v.cdnlz29.com/share/868b7df964b1af24c8c0a9e43a330c6a#第37集$https://v.cdnlz29.com/share/1006ff12c465532f8c574aeaa4461b16#第38集$https://v.cdnlz29.com/share/d37b3ca37106b2bfdeaa12647e3bb1c9#第39集$https://v.cdnlz29.com/share/030e65da2b1c944090548d36b244b28d",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 39,
+     "play_url": "第01集$https://v.cdnlz29.com/20251024/2700_ed34a79a/index.m3u8#第02集$https://v.cdnlz29.com/20251024/2702_4a7e6200/index.m3u8#第03集$https://v.cdnlz29.com/20251024/2703_da3f16cc/index.m3u8#第04集$https://v.cdnlz29.com/20251024/2704_fa348c14/index.m3u8#第05集$https://v.cdnlz29.com/20251024/2706_ab0542e1/index.m3u8#第06集$https://v.cdnlz29.com/20251024/2707_127ab890/index.m3u8#第07集$https://v.cdnlz29.com/20251024/2708_28375a53/index.m3u8#第08集$https://v.cdnlz29.com/20251024/2709_3d30718a/index.m3u8#第09集$https://v.cdnlz29.com/20251024/2710_195ac011/index.m3u8#第10集$https://v.cdnlz29.com/20251024/2711_eb3c3a56/index.m3u8#第11集$https://v.cdnlz29.com/20251024/2712_3bec680a/index.m3u8#第12集$https://v.cdnlz29.com/20251024/2713_63b878ab/index.m3u8#第13集$https://v.cdnlz29.com/20251024/2716_0e63ba1f/index.m3u8#第14集$https://v.cdnlz29.com/20251024/2717_1bdb648d/index.m3u8#第15集$https://v.cdnlz29.com/20251024/2718_31f05c6f/index.m3u8#第16集$https://v.cdnlz29.com/20251024/2719_e24d3073/index.m3u8#第17集$https://v.cdnlz29.com/20251024/2721_b7dd6a20/index.m3u8#第18集$https://v.cdnlz29.com/20251024/2722_4292ef0b/index.m3u8#第19集$https://v.cdnlz29.com/20251024/2723_037211d7/index.m3u8#第20集$https://v.cdnlz29.com/20251024/2725_24d2dd6f/index.m3u8#第21集$https://v.cdnlz29.com/20251024/2727_fd34e754/index.m3u8#第22集$https://v.cdnlz29.com/20251024/2726_00b7e88d/index.m3u8#第23集$https://v.cdnlz29.com/20251024/2728_0d0e381b/index.m3u8#第24集$https://v.cdnlz29.com/20251024/2731_973f2c97/index.m3u8#第25集$https://v.cdnlz29.com/20251024/2732_c4160957/index.m3u8#第26集$https://v.cdnlz29.com/20251024/2733_1509b64f/index.m3u8#第27集$https://v.cdnlz29.com/20251024/2735_6605b3f1/index.m3u8#第28集$https://v.cdnlz29.com/20251024/2736_6959d3e8/index.m3u8#第29集$https://v.cdnlz29.com/20251024/2737_695944a5/index.m3u8#第30集$https://v.cdnlz29.com/20251024/2738_82f0d5e4/index.m3u8#第31集$https://v.cdnlz29.com/20251024/2741_357375b7/index.m3u8#第32集$https://v.cdnlz29.com/20251024/2742_289559c2/index.m3u8#第33集$https://v.cdnlz29.com/20251024/2743_1b18b774/index.m3u8#第34集$https://v.cdnlz29.com/20251024/2744_409e57b8/index.m3u8#第35集$https://v.cdnlz29.com/20251024/2746_8baee2a9/index.m3u8#第36集$https://v.cdnlz29.com/20251024/2747_f5213ca2/index.m3u8#第37集$https://v.cdnlz29.com/20251024/2748_ef4a6e35/index.m3u8#第38集$https://v.cdnlz29.com/20251024/2749_33294b07/index.m3u8#第39集$https://v.cdnlz29.com/20251024/2751_be428cf9/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 26197,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 39,
+     "play_url": "第01集$https://c1.ddbbffcdn.com/video/kuangbiao/第01集/index.m3u8#第02集$https://c1.ddbbffcdn.com/video/kuangbiao/第02集/index.m3u8#第03集$https://c1.ddbbffcdn.com/video/kuangbiao/第03集/index.m3u8#第04集$https://c1.ddbbffcdn.com/video/kuangbiao/第04集/index.m3u8#第05集$https://c1.ddbbffcdn.com/video/kuangbiao/第05集/index.m3u8#第06集$https://c1.ddbbffcdn.com/video/kuangbiao/第06集/index.m3u8#第07集$https://c1.ddbbffcdn.com/video/kuangbiao/第07集/index.m3u8#第08集$https://c1.ddbbffcdn.com/video/kuangbiao/第08集/index.m3u8#第09集$https://c1.ddbbffcdn.com/video/kuangbiao/第09集/index.m3u8#第10集$https://c1.ddbbffcdn.com/video/kuangbiao/第10集/index.m3u8#第11集$https://c1.ddbbffcdn.com/video/kuangbiao/第11集/index.m3u8#第12集$https://c1.ddbbffcdn.com/video/kuangbiao/第12集/index.m3u8#第13集$https://c1.ddbbffcdn.com/video/kuangbiao/第13集/index.m3u8#第14集$https://c1.ddbbffcdn.com/video/kuangbiao/第14集/index.m3u8#第15集$https://c1.ddbbffcdn.com/video/kuangbiao/第15集/index.m3u8#第16集$https://c1.ddbbffcdn.com/video/kuangbiao/第16集/index.m3u8#第17集$https://c1.ddbbffcdn.com/video/kuangbiao/第17集/index.m3u8#第18集$https://c1.ddbbffcdn.com/video/kuangbiao/第18集/index.m3u8#第19集$https://c1.ddbbffcdn.com/video/kuangbiao/第19集/index.m3u8#第20集$https://c1.ddbbffcdn.com/video/kuangbiao/第20集/index.m3u8#第21集$https://c1.ddbbffcdn.com/video/kuangbiao/第21集/index.m3u8#第22集$https://c1.ddbbffcdn.com/video/kuangbiao/第22集/index.m3u8#第23集$https://c1.ddbbffcdn.com/video/kuangbiao/第23集/index.m3u8#第24集$https://c1.ddbbffcdn.com/video/kuangbiao/第24集/index.m3u8#第25集$https://c1.ddbbffcdn.com/video/kuangbiao/第25集/index.m3u8#第26集$https://c1.ddbbffcdn.com/video/kuangbiao/第26集/index.m3u8#第27集$https://c1.ddbbffcdn.com/video/kuangbiao/第27集/index.m3u8#第28集$https://c1.ddbbffcdn.com/video/kuangbiao/第28集/index.m3u8#第29集$https://c1.ddbbffcdn.com/video/kuangbiao/第29集/index.m3u8#第30集$https://c1.ddbbffcdn.com/video/kuangbiao/第30集/index.m3u8#第31集$https://c1.ddbbffcdn.com/video/kuangbiao/第31集/index.m3u8#第32集$https://c1.ddbbffcdn.com/video/kuangbiao/第32集/index.m3u8#第33集$https://c1.ddbbffcdn.com/video/kuangbiao/第33集/index.m3u8#第34集$https://c1.ddbbffcdn.com/video/kuangbiao/第34集/index.m3u8#第35集$https://c1.ddbbffcdn.com/video/kuangbiao/第35集/index.m3u8#第36集$https://c1.ddbbffcdn.com/video/kuangbiao/第36集/index.m3u8#第37集$https://c1.ddbbffcdn.com/video/kuangbiao/第37集/index.m3u8#第38集$https://c1.ddbbffcdn.com/video/kuangbiao/第38集/index.m3u8#第39集$https://c1.ddbbffcdn.com/video/kuangbiao/第39集/index.m3u8",
+     "remarks": "更新至第39集",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 39,
+     "play_url": "第01集$https://vod.feifei-kan.com/share/405075699f065e43581f27d67bb68478#第02集$https://vod.feifei-kan.com/share/154f596a0e4aec4cf23ee4b76ae3d34a#第03集$https://vod.feifei-kan.com/share/d82a1853da4df5edcfc6f0e3159c23be#第04集$https://vod.feifei-kan.com/share/b4edda67f0f57e218a8e766927e3e5c5#第05集$https://vod.feifei-kan.com/share/21f4c3b5591da245af90a2fd52fa1a55#第06集$https://vod.feifei-kan.com/share/eb21cc0143d96dbc8e3a58f1a81e4dd2#第07集$https://vod.feifei-kan.com/share/e3bc4e7f243ebc05d66a0568a3331966#第08集$https://vod.feifei-kan.com/share/e562cd9c0768d5464b64cf61da7fc6bb#第09集$https://vod.feifei-kan.com/share/53b354612d26628e73986a80e254864e#第10集$https://vod.feifei-kan.com/share/793bc52a941b3951dfdb85fb04f9fd06#第11集$https://vod.feifei-kan.com/share/58e16dc760ca166c476403499ff5c59b#第12集$https://vod.feifei-kan.com/share/9087cd8bfa9c1968b20d8f6d0b81cbbb#第13集$https://vod.feifei-kan.com/share/4d630f9347177b17ec7a362f19489239#第14集$https://vod.feifei-kan.com/share/f8b7aa3a0d349d9562b424160ad18612#第15集$https://vod.feifei-kan.com/share/d582ac40970f9885836a61d7b2c662e4#第16集$https://vod.feifei-kan.com/share/07168af6cb0ef9f78dae15739dd73255#第17集$https://vod.feifei-kan.com/share/ad185a320a9c8af2e25d53ef7cbacd4f#第18集$https://vod.feifei-kan.com/share/ecb9fe2fbb99c31f567e9823e884dbec#第19集$https://vod.feifei-kan.com/share/2751fae77b24c37382cf6464173d145e#第20集$https://vod.feifei-kan.com/share/15f99f2165aa8c86c9dface16fefd281#第21集$https://vod.feifei-kan.com/share/5d50d22735a7469266aab23fd8aeb536#第22集$https://vip.ffzy-play5.com/share/d785bf9067f8af9e078b93cf26de2b54#第23集$https://vip.ffzy-play5.com/share/197f76fe309657064dbec74d9eea4be4#第24集$https://vip.ffzy-play5.com/share/c5ef831f5d34faafc22a23a602cf6e40#第25集$https://vip.ffzy-play5.com/share/b5d3ad899f70013367f24e0b1fa75944#第26集$https://vip.ffzy-play5.com/share/c5c64c10cfd77b16a03aa81f09499f25#第27集$https://vip.ffzy-play5.com/share/91576cbf171986154e523305a69c79d3#第28集$https://vod.feifei-kan.com/share/b25b911ffc2b76a647454e5a53edf8b5#第29集$https://vod.feifei-kan.com/share/955d864a62659945cc9434898e275deb#第30集$https://vip.ffzy-play5.com/share/96f2d6069db8ad895c34e2285d25c0ed#第31集$https://vip.ffzy-play5.com/share/b0eb9a95e8b085e4025eae2f0d76a6a6#第32集$https://vip.ffzy-play5.com/share/a822554e5403b1d370db84cfbc530503#第33集$https://vip.ffzy-play5.com/share/df3aebc649f9e3b674eeb790a4da224e#第34集$https://vip.ffzy-play5.com/share/3001ef257407d5a371a96dcd947c7d93#第35集$https://vip.ffzy-play5.com/share/f73a9f957962cd73fce51078b5b9614f#第36集$https://vip.ffzy-play5.com/share/99cad265a1768cc2dd013f0e740300ae#第37集$https://vip.ffzy-play5.com/share/b58f7d184743106a8a66028b7a28937c#第38集$https://vip.ffzy-play5.com/share/dead35fa1512ad67301d09326177c42f#第39集$https://vip.ffzy-play5.com/share/5fd0245f6c9ddbdf3eff0f505975b6a7",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 39,
+     "play_url": "第01集$https://vod.feifei-kan.com/20230114/6240_9bc1a121/index.m3u8#第02集$https://vod.feifei-kan.com/20230114/6241_a960e250/index.m3u8#第03集$https://vod.feifei-kan.com/20230114/6242_5e2f9187/index.m3u8#第04集$https://vod.feifei-kan.com/20230114/6243_a2a89c1d/index.m3u8#第05集$https://vod.feifei-kan.com/20230114/6244_2bab51ee/index.m3u8#第06集$https://vod.feifei-kan.com/20230115/6308_5df331e6/index.m3u8#第07集$https://vod.feifei-kan.com/20230115/6307_32466d6f/index.m3u8#第08集$https://vod.feifei-kan.com/20230116/6333_8f1bbf04/index.m3u8#第09集$https://vod.feifei-kan.com/20230116/6332_41a6dfba/index.m3u8#第10集$https://vod.feifei-kan.com/20230117/6643_4c949771/index.m3u8#第11集$https://vod.feifei-kan.com/20230117/6642_fce5d0c5/index.m3u8#第12集$https://vod.feifei-kan.com/20230118/6675_581b0957/index.m3u8#第13集$https://vod.feifei-kan.com/20230118/6674_f206a14e/index.m3u8#第14集$https://vod.feifei-kan.com/20230119/6719_6804a960/index.m3u8#第15集$https://vod.feifei-kan.com/20230119/6718_372a4a4a/index.m3u8#第16集$https://vod.feifei-kan.com/20230120/6755_2e72b7c0/index.m3u8#第17集$https://vod.feifei-kan.com/20230121/6797_a42176b4/index.m3u8#第18集$https://vod.feifei-kan.com/20230122/6849_8ad5d7fd/index.m3u8#第19集$https://vod.feifei-kan.com/20230122/6848_d7995233/index.m3u8#第20集$https://vod.feifei-kan.com/20230123/6875_8a5fd67d/index.m3u8#第21集$https://vod.feifei-kan.com/20230123/6874_420a34eb/index.m3u8#第22集$https://vip.ffzy-play5.com/20230124/6145_3d924a3e/index.m3u8#第23集$https://vip.ffzy-play5.com/20230124/6144_cf13c352/index.m3u8#第24集$https://vip.ffzy-play5.com/20230125/6172_82c3dd7d/index.m3u8#第25集$https://vip.ffzy-play5.com/20230125/6171_6a442335/index.m3u8#第26集$https://vip.ffzy-play5.com/20230126/6235_7258f3cc/index.m3u8#第27集$https://vip.ffzy-play5.com/20230126/6234_8a720787/index.m3u8#第28集$https://vod.feifei-kan.com/20230127/7030_a155cf1b/index.m3u8#第29集$https://vod.feifei-kan.com/20230127/7029_900cd25b/index.m3u8#第30集$https://vip.ffzy-play5.com/20230128/6319_fd06986f/index.m3u8#第31集$https://vip.ffzy-play5.com/20230128/6318_622b2fa9/index.m3u8#第32集$https://vip.ffzy-play5.com/20230129/6358_2a3d19e2/index.m3u8#第33集$https://vip.ffzy-play5.com/20230129/6357_e2d7a713/index.m3u8#第34集$https://vip.ffzy-play5.com/20230130/6392_17caf4a1/index.m3u8#第35集$https://vip.ffzy-play5.com/20230130/6391_6228f814/index.m3u8#第36集$https://vip.ffzy-play5.com/20230131/6406_9f9467f1/index.m3u8#第37集$https://vip.ffzy-play5.com/20230131/6405_30428a34/index.m3u8#第38集$https://vip.ffzy-play5.com/20230201/6461_08796719/index.m3u8#第39集$https://vip.ffzy-play5.com/20230201/6460_3cf946b7/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 37748,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    39,
+    39,
+    39,
+    39,
+    39
+   ],
+   "cand_idx": "vod014",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "觉醒年代",
+   "vod_year": "2021",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "完结",
+   "vod_actor": "于和伟,张桐,张晚意,马启越,马少骅,朱刚日尧,曹磊,夏德俊,周显欣,杨景天,杨杏,张思乐,毕彦君,武笑羽,卢易,高爽,牟星,张露,岳鹏飞,查文浩,唐旭,林俊毅,侯京健,何政军,刘琳,徐敏,尹铸胜,卫仑,沈琳珺,迟蓬,封新天,侯煜,谭洋,郑昊,舒耀瑄,朱泳腾",
+   "vod_director": "张永新",
+   "vod_content": "本剧以1915年《青年杂志》问世到1921年《新青年》成为中国共产党机关刊物为贯穿，展现了从新文化运动到中国共产党建立这段波澜壮阔的历史画卷，讲述觉醒年代的百态人生。该剧以李大钊、陈独秀、胡适从相识、相知到分手，走上不同人生道路的传奇故事为基本叙事线，以毛泽东、陈延年、陈乔年、邓中夏、赵世炎等革命青年追求真理的坎坷经历为辅助线，艺术地再现了一批名冠中华的文化大师和一群理想飞扬的热血青年演绎出的一段充满激情、燃烧理想的澎湃岁月。",
+   "vod_pic": "https://p.bfvp26.com/upload/vod/20230424-19/e31dc0a062f495471c88462e573cbb5d.jpg",
+   "routes": [
+    {
+     "provider": "暴风",
+     "episode_count": 43,
+     "play_url": "第01集$https://c1.rrcdnbf6.com/video/juexingniandai/第01集/index.m3u8#第02集$https://c1.rrcdnbf6.com/video/juexingniandai/第02集/index.m3u8#第03集$https://c1.rrcdnbf6.com/video/juexingniandai/第03集/index.m3u8#第04集$https://c1.rrcdnbf4.com/video/juexingniandai/第04集/index.m3u8#第05集$https://c1.rrcdnbf4.com/video/juexingniandai/第05集/index.m3u8#第06集$https://c1.rrcdnbf5.com/video/juexingniandai/第06集/index.m3u8#第07集$https://c1.rrcdnbf6.com/video/juexingniandai/第07集/index.m3u8#第08集$https://c1.rrcdnbf6.com/video/juexingniandai/第08集/index.m3u8#第09集$https://c1.rrcdnbf6.com/video/juexingniandai/第09集/index.m3u8#第10集$https://c1.rrcdnbf6.com/video/juexingniandai/第10集/index.m3u8#第11集$https://c1.rrcdnbf4.com/video/juexingniandai/第11集/index.m3u8#第12集$https://c1.rrcdnbf4.com/video/juexingniandai/第12集/index.m3u8#第13集$https://c1.rrcdnbf5.com/video/juexingniandai/第13集/index.m3u8#第14集$https://c1.rrcdnbf6.com/video/juexingniandai/第14集/index.m3u8#第15集$https://c1.rrcdnbf6.com/video/juexingniandai/第15集/index.m3u8#第16集$https://c1.rrcdnbf6.com/video/juexingniandai/第16集/index.m3u8#第17集$https://c1.rrcdnbf6.com/video/juexingniandai/第17集/index.m3u8#第18集$https://c1.rrcdnbf4.com/video/juexingniandai/第18集/index.m3u8#第19集$https://c1.rrcdnbf5.com/video/juexingniandai/第19集/index.m3u8#第20集$https://c1.rrcdnbf4.com/video/juexingniandai/第20集/index.m3u8#第21集$https://c1.rrcdnbf6.com/video/juexingniandai/第21集/index.m3u8#第22集$https://c1.rrcdnbf6.com/video/juexingniandai/第22集/index.m3u8#第23集$https://c1.rrcdnbf6.com/video/juexingniandai/第23集/index.m3u8#第24集$https://c1.rrcdnbf6.com/video/juexingniandai/第24集/index.m3u8#第25集$https://c1.rrcdnbf5.com/video/juexingniandai/第25集/index.m3u8#第26集$https://c1.rrcdnbf4.com/video/juexingniandai/第26集/index.m3u8#第27集$https://c1.rrcdnbf4.com/video/juexingniandai/第27集/index.m3u8#第28集$https://c1.rrcdnbf6.com/video/juexingniandai/第28集/index.m3u8#第29集$https://c1.rrcdnbf6.com/video/juexingniandai/第29集/index.m3u8#第30集$https://c1.rrcdnbf6.com/video/juexingniandai/第30集/index.m3u8#第31集$https://c1.rrcdnbf6.com/video/juexingniandai/第31集/index.m3u8#第32集$https://c1.rrcdnbf5.com/video/juexingniandai/第32集/index.m3u8#第33集$https://c1.rrcdnbf4.com/video/juexingniandai/第33集/index.m3u8#第34集$https://c1.rrcdnbf4.com/video/juexingniandai/第34集/index.m3u8#第35集$https://c1.rrcdnbf6.com/video/juexingniandai/第35集/index.m3u8#第36集$https://c1.rrcdnbf6.com/video/juexingniandai/第36集/index.m3u8#第37集$https://c1.rrcdnbf6.com/video/juexingniandai/第37集/index.m3u8#第38集$https://c1.rrcdnbf5.com/video/juexingniandai/第38集/index.m3u8#第39集$https://c1.rrcdnbf6.com/video/juexingniandai/第39集/index.m3u8#第40集$https://c1.rrcdnbf4.com/video/juexingniandai/第40集/index.m3u8#第41集$https://c1.rrcdnbf4.com/video/juexingniandai/第41集/index.m3u8#第42集$https://c1.rrcdnbf6.com/video/juexingniandai/第42集/index.m3u8#第43集$https://c1.rrcdnbf6.com/video/juexingniandai/第43集/index.m3u8",
+     "remarks": "完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 43,
+     "play_url": "第01集$https://vip.ffzy-online.com/share/54072f485cdb7897ebbcaf7525139561#第02集$https://vip.ffzy-online.com/share/512c5cad6c37edb98ae91c8a76c3a291#第03集$https://vip.ffzy-online.com/share/0e4e946668cf2afc4299b462b812caca#第04集$https://vip.ffzy-online.com/share/59f51fd6937412b7e56ded1ea2470c25#第05集$https://vip.ffzy-online.com/share/7a674153c63cff1ad7f0e261c369ab2c#第06集$https://vip.ffzy-online.com/share/a60937eba57758ed45b6d3e91e8659f3#第07集$https://vip.ffzy-online.com/share/9a1756fd0c741126d7bbd4b692ccbd91#第08集$https://vip.ffzy-online.com/share/23ad3e314e2a2b43b4c720507cec0723#第09集$https://vip.ffzy-online.com/share/309928d4b100a5d75adff48a9bfc1ddb#第10集$https://vip.ffzy-online.com/share/30c8e1ca872524fbf7ea5c519ca397ee#第11集$https://vip.ffzy-online.com/share/90db9da4fc5414ab55a9fe495d555c06#第12集$https://vip.ffzy-online.com/share/9aa42b31882ec039965f3c4923ce901b#第13集$https://vip.ffzy-online.com/share/0ed9422357395a0d4879191c66f4faa2#第14集$https://vip.ffzy-online.com/share/856fc81623da2150ba2210ba1b51d241#第15集$https://vip.ffzy-online.com/share/489d0396e6826eb0c1e611d82ca8b215#第16集$https://vip.ffzy-online.com/share/a424ed4bd3a7d6aea720b86d4a360f75#第17集$https://vip.ffzy-online.com/share/299fb2142d7de959380f91c01c3a293c#第18集$https://vip.ffzy-online.com/share/970af30e481057c48f87e101b61e6994#第19集$https://vip.ffzy-online.com/share/0663a4ddceacb40b095eda264a85f15c#第20集$https://vip.ffzy-online.com/share/56352739f59643540a3a6e16985f62c7#第21集$https://vip.ffzy-online.com/share/411ae1bf081d1674ca6091f8c59a266f#第22集$https://vip.ffzy-online.com/share/e11943a6031a0e6114ae69c257617980#第23集$https://vip.ffzy-online.com/share/56468d5607a5aaf1604ff5e15593b003#第24集$https://vip.ffzy-online.com/share/b069b3415151fa7217e870017374de7c#第25集$https://vip.ffzy-online.com/share/7895fc13088ee37f511913bac71fa66f#第26集$https://vip.ffzy-online.com/share/1f3202d820180a39f736f20fce790de8#第27集$https://vip.ffzy-online.com/share/eaa32c96f620053cf442ad32258076b9#第28集$https://vip.ffzy-online.com/share/a8f8f60264024dca151f164729b76c0b#第29集$https://vip.ffzy-online.com/share/db6ebd0566994d14a1767f14eb6fba81#第30集$https://vip.ffzy-online.com/share/f4a331b7a22d1b237565d8813a34d8ac#第31集$https://vip.ffzy-online.com/share/540ae6b0f6ac6e155062f3dd4f0b2b01#第32集$https://vip.ffzy-online.com/share/b197ffdef2ddc3308584dce7afa3661b#第33集$https://vip.ffzy-online.com/share/8fb5f8be2aa9d6c64a04e3ab9f63feee#第34集$https://vip.ffzy-online.com/share/f69e505b08403ad2298b9f262659929a#第35集$https://vip.ffzy-online.com/share/afe434653a898da20044041262b3ac74#第36集$https://vip.ffzy-online.com/share/8fb21ee7a2207526da55a679f0332de2#第37集$https://vip.ffzy-online.com/share/b265ce60fe4c5384e622b09eb829b8df#第38集$https://vip.ffzy-online.com/share/c930eecd01935feef55942cc445f708f#第39集$https://vip.ffzy-online.com/share/2dffbc474aa176b6dc957938c15d0c8b#第40集$https://vip.ffzy-online.com/share/e94f63f579e05cb49c05c2d050ead9c0#第41集$https://vip.ffzy-online.com/share/c5cc17e395d3049b03e0f1ccebb02b4d#第42集$https://vip.ffzy-online.com/share/80a8155eb153025ea1d513d0b2c4b675#第43集$https://vip.ffzy-online.com/share/6786f3c62fbf9021694f6e51cc07fe3c",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 43,
+     "play_url": "第01集$https://vip.ffzy-online.com/20221020/1411_3d982549/index.m3u8#第02集$https://vip.ffzy-online.com/20221020/1410_362d85b5/index.m3u8#第03集$https://vip.ffzy-online.com/20221020/1412_a5020ac8/index.m3u8#第04集$https://vip.ffzy-online.com/20221020/1413_e834c487/index.m3u8#第05集$https://vip.ffzy-online.com/20221020/1414_285ba3ec/index.m3u8#第06集$https://vip.ffzy-online.com/20221020/1415_1e35fa31/index.m3u8#第07集$https://vip.ffzy-online.com/20221021/1417_dea598c4/index.m3u8#第08集$https://vip.ffzy-online.com/20221021/1416_62085cd9/index.m3u8#第09集$https://vip.ffzy-online.com/20221021/1418_9a0cc312/index.m3u8#第10集$https://vip.ffzy-online.com/20221021/1419_7cbd3f31/index.m3u8#第11集$https://vip.ffzy-online.com/20221021/1420_cec18af5/index.m3u8#第12集$https://vip.ffzy-online.com/20221021/1421_a28cf0e9/index.m3u8#第13集$https://vip.ffzy-online.com/20221021/1422_1f1c77a3/index.m3u8#第14集$https://vip.ffzy-online.com/20221021/1423_91102f08/index.m3u8#第15集$https://vip.ffzy-online.com/20221021/1424_e57eede6/index.m3u8#第16集$https://vip.ffzy-online.com/20221021/1425_95fb3b4d/index.m3u8#第17集$https://vip.ffzy-online.com/20221021/1426_296b2064/index.m3u8#第18集$https://vip.ffzy-online.com/20221021/1427_533eb6a6/index.m3u8#第19集$https://vip.ffzy-online.com/20221021/1428_7d9fe24b/index.m3u8#第20集$https://vip.ffzy-online.com/20221021/1429_f149ad3c/index.m3u8#第21集$https://vip.ffzy-online.com/20221021/1430_e4e49fbf/index.m3u8#第22集$https://vip.ffzy-online.com/20221021/1431_fca04c8a/index.m3u8#第23集$https://vip.ffzy-online.com/20221021/1432_da064a00/index.m3u8#第24集$https://vip.ffzy-online.com/20221021/1433_f29ff3d1/index.m3u8#第25集$https://vip.ffzy-online.com/20221021/1434_155fb196/index.m3u8#第26集$https://vip.ffzy-online.com/20221021/1435_f7394e78/index.m3u8#第27集$https://vip.ffzy-online.com/20221021/1436_76473349/index.m3u8#第28集$https://vip.ffzy-online.com/20221021/1437_85224e6a/index.m3u8#第29集$https://vip.ffzy-online.com/20221021/1438_6cc0c6f0/index.m3u8#第30集$https://vip.ffzy-online.com/20221021/1440_0cd145ea/index.m3u8#第31集$https://vip.ffzy-online.com/20221021/1439_723fa6e8/index.m3u8#第32集$https://vip.ffzy-online.com/20221021/1441_8c57adf6/index.m3u8#第33集$https://vip.ffzy-online.com/20221021/1443_883c1478/index.m3u8#第34集$https://vip.ffzy-online.com/20221021/1442_efcb8896/index.m3u8#第35集$https://vip.ffzy-online.com/20221021/1444_6c1597c1/index.m3u8#第36集$https://vip.ffzy-online.com/20221021/1446_cbf84a59/index.m3u8#第37集$https://vip.ffzy-online.com/20221021/1445_47f9909c/index.m3u8#第38集$https://vip.ffzy-online.com/20221021/1447_3a53ecfb/index.m3u8#第39集$https://vip.ffzy-online.com/20221021/1449_b14f26fb/index.m3u8#第40集$https://vip.ffzy-online.com/20221021/1448_633c9259/index.m3u8#第41集$https://vip.ffzy-online.com/20221021/1450_81ea4555/index.m3u8#第42集$https://vip.ffzy-online.com/20221021/1451_e581aa85/index.m3u8#第43集$https://vip.ffzy-online.com/20221021/1452_3fdb67df/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 37694,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    43,
+    43,
+    43
+   ],
+   "cand_idx": "vod015",
+   "frame_probe_failed": true
+  },
+  {
+   "vod_name": "闯关东",
+   "vod_year": "2008",
+   "category": "电视剧",
+   "type_name": "国产剧",
+   "vod_remarks": "已完结",
+   "vod_actor": "李幼斌,萨日娜,宋佳,牛莉,马恩然,高明,朱亚文,刘向京,黄小蕾,靳东,梁林琳,齐奎,王奎荣,毕彦君,鲍国安,丁嘉丽,李庆祥,王绘春,刘金山,高强,赵亮,李大强,任帅,王德顺,赵苏婷,张延平,王一峰,杨强,侯祥,李山,于洪涛,朱光有,刘楠,刘明,张慧兰,赵学贤,王永泉,刘建仁,刘慧逸,唐春新,王晓玲,尚铁龙,岳旸,刘鑫,康群智,刘红星,穆丽燕,邓鸣,周游,王博,杨云溪,刘肇烨,许陈俊嘉,关一,李克伟,王凡奇,张书田,李品夆,王波,梁西,邢峰,张永丰,李小波,黄强,李亮,张洪铭",
+   "vod_director": "张新建,孔笙",
+   "vod_content": "<p>　　19世纪中叶，古老的中华大地尚处于清政府统治时期。为了应对沙俄对我国的蚕食，朝廷撤销了在东北推行近两百年的封禁政策，鼓励关内百姓前往东北开垦荒地。山东人朱开山（李幼斌 饰）正是这群早期开拓者中的一员，他出关的时候清朝已然谢幕，这个早年参加义和团的鲁莽汉子，几经周折落脚关外，而他的老婆（萨日娜 饰）得知丈夫的音讯时则带着孩子们踏上寻夫之旅。正值兵荒马乱的年代，外有列强混战，内有军阀土匪，天灾人祸致令中国的老百姓颠沛流离，苦不堪言。<br/>　　朱家虽然团聚，可是在这片广袤荒芜的黑土地上尚有无数艰险等在前面，而朱开山和妻子以及三个儿子，也将各自品尝着人生的苦辣酸甜……</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20220917-1/19aa8545ae64a740a7acf0e869a4d9b4.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 52,
+     "play_url": "第01集$https://vip1.lz-cdn6.com/share/4e69622f5a820f3d466927b558ba83ac#第02集$https://vip1.lz-cdn6.com/share/4a2d84630e650155dd3f0d107c9794a9#第03集$https://vip1.lz-cdn6.com/share/8553bf408bb98c10bf0fdd4220b50329#第04集$https://vip1.lz-cdn6.com/share/30817601adbc53cc3d07ee109c602083#第05集$https://vip1.lz-cdn6.com/share/421b6c7bd8b9288a148d2c3431b6692b#第06集$https://vip1.lz-cdn6.com/share/3a8342a228828439ef6fc58a0b8f2a00#第07集$https://vip1.lz-cdn6.com/share/6b36917c087c21e48531ea1309ac0147#第08集$https://vip1.lz-cdn6.com/share/cad4ba4de53bcaff4217b422c06bacef#第09集$https://vip1.lz-cdn6.com/share/87208431a38b263a8212d32da9222f2d#第10集$https://vip1.lz-cdn6.com/share/64f72494fa3c919e2b30ae6fbedf9a32#第11集$https://vip1.lz-cdn6.com/share/0d382a5fec7012c843c1bdfb0935c9a6#第12集$https://vip1.lz-cdn6.com/share/43f94d8fd55e2a95b88240a8d3a2c193#第13集$https://vip1.lz-cdn6.com/share/5ebb9c2331e5ad574f452f293607041f#第14集$https://vip1.lz-cdn6.com/share/0fe044bad66866c2a880e6d7cb4a045a#第15集$https://vip1.lz-cdn6.com/share/d4b928f113a81d37a37bdfe5a1fecfba#第16集$https://vip1.lz-cdn6.com/share/3b9b987df093605d39c7aa0e30771742#第17集$https://vip1.lz-cdn6.com/share/990ecc138c1cbd618aca7cfd08cd1aa8#第18集$https://vip1.lz-cdn6.com/share/81817c512e916bf2a24bf8007693c021#第19集$https://vip1.lz-cdn6.com/share/0a6d7aac348573607a3219fb5ba42e51#第20集$https://vip1.lz-cdn6.com/share/ef986f30fab2fc38b8d7be268b2b1dca#第21集$https://vip1.lz-cdn6.com/share/91a8651859745d25095a46fdda893cfa#第22集$https://vip1.lz-cdn6.com/share/7577c54ea4b4258f50a4477dbd1bca3a#第23集$https://vip1.lz-cdn6.com/share/f016401501ca83458fb6896609ea749e#第24集$https://vip1.lz-cdn6.com/share/5e18b53804c5a18b0d727b0cd8aff97c#第25集$https://vip1.lz-cdn6.com/share/62ab3ce23f9884db423ce886eb945289#第26集$https://vip1.lz-cdn6.com/share/fbf697a2b5eed2f138a85082a119b815#第27集$https://vip1.lz-cdn6.com/share/388e1fde50eb5883ad7b020fdb42b250#第28集$https://vip1.lz-cdn6.com/share/0ec13812d08eb1b6d46717e726cac367#第29集$https://vip1.lz-cdn6.com/share/9cc1efe753654fa0220a77e5c3c14478#第30集$https://vip1.lz-cdn6.com/share/bd3ee13ab6a5673be2bb086b021d2ba5#第31集$https://vip1.lz-cdn6.com/share/3995fe50d83f15ea0930e355f452de8d#第32集$https://vip1.lz-cdn6.com/share/f09b521ff0bbb06f43e79df86233e49c#第33集$https://vip1.lz-cdn6.com/share/0ed83ca5894f30aed6da389d630d89a3#第34集$https://vip1.lz-cdn6.com/share/20bd92d00294780ca1aa5dcbb4474e36#第35集$https://vip1.lz-cdn6.com/share/390c177edc5866c87d55be2372632892#第36集$https://vip1.lz-cdn6.com/share/81dd4df7529a4765132f4425191d1715#第37集$https://vip1.lz-cdn6.com/share/6f8c673720168eb65f33ef15f9802a0b#第38集$https://vip1.lz-cdn6.com/share/85fc1189e46c7278b2aeb7008506a6f2#第39集$https://vip1.lz-cdn6.com/share/50e8d294d7bce40086885257076ede3f#第40集$https://vip1.lz-cdn6.com/share/11e7a6a3701b0a2593faef99048a2c86#第41集$https://vip1.lz-cdn6.com/share/c96a3c8c43f8a4316ba293e5257bceb4#第42集$https://vip1.lz-cdn6.com/share/cb04f3f921fe1d7e1be45b44f8bba68e#第43集$https://vip1.lz-cdn6.com/share/5e6c70cda1988d563aba2fa39bc65169#第44集$https://vip1.lz-cdn6.com/share/9d12e02aa8d4f4aa04006cdc0eca2517#第45集$https://vip1.lz-cdn6.com/share/dd12bd299fda26a6e4bb066bb2d30d39#第46集$https://vip1.lz-cdn6.com/share/da7327e0425c9f9b80f95abebea29c3a#第47集$https://vip1.lz-cdn6.com/share/fbe9ec51f2a0539841646940865085c8#第48集$https://vip1.lz-cdn6.com/share/198cff6d989e97c242ac7d93b9fc7254#第49集$https://vip1.lz-cdn6.com/share/c581da6e9a72378bae9128f1cb3a59f8#第50集$https://vip1.lz-cdn6.com/share/1a7f33274089feff1baef7286b95fe0e#第51集$https://vip1.lz-cdn6.com/share/919508b359a31b0ea6a589ee86028c1f#第52集$https://vip1.lz-cdn6.com/share/952dcec392ca2f4667f334b1f8853370",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 52,
+     "play_url": "第01集$https://vip1.lz-cdn6.com/20220916/27877_958d39ec/index.m3u8#第02集$https://vip1.lz-cdn6.com/20220916/27878_6d046c46/index.m3u8#第03集$https://vip1.lz-cdn6.com/20220916/27879_290ed1c4/index.m3u8#第04集$https://vip1.lz-cdn6.com/20220916/27880_5c27868a/index.m3u8#第05集$https://vip1.lz-cdn6.com/20220916/27881_1558d7a8/index.m3u8#第06集$https://vip1.lz-cdn6.com/20220916/27882_52a411bd/index.m3u8#第07集$https://vip1.lz-cdn6.com/20220916/27883_c66278ad/index.m3u8#第08集$https://vip1.lz-cdn6.com/20220916/27884_995d9e81/index.m3u8#第09集$https://vip1.lz-cdn6.com/20220916/27885_7ad8e65c/index.m3u8#第10集$https://vip1.lz-cdn6.com/20220916/27886_29fbbddf/index.m3u8#第11集$https://vip1.lz-cdn6.com/20220916/27887_7da2eedc/index.m3u8#第12集$https://vip1.lz-cdn6.com/20220916/27888_5277b447/index.m3u8#第13集$https://vip1.lz-cdn6.com/20220916/27889_a64addff/index.m3u8#第14集$https://vip1.lz-cdn6.com/20220916/27890_85ed595c/index.m3u8#第15集$https://vip1.lz-cdn6.com/20220916/27891_63a6b5aa/index.m3u8#第16集$https://vip1.lz-cdn6.com/20220916/27892_b1724bd0/index.m3u8#第17集$https://vip1.lz-cdn6.com/20220916/27893_bcec638a/index.m3u8#第18集$https://vip1.lz-cdn6.com/20220916/27894_d3b501a7/index.m3u8#第19集$https://vip1.lz-cdn6.com/20220916/27895_2c4bb63a/index.m3u8#第20集$https://vip1.lz-cdn6.com/20220916/27896_04c0d2f0/index.m3u8#第21集$https://vip1.lz-cdn6.com/20220916/27897_9345eaaa/index.m3u8#第22集$https://vip1.lz-cdn6.com/20220916/27898_f921c2da/index.m3u8#第23集$https://vip1.lz-cdn6.com/20220916/27899_6ca85e06/index.m3u8#第24集$https://vip1.lz-cdn6.com/20220916/27900_42d8a2b4/index.m3u8#第25集$https://vip1.lz-cdn6.com/20220916/27901_7956a545/index.m3u8#第26集$https://vip1.lz-cdn6.com/20220916/27902_70fc04ad/index.m3u8#第27集$https://vip1.lz-cdn6.com/20220916/27903_94de3989/index.m3u8#第28集$https://vip1.lz-cdn6.com/20220916/27904_6a8fc71d/index.m3u8#第29集$https://vip1.lz-cdn6.com/20220916/27905_115935a9/index.m3u8#第30集$https://vip1.lz-cdn6.com/20220916/27906_4906257c/index.m3u8#第31集$https://vip1.lz-cdn6.com/20220916/27907_d1851268/index.m3u8#第32集$https://vip1.lz-cdn6.com/20220916/27908_5f3db9fe/index.m3u8#第33集$https://vip1.lz-cdn6.com/20220916/27909_db88a621/index.m3u8#第34集$https://vip1.lz-cdn6.com/20220916/27910_c20e280d/index.m3u8#第35集$https://vip1.lz-cdn6.com/20220916/27911_ccc474eb/index.m3u8#第36集$https://vip1.lz-cdn6.com/20220916/27912_dbcb1442/index.m3u8#第37集$https://vip1.lz-cdn6.com/20220916/27913_ee79590f/index.m3u8#第38集$https://vip1.lz-cdn6.com/20220916/27914_f1cea191/index.m3u8#第39集$https://vip1.lz-cdn6.com/20220916/27915_94c534fb/index.m3u8#第40集$https://vip1.lz-cdn6.com/20220916/27916_6594052b/index.m3u8#第41集$https://vip1.lz-cdn6.com/20220916/27917_5a227ef2/index.m3u8#第42集$https://vip1.lz-cdn6.com/20220916/27918_9795a781/index.m3u8#第43集$https://vip1.lz-cdn6.com/20220916/27919_73739610/index.m3u8#第44集$https://vip1.lz-cdn6.com/20220916/27920_38330ca6/index.m3u8#第45集$https://vip1.lz-cdn6.com/20220916/27921_de2a7bd0/index.m3u8#第46集$https://vip1.lz-cdn6.com/20220916/27922_6263ccc0/index.m3u8#第47集$https://vip1.lz-cdn6.com/20220916/27923_d6a6afea/index.m3u8#第48集$https://vip1.lz-cdn6.com/20220916/27924_46fa3aa5/index.m3u8#第49集$https://vip1.lz-cdn6.com/20220916/27925_c8b231e0/index.m3u8#第50集$https://vip1.lz-cdn6.com/20220916/27926_faed7c19/index.m3u8#第51集$https://vip1.lz-cdn6.com/20220916/27927_efcc241b/index.m3u8#第52集$https://vip1.lz-cdn6.com/20220916/27931_aef8277d/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 28888,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 52,
+     "play_url": "第01集$https://c1.rrcdnbf2.com/video/chuangguandong/第01集/index.m3u8#第02集$https://c1.rrcdnbf2.com/video/chuangguandong/第02集/index.m3u8#第03集$https://c1.rrcdnbf2.com/video/chuangguandong/第03集/index.m3u8#第04集$https://c1.rrcdnbf2.com/video/chuangguandong/第04集/index.m3u8#第05集$https://c1.rrcdnbf2.com/video/chuangguandong/第05集/index.m3u8#第06集$https://c1.rrcdnbf2.com/video/chuangguandong/第06集/index.m3u8#第07集$https://c1.rrcdnbf2.com/video/chuangguandong/第07集/index.m3u8#第08集$https://c1.rrcdnbf2.com/video/chuangguandong/第08集/index.m3u8#第09集$https://c1.rrcdnbf2.com/video/chuangguandong/第09集/index.m3u8#第10集$https://c1.rrcdnbf2.com/video/chuangguandong/第10集/index.m3u8#第11集$https://c1.rrcdnbf2.com/video/chuangguandong/第11集/index.m3u8#第12集$https://c1.rrcdnbf2.com/video/chuangguandong/第12集/index.m3u8#第13集$https://c1.rrcdnbf2.com/video/chuangguandong/第13集/index.m3u8#第14集$https://c1.rrcdnbf2.com/video/chuangguandong/第14集/index.m3u8#第15集$https://c1.rrcdnbf2.com/video/chuangguandong/第15集/index.m3u8#第16集$https://c1.rrcdnbf2.com/video/chuangguandong/第16集/index.m3u8#第17集$https://c1.rrcdnbf2.com/video/chuangguandong/第17集/index.m3u8#第18集$https://c1.rrcdnbf2.com/video/chuangguandong/第18集/index.m3u8#第19集$https://c1.rrcdnbf2.com/video/chuangguandong/第19集/index.m3u8#第20集$https://c1.rrcdnbf2.com/video/chuangguandong/第20集/index.m3u8#第21集$https://c1.rrcdnbf2.com/video/chuangguandong/第21集/index.m3u8#第22集$https://c1.rrcdnbf2.com/video/chuangguandong/第22集/index.m3u8#第23集$https://c1.rrcdnbf2.com/video/chuangguandong/第23集/index.m3u8#第24集$https://c1.rrcdnbf2.com/video/chuangguandong/第24集/index.m3u8#第25集$https://c1.rrcdnbf2.com/video/chuangguandong/第25集/index.m3u8#第26集$https://c1.rrcdnbf2.com/video/chuangguandong/第26集/index.m3u8#第27集$https://c1.rrcdnbf2.com/video/chuangguandong/第27集/index.m3u8#第28集$https://c1.rrcdnbf2.com/video/chuangguandong/第28集/index.m3u8#第29集$https://c1.rrcdnbf2.com/video/chuangguandong/第29集/index.m3u8#第30集$https://c1.rrcdnbf2.com/video/chuangguandong/第30集/index.m3u8#第31集$https://c1.rrcdnbf2.com/video/chuangguandong/第31集/index.m3u8#第32集$https://c1.rrcdnbf2.com/video/chuangguandong/第32集/index.m3u8#第33集$https://c1.rrcdnbf2.com/video/chuangguandong/第33集/index.m3u8#第34集$https://c1.rrcdnbf2.com/video/chuangguandong/第34集/index.m3u8#第35集$https://c1.rrcdnbf2.com/video/chuangguandong/第35集/index.m3u8#第36集$https://c1.rrcdnbf2.com/video/chuangguandong/第36集/index.m3u8#第37集$https://c1.rrcdnbf2.com/video/chuangguandong/第37集/index.m3u8#第38集$https://c1.rrcdnbf2.com/video/chuangguandong/第38集/index.m3u8#第39集$https://c1.rrcdnbf2.com/video/chuangguandong/第39集/index.m3u8#第40集$https://c1.rrcdnbf2.com/video/chuangguandong/第40集/index.m3u8#第41集$https://c1.rrcdnbf2.com/video/chuangguandong/第41集/index.m3u8#第42集$https://c1.rrcdnbf2.com/video/chuangguandong/第42集/index.m3u8#第43集$https://c1.rrcdnbf2.com/video/chuangguandong/第43集/index.m3u8#第44集$https://c1.rrcdnbf2.com/video/chuangguandong/第44集/index.m3u8#第45集$https://c1.rrcdnbf2.com/video/chuangguandong/第45集/index.m3u8#第46集$https://c1.rrcdnbf2.com/video/chuangguandong/第46集/index.m3u8#第47集$https://c1.rrcdnbf2.com/video/chuangguandong/第47集/index.m3u8#第48集$https://c1.rrcdnbf2.com/video/chuangguandong/第48集/index.m3u8#第49集$https://c1.rrcdnbf2.com/video/chuangguandong/第49集/index.m3u8#第50集$https://c1.rrcdnbf2.com/video/chuangguandong/第50集/index.m3u8#第51集$https://c1.rrcdnbf2.com/video/chuangguandong/第51集/index.m3u8#第52集$https://c1.rrcdnbf2.com/video/chuangguandong/第52集/index.m3u8",
+     "remarks": "完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 52,
+     "play_url": "第01集$https://vip.ffzy-online1.com/share/0942033ffb34a2e687227b7d0b5aebb3#第02集$https://vip.ffzy-online1.com/share/379ca86900bf49dd9ab653c1f319bc46#第03集$https://vip.ffzy-online1.com/share/32ae10ca1b38a0af50f68f4d4d1204ce#第04集$https://vip.ffzy-online1.com/share/2b0fe1a3e28deed84edeb408d764b834#第05集$https://vip.ffzy-online1.com/share/387484cc7cd48b4f2dea413199d03710#第06集$https://vip.ffzy-online1.com/share/7cf0933912f7c4fc3a66926e8467ff4f#第07集$https://vip.ffzy-online1.com/share/36719c41e4f639ac3b96a7d02e72a337#第08集$https://vip.ffzy-online1.com/share/a0b39ebccc9fd36dab289696b78dd758#第09集$https://vip.ffzy-online1.com/share/a2a98bfca14174f96ed0af9c76231f7d#第10集$https://vip.ffzy-online1.com/share/35e5b98f0069039f5e0b4cdcbb9e34a5#第11集$https://vip.ffzy-online1.com/share/5572d737b2c88119e2940f67ef04a389#第12集$https://vip.ffzy-online1.com/share/c84f4c33b8ed07f61e6356c3a7418bd3#第13集$https://vip.ffzy-online1.com/share/e905eaa6739d057a4c8647932569587b#第14集$https://vip.ffzy-online1.com/share/7fbdf69672adfb7ec6e8a940c9160812#第15集$https://vip.ffzy-online1.com/share/3f1bd7d13bac8f4432977fbc853f1164#第16集$https://vip.ffzy-online1.com/share/839e031f73a030ddf8e92c340337caf1#第17集$https://vip.ffzy-online1.com/share/dde31f49621b69aa8cec247ccad5beca#第18集$https://vip.ffzy-online1.com/share/dfb4b02028137a1718eac4c8aca08eaf#第19集$https://vip.ffzy-online1.com/share/4cb40023ec377287074815415900886a#第20集$https://vip.ffzy-online1.com/share/301800151ddb09a0f52399be47cf1fd7#第21集$https://vip.ffzy-online1.com/share/fe10b3c08a1273145b1df65fc4ba484b#第22集$https://vip.ffzy-online1.com/share/429388ccd3c3d31ea3f73958d1874e7a#第23集$https://vip.ffzy-online1.com/share/33d6472d5414d1b170e36c3588aac747#第24集$https://vip.ffzy-online1.com/share/8471949afb27a55859ad36a5e8f389c5#第25集$https://vip.ffzy-online1.com/share/f1740a30d58130f2cb142c85ba008a50#第26集$https://vip.ffzy-online1.com/share/f381b8e26545093aa5f7b84545f0b400#第27集$https://vip.ffzy-online1.com/share/ca923c97a1ca2616a429d2e548f794c3#第28集$https://vip.ffzy-online1.com/share/62abb8d43023adcb2cfbf7ef1b5f26cd#第29集$https://vip.ffzy-online1.com/share/04b24b26cc577d2ed995d9f8460dbd4a#第30集$https://vip.ffzy-online1.com/share/a159fc130dd0624a3a4f3bf7933c05e1#第31集$https://vip.ffzy-online1.com/share/abddd218d7b0b9fc5e0dea60cde9a641#第32集$https://vip.ffzy-online1.com/share/06291ee84397cf9eada3e0c7501c4ba0#第33集$https://vip.ffzy-online1.com/share/7d8ce1d7ed4350e74cd80f0e9ef97ead#第34集$https://vip.ffzy-online1.com/share/2064c09c57c066c180cfc125a6681289#第35集$https://vip.ffzy-online1.com/share/7c7febbd51895eba936df6d3cbc31e4d#第36集$https://vip.ffzy-online1.com/share/1a5115fc501e438fbbd7dcae74df992f#第37集$https://vip.ffzy-online1.com/share/5c542ac701558a065786bddcaed3735c#第38集$https://vip.ffzy-online1.com/share/a89297b958e364a4f5f324938d002ff8#第39集$https://vip.ffzy-online1.com/share/6151dddf696bb88fd0d656c4c48c27a3#第40集$https://vip.ffzy-online1.com/share/95bae1caa43ebe5837b374f07d531ab4#第41集$https://vip.ffzy-online1.com/share/2e49903d4ece8458e5dcae930b02346d#第42集$https://vip.ffzy-online1.com/share/48b109f9bb69ce94aaddec5e574787eb#第43集$https://vip.ffzy-online1.com/share/8a2e1f3e5b3dc11ef455af6a71dcc05a#第44集$https://vip.ffzy-online1.com/share/74e1c5cceb05a193924c9b0625724b50#第45集$https://vip.ffzy-online1.com/share/d73e7fdfeaeae6c2045d900e44e80d3b#第46集$https://vip.ffzy-online1.com/share/f5e91418e61ac101e76826413bd66728#第47集$https://vip.ffzy-online1.com/share/0b795df26c167321a2a53e1794e9b57c#第48集$https://vip.ffzy-online1.com/share/44f5fb33eb2126fff874e1d7ff7ace46#第49集$https://vip.ffzy-online1.com/share/68b80e28eabb1636cd82ff82870ffc71#第50集$https://vip.ffzy-online1.com/share/eb0ae6e38cbfc7239a807dd973690bfa#第51集$https://vip.ffzy-online1.com/share/c320db4c580b3747d80ca3316aecd4a2#第52集$https://vip.ffzy-online1.com/share/46e74599ab24521d16980a33eb343e8f",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "非凡",
+     "episode_count": 52,
+     "play_url": "第01集$https://vip.ffzy-online1.com/20240606/52391_c5f5d381/index.m3u8#第02集$https://vip.ffzy-online1.com/20240606/52392_67a99dd1/index.m3u8#第03集$https://vip.ffzy-online1.com/20240606/52393_9ca39633/index.m3u8#第04集$https://vip.ffzy-online1.com/20240606/52394_a6b9e6ac/index.m3u8#第05集$https://vip.ffzy-online1.com/20240606/52395_8fdc1e63/index.m3u8#第06集$https://vip.ffzy-online1.com/20240606/52397_41efa995/index.m3u8#第07集$https://vip.ffzy-online1.com/20240606/52413_d047f450/index.m3u8#第08集$https://vip.ffzy-online1.com/20240606/52414_7e364411/index.m3u8#第09集$https://vip.ffzy-online1.com/20240606/52415_a5d8b3e4/index.m3u8#第10集$https://vip.ffzy-online1.com/20240606/52416_47129360/index.m3u8#第11集$https://vip.ffzy-online1.com/20240606/52417_457a177b/index.m3u8#第12集$https://vip.ffzy-online1.com/20240606/52434_359a583f/index.m3u8#第13集$https://vip.ffzy-online1.com/20240606/52457_bcac6594/index.m3u8#第14集$https://vip.ffzy-online1.com/20240606/52458_a95b541e/index.m3u8#第15集$https://vip.ffzy-online1.com/20240606/52459_6a8abe42/index.m3u8#第16集$https://vip.ffzy-online1.com/20240606/52460_5df54a13/index.m3u8#第17集$https://vip.ffzy-online1.com/20240606/52497_f703be0d/index.m3u8#第18集$https://vip.ffzy-online1.com/20240606/52462_6152e201/index.m3u8#第19集$https://vip.ffzy-online1.com/20240606/52463_b793477b/index.m3u8#第20集$https://vip.ffzy-online1.com/20240606/52464_20d29664/index.m3u8#第21集$https://vip.ffzy-online1.com/20240606/52465_4c5d7c59/index.m3u8#第22集$https://vip.ffzy-online1.com/20240606/52466_b9d3e937/index.m3u8#第23集$https://vip.ffzy-online1.com/20240606/52467_ab3b3afb/index.m3u8#第24集$https://vip.ffzy-online1.com/20240606/52468_a98d52d7/index.m3u8#第25集$https://vip.ffzy-online1.com/20240606/52469_c9c177df/index.m3u8#第26集$https://vip.ffzy-online1.com/20240606/52470_f31d9edf/index.m3u8#第27集$https://vip.ffzy-online1.com/20240606/52471_9cf3f343/index.m3u8#第28集$https://vip.ffzy-online1.com/20240606/52472_576225bb/index.m3u8#第29集$https://vip.ffzy-online1.com/20240606/52473_c0d130a5/index.m3u8#第30集$https://vip.ffzy-online1.com/20240606/52474_ea12f578/index.m3u8#第31集$https://vip.ffzy-online1.com/20240606/52475_605c0b54/index.m3u8#第32集$https://vip.ffzy-online1.com/20240606/52476_21a47394/index.m3u8#第33集$https://vip.ffzy-online1.com/20240606/52477_f6046edc/index.m3u8#第34集$https://vip.ffzy-online1.com/20240606/52478_7a4e4ac8/index.m3u8#第35集$https://vip.ffzy-online1.com/20240606/52479_801f737e/index.m3u8#第36集$https://vip.ffzy-online1.com/20240606/52480_95e24022/index.m3u8#第37集$https://vip.ffzy-online1.com/20240606/52481_0b70d72a/index.m3u8#第38集$https://vip.ffzy-online1.com/20240606/52482_4bf4d326/index.m3u8#第39集$https://vip.ffzy-online1.com/20240606/52483_f9dd7a65/index.m3u8#第40集$https://vip.ffzy-online1.com/20240606/52484_ff135a58/index.m3u8#第41集$https://vip.ffzy-online1.com/20240606/52485_bfb4dd2a/index.m3u8#第42集$https://vip.ffzy-online1.com/20240606/52486_f8f599a3/index.m3u8#第43集$https://vip.ffzy-online1.com/20240606/52487_2bdc0a3d/index.m3u8#第44集$https://vip.ffzy-online1.com/20240606/52488_fd6e0106/index.m3u8#第45集$https://vip.ffzy-online1.com/20240606/52489_b77377a5/index.m3u8#第46集$https://vip.ffzy-online1.com/20240606/52490_10375f98/index.m3u8#第47集$https://vip.ffzy-online1.com/20240606/52491_adb919ab/index.m3u8#第48集$https://vip.ffzy-online1.com/20240606/52492_2906a480/index.m3u8#第49集$https://vip.ffzy-online1.com/20240606/52493_c505c3c6/index.m3u8#第50集$https://vip.ffzy-online1.com/20240606/52494_dd84810f/index.m3u8#第51集$https://vip.ffzy-online1.com/20240606/52495_1d255f62/index.m3u8#第52集$https://vip.ffzy-online1.com/20240606/52496_999ffe3d/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 34562,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    52,
+    52,
+    52,
+    52,
+    52
+   ],
+   "cand_idx": "vod016",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900,
+    1800
+   ]
+  },
+  {
+   "vod_name": "国家宝藏 第一季",
+   "vod_year": "2017",
+   "category": "综艺",
+   "type_name": "大陆综艺",
+   "vod_remarks": "已完结",
+   "vod_actor": "张国立,李晨,王凯,梁家辉,刘涛,易烊千玺,段奕宏,秦海璐,撒贝宁,马苏,单霁翔,李仲谋,龚良,段晓明,马萧林,强跃,万全文,蔡琴,马宝杰,任万平,方勤,王刚,何炅,陈晓,刘奕君,郭涛,雷佳音,关晓彤,蔡国庆,蔡轩正,任重,宁静,杨志刚,那英,孙淳,周冬雨,袁弘",
+   "vod_director": "于蕾",
+   "vod_content": "<p>　　随着《中国诗词大会》、《朗读者》等节目的热播，今年，逐步被定格为央视文化节目元年。8月22日，九大国家级重点博物馆纷纷“周二见”的秘密被揭晓，央视文化节目大家庭又将新增一位重量级成员：大型文博探索节目《国家宝藏》——一场关于9家博物馆、27件镇馆之宝的恢弘“特展”：金牌制作团队2年酝酿筹划、强大顾问团保驾护航、九大国家级重点博物馆强势结盟、实景取材、27件顶级国宝重器、27位与之魂魄相依的“国宝守护人……《国家宝藏》将用创新演绎的传奇故事，串联每一个守护者的讲述，点燃延续中华文明的灿烂星火。用时尚鲜活的综艺形态，搅动每一个普通人的参与，全力解密和激活古老深沉的历史文化资源。</p>",
+   "vod_pic": "https://img.lzipic.com/upload/vod/20220405-1/53e44a6f1fd1aef0bd625078f0d0ab57.jpg",
+   "routes": [
+    {
+     "provider": "量子",
+     "episode_count": 10,
+     "play_url": "国家宝藏第一季.20171203期$https://vip1.lz-cdn7.com/share/c6bff625bdb0393992c9d4db0c6bbe45#国家宝藏第一季.20171210期$https://vip1.lz-cdn7.com/share/c667d53acd899a97a85de0c201ba99be#国家宝藏第一季.20171217期$https://vip1.lz-cdn7.com/share/aace49c7d80767cffec0e513ae886df0#国家宝藏第一季.20171224期$https://vip1.lz-cdn7.com/share/4da04049a062f5adfe81b67dd755cecc#国家宝藏第一季.20180107期$https://vip1.lz-cdn7.com/share/c9f95a0a5af052bffce5c89917335f67#国家宝藏第一季.20180114期$https://vip1.lz-cdn7.com/share/af21d0c97db2e27e13572cbf59eb343d#国家宝藏第一季.20180121期$https://vip1.lz-cdn7.com/share/e58cc5ca94270acaceed13bc82dfedf7#国家宝藏第一季.20180128期$https://vip1.lz-cdn7.com/share/b9d487a30398d42ecff55c228ed5652b#国家宝藏第一季.20180204期$https://vip1.lz-cdn7.com/share/8f1d43620bc6bb580df6e80b0dc05c48#国家宝藏第一季.20180211期$https://vip1.lz-cdn7.com/share/c3e0c62ee91db8dc7382bde7419bb573",
+     "remarks": "已完结",
+     "probe": null
+    },
+    {
+     "provider": "量子",
+     "episode_count": 10,
+     "play_url": "国家宝藏第一季.20171203期$https://vip1.lz-cdn7.com/20220405/1101_07b71bfd/index.m3u8#国家宝藏第一季.20171210期$https://vip1.lz-cdn7.com/20220405/1102_2384c39a/index.m3u8#国家宝藏第一季.20171217期$https://vip1.lz-cdn7.com/20220405/1103_d36f8f26/index.m3u8#国家宝藏第一季.20171224期$https://vip1.lz-cdn7.com/20220405/1104_bc9b7c32/index.m3u8#国家宝藏第一季.20180107期$https://vip1.lz-cdn7.com/20220405/1106_0f6ab961/index.m3u8#国家宝藏第一季.20180114期$https://vip1.lz-cdn7.com/20220405/1105_c1c87530/index.m3u8#国家宝藏第一季.20180121期$https://vip1.lz-cdn7.com/20220405/1107_a841462c/index.m3u8#国家宝藏第一季.20180128期$https://vip1.lz-cdn7.com/20220405/1108_041f3e58/index.m3u8#国家宝藏第一季.20180204期$https://vip1.lz-cdn7.com/20220405/1109_a79fe594/index.m3u8#国家宝藏第一季.20180211期$https://vip1.lz-cdn7.com/20220405/1138_fb1bc531/index.m3u8",
+     "remarks": "已完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 60058,
+      "level": "HLS + media segment"
+     }
+    },
+    {
+     "provider": "暴风",
+     "episode_count": 10,
+     "play_url": "第1期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/92ebcea5225d/index.m3u8#第2期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/8f4ff2145a96/index.m3u8#第3期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/5c135aac6c7d/index.m3u8#第4期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/a0e3a5f32797/index.m3u8#第5期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/6f774334c7f3/index.m3u8#第6期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/b09251dedfaa/index.m3u8#第7期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/5a0e32be9e2e/index.m3u8#第8期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/af61bd46ca2e/index.m3u8#第9期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/87af92f5b744/index.m3u8#第10期$https://s2.bfllvip.com/video/guojiabaocangdiyiji/621b982507d8/index.m3u8",
+     "remarks": "完结",
+     "probe": {
+      "ok": true,
+      "segment_bytes": 131072,
+      "level": "HLS + media segment"
+     }
+    }
+   ],
+   "episode_counts": [
+    10,
+    10,
+    10
+   ],
+   "cand_idx": "vod017",
+   "frames_captured": [
+    3,
+    60,
+    300,
+    900,
+    1800
+   ]
+  }
+ ]
+}

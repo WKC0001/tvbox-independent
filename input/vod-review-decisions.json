@@ -1,0 +1,74 @@
+{
+ "vod000": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod001": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod002": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod003": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod005": {
+  "verdict": "pass",
+  "note": "源自带第三方站点水印(www.babiyyu.com)但内容真实"
+ },
+ "vod006": {
+  "verdict": "pass",
+  "note": "源自带站点横幅水印但内容真实"
+ },
+ "vod007": {
+  "verdict": "pass",
+  "note": "部分帧带第三方水印但内容真实"
+ },
+ "vod008": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod009": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod010": {
+  "verdict": "pass",
+  "note": "部分帧带站点水印但内容真实"
+ },
+ "vod011": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod012": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod014": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod016": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod017": {
+  "verdict": "pass",
+  "note": "目检通过：内容与片名/年份一致，无不当覆盖层"
+ },
+ "vod004": {
+  "verdict": "fail",
+  "note": "可播独立线路不足2条"
+ },
+ "vod013": {
+  "verdict": "fail",
+  "note": "可播独立线路不足2条"
+ },
+ "vod015": {
+  "verdict": "fail",
+  "note": "可播独立线路不足2条"
+ }
+}

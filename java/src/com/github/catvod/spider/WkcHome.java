@@ -6,7 +6,7 @@ public class WkcHome extends Spider {
  private JSONArray catalog=new JSONArray();private String provider="";
  private final Map<String,JSONObject> records=new LinkedHashMap<String,JSONObject>();
  private final Set<String> allowedUrls=new HashSet<String>();
- private static final String[] CATS={"电视剧","电影","综艺","动漫","纪录片"};
+ private static final String[] CATS={"电影","电视剧","综艺","动漫","纪录片","少儿"};
  private static String norm(String s){return Normalizer.normalize(s,Normalizer.Form.NFKC).replaceAll("[\\s\\p{Punct}]+","").toLowerCase(Locale.ROOT);}
  private static String digest(String s)throws Exception {byte[] b=MessageDigest.getInstance("SHA-256").digest(s.getBytes("UTF-8"));StringBuilder h=new StringBuilder();for(byte n:b)h.append(String.format(Locale.ROOT,"%02x",n&255));return h.toString();}
  @Override public void init(Context c,String ext)throws Exception {

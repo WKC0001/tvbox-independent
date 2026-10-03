@@ -1,10 +1,12 @@
 {
   "version": "0.3.0",
   "policy": "Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin",
-  "reviewed_titles": 8,
+  "reviewed_titles": 23,
   "categories": {
-    "电视剧": 3,
-    "电影": 5
+    "电视剧": 9,
+    "电影": 9,
+    "动漫": 4,
+    "综艺": 1
   },
   "removed_providers": [
     "玉兔",

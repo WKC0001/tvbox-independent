@@ -23,6 +23,7 @@ FILES = [
     "scripts/review_live.py", "scripts/review_assets.py", "scripts/verify-cdn.cjs",
     "scripts/cdn-diagnostic.cjs", "scripts/api_push.py",
     "scripts/live_harvest.py", "scripts/live_review_frames.py", "scripts/live_merge.py",
+    "scripts/vod_harvest.py", "scripts/vod_review_frames.py", "scripts/vod_merge.py",
     "tests/test_content_gate.py", "tests/test_health.py", "tests/__init__.py",
     "java/build.sh", "java/src/com/github/catvod/spider/ApprovedCatalogue.java",
     "java/src/com/github/catvod/spider/Init.java",
@@ -37,9 +38,11 @@ FILES = [
     "input/channel-metadata.json", "input/reviewed-titles.json",
     "input/review-candidates.json", "input/review-live.json",
     "input/review-live-decisions.json", "input/live-allowed-hosts.json",
+    "input/vod-candidates.json", "input/vod-review-decisions.json", "input/vod-enrich.json",
     "reports/content-review.json", "reports/route-registry.json",
-    "reports/live-gaps.json",
+    "reports/live-gaps.json", "reports/vod-gaps.json",
     ".gitignore", "README.md",
+    "posters/wkc_149b66c9a4af14.jpg", "posters/wkc_35d92d7e622748.jpg", "posters/wkc_3bda296ad3d4b8.jpg", "posters/wkc_6fa37f485a4967.jpg", "posters/wkc_7e184d61d11e43.jpg", "posters/wkc_d157f17b39aeeb.jpg", "posters/wkc_d18b061d9e7b7b.jpg", "posters/wkc_da00b75fa9e263.jpg", "posters/wkc_wkc_w_006176.jpg", "posters/wkc_wkc_w_0e6616.jpg", "posters/wkc_wkc_w_2252ca.jpg", "posters/wkc_wkc_w_47a783.jpg", "posters/wkc_wkc_w_52997a.jpg", "posters/wkc_wkc_w_533547.jpg", "posters/wkc_wkc_w_6fa4f9.jpg", "posters/wkc_wkc_w_a0683e.jpg", "posters/wkc_wkc_w_b023fa.jpg", "posters/wkc_wkc_w_b62a10.jpg", "posters/wkc_wkc_w_b6b710.jpg", "posters/wkc_wkc_w_cc86e2.jpg", "posters/wkc_wkc_w_e1df19.jpg", "posters/wkc_wkc_w_e8b8e0.jpg", "posters/wkc_wkc_w_ff1524.jpg",
 ]
 
 

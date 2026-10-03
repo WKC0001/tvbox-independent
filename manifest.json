@@ -1,10 +1,12 @@
 {
   "version": "0.3.0",
   "policy": "Immutable title whitelist; no raw CMS browse/search/detail; matching catalogue hash required by plugin",
-  "reviewed_titles": 8,
+  "reviewed_titles": 23,
   "categories": {
-    "电视剧": 3,
-    "电影": 5
+    "电视剧": 9,
+    "电影": 9,
+    "动漫": 4,
+    "综艺": 1
   },
   "removed_providers": [
     "玉兔",
@@ -35,19 +37,34 @@
   "original_repo_modified": false,
   "original_npm_modified": false,
   "package": "wkc0001-tvbox-independent",
-  "generated_at": "2026-10-03T13:15:17Z",
-  "catalog_sha256": "d031ce17d7344c6ca015a2e73f956d0a5ee0b2e3a78f57b078d0816cee356d34",
+  "generated_at": "2026-10-03T14:22:44Z",
+  "catalog_sha256": "4b6c254282a2a5002a29c0635f315e67b96171c5a39d0fe5525f49cce2f84a9d",
   "files": {
-    "api.json": "42fbef94fa0239586cf504084aa5ab9135f28f1dd7243e9ae879e89d0a088c21",
+    "api.json": "d5451f176a48e5f053898806b692260e2c1e9befb8ae9bccff6794dcaafddd5f",
     "live.m3u": "64241343178a8fb49c1aa13d2961d3571e5dcc0d9bcdc9764ea091449501b405",
     "home.jpg": "79c8ad219f0ed4399ef39ae085f191c3684cede5a57aecdf468b64d5206b9545",
     "posters/wkc_da00b75fa9e263.jpg": "998a30429e5b2913e310687c1a6edc95c47ef1dfa89d12bd4137b6f25d211fbc",
+    "posters/wkc_wkc_w_ff1524.jpg": "dc85236c1aee422aa89aace9c366d06f8825bc72b2543e7e7b9b37c38664121c",
+    "posters/wkc_wkc_w_e1df19.jpg": "afd296a4a0819faaade6c35c2ee4d08f313448bb6b9ed77f188901a686ab31c9",
+    "posters/wkc_wkc_w_47a783.jpg": "9edb7fd972a858c8f99fcb0500eafcbe279a515d9ba449503a1729db34c2016f",
+    "posters/wkc_wkc_w_b023fa.jpg": "255f2f320e4abcb43ec5bf0fd1c2cfba3f764cbacdf1fd1d263fbd7f0b932faa",
+    "posters/wkc_wkc_w_b62a10.jpg": "e0fd602fd0f021503685fcd2b259c0a0c86774351b494b629f7c0016f14a5b2e",
+    "posters/wkc_wkc_w_e8b8e0.jpg": "45cf7192f4ac8911c8ce8ffda88729570e35e5650e69fe5b33526790e21a868b",
     "posters/wkc_149b66c9a4af14.jpg": "cdadeb0db098b9ee2ac7719b6ff86b42dfcbbe086e48b5c27964bab0d84467ba",
     "posters/wkc_6fa37f485a4967.jpg": "5669f88616a31f76079ed456861255ab2017515e25bc3c95542da1fb5832a29d",
     "posters/wkc_3bda296ad3d4b8.jpg": "b2f75807b39981a1b0b88f76ae4164e8505a25428005a20484851a1112f16c92",
+    "posters/wkc_wkc_w_006176.jpg": "ae780d88c5e3970bb2d26bc696083f9438bb769afbc0f74f240b73a0cae92946",
+    "posters/wkc_wkc_w_2252ca.jpg": "ceac51e19ffb261e402fec78cad6804565a7c3d7c1a26c6b68195af0245d0c19",
     "posters/wkc_7e184d61d11e43.jpg": "07dd982e8eab93a99290c28ecf49ec1de9dac70a4ed9f4bac61951100e910c8e",
+    "posters/wkc_wkc_w_b6b710.jpg": "6c38b617bd0c65390be5d6dfe081d52f670f99fbc2edb51bfa327c3c9dcf004f",
+    "posters/wkc_wkc_w_0e6616.jpg": "46750c5dab942a3aca4bc8f8fc04d387ecc3d583c0da1795f43b4a560c4b44f4",
     "posters/wkc_d157f17b39aeeb.jpg": "42e354ab019de5e2d907a2a4842ca30acd039b6ca3513530c241547519d45077",
+    "posters/wkc_wkc_w_52997a.jpg": "5f78896f2a46643af0def9c49c089a1ab71ffd612f9c65eecac8afa7b70ab6ef",
+    "posters/wkc_wkc_w_6fa4f9.jpg": "3d59cba116f9684068684200aa88c2ce92f722d9ea84352c8312e783876a2815",
+    "posters/wkc_wkc_w_a0683e.jpg": "2571d1f5deca3b5cfd7e9527a929bdfede66875a3c34222e3e1d1de2f1efd8c7",
+    "posters/wkc_wkc_w_cc86e2.jpg": "44fea22e2f865ebd22b1c826ba68ede1e99e435244b06e18e51add1f9b84fc11",
     "posters/wkc_d18b061d9e7b7b.jpg": "707a6000369c009b9c7547e2f1e13948d9f5f2ebc025245eab4d45bb49afca24",
-    "posters/wkc_35d92d7e622748.jpg": "ad77d1588eb6e691ff622efef90409e2292e8ad82b049bd6f10d4098f4bb3010"
+    "posters/wkc_35d92d7e622748.jpg": "ad77d1588eb6e691ff622efef90409e2292e8ad82b049bd6f10d4098f4bb3010",
+    "posters/wkc_wkc_w_533547.jpg": "eadaf1a296fe89f54636f2f5f479716de1a6b3ad55bca64ea0a79535eb85780c"
   }
 }

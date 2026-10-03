@@ -58,14 +58,25 @@ jobs:
           git config user.email actions@users.noreply.github.com
           git add state/provider-audit.json state/multisite-health.json reports/audit-github.json \
                   registry/channels.json reports/epg-match.json state/epg-cursor.json
-          # The rotation cursor moves every run; only a real guide change justifies a new candidate.
-          if git diff --cached --quiet -- registry/channels.json reports/epg-match.json; then
+          # Re-confirming a mapping rewrites the time it was confirmed. That renews real evidence and
+          # is worth committing, but it ships a byte-identical release, so only a change in what users
+          # receive (or in health evidence) may open a new candidate.
+          guide_now="$(python scripts/guide_signature.py)"
+          guide_head="$(git show HEAD:registry/channels.json | python scripts/guide_signature.py -)"
+          health=no
+          git diff --cached --quiet -- state/provider-audit.json state/multisite-health.json reports/audit-github.json || health=yes
+          if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
-            echo "Guide registry and health evidence are unchanged; no new candidate is warranted."
+            echo "Nothing to record."
           else
             git commit -m 'chore: refresh independent health and guide evidence [skip ci]'
             git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            if [ "$guide_now" = "$guide_head" ] && [ "$health" = no ]; then
+              echo "changed=false" >> "$GITHUB_OUTPUT"
+              echo "Only evidence timestamps moved; no new candidate is warranted."
+            else
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+            fi
           fi
       - name: Prepare a fresh fixed-version candidate after full checks
         if: success() && steps.mode.outputs.value == 'full' && steps.evidence.outputs.changed == 'true'

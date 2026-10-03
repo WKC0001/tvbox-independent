@@ -89,7 +89,19 @@ class RepositoryGuideStateTests(unittest.TestCase):
     def test_match_report_agrees_with_the_registry(self):
         report=json.loads((ROOT/'reports/epg-match.json').read_text())
         self.assertEqual(report['channels_with_epg_id'],sum(1 for c in self.channels if c.get('epg_id')))
-        self.assertEqual(report['inspected'],len(self.channels))
+        # A rotating window probes one slice per run, so inspected is bounded by the registry
+        # rather than equal to it, and every probe must land in exactly one verdict.
+        self.assertGreater(report['inspected'],0)
+        self.assertLessEqual(report['inspected'],len(self.channels))
+        self.assertEqual(sum(report[k] for k in ('confirmed','retracted','unanswered','contaminated')),
+                         report['inspected'])
+    def test_timestamp_refresh_is_not_a_content_change(self):
+        from scripts.guide_signature import digest
+        refreshed=[{**c,'epg_checked_at':(c.get('epg_checked_at') or 0)+10**6} for c in self.channels]
+        self.assertEqual(digest(refreshed),digest(self.channels))
+        self.assertNotEqual(digest(self.channels[:-1]),digest(self.channels))
+        changed=[{**c,'epg_id':''} if c.get('epg_id') else c for c in self.channels]
+        if changed!=self.channels:self.assertNotEqual(digest(changed),digest(self.channels))
 
 class ContentTests(unittest.TestCase):
     def test_no_substring_category_admission(self):

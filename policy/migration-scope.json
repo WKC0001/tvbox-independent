@@ -1,0 +1,162 @@
+{
+  "basis": "old source-monitor 0.1.26; structural recommendation, no deployment or fresh content/playback review",
+  "vod_default_exclusions": [
+    {
+      "order": 27,
+      "key": "新6V",
+      "name": "🧲新6V┃磁力",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "磁力入口，交互及播放依赖复杂，默认移出主配置"
+    },
+    {
+      "order": 45,
+      "key": "虎牙js",
+      "name": "🐯虎牙┃直播",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "平台直播入口，移出影视点播站列表"
+    },
+    {
+      "order": 46,
+      "key": "斗鱼js",
+      "name": "🐟斗鱼┃直播",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "平台直播入口，移出影视点播站列表"
+    },
+    {
+      "order": 47,
+      "key": "dr_兔小贝",
+      "name": "📚儿童┃启蒙",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "启蒙/教育/课堂独立入口默认不展示；影视中的动漫及少儿分类保留，可选教育包另行维护"
+    },
+    {
+      "order": 48,
+      "key": "YGP",
+      "name": "🚀叨观荐影┃预告片",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "预告/音乐/MV/小说/教学/演唱会周边入口，默认移出影视主配置"
+    },
+    {
+      "order": 49,
+      "key": "MTV1",
+      "name": "🎙️易听音乐┃带歌词",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "预告/音乐/MV/小说/教学/演唱会周边入口，默认移出影视主配置"
+    },
+    {
+      "order": 50,
+      "key": "看球",
+      "name": "⚽八八┃看球",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "看球/回放聚合入口，体育需求优先由精选电视直播满足"
+    },
+    {
+      "order": 51,
+      "key": "多多",
+      "name": "🏀多多┃回放",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "看球/回放聚合入口，体育需求优先由精选电视直播满足"
+    },
+    {
+      "order": 52,
+      "key": "吃瓜",
+      "name": "🏐吃瓜┃看球",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "看球/回放聚合入口，体育需求优先由精选电视直播满足"
+    },
+    {
+      "order": 53,
+      "key": "alllive",
+      "name": "🎮一直播┃直播",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "平台直播入口，移出影视点播站列表"
+    },
+    {
+      "order": 54,
+      "key": "MTV",
+      "name": "🎶明星┃MV",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "预告/音乐/MV/小说/教学/演唱会周边入口，默认移出影视主配置"
+    },
+    {
+      "order": 55,
+      "key": "有声小说",
+      "name": "🎧有声┃小说",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "预告/音乐/MV/小说/教学/演唱会周边入口，默认移出影视主配置"
+    },
+    {
+      "order": 56,
+      "key": "Aid",
+      "name": "🚑急救┃教学",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "预告/音乐/MV/小说/教学/演唱会周边入口，默认移出影视主配置"
+    },
+    {
+      "order": 57,
+      "key": "Biliych",
+      "name": "🅱哔哔演唱会┃弹幕",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "预告/音乐/MV/小说/教学/演唱会周边入口，默认移出影视主配置"
+    },
+    {
+      "order": 58,
+      "key": "少儿教育",
+      "name": "📚少儿┃教育",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "启蒙/教育/课堂独立入口默认不展示；影视中的动漫及少儿分类保留，可选教育包另行维护"
+    },
+    {
+      "order": 59,
+      "key": "小学课堂",
+      "name": "📚小学┃课堂",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "启蒙/教育/课堂独立入口默认不展示；影视中的动漫及少儿分类保留，可选教育包另行维护"
+    },
+    {
+      "order": 60,
+      "key": "初中课堂",
+      "name": "📚初中┃课堂",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "启蒙/教育/课堂独立入口默认不展示；影视中的动漫及少儿分类保留，可选教育包另行维护"
+    },
+    {
+      "order": 61,
+      "key": "高中教育",
+      "name": "📚高中┃课堂",
+      "recommended_action": "exclude_from_main_config",
+      "reason": "启蒙/教育/课堂独立入口默认不展示；影视中的动漫及少儿分类保留，可选教育包另行维护"
+    }
+  ],
+  "vod_remaining_candidates": 43,
+  "remaining_candidates_are_not_automatically_approved": true,
+  "live_entry_exclusions": [
+    {
+      "name": "虎牙一起看",
+      "url": "https://sub.ottiptv.cc/huyayqk.m3u"
+    },
+    {
+      "name": "斗鱼一起看",
+      "url": "https://sub.ottiptv.cc/douyuyqk.m3u"
+    },
+    {
+      "name": "YY轮播",
+      "url": "https://sub.ottiptv.cc/yylunbo.m3u"
+    }
+  ],
+  "retain_home": "豆豆┃片单 / equivalent compatible dynamic home adapter",
+  "preserve_vod_categories": [
+    "电影",
+    "电视剧",
+    "综艺",
+    "动漫"
+  ],
+  "live_policy": {
+    "retain": "All genuine television channel identities, including regional/minority/specialty/foreign TV channels; no 50-70 cap or popularity pruning.",
+    "exclude": "Huya/Douyu/YY platform carousel entries and confirmed platform game/anchor/film loops; confirmed non-channel placeholders.",
+    "unknown": "Keep source record and require identity review; do not equate uncertainty with unwanted channels.",
+    "dedup": "Merge only proven same-channel aliases/routes; preserve CCTV5+, 4K and 8K distinct services; keep coverage mapping."
+  },
+  "supersedes_previous_live_policy": true,
+  "vod_remaining_candidates_are_not_all_confirmed_usable": true
+}

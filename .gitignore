@@ -16,3 +16,11 @@ java/json.jar
 .DS_Store
 frames/
 probe-output/
+
+.push-plan.json
+java/generated/
+java/test-classes/
+vendor/native-restored.jpg
+npmstage/
+reports/*.log
+registry/epg.xml

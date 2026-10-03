@@ -1,0 +1,12 @@
+{
+  "old_repository": "WKC0001/source-monitor",
+  "old_commit": "c5fff59923e9d70ab12bd3297f419e46b94ece63",
+  "old_package": "wkc0001-tvbox@0.1.26",
+  "independent_previous_commit": "c7787193ac894584462e018114fc8a0458bd6168",
+  "previous_candidate": "0.4.1",
+  "sha256": {
+    "registry/baseline/api.json": "83b40f184800669049ebd58d16378b11584641608972bff4d10007f0702c1271",
+    "registry/baseline/live.m3u": "b36003c527ae08c602dc98525944358cfb0b6d26e773170878d7101fe1a8a09a",
+    "vendor/legacy-clean.jpg": "d586f2d54d4fdb7a2216a2a8b3f17d45af7ad63bf81f16708630fc73ce13f07a"
+  }
+}

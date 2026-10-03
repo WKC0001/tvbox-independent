@@ -13,42 +13,14 @@ ROOT = Path(__file__).resolve().parents[1]
 if "source-monitor" in REPO or "wkc0001-tvbox@" in sys.argv:
     sys.exit("REFUSED: 本脚本只允许推送 WKC0001/tvbox-independent")
 
-FILES = [
-    "package.json", "api.json", "live.m3u", "home.jpg", "manifest.json",
-    "policy/blocked-sources.json", "policy/content_policy.py", "policy/__init__.py",
-    "catalog/ids.py", "catalog/__init__.py",
-    "checker/health.py", "checker/__init__.py",
-    "scripts/assemble.py", "scripts/validate.cjs", "scripts/test_layout.py",
-    "scripts/channel_layout.py", "scripts/probe.py", "scripts/review_catalog.py",
-    "scripts/review_live.py", "scripts/review_assets.py", "scripts/verify-cdn.cjs",
-    "scripts/cdn-diagnostic.cjs", "scripts/api_push.py",
-    "scripts/live_harvest.py", "scripts/live_review_frames.py", "scripts/live_merge.py",
-    "scripts/vod_harvest.py", "scripts/vod_review_frames.py", "scripts/vod_merge.py",
-    "scripts/maintenance.py", "scripts/admin_release.py", "state/health.json",
-    "scripts/build_release.py", "scripts/verify_plugin.py",
-    "tests/test_plugin_artifact.py", "tests/test_release_isolation.py",
-    "tests/fixtures/stale-home.jpg",
-    "tests/test_content_gate.py", "tests/test_health.py", "tests/__init__.py",
-    "java/build.sh", "java/src/com/github/catvod/spider/ApprovedCatalogue.java",
-    "java/src/com/github/catvod/spider/Init.java",
-    "java/src/com/github/catvod/spider/Proxy.java",
-    "java/src/com/github/catvod/spider/WkcHome.java",
-    "java/test/HomeTest.java", "java/test/HomeIntegration.java",
-     ".github/workflows/verify.yml",
-    ".github/workflows/enrich.yml", ".github/workflows/vod-enrich.yml",
-    ".github/workflows/review-content.yml", ".github/workflows/review-live.yml",
-    ".github/workflows/review-assets.yml", ".github/workflows/cdn-diagnostic.yml",
-    ".github/workflows/publish.yml", ".github/workflows/publish-release.yml", ".github/workflows/maintenance.yml",
-    "input/approved-catalog.json", "input/approved-live.json",
-    "input/channel-metadata.json", "input/reviewed-titles.json",
-    "input/review-candidates.json", "input/review-live.json",
-    "input/review-live-decisions.json", "input/live-allowed-hosts.json",
-    "input/vod-candidates.json", "input/vod-review-decisions.json", "input/vod-enrich.json",
-    "reports/content-review.json", "reports/route-registry.json",
-    "reports/live-gaps.json", "reports/vod-gaps.json",
-    ".gitignore", "README.md",
-    "posters/wkc_149b66c9a4af14.jpg", "posters/wkc_35d92d7e622748.jpg", "posters/wkc_3bda296ad3d4b8.jpg", "posters/wkc_6fa37f485a4967.jpg", "posters/wkc_7e184d61d11e43.jpg", "posters/wkc_d157f17b39aeeb.jpg", "posters/wkc_d18b061d9e7b7b.jpg", "posters/wkc_da00b75fa9e263.jpg", "posters/wkc_wkc_w_006176.jpg", "posters/wkc_wkc_w_0e6616.jpg", "posters/wkc_wkc_w_2252ca.jpg", "posters/wkc_wkc_w_47a783.jpg", "posters/wkc_wkc_w_52997a.jpg", "posters/wkc_wkc_w_533547.jpg", "posters/wkc_wkc_w_6fa4f9.jpg", "posters/wkc_wkc_w_a0683e.jpg", "posters/wkc_wkc_w_b023fa.jpg", "posters/wkc_wkc_w_b62a10.jpg", "posters/wkc_wkc_w_b6b710.jpg", "posters/wkc_wkc_w_cc86e2.jpg", "posters/wkc_wkc_w_e1df19.jpg", "posters/wkc_wkc_w_e8b8e0.jpg", "posters/wkc_wkc_w_ff1524.jpg",
-]
+# Read the reviewable local push manifest; every added/removed path is explicit.
+plan_path=ROOT / '.push-plan.json'
+FILES=json.loads(plan_path.read_text()).get('files',[]) if plan_path.exists() else []
+DELETE=json.loads(plan_path.read_text()).get('delete',[]) if plan_path.exists() else []
+for name in FILES+DELETE:
+    if Path(name).is_absolute() or '..' in Path(name).parts or name.startswith('.git/'):
+        sys.exit('Unsafe push path: '+name)
+
 
 
 def gh(method, path, data=None):
@@ -114,6 +86,9 @@ def main():
                   {"content": base64.b64encode(content).decode(),
                    "encoding": "base64"})
         tree.append({"path": f, "mode": "100644", "type": "blob", "sha": blob["sha"]})
+    for f in DELETE:
+        if f in existing:
+            tree.append({"path": f, "mode": existing[f].get("mode", "100644"), "type": "blob", "sha": None})
     if not tree:
         print("[i] No file changes; nothing to push")
         return

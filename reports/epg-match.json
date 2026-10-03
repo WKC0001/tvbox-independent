@@ -1,13 +1,13 @@
 {
-  "checked_at": 1791058591,
+  "checked_at": 1791062507,
   "date": "2026-10-04",
   "api": "http://epg.51zmt.top:8000/api/diyp/",
   "source": "diyp:51zmt",
-  "inspected": 467,
-  "confirmed": 73,
-  "retracted": 15,
-  "unanswered": 369,
-  "contaminated": 10,
+  "inspected": 160,
+  "confirmed": 94,
+  "retracted": 66,
+  "unanswered": 0,
+  "contaminated": 0,
   "channels_with_epg_id": 136,
   "results": [
     {
@@ -241,12 +241,78 @@
       "outcome": "confirmed"
     },
     {
+      "channel_id": "tv_25d4aa864f3c7bcf9200",
+      "name": "CGTN",
+      "matched": {
+        "id": "CGTN",
+        "served_name": "CGTN",
+        "programmes": 43
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_61c5217afa0c987fc460",
+      "name": "CGTN俄语",
+      "matched": {
+        "id": "CGTN俄语",
+        "served_name": "CGTN 俄语",
+        "programmes": 47
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_034705cd4ea173640078",
+      "name": "CGTN法语",
+      "matched": {
+        "id": "CGTN法语",
+        "served_name": "CGTN 法语",
+        "programmes": 30
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_810fdf181a02214532be",
+      "name": "CGTN西语",
+      "matched": {
+        "id": "CGTN西语",
+        "served_name": "CGTN西语频道",
+        "programmes": 46
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_6211d7df2f0f6beb27a7",
+      "name": "CGTN阿语",
+      "matched": {
+        "id": "CGTN阿语",
+        "served_name": "CGTN 阿语",
+        "programmes": 44
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
       "channel_id": "tv_ffd59568c1bca574bb1e",
       "name": "CHC动作电影",
       "matched": {
         "id": "CHC动作电影",
         "served_name": "CHC动作电影",
         "programmes": 27
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_d3211a2ecdf7bd8f0208",
+      "name": "TVBS新闻台",
+      "matched": {
+        "id": "TVBS新闻台",
+        "served_name": "TVBS 新闻台",
+        "programmes": 19
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -262,7 +328,7 @@
       "attempts": [
         {
           "id": "Trace Sports",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         }
       ],
       "outcome": "confirmed"
@@ -274,6 +340,17 @@
         "id": "三沙卫视",
         "served_name": "三沙卫视",
         "programmes": 3
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_894ff1a51f6ac01d6294",
+      "name": "三立戏剧",
+      "matched": {
+        "id": "三立戏剧",
+        "served_name": "三立戏剧台",
+        "programmes": 15
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -334,6 +411,17 @@
       "outcome": "confirmed"
     },
     {
+      "channel_id": "tv_a3327caf3d736f011000",
+      "name": "八大戏剧台",
+      "matched": {
+        "id": "八大戏剧台",
+        "served_name": "八大戏剧台",
+        "programmes": 24
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
       "channel_id": "tv_a1c4aeb463a4cc012495",
       "name": "兵器科技",
       "matched": {
@@ -378,6 +466,17 @@
       "outcome": "confirmed"
     },
     {
+      "channel_id": "tv_213d4c27ad9d8629556f",
+      "name": "凤凰资讯",
+      "matched": {
+        "id": "凤凰资讯",
+        "served_name": "凤凰卫视资讯台",
+        "programmes": 65
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
       "channel_id": "tv_e1712f78f36d0842bbf0",
       "name": "北京卫视",
       "matched": {
@@ -400,12 +499,50 @@
       "outcome": "confirmed"
     },
     {
+      "channel_id": "tv_156adc15dd2d5abe16c5",
+      "name": "台视新闻",
+      "matched": {
+        "id": "台视",
+        "served_name": "台视",
+        "programmes": 22
+      },
+      "attempts": [
+        {
+          "id": "台视新闻",
+          "result": "served=未提供"
+        }
+      ],
+      "outcome": "confirmed"
+    },
+    {
       "channel_id": "tv_d74b7ab1c9806257e39c",
       "name": "吉林卫视",
       "matched": {
         "id": "吉林卫视",
         "served_name": "吉林卫视",
         "programmes": 34
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_0d28abca670ceaca8bff",
+      "name": "哈尔滨影视",
+      "matched": {
+        "id": "哈尔滨影视",
+        "served_name": "哈尔滨影视频道",
+        "programmes": 9
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_1f87feeacbef63263276",
+      "name": "哈尔滨新闻综合",
+      "matched": {
+        "id": "哈尔滨新闻综合",
+        "served_name": "哈尔滨新闻综合频道",
+        "programmes": 20
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -428,6 +565,50 @@
         "id": "大湾区卫视",
         "served_name": "大湾区卫视",
         "programmes": 21
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_8606195b74edea7e99d2",
+      "name": "大立电视台",
+      "matched": {
+        "id": "大立电视台",
+        "served_name": "大立电视台",
+        "programmes": 11
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_2eefa36d25fa899ae5aa",
+      "name": "天元围棋",
+      "matched": {
+        "id": "天元围棋",
+        "served_name": "天元围棋",
+        "programmes": 33
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_82b6987703fc8cd8ba21",
+      "name": "天映经典",
+      "matched": {
+        "id": "天映经典",
+        "served_name": "天映经典频道",
+        "programmes": 11
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_7da3af94c1e8f5be4358",
+      "name": "天津体育",
+      "matched": {
+        "id": "天津体育",
+        "served_name": "天津体育频道",
+        "programmes": 19
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -499,6 +680,17 @@
       "outcome": "confirmed"
     },
     {
+      "channel_id": "tv_20814f7e5d49110e94d9",
+      "name": "山东生活",
+      "matched": {
+        "id": "山东生活",
+        "served_name": "山东生活",
+        "programmes": 44
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
       "channel_id": "tv_9077713250bce5593cbf",
       "name": "山西卫视",
       "matched": {
@@ -510,12 +702,34 @@
       "outcome": "confirmed"
     },
     {
+      "channel_id": "tv_0ba8c9a7c769856bc780",
+      "name": "广东体育",
+      "matched": {
+        "id": "广东体育",
+        "served_name": "广东体育频道",
+        "programmes": 13
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
       "channel_id": "tv_e334d1d17b271cf4562a",
       "name": "广东卫视",
       "matched": {
         "id": "广东卫视",
         "served_name": "广东卫视",
         "programmes": 36
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_7fe466f8448aa5cdcc1e",
+      "name": "广东民生",
+      "matched": {
+        "id": "广东民生",
+        "served_name": "广东民生频道",
+        "programmes": 30
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -560,6 +774,17 @@
         "id": "新疆卫视",
         "served_name": "新疆卫视",
         "programmes": 35
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_6df4bcb0bf16b5ec0f48",
+      "name": "明珠台",
+      "matched": {
+        "id": "明珠台",
+        "served_name": "明珠台",
+        "programmes": 30
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -620,19 +845,14 @@
       "outcome": "confirmed"
     },
     {
-      "channel_id": "tv_dc51a97e03b4eac19d8d",
-      "name": "浙江少儿",
+      "channel_id": "tv_85eff42ca9c3bb058074",
+      "name": "浙江民生休闲",
       "matched": {
-        "id": "浙江少儿",
-        "served_name": "浙江少儿频道",
-        "programmes": 24
+        "id": "浙江民生休闲",
+        "served_name": "浙江民生休闲",
+        "programmes": 31
       },
-      "attempts": [
-        {
-          "id": "浙江少儿",
-          "result": "error: RemoteDisconnected"
-        }
-      ],
+      "attempts": [],
       "outcome": "confirmed"
     },
     {
@@ -708,6 +928,17 @@
         "id": "纬来精采",
         "served_name": "纬来精采台",
         "programmes": 23
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_247beca7b23a365c8712",
+      "name": "翡翠台",
+      "matched": {
+        "id": "翡翠台",
+        "served_name": "翡翠台",
+        "programmes": 37
       },
       "attempts": [],
       "outcome": "confirmed"
@@ -834,88 +1065,28 @@
       "outcome": "confirmed"
     },
     {
-      "channel_id": "tv_8db5781c11b419b30cf3",
-      "name": "1905电影网",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "1905电影网",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "1905电影网",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6a4ba647236ed7a0b4a9",
-      "name": "1905电影网(国内)",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "1905电影网(国内)",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "1905电影网",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "1905电影网(国内)",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_2181985feb6f001affc6",
       "name": "ABC News Live",
       "matched": null,
       "attempts": [
         {
           "id": "ABC News Live",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "ABCNewsLive",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "ABCNEWSLIVE",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "ABC News Live",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b1191782552b4df4670d",
-      "name": "ABN China",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "ABN China",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ABNChina",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ABNCHINA",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ABN China",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_a74fe15b45406f3c2ff8",
@@ -924,90 +1095,18 @@
       "attempts": [
         {
           "id": "ASTRO AOD",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "ASTROAOD",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "ASTRO AOD",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_76cb71cbf552a90ea80d",
-      "name": "Ando TV",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Ando TV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "AndoTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ANDOTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Ando TV",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f5ba43896ceea48c7174",
-      "name": "Angel TV Chinese",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Angel TV Chinese",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "AngelTVChinese",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ANGELTVCHINESE",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Angel TV Chinese",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7676d1657c562b529747",
-      "name": "Anshun Comprehensive News Channel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Anshun Comprehensive News Channel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "AnshunComprehensiveNewsChannel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ANSHUNCOMPREHENSIVENEWSCHANNEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Anshun Comprehensive News Channel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_22c5a404a847ba1a5006",
@@ -1016,58 +1115,18 @@
       "attempts": [
         {
           "id": "Arirang",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "ARIRANG",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "Arirang",
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_3e70ac30fac6ae82e02c",
-      "name": "BRTV纪实科教",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "BRTV纪实科教",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "BRTV纪实科教",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5990fad08ccdcdfbe980",
-      "name": "Baicheng TV",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Baicheng TV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "BaichengTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "BAICHENGTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Baicheng TV",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_cb2e3989f2e5faac63dd",
@@ -1076,46 +1135,22 @@
       "attempts": [
         {
           "id": "Bloomberg Asia",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "BloombergAsia",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "BLOOMBERGASIA",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "Bloomberg Asia",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_9f2fd1d4f0d1d775b8b5",
-      "name": "Bread TV",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Bread TV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "BreadTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "BREADTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Bread TV",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_713a855ec3483ed29078",
@@ -1124,22 +1159,22 @@
       "attempts": [
         {
           "id": "CBC News",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "CBCNews",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "CBCNEWS",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "CBC News",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_fb50bc2f132bf566ba2f",
@@ -1230,26 +1265,6 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_a7bec738c45f755c2d92",
-      "name": "CCTV新影-中学生",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "CCTV新影-中学生",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CCTV新影中学生",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CCTV新影-中学生",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_e2f2be0d1606aacb3519",
       "name": "CETV-1",
       "matched": null,
@@ -1290,100 +1305,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_25d4aa864f3c7bcf9200",
-      "name": "CGTN",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "CGTN",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CGTN",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_61c5217afa0c987fc460",
-      "name": "CGTN俄语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "CGTN俄语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CGTN俄语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_034705cd4ea173640078",
-      "name": "CGTN法语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "CGTN法语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CGTN法语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_0d29bf51e4a041e6ffac",
       "name": "CGTN纪录",
       "matched": null,
       "attempts": [
         {
           "id": "CGTN纪录",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "CGTN纪录",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_810fdf181a02214532be",
-      "name": "CGTN西语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "CGTN西语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CGTN西语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6211d7df2f0f6beb27a7",
-      "name": "CGTN阿语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "CGTN阿语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CGTN阿语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_212414058d906f01a61c",
@@ -1408,14 +1343,14 @@
       "attempts": [
         {
           "id": "CHC电影",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "CHC电影",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_49144796d7c70c40303d",
@@ -1424,110 +1359,14 @@
       "attempts": [
         {
           "id": "CNA",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "CNA",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_956509578acb5f7e659d",
-      "name": "Chaozhou Public Channel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Chaozhou Public Channel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ChaozhouPublicChannel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CHAOZHOUPUBLICCHANNEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Chaozhou Public Channel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ab872c34840df905ca47",
-      "name": "Chifeng Comprehensive News Chanel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Chifeng Comprehensive News Chanel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ChifengComprehensiveNewsChanel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CHIFENGCOMPREHENSIVENEWSCHANEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Chifeng Comprehensive News Chanel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_398b51051dda1c601a35",
-      "name": "Chuxiong News Channel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Chuxiong News Channel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ChuxiongNewsChannel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "CHUXIONGNEWSCHANNEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Chuxiong News Channel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_eb67142a558d60c39b56",
-      "name": "Guangxi Variety & Travel Channel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Guangxi Variety & Travel Channel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "GuangxiVariety&TravelChannel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "GUANGXIVARIETY&TRAVELCHANNEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Guangxi Variety & Travel Channel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_5698557ebbc9b4c6c446",
@@ -1536,90 +1375,18 @@
       "attempts": [
         {
           "id": "HOY TV",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "HOYTV",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "HOY TV",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4d72e7717d4aa471b9cd",
-      "name": "Hebi News Channel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Hebi News Channel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "HebiNewsChannel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "HEBINEWSCHANNEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Hebi News Channel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_faa2d4bc8038ed0cff6d",
-      "name": "Kangba TV",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Kangba TV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "KangbaTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "KANGBATV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Kangba TV",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_2b886124554cc8dafd83",
-      "name": "Lanzhou Culture & Tourism Channel",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Lanzhou Culture & Tourism Channel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "LanzhouCulture&TourismChannel",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "LANZHOUCULTURE&TOURISMCHANNEL",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Lanzhou Culture & Tourism Channel",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_a051d1fe7de6a73d8dd3",
@@ -1628,18 +1395,18 @@
       "attempts": [
         {
           "id": "NewTV动作电影",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "NEWTV动作电影",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "NewTV动作电影",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_cd36d3a19767f5afdd59",
@@ -1648,7 +1415,7 @@
       "attempts": [
         {
           "id": "Newsmax",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "NEWSMAX",
@@ -1659,127 +1426,7 @@
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_4ab01d08a718aafd6f3f",
-      "name": "QTV-1",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "QTV1",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV-1",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV1",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0eb1f56d8ca6ec116a62",
-      "name": "QTV-2",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "QTV2",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV-2",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV2",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b96d0c7febe27b36cc11",
-      "name": "QTV-3",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "QTV3",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV-3",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV3",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_16ce59fd0ba13df4eca8",
-      "name": "QTV-4",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "QTV4",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV-4",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV4",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3346f17e762c96259d8b",
-      "name": "QTV-5",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "QTV5",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV-5",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV5",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_faa6677e7e5d1e91e719",
-      "name": "QTV-6",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "QTV6",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV-6",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "QTV6",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_28dfab5b175b91996436",
@@ -1788,26 +1435,26 @@
       "attempts": [
         {
           "id": "RT Arabic(阿语)",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Arabic",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTArabic",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTARABIC",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Arabic(阿语)",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_2a7ab8e9d290c3c16393",
@@ -1816,26 +1463,26 @@
       "attempts": [
         {
           "id": "RT Balkan (塞尔维亚语)",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Balkan",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTBalkan",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTBALKAN",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Balkan (塞尔维亚语)",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_ec18ec48ed95119efafc",
@@ -1848,18 +1495,18 @@
         },
         {
           "id": "RT DE",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTDE",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT DE(德语)",
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_c9cb362ebc9e7d3b9517",
@@ -1868,26 +1515,26 @@
       "attempts": [
         {
           "id": "RT Doc-Русский(俄语纪录)",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Doc-Русский",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTDocРусский",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTDOCРУССКИЙ",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Doc-Русский(俄语纪录)",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_5f34b05e6bc5532d417f",
@@ -1896,26 +1543,26 @@
       "attempts": [
         {
           "id": "RT Documentary(英语纪录)",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Documentary",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTDocumentary",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTDOCUMENTARY",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Documentary(英语纪录)",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_dee3a4e5ff6f510a0df3",
@@ -1924,26 +1571,26 @@
       "attempts": [
         {
           "id": "RT Español(西语)",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Español",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTEspañol",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTESPAÑOL",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Español(西语)",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_35822f1894f92e915000",
@@ -1952,26 +1599,26 @@
       "attempts": [
         {
           "id": "RT Français(法语)",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Français",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTFrançais",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTFRANÇAIS",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT Français(法语)",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_f5ba49040d5b2e86d17b",
@@ -1984,22 +1631,22 @@
         },
         {
           "id": "RT News",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTNews",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTNEWS",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RT News(英语国际)",
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_d33a44223f2e528d9381",
@@ -2008,14 +1655,14 @@
       "attempts": [
         {
           "id": "RTHK31",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTHK31",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_1d633db5d2443c6b5564",
@@ -2024,38 +1671,14 @@
       "attempts": [
         {
           "id": "RTHK32",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "RTHK32",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e7a88f49b1ad3401ff2a",
-      "name": "Siping TV",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Siping TV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "SipingTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "SIPINGTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Siping TV",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_f996698888717ae2fcba",
@@ -2064,22 +1687,22 @@
       "attempts": [
         {
           "id": "TV BRICS Chinese",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVBRICSChinese",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVBRICSCHINESE",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TV BRICS Chinese",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_f6bb9685bc89a7f8fd54",
@@ -2088,22 +1711,22 @@
       "attempts": [
         {
           "id": "TVB Plus",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVBPlus",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVBPLUS",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVB Plus",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_b5cfb0f8db11ffbcd83e",
@@ -2112,30 +1735,14 @@
       "attempts": [
         {
           "id": "TVBS亚洲",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVBS亚洲",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d3211a2ecdf7bd8f0208",
-      "name": "TVBS新闻台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "TVBS新闻台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "TVBS新闻台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_9cfc08efe8355114de8c",
@@ -2144,58 +1751,14 @@
       "attempts": [
         {
           "id": "TVB娱乐新闻台",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "TVB娱乐新闻台",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7a5dc467b6eeb43ed850",
-      "name": "ViuTV",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "ViuTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "VIUTV",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "ViuTV",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bd493aadb7fb4fb0d146",
-      "name": "VoA TV China",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "VoA TV China",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "VoATVChina",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "VOATVCHINA",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "VoA TV China",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_0f0a736bc322b1e488f8",
@@ -2204,22 +1767,22 @@
       "attempts": [
         {
           "id": "Wild Earth",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "WildEarth",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "WILDEARTH",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "Wild Earth",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_6305ad04e714eb804f56",
@@ -2228,210 +1791,18 @@
       "attempts": [
         {
           "id": "WionNews",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "WIONNEWS",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "WionNews",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_41be35c19d1f59f88cc4",
-      "name": "Xinjiang TV 2",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Xinjiang TV 2",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XinjiangTV2",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XINJIANGTV2",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Xinjiang TV 2",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_eb6d6b8eaf252270c0f2",
-      "name": "Xinjiang TV 3",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Xinjiang TV 3",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XinjiangTV3",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XINJIANGTV3",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Xinjiang TV 3",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_80af15ebf7a852623275",
-      "name": "Xinjiang TV 8",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Xinjiang TV 8",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XinjiangTV8",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XINJIANGTV8",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Xinjiang TV 8",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_19d04e4f96349671de6f",
-      "name": "Xizang TV Tibetan",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "Xizang TV Tibetan",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XizangTVTibetan",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "XIZANGTVTIBETAN",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "Xizang TV Tibetan",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4a3e7008350d429a311e",
-      "name": "七台河新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "七台河新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "七台河新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "七台河新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e2ecdcd9ae0d3b7bbef5",
-      "name": "万荣综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "万荣综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "万荣",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "万荣综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8b3b60e22e9718442083",
-      "name": "三明新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "三明新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "三明新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "三明新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_894ff1a51f6ac01d6294",
-      "name": "三立戏剧",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "三立戏剧",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "三立戏剧",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_456a649fe906197d65cb",
-      "name": "三立新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "三立新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "三立",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "三立新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_c86cc34a431bd3e0794e",
@@ -2440,14 +1811,14 @@
       "attempts": [
         {
           "id": "上虞文化影院",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "上虞文化影院",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_8bb8acea2db602502f67",
@@ -2456,154 +1827,14 @@
       "attempts": [
         {
           "id": "上虞新商都",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "上虞新商都",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5506ca2897b5b7faaab5",
-      "name": "东丰综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东丰综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东丰",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东丰综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_401bd5c381e417cc5776",
-      "name": "东方国际",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东方国际",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东方",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东方国际",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_43bcdf9ae8b5d9c64a2f",
-      "name": "东方影视",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东方影视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东方影视",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8a2fd734896b13b5788f",
-      "name": "东森超视",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东森超视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东森超视",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_64ecfab2b1ae349415d9",
-      "name": "东莞新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东莞新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东莞新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东莞新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5a2fb199df45ac332d16",
-      "name": "东莞生活资讯",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东莞生活资讯",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东莞生活资讯",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f39726e5b42fd49e1fd5",
-      "name": "东阳影视生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "东阳影视生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "东阳影视生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3b9a97e540ed9c86f890",
-      "name": "中华特产",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "中华特产",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "中华特产",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_c308e4c7d00500e27ea7",
@@ -2622,568 +1853,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_dbec817a686689aa45c2",
-      "name": "中国蓝新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "中国蓝新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "中国蓝",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "中国蓝新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c9d25b1c4d55c06120d1",
-      "name": "之江纪录",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "之江纪录",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "之江纪录",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c15aafa980a8cbdd2e65",
-      "name": "乐游频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "乐游频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "乐游频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d95fe9a1bfa1cd5f79a2",
-      "name": "乐至综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "乐至综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "乐至",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "乐至综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0da041013452c9492e33",
-      "name": "九台综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "九台综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "九台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "九台综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_cb9fc047602c239f98a4",
-      "name": "云和新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "云和新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "云和新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "云和新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c281f8249e5fe8617d88",
-      "name": "云霄综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "云霄综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "云霄",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "云霄综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5bb8b217157317e6a95e",
-      "name": "井研综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "井研综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "井研",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "井研综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_af68d3ee465501c2bd71",
       "name": "亚洲武侠",
       "matched": null,
       "attempts": [
         {
           "id": "亚洲武侠",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "亚洲武侠",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_da3cec696970a6584d3b",
-      "name": "亳州农村",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "亳州农村",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "亳州农村",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5a16b0ce324f333d2c1e",
-      "name": "亳州新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "亳州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "亳州",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "亳州新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ec972b6d7f7fde6c2956",
-      "name": "仁寿综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "仁寿综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "仁寿",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "仁寿综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_47d0050322e3d59b203e",
-      "name": "任丘综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "任丘综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "任丘",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "任丘综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_632300c70d04b00fca82",
-      "name": "伊犁哈萨克",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "伊犁哈萨克",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "伊犁哈萨克",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_868d959d431aa06251f0",
-      "name": "伊犁经济法制",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "伊犁经济法制",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "伊犁经济法制",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7df2e4bd1b3245bc58c0",
-      "name": "伊犁维吾尔",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "伊犁维吾尔",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "伊犁维吾尔",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_593fb016d258f5134737",
-      "name": "优优宝贝",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "优优宝贝",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "优优宝贝",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_482e926a38d84a70457c",
-      "name": "余姚姚江文化",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "余姚姚江文化",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余姚姚江文化",
-          "result": "recheck served=未提供"
-        }
-      ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_879824ef277a1712b2bd",
-      "name": "余姚新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "余姚新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余姚新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余姚新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_86e998d392de0b0fde1f",
-      "name": "余姚综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "余姚综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余姚",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余姚综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_715a247f8e92fcddd1ef",
-      "name": "余杭未来E",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "余杭未来E",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余杭未来E",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8b1f1df074f9b7709923",
-      "name": "余杭综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "余杭综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余杭",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "余杭综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a3327caf3d736f011000",
-      "name": "八大戏剧台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "八大戏剧台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "八大戏剧台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e6cd0b6402e737ca362f",
-      "name": "六安公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "六安公共",
           "result": "served=未提供"
         },
         {
-          "id": "六安公共",
+          "id": "亚洲武侠",
           "result": "recheck served=未提供"
         }
       ],
       "outcome": "retracted"
-    },
-    {
-      "channel_id": "tv_ed3c12f7453db37a394c",
-      "name": "六安新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "六安新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "六安新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "六安新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_54b980ea6b2207228a8e",
-      "name": "兰州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "兰州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兰州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兰州新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a9f07cbac83462b3a2f4",
-      "name": "兰溪新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "兰溪新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兰溪新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兰溪新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a2e6a1037dae424bc9c8",
-      "name": "兴隆综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "兴隆综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兴隆",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兴隆综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_921b40f541ca9ca9d07a",
-      "name": "兵团五师双河影",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "兵团五师双河影",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兵团五师双河影",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4c5d59bb4eb7003d4dee",
-      "name": "兵团五师双河新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "兵团五师双河新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兵团五师双河新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "兵团五师双河新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_213d4c27ad9d8629556f",
-      "name": "凤凰资讯",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "凤凰资讯",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "凤凰资讯",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
     },
     {
       "channel_id": "tv_dec589903fce0407a506",
@@ -3192,50 +1875,14 @@
       "attempts": [
         {
           "id": "凤凰香港",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "凤凰香港",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_354dfcc9db112e39329e",
-      "name": "北京新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "北京新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "北京",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "北京新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_85662bf781adf34ff043",
-      "name": "北京科教",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "北京科教",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "北京科教",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_9a82c8d92de9ba5ea9c0",
@@ -3244,666 +1891,14 @@
       "attempts": [
         {
           "id": "华丽翡翠台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "华丽翡翠台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ca10c5acda0f96a7dd89",
-      "name": "南京少儿",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "南京少儿",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南京少儿",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_57df145fa094cf43f89d",
-      "name": "南京教科",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "南京教科",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南京教科",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4ec06b59bbb6bca9f6f4",
-      "name": "南京新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "南京新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南京新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南京新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_95b06b64f017750bafb1",
-      "name": "南国都市",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "南国都市",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南国都市",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_77e418da36bc7487cd4d",
-      "name": "南宁影视娱乐",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "南宁影视娱乐",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南宁影视娱乐",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a595b2ac3535ac8f7fae",
-      "name": "南宁都市生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "南宁都市生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "南宁都市生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d5a0218595aa0ce86ba0",
-      "name": "双辽综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "双辽综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "双辽",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "双辽综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_455b3a643941fddbb1bf",
-      "name": "叙州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "叙州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "叙州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "叙州新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_207a92de096fb927aa9f",
-      "name": "古县综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "古县综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "古县",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "古县综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_191d15bee1f4f348f82b",
-      "name": "句容党建",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "句容党建",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "句容党建",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5cb2e5ec384727c2c938",
-      "name": "句容影院",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "句容影院",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "句容影院",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_9b1f8f7fd931a7caf1b6",
-      "name": "句容生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "句容生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "句容生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f12e97c0c47a2277996b",
-      "name": "可克达拉综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "可克达拉综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "可克达拉",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "可克达拉综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_156adc15dd2d5abe16c5",
-      "name": "台视新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "台视新闻",
           "result": "served=未提供"
         },
         {
-          "id": "台视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "台视新闻",
+          "id": "华丽翡翠台",
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_229799c4d78a18e951a9",
-      "name": "吉林乡村",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "吉林乡村",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "吉林乡村",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_195e05f88eab4460170f",
-      "name": "名山综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "名山综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "名山",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "名山综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f9c9598cb88fdd829f3b",
-      "name": "哈尔滨娱乐",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "哈尔滨娱乐",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨娱乐",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0d28abca670ceaca8bff",
-      "name": "哈尔滨影视",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "哈尔滨影视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨影视",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1f87feeacbef63263276",
-      "name": "哈尔滨新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "哈尔滨新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_088565e0b8a0f7c8d486",
-      "name": "哈尔滨生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "哈尔滨生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8f9d255d7bdf6f33a04e",
-      "name": "哈尔滨资讯",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "哈尔滨资讯",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨资讯",
-          "result": "recheck served=未提供"
-        }
-      ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_6a9cc3c6ec75be20d88e",
-      "name": "哈尔滨都市咨询",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "哈尔滨都市咨询",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "哈尔滨都市咨询",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_311a80cad13d09e13747",
-      "name": "嘉兴新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "嘉兴新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嘉兴新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嘉兴新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1fb3c0881921a526eb5e",
-      "name": "嘉峪关综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "嘉峪关综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嘉峪关",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嘉峪关综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4a2568b1ce059a90354a",
-      "name": "四川科教",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "四川科教",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "四川科教",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_001d35d8700d5ca09af6",
-      "name": "四平综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "四平综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "四平",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "四平综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_686b1ab30eac12d2ed5b",
-      "name": "四海钓鱼",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "四海钓鱼",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "四海钓鱼",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8df5a8d3f681620c6f71",
-      "name": "固镇新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "固镇新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "固镇",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "固镇新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_770086d69e9904eb53c1",
-      "name": "大宁综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "大宁综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "大宁",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "大宁综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8606195b74edea7e99d2",
-      "name": "大立电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "大立电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "大立电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_2eefa36d25fa899ae5aa",
-      "name": "天元围棋",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "天元围棋",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "天元围棋",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_82b6987703fc8cd8ba21",
-      "name": "天映经典",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "天映经典",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "天映经典",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7da3af94c1e8f5be4358",
-      "name": "天津体育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "天津体育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "天津体育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d9f6cf06c86f7194d76e",
-      "name": "天祝综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "天祝综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "天祝",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "天祝综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f96444606095d10ec1e7",
-      "name": "太谷新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "太谷新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "太谷新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "太谷新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1b3bcbc234f97d562bd8",
-      "name": "奎屯哈萨克语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "奎屯哈萨克语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "奎屯哈萨克语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d3fb49df1f3b88a45283",
-      "name": "奎屯汉语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "奎屯汉语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "奎屯汉语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_220078d86d51261048b8",
@@ -3912,222 +1907,14 @@
       "attempts": [
         {
           "id": "安徽导视",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "安徽导视",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_84ff52dc9d28fe3ed7e6",
-      "name": "安顺新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "安顺新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "安顺",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "安顺新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e14d4e4d24ffaf704600",
-      "name": "定襄综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "定襄综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "定襄",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "定襄综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_80bd1ab46779d4bcfb62",
-      "name": "宜兴新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "宜兴新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宜兴",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宜兴新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_69966e8592ecc585c5bd",
-      "name": "宾阳综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "宾阳综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宾阳",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宾阳综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_cecffc3027dbb5cf4d12",
-      "name": "宿州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "宿州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宿州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宿州新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_96411675ccb44000f2fd",
-      "name": "宿州科教",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "宿州科教",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "宿州科教",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_70eb56916c00d77d8e5b",
-      "name": "山东教育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "山东教育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "山东教育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_20814f7e5d49110e94d9",
-      "name": "山东生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "山东生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "山东生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e7cd2abe6c466e4efd7c",
-      "name": "嵊州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "嵊州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嵊州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嵊州新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3c7f5724e8309b7513f9",
-      "name": "嵊泗综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "嵊泗综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嵊泗",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "嵊泗综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d27387c37bf24c4daeea",
-      "name": "平泉综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "平泉综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "平泉",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "平泉综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_84c87a93e97a7ec7457f",
@@ -4136,174 +1923,18 @@
       "attempts": [
         {
           "id": "平湖新闻综合",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "平湖新闻",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "平湖新闻综合",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0ba8c9a7c769856bc780",
-      "name": "广东体育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广东体育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广东体育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a8785506b9cec2d5eefd",
-      "name": "广东新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广东新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广东",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广东新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7fe466f8448aa5cdcc1e",
-      "name": "广东民生",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广东民生",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广东民生",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4ffdc4318fa0de5393b1",
-      "name": "广东珠江",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广东珠江",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广东珠江",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3a12021ccf338254b17d",
-      "name": "广安公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广安公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广安公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1be6f26584eae7fb4a5f",
-      "name": "广州新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广州",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广州新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8d69575cbfee1f671f62",
-      "name": "广州竞赛",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广州竞赛",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广州竞赛",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_21537564ff2afdc71745",
-      "name": "广州综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广州综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广州",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广州综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d321e6490c329703147f",
-      "name": "广德生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广德生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广德生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_f22bc37219eceb0a5130",
@@ -4312,254 +1943,18 @@
       "attempts": [
         {
           "id": "广西国际",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "广西",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "广西国际",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fdca5242205377d01dbb",
-      "name": "广西新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "广西新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广西",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "广西新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_df6a81ae4bc5177d93c3",
-      "name": "庆元综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "庆元综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "庆元",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "庆元综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a680e6d5ea88b0168bf5",
-      "name": "康巴卫视",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "康巴卫视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "康巴卫视",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f17b4c882173cb112473",
-      "name": "延边2",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "延边2",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "延边2",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ba4f07be6d1a707cfb49",
-      "name": "开化国家公园",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "开化国家公园",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "开化国家公园",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1b24c0a5836fe93db571",
-      "name": "开化新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "开化新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "开化新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "开化新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f1c413599e292e98fdf7",
-      "name": "张掖新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "张掖新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "张掖新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "张掖新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_46f4dd085de757570e9c",
-      "name": "徐州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "徐州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "徐州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "徐州新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6abe9bb2b2664672b305",
-      "name": "德惠综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "德惠综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "德惠",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "德惠综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6178e21b7dcd84b187d6",
-      "name": "快乐垂钓",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "快乐垂钓",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "快乐垂钓",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ace9776e729456db1ee7",
-      "name": "怀仁综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "怀仁综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "怀仁",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "怀仁综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f9156279907bebfc2bf5",
-      "name": "敦化一套",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "敦化一套",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "敦化一套",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0a61d68d1f8c03de5e59",
-      "name": "数码时代",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "数码时代",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "数码时代",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_5e99cf2273e931aa67e4",
@@ -4578,244 +1973,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_bc472d13cce0725dc332",
-      "name": "文成新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "文成新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "文成新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "文成新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_992b44d5828a6c23a2ad",
-      "name": "文成综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "文成综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "文成",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "文成综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d32881c339ad83d8a699",
-      "name": "文旅频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "文旅频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "文旅频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_85c7e7913cf5f7eff697",
-      "name": "新昌生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新昌生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新昌生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_32226d5dd4b4ec9f1a2b",
-      "name": "新沂新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新沂新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新沂",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新沂新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_378d877c700ad0bd20ec",
-      "name": "新沂生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新沂生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新沂生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_465fbdbaf1b8b771246b",
-      "name": "新疆卫视哈萨克语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新疆卫视哈萨克语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新疆卫视哈萨克语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_efce0680617f73ae5cdd",
-      "name": "新疆卫视少儿频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新疆卫视少儿频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新疆卫视少儿频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3109db3acbd3a642c275",
-      "name": "新疆卫视维吾尔语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新疆卫视维吾尔语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新疆卫视维吾尔语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_165054f12b91fee4606c",
-      "name": "新纪实",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新纪实",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新纪实",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_33c87dc741c7f598f3f2",
-      "name": "新视觉",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新视觉",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新视觉",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_56fdf70947d676ad4867",
-      "name": "新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d87c808b24ce0c3573aa",
-      "name": "新闻综合频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "新闻综合频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "新闻综合频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_7b47266dc62e56ad6a56",
       "name": "无线新闻台",
       "matched": null,
       "attempts": [
         {
           "id": "无线新闻台",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "无线新闻台",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_de84b7dda37ec476ce61",
@@ -4824,390 +1995,14 @@
       "attempts": [
         {
           "id": "无线星河",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "无线星河",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_75840aa44b133dbcebe9",
-      "name": "旺苍新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "旺苍新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "旺苍新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "旺苍新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3e20373149db61387637",
-      "name": "昌黎综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "昌黎综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "昌黎",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "昌黎综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6df4bcb0bf16b5ec0f48",
-      "name": "明珠台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "明珠台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "明珠台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ab3afce7497f3796e028",
-      "name": "易门综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "易门综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "易门",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "易门综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4169ab6f07ad69e4ea23",
-      "name": "晋江电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "晋江电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "晋江电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b39014b8a31b905b4bc9",
-      "name": "普陀新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "普陀新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "普陀新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "普陀新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b42f503488a53da9966a",
-      "name": "普陀电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "普陀电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "普陀电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ac7ba199e4a8dffba645",
-      "name": "朝阳新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "朝阳新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "朝阳新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "朝阳新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_dd4cde7cda9e13cd159d",
-      "name": "来宾综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "来宾综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "来宾",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "来宾综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_4a3deb793d37723f48fc",
-      "name": "松潘新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "松潘新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "松潘新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "松潘新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7019f71a308cf710a95b",
-      "name": "松阳综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "松阳综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "松阳",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "松阳综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d663ed88e59c22bb1a27",
-      "name": "柳河综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "柳河综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "柳河",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "柳河综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_facd81eab8c3c853d7a4",
-      "name": "桦甸综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "桦甸综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "桦甸",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "桦甸综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_93849e5cc9c2bf430ba1",
-      "name": "梅河口综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "梅河口综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "梅河口",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "梅河口综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_43c5ca4f3dd610da5fec",
-      "name": "梨园",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "梨园",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "梨园",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_36c9a6816245f836d378",
-      "name": "欢笑剧场",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "欢笑剧场",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "欢笑剧场",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_070618b91d91a7a975b3",
-      "name": "武义新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "武义新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武义新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武义新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_42896215dd47ea1dde2c",
-      "name": "武汉一台新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "武汉一台新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武汉一台新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武汉一台新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5cc9766892f0dc4fb20a",
-      "name": "武汉文体",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "武汉文体",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武汉文体",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fe1ad95213f83672e007",
-      "name": "武进新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "武进新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武进",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "武进新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_bda9a483470853138a1d",
@@ -5216,14 +2011,14 @@
       "attempts": [
         {
           "id": "武进生活",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "武进生活",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_be730cca8372c15401cc",
@@ -5232,526 +2027,18 @@
       "attempts": [
         {
           "id": "永嘉新闻综合",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "永嘉新闻",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "永嘉新闻综合",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c0d92439ce2a45e65679",
-      "name": "永昌综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "永昌综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "永昌",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "永昌综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_961ca31087b988d88cb3",
-      "name": "江夏新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "江夏新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江夏新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江夏新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c54a828b07254545427d",
-      "name": "江津新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "江津新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江津",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江津新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_32b7e055fdbbc49fb0fc",
-      "name": "江津新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "江津新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江津新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江津新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_9b2baf91ed011e0f1ed8",
-      "name": "江苏体育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "江苏体育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江苏体育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e154bc56983fb44dcc1e",
-      "name": "江苏公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "江苏公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江苏公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3c6513a3947728856dd7",
-      "name": "江苏公共新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "江苏公共新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江苏公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "江苏公共新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5c42be855aa453cf6d82",
-      "name": "汪清综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "汪清综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "汪清",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "汪清综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f8711bf1d176cf0db10e",
-      "name": "汶川新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "汶川新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "汶川新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "汶川新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7e69155cb96abd0c1069",
-      "name": "汾西综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "汾西综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "汾西",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "汾西综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7747cbc9a314667b4b09",
-      "name": "沐川综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "沐川综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "沐川",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "沐川综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8821366a35325839c605",
-      "name": "沭阳综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "沭阳综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "沭阳",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "沭阳综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_168bff72f63b76381549",
-      "name": "河北4K",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北4K",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北4K",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_35b30ac6df40bd7a1894",
-      "name": "河北公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_80f5b8bb10ed3041424b",
-      "name": "河北农民",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北农民",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北农民",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_816d6da115f25fc68f4a",
-      "name": "河北少儿",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北少儿",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北少儿",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3de8968f04002c681663",
-      "name": "河北影视",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北影视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北影视",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e81c75101a775e3eec4b",
-      "name": "河北经济",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北经济",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北经济",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8fed462bc346e05b704c",
-      "name": "河北都市",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河北都市",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河北都市",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_2dcd2fa671144a7a4aa6",
-      "name": "河南民生",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河南民生",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河南民生",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_be41c6ededfe914eb706",
-      "name": "河南都市",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河南都市",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河南都市",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e08ddb9b7c21e9879958",
-      "name": "河源公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河源公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河源公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_78951f2c4b9eb771df12",
-      "name": "河源综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "河源综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河源",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "河源综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_51dcf49be727f5eda025",
-      "name": "泸县新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "泸县新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "泸县新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "泸县新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_9b053bdb14efec41a1c3",
-      "name": "洞头综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "洞头综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "洞头",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "洞头综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8ed1be59b04642e991cb",
-      "name": "津南一套",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "津南一套",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "津南一套",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f8e0deac50c83e347cdd",
-      "name": "浙江休闲台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江休闲台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江休闲台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fe4bb7a046f53254d464",
-      "name": "浙江公共新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江公共新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江公共新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_c4d7d89b92b8b383f100",
@@ -5764,146 +2051,14 @@
         },
         {
           "id": "浙江",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "浙江国际",
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_efedc466bd7c7ac769c2",
-      "name": "浙江教科影视",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江教科影视",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江教科影视",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bc8ab5b3d4d63b0a0ff6",
-      "name": "浙江教育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江教育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江教育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ccb3e348dd1b1f824a68",
-      "name": "浙江新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_85eff42ca9c3bb058074",
-      "name": "浙江民生休闲",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江民生休闲",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江民生休闲",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_2d988476c4ad122fbfa8",
-      "name": "浙江生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_154ed9ee49a76fea87da",
-      "name": "浙江留学",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江留学",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江留学",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_a713158f9b2cb55fbe73",
-      "name": "浙江经济生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江经济生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江经济生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_99a20f1546d143f7694b",
-      "name": "浙江遂昌",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "浙江遂昌",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "浙江遂昌",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_6443bf9e0d35700032d3",
@@ -5922,224 +2077,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_c601a400d2f7136d1f7b",
-      "name": "海南新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "海南新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "海南",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "海南新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7c500d5324a6c1cf5978",
-      "name": "海宁新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "海宁新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "海宁新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "海宁新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b9e86c279d99bcad4469",
-      "name": "涟水综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "涟水综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "涟水",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "涟水综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fa3368dc27bf1dd91850",
-      "name": "清河经济综艺",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "清河经济综艺",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "清河经济综艺",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7113903e55a41f734388",
-      "name": "渭源新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "渭源新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "渭源",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "渭源新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6ea20b2d9a6ff560ba84",
-      "name": "湖南电影",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "湖南电影",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "湖南电影",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_32b55cb1123ba7d85c82",
-      "name": "湖州公共民生",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "湖州公共民生",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "湖州公共民生",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ffdb97763f460155da35",
-      "name": "湖州文化娱乐",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "湖州文化娱乐",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "湖州文化娱乐",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d860bebe9bb7131a9af8",
-      "name": "湖州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "湖州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "湖州新闻",
-          "result": "served=未提供"
-        },
-        {
-          "id": "湖州新闻综合",
-          "result": "recheck served=未提供"
-        }
-      ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_64ecbffff27f5af40398",
-      "name": "滦平新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "滦平新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "滦平",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "滦平新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5dc487e0509970dbe9f3",
-      "name": "滨海新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "滨海新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "滨海新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "滨海新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_81ff8e3e5ca638760730",
       "name": "澳视卫星",
       "matched": null,
       "attempts": [
         {
           "id": "澳视卫星",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "澳视卫星",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_e018870441ee660bf6bb",
@@ -6148,14 +2099,14 @@
       "attempts": [
         {
           "id": "澳视澳门",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "澳视澳门",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_5b4087163dd0558ca070",
@@ -6174,208 +2125,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_a5f2863a0693ee9c34c5",
-      "name": "灌阳新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "灌阳新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "灌阳新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "灌阳新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_98633df159a8b88efee6",
-      "name": "玛纳斯综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "玛纳斯综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "玛纳斯",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "玛纳斯综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d9b99dab3339155392fe",
-      "name": "环球旅游",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "环球旅游",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "环球旅游",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_68ee3c9ef8d1ba3d37c1",
       "name": "环球电视",
       "matched": null,
       "attempts": [
         {
           "id": "环球电视",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "环球电视",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ed4ca08e1f2f93ed0520",
-      "name": "珲春新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "珲春新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "珲春",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "珲春新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_31f96fb0c5851d00f8ae",
-      "name": "璧山综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "璧山综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "璧山",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "璧山综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_348ca166dd847f3c8f58",
-      "name": "甘南县综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "甘南县综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "甘南县",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "甘南县综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6ebe4cdcef67d4f796b4",
-      "name": "甘肃经济",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "甘肃经济",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "甘肃",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "甘肃经济",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bc3e85d3b0439516bbcc",
-      "name": "甘肃都市",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "甘肃都市",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "甘肃都市",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_9e48b5b429398544028b",
-      "name": "生态环境",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "生态环境",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "生态环境",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ecd6df85562e1bdb673f",
-      "name": "田东综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "田东综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "田东",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "田东综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_b845f708c3476d8b3c66",
@@ -6394,304 +2157,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_a7d73262923a4b0a3d99",
-      "name": "白城新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "白城新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "白城新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "白城新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ce85a317b2e0c69585e9",
-      "name": "白山公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "白山公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "白山公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fb0c9bf00bde2770b35d",
-      "name": "白银综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "白银综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "白银",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "白银综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_16bc48110c2cc919f7e0",
-      "name": "磐石综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "磐石综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "磐石",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "磐石综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5863869685a73fb1bab5",
-      "name": "祁门综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "祁门综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "祁门",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "祁门综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8ae5a1c175456f03ae83",
-      "name": "福州少儿",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "福州少儿",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福州少儿",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_98297716ce7fd218b70f",
-      "name": "福州生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "福州生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福州生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0071e048a888dcf4da5a",
-      "name": "福建公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "福建公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福建公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8480bf26def06d5b92dd",
-      "name": "福建新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "福建新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福建",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福建新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0fb00aa4cc7d7120af35",
-      "name": "福建旅游",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "福建旅游",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福建旅游",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c5efeb6ba9bd096b72d7",
-      "name": "福建经济",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "福建经济",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福建",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "福建经济",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_af4e752b2b8e8e157b37",
-      "name": "秦安综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "秦安综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "秦安",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "秦安综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7efa3049f6d2dec2dc1d",
-      "name": "第一财经",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "第一财经",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "第一财经",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_d014626368f60b0754e6",
       "name": "精品体育",
       "matched": null,
       "attempts": [
         {
           "id": "精品体育",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "精品体育",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8afd7bc08ce745be9c74",
-      "name": "纪实人文",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "纪实人文",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "纪实人文",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0297eb327ca0de8c459a",
-      "name": "纪实科教",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "纪实科教",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "纪实科教",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6bc6d4f010147129753f",
-      "name": "纬来体育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "纬来体育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "纬来体育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_989e2441feaf45d8fd5f",
@@ -6700,74 +2179,14 @@
       "attempts": [
         {
           "id": "绍兴公共",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "绍兴公共",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fd2223c329d9d61c12fc",
-      "name": "绍兴新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "绍兴新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "绍兴新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "绍兴新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e5e980ba7ff075f07294",
-      "name": "缙云新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "缙云新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "缙云新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "缙云新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0d01d2991d9f3395a128",
-      "name": "缙云综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "缙云综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "缙云",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "缙云综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_a7a84eab7e4346745f33",
@@ -6776,34 +2195,18 @@
       "attempts": [
         {
           "id": "美亚C+",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "美亚CP",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "美亚C+",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_247beca7b23a365c8712",
-      "name": "翡翠台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "翡翠台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "翡翠台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_199603b2a20ead197312",
@@ -6812,14 +2215,14 @@
       "attempts": [
         {
           "id": "翡翠台北美版",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "翡翠台北美版",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_aff7beb49f4424992615",
@@ -6828,266 +2231,14 @@
       "attempts": [
         {
           "id": "耀才财经",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "耀才财经",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_16d1e650175fba6abd60",
-      "name": "舒兰新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "舒兰新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "舒兰",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "舒兰新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_13b80366821b54cc4007",
-      "name": "舒兰新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "舒兰新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "舒兰新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "舒兰新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b3b1f728cd63b459ded8",
-      "name": "苏州4K",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "苏州4K",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州4K",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_943bc0f5ee347916ad2e",
-      "name": "苏州文化生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "苏州文化生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州文化生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_174eff4e07230b6c1079",
-      "name": "苏州新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "苏州新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d514ce00fee257df29e8",
-      "name": "苏州生活资讯",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "苏州生活资讯",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州生活资讯",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_ccefb26a3029c50d0988",
-      "name": "苏州社会经济",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "苏州社会经济",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州社会",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "苏州社会经济",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d7738aea4dd74897b4ad",
-      "name": "茶友频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "茶友频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "茶友频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5a7c024a0dd937b4b0fe",
-      "name": "荆门新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "荆门新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "荆门新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "荆门新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_caedf27078cba44036d3",
-      "name": "荥经综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "荥经综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "荥经",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "荥经综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bc8b4d4f2ef1d831f3b8",
-      "name": "营山电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "营山电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "营山电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_9f51ba953e114e221291",
-      "name": "萧山生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "萧山生活",
           "result": "served=未提供"
         },
         {
-          "id": "萧山生活",
+          "id": "耀才财经",
           "result": "recheck served=未提供"
         }
       ],
       "outcome": "retracted"
-    },
-    {
-      "channel_id": "tv_c8d985b3644c6b5c53f2",
-      "name": "衡水公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "衡水公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "衡水公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6536c1cd352fbb3bd1f2",
-      "name": "衡阳新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "衡阳新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "衡阳新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "衡阳新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
     },
     {
       "channel_id": "tv_2ac88ed7f5b894deb936",
@@ -7096,118 +2247,18 @@
       "attempts": [
         {
           "id": "衢江新闻综合",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "衢江新闻",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "衢江新闻综合",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3dc41bd5960eaf8e5229",
-      "name": "西宁新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "西宁新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "西宁新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "西宁新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1ffee622876461afb80d",
-      "name": "西峰综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "西峰综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "西峰",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "西峰综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_fc407dfd9354b455a767",
-      "name": "诸暨新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "诸暨新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "诸暨新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "诸暨新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b9ad30666b9f31ec78e0",
-      "name": "象山新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "象山新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "象山新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "象山新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b342d7b0d16e75a7a43d",
-      "name": "象山综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "象山综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "象山",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "象山综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_5f5977725c35134e4ecf",
@@ -7216,710 +2267,14 @@
       "attempts": [
         {
           "id": "足球频道",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "足球频道",
           "result": "recheck served=未提供"
         }
       ],
-      "outcome": "contaminated"
-    },
-    {
-      "channel_id": "tv_bbda504e246408c6e14a",
-      "name": "车迷频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "车迷频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "车迷频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_8baa34779658ffc106bb",
-      "name": "辉南新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辉南新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辉南",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辉南新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e8ad3e153dec32f1bd3f",
-      "name": "辉南新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辉南新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辉南新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辉南新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_aef5d033219597ec4212",
-      "name": "辽宁公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_466e5e782b025ca4f540",
-      "name": "辽宁北方",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁北方",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁北方",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f2afc66f849cf026b61c",
-      "name": "辽宁影视剧",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁影视剧",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁影视剧",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_44d5c681abe126adc908",
-      "name": "辽宁教育青少",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁教育青少",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁教育青少",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bbbdaa9d303f2500d958",
-      "name": "辽宁生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_21874d00b671d68dee8d",
-      "name": "辽宁经济",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁经济",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁经济",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_2510de88559510f21b72",
-      "name": "辽宁都市",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "辽宁都市",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "辽宁都市",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_eca827ef23f0af0f4580",
-      "name": "连云港新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "连云港新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "连云港新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "连云港新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1c4c9c67ea73666ed4ec",
-      "name": "通化县综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "通化县综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "通化县",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "通化县综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_b0172db2b5940fa26fa8",
-      "name": "通海电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "通海电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "通海电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3eedc406cb36729b8bd6",
-      "name": "遂昌综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "遂昌综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "遂昌",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "遂昌综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f0eeaaeed902a0480c5f",
-      "name": "邢台生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "邢台生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "邢台生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_40394e97758dfa8744e1",
-      "name": "邢台综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "邢台综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "邢台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "邢台综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0655722b36021945c1c8",
-      "name": "邯郸新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "邯郸新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "邯郸",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "邯郸新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6476c31ba8c8f33fe4eb",
-      "name": "邯郸科技教育",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "邯郸科技教育",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "邯郸科技教育",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_90f4c2ccd33174adc35e",
-      "name": "都市剧场",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "都市剧场",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "都市剧场",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7dc469fcc2e760c52fe8",
-      "name": "重庆新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "重庆新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "重庆",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "重庆新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_1668afc6558c8be38b2f",
-      "name": "重温经典",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "重温经典",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "重温经典",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bb165e16fb4cab6e11fe",
-      "name": "金川乡村",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "金川乡村",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "金川乡村",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0b7f7296a720cdc6d326",
-      "name": "金川新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "金川新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "金川新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "金川新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_736a3cb205c908d8d1c5",
-      "name": "钱江都市",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "钱江都市",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "钱江都市",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_66778b7fcbe9328f001e",
-      "name": "铜梁综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "铜梁综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "铜梁",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "铜梁综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_587e58b4b58b814ff88a",
-      "name": "铜陵新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "铜陵新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "铜陵新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "铜陵新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_f5475ae865ef6c8b6642",
-      "name": "镇江二套社会民生",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "镇江二套社会民生",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "镇江二套社会民生",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_639a3932699f974f079a",
-      "name": "镇江新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "镇江新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "镇江新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "镇江新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_33210d09eef15ef24aac",
-      "name": "长子综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "长子综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "长子",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "长子综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_094fc8f32ecb4e5fff3c",
-      "name": "长影频道",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "长影频道",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "长影频道",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7d634b2888f31562692b",
-      "name": "长白山电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "长白山电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "长白山电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_2fdfa2c0e3c4e7df73cc",
-      "name": "长白朝语",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "长白朝语",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "长白朝语",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_04a3af724aa7e5aefd20",
-      "name": "陕西公共",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "陕西公共",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "陕西公共",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_bd0ac5ee6d720a8bf942",
-      "name": "雅安新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "雅安新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "雅安新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "雅安新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_44d7c8e77fa9c220aa10",
-      "name": "青川综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "青川综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "青川",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "青川综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_5e50d1c3cc8a0b5d21ae",
-      "name": "青田电视台",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "青田电视台",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "青田电视台",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_7feb6ab4f03dc6c4e5d5",
-      "name": "靖宇综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "靖宇综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "靖宇",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "靖宇综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_04d17fb5b8ac64f6c235",
-      "name": "靖江新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "靖江新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "靖江新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "靖江新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_e833ec6273c1298e53d7",
-      "name": "韩国EBS少儿",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "韩国EBS少儿",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "韩国EBS少儿",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_723a9a653f38f9d7a44b",
@@ -7928,14 +2283,14 @@
       "attempts": [
         {
           "id": "韩国电影1",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "韩国电影1",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_6b9b76aa3aefcfb2d34d",
@@ -7944,46 +2299,14 @@
       "attempts": [
         {
           "id": "韩国电影2",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "韩国电影2",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6854098a47f8e3eb5509",
-      "name": "音乐欣赏",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "音乐欣赏",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "音乐欣赏",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_d4ac93a2bafcddc1e183",
-      "name": "音乐现场",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "音乐现场",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "音乐现场",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     },
     {
       "channel_id": "tv_da4eac4c9099968ebb1f",
@@ -8002,148 +2325,20 @@
       "outcome": "retracted"
     },
     {
-      "channel_id": "tv_52bfbd583266139be732",
-      "name": "黄山公共生活",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "黄山公共生活",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "黄山公共生活",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_510b83dcf43889dd9d8b",
-      "name": "黄山新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "黄山新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "黄山新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "黄山新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
       "channel_id": "tv_7d9e6aade4af9586189a",
       "name": "黑莓电影",
       "matched": null,
       "attempts": [
         {
           "id": "黑莓电影",
-          "result": "error: RemoteDisconnected"
+          "result": "served=未提供"
         },
         {
           "id": "黑莓电影",
-          "result": "recheck error: RemoteDisconnected"
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_3ac4a6d5e919c7b68253",
-      "name": "黑龙江少儿",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "黑龙江少儿",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "黑龙江少儿",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_0d01a0d915fba6b9b799",
-      "name": "黑龙江新闻",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "黑龙江新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "黑龙江",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "黑龙江新闻",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_6a2ad2b0ca1be22da568",
-      "name": "龙井综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "龙井综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "龙井",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "龙井综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_c17cce05cbfbd233e410",
-      "name": "龙游新闻综合",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "龙游新闻综合",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "龙游新闻",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "龙游新闻综合",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
-    },
-    {
-      "channel_id": "tv_69dc4e04102a2ed29a0d",
-      "name": "龙游生活娱乐",
-      "matched": null,
-      "attempts": [
-        {
-          "id": "龙游生活娱乐",
-          "result": "error: RemoteDisconnected"
-        },
-        {
-          "id": "龙游生活娱乐",
-          "result": "recheck error: RemoteDisconnected"
-        }
-      ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
     }
   ]
 }

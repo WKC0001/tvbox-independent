@@ -68,7 +68,7 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
 <figure class="qr"><img src="qr-latest.svg" alt="主入口二维码" width="216" height="216"><figcaption>扫这个码就是把主入口地址抄到手机上</figcaption></figure>
 
 <h2>把哪个地址填进去</h2>
-<article class="card"><h3>主入口 · 推荐 </h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json" onclick="copyUrl(this)">https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json</button><p>多仓入口。播放器会先弹出仓库列表，选「WKC 自有聚合」即可。地址里用 @latest，所以永远不用换。</p></article><article class="card"><h3>直连配置 <span class="chip">11 个站点</span></h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/api.json" onclick="copyUrl(this)">https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/api.json</button><p>省掉选择那一步，直接加载全部站点。适合已经知道自己在做什么的人。</p></article><article class="card"><h3>直播清单 <span class="chip">559 条线路</span></h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/live.m3u" onclick="copyUrl(this)">https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/live.m3u</button><p>按实测下载速度排序，快的排前面。也可以直接丢给支持 m3u 的播放器当频道表。</p></article><article class="card"><h3>固定版本 0.5.5 <span class="chip">发布即生效</span></h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.5/api.json" onclick="copyUrl(this)">https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.5/api.json</button><p>地址里带版本号，发布后立刻生效，不受别名缓存影响。版本更新后这个地址会变——想钉住不动，用上面那个 @latest。</p></article>
+<article class="card"><h3>主入口 · 推荐 </h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/dc.json" onclick="copyUrl(this)">https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/dc.json</button><p>多仓入口。地址永不变，仓库一更新它就是新的。播放器会先弹出仓库列表，选「WKC 自有聚合」即可。</p></article><article class="card"><h3>直连配置 <span class="chip">11 个站点</span></h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/api.json" onclick="copyUrl(this)">https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/api.json</button><p>省掉选择那一步，直接加载全部站点。适合已经知道自己在做什么的人。</p></article><article class="card"><h3>直播清单 <span class="chip">559 条线路</span></h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/live.m3u" onclick="copyUrl(this)">https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/live.m3u</button><p>按实测下载速度排序，快的排前面。也可以直接丢给支持 m3u 的播放器当频道表。</p></article><article class="card"><h3>固定版本 0.5.5 <span class="chip">发布即生效</span></h3><button class="url" type="button" data-url="https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.5/api.json" onclick="copyUrl(this)">https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.5/api.json</button><p>逐字节冻结，发布即生效，不依赖任何别名解析。想钉死在某个版本上就用它；版本更新后这个地址会变。</p></article>
 <p>点一下地址即可复制。</p>
 
 <h2>怎么用</h2>
@@ -79,9 +79,10 @@ footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
   <li>点「点我切源」进入片单；搜索时结果里的 <code>[N源]</code> 表示有 N 个上游都有这部片。</li>
 </ol>
 <p>首次加载如果空白，退出重进一次即可——播放器需要先下载一次插件。</p>
-<p>主入口用 <code>@latest</code>：地址永不变，但 jsDelivr 会缓存这个别名，
-刚发布的新版本可能要过一阵子才会通过它生效。想立刻用上新版、或者想把版本钉死，
-就用下面「固定版本」那个地址——它逐字节冻结、发布即生效，代价是版本更新后地址会变。</p>
+<p>主入口地址不用换，仓库一更新它就是新的。要是你发现它拿到的还是旧版本，
+用下面「固定版本」那个地址——它逐字节冻结、发布即生效。npm 的
+<code>@latest</code> 地址（<code>cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json</code>）
+同样不用换，但 jsDelivr 缓存的是 npm 的版本别名，新版可能要过一段时间才通过它生效。</p>
 
 <h2>当前发布状态</h2>
 <dl>

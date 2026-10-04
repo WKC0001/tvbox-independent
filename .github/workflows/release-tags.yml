@@ -49,16 +49,18 @@ jobs:
           RELEASE_VERSION: ${{ inputs.version }}
         run: |
           set -euo pipefail
-          # jsDelivr caches the npm version alias, so @latest can keep serving the previous
-          # version for a while after the dist-tag moves —实测移动后数分钟内仍返回上一版。
-          # 主动 purge 能缩短它，但不能假定它立刻生效，所以这里如实报告解析结果，
-          # 由用固定版本地址兜底，而不是让使用者以为已经拿到新版。
-          curl --silent --fail --max-time 30 \
-            "https://purge.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json" > /dev/null || true
+          # 两个入口都要清：npm 的版本别名（实测推进 latest 后十几分钟仍返回上一版，
+          # purge 也清不掉），和仓库分支路径（主入口，提交后即为新内容）。
+          for path in "npm/wkc0001-tvbox-independent@latest/dc.json" \
+                      "gh/WKC0001/tvbox-independent@main/output/dc.json" \
+                      "gh/WKC0001/tvbox-independent@main/output/api.json"; do
+            curl --silent --fail --max-time 30 "https://purge.jsdelivr.net/$path" > /dev/null || true
+          done
+          # 以主入口为准报告解析结果，而不是假定它已经生效。
           SEEN=unknown
           for attempt in 1 2 3 4 5 6; do
             SEEN="$(curl --silent --max-time 30 \
-              https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/manifest.json \
+              https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/manifest.json \
               | python -c "import json,sys;print(json.load(sys.stdin).get('version','unknown'))" \
               2>/dev/null || echo unknown)"
             echo "attempt $attempt: @latest resolves to $SEEN (wanted $RELEASE_VERSION)"

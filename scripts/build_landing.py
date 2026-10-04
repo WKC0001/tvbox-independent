@@ -16,29 +16,36 @@ ROOT = Path(__file__).resolve().parents[1]
 PACKAGE = 'wkc0001-tvbox-independent'
 CDN = 'https://cdn.jsdelivr.net/npm/' + PACKAGE + '@latest/'
 CDN_FIXED = 'https://cdn.jsdelivr.net/npm/' + PACKAGE + '@%s/'
+# 主入口走仓库分支路径，不走 npm 的 @latest 别名。
+# 实测：npm dist-tag 已移到 0.5.5、也主动 purge 过，十几分钟后
+# @latest/manifest.json 仍返回 0.5.4 —— jsDelivr 缓存的是「版本别名」，purge 清不掉；
+# 而分支地址在提交后立刻就是新内容（实测返回 0.5.5）。
+# 于是入口负责「永不换地址」，它里面指向的 api.json 仍是 npm 固定版本、负责「内容冻结」，
+# 两个地址各管一件事，谁都不需要妥协。
+GH = 'https://cdn.jsdelivr.net/gh/WKC0001/tvbox-independent@main/output/'
 REPO = 'https://github.com/WKC0001/tvbox-independent'
 PAGES = 'https://wkc0001.github.io/tvbox-independent/'
 NOTICE = '⚠勿信广告'
 
 
 def entries(version):
-    """三个 @latest 地址，外加一个固定版本地址。
+    """主入口 + 直连 + 直播 + 固定版本。
 
-    为什么把固定版本也露出来：jsDelivr 会缓存 npm 的版本别名，实测推进 latest 之后
-    数分钟内 @latest 仍返回上一版。固定版本地址逐字节冻结、发布即生效，
-    所以它既是排查问题的首选，也是别名还没跟上时的兜底。
+    为什么还要留一个固定版本地址：任何「永不换地址」的入口都要依赖 CDN 的配合，
+    而固定版本地址是唯一不依赖任何别名解析、逐字节冻结的那一层——
+    它既是排查问题的首选，也是入口还没跟上时的兜底。
     """
     return [
-        (CDN + 'dc.json', '主入口 · 推荐', 'dc',
-         '多仓入口。播放器会先弹出仓库列表，选「WKC 自有聚合」即可。'
-         '地址里用 @latest，所以永远不用换。'),
-        (CDN + 'api.json', '直连配置', 'api',
+        (GH + 'dc.json', '主入口 · 推荐', 'dc',
+         '多仓入口。地址永不变，仓库一更新它就是新的。'
+         '播放器会先弹出仓库列表，选「WKC 自有聚合」即可。'),
+        (GH + 'api.json', '直连配置', 'api',
          '省掉选择那一步，直接加载全部站点。适合已经知道自己在做什么的人。'),
-        (CDN + 'live.m3u', '直播清单', 'live',
+        (GH + 'live.m3u', '直播清单', 'live',
          '按实测下载速度排序，快的排前面。也可以直接丢给支持 m3u 的播放器当频道表。'),
         (CDN_FIXED % version + 'api.json', '固定版本 ' + version, 'fixed',
-         '地址里带版本号，发布后立刻生效，不受别名缓存影响。版本更新后这个地址会变——'
-         '想钉住不动，用上面那个 @latest。'),
+         '逐字节冻结，发布即生效，不依赖任何别名解析。'
+         '想钉死在某个版本上就用它；版本更新后这个地址会变。'),
     ]
 
 
@@ -100,7 +107,7 @@ def main():
         safe = name if NOTICE in name else name + ' ' + NOTICE
         site_rows.append('<li><span class="tag">%s</span>%s</li>' % (tag, html.escape(safe)))
 
-    qr_ok = qr(CDN + 'dc.json', ROOT / 'docs/qr-latest.svg')
+    qr_ok = qr(GH + 'dc.json', ROOT / 'docs/qr-latest.svg')
     qr_block = (
         '<figure class="qr"><img src="qr-latest.svg" alt="主入口二维码" width="216" height="216">'
         '<figcaption>扫这个码就是把主入口地址抄到手机上</figcaption></figure>'
@@ -187,9 +194,10 @@ footer{{margin-top:56px;padding-top:20px;border-top:1px solid var(--line);
   <li>点「点我切源」进入片单；搜索时结果里的 <code>[N源]</code> 表示有 N 个上游都有这部片。</li>
 </ol>
 <p>首次加载如果空白，退出重进一次即可——播放器需要先下载一次插件。</p>
-<p>主入口用 <code>@latest</code>：地址永不变，但 jsDelivr 会缓存这个别名，
-刚发布的新版本可能要过一阵子才会通过它生效。想立刻用上新版、或者想把版本钉死，
-就用下面「固定版本」那个地址——它逐字节冻结、发布即生效，代价是版本更新后地址会变。</p>
+<p>主入口地址不用换，仓库一更新它就是新的。要是你发现它拿到的还是旧版本，
+用下面「固定版本」那个地址——它逐字节冻结、发布即生效。npm 的
+<code>@latest</code> 地址（<code>cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json</code>）
+同样不用换，但 jsDelivr 缓存的是 npm 的版本别名，新版可能要过一段时间才通过它生效。</p>
 
 <h2>当前发布状态</h2>
 <dl>
@@ -252,7 +260,7 @@ function copyUrl(element){{
     target.write_text(page)
     print('LANDING', target.relative_to(ROOT), len(sites), 'sites,', lines, 'live lines, version', version)
     if qr_ok:
-        print('QR      docs/qr-latest.svg ->', CDN + 'dc.json')
+        print('QR      docs/qr-latest.svg ->', GH + 'dc.json')
     return 0
 
 

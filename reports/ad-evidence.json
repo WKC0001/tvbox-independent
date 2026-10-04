@@ -1,5 +1,5 @@
 {
-  "checked_at": 1791123733,
+  "checked_at": 1791132611,
   "min_frames": 6,
   "with_evidence": [
     {
@@ -21,26 +21,7 @@
       "frames": 6
     }
   ],
-  "demoted": [
-    {
-      "id": "cms_p2100net",
-      "name": "飘零 ⚠勿信广告",
-      "claimed": "clean",
-      "reason": "no frame-scan record exists"
-    },
-    {
-      "id": "cms_360zycom",
-      "name": "360 ⚠勿信广告",
-      "claimed": "clean",
-      "reason": "no frame-scan record exists"
-    },
-    {
-      "id": "cms_cjlziapicom",
-      "name": "量子 ⚠勿信广告",
-      "claimed": "clean",
-      "reason": "no frame-scan record exists"
-    }
-  ],
+  "demoted": [],
   "orphan_evidence": [],
   "checked_sites": 61
 }

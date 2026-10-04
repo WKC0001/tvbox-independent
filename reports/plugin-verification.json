@@ -4,16 +4,16 @@
   "dex_classes": 1211,
   "sites": 11,
   "playlist_routes": 515,
-  "epg_channels_shipped": 48,
-  "epg_guide_entries": 76,
+  "epg_channels_shipped": 100,
+  "epg_guide_entries": 146,
   "epg_channels_verified": 136,
   "epg_gaps": 331,
   "files": {
     "api.json": "b0592a9f3cfefd3f50a215ef9a57b0e8f7466da5ab0e1870ef06ab018d2e5406",
     "cfg.jpg": "4e4157ddef8b31dacc84594d8da73bdc25773c8981dce298803c3d2cb2fbec98",
-    "live.m3u": "0ea9bc879d163f01cba89c2703bf13eda2c5b9fa07415a4d463ba1e6466ea25f",
+    "live.m3u": "95dcfcdd3d7eeb9a63b13eed2f1f8e25514ca6136cc19e9e728b2ceaeeacff0d",
     "dc.json": "a47c20efa06e7bb95d90dd796ff2a18cd02a19910513878e9ca014af4adbf29f",
-    "guide.xml.gz": "1ac601dc004c4b95cd417c18c52e64b6de9cfd1ca837c1e4b482f4691893dce7"
+    "guide.xml.gz": "33cd86964702b00dae320f9eae4e8e1ef77c4cf0a9c36382129a75fff316fcf6"
   },
   "android_app_test": "separate acceptance required"
 }

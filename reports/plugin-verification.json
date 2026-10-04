@@ -13,7 +13,7 @@
     "cfg.jpg": "b365f6b3d82677495dece0a295ecf9ea6d8c064f4094259e544d0871414986a2",
     "live.m3u": "95dcfcdd3d7eeb9a63b13eed2f1f8e25514ca6136cc19e9e728b2ceaeeacff0d",
     "dc.json": "569b8b632fde3b18a3883a26f57754863370ec7e21cf558a40eb16e32cccaa98",
-    "guide.xml.gz": "3c06a631569ec63f9f4c353e9e6ccb762687ca23dd5dad5d4a074d91ded96b49"
+    "guide.xml.gz": "074b689b5679a2c85e9fe210e6c7736d8d63ebe62796bed2d1342a468ffae5ba"
   },
   "android_app_test": "separate acceptance required"
 }

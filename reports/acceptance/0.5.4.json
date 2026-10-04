@@ -1,0 +1,36 @@
+{
+ "version": "0.5.4",
+ "package": "wkc0001-tvbox-independent",
+ "checked_at": 1791095246,
+ "device_tested": false,
+ "device_note": "machine probes only; no phone or TV install was performed for this version, so this record must not be read as device acceptance",
+ "cdn_verified": true,
+ "cdn_problems": [],
+ "published_files": {
+  "api.json": "0d7ffebb00d16776d17d32929682318c273d16f6af571a21f691f231481e1de1",
+  "cfg.jpg": "c6fa03c30c5824dab5d1e7811baa3ad90fe53cd14d38be4c436ac050dc847087",
+  "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
+  "dc.json": "a90a7e40619e7c2272b52f99c691577f87457049e0b212166c81fa56da9b8240"
+ },
+ "config_protocol": true,
+ "config_problems": [],
+ "playback_probe": true,
+ "playback_attempts": [
+  {
+   "id": "cms_p2100net",
+   "ok": false,
+   "note": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "cms_360zycom",
+   "ok": true,
+   "note": "只有我能用召唤术 / 360zy -> master/media-segment"
+  }
+ ],
+ "files": {
+  "api.json": "0d7ffebb00d16776d17d32929682318c273d16f6af571a21f691f231481e1de1",
+  "cfg.jpg": "c6fa03c30c5824dab5d1e7811baa3ad90fe53cd14d38be4c436ac050dc847087",
+  "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
+  "dc.json": "a90a7e40619e7c2272b52f99c691577f87457049e0b212166c81fa56da9b8240"
+ }
+}

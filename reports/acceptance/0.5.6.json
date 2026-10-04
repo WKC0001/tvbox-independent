@@ -1,0 +1,36 @@
+{
+ "version": "0.5.6",
+ "package": "wkc0001-tvbox-independent",
+ "checked_at": 1791100440,
+ "device_tested": false,
+ "device_note": "machine probes only; no phone or TV install was performed for this version, so this record must not be read as device acceptance",
+ "cdn_verified": true,
+ "cdn_problems": [],
+ "published_files": {
+  "api.json": "48dc3072fbd0e6bedc36b8dd6aeff145e2f0f25de7df617cd2762162c14e337f",
+  "cfg.jpg": "4e4157ddef8b31dacc84594d8da73bdc25773c8981dce298803c3d2cb2fbec98",
+  "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
+  "dc.json": "17374ccee6cddb5a685a2945e3e1b32712da21529600e49bed002e5050a7ebd1"
+ },
+ "config_protocol": true,
+ "config_problems": [],
+ "playback_probe": true,
+ "playback_attempts": [
+  {
+   "id": "cms_p2100net",
+   "ok": false,
+   "note": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "cms_360zycom",
+   "ok": true,
+   "note": "披荆斩棘2026 / 360zy -> master/aes128-key/aes128-key/aes128-key/aes128-key/encrypted-segment"
+  }
+ ],
+ "files": {
+  "api.json": "48dc3072fbd0e6bedc36b8dd6aeff145e2f0f25de7df617cd2762162c14e337f",
+  "cfg.jpg": "4e4157ddef8b31dacc84594d8da73bdc25773c8981dce298803c3d2cb2fbec98",
+  "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
+  "dc.json": "17374ccee6cddb5a685a2945e3e1b32712da21529600e49bed002e5050a7ebd1"
+ }
+}

@@ -1,5 +1,5 @@
 {
-  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.8/cfg.jpg;md5;3620c04dd7a853944b065eadd8a7b456",
+  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.9/cfg.jpg;md5;24fd42bc9c9c49335939ded17d73be6d",
   "hosts": [],
   "logo": "",
   "rules": [
@@ -421,8 +421,8 @@
     {
       "name": "WKC电视直播",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.8/live.m3u",
-      "epg": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.8/guide.xml.gz",
+      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.9/live.m3u",
+      "epg": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.9/guide.xml.gz",
       "playerType": 2,
       "timeout": 15
     }

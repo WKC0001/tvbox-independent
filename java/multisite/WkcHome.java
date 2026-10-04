@@ -25,17 +25,53 @@ public class WkcHome extends Spider {
     private static final long BUDGET_MS = 8000;
     /** 详情页补源用的预算要更短：这里已经在等一个详情了，多等一秒用户就多等一秒。 */
     private static final long DETAIL_BUDGET_MS = 5000;
+    /** 并行取各家详情的总预算。实测单个上游 0.5~1.6s，6s 足够让 6 家全部返回，
+        所以正常情况一条线路都不会少。预算只是兜底：真遇上游抽风时不再让用户干等，
+        没赶上的那一家这一轮不参与合并，下一次点开照常重来——不会永久放弃它。 */
+    private static final long COMBINE_BUDGET_MS = 6000;
     private static final int CACHE_MAX = 8;
     private static final int RESULT_MAX = 200;
     private static final long CACHE_TTL_MS = 300000;
+    /** 合并后的详情只缓存 60 秒，比搜索结果的 5 分钟短得多。
+        详情页里带着"这一条能不能播"的结论（各上游的详情都过了内容检查），
+        把它记 5 分钟等于让一条刚变成违禁的内容继续出现 5 分钟。
+        60 秒足够覆盖"从播放返回列表再点进来"这个真正需要快的场景。 */
+    private static final long DETAIL_TTL_MS = 60000;
 
     protected final ArrayList<WkcCms> providers = new ArrayList<>();
     private final LinkedHashMap<String, Cached> cache = new LinkedHashMap<>();
 
     private static final class Cached {
         final JSONArray list;
+        /** 合并后的详情也缓存在这里（与搜索结果共用容量和 TTL）。 */
+        final JSONObject detail;
         final long at;
-        Cached(JSONArray list, long at) { this.list = list; this.at = at; }
+        Cached(JSONArray list, long at) { this(list, null, at); }
+        Cached(JSONArray list, JSONObject detail, long at) { this.list = list; this.detail = detail; this.at = at; }
+    }
+
+    /** 缓存满了不要全清：全清会把刚缓存的几部剧一起扔掉，表现为"用一会儿突然集体变慢"。
+        扔掉最早进来的四分之一就够了。 */
+    private void trim() {
+        if (cache.size() < CACHE_MAX) return;
+        Iterator<String> it = cache.keySet().iterator();
+        for (int n = 0; n < Math.max(1, CACHE_MAX / 4) && it.hasNext(); n++) it.remove();
+    }
+
+    private JSONObject cachedDetail(String key) {
+        synchronized (cache) {
+            Cached hit = cache.get(key);
+            if (hit == null || hit.detail == null) return null;
+            if (System.currentTimeMillis() - hit.at >= DETAIL_TTL_MS) return null;
+            return new JSONObject(hit.detail.toString());
+        }
+    }
+
+    private void rememberDetail(String key, JSONObject value) {
+        synchronized (cache) {
+            trim();
+            cache.put(key, new Cached(null, value, System.currentTimeMillis()));
+        }
     }
 
     @Override public void init(Context c, String ext) throws Exception {
@@ -147,7 +183,7 @@ public class WkcHome extends Spider {
             if (hit != null && System.currentTimeMillis() - hit.at < CACHE_TTL_MS) all = hit.list;
             else {
                 all = askEveryProvider(w, q, BUDGET_MS);
-                if (cache.size() >= CACHE_MAX) cache.clear();
+                trim();
                 cache.put(key, new Cached(all, System.currentTimeMillis()));
             }
         }
@@ -244,6 +280,11 @@ public class WkcHome extends Spider {
 
     @Override public String detailContent(List<String> ids) throws Exception {
         if (ids.isEmpty()) return WkcNet.empty().toString();
+        // 合并结果按片缓存：刚才算过一次的话直接复用。实测这一步才是详情页最贵的一段
+        // （6 家详情累加 6.7s），不缓存的话五分钟内重开同一部剧要再等一遍。
+        String cacheKey = "d:" + ids.get(0);
+        JSONObject memo = cachedDetail(cacheKey);
+        if (memo != null) return new JSONObject().put("list", new JSONArray().put(memo)).toString();
         JSONObject token = WkcNet.unpack(ids.get(0));
         if (token.optInt("home", 0) == 1) {
             ArrayList<String> all = new ArrayList<>();
@@ -253,6 +294,7 @@ public class WkcHome extends Spider {
             JSONObject merged = combine(all, null);
             if (merged == null) return WkcNet.empty().toString();
             merged.put("vod_id", ids.get(0));
+            rememberDetail(cacheKey, merged);
             return new JSONObject().put("list", new JSONArray().put(merged)).toString();
         }
         // 首页和分类仍是"先答者优先"，点进去的凭证只带一个上游——
@@ -266,7 +308,9 @@ public class WkcHome extends Spider {
         all.add(ids.get(0));
         for (String peer : peersOf(own.optString("vod_name"))) if (!all.contains(peer)) all.add(peer);
         JSONObject merged = combine(all, own);
+        if (merged == null) return WkcNet.empty().toString();
         merged.put("vod_id", ids.get(0));
+        rememberDetail(cacheKey, merged);
         return new JSONObject().put("list", new JSONArray().put(merged)).toString();
     }
 
@@ -281,7 +325,7 @@ public class WkcHome extends Spider {
             if (hit != null && System.currentTimeMillis() - hit.at < CACHE_TTL_MS) rows = hit.list;
             else {
                 rows = askEveryProvider(name, false, DETAIL_BUDGET_MS);
-                if (cache.size() >= CACHE_MAX) cache.clear();
+                trim();
                 cache.put(key, new Cached(rows, System.currentTimeMillis()));
             }
         }
@@ -315,30 +359,55 @@ public class WkcHome extends Spider {
         }
     }
 
+    /** 并发取每一家的详情。它们之间没有依赖，串起来等纯属浪费。
+        拿不到的位置留 null：一家慢或挂了，其余照常合并，绝不整页失败。 */
+    private ArrayList<JSONObject> gather(List<String> ids, JSONObject seed) {
+        ArrayList<JSONObject> out = new ArrayList<>();
+        ArrayList<Future<JSONObject>> jobs = new ArrayList<>();
+        for (int i = 0; i < ids.size(); i++) { out.add(null); jobs.add(null); }
+        ExecutorService pool = Executors.newFixedThreadPool(Math.max(1, Math.min(ids.size(), 6)));
+        try {
+            for (int i = 0; i < ids.size(); i++) {
+                // 单源凭证那条详情已经取过了，别再问一遍——它本来就在这次的等待时间里。
+                if (seed != null && i == 0) { out.set(0, seed); continue; }
+                final String single = ids.get(i);
+                jobs.set(i, pool.submit(() -> {
+                    JSONObject r = new JSONObject(owner(single).detailContent(Collections.singletonList(single)));
+                    JSONArray arr = r.optJSONArray("list");
+                    return (arr == null || arr.length() == 0) ? null : arr.getJSONObject(0);
+                }));
+            }
+            long deadline = System.currentTimeMillis() + COMBINE_BUDGET_MS;
+            for (int i = 0; i < jobs.size(); i++) {
+                Future<JSONObject> job = jobs.get(i);
+                if (job == null) continue;
+                long left = deadline - System.currentTimeMillis();
+                if (left <= 0) { job.cancel(true); continue; }
+                try { out.set(i, job.get(left, TimeUnit.MILLISECONDS)); }
+                catch (Exception ignore) { /* 这一家没赶上，其余照常合并 */ }
+            }
+        } finally { pool.shutdownNow(); }
+        return out;
+    }
+
     /** 把所有上游的线路并成一份详情。顺序即播放器的默认选择：第一条就是最干净最快的那条。 */
     private JSONObject combine(List<String> ids, JSONObject seed) throws Exception {
         ArrayList<Route> gathered = new ArrayList<>();
         JSONObject base = seed;
+        // 按 ids 原顺序收集，所以同样的输入一定得到同样的线路顺序——不能让并发把它变成随机的。
+        ArrayList<JSONObject> details = gather(ids, seed);
         for (int i = 0; i < ids.size(); i++) {
-            String single = ids.get(i);
-            try {
-                WkcCms provider = owner(single);
-                // 单源凭证那条详情已经取过了，别再问一遍——它本来就在这次的等待时间里。
-                JSONObject v = (seed != null && i == 0) ? seed : null;
-                if (v == null) {
-                    JSONObject out = new JSONObject(provider.detailContent(Collections.singletonList(single)));
-                    JSONArray arr = out.optJSONArray("list");
-                    if (arr == null || arr.length() == 0) continue;
-                    v = arr.getJSONObject(0);
-                }
-                if (base == null) base = v;
-                String[] fs = v.optString("vod_play_from").split("\\$\\$\\$", -1);
-                String[] ls = v.optString("vod_play_url").split("\\$\\$\\$", -1);
-                for (int k = 0; k < Math.min(fs.length, ls.length); k++) {
-                    if (fs[k].isEmpty() || ls[k].isEmpty()) continue;
-                    gathered.add(new Route(fs[k], ls[k], provider));
-                }
-            } catch (Exception ignore) { /* 某个上游这条挂了，其他上游的线路照常给 */ }
+            JSONObject v = details.get(i);
+            if (v == null) continue;
+            if (base == null) base = v;
+            WkcCms provider;
+            try { provider = owner(ids.get(i)); } catch (Exception ignore) { continue; }
+            String[] fs = v.optString("vod_play_from").split("\\$\\$\\$", -1);
+            String[] ls = v.optString("vod_play_url").split("\\$\\$\\$", -1);
+            for (int k = 0; k < Math.min(fs.length, ls.length); k++) {
+                if (fs[k].isEmpty() || ls[k].isEmpty()) continue;
+                gathered.add(new Route(fs[k], ls[k], provider));
+            }
         }
         if (base == null) return null;
         Collections.sort(gathered);

@@ -53,6 +53,12 @@ public class WkcCms extends Spider {
         if(!typeName.isEmpty()&&WkcPolicy.genre(typeName)==null)return false;
         return !WkcPolicy.blocked(v.optString("vod_name")+" "+typeName+" "+v.optString("vod_class")+" "+v.optString("vod_remarks")+" "+v.optString("vod_tag"));
     }
+    /** 播放时的路线核对**刻意不做任何缓存**。
+        试过把详情页刚取到的答复复用 60 秒（能省掉每集一次 0.5~1.6s 的往返），
+        但那意味着"上游在这 60 秒内把内容改成违禁"时我们仍会放行——
+        内容合规是硬闸门，不接受任何放行窗口，所以这里每次都拿实时详情去比。
+        省时间只能省在"等待方式"上（见 WkcHome 的并发合并），不能省在"检查"上。 */
+
     protected JSONObject token(String original)throws Exception{return new JSONObject().put("provider",provider).put("id",original);}
     protected String original(String value)throws Exception {
         JSONObject t=WkcNet.unpack(value);
@@ -162,6 +168,8 @@ public class WkcCms extends Spider {
         // flag 是对外显示名（含来源名/广告提示），可能被上层去重改写过，
         // 所以对上游的核对一律使用 token 里记着的原始 flag。
         String raw=t.optString("raw",flag);
+        // 这两项每次都实时校验，不进缓存：域名白名单决定"这条 url 是谁家的"，
+        // 后缀/flag 决定它确实是视频而不是网页。缓存里只有"上游答复"这一份数据。
         if(!flag.equals(t.getString("flag"))||!mediaAllowed(url,raw))throw new IllegalArgumentException("Unapproved playback route");
         JSONObject v=detail(id);String[] fs=v.optString("vod_play_from").split("\\$\\$\\$",-1),ls=v.optString("vod_play_url").split("\\$\\$\\$",-1);
         for(int i=0;i<Math.min(fs.length,ls.length);i++)if(raw.equals(fs[i]))for(String ep:ls[i].split("#")){

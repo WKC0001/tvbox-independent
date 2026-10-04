@@ -1,12 +1,12 @@
 {
-  "checked_at": 1791105989,
+  "checked_at": 1791107563,
   "upstream": "http://epg.51zmt.top:8000/cc.xml",
   "source": "upstream",
   "upstream_channels": 101,
   "xmltv_channels": 63,
   "diyp_channels": 62,
   "verified_channels": 136,
-  "programmes": 4112,
-  "bytes": 58022,
+  "programmes": 3708,
+  "bytes": 41424,
   "verified_without_guide": []
 }

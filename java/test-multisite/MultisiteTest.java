@@ -64,7 +64,7 @@ public final class MultisiteTest {
         }
     }
     /** 同一个上游有多条线路（蓝光/标清），用来验证线路名不会塌成一个被去重成「·2」「·3」。 */
-    static final class LinesFixture extends WkcCms {
+    static class LinesFixture extends WkcCms {
         protected void refresh(){types.put("6","动作片");}
         protected JSONObject request(String... args)throws Exception{
             Map<String,String> q=new HashMap<>();for(int i=0;i<args.length;i+=2)q.put(args[i],args[i+1]);
@@ -80,6 +80,14 @@ public final class MultisiteTest {
         public String searchContent(String w,boolean q,String page)throws Exception{
             return new JSONObject().put("list",new JSONArray().put(new JSONObject().put("vod_name","假面良人")
                 .put("type_id","6").put("type_name","动作片").put("vod_id",WkcNet.pack(token("1"))))).toString();
+        }
+    }
+    /** 记录上游被"取详情"问了几次：用来证明缓存命中时不重复拉，也证明校验没被悄悄跳过。 */
+    static final class CountingFixture extends LinesFixture {
+        int detailRequests;
+        @Override protected JSONObject request(String... args)throws Exception{
+            for(String a:args)if("ids".equals(a))detailRequests++;
+            return super.request(args);
         }
     }
     static JSONObject cmsExt(String id,String label,String ad,int latency)throws Exception{
@@ -178,6 +186,65 @@ public final class MultisiteTest {
         String firstEpisode=filled.getString("vod_play_url").split("\\$\\$\\$",-1)[0].split("#")[0].split("\\$",2)[1];
         check(new JSONObject(completed.playerContent(routes[0],firstEpisode,new ArrayList<>())).getInt("parse")==0,
               "A completed detail still plays through the token, not through the display name");
+        // 详情页最贵的一段是"逐个拉每家的详情"（实测 6 家串行累加 6.7s）。
+        // 它改成并发、结果进缓存之后，线路一条都不能少、顺序也不能被并发打乱——
+        // 快只能来自"不再重复等待"，不能来自"少给几条"。
+        WkcHome memo=new WkcHome();
+        CountingFixture cf=new CountingFixture(),cg=new CountingFixture();
+        cf.init(null,cmsExt("cms_a","甲","clean",900).toString());cf.order=0;
+        cg.init(null,cmsExt("cms_b","乙","pending",300).toString());cg.order=1;
+        memo.providers.add(cf);memo.providers.add(cg);
+        String solo=WkcNet.pack(cf.token("1"));
+        String[] firstRun=new JSONObject(memo.detailContent(Collections.singletonList(solo)))
+                .getJSONArray("list").getJSONObject(0).getString("vod_play_from").split("\\$\\$\\$",-1);
+        int spent=cf.detailRequests+cg.detailRequests;
+        check(firstRun.length==4,"A completed detail carries every provider's lines");
+        String[] secondRun=new JSONObject(memo.detailContent(Collections.singletonList(solo)))
+                .getJSONArray("list").getJSONObject(0).getString("vod_play_from").split("\\$\\$\\$",-1);
+        check(Arrays.equals(firstRun,secondRun),
+              "A cached detail must deliver the same lines in the same order");
+        check(cf.detailRequests+cg.detailRequests==spent,
+              "A cached detail must not re-ask the providers");
+        // 并发收集不能把线路顺序变成随机的：两个互不相干的实例必须给出同样的顺序。
+        WkcHome orderA=new WkcHome(),orderB=new WkcHome();
+        LinesFixture a1=new LinesFixture(),a2=new LinesFixture(),b1=new LinesFixture(),b2=new LinesFixture();
+        a1.init(null,cmsExt("cms_a","甲","clean",900).toString());a1.order=0;
+        a2.init(null,cmsExt("cms_b","乙","pending",300).toString());a2.order=1;
+        b1.init(null,cmsExt("cms_a","甲","clean",900).toString());b1.order=0;
+        b2.init(null,cmsExt("cms_b","乙","pending",300).toString());b2.order=1;
+        orderA.providers.add(a1);orderA.providers.add(a2);
+        orderB.providers.add(b1);orderB.providers.add(b2);
+        String[] left=new JSONObject(orderA.detailContent(Collections.singletonList(WkcNet.pack(a1.token("1")))))
+                .getJSONArray("list").getJSONObject(0).getString("vod_play_from").split("\\$\\$\\$",-1);
+        String[] right=new JSONObject(orderB.detailContent(Collections.singletonList(WkcNet.pack(b1.token("1")))))
+                .getJSONArray("list").getJSONObject(0).getString("vod_play_from").split("\\$\\$\\$",-1);
+        check(Arrays.equals(left,right),"Concurrent gathering must not randomise the line order");
+        // 播放的路线核对刻意不缓存：每点一集都拿实时详情去比。
+        // 这里能省一次 0.5~1.6s 的往返，但代价是"上游刚把内容改成违禁"时会被放行——
+        // 内容合规不接受任何放行窗口，所以这个慢点保留，性能只能从并发和详情页缓存上找。
+        WkcHome cold=new WkcHome();
+        CountingFixture coldA=new CountingFixture();
+        coldA.init(null,cmsExt("cms_a","甲","clean",900).toString());coldA.order=0;
+        cold.providers.add(coldA);
+        String coldFlag="甲 "+WkcHome.NOTICE+" · 蓝光";
+        String coldToken=WkcNet.pack(coldA.token("1").put("flag",coldFlag).put("raw","蓝光")
+                .put("url","https://media.example/a.m3u8"));
+        int coldBefore=coldA.detailRequests;
+        check(new JSONObject(cold.playerContent(coldFlag,coldToken,new ArrayList<>())).getInt("parse")==0,
+              "Playback resolves through the token");
+        check(coldA.detailRequests==coldBefore+1,"Every playback checks the route against a live detail");
+        check(new JSONObject(cold.playerContent(coldFlag,coldToken,new ArrayList<>())).getInt("parse")==0,
+              "A second playback still resolves");
+        check(coldA.detailRequests==coldBefore+2,
+              "The route check is never served from a memory, even for a title just opened");
+        String playLine=firstRun[0];
+        String playEpisode=new JSONObject(memo.detailContent(Collections.singletonList(solo)))
+                .getJSONArray("list").getJSONObject(0).getString("vod_play_url").split("\\$\\$\\$",-1)[0].split("#")[0].split("\\$",2)[1];
+        check(new JSONObject(memo.playerContent(playLine,playEpisode,new ArrayList<>())).getInt("parse")==0,
+              "A completed detail still plays through its own token");
+        // 核对本身一行没删：伪造 url 与未经批准的域名都照旧被拒。
+        String forgedEpisode=WkcNet.pack(WkcNet.unpack(playEpisode).put("url","https://unapproved.example/x.m3u8"));
+        rejects(()->memo.playerContent(playLine,forgedEpisode,new ArrayList<>()));
         // 反过来：没有扫描证据的源不能被当成"干净"排在前面——没扫过就是没扫过。
         WkcHome unscanned=new WkcHome();
         LinesFixture pending=new LinesFixture(),flagged=new LinesFixture();

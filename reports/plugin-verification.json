@@ -1,6 +1,6 @@
 {
   "passed": true,
-  "version": "0.5.4",
+  "version": "0.5.5",
   "dex_classes": 1210,
   "sites": 11,
   "playlist_routes": 559,
@@ -9,10 +9,10 @@
   "epg_channels_verified": 136,
   "epg_gaps": 331,
   "files": {
-    "api.json": "0d7ffebb00d16776d17d32929682318c273d16f6af571a21f691f231481e1de1",
-    "cfg.jpg": "c6fa03c30c5824dab5d1e7811baa3ad90fe53cd14d38be4c436ac050dc847087",
+    "api.json": "c1f4f2d617bdb3e2107a4e86b60ed017f0f96d327de95909a5d19e1629480d8c",
+    "cfg.jpg": "2de3bbe1788d8478dd2eb66c40650bfd3a7fe20ac79a7b3bfd9e66f5173ed229",
     "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
-    "dc.json": "a90a7e40619e7c2272b52f99c691577f87457049e0b212166c81fa56da9b8240"
+    "dc.json": "3984ae3a77b39553c53a063b93d316ce085b4af3efb2b02361d156547b147566"
   },
   "android_app_test": "separate acceptance required"
 }

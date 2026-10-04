@@ -1,0 +1,36 @@
+{
+ "version": "0.5.5",
+ "package": "wkc0001-tvbox-independent",
+ "checked_at": 1791096295,
+ "device_tested": false,
+ "device_note": "machine probes only; no phone or TV install was performed for this version, so this record must not be read as device acceptance",
+ "cdn_verified": true,
+ "cdn_problems": [],
+ "published_files": {
+  "api.json": "c1f4f2d617bdb3e2107a4e86b60ed017f0f96d327de95909a5d19e1629480d8c",
+  "cfg.jpg": "2de3bbe1788d8478dd2eb66c40650bfd3a7fe20ac79a7b3bfd9e66f5173ed229",
+  "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
+  "dc.json": "3984ae3a77b39553c53a063b93d316ce085b4af3efb2b02361d156547b147566"
+ },
+ "config_protocol": true,
+ "config_problems": [],
+ "playback_probe": true,
+ "playback_attempts": [
+  {
+   "id": "cms_p2100net",
+   "ok": false,
+   "note": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+   "id": "cms_360zycom",
+   "ok": true,
+   "note": "糯糯下山，师兄们都慌了第四季 / 360zy -> master/aes128-key/aes128-key/aes128-key/encrypted-segment"
+  }
+ ],
+ "files": {
+  "api.json": "c1f4f2d617bdb3e2107a4e86b60ed017f0f96d327de95909a5d19e1629480d8c",
+  "cfg.jpg": "2de3bbe1788d8478dd2eb66c40650bfd3a7fe20ac79a7b3bfd9e66f5173ed229",
+  "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
+  "dc.json": "3984ae3a77b39553c53a063b93d316ce085b4af3efb2b02361d156547b147566"
+ }
+}

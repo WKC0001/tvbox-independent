@@ -115,11 +115,24 @@ def with_measurements(routes):
     return routes
 
 
+def ad_verdict(site):
+    """抽帧 OCR 的结论：clean=扫过且没发现博彩广告；flagged=扫到了；pending=没扫过。
+
+    "没扫过"必须和"干净"区分开——没扫就说干净等于伪造结论，插件会把没扫过的源
+    当成无广告排到前面去。所以缺省值是 pending，不是 clean。
+    """
+    verdict=(site.get('review') or {}).get('ad_scan')
+    return verdict if verdict in ('clean','flagged') else 'pending'
+
+
 def provider_settings(site,audit):
     # label 会进插件，成为播放线路的显示名（`WkcCms.display()`）。
     # 线路是用户唯一能看到"这条是谁"的位置，所以来源名和广告提示都必须在这里带上。
+    # ad_scan 与 latency_ms 决定线路顺序：无广告优先，其次接口快的。
     return {'id':site['id'],'api':site['config']['api'],'media_hosts':audit['media_hosts'],
-            'label':site['config']['name'],'reviewed_at':audit['checked_at'],'policy':'normal-film-v1'}
+            'label':site['config']['name'],'ad_scan':ad_verdict(site),
+            'latency_ms':int(audit.get('latency_ms',0)),
+            'reviewed_at':audit['checked_at'],'policy':'normal-film-v1'}
 
 
 def select(sites,audits,now,health=None,policy=None,native_audit=None):

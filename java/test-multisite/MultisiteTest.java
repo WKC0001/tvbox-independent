@@ -63,6 +63,29 @@ public final class MultisiteTest {
             return new JSONObject().put("list",list).put("page",1).put("pagecount",1).put("limit",20).put("total",titles.length).toString();
         }
     }
+    /** 同一个上游有多条线路（蓝光/标清），用来验证线路名不会塌成一个被去重成「·2」「·3」。 */
+    static final class LinesFixture extends WkcCms {
+        protected void refresh(){types.put("6","动作片");}
+        protected JSONObject request(String... args)throws Exception{
+            Map<String,String> q=new HashMap<>();for(int i=0;i<args.length;i+=2)q.put(args[i],args[i+1]);
+            if("list".equals(q.get("ac")))
+                return new JSONObject().put("class",new JSONArray().put(new JSONObject().put("type_id","6").put("type_name","动作片")));
+            JSONObject v=new JSONObject().put("vod_id","1").put("vod_name","假面良人")
+                .put("type_id","6").put("type_name","动作片")
+                .put("vod_play_from","蓝光$$$标清")
+                .put("vod_play_url","第1集$https://media.example/a.m3u8#第2集$https://media.example/b.m3u8"
+                                  +"$$$第1集$https://media.example/c.m3u8");
+            return new JSONObject().put("list",new JSONArray().put(v));
+        }
+        public String searchContent(String w,boolean q,String page)throws Exception{
+            return new JSONObject().put("list",new JSONArray().put(new JSONObject().put("vod_name","假面良人")
+                .put("type_id","6").put("type_name","动作片").put("vod_id",WkcNet.pack(token("1"))))).toString();
+        }
+    }
+    static JSONObject cmsExt(String id,String label,String ad,int latency)throws Exception{
+        return new JSONObject().put("id",id).put("api","https://cms.example/api").put("label",label)
+            .put("media_hosts",new JSONArray().put("media.example")).put("ad_scan",ad).put("latency_ms",latency);
+    }
     public static void main(String[] args)throws Exception{
         // 软色情分类名必须同时被 DENY 命中：只靠 GENRES 白名单挡是不够的，
         // 因为条目的 type_name 可能是白名单里的泛化名（如 `短剧`），真正说明问题的是 vod_class。
@@ -86,7 +109,8 @@ public final class MultisiteTest {
         String id=home.getJSONArray("list").getJSONObject(0).getString("vod_id");
         JSONObject detail=new JSONObject(f.detailContent(Collections.singletonList(id))).getJSONArray("list").getJSONObject(0);
         String line=detail.getString("vod_play_from");
-        check(line.equals("测试源 "+WkcHome.NOTICE),"Line must show the source name and the ad notice");
+        check(line.equals("测试源 "+WkcHome.NOTICE+" · main"),
+              "Line must show the source name, the ad notice and the upstream line name");
         check(detail.getString("vod_play_url").split("\\$\\$\\$",-1).length==1,"Unapproved domain removed");
         String episode=detail.getString("vod_play_url").split("\\$",2)[1];
         check(new JSONObject(f.playerContent(line,episode,new ArrayList<>())).getInt("parse")==0,"Approved direct playback through the shown line name");
@@ -136,6 +160,34 @@ public final class MultisiteTest {
               "A title sharing three extra characters is a different show, not a version");
         check(!noisyHit.getJSONArray("list").toString().contains("繁华之乱世情缘"),
               "A derivative title is a different show, not another version of this one");
+        // 播放页只显示一个源的线路，是因为首页/分类仍是"先答者优先"：凭证里只有一个上游。
+        // 详情页必须按片名回问其余上游补齐，并且把同一个上游的多条线路各自标出来。
+        WkcHome completed=new WkcHome();
+        LinesFixture fast=new LinesFixture(),slow=new LinesFixture();
+        fast.init(null,cmsExt("cms_a","甲","clean",900).toString());fast.order=0;
+        slow.init(null,cmsExt("cms_b","乙","pending",300).toString());slow.order=1;
+        completed.providers.add(fast);completed.providers.add(slow);
+        JSONObject filled=new JSONObject(completed.detailContent(
+                Collections.singletonList(WkcNet.pack(fast.token("1"))))).getJSONArray("list").getJSONObject(0);
+        String[] routes=filled.getString("vod_play_from").split("\\$\\$\\$",-1);
+        check(routes.length==4,"A single-source detail must be completed with the other providers' lines");
+        check(routes[0].startsWith("甲")&&routes[2].startsWith("乙"),
+              "The OCR-clean provider ranks first even though it answered slower");
+        check(routes[0].endsWith("· 蓝光")&&routes[1].endsWith("· 标清"),
+              "One provider's own lines stay distinguishable instead of collapsing into ·2 / ·3");
+        String firstEpisode=filled.getString("vod_play_url").split("\\$\\$\\$",-1)[0].split("#")[0].split("\\$",2)[1];
+        check(new JSONObject(completed.playerContent(routes[0],firstEpisode,new ArrayList<>())).getInt("parse")==0,
+              "A completed detail still plays through the token, not through the display name");
+        // 反过来：没有扫描证据的源不能被当成"干净"排在前面——没扫过就是没扫过。
+        WkcHome unscanned=new WkcHome();
+        LinesFixture pending=new LinesFixture(),flagged=new LinesFixture();
+        pending.init(null,cmsExt("cms_a","甲","pending",300).toString());pending.order=0;
+        flagged.init(null,cmsExt("cms_b","乙","flagged",900).toString());flagged.order=1;
+        unscanned.providers.add(pending);unscanned.providers.add(flagged);
+        String[] risky=new JSONObject(unscanned.detailContent(
+                Collections.singletonList(WkcNet.pack(flagged.token("1"))))).getJSONArray("list")
+                .getJSONObject(0).getString("vod_play_from").split("\\$\\$\\$",-1);
+        check(risky[0].startsWith("甲"),"A provider with gambling ads must not outrank an unscanned one");
         WkcNative nativeSite=new WkcNative();nativeSite.init(null,"{\"id\":\"test-native\",\"adapter\":\"JpysGuard\"}");
         check(new JSONObject(nativeSite.searchContent("正常影片",false)).getJSONArray("list").length()==1,"Native legacy two-argument search");
         check(new JSONObject(nativeSite.searchContent("正常影片",false,"1")).getJSONArray("list").length()==1,"Native page one uses supported overload");

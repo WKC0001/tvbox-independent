@@ -8,6 +8,8 @@ import org.json.*;
 
 /** Dynamic CMS adapter. Every entry path checks current categories and metadata. */
 public class WkcCms extends Spider {
+    /** 上游在聚合里的序号，只用于"其它条件都相同时"的稳定排序。 */
+    int order;
     protected JSONObject settings=new JSONObject();
     protected LinkedHashMap<String,String> types=new LinkedHashMap<>();
     protected String api="", provider="";
@@ -17,6 +19,17 @@ public class WkcCms extends Spider {
     protected String label(){String v=settings.optString("label","");return v.isEmpty()?provider:v;}
     /** 提示加在站点名里（见构建端 NOTICE），这里只在还没有的时候补一次，避免出现两遍。 */
     protected String display(){String name=label();return name.contains(WkcHome.NOTICE)?name:name+" "+WkcHome.NOTICE;}
+    /** clean=抽帧 OCR 扫过且没发现博彩广告；flagged=扫到了；pending=没扫过（不能当成干净）。 */
+    int adRank(){String v=settings.optString("ad_scan","pending");return "clean".equals(v)?0:"flagged".equals(v)?2:1;}
+    /** 接口延迟（毫秒）。没有实测数据时排到最后，而不是当成 0 插到最前面。 */
+    int latency(){int v=settings.optInt("latency_ms",0);return v>0?v:Integer.MAX_VALUE;}
+    /** 上游原始的线路标识（蓝光/标清/m3u8…）。去掉会破坏分行的分隔符，长度也要收住——
+        播放器把这一串直接显示在选源列表里，太长会看不出是谁。 */
+    static String lineTag(String raw){
+        String s=raw.replaceAll("[\\$#]+"," ").trim();
+        if(s.length()>16)s=s.substring(0,16).trim();
+        return s;
+    }
     @Override public void init(Context context,String ext)throws Exception {
         settings=new JSONObject(ext);api=settings.getString("api");provider=settings.getString("id");
         if(!WkcNet.web(api))throw new IllegalArgumentException("Invalid provider API");
@@ -126,10 +139,13 @@ public class WkcCms extends Spider {
         String id=original(ids.get(0));JSONObject v=detail(id);
         String[] flags=v.optString("vod_play_from").split("\\$\\$\\$",-1),lines=v.optString("vod_play_url").split("\\$\\$\\$",-1);
         ArrayList<String> approvedFlags=new ArrayList<>(),approvedLines=new ArrayList<>();
-        // 对外暴露的是 display()（来源名 + 广告提示），上游原始 flag 存进 token 供播放时校验。
-        // 不能直接改上游 flag 本身：playerContent 会用当前详情重新核对它。
-        String shown=display();
+        // 对外暴露的是"来源名 + 广告提示 + 上游原始线路名"，上游原始 flag 另存进 token 供播放时校验。
+        // 不能直接只写 display()：同一个上游的蓝光/标清两条线路会塌成同一个名字，
+        // 客户端去重后变成「飘零·2」「飘零·3」，用户看不出区别（实测截图里就是这样）。
+        // 也不能直接改上游 flag 本身：playerContent 会用当前详情重新核对它。
         for(int i=0;i<Math.min(flags.length,lines.length);i++){
+            String tag=lineTag(flags[i]);
+            String shown=tag.isEmpty()?display():display()+" · "+tag;
             ArrayList<String> eps=new ArrayList<>();
             for(String ep:lines[i].split("#")){
                 String[] pair=ep.split("\\$",2);if(pair.length!=2||!mediaAllowed(pair[1],flags[i]))continue;

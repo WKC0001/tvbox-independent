@@ -565,7 +565,8 @@
       "admitted": true,
       "checked_at": 1791094209,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay"
+      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay",
+      "ad_scan": "clean"
     }
   },
   {
@@ -822,7 +823,8 @@
       "admitted": true,
       "checked_at": 1791094209,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay"
+      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay",
+      "ad_scan": "clean"
     }
   },
   {
@@ -1190,7 +1192,10 @@
       "admitted": true,
       "checked_at": 1791052281,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "visual_sample_review": "reports/content-sample-review.json"
+      "visual_sample_review": "reports/content-sample-review.json",
+      "ad_scan": "clean",
+      "ad_frame_scan": "local OCR frame scan: 6 frames sampled from 我家楼下的陌生人 (bfzym3u8), 0 gambling-ad frames / 0 adult frames",
+      "ad_frame_scan_at": 1791100022
     }
   },
   {
@@ -1346,7 +1351,10 @@
       "admitted": true,
       "checked_at": 1791052281,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "visual_sample_review": "reports/content-sample-review.json"
+      "visual_sample_review": "reports/content-sample-review.json",
+      "ad_scan": "clean",
+      "ad_frame_scan": "local OCR frame scan: 6 frames sampled from 遗爱2026 (ffm3u8), 0 gambling-ad frames / 0 adult frames",
+      "ad_frame_scan_at": 1791100022
     }
   },
   {
@@ -1559,7 +1567,8 @@
       "admitted": true,
       "checked_at": 1791094209,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay"
+      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay",
+      "ad_scan": "clean"
     }
   },
   {
@@ -1650,7 +1659,10 @@
       "admitted": true,
       "checked_at": 1791052281,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "visual_sample_review": "reports/content-sample-review.json"
+      "visual_sample_review": "reports/content-sample-review.json",
+      "ad_scan": "clean",
+      "ad_frame_scan": "local OCR frame scan: 6 frames sampled from 惊人的星期六 (dyttm3u8), 0 gambling-ad frames / 0 adult frames",
+      "ad_frame_scan_at": 1791100022
     }
   },
   {

@@ -45,6 +45,14 @@ def verify(directory=ROOT/'output'):
         assert all(site.get(k)==1 for k in ('searchable','quickSearch','changeable'))
         assert site['type']==3 and site['api'] in ('csp_WkcHome','csp_WkcCms','csp_WkcNative'),'Content-policy bypass'
         assert 'Lcom/github/catvod/spider/'+site['api'].replace('csp_','')+';' in classes
+        # 线路的先后顺序由这两个字段决定。缺 ad_scan 会被插件当成 pending（没扫过），
+        # 所以这里要卡的是取值合法：一旦能写出别的值，"没扫过"就可能被误当成"确认干净"。
+        ranks=[]
+        if site['api']=='csp_WkcHome':ranks=list((site.get('ext') or {}).get('providers') or [])
+        elif site['api']=='csp_WkcCms':ranks=[site.get('ext') or {}]
+        for provider in ranks:
+            assert provider.get('ad_scan') in ('clean','pending','flagged'),'Unusable ad verdict: '+str(provider.get('ad_scan'))
+            assert isinstance(provider.get('latency_ms'),int) and provider['latency_ms']>=0,'Unusable latency: '+str(provider.get('latency_ms'))
     assert len(api['lives'])==1 and api['lives'][0]['url']==base+'live.m3u'
     playlist=(directory/'live.m3u').read_text()
     assert not re.search(r'https?://[^\s]+/(?:huya|douyu|yy)/',playlist,re.I),'Platform carousel reintroduced'

@@ -1,0 +1,56 @@
+{
+  "cms_bfzyapicom": {
+    "cms": "https://bfzyapi.com/api.php/provide/vod/",
+    "ok": true,
+    "episode": {
+      "title": "我家楼下的陌生人",
+      "flag": "bfzym3u8",
+      "url": "https://s3.bfllvip.com/video/wojialouxiademoshengren/f9e6b9d0c751/index.m3u8"
+    },
+    "sampled": 6,
+    "ad_frames": 0,
+    "adult_frames": 0,
+    "clean_frames": 6,
+    "ad_ratio": 0.0,
+    "adult_ratio": 0.0,
+    "ad_terms": [],
+    "adult_terms": [],
+    "verdict": "clean"
+  },
+  "cms_cjffzyapicom": {
+    "cms": "https://cj.ffzyapi.com/api.php/provide/vod/",
+    "ok": true,
+    "episode": {
+      "title": "遗爱2026",
+      "flag": "ffm3u8",
+      "url": "https://vip.ffzy-plays.com/20261004/59062_fc4652fc/index.m3u8"
+    },
+    "sampled": 6,
+    "ad_frames": 0,
+    "adult_frames": 0,
+    "clean_frames": 6,
+    "ad_ratio": 0.0,
+    "adult_ratio": 0.0,
+    "ad_terms": [],
+    "adult_terms": [],
+    "verdict": "clean"
+  },
+  "cms_caijidyttzyapicom": {
+    "cms": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
+    "ok": true,
+    "episode": {
+      "title": "惊人的星期六",
+      "flag": "dyttm3u8",
+      "url": "https://vip.dytt-cinema.com/20250216/3080_a9986cb0/index.m3u8"
+    },
+    "sampled": 6,
+    "ad_frames": 0,
+    "adult_frames": 0,
+    "clean_frames": 6,
+    "ad_ratio": 0.0,
+    "adult_ratio": 0.0,
+    "ad_terms": [],
+    "adult_terms": [],
+    "verdict": "clean"
+  }
+}

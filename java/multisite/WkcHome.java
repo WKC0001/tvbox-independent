@@ -23,8 +23,11 @@ public class WkcHome extends Spider {
     static final String NOTICE = "⚠勿信广告";
     private static final int PAGE_SIZE = 20;
     private static final long BUDGET_MS = 8000;
+    /** 详情页补源用的预算要更短：这里已经在等一个详情了，多等一秒用户就多等一秒。 */
+    private static final long DETAIL_BUDGET_MS = 5000;
     private static final int CACHE_MAX = 8;
     private static final int RESULT_MAX = 200;
+    private static final long CACHE_TTL_MS = 300000;
 
     protected final ArrayList<WkcCms> providers = new ArrayList<>();
     private final LinkedHashMap<String, Cached> cache = new LinkedHashMap<>();
@@ -41,6 +44,7 @@ public class WkcHome extends Spider {
         for (int i = 0; i < sources.length(); i++) {
             WkcCms s = new WkcCms();
             s.init(c, sources.getJSONObject(i).toString());
+            s.order = i;
             providers.add(s);
         }
         if (providers.isEmpty()) throw new IllegalStateException("No approved home provider");
@@ -140,9 +144,9 @@ public class WkcHome extends Spider {
         JSONArray all;
         synchronized (cache) {
             Cached hit = cache.get(key);
-            if (hit != null && System.currentTimeMillis() - hit.at < 300000) all = hit.list;
+            if (hit != null && System.currentTimeMillis() - hit.at < CACHE_TTL_MS) all = hit.list;
             else {
-                all = askEveryProvider(w, q);
+                all = askEveryProvider(w, q, BUDGET_MS);
                 if (cache.size() >= CACHE_MAX) cache.clear();
                 cache.put(key, new Cached(all, System.currentTimeMillis()));
             }
@@ -151,12 +155,12 @@ public class WkcHome extends Spider {
     }
 
     /** 每个上游都是独立实例，可并行；总预算固定，慢的上游不拖住整个搜索。 */
-    private JSONArray askEveryProvider(String w, boolean q) throws Exception {
+    private JSONArray askEveryProvider(String w, boolean q, long budget) throws Exception {
         ExecutorService pool = Executors.newFixedThreadPool(Math.max(1, Math.min(providers.size(), 6)));
         ArrayList<Future<String>> jobs = new ArrayList<>();
         try {
             for (WkcCms s : providers) jobs.add(pool.submit(() -> s.searchContent(w, q, "1")));
-            long deadline = System.currentTimeMillis() + BUDGET_MS;
+            long deadline = System.currentTimeMillis() + budget;
             ArrayList<JSONObject> items = new ArrayList<>();
             for (Future<String> job : jobs) {
                 long left = deadline - System.currentTimeMillis();
@@ -241,37 +245,115 @@ public class WkcHome extends Spider {
     @Override public String detailContent(List<String> ids) throws Exception {
         if (ids.isEmpty()) return WkcNet.empty().toString();
         JSONObject token = WkcNet.unpack(ids.get(0));
-        if (token.optInt("home", 0) == 0) return owner(ids.get(0)).detailContent(ids);
+        if (token.optInt("home", 0) == 1) {
+            ArrayList<String> all = new ArrayList<>();
+            JSONArray packed = token.optJSONArray("i");
+            for (int i = 0; packed != null && i < packed.length(); i++)
+                if (!packed.optString(i).isEmpty()) all.add(packed.optString(i));
+            JSONObject merged = combine(all, null);
+            if (merged == null) return WkcNet.empty().toString();
+            merged.put("vod_id", ids.get(0));
+            return new JSONObject().put("list", new JSONArray().put(merged)).toString();
+        }
+        // 首页和分类仍是"先答者优先"，点进去的凭证只带一个上游——
+        // 用户看到"播放页只有这一家的线路"就是这里。按片名回问其余上游补齐。
+        JSONObject own = null;
+        try {
+            own = new JSONObject(owner(ids.get(0)).detailContent(Collections.singletonList(ids.get(0))))
+                    .getJSONArray("list").getJSONObject(0);
+        } catch (Exception e) { return WkcNet.empty().toString(); }
+        ArrayList<String> all = new ArrayList<>();
+        all.add(ids.get(0));
+        for (String peer : peersOf(own.optString("vod_name"))) if (!all.contains(peer)) all.add(peer);
+        JSONObject merged = combine(all, own);
+        merged.put("vod_id", ids.get(0));
+        return new JSONObject().put("list", new JSONArray().put(merged)).toString();
+    }
 
-        ArrayList<String> flags = new ArrayList<>(), lines = new ArrayList<>();
-        LinkedHashSet<String> used = new LinkedHashSet<>();
-        JSONObject base = null;
-        JSONArray packed = token.optJSONArray("i");
-        for (int i = 0; packed != null && i < packed.length(); i++) {
-            String single = packed.optString(i);
-            if (single.isEmpty()) continue;
+    /** 按片名问其余上游，把"同一部剧"在别人那里的凭证找回来。补不到就退回单源，不报错。 */
+    private ArrayList<String> peersOf(String name) throws Exception {
+        ArrayList<String> out = new ArrayList<>();
+        if (providers.size() < 2 || name.isEmpty()) return out;
+        String key = "d:" + strip(name);
+        JSONArray rows;
+        synchronized (cache) {
+            Cached hit = cache.get(key);
+            if (hit != null && System.currentTimeMillis() - hit.at < CACHE_TTL_MS) rows = hit.list;
+            else {
+                rows = askEveryProvider(name, false, DETAIL_BUDGET_MS);
+                if (cache.size() >= CACHE_MAX) cache.clear();
+                cache.put(key, new Cached(rows, System.currentTimeMillis()));
+            }
+        }
+        String target = strip(name);
+        for (int i = 0; i < rows.length(); i++) {
+            JSONObject row = rows.optJSONObject(i);
+            // 只认"就是这一部"的那一行：宽松档带进来的衍生剧会把别的剧的线路混进来。
+            if (row == null || !target.equals(strip(row.optString("vod_name")))) continue;
             try {
-                JSONObject out = new JSONObject(owner(single).detailContent(Collections.singletonList(single)));
-                JSONArray arr = out.optJSONArray("list");
-                if (arr == null || arr.length() == 0) continue;
-                JSONObject v = arr.getJSONObject(0);
+                JSONArray inner = WkcNet.unpack(row.optString("vod_id")).optJSONArray("i");
+                for (int k = 0; inner != null && k < inner.length(); k++)
+                    if (!inner.optString(k).isEmpty()) out.add(inner.optString(k));
+            } catch (Exception ignore) { }
+            break;
+        }
+        return out;
+    }
+
+    /** 一条线路 = 一个上游的一组集数。排序在这里定：先无广告，再快的。 */
+    private static final class Route implements Comparable<Route> {
+        final String flag, line;
+        final int ad, latency, order;
+        Route(String flag, String line, WkcCms owner) {
+            this.flag = flag; this.line = line;
+            this.ad = owner.adRank(); this.latency = owner.latency(); this.order = owner.order;
+        }
+        public int compareTo(Route o) {
+            if (ad != o.ad) return ad - o.ad;
+            if (latency != o.latency) return Integer.compare(latency, o.latency);
+            return order - o.order;
+        }
+    }
+
+    /** 把所有上游的线路并成一份详情。顺序即播放器的默认选择：第一条就是最干净最快的那条。 */
+    private JSONObject combine(List<String> ids, JSONObject seed) throws Exception {
+        ArrayList<Route> gathered = new ArrayList<>();
+        JSONObject base = seed;
+        for (int i = 0; i < ids.size(); i++) {
+            String single = ids.get(i);
+            try {
+                WkcCms provider = owner(single);
+                // 单源凭证那条详情已经取过了，别再问一遍——它本来就在这次的等待时间里。
+                JSONObject v = (seed != null && i == 0) ? seed : null;
+                if (v == null) {
+                    JSONObject out = new JSONObject(provider.detailContent(Collections.singletonList(single)));
+                    JSONArray arr = out.optJSONArray("list");
+                    if (arr == null || arr.length() == 0) continue;
+                    v = arr.getJSONObject(0);
+                }
                 if (base == null) base = v;
                 String[] fs = v.optString("vod_play_from").split("\\$\\$\\$", -1);
                 String[] ls = v.optString("vod_play_url").split("\\$\\$\\$", -1);
                 for (int k = 0; k < Math.min(fs.length, ls.length); k++) {
-                    if (ls[k].isEmpty()) continue;
-                    String shown = fs[k];
-                    for (int n = 2; !used.add(shown); n++) shown = fs[k] + "·" + n;
-                    flags.add(shown); lines.add(ls[k]);
+                    if (fs[k].isEmpty() || ls[k].isEmpty()) continue;
+                    gathered.add(new Route(fs[k], ls[k], provider));
                 }
             } catch (Exception ignore) { /* 某个上游这条挂了，其他上游的线路照常给 */ }
         }
-        if (base == null) return WkcNet.empty().toString();
+        if (base == null) return null;
+        Collections.sort(gathered);
+        ArrayList<String> flags = new ArrayList<>(), lines = new ArrayList<>();
+        LinkedHashSet<String> used = new LinkedHashSet<>();
+        for (Route r : gathered) {
+            String shown = r.flag;
+            // 去重只改显示名；token 里记录的仍是原名，播放校验不受影响。
+            for (int n = 2; !used.add(shown); n++) shown = r.flag + "·" + n;
+            flags.add(shown); lines.add(r.line);
+        }
         JSONObject out = new JSONObject(base.toString());
-        out.put("vod_id", ids.get(0));
         out.put("vod_play_from", WkcCms.join(flags, "$$$"));
         out.put("vod_play_url", WkcCms.join(lines, "$$$"));
-        return new JSONObject().put("list", new JSONArray().put(out)).toString();
+        return out;
     }
 
     @Override public String playerContent(String flag, String id, List<String> v) throws Exception {

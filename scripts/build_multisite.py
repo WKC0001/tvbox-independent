@@ -87,6 +87,10 @@ final class WkcPolicy {
         run(java,'-cp',deps['SMALI_JAR'],'com.android.tools.smali.baksmali.Main','d',dex/'classes.dex','-o',new)
         for p in new.rglob('*.smali'):
             dst=smali/p.relative_to(new);dst.parent.mkdir(exist_ok=True,parents=True);shutil.copyfile(p,dst)
+        # 插件保留整个旧 jar（含全部历史适配器）：试过按静态可达性裁剪，
+        # 但旧 jar 里 885 个混淆库类是一个强连通块，4 个已发布的原生适配器都会碰到它，
+        # 静态闭包只能剔掉 212 个真正没人用的蜘蛛（1.12MB → 1.00MB，−10%）。
+        # 为这 10% 去破坏"保留旧适配器"这条既有不变量不划算，所以维持原样。
         stable=temp/'stable';stable.mkdir()
         for p in smali.rglob('*.smali'):
             body=p.read_text();descriptor=next(l.split()[-1] for l in body.splitlines() if l.startswith('.class '))
@@ -184,8 +188,23 @@ def main():
     out=ROOT/'output';out.mkdir(exist_ok=True)
     deps=dependencies();plugin(out/'cfg.jpg',sites,deps)
     base='https://cdn.jsdelivr.net/npm/'+package['name']+'@'+package['version']+'/'
+    # 首页是"先答者优先"，并发之后首屏耗时 = 排在第一位那家的耗时。
+    # 排序键必须用首页真正调用的那个接口（ac=detail）的实测值，不能用 ac=list 的 latency_ms：
+    # 两者实测不相关，按后者排会把最慢的那家放到第一位（p2100 记 954ms、首页实测 5080ms）。
+    home_latency=(read('state/home-latency.json') if (ROOT/'state/home-latency.json').exists() else {}).get('providers',{})
+    for x in cms_providers:
+        measured=home_latency.get(x['ext']['id'],{}).get('home_ms')
+        if isinstance(measured,int):x['ext']['home_ms']=measured
+    def home_rank(x):
+        measured=home_latency.get(x['ext']['id'],{}).get('home_ms')
+        return (0,measured) if isinstance(measured,int) else (1,0)
+    # sorted 是稳定的：没测到的排在测到的后面，且彼此保持原来的顺序。
+    ordered_providers=sorted(cms_providers,key=home_rank)
+    if [x['ext']['id'] for x in ordered_providers]!=[x['ext']['id'] for x in cms_providers]:
+        print('HOME ORDER',' > '.join('%s(%sms)'%(x['ext']['id'],home_latency.get(x['ext']['id'],{}).get('home_ms','-'))
+                                      for x in ordered_providers))
     home={'key':'点我切源','name':'WKC┃片单 '+NOTICE,'type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,
-          'ext':{'providers':[x['ext'] for x in cms_providers]}}
+          'ext':{'providers':[x['ext'] for x in ordered_providers]}}
     # The player substitutes {id} with each channel's tvg-id and {date} with the day being viewed.
     # XMLTV 模式下没有占位符：epg 指向构建时生成的静态节目单（guide.xml.gz），由构建保证它存在且自洽。
     template=policy.get('epg_template') or ''

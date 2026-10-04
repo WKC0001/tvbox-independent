@@ -19,6 +19,11 @@ final class WkcNet {
             HttpURLConnection c=(HttpURLConnection)new URL(value).openConnection();
             c.setConnectTimeout(8000);c.setReadTimeout(10000);c.setInstanceFollowRedirects(false);
             c.setRequestProperty("User-Agent","okhttp/4.12.0");c.setRequestProperty("Accept-Encoding","gzip");
+            // 读完整个响应体之后不要 disconnect：HttpURLConnection 会把这条连接还给系统连接池，
+            // 下一次请求同一个上游就能复用 TCP 和 TLS。实测 TLS 握手 0.12~0.75s，
+            // 每次重建等于把这个开销乘上请求数（一次冷启动几十个请求）。
+            // 只有出错、重定向、响应过大这三种情况才真的断开。
+            boolean reusable=false;
             try {
                 int code=c.getResponseCode();
                 if(code>=300&&code<400){value=new URL(new URL(value),c.getHeaderField("Location")).toString();continue;}
@@ -28,9 +33,10 @@ final class WkcNet {
                     ByteArrayOutputStream out=new ByteArrayOutputStream()) {
                     byte[] b=new byte[8192];int n;
                     while((n=in.read(b))!=-1){out.write(b,0,n);if(out.size()>8000000)throw new IOException("Response too large");}
+                    reusable=true;
                     return new String(out.toByteArray(),StandardCharsets.UTF_8);
                 }
-            } finally {c.disconnect();}
+            } finally { if(!reusable)c.disconnect(); }
         }
         throw new IOException("Redirect limit");
     }

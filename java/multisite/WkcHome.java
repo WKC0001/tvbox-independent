@@ -37,9 +37,19 @@ public class WkcHome extends Spider {
         把它记 5 分钟等于让一条刚变成违禁的内容继续出现 5 分钟。
         60 秒足够覆盖"从播放返回列表再点进来"这个真正需要快的场景。 */
     private static final long DETAIL_TTL_MS = 60000;
+    /** 首页/分类的总预算。6 家并发后实测 1.6s 就全部回来了，6s 只是兜底：
+        真有上游挂死时不再让首屏跟着一起卡住（APP 自己的 OkHttp 超时是 30s，等不起）。 */
+    private static final long LIST_BUDGET_MS = 6000;
+    /** 首页结果缓存 60 秒。APP 会连着问 homeContent 和 homeVideoContent，
+        两者内容一样（都是首页片单），不缓存等于同一份数据付两次往返。
+        这里缓存的只是"片单列表"——列表项在 WkcCms.filtered() 里已经删掉了播放地址，
+        不含任何可播放结论，所以缓存它不涉及内容合规。 */
+    private static final long HOME_TTL_MS = 60000;
 
     protected final ArrayList<WkcCms> providers = new ArrayList<>();
     private final LinkedHashMap<String, Cached> cache = new LinkedHashMap<>();
+    private String homeBody;
+    private long homeStamp;
 
     private static final class Cached {
         final JSONArray list;
@@ -127,48 +137,102 @@ public class WkcHome extends Spider {
 
     /* ---------- 首页与分类：仍是"先答者优先"，合并只对搜索有意义 ---------- */
 
+    private static final class Answer { String body; Throwable error; }
+
+    /** 把每个上游的任务同时发出去，再按下标顺序收结果。
+
+        原来是一个 for 循环串行问：6 家耗时直接相加（实测串行 7.25s）。
+        同时发出之后等待时间变成"最慢那一家"（实测并发 1.64s），
+        而按下标顺序收取保证了"谁优先"仍然完全由 providers 顺序决定——
+        常见的并发写法（谁先回来用谁）会把首页内容变成随机的，这里不要那样。
+        顺序还决定了构建端必须把最快的上游排在最前面：并发之后首屏耗时 = 排第一那家的耗时。 */
+    private Answer[] askInOrder(List<Callable<String>> tasks, long budget) {
+        Answer[] out = new Answer[tasks.size()];
+        ExecutorService pool = Executors.newFixedThreadPool(Math.max(1, Math.min(tasks.size(), 6)));
+        ArrayList<Future<String>> jobs = new ArrayList<>();
+        try {
+            for (Callable<String> t : tasks) jobs.add(pool.submit(t));
+            long deadline = System.currentTimeMillis() + budget;
+            for (int i = 0; i < jobs.size(); i++) {
+                long left = deadline - System.currentTimeMillis();
+                if (left <= 0) break;
+                Answer a = new Answer(); out[i] = a;
+                try { a.body = jobs.get(i).get(left, TimeUnit.MILLISECONDS); }
+                catch (Exception e) { a.error = e.getCause() != null ? e.getCause() : e; }
+            }
+        } finally { pool.shutdownNow(); }
+        return out;
+    }
+
+    /** 收不到任何答复时把上游的错误抛回去，不要静默给一个空首页假装没事。 */
+    private static String firstUsable(Answer[] answers, String field) throws Exception {
+        Throwable failure = null;
+        for (Answer a : answers) {
+            if (a == null) continue;
+            if (a.body == null) { if (failure == null) failure = a.error; continue; }
+            try {
+                if (new JSONObject(a.body).getJSONArray(field).length() > 0) return a.body;
+            } catch (Exception ignore) { if (failure == null) failure = ignore; }
+        }
+        if (failure instanceof Exception) throw (Exception) failure;
+        if (failure instanceof Error) throw (Error) failure;
+        return null;
+    }
+
+    private synchronized String cachedHome() {
+        return System.currentTimeMillis() - homeStamp < HOME_TTL_MS ? homeBody : null;
+    }
+
+    private synchronized void rememberHome(String body) {
+        homeBody = body; homeStamp = System.currentTimeMillis();
+    }
+
     @Override public String homeContent(boolean f) throws Exception {
-        Exception failure = null;
-        for (WkcCms s : providers) try {
-            JSONObject out = new JSONObject(s.homeContent(f));
-            if (out.getJSONArray("list").length() == 0) continue;
-            // Subtype ids differ between providers; expose names so fallback can translate them.
-            JSONObject filters = out.optJSONObject("filters");
-            if (filters != null) for (String key : filters.keySet()) {
-                JSONArray groups = filters.getJSONArray(key);
-                for (int i = 0; i < groups.length(); i++) {
-                    JSONObject group = groups.getJSONObject(i); group.put("key", "type_name");
-                    JSONArray values = group.getJSONArray("value");
-                    for (int j = 0; j < values.length(); j++) {
-                        JSONObject v = values.getJSONObject(j);
-                        if (!v.optString("v").isEmpty()) v.put("v", v.getString("n"));
-                    }
+        // WkcCms.homeContent 不看 filter 参数，两种取值给出的是同一份内容，
+        // 而 APP 会连着问 homeContent 和 homeVideoContent —— 缓存一份就能省掉整轮往返。
+        String memo = cachedHome();
+        if (memo != null) return memo;
+        ArrayList<Callable<String>> tasks = new ArrayList<>();
+        for (WkcCms s : providers) tasks.add(() -> s.homeContent(f));
+        String picked = firstUsable(askInOrder(tasks, LIST_BUDGET_MS), "list");
+        if (picked == null) return WkcNet.empty().toString();
+        JSONObject out = new JSONObject(picked);
+        // Subtype ids differ between providers; expose names so fallback can translate them.
+        JSONObject filters = out.optJSONObject("filters");
+        if (filters != null) for (String name : filters.keySet()) {
+            JSONArray groups = filters.getJSONArray(name);
+            for (int i = 0; i < groups.length(); i++) {
+                JSONObject group = groups.getJSONObject(i); group.put("key", "type_name");
+                JSONArray values = group.getJSONArray("value");
+                for (int j = 0; j < values.length(); j++) {
+                    JSONObject v = values.getJSONObject(j);
+                    if (!v.optString("v").isEmpty()) v.put("v", v.getString("n"));
                 }
             }
-            return out.toString();
-        } catch (Exception e) { failure = e; }
-        if (failure != null) throw failure;
-        return WkcNet.empty().toString();
+        }
+        String result = out.toString();
+        rememberHome(result);
+        return result;
     }
 
     @Override public String homeVideoContent() throws Exception { return homeContent(false); }
 
     @Override public String categoryContent(String t, String p, boolean f, HashMap<String, String> e) throws Exception {
-        Exception failure = null;
-        for (WkcCms s : providers) try {
+        ArrayList<Callable<String>> tasks = new ArrayList<>();
+        for (WkcCms s : providers) tasks.add(() -> {
             HashMap<String, String> mapped = e == null ? new HashMap<>() : new HashMap<>(e);
             String name = mapped.remove("type_name"); mapped.remove("type");
             if (name != null && !name.isEmpty()) {
                 s.refresh(); String id = null;
                 for (Map.Entry<String, String> entry : s.types.entrySet()) if (name.equals(entry.getValue())) { id = entry.getKey(); break; }
-                if (id == null) continue;
+                // 这家没有这个子分类：返回空串而不是 null，好让"跳过"和"出错"区分开。
+                if (id == null) return new JSONObject().put("list", new JSONArray()).toString();
                 mapped.put("type", id);
             }
-            String out = s.categoryContent(t, p, f, mapped);
-            if (new JSONObject(out).getJSONArray("list").length() > 0) return out;
-        } catch (Exception ex) { failure = ex; }
-        if (failure != null) throw failure;
-        return WkcNet.empty().toString();
+            return s.categoryContent(t, p, f, mapped);
+        });
+        String picked = firstUsable(askInOrder(tasks, LIST_BUDGET_MS), "list");
+        return picked == null ? WkcNet.empty().toString() : picked;
     }
 
     /* ---------- 搜索：并发问全部上游后合并 ---------- */

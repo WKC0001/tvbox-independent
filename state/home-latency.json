@@ -1,0 +1,228 @@
+{
+  "checked_at": 1791114105,
+  "samples_per_provider": 2,
+  "providers": {
+    "cms_dbzytv": {
+      "id": "cms_dbzytv",
+      "name": "豆瓣 | 采集",
+      "samples": 0,
+      "error": "<urlopen error Tunnel connection failed: 502 Bad Gateway>"
+    },
+    "cms_apiniuniuzyme": {
+      "id": "cms_apiniuniuzyme",
+      "name": "牛牛 | 采集",
+      "samples": 2,
+      "home_ms": 1536,
+      "readings": [
+        2077,
+        1536
+      ]
+    },
+    "cms_zuidazyme": {
+      "id": "cms_zuidazyme",
+      "name": "最大 | 采集",
+      "samples": 0,
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "cms_wwwmdzyapicom": {
+      "id": "cms_wwwmdzyapicom",
+      "name": "魔都 | 采集",
+      "samples": 2,
+      "home_ms": 1740,
+      "readings": [
+        2088,
+        1740
+      ]
+    },
+    "cms_p2100net": {
+      "id": "cms_p2100net",
+      "name": "飘零 ⚠勿信广告",
+      "samples": 2,
+      "home_ms": 2679,
+      "readings": [
+        2679,
+        2849
+      ]
+    },
+    "cms_haohuazycom": {
+      "id": "cms_haohuazycom",
+      "name": "豪华 | 采集",
+      "samples": 2,
+      "home_ms": 2279,
+      "readings": [
+        2279,
+        2329
+      ]
+    },
+    "cms_huyazynet": {
+      "id": "cms_huyazynet",
+      "name": "虎牙 | 采集",
+      "samples": 2,
+      "home_ms": 1746,
+      "readings": [
+        1746,
+        1770
+      ]
+    },
+    "cms_cjyayazynet": {
+      "id": "cms_cjyayazynet",
+      "name": "鸭鸭 | 采集",
+      "samples": 2,
+      "home_ms": 1645,
+      "readings": [
+        1645,
+        1672
+      ]
+    },
+    "cms_360zycom": {
+      "id": "cms_360zycom",
+      "name": "360 ⚠勿信广告",
+      "samples": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "cms_apiwujinapinet": {
+      "id": "cms_apiwujinapinet",
+      "name": "无尽 | 采集",
+      "samples": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "cms_jyzyapicom": {
+      "id": "cms_jyzyapicom",
+      "name": "金鹰 | 采集",
+      "samples": 2,
+      "home_ms": 1690,
+      "readings": [
+        2336,
+        1690
+      ]
+    },
+    "cms_suoniapicom": {
+      "id": "cms_suoniapicom",
+      "name": "索尼 | 采集 ",
+      "samples": 0,
+      "error": "<urlopen error timed out>"
+    },
+    "cms_apixinlangapicom": {
+      "id": "cms_apixinlangapicom",
+      "name": "新浪资源(切)",
+      "samples": 2,
+      "home_ms": 1499,
+      "readings": [
+        1778,
+        1499
+      ]
+    },
+    "cms_tyyszycom": {
+      "id": "cms_tyyszycom",
+      "name": "影视 | 天涯",
+      "samples": 2,
+      "home_ms": 1263,
+      "readings": [
+        1263,
+        1885
+      ]
+    },
+    "cms_1542191172329981": {
+      "id": "cms_1542191172329981",
+      "name": "影视 | 建安",
+      "samples": 0,
+      "error": "timed out"
+    },
+    "cms_bfzyapicom": {
+      "id": "cms_bfzyapicom",
+      "name": "暴風 ⚠勿信广告",
+      "samples": 2,
+      "home_ms": 1756,
+      "readings": [
+        1756,
+        2454
+      ]
+    },
+    "cms_wwwhongniuzy2com": {
+      "id": "cms_wwwhongniuzy2com",
+      "name": "红牛资源(切)",
+      "samples": 2,
+      "home_ms": 1650,
+      "readings": [
+        2716,
+        1650
+      ]
+    },
+    "cms_sdzyapicom": {
+      "id": "cms_sdzyapicom",
+      "name": "闪电资源(切)",
+      "samples": 2,
+      "home_ms": 1715,
+      "readings": [
+        14499,
+        1715
+      ]
+    },
+    "cms_cjffzyapicom": {
+      "id": "cms_cjffzyapicom",
+      "name": "非凡 ⚠勿信广告",
+      "samples": 0,
+      "error": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>"
+    },
+    "cms_jszyapicom": {
+      "id": "cms_jszyapicom",
+      "name": "影视 | 极速[直连]",
+      "samples": 2,
+      "home_ms": 1544,
+      "readings": [
+        1544,
+        1874
+      ]
+    },
+    "cms_apiapibdzycom": {
+      "id": "cms_apiapibdzycom",
+      "name": "百度",
+      "samples": 2,
+      "home_ms": 1918,
+      "readings": [
+        1918,
+        2125
+      ]
+    },
+    "cms_apiguangsuapicom": {
+      "id": "cms_apiguangsuapicom",
+      "name": "光速资源(切)",
+      "samples": 2,
+      "home_ms": 1988,
+      "readings": [
+        1988,
+        2927
+      ]
+    },
+    "cms_cjlziapicom": {
+      "id": "cms_cjlziapicom",
+      "name": "量子 ⚠勿信广告",
+      "samples": 2,
+      "home_ms": 1909,
+      "readings": [
+        2662,
+        1909
+      ]
+    },
+    "cms_caijidyttzyapicom": {
+      "id": "cms_caijidyttzyapicom",
+      "name": "天堂 ⚠勿信广告",
+      "samples": 2,
+      "home_ms": 1757,
+      "readings": [
+        2085,
+        1757
+      ]
+    },
+    "cms_mtzyme": {
+      "id": "cms_mtzyme",
+      "name": "茅台 | 采集",
+      "samples": 2,
+      "home_ms": 2789,
+      "readings": [
+        3678,
+        2789
+      ]
+    }
+  }
+}

@@ -1,5 +1,6 @@
 package com.github.catvod.spider;
 import java.util.*;
+import java.util.concurrent.*;
 import org.json.*;
 
 public final class MultisiteTest {
@@ -88,6 +89,28 @@ public final class MultisiteTest {
         @Override protected JSONObject request(String... args)throws Exception{
             for(String a:args)if("ids".equals(a))detailRequests++;
             return super.request(args);
+        }
+    }
+    /** 证明首页/分类是"同时问"而不是"挨个问"：每个上游都先报个到，再等其他几家也报到了才返回。
+        串行实现下第一个会一直等不到第二个（卡满 5 秒后失败），所以这不是靠计时的软断言。 */
+    static final class ConcurrencyFixture extends WkcCms {
+        final CountDownLatch arrived;boolean stalled;
+        ConcurrencyFixture(CountDownLatch arrived){this.arrived=arrived;}
+        private String answer()throws Exception{
+            arrived.countDown();
+            if(!arrived.await(5,TimeUnit.SECONDS))stalled=true;
+            return new JSONObject().put("list",new JSONArray().put(new JSONObject().put("vod_name","正常影片"))).toString();
+        }
+        @Override public String homeContent(boolean f)throws Exception{return answer();}
+        @Override public String categoryContent(String t,String p,boolean f,HashMap<String,String> e)throws Exception{return answer();}
+    }
+    /** 数首页被问了几次：APP 会连着调 homeContent 和 homeVideoContent，
+        两者内容相同，第二次必须走缓存而不是再付一轮往返。 */
+    static final class HomeCountFixture extends WkcCms {
+        int homeCalls;
+        @Override public String homeContent(boolean f)throws Exception{
+            homeCalls++;
+            return new JSONObject().put("list",new JSONArray().put(new JSONObject().put("vod_name","正常影片"))).toString();
         }
     }
     static JSONObject cmsExt(String id,String label,String ad,int latency)throws Exception{
@@ -255,6 +278,24 @@ public final class MultisiteTest {
                 Collections.singletonList(WkcNet.pack(flagged.token("1"))))).getJSONArray("list")
                 .getJSONObject(0).getString("vod_play_from").split("\\$\\$\\$",-1);
         check(risky[0].startsWith("甲"),"A provider with gambling ads must not outrank an unscanned one");
+        // 首页/分类改成并发之后，等待时间从"各家相加"变成"最慢那一家"（实测 7.25s → 1.64s）。
+        // 但"先答者优先"的规则不能变成"谁先回来用谁"——那会让首页内容随机化。
+        CountDownLatch barrier=new CountDownLatch(2);
+        ConcurrencyFixture c1=new ConcurrencyFixture(barrier),c2=new ConcurrencyFixture(barrier);
+        WkcHome parallel=new WkcHome();parallel.providers.add(c1);parallel.providers.add(c2);
+        check(new JSONObject(parallel.homeContent(true)).getJSONArray("list").length()==1,"Concurrent home still returns a catalogue");
+        check(!c1.stalled&&!c2.stalled,"Home providers must be asked at the same time, not one after another");
+        CountDownLatch barrier2=new CountDownLatch(2);
+        ConcurrencyFixture d1=new ConcurrencyFixture(barrier2),d2=new ConcurrencyFixture(barrier2);
+        WkcHome parallelCategory=new WkcHome();parallelCategory.providers.add(d1);parallelCategory.providers.add(d2);
+        check(new JSONObject(parallelCategory.categoryContent("电影","1",true,new HashMap<>()))
+              .getJSONArray("list").length()==1,"Concurrent category still returns a listing");
+        check(!d1.stalled&&!d2.stalled,"Category providers must be asked at the same time, not one after another");
+        // APP 连着问 homeContent 与 homeVideoContent：同一份首页片单只该付一次往返。
+        WkcHome caching=new WkcHome();HomeCountFixture hc=new HomeCountFixture();caching.providers.add(hc);
+        String homeOnce=caching.homeContent(true);int homeSpent=hc.homeCalls;
+        check(homeOnce.equals(caching.homeVideoContent()),"homeVideoContent serves the same home content");
+        check(hc.homeCalls==homeSpent,"The home screen must not be fetched twice in a row");
         WkcNative nativeSite=new WkcNative();nativeSite.init(null,"{\"id\":\"test-native\",\"adapter\":\"JpysGuard\"}");
         check(new JSONObject(nativeSite.searchContent("正常影片",false)).getJSONArray("list").length()==1,"Native legacy two-argument search");
         check(new JSONObject(nativeSite.searchContent("正常影片",false,"1")).getJSONArray("list").length()==1,"Native page one uses supported overload");

@@ -3,15 +3,15 @@
   "version": "0.5.3",
   "dex_classes": 1210,
   "sites": 11,
-  "playlist_routes": 588,
+  "playlist_routes": 559,
   "epg_channels_shipped": 131,
-  "epg_guide_entries": 229,
+  "epg_guide_entries": 203,
   "epg_channels_verified": 136,
   "epg_gaps": 331,
   "files": {
     "api.json": "25bab1026ba2b149e9f88bab018acc4e0cab4ac09096b8a075185aa427f79b82",
     "cfg.jpg": "c6fa03c30c5824dab5d1e7811baa3ad90fe53cd14d38be4c436ac050dc847087",
-    "live.m3u": "ebd035ea29213622af824e49ee0a7cf406382b09bebf7044c925d72c10d47232",
+    "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
     "dc.json": "e4a734b9923c87ceafd8ea22515ac6e674da202fbebd5d5cd4bca2bc4862537b"
   },
   "android_app_test": "separate acceptance required"

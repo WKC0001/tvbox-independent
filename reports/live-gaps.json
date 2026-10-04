@@ -1,5 +1,10 @@
 [
   {
+    "channel_id": "tv_c21f3f6b282aeedbf768",
+    "name": "CCTV-4K",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
     "channel_id": "tv_fb50bc2f132bf566ba2f",
     "name": "CCTV+ 1",
     "reason": "no currently verified route on local-direct"
@@ -17,6 +22,11 @@
   {
     "channel_id": "tv_61c5217afa0c987fc460",
     "name": "CGTN俄语",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_49631a9753f3f64b3d62",
+    "name": "高尔夫网球",
     "reason": "no currently verified route on local-direct"
   },
   {

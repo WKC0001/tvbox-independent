@@ -1,5 +1,5 @@
 """Validate actual shipped DEX, source coverage, fixed-version closure, guide ids and manifest."""
-import hashlib,json,re,struct,sys,time,zlib
+import hashlib,gzip,json,re,struct,sys,time,zlib
 from pathlib import Path
 from zipfile import ZipFile
 ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
@@ -71,8 +71,19 @@ def verify(directory=ROOT/'output'):
     # what the registry plus the source policy can prove right now, so a stale or invented id fails.
     policy=json.loads((ROOT/'policy/operations.json').read_text())
     guide=policy['epg_template'];age=policy['epg_evidence_max_age_days'];sources=set(policy['epg_sources'])
-    assert api['lives'][0].get('epg')==guide,'Live EPG template missing or changed'
-    for token in ('{id}','{date}'):assert token in guide,'EPG template lost the '+token+' placeholder'
+    xmltv=policy.get('epg_guide_mode')=='xmltv'
+    assert api['lives'][0].get('epg')==(base+guide if xmltv else guide),'Live EPG target missing or changed'
+    if not xmltv:
+        for token in ('{id}','{date}'):assert token in guide,'EPG template lost the '+token+' placeholder'
+    guide_channels=set()
+    if xmltv:
+        # 自有节目单必须真实存在、不带上游水印，并且覆盖播放列表里承诺的每一个 tvg-id。
+        blob=gzip.decompress((directory/'guide.xml.gz').read_bytes()).decode('utf-8','replace')
+        assert '免费使用' not in blob,'EPG watermark reintroduced'
+        assert '<programme' in blob,'Shipped guide carries no programme'
+        guide_channels=set(re.findall(r'<channel id="([^"]*)"',blob))
+        assert manifest.get('epg_guide_channels')==len(guide_channels),'Manifest guide channel count disagrees with the shipped guide'
+        assert set(re.findall(r'tvg-id="([^"]*)"',playlist))<=guide_channels,'Playlist promises a guide id the shipped XMLTV does not contain'
     assert 'tvg-id=""' not in playlist,'Empty guide id emitted'
     registry=json.loads((ROOT/'registry/channels.json').read_text())
     channels={c['name']:c for c in registry};now=int(time.time())
@@ -84,11 +95,13 @@ def verify(directory=ROOT/'output'):
         channel=channels.get(attrs.get('tvg-name',''))
         assert channel is not None,'Playlist entry has no registry channel: '+line
         expected=proven(channel)
+        # XMLTV 模式下节目单里没有的 id 不发：登记了但播放器找不到，等于没有节目单。
+        if xmltv and expected not in guide_channels:expected=''
         assert attrs.get('tvg-id','')==expected,'Shipped guide id disagrees with the verified registry: '+line
         if expected:shipped.add(expected);entries+=1
     verified={proven(c) for c in registry if proven(c)}
     assert manifest['epg_guide_entries']==entries,'Manifest guide entry count disagrees with the shipped playlist'
-    assert manifest['epg_channels_shipped']==len(shipped),'Manifest shipped guide count disagrees with the shipped playlist'
+    assert manifest['epg_channels_shipped']==len(shipped & guide_channels if xmltv else shipped),'Manifest shipped guide count disagrees with the shipped playlist'
     assert manifest['epg_channels_verified']==len(verified),'Verified guide count disagrees with the registry'
     assert manifest['epg_gaps']==sum(1 for c in registry if c.get('review')!='excluded' and not proven(c)),'Guide gap count disagrees with the registry'
     assert shipped<=verified,'A shipped guide id is absent from the verified registry'

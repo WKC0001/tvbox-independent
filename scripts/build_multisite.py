@@ -1,5 +1,6 @@
 """Reproducible independent multi-site plugin and fixed-version release builder."""
 import hashlib
+import gzip
 import json
 import os
 from pathlib import Path
@@ -186,19 +187,39 @@ def main():
     home={'key':'点我切源','name':'WKC┃片单 '+NOTICE,'type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,
           'ext':{'providers':[x['ext'] for x in cms_providers]}}
     # The player substitutes {id} with each channel's tvg-id and {date} with the day being viewed.
-    guide=policy.get('epg_template') or ''
-    for token in ('{id}','{date}'):
-        if token not in guide:raise SystemExit('EPG template must keep the '+token+' placeholder')
+    # XMLTV 模式下没有占位符：epg 指向构建时生成的静态节目单（guide.xml.gz），由构建保证它存在且自洽。
+    template=policy.get('epg_template') or ''
+    if policy.get('epg_guide_mode')=='xmltv':
+        if '{id}' in template or '{date}' in template:raise SystemExit('xmltv guide must be a static file name, not a diyp template')
+        run(sys.executable,'scripts/build_guide.py')
+        if not (out/'guide.xml.gz').exists():raise SystemExit('guide.xml.gz was not produced')
+        epg_url=base+template
+    else:
+        for token in ('{id}','{date}'):
+            if token not in template:raise SystemExit('EPG template must keep the '+token+' placeholder')
+        epg_url=template
     epg={'now':now,'sources':policy.get('epg_sources') or [],'max_age_days':policy.get('epg_evidence_max_age_days',0)}
+    guide_channels=set()
+    guide_path=out/'guide.xml.gz'
+    if policy.get('epg_guide_mode')=='xmltv' and guide_path.exists():
+        guide_channels=set(re.findall(r'<channel id="([^"]*)"',gzip.decompress(guide_path.read_bytes()).decode('utf-8','replace')))
     config={'spider':base+'cfg.jpg;md5;'+hashlib.md5((out/'cfg.jpg').read_bytes()).hexdigest(),
             'hosts':[],'logo':'','rules':read('registry/baseline/api.json')['rules'],
             'sites':[home]+active,
-            'lives':[{'name':'WKC电视直播','type':0,'url':base+'live.m3u','epg':guide,
+            'lives':[{'name':'WKC电视直播','type':0,'url':base+'live.m3u','epg':epg_url,
                       'playerType':2,'timeout':15}]}
     channels=read('registry/channels.json')
     routes=with_measurements(read('registry/routes.json'))
+    # 分层治理（方案 C）：host 名单整段下线；已证实播广告的线路，重点频道宁可缺台，
+    # 其余频道保留播出但在那一行打上标记，让用户看得见而不是以为源坏了。
+    identity=read('reports/live-identity.json') if (ROOT/'reports/live-identity.json').exists() else {}
     text,gaps=playlist(channels,routes,health,
-                       network=policy['preferred_live_network'],max_routes=policy['max_live_routes'],epg=epg)
+                       network=policy['preferred_live_network'],max_routes=policy['max_live_routes'],epg=epg,
+                       blocked_hosts=policy.get('route_host_blocklist') or [],
+                       protected_ads=identity.get('protected_last_route') or [],
+                       priority_groups=policy.get('priority_channel_groups') or [],
+                       ad_tag=policy.get('unverified_line_tag',''),
+                       guide_channels=guide_channels)
     (out/'live.m3u').write_text(text);dump(out/'api.json',config)
     dump(out/'dc.json',{'urls':[{'url':base+'api.json','name':'WKC 自有聚合'}]})
     dump(ROOT/'reports/live-gaps.json',gaps);dump(ROOT/'reports/bench-sites.json',bench)
@@ -210,14 +231,19 @@ def main():
     # One channel can occupy several playlist lines, so count both: lines a player will resolve
     # and the distinct channels behind them. Collapsing these two numbers hides real coverage loss.
     guide_ids=re.findall(r'tvg-id="([^"]*)"',text)
+    # XMLTV 模式下，播放器按 tvg-id 在节目单里找频道；登记了 id 但节目单里没有的，
+    # 对用户来说就是"没有节目单"，必须按这个口径报告，而不是按登记口径自我安慰。
     runtime={'files':{},'version':package['version'],'package':package['name'],'format':'multi-site-v1','site_count':len(config['sites']),
              'channel_count':len(channels),'known_live_gaps':len(gaps),'native_bridge_restored':True,
              'live_routes_total':len(routes),'live_routes_quarantined':sum(1 for r in routes if r.get('review')=='quarantined'),
              'epg_source':sorted(epg['sources']),'epg_max_age_days':epg['max_age_days'],
+             'epg_guide_mode':policy.get('epg_guide_mode','diyp'),
              'epg_channels_verified':len(covered),'epg_channels_shipped':len(set(guide_ids)),'epg_guide_entries':len(guide_ids),
+             'epg_guide_channels':len(guide_channels),
              'epg_gaps':len(epg_gaps),
              'android_app_acceptance':False,'network_evidence':sorted({n for x in audits.values() for n in x})}
-    for name in ('api.json','cfg.jpg','live.m3u','dc.json'):runtime['files'][name]=hashlib.sha256((out/name).read_bytes()).hexdigest()
+    for name in ('api.json','cfg.jpg','live.m3u','dc.json','guide.xml.gz'):
+        if (out/name).exists():runtime['files'][name]=hashlib.sha256((out/name).read_bytes()).hexdigest()
     dump(out/'manifest.json',runtime)
     # Only this directory is packed by CI. Legacy fixed-catalogue files never enter a new release.
     stage=ROOT/'npmstage'

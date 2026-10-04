@@ -27,3 +27,4 @@ registry/epg.xml
 .build-tools/
 output/api-test.json
 .migration-deletions.json
+.build-cache/

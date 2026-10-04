@@ -1,16 +1,17 @@
 {
   "files": {
-    "api.json": "48dc3072fbd0e6bedc36b8dd6aeff145e2f0f25de7df617cd2762162c14e337f",
+    "api.json": "b0592a9f3cfefd3f50a215ef9a57b0e8f7466da5ab0e1870ef06ab018d2e5406",
     "cfg.jpg": "4e4157ddef8b31dacc84594d8da73bdc25773c8981dce298803c3d2cb2fbec98",
-    "live.m3u": "b6e2f59b0cf9fd2a8b0db88830ca200b48af8b01d295c158c487f24399cc359a",
-    "dc.json": "17374ccee6cddb5a685a2945e3e1b32712da21529600e49bed002e5050a7ebd1"
+    "live.m3u": "0ea9bc879d163f01cba89c2703bf13eda2c5b9fa07415a4d463ba1e6466ea25f",
+    "dc.json": "a47c20efa06e7bb95d90dd796ff2a18cd02a19910513878e9ca014af4adbf29f",
+    "guide.xml.gz": "1ac601dc004c4b95cd417c18c52e64b6de9cfd1ca837c1e4b482f4691893dce7"
   },
-  "version": "0.5.6",
+  "version": "0.5.7",
   "package": "wkc0001-tvbox-independent",
   "format": "multi-site-v1",
   "site_count": 11,
   "channel_count": 467,
-  "known_live_gaps": 106,
+  "known_live_gaps": 133,
   "native_bridge_restored": true,
   "live_routes_total": 654,
   "live_routes_quarantined": 107,
@@ -18,9 +19,11 @@
     "diyp:51zmt"
   ],
   "epg_max_age_days": 35,
+  "epg_guide_mode": "xmltv",
   "epg_channels_verified": 136,
-  "epg_channels_shipped": 131,
-  "epg_guide_entries": 203,
+  "epg_channels_shipped": 48,
+  "epg_guide_entries": 76,
+  "epg_guide_channels": 63,
   "epg_gaps": 331,
   "android_app_acceptance": false,
   "network_evidence": [

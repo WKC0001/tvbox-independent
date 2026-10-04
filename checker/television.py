@@ -240,17 +240,36 @@ def epg_identity(channel, now, max_age_days, sources):
     return value
 
 
-def playlist(channels, routes, health, network='domestic', max_routes=3, epg=None):
+def playlist(channels, routes, health, network='domestic', max_routes=3, epg=None,
+             blocked_hosts=None, protected_ads=None, priority_groups=None, ad_tag='',
+             guide_channels=None):
     def quote(value): return str(value).replace('"',"'").replace('\n',' ').replace('\r',' ')
     # Without an explicit source policy nothing can be verified, so no guide id is emitted at all.
     epg = epg or {}
     sources = set(epg.get('sources') or ())
     now = int(epg.get('now') or 0)
     max_age = epg.get('max_age_days') or 0
+    blocked = {str(h) for h in (blocked_hosts or ())}
+    protected = {str(x) for x in (protected_ads or ())}
+    priority = {str(g) for g in (priority_groups or ())}
+    # 节目单里真实存在的 id。登记了 id 但节目单里没有的，对用户就是"没有节目单"，
+    # 这种 id 不该发出去——播放器只会显示找不到，而不是退回别的数据源。
+    in_guide = {str(g) for g in (guide_channels or ())} or None
     lines=['#EXTM3U']; gaps=[]; route_map={r['id']:r for r in routes}
     for ch in sorted(channels,key=sort_key):
         if ch.get('review')=='excluded': continue
-        candidates=[route_map[r] for r in ch['routes'] if r in route_map and route_map[r].get('review')!='quarantined']
+        # 分层治理（方案 C）：
+        #  · 名单上的 host 整段下线——广告填充标识（mkt/yss/byt/107/102）集中来自少数几个 host，
+        #    一条一条隔离永远追不上同一 host 上的新线路；
+        #  · 已被身份核验证实播广告的线路，重点频道直接不要（宁可缺台也不播广告），
+        #    其余频道保留播出，但那一行打上标记让用户自己看得见。
+        def withheld(r):
+            from urllib.parse import urlsplit
+            if str(urlsplit(r['url']).netloc) in blocked:return 'route host is on the blocklist'
+            if r['id'] in protected and ch['group'] in priority:return 'only remaining route is a confirmed advertisement'
+            return None
+        candidates=[route_map[r] for r in ch['routes']
+                    if r in route_map and route_map[r].get('review')!='quarantined' and not withheld(route_map[r])]
         def score(r):
             evidence=health.get(r['id'],{})
             if any(v.get('isolated') for v in evidence.values()):return (99,0,0.0,999999)
@@ -262,7 +281,8 @@ def playlist(channels, routes, health, network='domestic', max_routes=3, epg=Non
             return (state_rank,quality,-speed,rec.get('latency_ms',999999))
         candidates=[r for r in sorted(candidates,key=score) if score(r)[0]<3]
         if not candidates:
-            gaps.append({'channel_id':ch['id'],'name':ch['name'],'reason':'no admissible route'})
+            reason=next((withheld(route_map[r]) for r in ch['routes'] if r in route_map and withheld(route_map[r])),None)
+            gaps.append({'channel_id':ch['id'],'name':ch['name'],'reason':reason or 'no admissible route'})
             continue
         if not any(score(r)[0] == 0 for r in candidates):
             gaps.append({'channel_id':ch['id'],'name':ch['name'],'reason':'no currently verified route on '+network})
@@ -270,9 +290,11 @@ def playlist(channels, routes, health, network='domestic', max_routes=3, epg=Non
         for r in candidates[:max_routes]:
             attrs={'tvg-name':ch['name'],'group-title':ch['group']}
             guide=epg_identity(ch,now,max_age,sources)
-            if guide: attrs['tvg-id']=guide
+            if guide and (in_guide is None or guide in in_guide): attrs['tvg-id']=guide
+            # 标记只写在显示名上，tvg-name 保持原名，校验仍能对回登记表。
+            shown=ch['name']+((' '+ad_tag) if (ad_tag and r['id'] in protected) else '')
             if ch.get('local_logo'): attrs['tvg-logo']=ch['local_logo']
-            lines.append('#EXTINF:-1 '+' '.join(k+'="'+quote(v)+'"' for k,v in attrs.items())+','+quote(ch['name']))
+            lines.append('#EXTINF:-1 '+' '.join(k+'="'+quote(v)+'"' for k,v in attrs.items())+','+quote(shown))
             mapped={'User-Agent':'http-user-agent','Referer':'http-referrer','Origin':'http-origin'}
             for key,value in r.get('headers',{}).items():
                 if key in mapped:lines.append('#EXTVLCOPT:'+mapped[key]+'='+quote(value))

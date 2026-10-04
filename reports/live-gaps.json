@@ -1,5 +1,15 @@
 [
   {
+    "channel_id": "tv_3dd45b63d5a7e2020344",
+    "name": "CCTV-5",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_7ae30e99c9d85543b529",
+    "name": "CCTV-5+",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
     "channel_id": "tv_c21f3f6b282aeedbf768",
     "name": "CCTV-4K",
     "reason": "no currently verified route on local-direct"
@@ -8,6 +18,11 @@
     "channel_id": "tv_fb50bc2f132bf566ba2f",
     "name": "CCTV+ 1",
     "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_7d58f2ffd5bf3ac7d460",
+    "name": "CCTV-Health",
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_2cabc531b63397c1cad8",
@@ -20,14 +35,74 @@
     "reason": "no currently verified route on local-direct"
   },
   {
+    "channel_id": "tv_e871452eee6a4d27805f",
+    "name": "CETV-3",
+    "reason": "route host is on the blocklist"
+  },
+  {
     "channel_id": "tv_61c5217afa0c987fc460",
     "name": "CGTN俄语",
     "reason": "no currently verified route on local-direct"
   },
   {
+    "channel_id": "tv_5e99cf2273e931aa67e4",
+    "name": "文化精品",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_34165e336b569b59f889",
+    "name": "第一剧场",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_38c6bbf91f4896020194",
+    "name": "风云剧场",
+    "reason": "route host is on the blocklist"
+  },
+  {
     "channel_id": "tv_49631a9753f3f64b3d62",
     "name": "高尔夫网球",
     "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_d98cddf6388a5d1d6821",
+    "name": "三沙卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_b46ca0d8931641a2910e",
+    "name": "东方卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_44a2db5024fac69877be",
+    "name": "厦门卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_a3e5aaefb19b065b3787",
+    "name": "四川卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_c58d5aad3ed9b3937d54",
+    "name": "宁夏卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_463fac588ee24708254d",
+    "name": "山东卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_9ead5a3254a59e007c02",
+    "name": "广西卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_128f1f24b204eeef8cef",
+    "name": "新疆卫视",
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_465fbdbaf1b8b771246b",
@@ -40,14 +115,54 @@
     "reason": "no currently verified route on local-direct"
   },
   {
+    "channel_id": "tv_def3925f4f88eeed8243",
+    "name": "江西卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
     "channel_id": "tv_6443bf9e0d35700032d3",
     "name": "海南卫视",
     "reason": "no currently verified route on local-direct"
   },
   {
+    "channel_id": "tv_09501ba7a05816f51e7c",
+    "name": "贵州卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_c542d7281261bce086f0",
+    "name": "辽宁卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_c6115aadba0ca4b684d2",
+    "name": "黑龙江卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_ffd59568c1bca574bb1e",
+    "name": "CHC动作电影",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_212414058d906f01a61c",
+    "name": "CHC家庭影院",
+    "reason": "route host is on the blocklist"
+  },
+  {
     "channel_id": "tv_33c87dc741c7f598f3f2",
     "name": "新视觉",
     "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_36c9a6816245f836d378",
+    "name": "欢笑剧场",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_90f4c2ccd33174adc35e",
+    "name": "都市剧场",
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_7d9e6aade4af9586189a",
@@ -315,6 +430,11 @@
     "reason": "no admissible route"
   },
   {
+    "channel_id": "tv_a8785506b9cec2d5eefd",
+    "name": "广东新闻",
+    "reason": "route host is on the blocklist"
+  },
+  {
     "channel_id": "tv_e08ddb9b7c21e9879958",
     "name": "河源公共",
     "reason": "no currently verified route on local-direct"
@@ -328,6 +448,16 @@
     "channel_id": "tv_69966e8592ecc585c5bd",
     "name": "宾阳综合",
     "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_f22bc37219eceb0a5130",
+    "name": "广西国际",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_fdca5242205377d01dbb",
+    "name": "广西新闻",
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_a5f2863a0693ee9c34c5",
@@ -427,7 +557,7 @@
   {
     "channel_id": "tv_0071e048a888dcf4da5a",
     "name": "福建公共",
-    "reason": "no admissible route"
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_8480bf26def06d5b92dd",
@@ -437,7 +567,7 @@
   {
     "channel_id": "tv_0fb00aa4cc7d7120af35",
     "name": "福建旅游",
-    "reason": "no admissible route"
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_c5efeb6ba9bd096b72d7",
@@ -493,6 +623,11 @@
     "channel_id": "tv_32b7e055fdbbc49fb0fc",
     "name": "江津新闻综合",
     "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_7dc469fcc2e760c52fe8",
+    "name": "重庆新闻",
+    "reason": "route host is on the blocklist"
   },
   {
     "channel_id": "tv_04a3af724aa7e5aefd20",

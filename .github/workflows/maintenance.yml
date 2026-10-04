@@ -2,7 +2,6 @@ name: maintenance-check
 on:
   schedule:
     - cron: '7 */2 * * *'
-    - cron: '0 23 * * *'
     - cron: '17 19 * * 5'
   workflow_dispatch:
     inputs:
@@ -32,7 +31,13 @@ jobs:
           SCHEDULE: ${{ github.event.schedule }}
         run: |
           if [ -n "$INPUT_MODE" ]; then MODE="$INPUT_MODE";
-          elif [ "$SCHEDULE" = '7 */2 * * *' ]; then MODE=light;
+          elif [ "$SCHEDULE" = '7 */2 * * *' ]; then
+            # 每两小时一轮轻量探测。UTC 22 与 10 点正是北京 06 与 18 点，
+            # 这两轮升级为全量（含线路身份核验）——早晚各一次完整更新。
+            # 分档放在这里而不是多写两条 cron：`*/2` 本来就覆盖这两个小时，
+            # 再加 cron 会在同一分钟触发两个 run。
+            HOUR="$(date -u +%H)"
+            if [ "$HOUR" = '22' ] || [ "$HOUR" = '10' ]; then MODE=full; else MODE=light; fi
           else MODE=full; fi
           if [ "$MODE" = weekly ]; then MODE=full; fi
           echo "value=$MODE" >> "$GITHUB_OUTPUT"

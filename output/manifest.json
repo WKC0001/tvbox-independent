@@ -1,11 +1,11 @@
 {
   "files": {
-    "api.json": "5f1ae479108a89818d3b19499e2559635fd3ed424483ac69d860d9a117533dce",
+    "api.json": "76fc824221e096c9f9aabdeede6944f8c746fe5c5170ac02be2582357f36e199",
     "cfg.jpg": "9b02393c065b1e0f641c143b6e256c1d450f8315ef41a70a293f48b79467392f",
-    "live.m3u": "6c71a83aae523f61ed1d502d9de37a5778ee441cbbf4ad5f8fe929a4722ff688",
-    "dc.json": "e5cd62ad9ce6907a8877e87634d0e75049559d0b1c40b87324571e6ba0031e93"
+    "live.m3u": "51ce7cd9184e7a757ef096b0cad899be49171cd7ae2812a60335c07a17e64fb2",
+    "dc.json": "e4a734b9923c87ceafd8ea22515ac6e674da202fbebd5d5cd4bca2bc4862537b"
   },
-  "version": "0.5.2",
+  "version": "0.5.3",
   "package": "wkc0001-tvbox-independent",
   "format": "multi-site-v1",
   "site_count": 8,
@@ -13,7 +13,7 @@
   "known_live_gaps": 104,
   "native_bridge_restored": true,
   "live_routes_total": 654,
-  "live_routes_quarantined": 74,
+  "live_routes_quarantined": 75,
   "epg_source": [
     "diyp:51zmt"
   ],

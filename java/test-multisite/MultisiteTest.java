@@ -104,6 +104,17 @@ public final class MultisiteTest {
         @Override public String homeContent(boolean f)throws Exception{return answer();}
         @Override public String categoryContent(String t,String p,boolean f,HashMap<String,String> e)throws Exception{return answer();}
     }
+    /** 一家挂死不应该拖住整个首页：实测单个上游偶发能拖到 30 秒，
+        如果把它排在前面、又让它独占整个预算，首屏就得跟着等满。 */
+    static final class StalledFixture extends WkcCms {
+        boolean asked;
+        private String answer()throws Exception{
+            asked=true;Thread.sleep(60000);
+            return new JSONObject().put("list",new JSONArray()).toString();
+        }
+        @Override public String homeContent(boolean f)throws Exception{return answer();}
+        @Override public String categoryContent(String t,String p,boolean f,HashMap<String,String> e)throws Exception{return answer();}
+    }
     /** 数首页被问了几次：APP 会连着调 homeContent 和 homeVideoContent，
         两者内容相同，第二次必须走缓存而不是再付一轮往返。 */
     static final class HomeCountFixture extends WkcCms {
@@ -291,6 +302,16 @@ public final class MultisiteTest {
         check(new JSONObject(parallelCategory.categoryContent("电影","1",true,new HashMap<>()))
               .getJSONArray("list").length()==1,"Concurrent category still returns a listing");
         check(!d1.stalled&&!d2.stalled,"Category providers must be asked at the same time, not one after another");
+        // 排在最前面那家挂死时，首屏不能被它拖到超时（它要 60 秒才返回）。
+        WkcHome stallHome=new WkcHome();
+        StalledFixture stuck=new StalledFixture();ConcurrencyFixture ok1=new ConcurrencyFixture(new CountDownLatch(1));
+        stallHome.providers.add(stuck);stallHome.providers.add(ok1);
+        long began=System.currentTimeMillis();
+        check(new JSONObject(stallHome.homeContent(true)).getJSONArray("list").length()==1,
+              "A stalled first provider must not leave the home screen empty");
+        long stallWaited=System.currentTimeMillis()-began;
+        check(stallWaited<10000,"A stalled provider must not hold the home screen (waited "+stallWaited+" ms)");
+        check(stuck.asked,"The stalled provider is still asked, just not waited for");
         // APP 连着问 homeContent 与 homeVideoContent：同一份首页片单只该付一次往返。
         WkcHome caching=new WkcHome();HomeCountFixture hc=new HomeCountFixture();caching.providers.add(hc);
         String homeOnce=caching.homeContent(true);int homeSpent=hc.homeCalls;

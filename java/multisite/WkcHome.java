@@ -37,9 +37,10 @@ public class WkcHome extends Spider {
         把它记 5 分钟等于让一条刚变成违禁的内容继续出现 5 分钟。
         60 秒足够覆盖"从播放返回列表再点进来"这个真正需要快的场景。 */
     private static final long DETAIL_TTL_MS = 60000;
-    /** 首页/分类的总预算。6 家并发后实测 1.6s 就全部回来了，6s 只是兜底：
-        真有上游挂死时不再让首屏跟着一起卡住（APP 自己的 OkHttp 超时是 30s，等不起）。 */
-    private static final long LIST_BUDGET_MS = 6000;
+    /** 首页/分类的总预算。必须大于单次上游请求自己的超时（WkcNet 是 8s 连接 + 10s 读取），
+        否则会把一个"再等一秒就成功"的请求掐掉，平白变成一次失败。
+        并发之后正常情况是 1.6s 就全部回来了，这个 20s 只在多家同时抽风时才起作用。 */
+    private static final long LIST_BUDGET_MS = 20000;
     /** 首页结果缓存 60 秒。APP 会连着问 homeContent 和 homeVideoContent，
         两者内容一样（都是首页片单），不缓存等于同一份数据付两次往返。
         这里缓存的只是"片单列表"——列表项在 WkcCms.filtered() 里已经删掉了播放地址，
@@ -137,7 +138,7 @@ public class WkcHome extends Spider {
 
     /* ---------- 首页与分类：仍是"先答者优先"，合并只对搜索有意义 ---------- */
 
-    private static final class Answer { String body; Throwable error; }
+    private static final class Answer { String body; Throwable error; boolean pending; }
 
     /** 把每个上游的任务同时发出去，再按下标顺序收结果。
 
@@ -153,12 +154,29 @@ public class WkcHome extends Spider {
         try {
             for (Callable<String> t : tasks) jobs.add(pool.submit(t));
             long deadline = System.currentTimeMillis() + budget;
+            for (int i = 0; i < jobs.size(); i++) out[i] = new Answer();
+            // 每一家只给总预算的一份。实测单个上游偶发能拖到 30 秒，
+            // 如果把整个预算都押在排第一的那家身上，它一抽风首屏就得等满 20 秒。
+            // 切片之后超时就先去看下一家，谁先回来用谁。
+            long slice = Math.min(4000, Math.max(1200, budget / Math.max(1, jobs.size())));
             for (int i = 0; i < jobs.size(); i++) {
                 long left = deadline - System.currentTimeMillis();
                 if (left <= 0) break;
-                Answer a = new Answer(); out[i] = a;
-                try { a.body = jobs.get(i).get(left, TimeUnit.MILLISECONDS); }
-                catch (Exception e) { a.error = e.getCause() != null ? e.getCause() : e; }
+                try { out[i].body = jobs.get(i).get(Math.min(slice, left), TimeUnit.MILLISECONDS); }
+                catch (TimeoutException e) { out[i].pending = true; }
+                catch (Exception e) { out[i].error = e.getCause() != null ? e.getCause() : e; }
+            }
+            // 只在"一轮下来谁都没赶上"时才再等一轮，把剩下的预算给还在跑的那几家。
+            // 已经拿到任何一份答复就立刻收工——否则又要回头去等那家挂死的。
+            boolean any=false;
+            for (Answer a : out) if (a.body != null) { any = true; break; }
+            if (!any) for (int i = 0; i < jobs.size(); i++) {
+                if (!out[i].pending) continue;
+                long left = deadline - System.currentTimeMillis();
+                if (left <= 0) break;
+                try { out[i].body = jobs.get(i).get(left, TimeUnit.MILLISECONDS); }
+                catch (Exception e) { out[i].error = e.getCause() != null ? e.getCause() : e; }
+                out[i].pending = false;
             }
         } finally { pool.shutdownNow(); }
         return out;

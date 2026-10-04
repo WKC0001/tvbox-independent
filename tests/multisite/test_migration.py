@@ -137,8 +137,24 @@ class RouteIdentityTests(unittest.TestCase):
         report=json.loads((ROOT/'reports/live-identity.json').read_text())
         self.assertEqual(set(report['quarantined']),set(self.quarantined()))
         self.assertEqual(report['routes_checked'],len(report['results']))
-        self.assertTrue(set(report['quarantined']).issubset({r['id'] for r in report['results']}))
+        # A withheld route is never re-screened for release, so its samples live under `reverified`;
+        # either way everything the report condemns carries evidence from a sweep that measured it.
+        evidence={r['id'] for r in report['results']}|{r['id'] for r in report['reverified']}
+        self.assertTrue(set(report['quarantined']).issubset(evidence))
         self.assertTrue(set(report['quarantined']).issubset({c['id'] for c in report['confirmation']}))
+        # A later sweep that only looks at admissible routes must not quietly drop the routes an
+        # earlier one withheld: the ledger separates what was condemned today from what still stands.
+        self.assertEqual(set(report['quarantined']),
+                         set(report['newly_quarantined'])|set(report['carried_forward']))
+        self.assertTrue(set(report['reverified_still_mismatching']).issubset(set(report['quarantined'])))
+        for item in report['reverified']:
+            self.assertTrue(item['samples'],'a re-probe recorded no samples: '+item['id'])
+        # A sweep restricted to one known bad host must not be mistaken for an audit of everything
+        # that ships: every registered http route has to be accounted for by the report.
+        http={r['id'] for r in self.routes if r['url'].startswith(('http://','https://'))}
+        seen=set(report['quarantined'])|{r['id'] for r in report['results']}
+        seen|={r['id'] for r in self.routes if r.get('review')=='quarantined'}
+        self.assertEqual(seen,http,'the identity report does not cover the whole registry')
     def test_only_opaque_names_are_unverifiable(self):
         from scripts.verify_live_identity import identity_tokens,judgeable,normalize,same_channel
         # The ad lineup serves bare numeric ids, so those must stay comparable.

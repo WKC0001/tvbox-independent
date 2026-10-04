@@ -170,6 +170,8 @@ def main():
     parser.add_argument('--workers', type=int, default=6)
     parser.add_argument('--limit', type=int, default=0)
     parser.add_argument('--group', default='', help='only routes referenced by channels in this group')
+    parser.add_argument('--host', action='append', default=[],
+                        help='only routes on this host (repeatable); used to re-audit a known bad source')
     parser.add_argument('--apply', action='store_true', help='write the registry and health state')
     args = parser.parse_args()
 
@@ -181,13 +183,20 @@ def main():
     if args.group:
         wanted = {rid for ch in channels if ch.get('group') == args.group for rid in ch['routes']}
 
-    targets = []
+    targets, withheld = [], []
     for route in routes:
-        if route.get('review') == 'quarantined':
+        if urlsplit(route['url']).scheme not in ('http', 'https'):
             continue
         if wanted is not None and route['id'] not in wanted:
             continue
-        if urlsplit(route['url']).scheme not in ('http', 'https'):
+        if args.host and urlsplit(route['url']).netloc not in args.host:
+            continue
+        if route.get('review') == 'quarantined':
+            # A quarantine is permanent until a human lifts it, so these are not candidates for
+            # release again. They are still probed, because a verdict nobody re-checks decays into
+            # folklore: the report has to say whether the source misbehaves today or not.
+            if 'identity' in (route.get('quarantine_reason') or ''):
+                withheld.append(route)
             continue
         targets.append(route)
     if args.limit:
@@ -223,36 +232,95 @@ def main():
     def proof(route_id):
         return (confirmed.get(route_id) or next(r for r in results if r['id'] == route_id))['samples']
 
+    # Re-probe what is already withheld. A quarantined route is never released by this sweep, but the
+    # report has to distinguish "condemned today" from "condemned earlier and still broken", so every
+    # withheld route is measured afresh instead of being carried forward on its old evidence.
+    reverified = {}
+    if withheld and args.confirm:
+        print('re-probing', len(withheld), 'quarantined routes with', args.confirm, 'requests', flush=True)
+        with cf.ThreadPoolExecutor(args.workers) as pool:
+            for item in pool.map(lambda r: measure(r, args.confirm), withheld):
+                reverified[item['id']] = item
+
+    # Two fifths of independent requests handing back an advertisement is enough: a route that plays
+    # an ad channel that often is broken even though it does answer correctly some of the time. Three
+    # hits are still required so one fluke can never retire a working route.
+    def advertising(route_id):
+        second = proof(route_id)
+        hits = filler_hits(second, fillers)
+        return hits >= 3 and hits * 5 >= len(second) * 2
+
+    candidates = [r for r in results if r['verdict'] == 'suspect' and advertising(r['id'])]
+    # A channel whose only remaining route is being removed would keep the advertisement it plays
+    # today in exchange for nothing at all, so the last admissible route is downgraded rather than
+    # quarantined and stays visible in the report.
+    blocked = {r['id'] for r in candidates}
+    protected = set()
+    for channel in channels:
+        keep = [rid for rid in channel['routes']
+                if rid in index and index[rid].get('review') != 'quarantined' and rid not in blocked]
+        if not keep:
+            protected.update(rid for rid in channel['routes'] if rid in blocked)
+
     condemned, watched = [], []
     for item in results:
-        if item['verdict'] != 'suspect':
-            item['verdict'] = 'ok' if item['verdict'] == 'clean' else 'unknown'
+        if item['verdict'] == 'clean':
+            item['verdict'] = 'ok'
             continue
-        second = proof(item['id'])
-        hits = filler_hits(second, fillers)
-        # A majority of the re-tests must land on a filler identity before a route is retired.
-        if hits * 2 > len(second):
+        if item['verdict'] != 'suspect':
+            item['verdict'] = 'unknown'
+            continue
+        if item['id'] in protected:
+            item['verdict'] = 'watch'
+            item['protected'] = 'last admissible route for its channel'
+            watched.append(item)
+        elif advertising(item['id']):
             item['verdict'] = 'quarantine'
             condemned.append(item)
         else:
             item['verdict'] = 'watch'
             watched.append(item)
-    print('routes checked', len(results), '| suspects', len(suspects),
-          '| quarantine', len(condemned), '| watch', len(watched))
+    print('routes checked', len(results), '| suspects', len(suspects), '| quarantine', len(condemned),
+          '| protected as last route', len(protected), '| watch', len(watched),
+          '| withheld already', len(withheld))
     for item in condemned[:25]:
         served = sorted({s.get('served') for s in proof(item['id']) if s.get('served')})
         print('  QUARANTINE', item['id'], item['url'][:66], '->', served)
 
+    def mismatches(samples):
+        return sum(1 for s in samples if s.get('status') == 'mismatch')
+
+    carried = sorted(r['id'] for r in withheld)
+    still_broken = sorted(rid for rid, item in reverified.items() if mismatches(item['samples']) >= 3)
+    recovered = sorted(rid for rid, item in reverified.items() if mismatches(item['samples']) == 0)
+    print('withheld routes re-probed', len(reverified), '| still answering with a foreign channel',
+          len(still_broken), '| answering correctly today', len(recovered))
+    if recovered:
+        # Not an invitation to release them: a source that plays an advertisement one hour and the
+        # channel the next is exactly why the quarantine exists. Recorded so the operator can see it.
+        print('  answers correctly today but stays quarantined:', ' '.join(recovered[:12]))
+
+    quarantined = sorted(set(carried) | {r['id'] for r in condemned})
     report = {
         'checked_at': int(time.time()),
         'samples_per_route': args.samples,
         'confirm_samples': args.confirm,
         'routes_checked': len(results),
         'filler_identities': {name: len(requests) for name, requests in sorted(fillers.items())},
-        'quarantined': [r['id'] for r in condemned],
+        'quarantined': quarantined,
+        'newly_quarantined': [r['id'] for r in condemned],
+        'carried_forward': carried,
+        'reverified_total': len(reverified),
+        'reverified_still_mismatching': still_broken,
+        'reverified_now_consistent': recovered,
+        'protected_last_route': sorted(protected),
         'watch': [r['id'] for r in watched],
         'results': sorted(results, key=lambda r: (r['verdict'] != 'quarantine', r['id'])),
-        'confirmation': [confirmed[r['id']] for r in condemned if r['id'] in confirmed],
+        'reverified': sorted(reverified.values(), key=lambda r: r['id']),
+        # Every withheld route carries evidence recorded by the newest sweep that had it in scope, so
+        # the report never asserts a verdict it cannot show samples for.
+        'confirmation': [reverified[rid] if rid in reverified else confirmed[rid]
+                         for rid in quarantined if rid in reverified or rid in confirmed],
     }
 
     if not args.apply:

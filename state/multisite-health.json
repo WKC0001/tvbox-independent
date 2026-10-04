@@ -25720,6 +25720,17 @@
    "network": "github",
    "state": "healthy"
   },
+  "global": {
+   "consecutive_fail": 0,
+   "consecutive_ok": 0,
+   "isolated": true,
+   "last_fail_ts": null,
+   "last_ok_gap": null,
+   "last_ok_ts": null,
+   "last_reason": "channel identity mismatch (served gxgj/mkt)",
+   "network": "global",
+   "state": "down"
+  },
   "local": {
    "consecutive_fail": 0,
    "consecutive_ok": 1,

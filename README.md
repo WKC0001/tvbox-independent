@@ -6,11 +6,21 @@
 
 ## 导入与发布
 
-优先向使用者提供经过验收的**固定版本**地址：
+公开分发入口（给任何人用）：
+
+`https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json`
+
+多仓入口，地址恒定，使用者不必在每次更新后重新导入。说明页与二维码在
+`https://wkc0001.github.io/tvbox-independent/`。
+
+固定版本地址同样可用，而且是排查问题的首选 —— 它逐字节冻结，不受 `latest` 移动影响：
 
 `https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@版本号/api.json`
 
-所有插件、直播列表和配置依赖绑定同一个版本。`dc.json` 是单仓入口。版本内资源不会随着 `latest` 改变；需要替换时生成新版本、验收，再通知使用者重新导入。npm 的 `next` 是候选，`latest` 只允许指向具有双 APK 验收记录的版本。
+插件、直播列表和配置都绑定同一个版本。npm 的 `next` 是候选；`latest` 由 `scripts/auto_acceptance.py`
+产生的三项机器验收证据决定（`cdn_verified` / `config_protocol` / `playback_probe`），
+任一项不通过 `latest` 就不会动。原先要求"双端 APK 人工验收"，实测从未被满足过，
+`latest` 因此长期停在 `0.3.0`，该门槛已由机器验收取代。
 
 GitHub Actions 的 `publish.yml` 构建真实 Android DEX、执行回归检查、发布 `next`，再逐文件对比 npm tarball 和 jsDelivr 内容。CDN 检查失败时不得宣称地址可用。重新生成候选：
 
@@ -19,11 +29,13 @@ GitHub Actions 的 `publish.yml` 构建真实 Android DEX、执行回归检查�
 /Users/ckw/.workbuddy/binaries/python/envs/default/bin/python scripts/admin_release.py candidate
 ```
 
-测试通过后，将真实验收记录保存为 `reports/acceptance/版本号.json` 并通过 API 推送；`files` 必须与已发布 manifest 完全一致，再执行：
+验收记录由 `publish.yml` 在 CDN 字节校验通过后自动产生（`reports/acceptance/版本号.json`），
+随版本一起冻结提交，不需要人工保存。`policy/operations.json` 的 `automatic_latest` 为真时，
+发布流水线会在验收通过后自行申请提升 `latest`。人工通道保持不变：
 
 ```sh
 /Users/ckw/.workbuddy/binaries/python/envs/default/bin/python scripts/admin_release.py promote 版本号
-# 回滚到已有双端验收记录的固定版本
+# 回滚到已有验收记录的固定版本
 /Users/ckw/.workbuddy/binaries/python/envs/default/bin/python scripts/admin_release.py rollback 旧版本号
 ```
 
@@ -41,14 +53,23 @@ GitHub Actions 的 `publish.yml` 构建真实 Android DEX、执行回归检查�
 | `state/provider-audit.json` | 各网络完整功能检查和最近一次成功证据 |
 | `state/multisite-health.json` | 按线路或站点 × 网络持久化的健康状态 |
 | `state/native-audit.json` | 原生适配器在实际 Android 运行时的准入证据 |
+| `state/live-measured.json` | 每条直播线路的实测下载速度比，构建时挂到线路排序权重上 |
 | `output/` | 本版本实际发布资源；只有干净的 `npmstage/` 被打包 |
 | `reports/` | 迁移台账、线路缺口、EPG 匹配与缺口、候补站点、解码和验收证据 |
+| `docs/` | GitHub Pages 说明页与主入口二维码；页面上每个数字都读自构建产物 |
+| `scripts/auto_acceptance.py` | 产生三项机器验收证据（CDN 自洽、配置结构、播放链探测） |
+| `scripts/build_landing.py` | 由构建产物生成说明页与二维码，不手写任何数字 |
+| `scripts/ingest_live_measurements.py` | 把直播测速结果并进 `state/live-measured.json` |
 
 一次性迁移保留旧清单 1024 条记录的去向。保留真实电视身份，不按知名度删除地方台；同台多线路合并到一个身份，最多输出配置指定的优先线路。移除平台轮播、景区摄像头、宣传文件、节目单片循环。只有音频的错误电视线路被移除，电视身份留在缺口清单等待补线。
 
 电视线路还必须证明它真的在播这个频道。`scripts/verify_live_identity.py` 跟随每条线路的跳转链，把最终播放列表上的频道标识与请求的频道比对：路径里的 `dfwshd` 和查询参数里的 `id=cctv8k` 都算频道名，对上一个即算同一条频道。判定不靠名字的前缀相似，而是统计"同一个标识被多少个互不相干的频道请求收到"——一个标识答复了几十个不同频道，它就不是频道而是广告或占位（实测 `mkt`、`byt`、`107`、`102`、`yss`、`aad` 与返回错误页的标识都属此类）；服务端只是把某个频道换个长名字不会被误判（`cwjd` 收到 `CBN_XP_cwjdHD`、`jjsh` 收到 `jingjishenghuo` 都算命中）。可达性是必要条件但不充分：广告流的字节是完全合法的 HLS，探测和延迟排序都分辨不出来，因此只按延迟排序就会把最快的广告源排在官方源前面——这正是"打开东方卫视却在播购物广告"的成因。流程是先抽查一遍、出现不一致的线路再用 8 次独立请求复核、其中过半数落在填充标识上才隔离；被隔离的线路写入 `review=quarantined` 与 `quarantine_reason`，同时按内容污染标记健康状态，播放列表不再输出，缺线的频道如实进入缺口清单。
 
 新增视频站必须先登记、通过完整探测并记录首次准入；自动探测不能自动批准新站。CMS 使用自有适配器，动态刷新分类和内容；首页/分类/搜索/详情/播放入口均执行策略。原生旧适配器通过自有包装层接入，解密桥由冻结基线重建，只有通过实际 Android 功能检查的适配器进入输出。
+
+首页的「点我切源」是跨上游聚合：搜索并发问全部上游（8 秒总预算，超时的上游不影响其他上游），按标题归一化分组，同名结果合成一行并标注 `[N源]`，详情页把各上游的线路合并到一起。旧实现是优先级失败切换（`if (list.length() > 0) return list;`），而采集站的模糊搜索永远返回非空，因此永远轮不到第二个上游——这才是"点进去只有一个源"真正的成因，不是缺一个聚合服务。实测 6 个上游搜 8 个常见剧名共返回 377 条，合并后 36 行。
+
+每条播放线路的显示名都带「⚠勿信广告」，站点名同样带。这不是装饰：聚合里的上游会在播放过程中插广告，其中一部分是博彩类，客户端拦不住，只能提示。线路对外显示名可改，但插件仍用上游原始 `flag` 重新核对一次播放路线，未经批准的路线会被拒绝。
 
 电视节目单只输出被节目表接口当场证实的映射。`scripts/epg_match.py` 逐频道查询 51zmt 的 diyp 接口，只有返回真实节目、且返回的频道名仍指向同一频道时才登记 `epg_id`、来源和核验时间；名字相近不算命中，按命名规则拼出来的 ID 一律不写入。构建时再按 `epg_evidence_max_age_days` 过滤一遍：来源不在 `epg_sources` 内、核验时间缺失、来自未来、或已过有效期的映射降级为"没有节目单"，而不是给出错误节目单。`api.json` 的直播条目带 `epg` 模板，播放器把 `{id}` 换成该频道的 `tvg-id`、`{date}` 换成所查看的日期；没有节目单的频道记入 `reports/epg-gaps.json`。`scripts/verify_multisite.py` 会按播放器的取用方式重算一遍每个 `tvg-id`，与登记表或策略不符即构建失败。
 
@@ -74,7 +95,9 @@ GitHub Actions 的 `publish.yml` 构建真实 Android DEX、执行回归检查�
 /Users/ckw/.workbuddy/binaries/python/envs/default/bin/python scripts/admin_release.py quarantine route 线路ID --reason '具体原因'
 ```
 
-检查本地登记表和状态变更后 API 推送，生成新候选并验收。历史固定链接不可撤回，必须另行告知使用者替换链接。普通探测成功不会解除内容隔离。
+检查本地登记表和状态变更后 API 推送，生成新候选并验收。主入口用 `@latest`，所以换版本不需要使用者做任何事；已分发出去的固定版本链接无法撤回。普通探测成功不会解除内容隔离。
+
+验收不依赖人工装包：`publish.yml` 在 CDN 字节校验通过后运行 `scripts/auto_acceptance.py`，从 CDN 上真实取回这一版的 `manifest.json` 并逐个下载声明的文件重算哈希（不拿本地构建产物比对——提升的可能是历史版本，那样会把没问题的发布误判成有问题），核对聚合首页唯一、插件指针与已发布 `cfg.jpg` 的 md5 一致、每个上游都有媒体域名白名单和广告提示、站点名不含成人分类词、直播与 EPG 模板完整，再从发布配置里取真实上游走完 分类 → 条目 → 详情 → 取到媒体字节。`device_tested` 如实记为 `false`：这一版没有在真机上点过，记录不许把它说成点过了。
 
 ## 能力边界
 

@@ -12,6 +12,9 @@ on:
         required: true
 permissions:
   contents: write
+  # Opening the promotion run needs actions:write. Without it `automatic_latest`
+  # would be a switch nobody reads — the same shape of dead gate this replaced.
+  actions: write
 concurrency:
   group: independent-release-state
   cancel-in-progress: false
@@ -91,6 +94,22 @@ jobs:
           if [ -d reports/acceptance ]; then git add reports/acceptance; fi
           git diff --cached --quiet || git commit -m 'chore: freeze verified candidate resources [skip ci]'
           git push
+      - name: Promote automatically when policy allows it
+        if: steps.acceptance.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          ALLOW="$(python -c "import json;print(str(json.load(open('policy/operations.json'))['automatic_latest']).lower())")"
+          if [ "$ALLOW" != "true" ]; then
+            echo "automatic_latest is off; latest stays put until an operator promotes."
+            exit 0
+          fi
+          VERSION="$(node -p "require('./package.json').version")"
+          gh workflow run release-tags.yml --repo "$GITHUB_REPOSITORY" --ref main \
+            -f action=promote -f version="$VERSION"
+          echo "Requested promotion of $VERSION. It queues behind this run on the shared release lock,"
+          echo "so it starts only once these frozen resources have landed on main."
       - uses: actions/upload-artifact@v4
         if: always()
         with:

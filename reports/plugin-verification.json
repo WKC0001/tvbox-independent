@@ -1,19 +1,19 @@
 {
   "passed": true,
-  "version": "0.5.12",
+  "version": "0.5.13",
   "dex_classes": 1216,
   "sites": 11,
   "playlist_routes": 515,
-  "epg_channels_shipped": 100,
-  "epg_guide_entries": 146,
-  "epg_channels_verified": 136,
-  "epg_gaps": 331,
+  "epg_channels_shipped": 130,
+  "epg_guide_entries": 194,
+  "epg_channels_verified": 163,
+  "epg_gaps": 304,
   "files": {
-    "api.json": "c064dc7b9c09f0dd09cd86d3b19622c1b40982179f3051405d6bd68208321f7a",
+    "api.json": "64447938f69ca09c864b5e36f3f0855ed1bb54fbd865918619b1abe5a1cd9d3c",
     "cfg.jpg": "9bd379ddf30920dada1a88e930091344235626b8a3eb33efbf97fafd8630c8c5",
-    "live.m3u": "95dcfcdd3d7eeb9a63b13eed2f1f8e25514ca6136cc19e9e728b2ceaeeacff0d",
-    "dc.json": "094d1329182c452ad13a73864030da7fcb179a005cf4d665fc29acd57ff1b95b",
-    "guide.xml.gz": "3841ee9c8bf464d74f0c301a9ef0351691cd37b9684efdc61cd60bd92d259fa9"
+    "live.m3u": "51f0dee1b93b2c6226c17f41e5098df057c035aae340250a90415a8ba01691b7",
+    "dc.json": "b939c6b116b349c2674dfc4404e8ffdd76fc9726bef1bc8e40d5dd9c2c952111",
+    "guide.xml.gz": "196d3ec281ed51a53439b70e288e2bb03320459e0e674e767464770e99f34127"
   },
   "android_app_test": "separate acceptance required"
 }

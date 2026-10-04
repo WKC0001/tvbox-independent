@@ -1,7 +1,7 @@
 {
   "urls": [
     {
-      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.12/api.json",
+      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.13/api.json",
       "name": "WKC 自有聚合"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.12/cfg.jpg;md5;797a30cbccf3c78f8c9a75780a528044",
+  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.13/cfg.jpg;md5;797a30cbccf3c78f8c9a75780a528044",
   "hosts": [],
   "logo": "",
   "rules": [
@@ -75,6 +75,30 @@
             "home_ms": 1757
           },
           {
+            "id": "cms_cjffzyapicom",
+            "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+            "media_hosts": [
+              "super.ffzy-online6.com",
+              "svip.feifei-play.com",
+              "vip.ffzy-online1.com",
+              "vip.ffzy-online3.com",
+              "vip.ffzy-online5.com",
+              "vip.ffzy-play10.com",
+              "vip.ffzy-play5.com",
+              "vip.ffzy-play6.com",
+              "vip.ffzy-play7.com",
+              "vip.ffzy-play9.com",
+              "vip.ffzy-plays.com",
+              "vod.feifei-kan.com",
+              "vod.ffzy-bofang.com"
+            ],
+            "label": "非凡 ⚠勿信广告",
+            "ad_scan": "clean",
+            "latency_ms": 2553,
+            "reviewed_at": 1791094351,
+            "policy": "normal-film-v1"
+          },
+          {
             "id": "cms_cjlziapicom",
             "api": "https://cj.lziapi.com/api.php/provide/vod/",
             "media_hosts": [
@@ -85,7 +109,7 @@
               "vip1.lz-cdn1.com"
             ],
             "label": "量子 ⚠勿信广告",
-            "ad_scan": "clean",
+            "ad_scan": "pending",
             "latency_ms": 1351,
             "reviewed_at": 1791094372,
             "policy": "normal-film-v1",
@@ -124,7 +148,7 @@
               "v9.rstu6.com"
             ],
             "label": "飘零 ⚠勿信广告",
-            "ad_scan": "clean",
+            "ad_scan": "pending",
             "latency_ms": 954,
             "reviewed_at": 1791093864,
             "policy": "normal-film-v1",
@@ -138,33 +162,9 @@
               "vod2.maowushi.com"
             ],
             "label": "360 ⚠勿信广告",
-            "ad_scan": "clean",
+            "ad_scan": "pending",
             "latency_ms": 517,
             "reviewed_at": 1791094302,
-            "policy": "normal-film-v1"
-          },
-          {
-            "id": "cms_cjffzyapicom",
-            "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-            "media_hosts": [
-              "super.ffzy-online6.com",
-              "svip.feifei-play.com",
-              "vip.ffzy-online1.com",
-              "vip.ffzy-online3.com",
-              "vip.ffzy-online5.com",
-              "vip.ffzy-play10.com",
-              "vip.ffzy-play5.com",
-              "vip.ffzy-play6.com",
-              "vip.ffzy-play7.com",
-              "vip.ffzy-play9.com",
-              "vip.ffzy-plays.com",
-              "vod.feifei-kan.com",
-              "vod.ffzy-bofang.com"
-            ],
-            "label": "非凡 ⚠勿信广告",
-            "ad_scan": "clean",
-            "latency_ms": 2553,
-            "reviewed_at": 1791094351,
             "policy": "normal-film-v1"
           }
         ]
@@ -272,7 +272,7 @@
           "v9.rstu6.com"
         ],
         "label": "飘零 ⚠勿信广告",
-        "ad_scan": "clean",
+        "ad_scan": "pending",
         "latency_ms": 954,
         "reviewed_at": 1791093864,
         "policy": "normal-film-v1",
@@ -295,7 +295,7 @@
           "vod2.maowushi.com"
         ],
         "label": "360 ⚠勿信广告",
-        "ad_scan": "clean",
+        "ad_scan": "pending",
         "latency_ms": 517,
         "reviewed_at": 1791094302,
         "policy": "normal-film-v1"
@@ -388,7 +388,7 @@
           "vip1.lz-cdn1.com"
         ],
         "label": "量子 ⚠勿信广告",
-        "ad_scan": "clean",
+        "ad_scan": "pending",
         "latency_ms": 1351,
         "reviewed_at": 1791094372,
         "policy": "normal-film-v1",
@@ -429,8 +429,8 @@
     {
       "name": "WKC电视直播",
       "type": 0,
-      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.12/live.m3u",
-      "epg": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.12/guide.xml.gz",
+      "url": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.13/live.m3u",
+      "epg": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.13/guide.xml.gz",
       "playerType": 2,
       "timeout": 15
     }

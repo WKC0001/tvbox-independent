@@ -1,0 +1,34 @@
+{
+ "version": "0.5.13",
+ "package": "wkc0001-tvbox-independent",
+ "checked_at": 1791124548,
+ "device_tested": false,
+ "device_note": "machine probes only; no phone or TV install was performed for this version, so this record must not be read as device acceptance",
+ "cdn_verified": true,
+ "cdn_problems": [],
+ "published_files": {
+  "api.json": "64447938f69ca09c864b5e36f3f0855ed1bb54fbd865918619b1abe5a1cd9d3c",
+  "cfg.jpg": "9bd379ddf30920dada1a88e930091344235626b8a3eb33efbf97fafd8630c8c5",
+  "live.m3u": "51f0dee1b93b2c6226c17f41e5098df057c035aae340250a90415a8ba01691b7",
+  "dc.json": "b939c6b116b349c2674dfc4404e8ffdd76fc9726bef1bc8e40d5dd9c2c952111",
+  "guide.xml.gz": "196d3ec281ed51a53439b70e288e2bb03320459e0e674e767464770e99f34127"
+ },
+ "epg_mode": "xmltv",
+ "config_protocol": true,
+ "config_problems": [],
+ "playback_probe": true,
+ "playback_attempts": [
+  {
+   "id": "cms_bfzyapicom",
+   "ok": true,
+   "note": "四手联弹，两首奏鸣曲 / bfzym3u8 -> media-segment"
+  }
+ ],
+ "files": {
+  "api.json": "64447938f69ca09c864b5e36f3f0855ed1bb54fbd865918619b1abe5a1cd9d3c",
+  "cfg.jpg": "9bd379ddf30920dada1a88e930091344235626b8a3eb33efbf97fafd8630c8c5",
+  "live.m3u": "51f0dee1b93b2c6226c17f41e5098df057c035aae340250a90415a8ba01691b7",
+  "dc.json": "b939c6b116b349c2674dfc4404e8ffdd76fc9726bef1bc8e40d5dd9c2c952111",
+  "guide.xml.gz": "196d3ec281ed51a53439b70e288e2bb03320459e0e674e767464770e99f34127"
+ }
+}

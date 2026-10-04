@@ -11,12 +11,13 @@
   cdn_verified     发布产物与构建产物逐字节一致（读 CDN 上的 manifest 比对哈希）
   config_protocol  发布出去的单仓配置结构合法：聚合首页唯一、插件指针与哈希对得上、
                    每个上游都有媒体域名白名单和广告提示、没有成人分类名泄漏、
-                   直播与 EPG 模板都在
+                   直播列表与节目单都在（模板形态查占位符，XMLTV 形态查内容与水印）
   playback_probe   从发布配置里取出真实上游，走 分类 -> 条目 -> 详情 -> 取媒体字节，
                    证明"确实有一个能被播出来的路线"
 
 同时明确记录 device_tested=false：这一版没有在真机上点过，不许把它说成点过了。
 """
+import gzip
 import hashlib
 import json
 import os
@@ -107,6 +108,45 @@ def probe_provider(entry):
     return False, 'no playable media route'
 
 
+def check_epg(guide, downloaded, declared, problems):
+    """节目单有两种形态，检查必须跟着形态走，不能拿模板的规则去套静态文件。
+
+    - 模板形态：客户端把 `{id}` / `{date}` 换成具体值再回源取节目单。占位符丢了，
+      节目单就永远是空的，所以两个都要在。
+    - 静态 XMLTV（`guide.xml.gz`）：构建时生成好的整份节目单，根本没有占位符可言。
+      要验的是它真的被发布了、能解开、根元素是 `<tv>`、有频道也有节目，以及
+      上游那个「免费使用」水印确实被剥干净了——否则用户看到的还是带水印的节目名。
+    """
+    if '{id}' in guide or '{date}' in guide:
+        for token in ('{id}', '{date}'):
+            if token not in guide:
+                problems.append('EPG template lost its %s placeholder' % token)
+        return 'template'
+    name = guide.rsplit('/', 1)[-1]
+    if name not in declared:
+        problems.append('EPG points at %s which the published manifest does not declare' % name)
+        return 'xmltv'
+    body = downloaded.get(name)
+    if body is None:
+        problems.append('EPG file %s is declared but was not downloaded' % name)
+        return 'xmltv'
+    try:
+        raw = gzip.decompress(body) if body[:2] == b'\x1f\x8b' else body
+        text = raw.decode('utf-8', 'replace')
+    except Exception as error:
+        problems.append('EPG file %s cannot be read: %s' % (name, error))
+        return 'xmltv'
+    if '免费使用' in text:
+        problems.append('EPG file %s still carries the upstream watermark' % name)
+    if '<tv' not in text:
+        problems.append('EPG file %s has no XMLTV <tv> root' % name)
+    if '<channel id=' not in text:
+        problems.append('EPG file %s declares no channel' % name)
+    if '<programme' not in text:
+        problems.append('EPG file %s carries no programme' % name)
+    return 'xmltv'
+
+
 def main():
     package = json.loads((ROOT / 'package.json').read_text())
     name = package['name']
@@ -158,9 +198,11 @@ def main():
         problems.append('the live list is not published next to the config')
     else:
         guide = str(lives[0].get('epg', ''))
-        for token in ('{id}', '{date}'):
-            if token not in guide:
-                problems.append('EPG template lost its %s placeholder' % token)
+        if not guide:
+            problems.append('the live list carries no EPG pointer')
+        else:
+            evidence['epg_mode'] = check_epg(guide, downloaded,
+                                             published.get('files') or {}, problems)
     evidence['config_protocol'] = not problems
     evidence['config_problems'] = problems
 

@@ -14,7 +14,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "糯米",
@@ -31,7 +32,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "文采",
@@ -96,7 +98,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "厂长",
@@ -114,7 +117,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "光影",
@@ -131,7 +135,8 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "rfOIzPkSUkANv6AT2prC8en3+Trbx4j10CIoZMv3Ag4bdEYQqTMqu/Z3YPtC2NJv6n6YeZdgyWlo4WJjBL5gUt6B7LvCEDT4CLrWka31GRq7jwVkfQRB/Jy9HkG7E8xUBIJi5DdVFk3qAuGnwUWqQNRblRxzHW+tdSm6zoFcG/QkZ97bzWOXn0fzbgwjBDkBHgcPIYjlULlctCNKgJ9DzGNSl+zMZDZgmxczsZeeahRS38Cst3qvaHn1T2lmLBGVGXPaRovi77LPRRDOJSNRrdpvCHdRikYwgar0MU56hXMGeGBiKp/OmGTIYR8dFRGvZ/m8xGOqs8U13h6wvADOGlYoP9VaQBqTcDnz9Q0Urhw3oFXWyvIlUrDhX9la5L2NYzagbyk3afqhxeSXXp07nAFsNy2CojHRTbmz4eohLoIJTSi2DzPpheVx1DAapfgRdTc7Ax5ddYpN338GiDAa0GnEgLe04a1pZ5jF+/Q7HJswqlSO+DXCQ3FjRbb/ZPQcozcCWwzhUHE1QUAt799V9DPMuiHGyudIcZarGQmezB+Lb45RdHIRy0PXD+NRVPJlfDFD5FMGSqsiVklibvuwlVHT8J5vHgh/1nEZoI1RlYYLrkjTts2EeQmrpB/sgLyo1vnjFw=="
-    }
+    },
+    "review": {}
   },
   {
     "id": "瓜子",
@@ -149,7 +154,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "比特",
@@ -166,7 +172,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "热播",
@@ -185,7 +192,8 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "uqGL1bNENExT7/hGxpSE5qU="
-    }
+    },
+    "review": {}
   },
   {
     "id": "视界",
@@ -251,7 +259,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "奥特",
@@ -268,7 +277,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "咕咕",
@@ -286,7 +296,8 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "rfOX1voDIQhH8epBwpmIsuS/sSCZxc/l0mxkeoroQVYOelMAvX1kuYptSLB36YxEjVawS9p37Cgo"
-    }
+    },
+    "review": {}
   },
   {
     "id": "Dm84",
@@ -303,7 +314,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_dbzytv",
@@ -414,7 +426,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_zuidazyme",
@@ -468,7 +481,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_wwwmdzyapicom",
@@ -565,8 +579,9 @@
       "admitted": true,
       "checked_at": 1791094209,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay",
-      "ad_scan": "clean"
+      "ad_frame_scan": "",
+      "ad_scan": "pending",
+      "ad_scan_demoted_at": 1791123733
     }
   },
   {
@@ -666,7 +681,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_huyazynet",
@@ -772,7 +788,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_360zycom",
@@ -823,8 +840,9 @@
       "admitted": true,
       "checked_at": 1791094209,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay",
-      "ad_scan": "clean"
+      "ad_frame_scan": "",
+      "ad_scan": "pending",
+      "ad_scan_demoted_at": 1791123733
     }
   },
   {
@@ -843,7 +861,8 @@
       "quickSearch": 1,
       "changeable": 1,
       "ext": "https://www.xb6v.com/"
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_apiwujinapinet",
@@ -897,7 +916,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_jyzyapicom",
@@ -1139,7 +1159,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_bfzyapicom",
@@ -1304,7 +1325,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_cjffzyapicom",
@@ -1459,7 +1481,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_apiguangsuapicom",
@@ -1567,8 +1590,9 @@
       "admitted": true,
       "checked_at": 1791094209,
       "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
-      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay",
-      "ad_scan": "clean"
+      "ad_frame_scan": "",
+      "ad_scan": "pending",
+      "ad_scan_demoted_at": 1791123733
     }
   },
   {
@@ -1612,7 +1636,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "cms_caijidyttzyapicom",
@@ -1716,7 +1741,8 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "虎牙js",
@@ -1739,7 +1765,8 @@
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "斗鱼js",
@@ -1762,7 +1789,8 @@
       "searchable": 1,
       "quickSearch": 0,
       "changeable": 1
-    }
+    },
+    "review": {}
   },
   {
     "id": "dr_兔小贝",
@@ -1783,7 +1811,8 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0
-    }
+    },
+    "review": {}
   },
   {
     "id": "YGP",
@@ -1799,7 +1828,8 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0
-    }
+    },
+    "review": {}
   },
   {
     "id": "MTV1",
@@ -1820,7 +1850,8 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0
-    }
+    },
+    "review": {}
   },
   {
     "id": "看球",
@@ -1839,7 +1870,8 @@
       "style": {
         "type": "list"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "多多",
@@ -1858,7 +1890,8 @@
       "style": {
         "type": "list"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "吃瓜",
@@ -1877,7 +1910,8 @@
       "style": {
         "type": "list"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "alllive",
@@ -1900,7 +1934,8 @@
       "quickSearch": 0,
       "changeable": 0,
       "ext": "uqGL1fpJNAUN8ORQgIPD+b6l+CzC2t8="
-    }
+    },
+    "review": {}
   },
   {
     "id": "MTV",
@@ -1923,7 +1958,8 @@
       "ext": {
         "json": "https://nos.netease.com/ysf/5af5fbe12a88b7c45aa1c21e6551826c.txt"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "有声小说",
@@ -1943,7 +1979,8 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0
-    }
+    },
+    "review": {}
   },
   {
     "id": "Aid",
@@ -1963,7 +2000,8 @@
         "type": "rect",
         "ratio": 3.8
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "Biliych",
@@ -1986,7 +2024,8 @@
       "ext": {
         "json": "https://nos.netease.com/ysf/6496356286589c68f52c2f99c0c674c7.txt"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "少儿教育",
@@ -2009,7 +2048,8 @@
       "ext": {
         "json": "https://nos.netease.com/ysf/89370c8ddf36b5e1beb4d71adb921bda.txt"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "小学课堂",
@@ -2032,7 +2072,8 @@
       "ext": {
         "json": "https://nos.netease.com/ysf/d7a21cf34ede56f5c686ecfba5fc7e3f.txt"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "初中课堂",
@@ -2055,7 +2096,8 @@
       "ext": {
         "json": "https://nos.netease.com/ysf/8f55d520f8d70056695740ef151744a7.txt"
       }
-    }
+    },
+    "review": {}
   },
   {
     "id": "高中教育",
@@ -2078,6 +2120,7 @@
       "ext": {
         "json": "https://nos.netease.com/ysf/c66a4b5356141c49fd45ec51568017b4.txt"
       }
-    }
+    },
+    "review": {}
   }
 ]

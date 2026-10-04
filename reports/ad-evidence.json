@@ -1,0 +1,46 @@
+{
+  "checked_at": 1791123733,
+  "min_frames": 6,
+  "with_evidence": [
+    {
+      "id": "cms_bfzyapicom",
+      "name": "暴風 ⚠勿信广告",
+      "verdict": "clean",
+      "frames": 6
+    },
+    {
+      "id": "cms_cjffzyapicom",
+      "name": "非凡 ⚠勿信广告",
+      "verdict": "clean",
+      "frames": 6
+    },
+    {
+      "id": "cms_caijidyttzyapicom",
+      "name": "天堂 ⚠勿信广告",
+      "verdict": "clean",
+      "frames": 6
+    }
+  ],
+  "demoted": [
+    {
+      "id": "cms_p2100net",
+      "name": "飘零 ⚠勿信广告",
+      "claimed": "clean",
+      "reason": "no frame-scan record exists"
+    },
+    {
+      "id": "cms_360zycom",
+      "name": "360 ⚠勿信广告",
+      "claimed": "clean",
+      "reason": "no frame-scan record exists"
+    },
+    {
+      "id": "cms_cjlziapicom",
+      "name": "量子 ⚠勿信广告",
+      "claimed": "clean",
+      "reason": "no frame-scan record exists"
+    }
+  ],
+  "orphan_evidence": [],
+  "checked_sites": 61
+}

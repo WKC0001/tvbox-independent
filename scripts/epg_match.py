@@ -13,11 +13,18 @@ built to be wrong-proof rather than fast:
   * the registry is only rewritten when its contents actually change, so a throttled run
     cannot become a meaningless release;
   * `--window` walks the registry in slices so a weekly job never bulk-queries the source.
+
+A second kind of source can be registered alongside this one: a whole XMLTV file that is
+downloaded once and indexed by display name (`epg_sources.confirm`). It is only ever asked
+about channels that carry **no** guide id at all, so a working 51zmt mapping is never
+displaced by a later run — and when 51zmt itself goes dark (it does; see epg_sources), the
+XMLTV source is what keeps the guide from collapsing to yesterday's cache.
 """
 import argparse
 import concurrent.futures
 import json
 import re
+import sys
 import threading
 import time
 import unicodedata
@@ -27,6 +34,10 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+sys.path.insert(0, str(ROOT / 'scripts'))
+import epg_sources  # noqa: E402
+from verify_live_identity import same_channel  # noqa: E402
 API = 'http://epg.51zmt.top:8000/api/diyp/'
 SOURCE = 'diyp:51zmt'
 PLACEHOLDER = '暂未提供节目预告信息'
@@ -130,12 +141,65 @@ def confirmed(identifier, payload, name):
     return None
 
 
-def resolve(channel, date, retries):
-    """Probe one channel. Returns the mapping, or a verdict that never overstates what was seen."""
+def xmltv_claims(loaded, channels, log=None):
+    """第二源的认领表：一个上游频道只允许被一个本仓库频道认领。
+
+    不这样约束就会串台。上游的频道名往往很粗，epg.pw 里一条「新疆卫视」能同时
+    匹配上维吾尔语、哈萨克语、少儿三个不同频道，「CCTV中学生」那条更是被 CCTV+1、
+    CCTV+2、CCTV-Health、CCTV新影-中学生 一起认领。让它们各自拿走同一个 id，播放器
+    里就会互相串节目——点开健康频道看到中学生节目，而且没人会报，因为它"有节目单"。
+
+    所以多对一的认领一律作废：宁可这几个频道暂时没有节目单，也不能让它们互串。
+    """
+    claims, contested = {}, []
+    pending = {}
+    for channel in channels:
+        if channel.get('epg_id'):
+            continue
+        for up, index in loaded:
+            hit = epg_sources.confirm(up, index, channel['name'], norm, same_channel)
+            if not hit:
+                continue
+            key = (up['name'], hit['id'])
+            pending.setdefault(key, {'up': up, 'hit': hit, 'ids': []})
+            pending[key]['ids'].append(channel['id'])
+            break
+    for key, entry in pending.items():
+        if len(entry['ids']) == 1:
+            claims[entry['ids'][0]] = entry
+        else:
+            contested.append({'upstream': key[0], 'upstream_id': key[1],
+                              'served_name': entry['hit']['served_name'],
+                              'claimed_by': entry['ids']})
+    if log and contested:
+        print('%d upstream channels were claimed by more than one local channel; ignored'
+              % len(contested), file=log)
+    return claims, contested
+
+
+def resolve(channel, date, retries, xmltv=None, claims=None):
+    """Probe one channel. Returns the mapping, or a verdict that never overstates what was seen.
+
+    `xmltv` is the optional second source: a list of (upstream, index) pairs already
+    downloaded. `claims` is the one-to-one table built from it by `xmltv_claims`. Both are
+    consulted only when this channel has no guide id of its own, so the second source fills
+    gaps instead of competing with a mapping the diyp source already proved.
+    """
     name = channel['name']
     guesses = candidates(name)
     attempts = []
     failed = 0
+
+    if claims and not channel.get('epg_id'):
+        entry = claims.get(channel['id'])
+        if entry:
+            up, hit = entry['up'], entry['hit']
+            attempts.append({'id': hit['id'], 'result': 'served=' + hit['served_name']})
+            return {'channel_id': channel['id'], 'name': name, 'matched': hit,
+                    'attempts': attempts, 'outcome': 'confirmed',
+                    'source': 'xmltv:' + up['name']}
+        for up, _index in xmltv or ():
+            attempts.append({'id': up['name'], 'result': 'no unique match in ' + up['name']})
 
     def ask(identifier, label=''):
         """Return the mapping, or 'no' / 'unknown'."""
@@ -175,6 +239,46 @@ def resolve(channel, date, retries):
     return {'channel_id': channel['id'], 'name': name, 'matched': None, 'attempts': attempts, 'outcome': outcome}
 
 
+def dedupe_registry(channels, log=None):
+    """一个节目单 id 只能归一个频道；抢到同一个 id 的，只留名字真正对得上的那个。
+
+    上游的频道名往往很粗：epg.pw 里一个「新疆卫视」底下就挂着维吾尔语、哈萨克语、
+    少儿三个不同频道，「CCTV中学生」那一条甚至被 CCTV+1 / CCTV+2 / CCTV-Health /
+    CCTV新影-中学生 一起认领。弱匹配放行这些，结果就是节目单串台——点开健康频道
+    看到的是中学生节目，这比"没有节目单"更糟，而且是安静地错，没人会报。
+
+    裁决办法：名字与上游返回的名字完全对得上的那个留下；对不上（或者有两个都
+    对得上）就全部作废，宁缺勿错。作废记进 `epg_conflicts`，不静默丢掉。
+    """
+    groups = {}
+    for channel in channels:
+        gid = channel.get('epg_id')
+        if gid:
+            groups.setdefault((channel.get('epg_source', ''), gid), []).append(channel)
+    conflicts = []
+    for (source, gid), group in groups.items():
+        if len(group) == 1:
+            continue
+        exact = [c for c in group
+                 if norm(c['name']) and norm(c.get('epg_served_name', ''))
+                 and norm(c['name']) == norm(c['epg_served_name'])]
+        winner = exact[0] if len(exact) == 1 else None
+        for channel in group:
+            if channel is winner:
+                continue
+            conflicts.append({'name': channel['name'], 'epg_id': gid, 'source': source,
+                              'served_name': channel.get('epg_served_name', ''),
+                              'kept_by': winner['name'] if winner else ''})
+            channel['epg_id'] = ''
+            channel['epg_source'] = ''
+            channel.pop('epg_checked_at', None)
+            channel.pop('epg_served_name', None)
+    if log and conflicts:
+        print('dropped %d channels that shared a guide id with another channel' % len(conflicts),
+              file=log)
+    return conflicts
+
+
 def targets_for(channels, args):
     """Walk the registry in rotating slices so no single run bulk-queries the source."""
     ordered = list(channels)
@@ -210,12 +314,36 @@ def main():
     targets = targets_for(channels, args)
     if args.limit:
         targets = targets[:args.limit]
+
+    # The XMLTV sources are whole-file downloads, so fetch each one once and index it here
+    # rather than per channel. A source that cannot be fetched is skipped, not fatal: the
+    # diyp probe below still runs, and "could not reach it" is never recorded as "no such
+    # channel" — that distinction is the whole point of the outcome vocabulary below.
+    policy = json.loads((ROOT / 'policy/operations.json').read_text())
+    xmltv = []
+    for spec in policy.get('epg_sources', []):
+        kind, _, who = str(spec).partition(':')
+        if kind != 'xmltv':
+            continue
+        up = next((u for u in epg_sources.upstreams(policy) if u['name'] == who), None)
+        if up is None:
+            continue
+        try:
+            text, origin = epg_sources.load(up, log=sys.stderr)
+            xmltv.append((up, epg_sources.index(text)))
+            print(f'xmltv source {who}: {origin}, {len(epg_sources.index(text)["names"])} channels')
+        except Exception as error:
+            print(f'xmltv source {who} skipped: {error}', file=sys.stderr)
+
     print(f'inspecting {len(targets)} of {len(channels)} channels against {API} (date {args.date})')
+
+    # 认领表要在并发之前算好：一个上游频道归谁是全局判断，不能在各个线程里各判各的。
+    claims, contested = xmltv_claims(xmltv, channels, log=sys.stderr)
 
     started = int(time.time())
     results = []
     with concurrent.futures.ThreadPoolExecutor(args.workers) as pool:
-        futures = [pool.submit(resolve, c, args.date, args.retries) for c in targets]
+        futures = [pool.submit(resolve, c, args.date, args.retries, xmltv, claims) for c in targets]
         for index, future in enumerate(concurrent.futures.as_completed(futures), 1):
             results.append(future.result())
             if index % 25 == 0 or index == len(futures):
@@ -231,8 +359,11 @@ def main():
         counts[result['outcome']] += 1
         if result['outcome'] == 'confirmed':
             channel['epg_id'] = result['matched']['id']
-            channel['epg_source'] = SOURCE
+            channel['epg_source'] = result.get('source', SOURCE)
             channel['epg_checked_at'] = started
+            # 记下上游自己叫这个频道什么。日后若干个频道抢到同一个 id 时，只有这个
+            # 名字能证明"这条确实是它的"，没有它就只能作废。
+            channel['epg_served_name'] = result['matched'].get('served_name', '')
         elif result['outcome'] == 'retracted':
             channel['epg_id'] = ''
             channel['epg_source'] = ''
@@ -240,6 +371,9 @@ def main():
         # Every other verdict keeps whatever is already stored. An unreachable or contradictory
         # source is not evidence that a working mapping is wrong, and the build's freshness
         # window is what eventually retires something the source no longer serves.
+
+    # 清算放在写回之前：一个上游 id 被好几个频道认领时只留一个，其余作废。
+    conflicts = dedupe_registry(channels, log=sys.stderr)
 
     updated = json.dumps(channels, ensure_ascii=False, indent=2) + '\n'
     if updated == original:
@@ -254,6 +388,8 @@ def main():
         'inspected': len(results),
         **counts,
         'channels_with_epg_id': sum(1 for c in channels if c.get('epg_id')),
+        'shared_id_dropped': conflicts,
+        'contested_upstream_channels': contested,
         'results': sorted(results, key=lambda r: (r['outcome'] != 'confirmed', r['name'])),
     }
     (ROOT / 'reports/epg-match.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n')

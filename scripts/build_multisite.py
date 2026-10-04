@@ -196,12 +196,24 @@ def main():
         measured=home_latency.get(x['ext']['id'],{}).get('home_ms')
         if isinstance(measured,int):x['ext']['home_ms']=measured
     def home_rank(x):
+        """首页顺序：先按广告结论分档，再按实测延迟。
+
+        广告必须排在延迟前面。只按延迟排的话，一个没扫过的源只要接口答得快就会
+        顶到第一位，而它排第一意味着用户点开第一集就先吃一遍它的贴片广告——速度
+        是能马上感知的，广告不是，所以这个顺序不能交给速度去决定。
+
+        三态在这里才真正起作用：clean 排最前，pending（没扫过）居中，flagged 最后。
+        以前三家源顶着没有证据的 clean，这个排序等于把它们的顺序让一个空口承诺
+        决定；现在结论退回 pending，它们就老实排在扫过的后面了。
+        """
         measured=home_latency.get(x['ext']['id'],{}).get('home_ms')
-        return (0,measured) if isinstance(measured,int) else (1,0)
-    # sorted 是稳定的：没测到的排在测到的后面，且彼此保持原来的顺序。
+        tier={'clean':0,'pending':1,'flagged':2}.get(x['ext'].get('ad_scan','pending'),1)
+        return (tier,0,measured) if isinstance(measured,int) else (tier,1,0)
+    # sorted 是稳定的：同档之内，没测到延迟的排在测到的后面，且彼此保持原来的顺序。
     ordered_providers=sorted(cms_providers,key=home_rank)
     if [x['ext']['id'] for x in ordered_providers]!=[x['ext']['id'] for x in cms_providers]:
-        print('HOME ORDER',' > '.join('%s(%sms)'%(x['ext']['id'],home_latency.get(x['ext']['id'],{}).get('home_ms','-'))
+        print('HOME ORDER',' > '.join('%s[%s](%sms)'%(x['ext']['id'],x['ext'].get('ad_scan','pending'),
+                                      home_latency.get(x['ext']['id'],{}).get('home_ms','-'))
                                       for x in ordered_providers))
     home={'key':'点我切源','name':'WKC┃片单 '+NOTICE,'type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,
           'ext':{'providers':[x['ext'] for x in ordered_providers]}}

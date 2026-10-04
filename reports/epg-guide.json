@@ -1,12 +1,55 @@
 {
-  "checked_at": 1791107563,
-  "upstream": "http://epg.51zmt.top:8000/cc.xml",
-  "source": "upstream",
-  "upstream_channels": 101,
-  "xmltv_channels": 63,
-  "diyp_channels": 62,
-  "verified_channels": 136,
-  "programmes": 3708,
-  "bytes": 41424,
-  "verified_without_guide": []
+  "checked_at": 1791124146,
+  "upstreams": [
+    "51zmt",
+    "epg.pw"
+  ],
+  "source": [
+    "51zmt:cache",
+    "epg.pw:upstream"
+  ],
+  "upstream_channels": 755,
+  "xmltv_channels": 130,
+  "diyp_channels": 2,
+  "verified_channels": 163,
+  "programmes": 7024,
+  "bytes": 88879,
+  "days": [
+    "20261004",
+    "20261005",
+    "20261006"
+  ],
+  "verified_without_guide": [
+    "TVBS新闻台",
+    "Trace Sports",
+    "ViuTV",
+    "三立戏剧",
+    "东森超视",
+    "人间卫视",
+    "八大戏剧台",
+    "台视新闻",
+    "哈尔滨影视",
+    "哈尔滨新闻综合",
+    "哈尔滨生活",
+    "大立电视台",
+    "天映经典",
+    "广东体育",
+    "广东新闻",
+    "广东民生",
+    "新视觉",
+    "明珠台",
+    "欢笑剧场",
+    "武汉文体",
+    "河南都市",
+    "海南新闻",
+    "福州生活",
+    "福建旅游",
+    "纬来精采",
+    "辽宁公共",
+    "辽宁北方",
+    "辽宁影视剧",
+    "辽宁生活",
+    "辽宁经济",
+    "辽宁都市"
+  ]
 }

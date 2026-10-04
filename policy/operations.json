@@ -7,12 +7,29 @@
   "provider_evidence_max_age_days": 7,
   "new_provider_requires_review": true,
   "epg_sources": [
-    "diyp:51zmt"
+    "diyp:51zmt",
+    "xmltv:epg.pw"
   ],
   "epg_evidence_max_age_days": 35,
   "epg_template": "guide.xml.gz",
   "epg_guide_mode": "xmltv",
+  "epg_days": 3,
   "epg_guide_upstream": "http://epg.51zmt.top:8000/cc.xml",
+  "epg_guide_upstreams": [
+    {
+      "name": "51zmt",
+      "url": "http://epg.51zmt.top:8000/cc.xml",
+      "tz": "+0800"
+    },
+    {
+      "name": "epg.pw",
+      "url": "https://epg.pw/xmltv/epg_CN.xml",
+      "tz": "+0800",
+      "declared_tz": "+0000",
+      "day_api": "https://epg.pw/api/epg.xml?channel_id={id}&date={date}"
+    }
+  ],
+  "epg_day_topup_requests": 400,
   "epg_diyp_upstream": "http://epg.51zmt.top:8000/api/diyp/?ch={id}&date={date}",
   "route_host_blocklist": [
     "38.75.136.137:98",
@@ -26,5 +43,7 @@
     "卫视",
     "体育"
   ],
-  "unverified_line_tag": "⚠未核验"
+  "unverified_line_tag": "⚠未核验",
+  "ad_scan_min_frames": 6,
+  "ad_scan_target_frames": 18
 }

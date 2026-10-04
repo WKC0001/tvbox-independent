@@ -62,6 +62,11 @@ jobs:
         # cannot answer, so an outage never erases verified data; best-effort keeps health landing.
         continue-on-error: true
         run: python scripts/epg_match.py --workers 3 --window 160
+      - name: Hold every ad verdict to its frame-scan evidence
+        # An `ad_scan` of clean moves a provider ahead of the ones nobody has scanned, so it is a
+        # claim about the picture the user is about to see. Three shipped providers were carrying
+        # "clean" with no scan record anywhere; this demotes any such verdict back to pending.
+        run: python scripts/verify_ad_evidence.py
       - name: Verify every live route answers with the channel it claims
         if: steps.mode.outputs.value == 'full'
         # A source can answer a request for one channel with an advertisement loop, and that stream
@@ -78,7 +83,8 @@ jobs:
           git config user.email actions@users.noreply.github.com
           git add state/provider-audit.json state/multisite-health.json reports/audit-github.json \
                   registry/channels.json reports/epg-match.json state/epg-cursor.json \
-                  registry/routes.json reports/live-identity.json state/home-latency.json
+                  registry/routes.json reports/live-identity.json state/home-latency.json \
+                  registry/sites.json reports/ad-evidence.json
           # Re-confirming a mapping rewrites the time it was confirmed. That renews real evidence and
           # is worth committing, but it ships a byte-identical release, so only a change in what users
           # receive (or in health evidence) may open a new candidate.

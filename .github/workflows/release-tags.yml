@@ -43,3 +43,28 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           RELEASE_VERSION: ${{ inputs.version }}
         run: npm dist-tag add "wkc0001-tvbox-independent@$RELEASE_VERSION" latest
+      - name: Refresh the CDN alias and report what it resolves to
+        continue-on-error: true
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          # jsDelivr caches the npm version alias, so @latest can keep serving the previous
+          # version for a while after the dist-tag moves —实测移动后数分钟内仍返回上一版。
+          # 主动 purge 能缩短它，但不能假定它立刻生效，所以这里如实报告解析结果，
+          # 由用固定版本地址兜底，而不是让使用者以为已经拿到新版。
+          curl --silent --fail --max-time 30 \
+            "https://purge.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/dc.json" > /dev/null || true
+          SEEN=unknown
+          for attempt in 1 2 3 4 5 6; do
+            SEEN="$(curl --silent --max-time 30 \
+              https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@latest/manifest.json \
+              | python -c "import json,sys;print(json.load(sys.stdin).get('version','unknown'))" \
+              2>/dev/null || echo unknown)"
+            echo "attempt $attempt: @latest resolves to $SEEN (wanted $RELEASE_VERSION)"
+            [ "$SEEN" = "$RELEASE_VERSION" ] && break
+            sleep 30
+          done
+          if [ "$SEEN" != "$RELEASE_VERSION" ]; then
+            echo "::warning::@latest still resolves to $SEEN. The fixed URL @$RELEASE_VERSION is already live and can be used until the alias catches up."
+          fi

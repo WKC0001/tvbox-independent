@@ -1,45 +1,45 @@
 {
-  "checked_at": 1791132611,
+  "checked_at": 1791148152,
   "samples_per_provider": 2,
   "providers": {
     "cms_dbzytv": {
       "id": "cms_dbzytv",
       "name": "豆瓣 | 采集",
       "samples": 2,
-      "home_ms": 636,
+      "home_ms": 975,
       "readings": [
-        1870,
-        636
+        1076,
+        975
       ]
     },
     "cms_apiniuniuzyme": {
       "id": "cms_apiniuniuzyme",
       "name": "牛牛 | 采集",
       "samples": 2,
-      "home_ms": 220,
+      "home_ms": 237,
       "readings": [
-        239,
-        220
+        348,
+        237
       ]
     },
     "cms_zuidazyme": {
       "id": "cms_zuidazyme",
       "name": "最大 | 采集",
       "samples": 2,
-      "home_ms": 219,
+      "home_ms": 238,
       "readings": [
-        364,
-        219
+        413,
+        238
       ]
     },
     "cms_wwwmdzyapicom": {
       "id": "cms_wwwmdzyapicom",
       "name": "魔都 | 采集",
       "samples": 2,
-      "home_ms": 438,
+      "home_ms": 355,
       "readings": [
-        438,
-        464
+        355,
+        434
       ]
     },
     "cms_p2100net": {
@@ -52,200 +52,200 @@
       "id": "cms_haohuazycom",
       "name": "豪华 | 采集",
       "samples": 2,
-      "home_ms": 911,
+      "home_ms": 955,
       "readings": [
-        911,
-        925
+        996,
+        955
       ]
     },
     "cms_huyazynet": {
       "id": "cms_huyazynet",
       "name": "虎牙 | 采集",
       "samples": 2,
-      "home_ms": 226,
+      "home_ms": 341,
       "readings": [
-        331,
-        226
+        820,
+        341
       ]
     },
     "cms_cjyayazynet": {
       "id": "cms_cjyayazynet",
       "name": "鸭鸭 | 采集",
       "samples": 2,
-      "home_ms": 303,
+      "home_ms": 314,
       "readings": [
-        303,
-        313
+        423,
+        314
       ]
     },
     "cms_360zycom": {
       "id": "cms_360zycom",
       "name": "360 ⚠勿信广告",
       "samples": 2,
-      "home_ms": 722,
+      "home_ms": 557,
       "readings": [
-        1009,
-        722
+        1321,
+        557
       ]
     },
     "cms_apiwujinapinet": {
       "id": "cms_apiwujinapinet",
       "name": "无尽 | 采集",
       "samples": 2,
-      "home_ms": 404,
+      "home_ms": 256,
       "readings": [
-        404,
-        450
+        363,
+        256
       ]
     },
     "cms_jyzyapicom": {
       "id": "cms_jyzyapicom",
       "name": "金鹰 | 采集",
       "samples": 2,
-      "home_ms": 30,
+      "home_ms": 59,
       "readings": [
-        265,
-        30
+        712,
+        59
       ]
     },
     "cms_suoniapicom": {
       "id": "cms_suoniapicom",
       "name": "索尼 | 采集 ",
       "samples": 2,
-      "home_ms": 45,
+      "home_ms": 198,
       "readings": [
-        446,
-        45
+        325,
+        198
       ]
     },
     "cms_apixinlangapicom": {
       "id": "cms_apixinlangapicom",
       "name": "新浪资源(切)",
       "samples": 2,
-      "home_ms": 150,
+      "home_ms": 202,
       "readings": [
-        597,
-        150
+        649,
+        202
       ]
     },
     "cms_tyyszycom": {
       "id": "cms_tyyszycom",
       "name": "影视 | 天涯",
       "samples": 2,
-      "home_ms": 289,
+      "home_ms": 218,
       "readings": [
-        289,
-        298
+        333,
+        218
       ]
     },
     "cms_1542191172329981": {
       "id": "cms_1542191172329981",
       "name": "影视 | 建安",
       "samples": 2,
-      "home_ms": 1530,
+      "home_ms": 1187,
       "readings": [
-        1613,
-        1530
+        1369,
+        1187
       ]
     },
     "cms_bfzyapicom": {
       "id": "cms_bfzyapicom",
       "name": "暴風 ⚠勿信广告",
       "samples": 2,
-      "home_ms": 40,
+      "home_ms": 61,
       "readings": [
-        269,
-        40
+        556,
+        61
       ]
     },
     "cms_wwwhongniuzy2com": {
       "id": "cms_wwwhongniuzy2com",
       "name": "红牛资源(切)",
       "samples": 2,
-      "home_ms": 210,
+      "home_ms": 346,
       "readings": [
-        332,
-        210
+        396,
+        346
       ]
     },
     "cms_sdzyapicom": {
       "id": "cms_sdzyapicom",
       "name": "闪电资源(切)",
       "samples": 2,
-      "home_ms": 302,
+      "home_ms": 335,
       "readings": [
-        302,
-        391
+        335,
+        421
       ]
     },
     "cms_cjffzyapicom": {
       "id": "cms_cjffzyapicom",
       "name": "非凡 ⚠勿信广告",
       "samples": 2,
-      "home_ms": 893,
+      "home_ms": 1238,
       "readings": [
-        1393,
-        893
+        2203,
+        1238
       ]
     },
     "cms_jszyapicom": {
       "id": "cms_jszyapicom",
       "name": "影视 | 极速[直连]",
       "samples": 2,
-      "home_ms": 40,
+      "home_ms": 67,
       "readings": [
-        379,
-        40
+        272,
+        67
       ]
     },
     "cms_apiapibdzycom": {
       "id": "cms_apiapibdzycom",
       "name": "百度",
       "samples": 2,
-      "home_ms": 213,
+      "home_ms": 321,
       "readings": [
-        315,
-        213
+        407,
+        321
       ]
     },
     "cms_apiguangsuapicom": {
       "id": "cms_apiguangsuapicom",
       "name": "光速资源(切)",
       "samples": 2,
-      "home_ms": 29,
+      "home_ms": 71,
       "readings": [
-        347,
-        29
+        364,
+        71
       ]
     },
     "cms_cjlziapicom": {
       "id": "cms_cjlziapicom",
       "name": "量子 ⚠勿信广告",
       "samples": 2,
-      "home_ms": 142,
+      "home_ms": 241,
       "readings": [
-        142,
-        360
+        486,
+        241
       ]
     },
     "cms_caijidyttzyapicom": {
       "id": "cms_caijidyttzyapicom",
       "name": "天堂 ⚠勿信广告",
       "samples": 2,
-      "home_ms": 512,
+      "home_ms": 485,
       "readings": [
-        542,
-        512
+        573,
+        485
       ]
     },
     "cms_mtzyme": {
       "id": "cms_mtzyme",
       "name": "茅台 | 采集",
       "samples": 2,
-      "home_ms": 2647,
+      "home_ms": 1926,
       "readings": [
-        3890,
-        2647
+        2480,
+        1926
       ]
     }
   }

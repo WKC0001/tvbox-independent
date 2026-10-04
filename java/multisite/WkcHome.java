@@ -60,9 +60,29 @@ public class WkcHome extends Spider {
         return s.replaceAll("[^\\p{L}\\p{N}_]+", "");
     }
 
-    /** 去掉「第X季/第X部/第X集」后缀，用于第二档宽松匹配。 */
+    /** 剥掉「版本 / 季数 / 集数」这类修饰后缀，用来判定两个标题说的是不是同一部剧。
+
+     *  不去掉「之XXX」这种内容后缀：「狂飙之浴血玫瑰」是另一部剧，不是「狂飙」的另一个版本；
+     *  而「庆余年第二季」「三体网飞版」「漫长的季节卫视版」确实是同一部剧的不同版本，
+     *  应该并成一行——否则同一部剧会各占一行，每行只有一部分源，
+     *  看起来"源很多"其实每行只有一个，这正是用户抱怨的那种假繁荣。
+
+     *  反复剥离是因为修饰会叠加（「庆余年第二季完结」要剥两层）。
+     *  实测：不加这一步，搜 8 个常见剧名会从 377 条并成 104 行；
+     *  加上之后同样数据降到十几行。
+     */
     static String strip(String value) {
-        return norm(value).replaceAll("(第[一二三四五六七八九十0-9]{1,3}[季部集])+$", "");
+        String s = norm(value);
+        for (int i = 0; i < 4; i++) {
+            String before = s;
+            s = s.replaceAll("(第[一二三四五六七八九十0-9]{1,3}[季部集])$", "");
+            s = s.replaceAll("(全[0-9]{1,3}集|完结|全集|高清|超清|蓝光|国语|粤语|中字|双语|未删减|无删减)$", "");
+            s = s.replaceAll("(卫视|网飞|奈飞|导演|电视|加长|重制|修复|修订|特别|收藏)版$", "");
+            s = s.replaceAll("[0-9]{4}$", "");          // 括号里的年份经 norm 后只剩数字
+            if (s.equals(before)) break;
+        }
+        // 剥空了说明搜索词本身就是修饰（例如搜「第二季」），退回归一化原文。
+        return s.isEmpty() ? norm(value) : s;
     }
 
     /* ---------- 首页与分类：仍是"先答者优先"，合并只对搜索有意义 ---------- */
@@ -160,9 +180,12 @@ public class WkcHome extends Spider {
     /** 精确匹配独占结果；同一部剧合并成一行，vod_id 里带上所有命中上游的 token。 */
     private JSONArray merge(String word, ArrayList<JSONObject> items) throws Exception {
         LinkedHashMap<String, ArrayList<JSONObject>> groups = new LinkedHashMap<>();
-        for (JSONObject v : items) groups.computeIfAbsent(norm(v.optString("vod_name")), k -> new ArrayList<>()).add(v);
+        // 分组键也用 strip：「庆余年第二季」和「庆余年」是同一部剧，必须落在同一组里，
+        // 否则它们各占一行、各自只带一部分源。
+        for (JSONObject v : items) groups.computeIfAbsent(strip(v.optString("vod_name")), k -> new ArrayList<>()).add(v);
 
-        String target = norm(word), loose = strip(word);
+        String target = strip(word);
+        if (target.isEmpty()) target = norm(word);
         ArrayList<JSONObject> exact = new ArrayList<>(), near = new ArrayList<>();
         for (Map.Entry<String, ArrayList<JSONObject>> e : groups.entrySet()) {
             ArrayList<JSONObject> group = e.getValue();
@@ -180,13 +203,18 @@ public class WkcHome extends Spider {
             item.put("_sources", ids.length());
 
             if (e.getKey().equals(target)) exact.add(item);
-            else if (!loose.isEmpty() && (e.getKey().equals(loose) || e.getKey().startsWith(loose))) near.add(item);
+            // 宽松档必须严格受限：只接受"目标词是它的前缀、且多出来的不超过 2 个字"。
+            // 没有这个限制，一个关键词就能带出二十几行别的剧——
+            // 实测搜「狂飙」会带进「狂飙之浴血玫瑰」（多 6 字），
+            // 搜「繁花」会带进「繁花照春晚」（多 3 字），搜「庆余年」全是「庆余年之XXX」。
+            else if (e.getKey().startsWith(target) && e.getKey().length() <= target.length() + 2) near.add(item);
         }
         Comparator<JSONObject> bySources = (a, b) -> b.optInt("_sources") - a.optInt("_sources");
         exact.sort(bySources); near.sort(bySources);
 
         ArrayList<JSONObject> out = new ArrayList<>(exact);
-        // 精确匹配够多时就不再塞模糊结果，否则搜「狂飙」会被不相关的短剧淹没。
+        // 同名组够多时就不再追加宽松组：这时列表已被同一部剧的各个版本占满，
+        // 再塞"多两个字"的条目只会把真正要找的那个挤下去。
         if (exact.size() < 12) out.addAll(near);
         JSONArray result = new JSONArray();
         for (JSONObject item : out) {

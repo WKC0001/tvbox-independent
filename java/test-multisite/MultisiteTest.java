@@ -52,6 +52,17 @@ public final class MultisiteTest {
             return new JSONObject().put("list",list).put("page",1).put("pagecount",1).put("limit",20).put("total",2).toString();
         }
     }
+    /** 一次返回任意一批标题，用来验证"哪些该合、哪些不该合"。 */
+    static final class TitlesFixture extends WkcCms {
+        private final String[] titles;
+        TitlesFixture(String key,String... titles){this.provider=key;this.titles=titles;}
+        public String searchContent(String w,boolean q,String page)throws Exception{
+            JSONArray list=new JSONArray();
+            for(String t:titles)list.put(new JSONObject().put("vod_name",t).put("vod_remarks","更新至30集")
+                .put("type_id","6").put("type_name","动作片").put("vod_id",WkcNet.pack(token(t))));
+            return new JSONObject().put("list",list).put("page",1).put("pagecount",1).put("limit",20).put("total",titles.length).toString();
+        }
+    }
     public static void main(String[] args)throws Exception{
         // 软色情分类名必须同时被 DENY 命中：只靠 GENRES 白名单挡是不够的，
         // 因为条目的 type_name 可能是白名单里的泛化名（如 `短剧`），真正说明问题的是 vod_class。
@@ -106,6 +117,25 @@ public final class MultisiteTest {
         JSONObject mergedToken=WkcNet.unpack(row.getString("vod_id"));
         check(mergedToken.getInt("home")==1&&mergedToken.getJSONArray("i").length()==2,"Merged id carries every provider token");
         check(!hit.getJSONArray("list").toString().contains("无关条目"),"Unrelated titles are not padded into an exact hit");
+        // 同一部剧的不同版本后缀必须并成一行：实测上游对同一部剧的标题常年不一致，
+        // 按完整标题分组会让它各占一行、每行只带一部分源，看起来源多其实每行只有一个。
+        WkcHome versions=new WkcHome();
+        versions.providers.add(new TitlesFixture("cms_a","繁华第二季"));
+        versions.providers.add(new TitlesFixture("cms_b","繁华"));
+        JSONObject seasonHit=new JSONObject(versions.searchContent("繁华",false));
+        check(seasonHit.getJSONArray("list").length()==1,"A season suffix must not split one show into two rows");
+        check(seasonHit.getJSONArray("list").getJSONObject(0).getString("vod_remarks").contains("[2源]"),
+              "The base title and its season merge into one row carrying both providers");
+        // 反过来，"多几个字"不等于"同一部剧"。宽松档若不加长度约束，
+        // 搜「繁华」会带出「繁华照春晚」，搜「狂飙」会带出「狂飙之浴血玫瑰」。
+        WkcHome noisy=new WkcHome();
+        noisy.providers.add(new TitlesFixture("cms_a","繁华","繁华照春晚","繁华之乱世情缘"));
+        JSONObject noisyHit=new JSONObject(noisy.searchContent("繁华",false));
+        check(noisyHit.getJSONArray("list").length()==1,"A plain title returns only the show itself");
+        check(!noisyHit.getJSONArray("list").toString().contains("繁华照春晚"),
+              "A title sharing three extra characters is a different show, not a version");
+        check(!noisyHit.getJSONArray("list").toString().contains("繁华之乱世情缘"),
+              "A derivative title is a different show, not another version of this one");
         WkcNative nativeSite=new WkcNative();nativeSite.init(null,"{\"id\":\"test-native\",\"adapter\":\"JpysGuard\"}");
         check(new JSONObject(nativeSite.searchContent("正常影片",false)).getJSONArray("list").length()==1,"Native legacy two-argument search");
         check(new JSONObject(nativeSite.searchContent("正常影片",false,"1")).getJSONArray("list").length()==1,"Native page one uses supported overload");

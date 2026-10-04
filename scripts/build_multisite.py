@@ -16,6 +16,10 @@ from checker.content import BLOCK,GENRES
 from checker.television import playlist,epg_identity
 from checker.health import effective
 
+# 聚合里大量上游会在播放中插博彩广告，而播放线路的对外显示名不能改
+# （客户端会用当前详情重新核对上游原始 flag），所以提示落在站点名和线路标签上。
+NOTICE='⚠勿信广告'
+
 
 def read(name):return json.loads((ROOT/name).read_text())
 def dump(path,obj):path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(obj,ensure_ascii=False,indent=2)+'\n')
@@ -93,9 +97,29 @@ final class WkcPolicy {
                 result.writestr(info,(temp/'classes.dex').read_bytes() if name=='classes.dex' else original.read(name))
 
 
+def with_measurements(routes):
+    """把实测下载速度比挂到线路上，供 playlist() 排序用。
+
+    单独存 state/live-measured.json、而不是写回 registry/routes.json：
+    注册表是可重建的（scripts/migrate_registry.py 会整体重写它），附加字段会在重跑时被冲掉，
+    而实测数据是花了几十分钟真测出来的，不该跟着一起丢。
+    """
+    path=ROOT/'state/live-measured.json'
+    if not path.exists():return routes
+    data=json.loads(path.read_text()).get('routes',{})
+    attached=0
+    for r in routes:
+        m=data.get(r['id'])
+        if m:r['measured']=m;attached+=1
+    print('MEASURED',attached,'of',len(routes),'routes carry a throughput measurement')
+    return routes
+
+
 def provider_settings(site,audit):
+    # label 会进插件，成为播放线路的显示名（`WkcCms.display()`）。
+    # 线路是用户唯一能看到"这条是谁"的位置，所以来源名和广告提示都必须在这里带上。
     return {'id':site['id'],'api':site['config']['api'],'media_hosts':audit['media_hosts'],
-            'reviewed_at':audit['checked_at'],'policy':'normal-film-v1'}
+            'label':site['config']['name'],'reviewed_at':audit['checked_at'],'policy':'normal-film-v1'}
 
 
 def select(sites,audits,now,health=None,policy=None,native_audit=None):
@@ -146,7 +170,7 @@ def main():
     out=ROOT/'output';out.mkdir(exist_ok=True)
     deps=dependencies();plugin(out/'cfg.jpg',sites,deps)
     base='https://cdn.jsdelivr.net/npm/'+package['name']+'@'+package['version']+'/'
-    home={'key':'点我切源','name':'WKC┃片单','type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,
+    home={'key':'点我切源','name':'WKC┃片单 '+NOTICE,'type':3,'api':'csp_WkcHome','searchable':1,'quickSearch':1,'changeable':1,
           'ext':{'providers':[x['ext'] for x in cms_providers]}}
     # The player substitutes {id} with each channel's tvg-id and {date} with the day being viewed.
     guide=policy.get('epg_template') or ''
@@ -159,7 +183,7 @@ def main():
             'lives':[{'name':'WKC电视直播','type':0,'url':base+'live.m3u','epg':guide,
                       'playerType':2,'timeout':15}]}
     channels=read('registry/channels.json')
-    routes=read('registry/routes.json')
+    routes=with_measurements(read('registry/routes.json'))
     text,gaps=playlist(channels,routes,health,
                        network=policy['preferred_live_network'],max_routes=policy['max_live_routes'],epg=epg)
     (out/'live.m3u').write_text(text);dump(out/'api.json',config)

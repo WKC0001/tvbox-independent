@@ -62,7 +62,7 @@
   {
     "id": "cms_dbzytv",
     "name": "豆瓣 | 采集",
-    "reason": "initial admission review pending"
+    "reason": "quarantined"
   },
   {
     "id": "cms_apiniuniuzyme",
@@ -80,19 +80,9 @@
     "reason": "quarantined"
   },
   {
-    "id": "cms_p2100net",
-    "name": "飘零 | 采集",
-    "reason": "initial admission review pending"
-  },
-  {
     "id": "cms_haohuazycom",
     "name": "豪华 | 采集",
     "reason": "quarantined"
-  },
-  {
-    "id": "cms_iqiyizyapicom",
-    "name": "爱奇艺 | 采集",
-    "reason": "initial admission review pending"
   },
   {
     "id": "cms_huyazynet",
@@ -102,11 +92,6 @@
   {
     "id": "cms_cjyayazynet",
     "name": "鸭鸭 | 采集",
-    "reason": "initial admission review pending"
-  },
-  {
-    "id": "cms_360zycom",
-    "name": "360 | 采集",
     "reason": "initial admission review pending"
   },
   {
@@ -122,7 +107,7 @@
   {
     "id": "cms_suoniapicom",
     "name": "索尼 | 采集 ",
-    "reason": "initial admission review pending"
+    "reason": "quarantined"
   },
   {
     "id": "cms_apixinlangapicom",
@@ -132,7 +117,7 @@
   {
     "id": "cms_tyyszycom",
     "name": "影视 | 天涯",
-    "reason": "initial admission review pending"
+    "reason": "quarantined"
   },
   {
     "id": "cms_1542191172329981",
@@ -163,16 +148,6 @@
     "id": "cms_apiguangsuapicom",
     "name": "光速资源(切)",
     "reason": "quarantined"
-  },
-  {
-    "id": "cms_cjlziapicom",
-    "name": "量子 | 采集",
-    "reason": "initial admission review pending"
-  },
-  {
-    "id": "cms_wwwlovedannet",
-    "name": "艾旦 | 采集",
-    "reason": "initial admission review pending"
   },
   {
     "id": "cms_mtzyme",

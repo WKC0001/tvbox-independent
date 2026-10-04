@@ -74,7 +74,9 @@ def main():
     if args.mode in ('cms','full'):
         sites=json.loads((ROOT/'registry/sites.json').read_text())
         candidates=[s for s in sites if s['kind']=='cms' and s['status']!='excluded']
-        with cf.ThreadPoolExecutor(min(args.workers,8)) as ex:report['sites']=list(ex.map(cms_audit,candidates))
+        # 采集站对突发并发很敏感：实测 8 线程跑 27 个源时有多个返回限流错误页，
+        # 而单个重试立刻正常。这里压到 4，宁可慢一点也不要把抖动写成 down。
+        with cf.ThreadPoolExecutor(min(args.workers,4)) as ex:report['sites']=list(ex.map(cms_audit,candidates))
         previous=ROOT/'state/provider-audit.json';providers=json.loads(previous.read_text()) if previous.exists() else {}
         for item in report['sites']:
             health.update(state,'site:'+item['id'],args.network,item['accepted'],ts=now,reason=item.get('reason',''))

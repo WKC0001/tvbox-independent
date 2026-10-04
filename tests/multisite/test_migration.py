@@ -37,10 +37,26 @@ class TelevisionTests(unittest.TestCase):
         ledger=json.loads((ROOT/'reports/live-migration.json').read_text())
         self.assertEqual(len(raw),1024);self.assertEqual(len(raw),len(ledger))
         self.assertEqual({x['record'] for x in ledger},set(range(1,1025)))
-    def test_all_18_exclusions_registered(self):
+    # 迁移时登记的 18 项历史排除：磁力/直播聚合/看球回放/儿童教育等，都不是正片点播。
+    # 这里逐项点名而不是断言总数——总数会随策略演进变化，点名才守得住"一个都没回流"。
+    HISTORICAL_EXCLUSIONS = {
+        'Aid', 'Biliych', 'MTV', 'MTV1', 'YGP', 'alllive', 'dr_兔小贝', '初中课堂', '吃瓜',
+        '多多', '小学课堂', '少儿教育', '斗鱼js', '新6V', '有声小说', '看球', '虎牙js', '高中教育',
+    }
+    # 实测到成人分类（爱奇艺采集有里番，艾旦采集有福利视频/网红主播）后追加的合规排除项。
+    ADULT_CATEGORY_EXCLUSIONS = {'cms_iqiyizyapicom', 'cms_wwwlovedannet'}
+
+    def test_exclusion_ledger_only_grows(self):
         sites=json.loads((ROOT/'registry/sites.json').read_text())
-        self.assertEqual(sum(s['status']=='excluded' for s in sites),18)
-        self.assertEqual(sum(s['status']!='excluded' for s in sites),43)
+        excluded=[s['id'] for s in sites if s['status']=='excluded']
+        self.assertEqual(len(excluded),len(set(excluded)),'排除台账里有重复项')
+        self.assertFalse(self.HISTORICAL_EXCLUSIONS-set(excluded),
+                         '历史排除项回流了: '+str(sorted(self.HISTORICAL_EXCLUSIONS-set(excluded))))
+        self.assertFalse(self.ADULT_CATEGORY_EXCLUSIONS-set(excluded),
+                         '成人分类站点没有被排除')
+        # 每个登记项都必须真在注册表里，排除台账不能凭空多出一个 id。
+        self.assertTrue((self.HISTORICAL_EXCLUSIONS|self.ADULT_CATEGORY_EXCLUSIONS)<=set(excluded))
+        self.assertEqual(len(excluded),len(self.HISTORICAL_EXCLUSIONS)+len(self.ADULT_CATEGORY_EXCLUSIONS))
 
 class GuideTests(unittest.TestCase):
     POLICY={'sources':['diyp:51zmt'],'max_age_days':21}

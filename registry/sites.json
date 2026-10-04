@@ -41,7 +41,7 @@
     "reason": "awaiting functional and content checks",
     "config": {
       "key": "文采",
-      "name": "💮文采┃秒播",
+      "name": "💮文采┃秒播 ⚠勿信广告",
       "type": 3,
       "api": "csp_JpysGuard",
       "timeout": 10,
@@ -65,7 +65,7 @@
     "reason": "awaiting functional and content checks",
     "config": {
       "key": "奶酪",
-      "name": "🧀奶酪┃秒播",
+      "name": "🧀奶酪┃秒播 ⚠勿信广告",
       "type": 3,
       "api": "csp_T4Guard",
       "searchable": 1,
@@ -195,7 +195,7 @@
     "reason": "awaiting functional and content checks",
     "config": {
       "key": "视界",
-      "name": "🌸茉莉┃多线",
+      "name": "🌸茉莉┃多线 ⚠勿信广告",
       "type": 3,
       "api": "csp_App99Guard",
       "timeout": 10,
@@ -219,7 +219,7 @@
     "reason": "awaiting functional and content checks",
     "config": {
       "key": "剧圈",
-      "name": "🐻剧圈┃多线",
+      "name": "🐻剧圈┃多线 ⚠勿信广告",
       "type": 3,
       "api": "csp_AppSxGuard",
       "timeout": 10,
@@ -355,6 +355,11 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "quarantined": true,
+      "checked_at": 1791094209,
+      "reason": "OCR frame scan detected embedded gambling sponsorship terms: 主营：,投注,捕鱼,提现秒到,本片由,棋牌,百家乐,赞助发布"
     }
   },
   {
@@ -525,7 +530,7 @@
     "status": "candidate",
     "reason": "awaiting functional and content checks",
     "config": {
-      "name": "飘零 | 采集",
+      "name": "飘零 ⚠勿信广告",
       "type": 1,
       "api": "https://p2100.net/api.php/provide/vod/",
       "key": "cms_p2100net",
@@ -555,6 +560,12 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791094209,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay"
     }
   },
   {
@@ -613,8 +624,8 @@
     "id": "cms_iqiyizyapicom",
     "order": 22,
     "kind": "cms",
-    "status": "candidate",
-    "reason": "awaiting functional and content checks",
+    "status": "excluded",
+    "reason": "adult categories present: 里番",
     "config": {
       "name": "爱奇艺 | 采集",
       "type": 1,
@@ -769,7 +780,7 @@
     "status": "candidate",
     "reason": "awaiting functional and content checks",
     "config": {
-      "name": "360 | 采集",
+      "name": "360 ⚠勿信广告",
       "type": 1,
       "api": "https://360zy.com/api.php/provide/vod/",
       "key": "cms_360zycom",
@@ -806,6 +817,12 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791094209,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay"
     }
   },
   {
@@ -984,6 +1001,11 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "quarantined": true,
+      "checked_at": 1791094209,
+      "reason": "OCR frame scan detected embedded gambling sponsorship terms: 棋牌,赞助播出"
     }
   },
   {
@@ -1082,6 +1104,11 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "quarantined": true,
+      "checked_at": 1791094209,
+      "reason": "OCR frame scan detected embedded gambling sponsorship terms: 主营：,捕鱼,本片由,棋牌,真人娱乐,赞助发布"
     }
   },
   {
@@ -1119,7 +1146,7 @@
     "status": "candidate",
     "reason": "awaiting functional and content checks",
     "config": {
-      "name": "暴風 | 采集",
+      "name": "暴風 ⚠勿信广告",
       "type": 1,
       "api": "https://bfzyapi.com/api.php/provide/vod/",
       "key": "cms_bfzyapicom",
@@ -1281,7 +1308,7 @@
     "status": "candidate",
     "reason": "awaiting functional and content checks",
     "config": {
-      "name": "非凡 | 采集",
+      "name": "非凡 ⚠勿信广告",
       "type": 1,
       "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
       "key": "cms_cjffzyapicom",
@@ -1486,7 +1513,7 @@
     "status": "candidate",
     "reason": "awaiting functional and content checks",
     "config": {
-      "name": "量子 | 采集",
+      "name": "量子 ⚠勿信广告",
       "type": 1,
       "api": "https://cj.lziapi.com/api.php/provide/vod/",
       "key": "cms_cjlziapicom",
@@ -1527,14 +1554,20 @@
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1
+    },
+    "review": {
+      "admitted": true,
+      "checked_at": 1791094209,
+      "scope": "dynamic category, title, search, detail and direct media policy review; not exhaustive visual approval",
+      "ad_frame_scan": "local OCR frame scan over sampled episodes found no gambling sponsorship overlay"
     }
   },
   {
     "id": "cms_wwwlovedannet",
     "order": 41,
     "kind": "cms",
-    "status": "candidate",
-    "reason": "awaiting functional and content checks",
+    "status": "excluded",
+    "reason": "adult categories present: 福利视频,福利图片,网红主播,爱蜜社,头条女神",
     "config": {
       "name": "艾旦 | 采集",
       "type": 1,
@@ -1579,7 +1612,7 @@
     "status": "candidate",
     "reason": "awaiting functional and content checks",
     "config": {
-      "name": "天堂 | 采集",
+      "name": "天堂 ⚠勿信广告",
       "type": 1,
       "api": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
       "key": "cms_caijidyttzyapicom",

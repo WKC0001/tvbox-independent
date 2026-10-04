@@ -1,14 +1,14 @@
 {
   "files": {
-    "api.json": "76fc824221e096c9f9aabdeede6944f8c746fe5c5170ac02be2582357f36e199",
-    "cfg.jpg": "9b02393c065b1e0f641c143b6e256c1d450f8315ef41a70a293f48b79467392f",
-    "live.m3u": "51ce7cd9184e7a757ef096b0cad899be49171cd7ae2812a60335c07a17e64fb2",
+    "api.json": "25bab1026ba2b149e9f88bab018acc4e0cab4ac09096b8a075185aa427f79b82",
+    "cfg.jpg": "c6fa03c30c5824dab5d1e7811baa3ad90fe53cd14d38be4c436ac050dc847087",
+    "live.m3u": "ebd035ea29213622af824e49ee0a7cf406382b09bebf7044c925d72c10d47232",
     "dc.json": "e4a734b9923c87ceafd8ea22515ac6e674da202fbebd5d5cd4bca2bc4862537b"
   },
   "version": "0.5.3",
   "package": "wkc0001-tvbox-independent",
   "format": "multi-site-v1",
-  "site_count": 8,
+  "site_count": 11,
   "channel_count": 467,
   "known_live_gaps": 104,
   "native_bridge_restored": true,

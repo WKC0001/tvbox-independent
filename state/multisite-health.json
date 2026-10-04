@@ -26448,15 +26448,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
    "last_reason": "Search ignored nonmatching keyword",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_360zycom": {
@@ -26484,15 +26485,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_apiapibdzycom": {
@@ -26520,15 +26522,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
+   "last_reason": "Media sample failed: invalid HLS media segment",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_apiguangsuapicom": {
@@ -26568,11 +26571,12 @@
   },
   "local-direct": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 4,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791050563,
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
    "last_reason": "",
    "network": "local-direct",
    "state": "healthy"
@@ -26603,15 +26607,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_apiwujinapinet": {
@@ -26639,15 +26644,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_reason": "HTTP Error 403: Forbidden",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_apixinlangapicom": {
@@ -26687,11 +26693,12 @@
   },
   "local-direct": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 4,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791050563,
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
    "last_reason": "",
    "network": "local-direct",
    "state": "healthy"
@@ -26723,11 +26730,12 @@
   },
   "local-direct": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
-   "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791093642,
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
    "last_reason": "",
    "network": "local-direct",
    "state": "healthy"
@@ -26759,11 +26767,12 @@
   },
   "local-direct": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 4,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791050563,
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
    "last_reason": "",
    "network": "local-direct",
    "state": "healthy"
@@ -26794,15 +26803,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_cjlziapicom": {
@@ -26830,15 +26840,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "Media sample failed: HTTP Error 404: Not Found",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_cjyayazynet": {
@@ -26866,15 +26877,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "Expecting value: line 1 column 1 (char 0)",
+   "last_reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_dbzytv": {
@@ -26902,15 +26914,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
    "last_reason": "CMS response must contain a list",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_haohuazycom": {
@@ -26949,15 +26962,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_huyazynet": {
@@ -26996,15 +27010,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_iqiyizyapicom": {
@@ -27032,15 +27047,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 3,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791093863,
+   "last_fail_ts": 1791093863,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "Media sample failed: <urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_reason": "Media sample failed: invalid HLS media segment",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_jszyapicom": {
@@ -27080,11 +27096,12 @@
   },
   "local-direct": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 4,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791050563,
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
    "last_reason": "",
    "network": "local-direct",
    "state": "healthy"
@@ -27126,15 +27143,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "Media sample failed: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_mtzyme": {
@@ -27162,15 +27180,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_reason": "CMS response must contain a list",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_p2100net": {
@@ -27201,10 +27220,11 @@
    "consecutive_fail": 1,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "HTTP Error 403: Forbidden",
+   "last_ok_ts": 1791093863,
+   "last_reason": "Media sample failed: <urlopen error Tunnel connection failed: 502 Bad Gateway>",
    "network": "local-direct",
    "state": "degraded"
   }
@@ -27234,15 +27254,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_suoniapicom": {
@@ -27270,15 +27291,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+   "last_reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_tyyszycom": {
@@ -27306,15 +27328,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "Expecting value: line 1 column 1 (char 0)",
+   "last_reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  },
  "site:cms_wwwhongniuzy2com": {
@@ -27353,15 +27376,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 3,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_wwwlovedannet": {
@@ -27389,15 +27413,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 2,
    "isolated": false,
+   "last_event_ts": 1791093863,
    "last_fail_ts": 1791050563,
-   "last_ok_gap": null,
-   "last_ok_ts": null,
-   "last_reason": "The read operation timed out",
+   "last_ok_gap": 221,
+   "last_ok_ts": 1791093863,
+   "last_reason": "",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "healthy"
   }
  },
  "site:cms_wwwmdzyapicom": {
@@ -27437,11 +27462,12 @@
   },
   "local-direct": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 4,
    "isolated": false,
+   "last_event_ts": 1791094241,
    "last_fail_ts": null,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791050563,
+   "last_ok_gap": 378,
+   "last_ok_ts": 1791094241,
    "last_reason": "",
    "network": "local-direct",
    "state": "healthy"
@@ -27472,15 +27498,16 @@
    "state": "down"
   },
   "local-direct": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_fail_ts": 1791050563,
+   "last_event_ts": 1791094241,
+   "last_fail_ts": 1791094241,
    "last_ok_gap": null,
    "last_ok_ts": null,
    "last_reason": "<urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1032)>",
    "network": "local-direct",
-   "state": "degraded"
+   "state": "down"
   }
  }
 }

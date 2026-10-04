@@ -3,15 +3,27 @@ import json
 import re
 import time
 from urllib.error import HTTPError, URLError
-from urllib.parse import urlsplit, urljoin, urlencode, parse_qsl, urlunsplit
+from urllib.parse import quote, urlsplit, urljoin, urlencode, parse_qsl, urlunsplit
 from urllib.request import Request, urlopen
+
+
+def iri(url):
+    """IRI → URI：非 ASCII 路径必须先百分号编码。
+
+    实测：部分上游的播放地址带中文，例如 `https://.../20221102期/index.m3u8`。
+    urllib 只接受 ASCII，会把这类地址抛成
+    `'ascii' codec can't encode character '\\u671f'`，看起来像"源坏了"，
+    实际是探测端的问题——而且据此外推会把一个健康源从下一版里踢掉。
+    safe 里保留 % 是为了不二次编码已经转义过的地址。
+    """
+    return quote(str(url), safe=":/?#[]@!$&'()*+,;=%~")
 
 
 def fetch(url, headers=None, limit=4_000_000, timeout=10):
     if urlsplit(url).scheme not in ('http', 'https'):
         raise ValueError('network-specific transport; not tested by HTTP checker')
     started = time.monotonic()
-    req = Request(url, headers={'User-Agent': 'okhttp/4.12.0', **(headers or {})})
+    req = Request(iri(url), headers={'User-Agent': 'okhttp/4.12.0', **(headers or {})})
     for attempt in range(2):
         try:
             with urlopen(req, timeout=timeout) as response:
@@ -32,11 +44,27 @@ def query(url, **params):
 
 
 def cms(url, **params):
-    data, final, ms = fetch(query(url, **params))
-    result = json.loads(data)
-    if not isinstance(result, dict) or not isinstance(result.get('list'), list):
-        raise ValueError('CMS response must contain a list')
-    return result, ms
+    """CMS 接口必须返回 JSON；瞬时失败要重试，不能一次就把健康源判死。
+
+    实测：一次并发 27 个源、8 线程的批量探测里，多个源返回了 200 + 非 JSON
+    （上游 WAF / 限流的错误页），而随后单独请求同一个 URL 立刻返回正常数据。
+    这条路径不重试的话，一次突发会把健康源记成 down（连续 2 次失败即降级），
+    于是下一版发布就把它踢掉——把探测端的抖动误判成了源的问题。
+    """
+    target = query(url, **params)
+    last = None
+    for attempt in range(3):
+        data, _, ms = fetch(target)
+        try:
+            result = json.loads(data)
+        except ValueError as error:
+            last = error
+            time.sleep(0.8 * (attempt + 1))
+            continue
+        if not isinstance(result, dict) or not isinstance(result.get('list'), list):
+            raise ValueError('CMS response must contain a list')
+        return result, ms
+    raise ValueError('CMS response was not JSON after 3 attempts: ' + str(last)[:120])
 
 
 def media_bytes(data):

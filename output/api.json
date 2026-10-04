@@ -1,5 +1,5 @@
 {
-  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.3/cfg.jpg;md5;342d65cfd61e754855528357bfa627f4",
+  "spider": "https://cdn.jsdelivr.net/npm/wkc0001-tvbox-independent@0.5.3/cfg.jpg;md5;c40fcefef7b019ecc4e837f85558524d",
   "hosts": [],
   "logo": "",
   "rules": [
@@ -20,7 +20,7 @@
   "sites": [
     {
       "key": "点我切源",
-      "name": "WKC┃片单",
+      "name": "WKC┃片单 ⚠勿信广告",
       "type": 3,
       "api": "csp_WkcHome",
       "searchable": 1,
@@ -28,6 +28,53 @@
       "changeable": 1,
       "ext": {
         "providers": [
+          {
+            "id": "cms_p2100net",
+            "api": "https://p2100.net/api.php/provide/vod/",
+            "media_hosts": [
+              "bfikuncdn.com",
+              "v1.ppqrrs.com",
+              "v1.rstu6.com",
+              "v10.ppqrrs.com",
+              "v11.ppqrrs.com",
+              "v11.rstu6.com",
+              "v12.ppqrrs.com",
+              "v12.rstu6.com",
+              "v13.rstu6.com",
+              "v14.rstu6.com",
+              "v15.rstu6.com",
+              "v2.ppqrrs.com",
+              "v2.rstu6.com",
+              "v3.ppqrrs.com",
+              "v3.rstu6.com",
+              "v4.ppqrrs.com",
+              "v4.rstu6.com",
+              "v5.ppqrrs.com",
+              "v5.rstu6.com",
+              "v6.ppqrrs.com",
+              "v6.rstu6.com",
+              "v7.ppqrrs.com",
+              "v7.rstu6.com",
+              "v8.ppqrrs.com",
+              "v8.rstu6.com",
+              "v9.ppqrrs.com",
+              "v9.rstu6.com"
+            ],
+            "label": "飘零 ⚠勿信广告",
+            "reviewed_at": 1791093864,
+            "policy": "normal-film-v1"
+          },
+          {
+            "id": "cms_360zycom",
+            "api": "https://360zy.com/api.php/provide/vod/",
+            "media_hosts": [
+              "vod1.maowushi.com",
+              "vod2.maowushi.com"
+            ],
+            "label": "360 ⚠勿信广告",
+            "reviewed_at": 1791094302,
+            "policy": "normal-film-v1"
+          },
           {
             "id": "cms_bfzyapicom",
             "api": "https://bfzyapi.com/api.php/provide/vod/",
@@ -42,11 +89,13 @@
               "c1.rrcdnbf6.com",
               "fengbao12.com",
               "fengbao13.com",
+              "p.bvvvvvvv7f.com",
               "p.bvvvvvvvvv1f.com",
               "v.baofeng9.com",
               "v.fengbao8.com"
             ],
-            "reviewed_at": 1791050803,
+            "label": "暴風 ⚠勿信广告",
+            "reviewed_at": 1791094339,
             "policy": "normal-film-v1"
           },
           {
@@ -67,7 +116,22 @@
               "vod.feifei-kan.com",
               "vod.ffzy-bofang.com"
             ],
-            "reviewed_at": 1791050805,
+            "label": "非凡 ⚠勿信广告",
+            "reviewed_at": 1791094351,
+            "policy": "normal-film-v1"
+          },
+          {
+            "id": "cms_cjlziapicom",
+            "api": "https://cj.lziapi.com/api.php/provide/vod/",
+            "media_hosts": [
+              "v.cdnlz12.com",
+              "v.lzcdn27.com",
+              "v.lzcdn28.com",
+              "v.lzcdn31.com",
+              "vip1.lz-cdn1.com"
+            ],
+            "label": "量子 ⚠勿信广告",
+            "reviewed_at": 1791094372,
             "policy": "normal-film-v1"
           },
           {
@@ -78,14 +142,13 @@
               "vip.dytt-cine.com",
               "vip.dytt-cinema.com",
               "vip.dytt-hot.com",
-              "vip.dytt-kan.com",
               "vip.dytt-luck.com",
               "vip.dytt-network.com",
               "vip.dytt-see.com",
-              "vip.dytt-tv.com",
               "vip.dytt-tvs.com"
             ],
-            "reviewed_at": 1791062356,
+            "label": "天堂 ⚠勿信广告",
+            "reviewed_at": 1791094374,
             "policy": "normal-film-v1"
           }
         ]
@@ -93,7 +156,7 @@
     },
     {
       "key": "文采",
-      "name": "💮文采┃秒播",
+      "name": "💮文采┃秒播 ⚠勿信广告",
       "timeout": 30,
       "playerType": 2,
       "searchable": 1,
@@ -109,7 +172,7 @@
     },
     {
       "key": "奶酪",
-      "name": "🧀奶酪┃秒播",
+      "name": "🧀奶酪┃秒播 ⚠勿信广告",
       "searchable": 1,
       "quickSearch": 1,
       "changeable": 1,
@@ -124,7 +187,7 @@
     },
     {
       "key": "视界",
-      "name": "🌸茉莉┃多线",
+      "name": "🌸茉莉┃多线 ⚠勿信广告",
       "timeout": 30,
       "searchable": 1,
       "quickSearch": 1,
@@ -139,7 +202,7 @@
     },
     {
       "key": "剧圈",
-      "name": "🐻剧圈┃多线",
+      "name": "🐻剧圈┃多线 ⚠勿信广告",
       "timeout": 30,
       "searchable": 1,
       "quickSearch": 1,
@@ -153,7 +216,72 @@
       }
     },
     {
-      "name": "暴風 | 采集",
+      "name": "飘零 ⚠勿信广告",
+      "key": "cms_p2100net",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "type": 3,
+      "api": "csp_WkcCms",
+      "ext": {
+        "id": "cms_p2100net",
+        "api": "https://p2100.net/api.php/provide/vod/",
+        "media_hosts": [
+          "bfikuncdn.com",
+          "v1.ppqrrs.com",
+          "v1.rstu6.com",
+          "v10.ppqrrs.com",
+          "v11.ppqrrs.com",
+          "v11.rstu6.com",
+          "v12.ppqrrs.com",
+          "v12.rstu6.com",
+          "v13.rstu6.com",
+          "v14.rstu6.com",
+          "v15.rstu6.com",
+          "v2.ppqrrs.com",
+          "v2.rstu6.com",
+          "v3.ppqrrs.com",
+          "v3.rstu6.com",
+          "v4.ppqrrs.com",
+          "v4.rstu6.com",
+          "v5.ppqrrs.com",
+          "v5.rstu6.com",
+          "v6.ppqrrs.com",
+          "v6.rstu6.com",
+          "v7.ppqrrs.com",
+          "v7.rstu6.com",
+          "v8.ppqrrs.com",
+          "v8.rstu6.com",
+          "v9.ppqrrs.com",
+          "v9.rstu6.com"
+        ],
+        "label": "飘零 ⚠勿信广告",
+        "reviewed_at": 1791093864,
+        "policy": "normal-film-v1"
+      }
+    },
+    {
+      "name": "360 ⚠勿信广告",
+      "key": "cms_360zycom",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "type": 3,
+      "api": "csp_WkcCms",
+      "ext": {
+        "id": "cms_360zycom",
+        "api": "https://360zy.com/api.php/provide/vod/",
+        "media_hosts": [
+          "vod1.maowushi.com",
+          "vod2.maowushi.com"
+        ],
+        "label": "360 ⚠勿信广告",
+        "reviewed_at": 1791094302,
+        "policy": "normal-film-v1"
+      }
+    },
+    {
+      "name": "暴風 ⚠勿信广告",
       "key": "cms_bfzyapicom",
       "searchable": 1,
       "quickSearch": 1,
@@ -174,16 +302,18 @@
           "c1.rrcdnbf6.com",
           "fengbao12.com",
           "fengbao13.com",
+          "p.bvvvvvvv7f.com",
           "p.bvvvvvvvvv1f.com",
           "v.baofeng9.com",
           "v.fengbao8.com"
         ],
-        "reviewed_at": 1791050803,
+        "label": "暴風 ⚠勿信广告",
+        "reviewed_at": 1791094339,
         "policy": "normal-film-v1"
       }
     },
     {
-      "name": "非凡 | 采集",
+      "name": "非凡 ⚠勿信广告",
       "key": "cms_cjffzyapicom",
       "searchable": 1,
       "quickSearch": 1,
@@ -208,12 +338,36 @@
           "vod.feifei-kan.com",
           "vod.ffzy-bofang.com"
         ],
-        "reviewed_at": 1791050805,
+        "label": "非凡 ⚠勿信广告",
+        "reviewed_at": 1791094351,
         "policy": "normal-film-v1"
       }
     },
     {
-      "name": "天堂 | 采集",
+      "name": "量子 ⚠勿信广告",
+      "key": "cms_cjlziapicom",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "type": 3,
+      "api": "csp_WkcCms",
+      "ext": {
+        "id": "cms_cjlziapicom",
+        "api": "https://cj.lziapi.com/api.php/provide/vod/",
+        "media_hosts": [
+          "v.cdnlz12.com",
+          "v.lzcdn27.com",
+          "v.lzcdn28.com",
+          "v.lzcdn31.com",
+          "vip1.lz-cdn1.com"
+        ],
+        "label": "量子 ⚠勿信广告",
+        "reviewed_at": 1791094372,
+        "policy": "normal-film-v1"
+      }
+    },
+    {
+      "name": "天堂 ⚠勿信广告",
       "key": "cms_caijidyttzyapicom",
       "searchable": 1,
       "quickSearch": 1,
@@ -228,14 +382,13 @@
           "vip.dytt-cine.com",
           "vip.dytt-cinema.com",
           "vip.dytt-hot.com",
-          "vip.dytt-kan.com",
           "vip.dytt-luck.com",
           "vip.dytt-network.com",
           "vip.dytt-see.com",
-          "vip.dytt-tv.com",
           "vip.dytt-tvs.com"
         ],
-        "reviewed_at": 1791062356,
+        "label": "天堂 ⚠勿信广告",
+        "reviewed_at": 1791094374,
         "policy": "normal-film-v1"
       }
     }

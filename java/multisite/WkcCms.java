@@ -13,6 +13,10 @@ public class WkcCms extends Spider {
     protected String api="", provider="";
     private long checked;
     private final HashMap<String,String> defaults=new HashMap<>();
+    /** 线路对外显示名。来源名必须出现在播放线路里——这是用户唯一能看到"这条线路是谁"的位置。 */
+    protected String label(){String v=settings.optString("label","");return v.isEmpty()?provider:v;}
+    /** 提示加在站点名里（见构建端 NOTICE），这里只在还没有的时候补一次，避免出现两遍。 */
+    protected String display(){String name=label();return name.contains(WkcHome.NOTICE)?name:name+" "+WkcHome.NOTICE;}
     @Override public void init(Context context,String ext)throws Exception {
         settings=new JSONObject(ext);api=settings.getString("api");provider=settings.getString("id");
         if(!WkcNet.web(api))throw new IllegalArgumentException("Invalid provider API");
@@ -122,23 +126,29 @@ public class WkcCms extends Spider {
         String id=original(ids.get(0));JSONObject v=detail(id);
         String[] flags=v.optString("vod_play_from").split("\\$\\$\\$",-1),lines=v.optString("vod_play_url").split("\\$\\$\\$",-1);
         ArrayList<String> approvedFlags=new ArrayList<>(),approvedLines=new ArrayList<>();
+        // 对外暴露的是 display()（来源名 + 广告提示），上游原始 flag 存进 token 供播放时校验。
+        // 不能直接改上游 flag 本身：playerContent 会用当前详情重新核对它。
+        String shown=display();
         for(int i=0;i<Math.min(flags.length,lines.length);i++){
             ArrayList<String> eps=new ArrayList<>();
             for(String ep:lines[i].split("#")){
                 String[] pair=ep.split("\\$",2);if(pair.length!=2||!mediaAllowed(pair[1],flags[i]))continue;
-                JSONObject t=token(id).put("flag",flags[i]).put("url",pair[1]);
+                JSONObject t=token(id).put("flag",shown).put("raw",flags[i]).put("url",pair[1]);
                 eps.add(pair[0]+"$"+WkcNet.pack(t));
             }
-            if(!eps.isEmpty()){approvedFlags.add(flags[i]);approvedLines.add(join(eps,"#"));}
+            if(!eps.isEmpty()){approvedFlags.add(shown);approvedLines.add(join(eps,"#"));}
         }
         v.put("vod_id",ids.get(0)).put("vod_play_from",join(approvedFlags,"$$$")).put("vod_play_url",join(approvedLines,"$$$"));
         return new JSONObject().put("list",new JSONArray().put(v)).toString();
     }
     @Override public String playerContent(String flag,String value,List<String> flags)throws Exception {
         JSONObject t=WkcNet.unpack(value);String id=original(value),url=t.getString("url");
-        if(!flag.equals(t.getString("flag"))||!mediaAllowed(url,flag))throw new IllegalArgumentException("Unapproved playback route");
+        // flag 是对外显示名（含来源名/广告提示），可能被上层去重改写过，
+        // 所以对上游的核对一律使用 token 里记着的原始 flag。
+        String raw=t.optString("raw",flag);
+        if(!flag.equals(t.getString("flag"))||!mediaAllowed(url,raw))throw new IllegalArgumentException("Unapproved playback route");
         JSONObject v=detail(id);String[] fs=v.optString("vod_play_from").split("\\$\\$\\$",-1),ls=v.optString("vod_play_url").split("\\$\\$\\$",-1);
-        for(int i=0;i<Math.min(fs.length,ls.length);i++)if(flag.equals(fs[i]))for(String ep:ls[i].split("#")){
+        for(int i=0;i<Math.min(fs.length,ls.length);i++)if(raw.equals(fs[i]))for(String ep:ls[i].split("#")){
             String[] pair=ep.split("\\$",2);if(pair.length==2&&url.equals(pair[1]))
                 return new JSONObject().put("parse",0).put("url",url).put("header",new JSONObject().put("User-Agent","okhttp/4.12.0")).toString();
         }

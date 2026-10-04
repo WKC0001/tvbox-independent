@@ -192,6 +192,29 @@ def import_registry(records):
 
 GROUPS = ['央视及教育','卫视','电影剧场','体育','少儿动漫','纪录科教','文化生活','港澳台','国际']
 
+# 实测下载速度比 = 已下载切片的播出时长 ÷ 真实耗时。只有它直接回答"会不会卡"：
+# 延迟和可达性回答不了——一个 200ms 就返回清单的源，仍可能每一段都跟不上播放。
+# >=1.50 稳定；>=1.00 勉强跟得上；<1.00 必然边看边缓冲。
+SPEED_STABLE = 1.50
+SPEED_FLOOR = 1.00
+
+
+def measured_rank(route):
+    """实测档位与速度比。返回 (档位, 速度比)，档位越小越优先。
+
+    没有实测数据的线路排在"有实测数据"的后面：这不是说它一定差，
+    而是"有证据"本身就比"没有证据"更值得优先；一旦采到数据就会自动归位。
+    """
+    measured = route.get('measured') or {}
+    if not measured:
+        return 3, 0.0
+    if not measured.get('ok'):
+        return 2, 0.0          # 实测打不开 / 切片全失败
+    speed = measured.get('speed')
+    if not isinstance(speed, (int, float)):
+        return 3, 0.0
+    return (0 if speed >= SPEED_FLOOR else 1), round(float(speed), 3)
+
 
 def sort_key(channel):
     g=channel['group']; n=channel['name']
@@ -230,9 +253,13 @@ def playlist(channels, routes, health, network='domestic', max_routes=3, epg=Non
         candidates=[route_map[r] for r in ch['routes'] if r in route_map and route_map[r].get('review')!='quarantined']
         def score(r):
             evidence=health.get(r['id'],{})
-            if any(v.get('isolated') for v in evidence.values()):return (99,999999)
+            if any(v.get('isolated') for v in evidence.values()):return (99,0,0.0,999999)
             rec=evidence.get(network,{})
-            return ({'healthy':0,'degraded':1,'unverified':2,'down':3}.get(effective(rec),2),rec.get('latency_ms',999999))
+            state_rank={'healthy':0,'degraded':1,'unverified':2,'down':3}.get(effective(rec),2)
+            quality,speed=measured_rank(r)
+            # 顺序：健康状态 → 有没有实测证据/实测好坏 → 速度比（越大越好）→ 延迟（越小越好）。
+            # 速度比和延迟不能混在一层比较，因为两者量纲和方向都不同。
+            return (state_rank,quality,-speed,rec.get('latency_ms',999999))
         candidates=[r for r in sorted(candidates,key=score) if score(r)[0]<3]
         if not candidates:
             gaps.append({'channel_id':ch['id'],'name':ch['name'],'reason':'no admissible route'})

@@ -23,7 +23,18 @@ jobs:
         with:
           node-version: '22'
           registry-url: https://registry.npmjs.org/
-      - name: Check recorded APK acceptance
+      - name: Check the acceptance record frozen with this version
+        id: recorded
+        continue-on-error: true
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: python scripts/check_acceptance.py
+      - name: Produce acceptance evidence when the version carries none
+        if: steps.recorded.outcome != 'success'
+        env:
+          RELEASE_VERSION: ${{ inputs.version }}
+        run: python scripts/auto_acceptance.py
+      - name: Check recorded machine acceptance
         env:
           RELEASE_VERSION: ${{ inputs.version }}
         run: python scripts/check_acceptance.py

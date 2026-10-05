@@ -526,14 +526,14 @@
  "r_05c641eb13cdd1006798": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 3442,
+   "latency_ms": 4732,
    "network": "github",
    "state": "healthy"
   },
@@ -604,14 +604,14 @@
  "r_06a734332258f6c7c7b0": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 4249,
+   "latency_ms": 2927,
    "network": "github",
    "state": "healthy"
   },
@@ -1444,14 +1444,14 @@
  "r_0daa884fa215c8aec7c3": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1288,
+   "latency_ms": 1477,
    "network": "github",
    "state": "healthy"
   },
@@ -1650,14 +1650,14 @@
  "r_0f14bb6e60cfa5dcc2e0": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 235,
+   "latency_ms": 1321,
    "network": "github",
    "state": "healthy"
   },
@@ -1741,17 +1741,17 @@
  },
  "r_0fef7997dd4871e4c302": {
   "github": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 1,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": 1791080924,
-   "last_ok_gap": 11543,
-   "last_ok_ts": 1791062338,
-   "last_reason": "HTTP Error 404: Not Found",
-   "latency_ms": 1568,
+   "last_ok_gap": 165058,
+   "last_ok_ts": 1791227396,
+   "last_reason": "",
+   "latency_ms": 1192,
    "network": "github",
-   "state": "degraded"
+   "state": "healthy"
   },
   "local": {
    "consecutive_fail": 0,
@@ -1962,14 +1962,14 @@
  "r_121928518e307d9a4b2d": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 275,
+   "latency_ms": 374,
    "network": "github",
    "state": "healthy"
   },
@@ -2607,17 +2607,17 @@
  },
  "r_1713cc0b68748391ce5b": {
   "github": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 2,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_event_ts": 1791080924,
-   "last_fail_ts": 1791080924,
+   "last_event_ts": 1791227396,
+   "last_fail_ts": 1791227396,
    "last_ok_gap": null,
    "last_ok_ts": 1791062338,
    "last_reason": "<urlopen error timed out>",
    "latency_ms": 4137,
    "network": "github",
-   "state": "degraded"
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -2945,14 +2945,14 @@
  "r_19affacab04494867aa2": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 2,
+   "consecutive_ok": 3,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": 1791050795,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2911,
+   "latency_ms": 2396,
    "network": "github",
    "state": "healthy"
   },
@@ -3556,14 +3556,14 @@
  "r_1e79a221a4f5313e8522": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2389,
+   "latency_ms": 2119,
    "network": "github",
    "state": "healthy"
   },
@@ -3934,14 +3934,14 @@
  "r_20cd6e7b217579742efc": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1537,
+   "latency_ms": 1416,
    "network": "github",
    "state": "healthy"
   },
@@ -5643,14 +5643,14 @@
  "r_34a5df2e8e47de06c463": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1272,
+   "latency_ms": 1151,
    "network": "github",
    "state": "healthy"
   },
@@ -5769,14 +5769,14 @@
  "r_3706d2d9c91b96ab481a": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2257,
+   "latency_ms": 2224,
    "network": "github",
    "state": "healthy"
   },
@@ -5808,14 +5808,14 @@
  "r_37888db11fbcc491ca96": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 3247,
+   "latency_ms": 2267,
    "network": "github",
    "state": "healthy"
   },
@@ -6870,14 +6870,14 @@
  "r_4274b89becbc4e931c05": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2116,
+   "latency_ms": 2080,
    "network": "github",
    "state": "healthy"
   },
@@ -6948,14 +6948,14 @@
  "r_42fd558d906670451164": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 4,
+   "consecutive_ok": 5,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 451,
+   "latency_ms": 598,
    "network": "github",
    "state": "healthy"
   },
@@ -7347,14 +7347,14 @@
  "r_4638fc4501566b8e5acb": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 852,
+   "latency_ms": 1055,
    "network": "github",
    "state": "healthy"
   },
@@ -8239,14 +8239,14 @@
  "r_4caf3997b273503c5dd6": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1829,
+   "latency_ms": 4874,
    "network": "github",
    "state": "healthy"
   },
@@ -8481,14 +8481,14 @@
  "r_4f921c3ab2690dc64358": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1478,
+   "latency_ms": 1654,
    "network": "github",
    "state": "healthy"
   },
@@ -9080,14 +9080,14 @@
  "r_5737f99396f831d8d6ed": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2009,
+   "latency_ms": 1407,
    "network": "github",
    "state": "healthy"
   },
@@ -11112,14 +11112,14 @@
  "r_67550b1a066c3faeb736": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1465,
+   "latency_ms": 1432,
    "network": "github",
    "state": "healthy"
   },
@@ -12049,14 +12049,14 @@
  },
  "r_6fc892699aae1b7ab051": {
   "github": {
-   "consecutive_fail": 3,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_event_ts": 1791080924,
-   "last_fail_ts": 1791080924,
+   "last_event_ts": 1791227396,
+   "last_fail_ts": 1791227396,
    "last_ok_gap": null,
    "last_ok_ts": null,
-   "last_reason": "<urlopen error timed out>",
+   "last_reason": "<urlopen error [Errno 111] Connection refused>",
    "network": "github",
    "state": "down"
   },
@@ -12175,14 +12175,14 @@
  "r_70e29e4614db554e2600": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1437,
+   "latency_ms": 1822,
    "network": "github",
    "state": "healthy"
   },
@@ -12338,14 +12338,14 @@
  "r_74000d4f08e4744070ac": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2437,
+   "latency_ms": 2928,
    "network": "github",
    "state": "healthy"
   },
@@ -12988,14 +12988,14 @@
  "r_7827d7e2be48ae2f3d6c": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 779,
+   "latency_ms": 1042,
    "network": "github",
    "state": "healthy"
   },
@@ -13579,14 +13579,14 @@
  "r_7d2acd85d7643ebff73b": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1035,
+   "latency_ms": 1153,
    "network": "github",
    "state": "healthy"
   },
@@ -14674,14 +14674,14 @@
  "r_84cfb3d6b9ccfcddd5a1": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 3467,
+   "latency_ms": 3691,
    "network": "github",
    "state": "healthy"
   },
@@ -15036,14 +15036,14 @@
  "r_8acdb1e10ad673c5dd13": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 894,
+   "latency_ms": 1064,
    "network": "github",
    "state": "healthy"
   },
@@ -15937,14 +15937,14 @@
  "r_927d923f99a16fc32699": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 3069,
+   "latency_ms": 3451,
    "network": "github",
    "state": "healthy"
   },
@@ -16340,14 +16340,14 @@
  "r_954646fa8bd83bfecba0": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 2,
+   "consecutive_ok": 3,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1112,
+   "latency_ms": 1341,
    "network": "github",
    "state": "healthy"
   }
@@ -18048,11 +18048,11 @@
  },
  "r_a46f4978ecfe16332e27": {
   "github": {
-   "consecutive_fail": 3,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_event_ts": 1791080924,
-   "last_fail_ts": 1791080924,
+   "last_event_ts": 1791227396,
+   "last_fail_ts": 1791227396,
    "last_ok_gap": null,
    "last_ok_ts": null,
    "last_reason": "HTTP success without recognizable media bytes",
@@ -18922,14 +18922,14 @@
  "r_ac12b5def2f14c2fb098": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 446,
+   "latency_ms": 1383,
    "network": "github",
    "state": "healthy"
   },
@@ -19039,14 +19039,14 @@
  "r_acd51595a1c2c9d24a48": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1085,
+   "latency_ms": 429,
    "network": "github",
    "state": "healthy"
   },
@@ -19154,17 +19154,17 @@
  },
  "r_aeea9f126a307298d6f3": {
   "github": {
-   "consecutive_fail": 1,
-   "consecutive_ok": 0,
+   "consecutive_fail": 0,
+   "consecutive_ok": 1,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": 1791080924,
-   "last_ok_gap": 11543,
-   "last_ok_ts": 1791062338,
-   "last_reason": "HTTP Error 404: Not Found",
-   "latency_ms": 1968,
+   "last_ok_gap": 165058,
+   "last_ok_ts": 1791227396,
+   "last_reason": "",
+   "latency_ms": 3146,
    "network": "github",
-   "state": "degraded"
+   "state": "healthy"
   },
   "local": {
    "consecutive_fail": 0,
@@ -19244,14 +19244,14 @@
  "r_af3bbd5f639954fb645f": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 2,
+   "consecutive_ok": 3,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 4726,
+   "latency_ms": 2508,
    "network": "github",
    "state": "healthy"
   }
@@ -19716,16 +19716,16 @@
  "r_b44ffd694483a2e1b963": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 1,
+   "consecutive_ok": 2,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": 1791062338,
-   "last_ok_gap": null,
-   "last_ok_ts": 1791080924,
-   "last_reason": "down: awaiting two successes ≥10min apart to restore",
-   "latency_ms": 2516,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
+   "last_reason": "",
+   "latency_ms": 4510,
    "network": "github",
-   "state": "down"
+   "state": "healthy"
   },
   "local": {
    "consecutive_fail": 1,
@@ -19830,14 +19830,14 @@
  "r_b615bd9bb1d4aae9e760": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2564,
+   "latency_ms": 3048,
    "network": "github",
    "state": "healthy"
   },
@@ -20034,14 +20034,14 @@
  "r_b9042fafd4ded4023ff0": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 333,
+   "latency_ms": 435,
    "network": "github",
    "state": "healthy"
   },
@@ -21488,17 +21488,17 @@
  },
  "r_c92611d1378e2d402e9e": {
   "github": {
-   "consecutive_fail": 1,
+   "consecutive_fail": 2,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_event_ts": 1791080924,
-   "last_fail_ts": 1791080924,
+   "last_event_ts": 1791227396,
+   "last_fail_ts": 1791227396,
    "last_ok_gap": null,
    "last_ok_ts": 1791062338,
    "last_reason": "HTTP Error 403: Forbidden",
    "latency_ms": 2753,
    "network": "github",
-   "state": "degraded"
+   "state": "down"
   },
   "local": {
    "consecutive_fail": 0,
@@ -22676,14 +22676,14 @@
  "r_d7b1010503e6169a5df3": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 4,
+   "consecutive_ok": 5,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 355,
+   "latency_ms": 488,
    "network": "github",
    "state": "healthy"
   },
@@ -22952,14 +22952,14 @@
  "r_d9bab25feccacb7ea88a": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 2886,
+   "latency_ms": 4699,
    "network": "github",
    "state": "healthy"
   },
@@ -24293,14 +24293,14 @@
  "r_e85f40cd0b83fa6edd9c": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 593,
+   "latency_ms": 3616,
    "network": "github",
    "state": "healthy"
   },
@@ -25251,14 +25251,14 @@
  "r_f0e40da88fc9515ff347": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 452,
+   "latency_ms": 596,
    "network": "github",
    "state": "healthy"
   },
@@ -25595,14 +25595,14 @@
  "r_f5299c4b8e9f80f43f00": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 985,
+   "latency_ms": 949,
    "network": "github",
    "state": "healthy"
   },
@@ -25992,11 +25992,11 @@
  },
  "r_fa0b6940138e70502854": {
   "github": {
-   "consecutive_fail": 3,
+   "consecutive_fail": 4,
    "consecutive_ok": 0,
    "isolated": false,
-   "last_event_ts": 1791080924,
-   "last_fail_ts": 1791080924,
+   "last_event_ts": 1791227396,
+   "last_fail_ts": 1791227396,
    "last_ok_gap": null,
    "last_ok_ts": null,
    "last_reason": "The read operation timed out",
@@ -26399,14 +26399,14 @@
  "r_fcc5cc4bfee590f11619": {
   "github": {
    "consecutive_fail": 0,
-   "consecutive_ok": 3,
+   "consecutive_ok": 4,
    "isolated": false,
-   "last_event_ts": 1791080924,
+   "last_event_ts": 1791227396,
    "last_fail_ts": null,
-   "last_ok_gap": 18586,
-   "last_ok_ts": 1791080924,
+   "last_ok_gap": 146472,
+   "last_ok_ts": 1791227396,
    "last_reason": "",
-   "latency_ms": 1192,
+   "latency_ms": 541,
    "network": "github",
    "state": "healthy"
   },

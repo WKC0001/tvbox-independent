@@ -90,8 +90,18 @@
     "reason": "route host is on the blocklist"
   },
   {
+    "channel_id": "tv_d8c9e1a1b791a9e0a4d2",
+    "name": "安徽卫视",
+    "reason": "no currently verified route on local-direct"
+  },
+  {
     "channel_id": "tv_463fac588ee24708254d",
     "name": "山东卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
+    "channel_id": "tv_9077713250bce5593cbf",
+    "name": "山西卫视",
     "reason": "route host is on the blocklist"
   },
   {
@@ -135,6 +145,11 @@
     "reason": "route host is on the blocklist"
   },
   {
+    "channel_id": "tv_fceb78f1770f22d7a626",
+    "name": "陕西卫视",
+    "reason": "route host is on the blocklist"
+  },
+  {
     "channel_id": "tv_c6115aadba0ca4b684d2",
     "name": "黑龙江卫视",
     "reason": "route host is on the blocklist"
@@ -173,6 +188,11 @@
     "channel_id": "tv_686b1ab30eac12d2ed5b",
     "name": "四海钓鱼",
     "reason": "no currently verified route on local-direct"
+  },
+  {
+    "channel_id": "tv_2eefa36d25fa899ae5aa",
+    "name": "天元围棋",
+    "reason": "only remaining route is a confirmed advertisement"
   },
   {
     "channel_id": "tv_9b2baf91ed011e0f1ed8",

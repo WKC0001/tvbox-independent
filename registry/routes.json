@@ -10,7 +10,8 @@
         "record": 1
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv1/test20251009, served 102/107/cctv1md/mkt (8/8 re-tests)"
   },
   {
     "id": "r_9ee2f6c9816547e60e4c",
@@ -126,7 +127,8 @@
         "record": 9
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv2, served cctv2md/mkt (8/8 re-tests)"
   },
   {
     "id": "r_7f225cb7bad9b2bb6352",
@@ -221,7 +223,8 @@
         "record": 16
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv5p/test20251009, served 107/byt/cctv5pmd/mkt (8/8 re-tests)"
   },
   {
     "id": "r_263f39a8b43853a902a0",
@@ -419,7 +422,8 @@
         "record": 30
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv10/test20251009, served 107/byt/cctv10md/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_9bb1a0501b40946034c7",
@@ -462,7 +466,8 @@
         "record": 33
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv11/test20251009, served 107/cctv11md/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_d7b1010503e6169a5df3",
@@ -492,7 +497,8 @@
         "record": 35
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv11, served cctv11/mkt (8/8 re-tests)"
   },
   {
     "id": "r_5132266659c9c5b36835",
@@ -593,7 +599,8 @@
         "record": 42
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv14/test20251009, served 107/byt/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_660b39222d85e91d142d",
@@ -637,7 +644,8 @@
         "record": 45
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv15/test20251009, served 107/cctv15md/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_6840a32e58a9b865d7bf",
@@ -677,7 +685,8 @@
         "record": 48
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv16/test20251009, served 102/107/byt/cctv16md/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_95154ffdf7fffbc8154f",
@@ -717,7 +726,8 @@
         "record": 51
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv17/test20251009, served 107/byt/cctv17md/yss (8/8 re-tests)"
   },
   {
     "id": "r_a8868a82f9d812fd2796",
@@ -1034,7 +1044,8 @@
         "record": 125
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested fyjc/testpub, served 102/107/byt/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_8b1820513b66340e194c",
@@ -1652,7 +1663,8 @@
         "record": 143
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested bjws/test20251009, served 107/bjws/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_44a120b59213db26b257",
@@ -1732,7 +1744,8 @@
         "record": 149
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested hljws/testpub, served 107/hljws/mkt (8/8 re-tests)"
   },
   {
     "id": "r_b305094b6be6edfafb63",
@@ -1772,7 +1785,8 @@
         "record": 152
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested ahws, served ahws/mkt (8/8 re-tests)"
   },
   {
     "id": "r_c4d6f5757b2288a3d15e",
@@ -1948,7 +1962,8 @@
         "record": 166
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested gxws/testpub, served 107/byt/gxws/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_470e496b93cc30f18059",
@@ -2056,7 +2071,8 @@
         "record": 174
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested hews, served hews/mkt (8/8 re-tests)"
   },
   {
     "id": "r_955ec0f1ff0192c5679d",
@@ -2164,7 +2180,8 @@
         "record": 182
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested jsws/test20251009, served 102/107/jsws/mkt (8/8 re-tests)"
   },
   {
     "id": "r_5dccd8b257bde4e428c9",
@@ -2245,7 +2262,8 @@
         "record": 188
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested lnws/testpub, served 107/byt/lnws/mkt (8/8 re-tests)"
   },
   {
     "id": "r_c59a00b1a988a0e98751",
@@ -2407,7 +2425,8 @@
         "record": 200
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested sdws/testpub, served byt/mkt/sdws/yss (8/8 re-tests)"
   },
   {
     "id": "r_a865d98e0c7b74c7cd13",
@@ -2502,7 +2521,8 @@
         "record": 207
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested snws, served mkt/snws (8/8 re-tests)"
   },
   {
     "id": "r_6284b5699217e95c9fee",
@@ -2609,7 +2629,8 @@
         "record": 215
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested ssws/testpub, served 107/mkt/ssws/yss (8/8 re-tests)"
   },
   {
     "id": "r_58874670abc39e12c625",
@@ -3419,7 +3440,8 @@
         "record": 339
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested gxgj/testpub, served 107/gxgj/yss (8/8 re-tests)"
   },
   {
     "id": "r_a34fe2d8b73ce61afebb",
@@ -6433,7 +6455,8 @@
         "record": 600
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested gxxw/testpub, served 107/gxxw/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_811953f4c933e1ae39b5",

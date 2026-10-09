@@ -1,134 +1,3371 @@
 {
-  "checked_at": 1791122479,
-  "date": "2026-10-04",
+  "checked_at": 1791588060,
+  "date": "2026-10-10",
   "api": "http://epg.51zmt.top:8000/api/diyp/",
   "source": "diyp:51zmt",
-  "inspected": 1,
-  "confirmed": 0,
-  "retracted": 0,
-  "unanswered": 1,
+  "inspected": 160,
+  "confirmed": 22,
+  "retracted": 138,
+  "unanswered": 0,
   "contaminated": 0,
-  "channels_with_epg_id": 163,
-  "shared_id_dropped": [
+  "channels_with_epg_id": 151,
+  "shared_id_dropped": [],
+  "contested_upstream_channels": [
     {
-      "name": "CCTV中学生",
-      "epg_id": "539634",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
+      "upstream": "epg.pw",
+      "upstream_id": "561372",
+      "served_name": "CCTV4K",
+      "claimed_by": [
+        "tv_2cabc531b63397c1cad8",
+        "tv_425ea4c4e86e2309a7d9",
+        "tv_fb50bc2f132bf566ba2f",
+        "tv_7d58f2ffd5bf3ac7d460",
+        "tv_a7bec738c45f755c2d92"
+      ]
     },
     {
-      "name": "CCTV+ 2",
-      "epg_id": "539634",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
+      "upstream": "epg.pw",
+      "upstream_id": "539662",
+      "served_name": "苏州新闻综合",
+      "claimed_by": [
+        "tv_56fdf70947d676ad4867",
+        "tv_174eff4e07230b6c1079"
+      ]
     },
     {
-      "name": "CCTV+ 1",
-      "epg_id": "539634",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
+      "upstream": "epg.pw",
+      "upstream_id": "544344",
+      "served_name": "苏州文化生活-苏州新闻综合-苏州生活资讯-苏州社会经济",
+      "claimed_by": [
+        "tv_943bc0f5ee347916ad2e",
+        "tv_d514ce00fee257df29e8"
+      ]
     },
     {
-      "name": "CCTV-Health",
-      "epg_id": "539634",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
+      "upstream": "epg.pw",
+      "upstream_id": "544384",
+      "served_name": "纪实科教",
+      "claimed_by": [
+        "tv_0297eb327ca0de8c459a",
+        "tv_3e70ac30fac6ae82e02c"
+      ]
     },
     {
-      "name": "CCTV新影-中学生",
-      "epg_id": "539634",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "新闻综合",
-      "epg_id": "539662",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "苏州新闻综合",
-      "epg_id": "539662",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "苏州文化生活",
-      "epg_id": "544344",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "苏州生活资讯",
-      "epg_id": "544344",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "纪实科教",
-      "epg_id": "544384",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "BRTV纪实科教",
-      "epg_id": "544384",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "新疆卫视维吾尔语",
-      "epg_id": "539831",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "新疆卫视哈萨克语",
-      "epg_id": "539831",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
-    },
-    {
-      "name": "新疆卫视少儿频道",
-      "epg_id": "539831",
-      "source": "xmltv:epg.pw",
-      "served_name": "",
-      "kept_by": ""
+      "upstream": "epg.pw",
+      "upstream_id": "539831",
+      "served_name": "新疆卫视",
+      "claimed_by": [
+        "tv_3109db3acbd3a642c275",
+        "tv_465fbdbaf1b8b771246b",
+        "tv_efce0680617f73ae5cdd"
+      ]
     }
   ],
   "results": [
     {
-      "channel_id": "tv_6dfa67ba53cc1cafa4f3",
-      "name": "CCTV-1",
+      "channel_id": "tv_43bcdf9ae8b5d9c64a2f",
+      "name": "东方影视",
+      "matched": {
+        "id": "东方影视",
+        "served_name": "东方影视",
+        "programmes": 26
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_57df145fa094cf43f89d",
+      "name": "南京教科",
+      "matched": {
+        "id": "南京教科",
+        "served_name": "南京教科频道",
+        "programmes": 30
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_4ec06b59bbb6bca9f6f4",
+      "name": "南京新闻综合",
+      "matched": {
+        "id": "南京新闻综合",
+        "served_name": "南京新闻综合频道",
+        "programmes": 30
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_088565e0b8a0f7c8d486",
+      "name": "哈尔滨生活",
+      "matched": {
+        "id": "哈尔滨生活",
+        "served_name": "哈尔滨生活频道",
+        "programmes": 23
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_a8785506b9cec2d5eefd",
+      "name": "广东新闻",
+      "matched": {
+        "id": "广东新闻",
+        "served_name": "广东新闻频道",
+        "programmes": 41
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_1be6f26584eae7fb4a5f",
+      "name": "广州新闻",
+      "matched": {
+        "id": "广州新闻",
+        "served_name": "广州新闻频道",
+        "programmes": 39
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_fdca5242205377d01dbb",
+      "name": "广西新闻",
+      "matched": {
+        "id": "广西新闻",
+        "served_name": "广西新闻频道",
+        "programmes": 38
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_6178e21b7dcd84b187d6",
+      "name": "快乐垂钓",
+      "matched": {
+        "id": "快乐垂钓",
+        "served_name": "快乐垂钓",
+        "programmes": 17
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_36c9a6816245f836d378",
+      "name": "欢笑剧场",
+      "matched": {
+        "id": "欢笑剧场",
+        "served_name": "欢笑剧场",
+        "programmes": 38
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_5cc9766892f0dc4fb20a",
+      "name": "武汉文体",
+      "matched": {
+        "id": "武汉文体",
+        "served_name": "武汉文体频道",
+        "programmes": 25
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_fe4bb7a046f53254d464",
+      "name": "浙江公共新闻",
+      "matched": {
+        "id": "浙江公共新闻",
+        "served_name": "浙江公共新闻",
+        "programmes": 39
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_dc51a97e03b4eac19d8d",
+      "name": "浙江少儿",
+      "matched": {
+        "id": "浙江少儿",
+        "served_name": "浙江少儿频道",
+        "programmes": 24
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_6ea20b2d9a6ff560ba84",
+      "name": "湖南电影",
+      "matched": {
+        "id": "湖南电影",
+        "served_name": "湖南电影频道",
+        "programmes": 10
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_7efa3049f6d2dec2dc1d",
+      "name": "第一财经",
+      "matched": {
+        "id": "第一财经",
+        "served_name": "第一财经",
+        "programmes": 37
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_466e5e782b025ca4f540",
+      "name": "辽宁北方",
+      "matched": {
+        "id": "辽宁北方",
+        "served_name": "辽宁北方",
+        "programmes": 40
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_f2afc66f849cf026b61c",
+      "name": "辽宁影视剧",
+      "matched": {
+        "id": "辽宁影视剧",
+        "served_name": "辽宁影视剧",
+        "programmes": 81
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_bbbdaa9d303f2500d958",
+      "name": "辽宁生活",
+      "matched": {
+        "id": "辽宁生活",
+        "served_name": "辽宁生活",
+        "programmes": 27
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_21874d00b671d68dee8d",
+      "name": "辽宁经济",
+      "matched": {
+        "id": "辽宁经济",
+        "served_name": "辽宁经济",
+        "programmes": 34
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_2510de88559510f21b72",
+      "name": "辽宁都市",
+      "matched": {
+        "id": "辽宁都市",
+        "served_name": "辽宁都市",
+        "programmes": 26
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_90f4c2ccd33174adc35e",
+      "name": "都市剧场",
+      "matched": {
+        "id": "都市剧场",
+        "served_name": "都市剧场",
+        "programmes": 47
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_7dc469fcc2e760c52fe8",
+      "name": "重庆新闻",
+      "matched": {
+        "id": "重庆新闻",
+        "served_name": "重庆新闻频道",
+        "programmes": 40
+      },
+      "attempts": [],
+      "outcome": "confirmed"
+    },
+    {
+      "channel_id": "tv_736a3cb205c908d8d1c5",
+      "name": "钱江都市",
+      "matched": {
+        "id": "539904",
+        "served_name": "浙江钱江都市",
+        "programmes": 23,
+        "upstream": "epg.pw"
+      },
+      "attempts": [
+        {
+          "id": "539904",
+          "result": "served=浙江钱江都市"
+        }
+      ],
+      "outcome": "confirmed",
+      "source": "xmltv:epg.pw"
+    },
+    {
+      "channel_id": "tv_e2ecdcd9ae0d3b7bbef5",
+      "name": "万荣综合",
       "matched": null,
       "attempts": [
         {
-          "id": "CCTV1",
-          "result": "error: RemoteDisconnected"
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
         },
         {
-          "id": "CCTV-1",
-          "result": "error: RemoteDisconnected"
+          "id": "万荣综合",
+          "result": "served=未提供"
         },
         {
-          "id": "CCTV1",
-          "result": "recheck error: RemoteDisconnected"
+          "id": "万荣",
+          "result": "served=未提供"
+        },
+        {
+          "id": "万荣综合",
+          "result": "recheck served=未提供"
         }
       ],
-      "outcome": "unanswered"
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5506ca2897b5b7faaab5",
+      "name": "东丰综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "东丰综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "东丰",
+          "result": "served=未提供"
+        },
+        {
+          "id": "东丰综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_64ecfab2b1ae349415d9",
+      "name": "东莞新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "东莞新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "东莞新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "东莞新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5a2fb199df45ac332d16",
+      "name": "东莞生活资讯",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "东莞生活资讯",
+          "result": "served=未提供"
+        },
+        {
+          "id": "东莞生活资讯",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f39726e5b42fd49e1fd5",
+      "name": "东阳影视生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "东阳影视生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "东阳影视生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_dbec817a686689aa45c2",
+      "name": "中国蓝新闻",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "中国蓝新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "中国蓝",
+          "result": "served=未提供"
+        },
+        {
+          "id": "中国蓝新闻",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_c9d25b1c4d55c06120d1",
+      "name": "之江纪录",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "之江纪录",
+          "result": "served=未提供"
+        },
+        {
+          "id": "之江纪录",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_d95fe9a1bfa1cd5f79a2",
+      "name": "乐至综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "乐至综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "乐至",
+          "result": "served=未提供"
+        },
+        {
+          "id": "乐至综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_0da041013452c9492e33",
+      "name": "九台综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "九台综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "九台",
+          "result": "served=未提供"
+        },
+        {
+          "id": "九台综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_cb9fc047602c239f98a4",
+      "name": "云和新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "云和新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "云和新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "云和新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5bb8b217157317e6a95e",
+      "name": "井研综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "井研综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "井研",
+          "result": "served=未提供"
+        },
+        {
+          "id": "井研综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ec972b6d7f7fde6c2956",
+      "name": "仁寿综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "仁寿综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "仁寿",
+          "result": "served=未提供"
+        },
+        {
+          "id": "仁寿综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_879824ef277a1712b2bd",
+      "name": "余姚新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "余姚新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余姚新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余姚新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_86e998d392de0b0fde1f",
+      "name": "余姚综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "余姚综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余姚",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余姚综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_715a247f8e92fcddd1ef",
+      "name": "余杭未来E",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "余杭未来E",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余杭未来E",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_8b1f1df074f9b7709923",
+      "name": "余杭综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "余杭综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余杭",
+          "result": "served=未提供"
+        },
+        {
+          "id": "余杭综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_a9f07cbac83462b3a2f4",
+      "name": "兰溪新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "兰溪新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "兰溪新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "兰溪新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_4c5d59bb4eb7003d4dee",
+      "name": "兵团五师双河新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "兵团五师双河新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "兵团五师双河新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "兵团五师双河新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_354dfcc9db112e39329e",
+      "name": "北京新闻",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "北京新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "北京",
+          "result": "served=未提供"
+        },
+        {
+          "id": "北京新闻",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_85662bf781adf34ff043",
+      "name": "北京科教",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "北京科教",
+          "result": "served=未提供"
+        },
+        {
+          "id": "北京科教",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ca10c5acda0f96a7dd89",
+      "name": "南京少儿",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "南京少儿",
+          "result": "served=未提供"
+        },
+        {
+          "id": "南京少儿",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_a595b2ac3535ac8f7fae",
+      "name": "南宁都市生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "南宁都市生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "南宁都市生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_d5a0218595aa0ce86ba0",
+      "name": "双辽综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "双辽综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "双辽",
+          "result": "served=未提供"
+        },
+        {
+          "id": "双辽综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_455b3a643941fddbb1bf",
+      "name": "叙州新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "叙州新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "叙州新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "叙州新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_207a92de096fb927aa9f",
+      "name": "古县综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "古县综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "古县",
+          "result": "served=未提供"
+        },
+        {
+          "id": "古县综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_191d15bee1f4f348f82b",
+      "name": "句容党建",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "句容党建",
+          "result": "served=未提供"
+        },
+        {
+          "id": "句容党建",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5cb2e5ec384727c2c938",
+      "name": "句容影院",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "句容影院",
+          "result": "served=未提供"
+        },
+        {
+          "id": "句容影院",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_9b1f8f7fd931a7caf1b6",
+      "name": "句容生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "句容生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "句容生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f12e97c0c47a2277996b",
+      "name": "可克达拉综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "可克达拉综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "可克达拉",
+          "result": "served=未提供"
+        },
+        {
+          "id": "可克达拉综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_195e05f88eab4460170f",
+      "name": "名山综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "名山综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "名山",
+          "result": "served=未提供"
+        },
+        {
+          "id": "名山综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f9c9598cb88fdd829f3b",
+      "name": "哈尔滨娱乐",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "哈尔滨娱乐",
+          "result": "served=未提供"
+        },
+        {
+          "id": "哈尔滨娱乐",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_8f9d255d7bdf6f33a04e",
+      "name": "哈尔滨资讯",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "哈尔滨资讯",
+          "result": "served=未提供"
+        },
+        {
+          "id": "哈尔滨资讯",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_6a9cc3c6ec75be20d88e",
+      "name": "哈尔滨都市咨询",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "哈尔滨都市咨询",
+          "result": "served=未提供"
+        },
+        {
+          "id": "哈尔滨都市咨询",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_311a80cad13d09e13747",
+      "name": "嘉兴新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "嘉兴新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "嘉兴新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "嘉兴新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_4a2568b1ce059a90354a",
+      "name": "四川科教",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "四川科教",
+          "result": "served=未提供"
+        },
+        {
+          "id": "四川科教",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_770086d69e9904eb53c1",
+      "name": "大宁综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "大宁综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "大宁",
+          "result": "served=未提供"
+        },
+        {
+          "id": "大宁综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_1b3bcbc234f97d562bd8",
+      "name": "奎屯哈萨克语",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "奎屯哈萨克语",
+          "result": "served=未提供"
+        },
+        {
+          "id": "奎屯哈萨克语",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_80bd1ab46779d4bcfb62",
+      "name": "宜兴新闻",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "宜兴新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "宜兴",
+          "result": "served=未提供"
+        },
+        {
+          "id": "宜兴新闻",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_69966e8592ecc585c5bd",
+      "name": "宾阳综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "宾阳综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "宾阳",
+          "result": "served=未提供"
+        },
+        {
+          "id": "宾阳综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_e7cd2abe6c466e4efd7c",
+      "name": "嵊州新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "嵊州新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "嵊州新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "嵊州新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_3c7f5724e8309b7513f9",
+      "name": "嵊泗综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "嵊泗综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "嵊泗",
+          "result": "served=未提供"
+        },
+        {
+          "id": "嵊泗综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_4ffdc4318fa0de5393b1",
+      "name": "广东珠江",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "广东珠江",
+          "result": "served=未提供"
+        },
+        {
+          "id": "广东珠江",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_3a12021ccf338254b17d",
+      "name": "广安公共",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "广安公共",
+          "result": "served=未提供"
+        },
+        {
+          "id": "广安公共",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_8d69575cbfee1f671f62",
+      "name": "广州竞赛",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "广州竞赛",
+          "result": "served=未提供"
+        },
+        {
+          "id": "广州竞赛",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_21537564ff2afdc71745",
+      "name": "广州综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "广州综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "广州",
+          "result": "served=未提供"
+        },
+        {
+          "id": "广州综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_df6a81ae4bc5177d93c3",
+      "name": "庆元综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "庆元综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "庆元",
+          "result": "served=未提供"
+        },
+        {
+          "id": "庆元综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f17b4c882173cb112473",
+      "name": "延边2",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "延边2",
+          "result": "served=未提供"
+        },
+        {
+          "id": "延边2",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ba4f07be6d1a707cfb49",
+      "name": "开化国家公园",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "开化国家公园",
+          "result": "served=未提供"
+        },
+        {
+          "id": "开化国家公园",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_1b24c0a5836fe93db571",
+      "name": "开化新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "开化新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "开化新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "开化新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_46f4dd085de757570e9c",
+      "name": "徐州新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "徐州新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "徐州新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "徐州新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_6abe9bb2b2664672b305",
+      "name": "德惠综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "德惠综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "德惠",
+          "result": "served=未提供"
+        },
+        {
+          "id": "德惠综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ace9776e729456db1ee7",
+      "name": "怀仁综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "怀仁综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "怀仁",
+          "result": "served=未提供"
+        },
+        {
+          "id": "怀仁综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f9156279907bebfc2bf5",
+      "name": "敦化一套",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "敦化一套",
+          "result": "served=未提供"
+        },
+        {
+          "id": "敦化一套",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_0a61d68d1f8c03de5e59",
+      "name": "数码时代",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "数码时代",
+          "result": "served=未提供"
+        },
+        {
+          "id": "数码时代",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_bc472d13cce0725dc332",
+      "name": "文成新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "文成新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "文成新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "文成新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_992b44d5828a6c23a2ad",
+      "name": "文成综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "文成综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "文成",
+          "result": "served=未提供"
+        },
+        {
+          "id": "文成综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_85c7e7913cf5f7eff697",
+      "name": "新昌生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "新昌生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "新昌生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_32226d5dd4b4ec9f1a2b",
+      "name": "新沂新闻",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "新沂新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "新沂",
+          "result": "served=未提供"
+        },
+        {
+          "id": "新沂新闻",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_378d877c700ad0bd20ec",
+      "name": "新沂生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "新沂生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "新沂生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_56fdf70947d676ad4867",
+      "name": "新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_75840aa44b133dbcebe9",
+      "name": "旺苍新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "旺苍新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "旺苍新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "旺苍新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_4169ab6f07ad69e4ea23",
+      "name": "晋江电视台",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "晋江电视台",
+          "result": "served=未提供"
+        },
+        {
+          "id": "晋江电视台",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_b39014b8a31b905b4bc9",
+      "name": "普陀新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "普陀新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "普陀新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "普陀新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_b42f503488a53da9966a",
+      "name": "普陀电视台",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "普陀电视台",
+          "result": "served=未提供"
+        },
+        {
+          "id": "普陀电视台",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ac7ba199e4a8dffba645",
+      "name": "朝阳新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "朝阳新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "朝阳新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "朝阳新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_dd4cde7cda9e13cd159d",
+      "name": "来宾综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "来宾综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "来宾",
+          "result": "served=未提供"
+        },
+        {
+          "id": "来宾综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_4a3deb793d37723f48fc",
+      "name": "松潘新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "松潘新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "松潘新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "松潘新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_7019f71a308cf710a95b",
+      "name": "松阳综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "松阳综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "松阳",
+          "result": "served=未提供"
+        },
+        {
+          "id": "松阳综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_d663ed88e59c22bb1a27",
+      "name": "柳河综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "柳河综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "柳河",
+          "result": "served=未提供"
+        },
+        {
+          "id": "柳河综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_facd81eab8c3c853d7a4",
+      "name": "桦甸综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "桦甸综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "桦甸",
+          "result": "served=未提供"
+        },
+        {
+          "id": "桦甸综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_93849e5cc9c2bf430ba1",
+      "name": "梅河口综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "梅河口综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "梅河口",
+          "result": "served=未提供"
+        },
+        {
+          "id": "梅河口综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_070618b91d91a7a975b3",
+      "name": "武义新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "武义新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "武义新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "武义新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_42896215dd47ea1dde2c",
+      "name": "武汉一台新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "武汉一台新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "武汉一台新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "武汉一台新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_fe1ad95213f83672e007",
+      "name": "武进新闻",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "武进新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "武进",
+          "result": "served=未提供"
+        },
+        {
+          "id": "武进新闻",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_961ca31087b988d88cb3",
+      "name": "江夏新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "江夏新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "江夏新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "江夏新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_9b2baf91ed011e0f1ed8",
+      "name": "江苏体育",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "江苏体育",
+          "result": "served=未提供"
+        },
+        {
+          "id": "江苏体育",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_e154bc56983fb44dcc1e",
+      "name": "江苏公共",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "江苏公共",
+          "result": "served=未提供"
+        },
+        {
+          "id": "江苏公共",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5c42be855aa453cf6d82",
+      "name": "汪清综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "汪清综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "汪清",
+          "result": "served=未提供"
+        },
+        {
+          "id": "汪清综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f8711bf1d176cf0db10e",
+      "name": "汶川新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "汶川新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "汶川新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "汶川新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_7747cbc9a314667b4b09",
+      "name": "沐川综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "沐川综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "沐川",
+          "result": "served=未提供"
+        },
+        {
+          "id": "沐川综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_8821366a35325839c605",
+      "name": "沭阳综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "沭阳综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "沭阳",
+          "result": "served=未提供"
+        },
+        {
+          "id": "沭阳综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_e08ddb9b7c21e9879958",
+      "name": "河源公共",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "河源公共",
+          "result": "served=未提供"
+        },
+        {
+          "id": "河源公共",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_78951f2c4b9eb771df12",
+      "name": "河源综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "河源综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "河源",
+          "result": "served=未提供"
+        },
+        {
+          "id": "河源综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_9b053bdb14efec41a1c3",
+      "name": "洞头综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "洞头综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "洞头",
+          "result": "served=未提供"
+        },
+        {
+          "id": "洞头综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_8ed1be59b04642e991cb",
+      "name": "津南一套",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "津南一套",
+          "result": "served=未提供"
+        },
+        {
+          "id": "津南一套",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f8e0deac50c83e347cdd",
+      "name": "浙江休闲台",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "浙江休闲台",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江休闲台",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_efedc466bd7c7ac769c2",
+      "name": "浙江教科影视",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "浙江教科影视",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江教科影视",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_bc8ab5b3d4d63b0a0ff6",
+      "name": "浙江教育",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "浙江教育",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江教育",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ccb3e348dd1b1f824a68",
+      "name": "浙江新闻",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "浙江新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江新闻",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_2d988476c4ad122fbfa8",
+      "name": "浙江生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "浙江生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_154ed9ee49a76fea87da",
+      "name": "浙江留学",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "浙江留学",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江留学",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_a713158f9b2cb55fbe73",
+      "name": "浙江经济生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "浙江经济生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江经济生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_99a20f1546d143f7694b",
+      "name": "浙江遂昌",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "浙江遂昌",
+          "result": "served=未提供"
+        },
+        {
+          "id": "浙江遂昌",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_7c500d5324a6c1cf5978",
+      "name": "海宁新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "海宁新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "海宁新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "海宁新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_b9e86c279d99bcad4469",
+      "name": "涟水综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "涟水综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "涟水",
+          "result": "served=未提供"
+        },
+        {
+          "id": "涟水综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_32b55cb1123ba7d85c82",
+      "name": "湖州公共民生",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "湖州公共民生",
+          "result": "served=未提供"
+        },
+        {
+          "id": "湖州公共民生",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ffdb97763f460155da35",
+      "name": "湖州文化娱乐",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "湖州文化娱乐",
+          "result": "served=未提供"
+        },
+        {
+          "id": "湖州文化娱乐",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_d860bebe9bb7131a9af8",
+      "name": "湖州新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "湖州新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "湖州新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "湖州新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5dc487e0509970dbe9f3",
+      "name": "滨海新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "滨海新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "滨海新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "滨海新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_a5f2863a0693ee9c34c5",
+      "name": "灌阳新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "灌阳新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "灌阳新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "灌阳新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_98633df159a8b88efee6",
+      "name": "玛纳斯综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "玛纳斯综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "玛纳斯",
+          "result": "served=未提供"
+        },
+        {
+          "id": "玛纳斯综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_31f96fb0c5851d00f8ae",
+      "name": "璧山综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "璧山综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "璧山",
+          "result": "served=未提供"
+        },
+        {
+          "id": "璧山综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_348ca166dd847f3c8f58",
+      "name": "甘南县综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "甘南县综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "甘南县",
+          "result": "served=未提供"
+        },
+        {
+          "id": "甘南县综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ecd6df85562e1bdb673f",
+      "name": "田东综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "田东综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "田东",
+          "result": "served=未提供"
+        },
+        {
+          "id": "田东综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_16bc48110c2cc919f7e0",
+      "name": "磐石综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "磐石综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "磐石",
+          "result": "served=未提供"
+        },
+        {
+          "id": "磐石综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_8afd7bc08ce745be9c74",
+      "name": "纪实人文",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "纪实人文",
+          "result": "served=未提供"
+        },
+        {
+          "id": "纪实人文",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_e5e980ba7ff075f07294",
+      "name": "缙云新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "缙云新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "缙云新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "缙云新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_0d01d2991d9f3395a128",
+      "name": "缙云综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "缙云综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "缙云",
+          "result": "served=未提供"
+        },
+        {
+          "id": "缙云综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_13b80366821b54cc4007",
+      "name": "舒兰新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "舒兰新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "舒兰新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "舒兰新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_b3b1f728cd63b459ded8",
+      "name": "苏州4K",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "苏州4K",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州4K",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_943bc0f5ee347916ad2e",
+      "name": "苏州文化生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "苏州文化生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州文化生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_174eff4e07230b6c1079",
+      "name": "苏州新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "苏州新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_d514ce00fee257df29e8",
+      "name": "苏州生活资讯",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "苏州生活资讯",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州生活资讯",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_ccefb26a3029c50d0988",
+      "name": "苏州社会经济",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "苏州社会经济",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州社会",
+          "result": "served=未提供"
+        },
+        {
+          "id": "苏州社会经济",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5a7c024a0dd937b4b0fe",
+      "name": "荆门新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "荆门新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "荆门新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "荆门新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_9f51ba953e114e221291",
+      "name": "萧山生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "萧山生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "萧山生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_6536c1cd352fbb3bd1f2",
+      "name": "衡阳新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "衡阳新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "衡阳新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "衡阳新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_fc407dfd9354b455a767",
+      "name": "诸暨新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "诸暨新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "诸暨新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "诸暨新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_b9ad30666b9f31ec78e0",
+      "name": "象山新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "象山新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "象山新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "象山新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_b342d7b0d16e75a7a43d",
+      "name": "象山综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "象山综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "象山",
+          "result": "served=未提供"
+        },
+        {
+          "id": "象山综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_e8ad3e153dec32f1bd3f",
+      "name": "辉南新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "辉南新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "辉南新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "辉南新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_44d5c681abe126adc908",
+      "name": "辽宁教育青少",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "辽宁教育青少",
+          "result": "served=未提供"
+        },
+        {
+          "id": "辽宁教育青少",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_eca827ef23f0af0f4580",
+      "name": "连云港新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "连云港新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "连云港新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "连云港新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_1c4c9c67ea73666ed4ec",
+      "name": "通化县综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "通化县综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "通化县",
+          "result": "served=未提供"
+        },
+        {
+          "id": "通化县综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_3eedc406cb36729b8bd6",
+      "name": "遂昌综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "遂昌综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "遂昌",
+          "result": "served=未提供"
+        },
+        {
+          "id": "遂昌综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f0eeaaeed902a0480c5f",
+      "name": "邢台生活",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "邢台生活",
+          "result": "served=未提供"
+        },
+        {
+          "id": "邢台生活",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_66778b7fcbe9328f001e",
+      "name": "铜梁综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "铜梁综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "铜梁",
+          "result": "served=未提供"
+        },
+        {
+          "id": "铜梁综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_f5475ae865ef6c8b6642",
+      "name": "镇江二套社会民生",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "镇江二套社会民生",
+          "result": "served=未提供"
+        },
+        {
+          "id": "镇江二套社会民生",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_639a3932699f974f079a",
+      "name": "镇江新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "镇江新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "镇江新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "镇江新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_33210d09eef15ef24aac",
+      "name": "长子综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "长子综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "长子",
+          "result": "served=未提供"
+        },
+        {
+          "id": "长子综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_094fc8f32ecb4e5fff3c",
+      "name": "长影频道",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "长影频道",
+          "result": "served=未提供"
+        },
+        {
+          "id": "长影频道",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_7d634b2888f31562692b",
+      "name": "长白山电视台",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "长白山电视台",
+          "result": "served=未提供"
+        },
+        {
+          "id": "长白山电视台",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_5e50d1c3cc8a0b5d21ae",
+      "name": "青田电视台",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "青田电视台",
+          "result": "served=未提供"
+        },
+        {
+          "id": "青田电视台",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_7feb6ab4f03dc6c4e5d5",
+      "name": "靖宇综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "靖宇综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "靖宇",
+          "result": "served=未提供"
+        },
+        {
+          "id": "靖宇综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_04d17fb5b8ac64f6c235",
+      "name": "靖江新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "靖江新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "靖江新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "靖江新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_6a2ad2b0ca1be22da568",
+      "name": "龙井综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "龙井综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "龙井",
+          "result": "served=未提供"
+        },
+        {
+          "id": "龙井综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_c17cce05cbfbd233e410",
+      "name": "龙游新闻综合",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "龙游新闻综合",
+          "result": "served=未提供"
+        },
+        {
+          "id": "龙游新闻",
+          "result": "served=未提供"
+        },
+        {
+          "id": "龙游新闻综合",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
+    },
+    {
+      "channel_id": "tv_69dc4e04102a2ed29a0d",
+      "name": "龙游生活娱乐",
+      "matched": null,
+      "attempts": [
+        {
+          "id": "epg.pw",
+          "result": "no unique match in epg.pw"
+        },
+        {
+          "id": "龙游生活娱乐",
+          "result": "served=未提供"
+        },
+        {
+          "id": "龙游生活娱乐",
+          "result": "recheck served=未提供"
+        }
+      ],
+      "outcome": "retracted"
     }
   ]
 }

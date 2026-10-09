@@ -556,7 +556,8 @@
         "record": 39
       }
     ],
-    "review": "inherited-television"
+    "review": "quarantined",
+    "quarantine_reason": "channel identity mismatch: requested cctv13/test20251009, served 107/cctv13md/mkt/yss (8/8 re-tests)"
   },
   {
     "id": "r_682d26b6a33b55f84d30",

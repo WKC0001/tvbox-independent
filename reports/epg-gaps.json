@@ -420,6 +420,18 @@
     "reason": "no source confirmed a guide id"
   },
   {
+    "channel_id": "tv_f17b4c882173cb112473",
+    "name": "延边2",
+    "group": "地方·吉林",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_64ecfab2b1ae349415d9",
+    "name": "东莞新闻综合",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
     "channel_id": "tv_93849e5cc9c2bf430ba1",
     "name": "梅河口综合",
     "group": "地方·吉林",
@@ -468,9 +480,21 @@
     "reason": "no source confirmed a guide id"
   },
   {
+    "channel_id": "tv_dd4cde7cda9e13cd159d",
+    "name": "来宾综合",
+    "group": "地方·广西",
+    "reason": "no source confirmed a guide id"
+  },
+  {
     "channel_id": "tv_fe1ad95213f83672e007",
     "name": "武进新闻",
     "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_e08ddb9b7c21e9879958",
+    "name": "河源公共",
+    "group": "地方·广东",
     "reason": "no source confirmed a guide id"
   },
   {
@@ -507,6 +531,12 @@
     "channel_id": "tv_8ed1be59b04642e991cb",
     "name": "津南一套",
     "group": "地方·天津",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_5a2fb199df45ac332d16",
+    "name": "东莞生活资讯",
+    "group": "地方·广东",
     "reason": "no source confirmed a guide id"
   },
   {
@@ -549,12 +579,6 @@
     "channel_id": "tv_770086d69e9904eb53c1",
     "name": "大宁综合",
     "group": "地方·山西",
-    "reason": "no source confirmed a guide id"
-  },
-  {
-    "channel_id": "tv_736a3cb205c908d8d1c5",
-    "name": "钱江都市",
-    "group": "地方·浙江",
     "reason": "no source confirmed a guide id"
   },
   {
@@ -630,6 +654,30 @@
     "reason": "no source confirmed a guide id"
   },
   {
+    "channel_id": "tv_8d69575cbfee1f671f62",
+    "name": "广州竞赛",
+    "group": "体育",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_21537564ff2afdc71745",
+    "name": "广州综合",
+    "group": "地方·广东",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_a713158f9b2cb55fbe73",
+    "name": "浙江经济生活",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_bc8ab5b3d4d63b0a0ff6",
+    "name": "浙江教育",
+    "group": "地方·浙江",
+    "reason": "no source confirmed a guide id"
+  },
+  {
     "channel_id": "tv_ccb3e348dd1b1f824a68",
     "name": "浙江新闻",
     "group": "地方·浙江",
@@ -639,6 +687,12 @@
     "channel_id": "tv_c9d25b1c4d55c06120d1",
     "name": "之江纪录",
     "group": "纪录科教",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_efedc466bd7c7ac769c2",
+    "name": "浙江教科影视",
+    "group": "地方·浙江",
     "reason": "no source confirmed a guide id"
   },
   {
@@ -810,6 +864,12 @@
     "reason": "no source confirmed a guide id"
   },
   {
+    "channel_id": "tv_354dfcc9db112e39329e",
+    "name": "北京新闻",
+    "group": "地方·北京",
+    "reason": "no source confirmed a guide id"
+  },
+  {
     "channel_id": "tv_f39726e5b42fd49e1fd5",
     "name": "东阳影视生活",
     "group": "地方·浙江",
@@ -918,6 +978,12 @@
     "reason": "no source confirmed a guide id"
   },
   {
+    "channel_id": "tv_46f4dd085de757570e9c",
+    "name": "徐州新闻综合",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
     "channel_id": "tv_80bd1ab46779d4bcfb62",
     "name": "宜兴新闻",
     "group": "地方·江苏",
@@ -950,6 +1016,12 @@
   {
     "channel_id": "tv_b3b1f728cd63b459ded8",
     "name": "苏州4K",
+    "group": "地方·江苏",
+    "reason": "no source confirmed a guide id"
+  },
+  {
+    "channel_id": "tv_ccefb26a3029c50d0988",
+    "name": "苏州社会经济",
     "group": "地方·江苏",
     "reason": "no source confirmed a guide id"
   },

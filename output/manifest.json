@@ -1,31 +1,31 @@
 {
   "files": {
-    "api.json": "f2d58fee09982cd2b871130246d6252dd7cdf2ed885841009a6c437f646b614d",
+    "api.json": "b233f02fcd3e22586fdf8fd1520031e17d4deee5f5b28aeed4360682095b0f87",
     "cfg.jpg": "9bd379ddf30920dada1a88e930091344235626b8a3eb33efbf97fafd8630c8c5",
-    "live.m3u": "415f05b511f93ab3461aaeae76f668987aebea66bdd458ffe088bfb9a6fc9f8f",
-    "dc.json": "c947e297b6716e55a4f722e53866fd147ae115333cd677b018b6bf2af4265c32",
-    "guide.xml.gz": "476666fdb7cf6c440cb0ba584824825f09705fefd069ac4931a4e7c2045c42c8"
+    "live.m3u": "459d02507139cab871ca1154ef62818f6eefe94d4cde14e0ad87f53aea131000",
+    "dc.json": "573476515f59502488ea80c11850b45ebf6e734f07e7809c434030bf98b5e35c",
+    "guide.xml.gz": "a80b29fdf4871f31379dddea7027f3d86bd74e16ef9e946e16560a696aa9b7b5"
   },
-  "version": "0.5.14",
+  "version": "0.5.16",
   "package": "wkc0001-tvbox-independent",
   "format": "multi-site-v1",
   "site_count": 11,
   "channel_count": 467,
-  "known_live_gaps": 137,
+  "known_live_gaps": 136,
   "native_bridge_restored": true,
   "live_routes_total": 654,
-  "live_routes_quarantined": 130,
+  "live_routes_quarantined": 131,
   "epg_source": [
     "diyp:51zmt",
     "xmltv:epg.pw"
   ],
   "epg_max_age_days": 35,
   "epg_guide_mode": "xmltv",
-  "epg_channels_verified": 163,
-  "epg_channels_shipped": 127,
-  "epg_guide_entries": 188,
-  "epg_guide_channels": 163,
-  "epg_gaps": 304,
+  "epg_channels_verified": 151,
+  "epg_channels_shipped": 117,
+  "epg_guide_entries": 174,
+  "epg_guide_channels": 151,
+  "epg_gaps": 316,
   "android_app_acceptance": false,
   "network_evidence": [
     "github",

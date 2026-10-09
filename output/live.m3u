@@ -228,6 +228,8 @@ http://tpc.x3322.net:9901/tsfile/live/1010_1.m3u8
 https://epg.pw/stream/ffcb6572863f0745a7369fbd9d901f1dfd0ab8fab8bad8bebb4e01c90b303c47.m3u8
 #EXTINF:-1 tvg-name="四海钓鱼" group-title="体育" tvg-id="四海钓鱼",四海钓鱼
 http://120.76.248.139/live/bfgd/4200000229.m3u8
+#EXTINF:-1 tvg-name="天元围棋" group-title="体育" tvg-id="天元围棋",天元围棋
+http://204.12.221.218:8181/3m1080p/gztywq.m3u8
 #EXTINF:-1 tvg-name="天津体育" group-title="体育" tvg-id="天津体育",天津体育
 http://63.141.230.178:82/gslb/zbdq5.m3u8?id=tjtv5
 #EXTINF:-1 tvg-name="广东体育" group-title="体育" tvg-id="广东体育",广东体育
@@ -236,7 +238,7 @@ https://epg.pw/stream/7b470f9fc5c305db0c8622117b7b25ca00eb35ba3e93e865cf0ff9df5c
 http://r.jdshipin.com/LiYdg
 #EXTINF:-1 tvg-name="广东体育" group-title="体育" tvg-id="广东体育",广东体育
 http://php.jdshipin.com/PLTV/iptv.php?id=gdty
-#EXTINF:-1 tvg-name="广州竞赛" group-title="体育" tvg-id="539796",广州竞赛
+#EXTINF:-1 tvg-name="广州竞赛" group-title="体育",广州竞赛
 http://8.138.7.223/tv/gzjs.m3u8
 #EXTINF:-1 tvg-name="江苏体育" group-title="体育",江苏体育
 https://live.chinacert.cftest5.cn/cnmg/live/626064707
@@ -518,7 +520,7 @@ http://stream10.jlntv.cn/jiutaitv/sd/live.m3u8?zjild
 http://stream5.jlntv.cn/sl/sd/live.m3u8?zjild
 #EXTINF:-1 tvg-name="四平综合" group-title="地方·吉林",四平综合
 http://stream2.jlntv.cn/sptv/sd/live.m3u8?_upt=f27750421743154598
-#EXTINF:-1 tvg-name="延边2" group-title="地方·吉林" tvg-id="544286",延边2
+#EXTINF:-1 tvg-name="延边2" group-title="地方·吉林",延边2
 http://stream5.jlntv.cn/wq/playlist.m3u8
 #EXTINF:-1 tvg-name="德惠综合" group-title="地方·吉林",德惠综合
 http://stream11.jlntv.cn/dehuitv/sd/live.m3u8
@@ -632,9 +634,9 @@ https://1yp7hc5p.live.sxmty.com/live/hls/bff8529922344209985b6e49baa9555a/efa254
 https://qmmqvzoz.live.sxmty.com/live/hls/f24f8a390c084386a564074c9260100c/be3fdf07606145739ab2c4b80fe0136a.m3u8?zshanxd
 #EXTINF:-1 tvg-name="长子综合" group-title="地方·山西",长子综合
 https://www.wxhcgbds.com:8081/channelTv/WXTV_1.m3u8?zshanxd
-#EXTINF:-1 tvg-name="东莞新闻综合" group-title="地方·广东" tvg-id="544312",东莞新闻综合
+#EXTINF:-1 tvg-name="东莞新闻综合" group-title="地方·广东",东莞新闻综合
 https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
-#EXTINF:-1 tvg-name="东莞生活资讯" group-title="地方·广东" tvg-id="544323",东莞生活资讯
+#EXTINF:-1 tvg-name="东莞生活资讯" group-title="地方·广东",东莞生活资讯
 https://stream.sun0769.com/dgrtv1/mp4tv2_800/index.m3u8
 #EXTINF:-1 tvg-name="广东民生" group-title="地方·广东" tvg-id="广东民生",广东民生
 http://183.11.239.36:808/hls/18/index.m3u8
@@ -642,13 +644,13 @@ http://183.11.239.36:808/hls/18/index.m3u8
 http://r.jdshipin.com/sE5vO
 #EXTINF:-1 tvg-name="广州新闻" group-title="地方·广东" tvg-id="广州新闻",广州新闻
 http://tencentplay.gztv.com/live/xinwen.m3u8?txSecret=d2c2db0b598c02ec1b5623728434d367&txTime=18d57929bd3
-#EXTINF:-1 tvg-name="广州综合" group-title="地方·广东" tvg-id="544638",广州综合
+#EXTINF:-1 tvg-name="广州综合" group-title="地方·广东",广州综合
 https://tencentplay.gztv.com/live/zonghes.m3u8?txSecret=439b0fd2cf766b363c93a59cbcbe1370&txTime=18d00acf488
-#EXTINF:-1 tvg-name="广州综合" group-title="地方·广东" tvg-id="544638",广州综合
+#EXTINF:-1 tvg-name="广州综合" group-title="地方·广东",广州综合
 https://tencentplaybusiness.gztv.com/live/zonghes.m3u8
-#EXTINF:-1 tvg-name="广州综合" group-title="地方·广东" tvg-id="544638",广州综合
+#EXTINF:-1 tvg-name="广州综合" group-title="地方·广东",广州综合
 http://r.jdshipin.com/iR6Gq
-#EXTINF:-1 tvg-name="河源公共" group-title="地方·广东" tvg-id="544342",河源公共
+#EXTINF:-1 tvg-name="河源公共" group-title="地方·广东",河源公共
 http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 #EXTINF:-1 tvg-name="河源综合" group-title="地方·广东",河源综合
 http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
@@ -660,7 +662,7 @@ http://hls.nntv.cn/nnlive/YSYL_244.m3u8
 http://615bbf179ba53515dccad7b1da5d1ad9.livehwc3.cn/hls.nntv.cn/nnlive/WLSH_24.m3u8?sub_m3u8=true&edge_slice=true&user_session_id=2598844eaee8a4265e706fc14b3fc11d
 #EXTINF:-1 tvg-name="宾阳综合" group-title="地方·广西",宾阳综合
 http://pulls.myun.tv/live/0dkp33j5.m3u8
-#EXTINF:-1 tvg-name="来宾综合" group-title="地方·广西" tvg-id="544633",来宾综合
+#EXTINF:-1 tvg-name="来宾综合" group-title="地方·广西",来宾综合
 http://zb.gxlbamc.com:1935/live/lbzh.stream/playlist.m3u8
 #EXTINF:-1 tvg-name="田东综合" group-title="地方·广西",田东综合
 http://pulls.myun.tv/live/0dkp33j5.m3u8
@@ -696,7 +698,7 @@ http://jrlive.jrntv.com/live/_definst_/yingshis/chunklist_w1994429382.m3u8?zjian
 http://jrlive.jrntv.com/live/_definst_/shenghuos/playlist.m3u8?%E5%85%B3%E6%B3%A8%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7[%E6%99%B4%E5%9B%AD]
 #EXTINF:-1 tvg-name="宜兴新闻" group-title="地方·江苏",宜兴新闻
 https://live.chinacert.cftest5.cn/cnmg/live/955227996
-#EXTINF:-1 tvg-name="徐州新闻综合" group-title="地方·江苏" tvg-id="544290",徐州新闻综合
+#EXTINF:-1 tvg-name="徐州新闻综合" group-title="地方·江苏",徐州新闻综合
 https://live.chinacert.cftest5.cn/cnmg/live/639731747
 #EXTINF:-1 tvg-name="新沂新闻" group-title="地方·江苏",新沂新闻
 http://live.xysrmt.cn/xwzh/sd/live.m3u8?zjiangsd"
@@ -730,7 +732,7 @@ https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
 https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
 #EXTINF:-1 tvg-name="苏州生活资讯" group-title="地方·江苏",苏州生活资讯
 https://live-auth.51kandianshi.com/szgd/csztv5.m3u8
-#EXTINF:-1 tvg-name="苏州社会经济" group-title="地方·江苏" tvg-id="539667",苏州社会经济
+#EXTINF:-1 tvg-name="苏州社会经济" group-title="地方·江苏",苏州社会经济
 https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
 #EXTINF:-1 tvg-name="连云港新闻综合" group-title="地方·江苏",连云港新闻综合
 https://live.chinacert.cftest5.cn/cnmg/live/639731715
@@ -850,13 +852,13 @@ http://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
 https://ali-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江国际" group-title="地方·浙江",浙江国际
 https://ali-m-l.cztv.com/channels/lantian/channel010/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江教科影视" group-title="地方·浙江" tvg-id="539679",浙江教科影视
+#EXTINF:-1 tvg-name="浙江教科影视" group-title="地方·浙江",浙江教科影视
 http://ali-m-l.cztv.com/channels/lantian/channel004/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江教科影视" group-title="地方·浙江" tvg-id="539679",浙江教科影视
+#EXTINF:-1 tvg-name="浙江教科影视" group-title="地方·浙江",浙江教科影视
 http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
-#EXTINF:-1 tvg-name="浙江教科影视" group-title="地方·浙江" tvg-id="539679",浙江教科影视
+#EXTINF:-1 tvg-name="浙江教科影视" group-title="地方·浙江",浙江教科影视
 http://ali-m-l.cztv.com/channels/lantian/channel04/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江教育" group-title="地方·浙江" tvg-id="544357",浙江教育
+#EXTINF:-1 tvg-name="浙江教育" group-title="地方·浙江",浙江教育
 http://ali-m-l.cztv.com/channels/lantian/channel04/720p.m3u8
 #EXTINF:-1 tvg-name="浙江新闻" group-title="地方·浙江",浙江新闻
 https://ali-m-l.cztv.com/channels/lantian/channel007/1080p.m3u8?
@@ -868,11 +870,11 @@ https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8?
 https://ali-m-l.cztv.com/channels/lantian/channel006/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江留学" group-title="地方·浙江",浙江留学
 http://ali-vl.cztv.com/channels/lantian/channel009/360p.m3u8
-#EXTINF:-1 tvg-name="浙江经济生活" group-title="地方·浙江" tvg-id="544270",浙江经济生活
+#EXTINF:-1 tvg-name="浙江经济生活" group-title="地方·浙江",浙江经济生活
 http://ali-m-l.cztv.com/channels/lantian/channel003/720p.m3u8
-#EXTINF:-1 tvg-name="浙江经济生活" group-title="地方·浙江" tvg-id="544270",浙江经济生活
+#EXTINF:-1 tvg-name="浙江经济生活" group-title="地方·浙江",浙江经济生活
 http://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
-#EXTINF:-1 tvg-name="浙江经济生活" group-title="地方·浙江" tvg-id="544270",浙江经济生活
+#EXTINF:-1 tvg-name="浙江经济生活" group-title="地方·浙江",浙江经济生活
 https://ali-m-l.cztv.com/channels/lantian/channel003/1080p.m3u8
 #EXTINF:-1 tvg-name="浙江遂昌" group-title="地方·浙江",浙江遂昌
 http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8
@@ -908,11 +910,11 @@ http://play-sh13.quklive.com/live/1702360350551252.m3u8?auth_key=2037107484-8001
 http://l.cztvcloud.com/channels/lantian/SXxiangshan1/720p.m3u8
 #EXTINF:-1 tvg-name="遂昌综合" group-title="地方·浙江",遂昌综合
 http://l.cztvcloud.com/channels/lantian/SXsuichang1/720p.m3u8?zzhed
-#EXTINF:-1 tvg-name="钱江都市" group-title="地方·浙江",钱江都市
+#EXTINF:-1 tvg-name="钱江都市" group-title="地方·浙江" tvg-id="539904",钱江都市
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
-#EXTINF:-1 tvg-name="钱江都市" group-title="地方·浙江",钱江都市
+#EXTINF:-1 tvg-name="钱江都市" group-title="地方·浙江" tvg-id="539904",钱江都市
 https://ali-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8?
-#EXTINF:-1 tvg-name="钱江都市" group-title="地方·浙江",钱江都市
+#EXTINF:-1 tvg-name="钱江都市" group-title="地方·浙江" tvg-id="539904",钱江都市
 http://ali-xwl.cztv.com/live/channel021080Plxw.m3u8
 #EXTINF:-1 tvg-name="青田电视台" group-title="地方·浙江",青田电视台
 http://l.cztvcloud.com/channels/lantian/SXqingtian1/720p.m3u8

@@ -1,0 +1,34 @@
+{
+ "version": "0.5.16",
+ "package": "wkc0001-tvbox-independent",
+ "checked_at": 1791588740,
+ "device_tested": false,
+ "device_note": "machine probes only; no phone or TV install was performed for this version, so this record must not be read as device acceptance",
+ "cdn_verified": true,
+ "cdn_problems": [],
+ "published_files": {
+  "api.json": "b233f02fcd3e22586fdf8fd1520031e17d4deee5f5b28aeed4360682095b0f87",
+  "cfg.jpg": "9bd379ddf30920dada1a88e930091344235626b8a3eb33efbf97fafd8630c8c5",
+  "live.m3u": "459d02507139cab871ca1154ef62818f6eefe94d4cde14e0ad87f53aea131000",
+  "dc.json": "573476515f59502488ea80c11850b45ebf6e734f07e7809c434030bf98b5e35c",
+  "guide.xml.gz": "a80b29fdf4871f31379dddea7027f3d86bd74e16ef9e946e16560a696aa9b7b5"
+ },
+ "epg_mode": "xmltv",
+ "config_protocol": true,
+ "config_problems": [],
+ "playback_probe": true,
+ "playback_attempts": [
+  {
+   "id": "cms_bfzyapicom",
+   "ok": true,
+   "note": "乌鸦俱乐部 / bfzym3u8 -> media-segment"
+  }
+ ],
+ "files": {
+  "api.json": "b233f02fcd3e22586fdf8fd1520031e17d4deee5f5b28aeed4360682095b0f87",
+  "cfg.jpg": "9bd379ddf30920dada1a88e930091344235626b8a3eb33efbf97fafd8630c8c5",
+  "live.m3u": "459d02507139cab871ca1154ef62818f6eefe94d4cde14e0ad87f53aea131000",
+  "dc.json": "573476515f59502488ea80c11850b45ebf6e734f07e7809c434030bf98b5e35c",
+  "guide.xml.gz": "a80b29fdf4871f31379dddea7027f3d86bd74e16ef9e946e16560a696aa9b7b5"
+ }
+}

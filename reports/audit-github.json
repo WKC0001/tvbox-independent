@@ -1,398 +1,397 @@
 {
   "network": "github",
-  "checked_at": 1791634452,
+  "checked_at": 1791656560,
   "sites": [],
   "routes": [
     {
-      "id": "r_b9042fafd4ded4023ff0",
+      "id": "r_b8e43872a132f675d04c",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 598,
+      "ms": 445,
       "decode_tested": false
     },
     {
-      "id": "r_682d26b6a33b55f84d30",
+      "id": "r_8a4df10f8e3949b618aa",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 571,
+      "ms": 479,
       "decode_tested": false
     },
     {
-      "id": "r_eea28826f115713dbdd3",
+      "id": "r_f0e40da88fc9515ff347",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 453,
+      "ms": 517,
       "decode_tested": false
     },
     {
-      "id": "r_9e9ac96680b83d0cfdd5",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 610,
-      "decode_tested": false
-    },
-    {
-      "id": "r_80476c800f712380961c",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 568,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0d5846afb4699e13a36a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 4435,
-      "decode_tested": false
-    },
-    {
-      "id": "r_8a54bed178f274e560fe",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 521,
-      "decode_tested": false
-    },
-    {
-      "id": "r_8a5570cf43a03be3c780",
+      "id": "r_fa0b6940138e70502854",
       "ok": false,
       "reason": "The read operation timed out",
       "decode_tested": false
     },
     {
-      "id": "r_9fdf9cb5a90b66fa9eb4",
+      "id": "r_961330789198a15a6f3a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 516,
+      "decode_tested": false
+    },
+    {
+      "id": "r_1870ebf26efe6522a0b3",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1525,
+      "decode_tested": false
+    },
+    {
+      "id": "r_f45b6a1eb7a6bb80ec28",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 475,
+      "decode_tested": false
+    },
+    {
+      "id": "r_9e75c3f47b1fa87aebc4",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1951,
+      "decode_tested": false
+    },
+    {
+      "id": "r_32c1e7df3bfdd74a5f7c",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1497,
+      "decode_tested": false
+    },
+    {
+      "id": "r_789a09a9728c2964bbfa",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 1319,
+      "ms": 741,
       "decode_tested": false
     },
     {
-      "id": "r_47c00816169fe32f7b42",
+      "id": "r_5047b8d45fbebec24a25",
+      "ok": true,
+      "level": [
+        "media-bytes"
+      ],
+      "ms": 1095,
+      "decode_tested": false
+    },
+    {
+      "id": "r_7459b2dd1eeed5b16119",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 655,
+      "decode_tested": false
+    },
+    {
+      "id": "r_2fedcadfe25b89b7df2a",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 1306,
+      "ms": 2589,
       "decode_tested": false
     },
     {
-      "id": "r_769da799618af5e5dec8",
-      "ok": true,
-      "level": [
-        "master",
-        "initialization",
-        "media-segment"
-      ],
-      "ms": 2403,
-      "decode_tested": false
-    },
-    {
-      "id": "r_7fc48dbf80205879fd2f",
+      "id": "r_14d96fb8477695cf2a3f",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 716,
+      "ms": 1163,
       "decode_tested": false
     },
     {
-      "id": "r_57985972635e60ff17e0",
-      "ok": false,
-      "reason": "HTTP Error 404: Not Found",
-      "decode_tested": false
-    },
-    {
-      "id": "r_c294e77d52e52b05218a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 925,
-      "decode_tested": false
-    },
-    {
-      "id": "r_d596e7d187e131d7684f",
+      "id": "r_6b3e5b185971d37d534c",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 633,
+      "ms": 2611,
       "decode_tested": false
     },
     {
-      "id": "r_7ece17da73d08c2b5365",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 511,
-      "decode_tested": false
-    },
-    {
-      "id": "r_33f8cc3767ba5d55305b",
+      "id": "r_b83857a4ba79ce124758",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2086,
+      "ms": 3602,
       "decode_tested": false
     },
     {
-      "id": "r_df2b6c177b9eae33d9e6",
+      "id": "r_9578ab6882c17f28eeb2",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1568,
+      "ms": 14840,
       "decode_tested": false
     },
     {
-      "id": "r_06c1e0b2158689aa890e",
+      "id": "r_ee9a9ae9330a5404144c",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 5814,
+      "ms": 1724,
       "decode_tested": false
     },
     {
-      "id": "r_fc55c0d029a3fd650f68",
+      "id": "r_208652d8c0157ab2502b",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3814,
+      "ms": 2999,
       "decode_tested": false
     },
     {
-      "id": "r_6f4e7a7b9a4be5874476",
+      "id": "r_7edad16d897cc6a41312",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 4927,
+      "ms": 4998,
       "decode_tested": false
     },
     {
-      "id": "r_42c4b31bf48c0c786e5a",
+      "id": "r_7e84663eb5b834872f37",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1605,
+      "ms": 3153,
       "decode_tested": false
     },
     {
-      "id": "r_1e25de5e1113fef026cd",
+      "id": "r_757efae6a997118cd170",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1362,
+      "ms": 2321,
       "decode_tested": false
     },
     {
-      "id": "r_f78064378bb54e6c4d14",
+      "id": "r_cbf99b73ae83d16f459c",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3097,
+      "ms": 2039,
       "decode_tested": false
     },
     {
-      "id": "r_786bbabc6ee50373f2f3",
+      "id": "r_6d5569ebfb08ad88ca32",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2617,
+      "ms": 2605,
       "decode_tested": false
     },
     {
-      "id": "r_b470901a96b06e25b7ba",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 4472,
-      "decode_tested": false
-    },
-    {
-      "id": "r_6a117e4c4a02025e673b",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 4759,
-      "decode_tested": false
-    },
-    {
-      "id": "r_1d35a0809912ce416fee",
-      "ok": false,
-      "reason": "The read operation timed out",
-      "decode_tested": false
-    },
-    {
-      "id": "r_4876303b532e39e4b80c",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1242,
-      "decode_tested": false
-    },
-    {
-      "id": "r_4883134004fd8ad90e7f",
+      "id": "r_a8abed600fc4e413bef2",
       "ok": false,
       "reason": "timed out",
       "decode_tested": false
     },
     {
-      "id": "r_3c56e8269d9a04c40da4",
+      "id": "r_32b46b07108c37bdf2ad",
       "ok": false,
-      "reason": "The read operation timed out",
+      "reason": "timed out",
       "decode_tested": false
     },
     {
-      "id": "r_6d72f30630f3c27f209e",
+      "id": "r_7bf1e4ff25554b94feb3",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1905,
+      "ms": 1970,
       "decode_tested": false
     },
     {
-      "id": "r_bb5b45a8158ac7576fee",
+      "id": "r_bd03031d1ee5d05e86b5",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1749,
+      "ms": 2073,
       "decode_tested": false
     },
     {
-      "id": "r_f8a8ff5f4138d87b5e5e",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 7942,
-      "decode_tested": false
-    },
-    {
-      "id": "r_1cb5caeef3d8fb4af84f",
+      "id": "r_ae201e4dffdd2d876aed",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 4088,
+      "ms": 3343,
       "decode_tested": false
     },
     {
-      "id": "r_ec1b9e3aa553889a4e98",
-      "ok": false,
-      "reason": "invalid HLS media segment",
-      "decode_tested": false
-    },
-    {
-      "id": "r_89f7bc29abc0131884b8",
+      "id": "r_34a5df2e8e47de06c463",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1294,
+      "ms": 1557,
       "decode_tested": false
     },
     {
-      "id": "r_3c82a996075326100f30",
+      "id": "r_70e29e4614db554e2600",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1454,
+      "ms": 1425,
       "decode_tested": false
     },
     {
-      "id": "r_e268192e20c97088eab9",
-      "ok": false,
-      "reason": "HTTP success without recognizable media bytes",
+      "id": "r_0daa884fa215c8aec7c3",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2213,
       "decode_tested": false
     },
     {
-      "id": "r_5938a7059446c026d0e7",
+      "id": "r_aeea9f126a307298d6f3",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 2264,
+      "ms": 2099,
       "decode_tested": false
     },
     {
-      "id": "r_c70a308222054d3e15d7",
+      "id": "r_d9bab25feccacb7ea88a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 4825,
+      "decode_tested": false
+    },
+    {
+      "id": "r_3706d2d9c91b96ab481a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2804,
+      "decode_tested": false
+    },
+    {
+      "id": "r_05c641eb13cdd1006798",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 3127,
+      "decode_tested": false
+    },
+    {
+      "id": "r_927d923f99a16fc32699",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2232,
+      "decode_tested": false
+    },
+    {
+      "id": "r_84cfb3d6b9ccfcddd5a1",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 4790,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0fef7997dd4871e4c302",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1771,
+      "decode_tested": false
+    },
+    {
+      "id": "r_f5299c4b8e9f80f43f00",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1218,
+      "decode_tested": false
+    },
+    {
+      "id": "r_af3bbd5f639954fb645f",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 3131,
+      "ms": 3777,
       "decode_tested": false
     },
     {
-      "id": "r_33e985e6b8bbbfb5bbd5",
+      "id": "r_5737f99396f831d8d6ed",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1294,
+      "ms": 1870,
       "decode_tested": false
     },
     {
-      "id": "r_17bccd135b907e975d65",
+      "id": "r_954646fa8bd83bfecba0",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 4818,
-      "decode_tested": false
-    },
-    {
-      "id": "r_2fa4d1e9d775f749f3f7",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 26281,
+      "ms": 1805,
       "decode_tested": false
     }
   ],
   "anomaly": {
     "flag": false,
-    "healthy_now": 1944,
-    "healthy_prev": 1943,
+    "healthy_now": 1946,
+    "healthy_prev": 1944,
     "drop": -0.001
   }
 }

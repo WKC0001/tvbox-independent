@@ -1,398 +1,403 @@
 {
   "network": "github",
-  "checked_at": 1791721719,
+  "checked_at": 1791744232,
   "sites": [],
   "routes": [
     {
-      "id": "r_b9042fafd4ded4023ff0",
+      "id": "r_b8e43872a132f675d04c",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 443,
+      "ms": 423,
       "decode_tested": false
     },
     {
-      "id": "r_682d26b6a33b55f84d30",
+      "id": "r_8a4df10f8e3949b618aa",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1484,
+      "ms": 457,
       "decode_tested": false
     },
     {
-      "id": "r_eea28826f115713dbdd3",
+      "id": "r_f0e40da88fc9515ff347",
       "ok": true,
       "level": [
-        "media-segment"
-      ],
-      "ms": 497,
-      "decode_tested": false
-    },
-    {
-      "id": "r_9e9ac96680b83d0cfdd5",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 507,
-      "decode_tested": false
-    },
-    {
-      "id": "r_80476c800f712380961c",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 503,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0d5846afb4699e13a36a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 490,
-      "decode_tested": false
-    },
-    {
-      "id": "r_8a54bed178f274e560fe",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 442,
-      "decode_tested": false
-    },
-    {
-      "id": "r_8a5570cf43a03be3c780",
-      "ok": false,
-      "reason": "HTTP Error 403: Forbidden",
-      "decode_tested": false
-    },
-    {
-      "id": "r_9fdf9cb5a90b66fa9eb4",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 1075,
-      "decode_tested": false
-    },
-    {
-      "id": "r_47c00816169fe32f7b42",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 1110,
-      "decode_tested": false
-    },
-    {
-      "id": "r_769da799618af5e5dec8",
-      "ok": true,
-      "level": [
-        "master",
-        "initialization",
-        "media-segment"
-      ],
-      "ms": 951,
-      "decode_tested": false
-    },
-    {
-      "id": "r_7fc48dbf80205879fd2f",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 645,
-      "decode_tested": false
-    },
-    {
-      "id": "r_57985972635e60ff17e0",
-      "ok": false,
-      "reason": "HTTP Error 404: Not Found",
-      "decode_tested": false
-    },
-    {
-      "id": "r_c294e77d52e52b05218a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1178,
-      "decode_tested": false
-    },
-    {
-      "id": "r_d596e7d187e131d7684f",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 866,
-      "decode_tested": false
-    },
-    {
-      "id": "r_7ece17da73d08c2b5365",
-      "ok": true,
-      "level": [
-        "master",
         "media-segment"
       ],
       "ms": 513,
       "decode_tested": false
     },
     {
-      "id": "r_33f8cc3767ba5d55305b",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2796,
-      "decode_tested": false
-    },
-    {
-      "id": "r_df2b6c177b9eae33d9e6",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1740,
-      "decode_tested": false
-    },
-    {
-      "id": "r_06c1e0b2158689aa890e",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 5851,
-      "decode_tested": false
-    },
-    {
-      "id": "r_fc55c0d029a3fd650f68",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 5913,
-      "decode_tested": false
-    },
-    {
-      "id": "r_6f4e7a7b9a4be5874476",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 3427,
-      "decode_tested": false
-    },
-    {
-      "id": "r_42c4b31bf48c0c786e5a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2114,
-      "decode_tested": false
-    },
-    {
-      "id": "r_1e25de5e1113fef026cd",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1779,
-      "decode_tested": false
-    },
-    {
-      "id": "r_f78064378bb54e6c4d14",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 8103,
-      "decode_tested": false
-    },
-    {
-      "id": "r_786bbabc6ee50373f2f3",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 7518,
-      "decode_tested": false
-    },
-    {
-      "id": "r_b470901a96b06e25b7ba",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 6080,
-      "decode_tested": false
-    },
-    {
-      "id": "r_6a117e4c4a02025e673b",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 10159,
-      "decode_tested": false
-    },
-    {
-      "id": "r_1d35a0809912ce416fee",
+      "id": "r_fa0b6940138e70502854",
       "ok": false,
-      "reason": "HTTP Error 403: Forbidden",
+      "reason": "The read operation timed out",
       "decode_tested": false
     },
     {
-      "id": "r_4876303b532e39e4b80c",
-      "ok": false,
-      "reason": "<urlopen error timed out>",
-      "decode_tested": false
-    },
-    {
-      "id": "r_4883134004fd8ad90e7f",
-      "ok": false,
-      "reason": "timed out",
-      "decode_tested": false
-    },
-    {
-      "id": "r_3c56e8269d9a04c40da4",
+      "id": "r_961330789198a15a6f3a",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2724,
+      "ms": 568,
       "decode_tested": false
     },
     {
-      "id": "r_6d72f30630f3c27f209e",
+      "id": "r_1870ebf26efe6522a0b3",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3219,
+      "ms": 1181,
       "decode_tested": false
     },
     {
-      "id": "r_bb5b45a8158ac7576fee",
+      "id": "r_f45b6a1eb7a6bb80ec28",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3923,
+      "ms": 352,
       "decode_tested": false
     },
     {
-      "id": "r_f8a8ff5f4138d87b5e5e",
+      "id": "r_9e75c3f47b1fa87aebc4",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2751,
+      "decode_tested": false
+    },
+    {
+      "id": "r_32c1e7df3bfdd74a5f7c",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 347,
+      "decode_tested": false
+    },
+    {
+      "id": "r_789a09a9728c2964bbfa",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 7982,
+      "ms": 586,
       "decode_tested": false
     },
     {
-      "id": "r_1cb5caeef3d8fb4af84f",
+      "id": "r_5047b8d45fbebec24a25",
+      "ok": true,
+      "level": [
+        "media-bytes"
+      ],
+      "ms": 1057,
+      "decode_tested": false
+    },
+    {
+      "id": "r_7459b2dd1eeed5b16119",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 963,
+      "decode_tested": false
+    },
+    {
+      "id": "r_2fedcadfe25b89b7df2a",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 2814,
+      "ms": 504,
       "decode_tested": false
     },
     {
-      "id": "r_ec1b9e3aa553889a4e98",
-      "ok": false,
-      "reason": "invalid HLS media segment",
-      "decode_tested": false
-    },
-    {
-      "id": "r_89f7bc29abc0131884b8",
+      "id": "r_14d96fb8477695cf2a3f",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2259,
+      "ms": 810,
       "decode_tested": false
     },
     {
-      "id": "r_3c82a996075326100f30",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2264,
-      "decode_tested": false
-    },
-    {
-      "id": "r_e268192e20c97088eab9",
-      "ok": false,
-      "reason": "HTTP success without recognizable media bytes",
-      "decode_tested": false
-    },
-    {
-      "id": "r_5938a7059446c026d0e7",
+      "id": "r_6b3e5b185971d37d534c",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 3570,
+      "ms": 528,
       "decode_tested": false
     },
     {
-      "id": "r_c70a308222054d3e15d7",
+      "id": "r_b83857a4ba79ce124758",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 4385,
+      "decode_tested": false
+    },
+    {
+      "id": "r_9578ab6882c17f28eeb2",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 8217,
+      "decode_tested": false
+    },
+    {
+      "id": "r_ee9a9ae9330a5404144c",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1266,
+      "decode_tested": false
+    },
+    {
+      "id": "r_208652d8c0157ab2502b",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2644,
+      "decode_tested": false
+    },
+    {
+      "id": "r_7edad16d897cc6a41312",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 4048,
+      "decode_tested": false
+    },
+    {
+      "id": "r_7e84663eb5b834872f37",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 3032,
+      "decode_tested": false
+    },
+    {
+      "id": "r_757efae6a997118cd170",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2215,
+      "decode_tested": false
+    },
+    {
+      "id": "r_cbf99b73ae83d16f459c",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1937,
+      "decode_tested": false
+    },
+    {
+      "id": "r_6d5569ebfb08ad88ca32",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2331,
+      "decode_tested": false
+    },
+    {
+      "id": "r_a8abed600fc4e413bef2",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 7764,
+      "decode_tested": false
+    },
+    {
+      "id": "r_32b46b07108c37bdf2ad",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 7694,
+      "decode_tested": false
+    },
+    {
+      "id": "r_7bf1e4ff25554b94feb3",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1241,
+      "decode_tested": false
+    },
+    {
+      "id": "r_bd03031d1ee5d05e86b5",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1772,
+      "decode_tested": false
+    },
+    {
+      "id": "r_ae201e4dffdd2d876aed",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 3248,
+      "ms": 638,
       "decode_tested": false
     },
     {
-      "id": "r_33e985e6b8bbbfb5bbd5",
+      "id": "r_34a5df2e8e47de06c463",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2648,
+      "ms": 1253,
       "decode_tested": false
     },
     {
-      "id": "r_17bccd135b907e975d65",
+      "id": "r_70e29e4614db554e2600",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3340,
+      "ms": 1145,
       "decode_tested": false
     },
     {
-      "id": "r_2fa4d1e9d775f749f3f7",
+      "id": "r_0daa884fa215c8aec7c3",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 16454,
+      "ms": 1895,
+      "decode_tested": false
+    },
+    {
+      "id": "r_aeea9f126a307298d6f3",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 1840,
+      "decode_tested": false
+    },
+    {
+      "id": "r_d9bab25feccacb7ea88a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2878,
+      "decode_tested": false
+    },
+    {
+      "id": "r_3706d2d9c91b96ab481a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2340,
+      "decode_tested": false
+    },
+    {
+      "id": "r_05c641eb13cdd1006798",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2424,
+      "decode_tested": false
+    },
+    {
+      "id": "r_927d923f99a16fc32699",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1572,
+      "decode_tested": false
+    },
+    {
+      "id": "r_84cfb3d6b9ccfcddd5a1",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 3728,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0fef7997dd4871e4c302",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1257,
+      "decode_tested": false
+    },
+    {
+      "id": "r_f5299c4b8e9f80f43f00",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 991,
+      "decode_tested": false
+    },
+    {
+      "id": "r_af3bbd5f639954fb645f",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 3355,
+      "decode_tested": false
+    },
+    {
+      "id": "r_5737f99396f831d8d6ed",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1084,
+      "decode_tested": false
+    },
+    {
+      "id": "r_954646fa8bd83bfecba0",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1676,
       "decode_tested": false
     }
   ],
   "anomaly": {
     "flag": false,
-    "healthy_now": 1947,
+    "healthy_now": 1948,
     "healthy_prev": 1947,
-    "drop": 0.0
+    "drop": -0.001
   }
 }

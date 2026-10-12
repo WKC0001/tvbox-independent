@@ -16,7 +16,7 @@
     },
     "github": {
       "id": "cms_dbzytv",
-      "checked_at": 1791587859,
+      "checked_at": 1791845390,
       "accepted": false,
       "name": "豆瓣 | 采集",
       "reason": "CMS response must contain a list"
@@ -39,7 +39,7 @@
     },
     "github": {
       "id": "cms_apiniuniuzyme",
-      "checked_at": 1791587859,
+      "checked_at": 1791845390,
       "accepted": false,
       "name": "牛牛 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -62,7 +62,7 @@
     },
     "github": {
       "id": "cms_zuidazyme",
-      "checked_at": 1791587859,
+      "checked_at": 1791845390,
       "accepted": false,
       "name": "最大 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -502,11 +502,11 @@
     },
     "github": {
       "id": "cms_wwwmdzyapicom",
-      "checked_at": 1791587859,
+      "checked_at": 1791845390,
       "accepted": true,
       "name": "魔都 | 采集",
       "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "latency_ms": 546,
+      "latency_ms": 577,
       "types": {
         "1": {
           "name": "国产动漫",
@@ -698,27 +698,27 @@
       ],
       "safe_sample_count": 80,
       "blocked_item_count": 0,
-      "sample_title": "某暗部的少女共栖",
+      "sample_title": "PSYREN 决战游戏",
       "media_checks": [
         {
-          "url": "https://play.modujx17.com/20261010/i3yf2bUD/index.m3u8",
+          "url": "https://play.modujx17.com/20261005/CZC8K2Q3/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "media-segment"
           ],
-          "ms": 1287,
+          "ms": 477,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwmdzyapicom",
-        "checked_at": 1791587859,
+        "checked_at": 1791845390,
         "accepted": true,
         "name": "魔都 | 采集",
         "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-        "latency_ms": 546,
+        "latency_ms": 577,
         "types": {
           "1": {
             "name": "国产动漫",
@@ -910,16 +910,16 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "某暗部的少女共栖",
+        "sample_title": "PSYREN 决战游戏",
         "media_checks": [
           {
-            "url": "https://play.modujx17.com/20261010/i3yf2bUD/index.m3u8",
+            "url": "https://play.modujx17.com/20261005/CZC8K2Q3/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 1287,
+            "ms": 477,
             "decode_tested": false
           }
         ],
@@ -1115,7 +1115,7 @@
     },
     "github": {
       "id": "cms_p2100net",
-      "checked_at": 1791587864,
+      "checked_at": 1791845394,
       "accepted": false,
       "name": "飘零 ⚠勿信广告",
       "reason": "HTTP Error 403: Forbidden"
@@ -1607,11 +1607,11 @@
     },
     "github": {
       "id": "cms_haohuazycom",
-      "checked_at": 1791587865,
+      "checked_at": 1791845394,
       "accepted": true,
       "name": "豪华 | 采集",
       "api": "https://haohuazy.com/api.php/provide/vod/",
-      "latency_ms": 771,
+      "latency_ms": 907,
       "types": {
         "1": {
           "name": "电视剧",
@@ -1826,29 +1826,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "方舟一号第三季",
+      "safe_sample_count": 54,
+      "blocked_item_count": 7,
+      "sample_title": "海军罪案调查处第二十四季",
       "media_checks": [
         {
-          "url": "https://play.hhuus.com/play/aADM3kle/index.m3u8",
+          "url": "https://play.hhuus.com/play/dR6MooEd/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 760,
+          "ms": 640,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_haohuazycom",
-        "checked_at": 1791587865,
+        "checked_at": 1791845394,
         "accepted": true,
         "name": "豪华 | 采集",
         "api": "https://haohuazy.com/api.php/provide/vod/",
-        "latency_ms": 771,
+        "latency_ms": 907,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2063,18 +2063,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "方舟一号第三季",
+        "safe_sample_count": 54,
+        "blocked_item_count": 7,
+        "sample_title": "海军罪案调查处第二十四季",
         "media_checks": [
           {
-            "url": "https://play.hhuus.com/play/aADM3kle/index.m3u8",
+            "url": "https://play.hhuus.com/play/dR6MooEd/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 760,
+            "ms": 640,
             "decode_tested": false
           }
         ],
@@ -2561,11 +2561,11 @@
     },
     "github": {
       "id": "cms_huyazynet",
-      "checked_at": 1791587866,
+      "checked_at": 1791845397,
       "accepted": true,
       "name": "虎牙 | 采集",
       "api": "https://huyazy.net/api.php/provide/vod/",
-      "latency_ms": 678,
+      "latency_ms": 262,
       "types": {
         "1": {
           "name": "电视剧",
@@ -2765,29 +2765,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 43,
-      "blocked_item_count": 0,
-      "sample_title": "南瓜头怪2",
+      "safe_sample_count": 36,
+      "blocked_item_count": 7,
+      "sample_title": "捉迷藏：0秒前的女友",
       "media_checks": [
         {
-          "url": "https://1080p.huyall.com/play/erkYKjLa/index.m3u8",
+          "url": "https://1080p.huyall.com/play/e0R96QGb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 1021,
+          "ms": 735,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_huyazynet",
-        "checked_at": 1791587866,
+        "checked_at": 1791845397,
         "accepted": true,
         "name": "虎牙 | 采集",
         "api": "https://huyazy.net/api.php/provide/vod/",
-        "latency_ms": 678,
+        "latency_ms": 262,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2987,18 +2987,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 43,
-        "blocked_item_count": 0,
-        "sample_title": "南瓜头怪2",
+        "safe_sample_count": 36,
+        "blocked_item_count": 7,
+        "sample_title": "捉迷藏：0秒前的女友",
         "media_checks": [
           {
-            "url": "https://1080p.huyall.com/play/erkYKjLa/index.m3u8",
+            "url": "https://1080p.huyall.com/play/e0R96QGb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 1021,
+            "ms": 735,
             "decode_tested": false
           }
         ],
@@ -3023,7 +3023,7 @@
     },
     "github": {
       "id": "cms_cjyayazynet",
-      "checked_at": 1791587867,
+      "checked_at": 1791845398,
       "accepted": false,
       "name": "鸭鸭 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -3541,7 +3541,7 @@
     },
     "github": {
       "id": "cms_360zycom",
-      "checked_at": 1791587867,
+      "checked_at": 1791845400,
       "accepted": false,
       "name": "360 ⚠勿信广告",
       "reason": "Media sample failed: invalid HLS media segment",
@@ -3823,7 +3823,7 @@
     },
     "github": {
       "id": "cms_apiwujinapinet",
-      "checked_at": 1791587870,
+      "checked_at": 1791845403,
       "accepted": false,
       "name": "无尽 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -4283,11 +4283,11 @@
     },
     "github": {
       "id": "cms_jyzyapicom",
-      "checked_at": 1791587872,
+      "checked_at": 1791845404,
       "accepted": true,
       "name": "金鹰 | 采集",
       "api": "https://jyzyapi.com/api.php/provide/vod/",
-      "latency_ms": 273,
+      "latency_ms": 630,
       "types": {
         "1": {
           "name": "电视剧",
@@ -4486,29 +4486,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "方舟一号第三季",
+      "safe_sample_count": 55,
+      "blocked_item_count": 6,
+      "sample_title": "恋爱博士",
       "media_checks": [
         {
-          "url": "https://hd.kuktxu.com/play/azp7Mjyd/index.m3u8",
+          "url": "https://hd.kuktxu.com/play/eZ6WjK5e/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 2806,
+          "ms": 1996,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jyzyapicom",
-        "checked_at": 1791587872,
+        "checked_at": 1791845404,
         "accepted": true,
         "name": "金鹰 | 采集",
         "api": "https://jyzyapi.com/api.php/provide/vod/",
-        "latency_ms": 273,
+        "latency_ms": 630,
         "types": {
           "1": {
             "name": "电视剧",
@@ -4707,18 +4707,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "方舟一号第三季",
+        "safe_sample_count": 55,
+        "blocked_item_count": 6,
+        "sample_title": "恋爱博士",
         "media_checks": [
           {
-            "url": "https://hd.kuktxu.com/play/azp7Mjyd/index.m3u8",
+            "url": "https://hd.kuktxu.com/play/eZ6WjK5e/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 2806,
+            "ms": 1996,
             "decode_tested": false
           }
         ],
@@ -4743,7 +4743,7 @@
     },
     "github": {
       "id": "cms_suoniapicom",
-      "checked_at": 1791587874,
+      "checked_at": 1791845407,
       "accepted": false,
       "name": "索尼 | 采集 ",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5235,11 +5235,11 @@
     },
     "github": {
       "id": "cms_apixinlangapicom",
-      "checked_at": 1791587878,
+      "checked_at": 1791845412,
       "accepted": true,
       "name": "新浪资源(切)",
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-      "latency_ms": 614,
+      "latency_ms": 754,
       "types": {
         "1": {
           "name": "电影",
@@ -5454,35 +5454,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "方舟一号第三季",
+      "safe_sample_count": 54,
+      "blocked_item_count": 7,
+      "sample_title": "恋爱博士",
       "media_checks": [
         {
-          "url": "https://play.xluuss.com/play/dyP9Lgnb/index.m3u8",
-          "ok": false,
-          "reason": "<urlopen error timed out>",
-          "decode_tested": false
-        },
-        {
-          "url": "https://play.xluuss.com/play/b82MkYme/index.m3u8",
+          "url": "https://play.xluuss.com/play/bYEMgJ2b/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 1157,
+          "ms": 649,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apixinlangapicom",
-        "checked_at": 1791587878,
+        "checked_at": 1791845412,
         "accepted": true,
         "name": "新浪资源(切)",
         "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-        "latency_ms": 614,
+        "latency_ms": 754,
         "types": {
           "1": {
             "name": "电影",
@@ -5697,24 +5691,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "方舟一号第三季",
+        "safe_sample_count": 54,
+        "blocked_item_count": 7,
+        "sample_title": "恋爱博士",
         "media_checks": [
           {
-            "url": "https://play.xluuss.com/play/dyP9Lgnb/index.m3u8",
-            "ok": false,
-            "reason": "<urlopen error timed out>",
-            "decode_tested": false
-          },
-          {
-            "url": "https://play.xluuss.com/play/b82MkYme/index.m3u8",
+            "url": "https://play.xluuss.com/play/bYEMgJ2b/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 1157,
+            "ms": 649,
             "decode_tested": false
           }
         ],
@@ -5739,7 +5727,7 @@
     },
     "github": {
       "id": "cms_tyyszycom",
-      "checked_at": 1791587878,
+      "checked_at": 1791845413,
       "accepted": false,
       "name": "影视 | 天涯",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5762,7 +5750,7 @@
     },
     "github": {
       "id": "cms_1542191172329981",
-      "checked_at": 1791587882,
+      "checked_at": 1791845414,
       "accepted": false,
       "name": "影视 | 建安",
       "reason": "Search ignored nonmatching keyword"
@@ -6292,270 +6280,10 @@
     },
     "github": {
       "id": "cms_bfzyapicom",
-      "checked_at": 1791587885,
-      "accepted": true,
+      "checked_at": 1791845415,
+      "accepted": false,
       "name": "暴風 ⚠勿信广告",
-      "api": "https://bfzyapi.com/api.php/provide/vod/",
-      "latency_ms": 367,
-      "types": {
-        "20": {
-          "name": "电影片",
-          "genre": "电影"
-        },
-        "21": {
-          "name": "动作片",
-          "genre": "电影"
-        },
-        "22": {
-          "name": "喜剧片",
-          "genre": "电影"
-        },
-        "23": {
-          "name": "恐怖片",
-          "genre": "电影"
-        },
-        "24": {
-          "name": "科幻片",
-          "genre": "电影"
-        },
-        "25": {
-          "name": "爱情片",
-          "genre": "电影"
-        },
-        "26": {
-          "name": "剧情片",
-          "genre": "电影"
-        },
-        "27": {
-          "name": "战争片",
-          "genre": "电影"
-        },
-        "28": {
-          "name": "纪录片",
-          "genre": "纪录片"
-        },
-        "30": {
-          "name": "连续剧",
-          "genre": "电视剧"
-        },
-        "31": {
-          "name": "国产剧",
-          "genre": "电视剧"
-        },
-        "32": {
-          "name": "欧美剧",
-          "genre": "电视剧"
-        },
-        "33": {
-          "name": "香港剧",
-          "genre": "电视剧"
-        },
-        "34": {
-          "name": "韩国剧",
-          "genre": "电视剧"
-        },
-        "35": {
-          "name": "台湾剧",
-          "genre": "电视剧"
-        },
-        "36": {
-          "name": "日本剧",
-          "genre": "电视剧"
-        },
-        "37": {
-          "name": "海外剧",
-          "genre": "电视剧"
-        },
-        "38": {
-          "name": "泰国剧",
-          "genre": "电视剧"
-        },
-        "39": {
-          "name": "动漫片",
-          "genre": "动漫"
-        },
-        "40": {
-          "name": "国产动漫",
-          "genre": "动漫"
-        },
-        "41": {
-          "name": "日韩动漫",
-          "genre": "动漫"
-        },
-        "42": {
-          "name": "欧美动漫",
-          "genre": "动漫"
-        },
-        "43": {
-          "name": "港台动漫",
-          "genre": "动漫"
-        },
-        "44": {
-          "name": "海外动漫",
-          "genre": "动漫"
-        },
-        "45": {
-          "name": "综艺片",
-          "genre": "综艺"
-        },
-        "46": {
-          "name": "大陆综艺",
-          "genre": "综艺"
-        },
-        "47": {
-          "name": "港台综艺",
-          "genre": "综艺"
-        },
-        "48": {
-          "name": "日韩综艺",
-          "genre": "综艺"
-        },
-        "49": {
-          "name": "欧美综艺",
-          "genre": "综艺"
-        },
-        "50": {
-          "name": "动画片",
-          "genre": "动漫"
-        },
-        "58": {
-          "name": "短剧大全",
-          "genre": "短剧"
-        }
-      },
-      "media_hosts": [
-        "bfeng10.com",
-        "bfeng11.com",
-        "c1.rrcdnbf2.com",
-        "c1.rrcdnbf3.com",
-        "c1.rrcdnbf4.com",
-        "c1.rrcdnbf5.com",
-        "c1.rrcdnbf6.com",
-        "fengbao12.com",
-        "fengbao13.com",
-        "p.bvvvvvvvvv1f.com",
-        "s3.bfllvip.com",
-        "v.baofeng9.com"
-      ],
-      "blocked_categories": [
-        {
-          "type_id": 29,
-          "type_pid": 20,
-          "type_name": "理论片"
-        },
-        {
-          "type_id": 51,
-          "type_pid": 0,
-          "type_name": "电影解说"
-        },
-        {
-          "type_id": 52,
-          "type_pid": 0,
-          "type_name": "预告片"
-        },
-        {
-          "type_id": 53,
-          "type_pid": 0,
-          "type_name": "体育赛事"
-        },
-        {
-          "type_id": 54,
-          "type_pid": 53,
-          "type_name": "足球"
-        },
-        {
-          "type_id": 55,
-          "type_pid": 53,
-          "type_name": "篮球"
-        },
-        {
-          "type_id": 56,
-          "type_pid": 53,
-          "type_name": "网球"
-        },
-        {
-          "type_id": 57,
-          "type_pid": 53,
-          "type_name": "斯诺克"
-        },
-        {
-          "type_id": 65,
-          "type_pid": 58,
-          "type_name": "重生民国"
-        },
-        {
-          "type_id": 66,
-          "type_pid": 58,
-          "type_name": "穿越年代"
-        },
-        {
-          "type_id": 67,
-          "type_pid": 58,
-          "type_name": "现代言情"
-        },
-        {
-          "type_id": 68,
-          "type_pid": 58,
-          "type_name": "反转爽文"
-        },
-        {
-          "type_id": 69,
-          "type_pid": 58,
-          "type_name": "女恋总裁"
-        },
-        {
-          "type_id": 70,
-          "type_pid": 58,
-          "type_name": "闪婚离婚"
-        },
-        {
-          "type_id": 71,
-          "type_pid": 58,
-          "type_name": "都市脑洞"
-        },
-        {
-          "type_id": 72,
-          "type_pid": 58,
-          "type_name": "古装仙侠"
-        },
-        {
-          "type_id": 73,
-          "type_pid": 0,
-          "type_name": "福利"
-        },
-        {
-          "type_id": 74,
-          "type_pid": 58,
-          "type_name": "AI漫剧"
-        }
-      ],
-      "safe_sample_count": 59,
-      "blocked_item_count": 0,
-      "sample_title": "乌鸦俱乐部",
-      "media_checks": [
-        {
-          "url": "https://fengbao12.com/video/wuyajulebu/6136cc9fdba9/index.m3u8",
-          "ok": false,
-          "reason": "HTTP Error 404: Not Found",
-          "decode_tested": false
-        },
-        {
-          "url": "https://fengbao12.com/video/wuyajulebu/4408e044a67d/index.m3u8",
-          "ok": false,
-          "reason": "HTTP Error 404: Not Found",
-          "decode_tested": false
-        },
-        {
-          "url": "https://fengbao13.com/video/wuyajulebu/2f042340352b/index.m3u8",
-          "ok": true,
-          "level": [
-            "media-segment"
-          ],
-          "ms": 2858,
-          "decode_tested": false
-        }
-      ],
-      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
+      "reason": "Media sample failed: HTTP Error 404: Not Found",
       "last_success": {
         "id": "cms_bfzyapicom",
         "checked_at": 1791587885,
@@ -7249,11 +6977,11 @@
     },
     "github": {
       "id": "cms_wwwhongniuzy2com",
-      "checked_at": 1791587890,
+      "checked_at": 1791845418,
       "accepted": true,
       "name": "红牛资源(切)",
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-      "latency_ms": 397,
+      "latency_ms": 363,
       "types": {
         "1": {
           "name": "电影",
@@ -7437,29 +7165,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 62,
-      "blocked_item_count": 0,
-      "sample_title": "药屋少女的呢喃第三季",
+      "safe_sample_count": 54,
+      "blocked_item_count": 8,
+      "sample_title": "海军罪案调查处第二十四季",
       "media_checks": [
         {
-          "url": "https://hn.bfvvs.com/play/bYEMP8pb/index.m3u8",
+          "url": "https://hn.bfvvs.com/play/dNkE99ve/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 3457,
+          "ms": 2203,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwhongniuzy2com",
-        "checked_at": 1791587890,
+        "checked_at": 1791845418,
         "accepted": true,
         "name": "红牛资源(切)",
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-        "latency_ms": 397,
+        "latency_ms": 363,
         "types": {
           "1": {
             "name": "电影",
@@ -7643,18 +7371,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 62,
-        "blocked_item_count": 0,
-        "sample_title": "药屋少女的呢喃第三季",
+        "safe_sample_count": 54,
+        "blocked_item_count": 8,
+        "sample_title": "海军罪案调查处第二十四季",
         "media_checks": [
           {
-            "url": "https://hn.bfvvs.com/play/bYEMP8pb/index.m3u8",
+            "url": "https://hn.bfvvs.com/play/dNkE99ve/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 3457,
+            "ms": 2203,
             "decode_tested": false
           }
         ],
@@ -7679,7 +7407,7 @@
     },
     "github": {
       "id": "cms_sdzyapicom",
-      "checked_at": 1791587894,
+      "checked_at": 1791845421,
       "accepted": false,
       "name": "闪电资源(切)",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -8031,7 +7759,7 @@
     },
     "github": {
       "id": "cms_cjffzyapicom",
-      "checked_at": 1791587894,
+      "checked_at": 1791845422,
       "accepted": false,
       "name": "非凡 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -8946,7 +8674,7 @@
     },
     "github": {
       "id": "cms_jszyapicom",
-      "checked_at": 1791587897,
+      "checked_at": 1791845425,
       "accepted": false,
       "name": "影视 | 极速[直连]",
       "reason": "Media sample failed: <urlopen error [Errno 111] Connection refused>"
@@ -8969,7 +8697,7 @@
     },
     "github": {
       "id": "cms_apiapibdzycom",
-      "checked_at": 1791587897,
+      "checked_at": 1791845430,
       "accepted": false,
       "name": "百度",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -9647,11 +9375,11 @@
     },
     "github": {
       "id": "cms_apiguangsuapicom",
-      "checked_at": 1791587902,
+      "checked_at": 1791845431,
       "accepted": true,
       "name": "光速资源(切)",
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "latency_ms": 269,
+      "latency_ms": 3115,
       "types": {
         "1": {
           "name": "电影",
@@ -9850,30 +9578,30 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "方舟一号第三季",
+      "safe_sample_count": 55,
+      "blocked_item_count": 6,
+      "sample_title": "恋爱博士",
       "media_checks": [
         {
-          "url": "https://v.gsuus.com/play/axk2K4Be/index.m3u8",
+          "url": "https://v.gsuus.com/play/eXDM4Gge/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 990,
+          "ms": 751,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apiguangsuapicom",
-        "checked_at": 1791587902,
+        "checked_at": 1791845431,
         "accepted": true,
         "name": "光速资源(切)",
         "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-        "latency_ms": 269,
+        "latency_ms": 3115,
         "types": {
           "1": {
             "name": "电影",
@@ -10072,19 +9800,19 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "方舟一号第三季",
+        "safe_sample_count": 55,
+        "blocked_item_count": 6,
+        "sample_title": "恋爱博士",
         "media_checks": [
           {
-            "url": "https://v.gsuus.com/play/axk2K4Be/index.m3u8",
+            "url": "https://v.gsuus.com/play/eXDM4Gge/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 990,
+            "ms": 751,
             "decode_tested": false
           }
         ],
@@ -10550,7 +10278,7 @@
     },
     "github": {
       "id": "cms_cjlziapicom",
-      "checked_at": 1791587902,
+      "checked_at": 1791845431,
       "accepted": false,
       "name": "量子 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 404: Not Found",
@@ -12183,17 +11911,178 @@
     },
     "github": {
       "id": "cms_caijidyttzyapicom",
-      "checked_at": 1791587906,
-      "accepted": false,
+      "checked_at": 1791845433,
+      "accepted": true,
       "name": "天堂 ⚠勿信广告",
-      "reason": "Media sample failed: HTTP Error 403: Forbidden",
+      "api": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
+      "latency_ms": 273,
+      "types": {
+        "1": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "21": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "25": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "26": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "27": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "29": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "31": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "32": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "33": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "36": {
+          "name": "短剧",
+          "genre": "短剧"
+        },
+        "37": {
+          "name": "动画片",
+          "genre": "动漫"
+        }
+      },
+      "media_hosts": [
+        "play.phimgood.com",
+        "vip.dytt-cine.com",
+        "vip.dytt-cinema.com",
+        "vip.dytt-hot.com",
+        "vip.dytt-kan.com",
+        "vip.dytt-network.com",
+        "vip.dytt-see.com",
+        "vip.dytt-tv.com",
+        "vip.dytt-tvs.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 34,
+          "type_pid": 1,
+          "type_name": "伦理片"
+        }
+      ],
+      "safe_sample_count": 61,
+      "blocked_item_count": 0,
+      "sample_title": "针线缘",
+      "media_checks": [
+        {
+          "url": "https://vip.dytt-tvs.com/20260812/32322_77050e6f/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 1884,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_caijidyttzyapicom",
-        "checked_at": 1791080936,
+        "checked_at": 1791845433,
         "accepted": true,
-        "name": "天堂 | 采集",
+        "name": "天堂 ⚠勿信广告",
         "api": "https://caiji.dyttzyapi.com/api.php/provide/vod/",
-        "latency_ms": 241,
+        "latency_ms": 273,
         "types": {
           "1": {
             "name": "电影片",
@@ -12326,7 +12215,6 @@
           "vip.dytt-cinema.com",
           "vip.dytt-hot.com",
           "vip.dytt-kan.com",
-          "vip.dytt-luck.com",
           "vip.dytt-network.com",
           "vip.dytt-see.com",
           "vip.dytt-tv.com",
@@ -12341,16 +12229,16 @@
         ],
         "safe_sample_count": 61,
         "blocked_item_count": 0,
-        "sample_title": "借出去的魔力要用【分期还款】强制收回",
+        "sample_title": "针线缘",
         "media_checks": [
           {
-            "url": "https://vip.dytt-tvs.com/20261004/39722_86ce5399/index.m3u8",
+            "url": "https://vip.dytt-tvs.com/20260812/32322_77050e6f/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 2126,
+            "ms": 1884,
             "decode_tested": false
           }
         ],
@@ -12375,7 +12263,7 @@
     },
     "github": {
       "id": "cms_mtzyme",
-      "checked_at": 1791587907,
+      "checked_at": 1791845437,
       "accepted": false,
       "name": "茅台 | 采集",
       "reason": "CMS response must contain a list"

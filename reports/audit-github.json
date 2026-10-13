@@ -1,381 +1,395 @@
 {
   "network": "github",
-  "checked_at": 1791906453,
+  "checked_at": 1791925614,
   "sites": [],
   "routes": [
     {
-      "id": "r_9449d12cadd192baaf0f",
+      "id": "r_026129dff5f41b56c6c1",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 495,
+      "ms": 320,
       "decode_tested": false
     },
     {
-      "id": "r_5e1e7fde7364e2f07192",
+      "id": "r_a8868a82f9d812fd2796",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 514,
+      "ms": 332,
       "decode_tested": false
     },
     {
-      "id": "r_f0e40da88fc9515ff347",
+      "id": "r_b488dfd6927613b4752d",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 662,
+      "ms": 1303,
       "decode_tested": false
     },
     {
-      "id": "r_fa0b6940138e70502854",
+      "id": "r_a579092ac9a2cbe1a6fe",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 1694,
+      "decode_tested": false
+    },
+    {
+      "id": "r_fcc5cc4bfee590f11619",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 331,
+      "decode_tested": false
+    },
+    {
+      "id": "r_6f484987190229d27628",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 336,
+      "decode_tested": false
+    },
+    {
+      "id": "r_3ae38914ca3489603135",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 678,
+      "decode_tested": false
+    },
+    {
+      "id": "r_111849fdf640dac3b239",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1342,
+      "decode_tested": false
+    },
+    {
+      "id": "r_fe89d5043bd964eda1b6",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 1256,
+      "decode_tested": false
+    },
+    {
+      "id": "r_65a46acc6dd25a28765c",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 2446,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0719f6b2da12a9ab317e",
       "ok": false,
       "reason": "The read operation timed out",
       "decode_tested": false
     },
     {
-      "id": "r_75e14fdd8e7462b7457d",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 453,
-      "decode_tested": false
-    },
-    {
-      "id": "r_a6d76e678f7ca1255339",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 536,
-      "decode_tested": false
-    },
-    {
-      "id": "r_6c79cc24cf02e71be521",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 583,
-      "decode_tested": false
-    },
-    {
-      "id": "r_45e9a689fa8ae979eeeb",
-      "ok": false,
-      "reason": "<urlopen error timed out>",
-      "decode_tested": false
-    },
-    {
-      "id": "r_d9946f86781aefd357c2",
+      "id": "r_4f9660196762002b0ecf",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 1628,
+      "ms": 2675,
       "decode_tested": false
     },
     {
-      "id": "r_e4557b5a428c3db22e6d",
+      "id": "r_a660714b8622b0e28ba3",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1082,
+      "decode_tested": false
+    },
+    {
+      "id": "r_e3b96a93a1f9920aafb1",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 1656,
+      "ms": 2781,
       "decode_tested": false
     },
     {
-      "id": "r_7d74730e7852de7bfd3f",
+      "id": "r_245930bc11132b37b350",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 470,
+      "ms": 2099,
       "decode_tested": false
     },
     {
-      "id": "r_6af89f546acbfa561993",
+      "id": "r_9578f24a1c20bfb15e9f",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1693,
+      "ms": 5096,
       "decode_tested": false
     },
     {
-      "id": "r_e68c0956b0de7863888e",
+      "id": "r_6c544cf3e09dd349352f",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 483,
+      "ms": 1576,
       "decode_tested": false
     },
     {
-      "id": "r_d38258e3f4484736bd3a",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 795,
-      "decode_tested": false
-    },
-    {
-      "id": "r_81a62d25c60cbd35731d",
+      "id": "r_5a644fb00245b5e0c7ee",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1095,
+      "ms": 1876,
       "decode_tested": false
     },
     {
-      "id": "r_1dfa4b9ddc3e4b4c1a5e",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 5289,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0c7ebb25254e933fbdc4",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1436,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0c36fff52cd0db51500e",
+      "id": "r_7bd951ea136eae542082",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 4017,
+      "ms": 6780,
       "decode_tested": false
     },
     {
-      "id": "r_c4ed3ff95d7530e53781",
+      "id": "r_4779b9bea2d5e6180513",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 4575,
+      "ms": 5735,
       "decode_tested": false
     },
     {
-      "id": "r_a828715d28c04ab7694f",
+      "id": "r_757efae6a997118cd170",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3318,
+      "ms": 2167,
       "decode_tested": false
     },
     {
-      "id": "r_42c4b31bf48c0c786e5a",
+      "id": "r_cbf99b73ae83d16f459c",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1710,
+      "ms": 1933,
       "decode_tested": false
     },
     {
-      "id": "r_1e25de5e1113fef026cd",
+      "id": "r_6d5569ebfb08ad88ca32",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1451,
+      "ms": 3217,
       "decode_tested": false
     },
     {
-      "id": "r_f78064378bb54e6c4d14",
+      "id": "r_a8abed600fc4e413bef2",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1920,
+      "ms": 4798,
       "decode_tested": false
     },
     {
-      "id": "r_786bbabc6ee50373f2f3",
+      "id": "r_32b46b07108c37bdf2ad",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 12846,
+      "ms": 4449,
       "decode_tested": false
     },
     {
-      "id": "r_b470901a96b06e25b7ba",
+      "id": "r_7bf1e4ff25554b94feb3",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 12642,
+      "ms": 1401,
       "decode_tested": false
     },
     {
-      "id": "r_6a117e4c4a02025e673b",
-      "ok": false,
-      "reason": "<urlopen error _ssl.c:1015: The handshake operation timed out>",
+      "id": "r_bd03031d1ee5d05e86b5",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2513,
       "decode_tested": false
     },
     {
-      "id": "r_1d35a0809912ce416fee",
-      "ok": false,
-      "reason": "HTTP Error 403: Forbidden",
+      "id": "r_ae201e4dffdd2d876aed",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 3642,
       "decode_tested": false
     },
     {
-      "id": "r_4876303b532e39e4b80c",
-      "ok": false,
-      "reason": "<urlopen error timed out>",
+      "id": "r_34a5df2e8e47de06c463",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1484,
       "decode_tested": false
     },
     {
-      "id": "r_4883134004fd8ad90e7f",
+      "id": "r_70e29e4614db554e2600",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1475,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0daa884fa215c8aec7c3",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2130,
+      "decode_tested": false
+    },
+    {
+      "id": "r_aeea9f126a307298d6f3",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 2041,
+      "decode_tested": false
+    },
+    {
+      "id": "r_d9bab25feccacb7ea88a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 3323,
+      "decode_tested": false
+    },
+    {
+      "id": "r_3706d2d9c91b96ab481a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2609,
+      "decode_tested": false
+    },
+    {
+      "id": "r_05c641eb13cdd1006798",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2321,
+      "decode_tested": false
+    },
+    {
+      "id": "r_927d923f99a16fc32699",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1855,
+      "decode_tested": false
+    },
+    {
+      "id": "r_84cfb3d6b9ccfcddd5a1",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2942,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0fef7997dd4871e4c302",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1772,
+      "decode_tested": false
+    },
+    {
+      "id": "r_f5299c4b8e9f80f43f00",
       "ok": false,
       "reason": "timed out",
       "decode_tested": false
     },
     {
-      "id": "r_3c56e8269d9a04c40da4",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2212,
-      "decode_tested": false
-    },
-    {
-      "id": "r_6d72f30630f3c27f209e",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1883,
-      "decode_tested": false
-    },
-    {
-      "id": "r_bb5b45a8158ac7576fee",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1860,
-      "decode_tested": false
-    },
-    {
-      "id": "r_f8a8ff5f4138d87b5e5e",
+      "id": "r_af3bbd5f639954fb645f",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 6564,
+      "ms": 5552,
       "decode_tested": false
     },
     {
-      "id": "r_1cb5caeef3d8fb4af84f",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 4532,
-      "decode_tested": false
-    },
-    {
-      "id": "r_ec1b9e3aa553889a4e98",
-      "ok": false,
-      "reason": "invalid HLS media segment",
-      "decode_tested": false
-    },
-    {
-      "id": "r_89f7bc29abc0131884b8",
+      "id": "r_5737f99396f831d8d6ed",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2306,
+      "ms": 1785,
       "decode_tested": false
     },
     {
-      "id": "r_3c82a996075326100f30",
+      "id": "r_954646fa8bd83bfecba0",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 3216,
-      "decode_tested": false
-    },
-    {
-      "id": "r_e268192e20c97088eab9",
-      "ok": false,
-      "reason": "HTTP success without recognizable media bytes",
-      "decode_tested": false
-    },
-    {
-      "id": "r_5938a7059446c026d0e7",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 2567,
-      "decode_tested": false
-    },
-    {
-      "id": "r_c70a308222054d3e15d7",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 3360,
-      "decode_tested": false
-    },
-    {
-      "id": "r_33e985e6b8bbbfb5bbd5",
-      "ok": false,
-      "reason": "<urlopen error timed out>",
-      "decode_tested": false
-    },
-    {
-      "id": "r_17bccd135b907e975d65",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 6108,
-      "decode_tested": false
-    },
-    {
-      "id": "r_2fa4d1e9d775f749f3f7",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 6863,
+      "ms": 1532,
       "decode_tested": false
     }
   ],
   "anomaly": {
     "flag": false,
-    "healthy_now": 1938,
-    "healthy_prev": 1939,
-    "drop": 0.001
+    "healthy_now": 1939,
+    "healthy_prev": 1938,
+    "drop": -0.001
   }
 }

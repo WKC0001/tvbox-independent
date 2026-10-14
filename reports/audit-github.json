@@ -1,395 +1,373 @@
 {
   "network": "github",
-  "checked_at": 1791925614,
+  "checked_at": 1791939700,
   "sites": [],
   "routes": [
     {
-      "id": "r_026129dff5f41b56c6c1",
+      "id": "r_9ee2f6c9816547e60e4c",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 320,
+      "ms": 990,
       "decode_tested": false
     },
     {
-      "id": "r_a8868a82f9d812fd2796",
+      "id": "r_0b3cacdc0dab1d61dce1",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 332,
+      "ms": 1582,
       "decode_tested": false
     },
     {
-      "id": "r_b488dfd6927613b4752d",
+      "id": "r_b98c33ce2bfa09d7aa6b",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1303,
+      "ms": 457,
       "decode_tested": false
     },
     {
-      "id": "r_a579092ac9a2cbe1a6fe",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 1694,
-      "decode_tested": false
-    },
-    {
-      "id": "r_fcc5cc4bfee590f11619",
+      "id": "r_44ea6d6780fec9182211",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 331,
+      "ms": 1570,
       "decode_tested": false
     },
     {
-      "id": "r_6f484987190229d27628",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 336,
-      "decode_tested": false
-    },
-    {
-      "id": "r_3ae38914ca3489603135",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 678,
-      "decode_tested": false
-    },
-    {
-      "id": "r_111849fdf640dac3b239",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1342,
-      "decode_tested": false
-    },
-    {
-      "id": "r_fe89d5043bd964eda1b6",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 1256,
-      "decode_tested": false
-    },
-    {
-      "id": "r_65a46acc6dd25a28765c",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 2446,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0719f6b2da12a9ab317e",
+      "id": "r_8f96ccff1cce0a38a87a",
       "ok": false,
-      "reason": "The read operation timed out",
+      "reason": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily",
       "decode_tested": false
     },
     {
-      "id": "r_4f9660196762002b0ecf",
+      "id": "r_75c94b233cb38730c558",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1231,
+      "decode_tested": false
+    },
+    {
+      "id": "r_f45b6a1eb7a6bb80ec28",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 619,
+      "decode_tested": false
+    },
+    {
+      "id": "r_65dcbf96f4bf8de73daf",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1449,
+      "decode_tested": false
+    },
+    {
+      "id": "r_b75329a9dcabbc17e46d",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 802,
+      "decode_tested": false
+    },
+    {
+      "id": "r_a3be980f1748e1a25387",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1385,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0f14bb6e60cfa5dcc2e0",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 2675,
+      "ms": 2029,
       "decode_tested": false
     },
     {
-      "id": "r_a660714b8622b0e28ba3",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1082,
+      "id": "r_4caf3997b273503c5dd6",
+      "ok": false,
+      "reason": "HTTP Error 302: The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\nMoved Temporarily",
       "decode_tested": false
     },
     {
-      "id": "r_e3b96a93a1f9920aafb1",
+      "id": "r_e85f40cd0b83fa6edd9c",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 2781,
+      "ms": 4374,
       "decode_tested": false
     },
     {
-      "id": "r_245930bc11132b37b350",
+      "id": "r_7d2acd85d7643ebff73b",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 2099,
+      "ms": 1407,
       "decode_tested": false
     },
     {
-      "id": "r_9578f24a1c20bfb15e9f",
+      "id": "r_a46f4978ecfe16332e27",
+      "ok": false,
+      "reason": "HTTP success without recognizable media bytes",
+      "decode_tested": false
+    },
+    {
+      "id": "r_74000d4f08e4744070ac",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 5096,
+      "ms": 2539,
       "decode_tested": false
     },
     {
-      "id": "r_6c544cf3e09dd349352f",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1576,
-      "decode_tested": false
-    },
-    {
-      "id": "r_5a644fb00245b5e0c7ee",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1876,
-      "decode_tested": false
-    },
-    {
-      "id": "r_7bd951ea136eae542082",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 6780,
-      "decode_tested": false
-    },
-    {
-      "id": "r_4779b9bea2d5e6180513",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 5735,
-      "decode_tested": false
-    },
-    {
-      "id": "r_757efae6a997118cd170",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2167,
-      "decode_tested": false
-    },
-    {
-      "id": "r_cbf99b73ae83d16f459c",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1933,
-      "decode_tested": false
-    },
-    {
-      "id": "r_6d5569ebfb08ad88ca32",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 3217,
-      "decode_tested": false
-    },
-    {
-      "id": "r_a8abed600fc4e413bef2",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 4798,
-      "decode_tested": false
-    },
-    {
-      "id": "r_32b46b07108c37bdf2ad",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 4449,
-      "decode_tested": false
-    },
-    {
-      "id": "r_7bf1e4ff25554b94feb3",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1401,
-      "decode_tested": false
-    },
-    {
-      "id": "r_bd03031d1ee5d05e86b5",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2513,
-      "decode_tested": false
-    },
-    {
-      "id": "r_ae201e4dffdd2d876aed",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 3642,
-      "decode_tested": false
-    },
-    {
-      "id": "r_34a5df2e8e47de06c463",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1484,
-      "decode_tested": false
-    },
-    {
-      "id": "r_70e29e4614db554e2600",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1475,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0daa884fa215c8aec7c3",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2130,
-      "decode_tested": false
-    },
-    {
-      "id": "r_aeea9f126a307298d6f3",
-      "ok": true,
-      "level": [
-        "master",
-        "media-segment"
-      ],
-      "ms": 2041,
-      "decode_tested": false
-    },
-    {
-      "id": "r_d9bab25feccacb7ea88a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 3323,
-      "decode_tested": false
-    },
-    {
-      "id": "r_3706d2d9c91b96ab481a",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2609,
-      "decode_tested": false
-    },
-    {
-      "id": "r_05c641eb13cdd1006798",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2321,
-      "decode_tested": false
-    },
-    {
-      "id": "r_927d923f99a16fc32699",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1855,
-      "decode_tested": false
-    },
-    {
-      "id": "r_84cfb3d6b9ccfcddd5a1",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 2942,
-      "decode_tested": false
-    },
-    {
-      "id": "r_0fef7997dd4871e4c302",
-      "ok": true,
-      "level": [
-        "media-segment"
-      ],
-      "ms": 1772,
-      "decode_tested": false
-    },
-    {
-      "id": "r_f5299c4b8e9f80f43f00",
+      "id": "r_19affacab04494867aa2",
       "ok": false,
       "reason": "timed out",
       "decode_tested": false
     },
     {
-      "id": "r_af3bbd5f639954fb645f",
+      "id": "r_06a734332258f6c7c7b0",
       "ok": true,
       "level": [
         "master",
         "media-segment"
       ],
-      "ms": 5552,
+      "ms": 15822,
       "decode_tested": false
     },
     {
-      "id": "r_5737f99396f831d8d6ed",
+      "id": "r_b615bd9bb1d4aae9e760",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 2766,
+      "decode_tested": false
+    },
+    {
+      "id": "r_4274b89becbc4e931c05",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1785,
+      "ms": 2499,
       "decode_tested": false
     },
     {
-      "id": "r_954646fa8bd83bfecba0",
+      "id": "r_1713cc0b68748391ce5b",
       "ok": true,
       "level": [
         "media-segment"
       ],
-      "ms": 1532,
+      "ms": 10466,
+      "decode_tested": false
+    },
+    {
+      "id": "r_79d5672c0e01460c1faf",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1811,
+      "decode_tested": false
+    },
+    {
+      "id": "r_9887dd8ae51397e2cf5f",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1218,
+      "decode_tested": false
+    },
+    {
+      "id": "r_a5257cd1a65009a14180",
+      "ok": false,
+      "reason": "timed out",
+      "decode_tested": false
+    },
+    {
+      "id": "r_8eea8e046363ad8fa183",
+      "ok": false,
+      "reason": "timed out",
+      "decode_tested": false
+    },
+    {
+      "id": "r_ee7c7def2b1e96fe4848",
+      "ok": false,
+      "reason": "timed out",
+      "decode_tested": false
+    },
+    {
+      "id": "r_c0b5a1a8a3c141e03278",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1543,
+      "decode_tested": false
+    },
+    {
+      "id": "r_5fb965423351402852ed",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2279,
+      "decode_tested": false
+    },
+    {
+      "id": "r_9ed2f02bd449b9ce7db9",
+      "ok": false,
+      "reason": "HTTP Error 403: Forbidden",
+      "decode_tested": false
+    },
+    {
+      "id": "r_d834139d0ef060b596a0",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 3428,
+      "decode_tested": false
+    },
+    {
+      "id": "r_4b7785e2bd30e40c2b99",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 3747,
+      "decode_tested": false
+    },
+    {
+      "id": "r_ed536f0de776c270ed33",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2192,
+      "decode_tested": false
+    },
+    {
+      "id": "r_ecf79c13e1e3f3d4c7d2",
+      "ok": true,
+      "level": [
+        "master",
+        "media-segment"
+      ],
+      "ms": 1858,
+      "decode_tested": false
+    },
+    {
+      "id": "r_11d2bb180e0d5bc5a954",
+      "ok": false,
+      "reason": "<urlopen error timed out>",
+      "decode_tested": false
+    },
+    {
+      "id": "r_017a5373c24c88bc0ef7",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2641,
+      "decode_tested": false
+    },
+    {
+      "id": "r_9b446d05c8c931a7de52",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 2706,
+      "decode_tested": false
+    },
+    {
+      "id": "r_6dc4870cbc3fda4095f2",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1470,
+      "decode_tested": false
+    },
+    {
+      "id": "r_a453eccd3a96ea2a254d",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1146,
+      "decode_tested": false
+    },
+    {
+      "id": "r_d86385ce7924bc6d904e",
+      "ok": false,
+      "reason": "<urlopen error [Errno 111] Connection refused>",
+      "decode_tested": false
+    },
+    {
+      "id": "r_de333e1a19f8eac1206c",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 311,
+      "decode_tested": false
+    },
+    {
+      "id": "r_7cebf8d625f898001c76",
+      "ok": false,
+      "reason": "invalid HLS media segment",
+      "decode_tested": false
+    },
+    {
+      "id": "r_cc2f7c56262a7eb85cfd",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 3083,
+      "decode_tested": false
+    },
+    {
+      "id": "r_0f65c7cb074dc1bb366a",
+      "ok": true,
+      "level": [
+        "media-segment"
+      ],
+      "ms": 1593,
       "decode_tested": false
     }
   ],
   "anomaly": {
     "flag": false,
-    "healthy_now": 1939,
-    "healthy_prev": 1938,
-    "drop": -0.001
+    "healthy_now": 1938,
+    "healthy_prev": 1939,
+    "drop": 0.001
   }
 }

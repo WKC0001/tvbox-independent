@@ -16,7 +16,7 @@
     },
     "github": {
       "id": "cms_dbzytv",
-      "checked_at": 1792793615,
+      "checked_at": 1792796324,
       "accepted": false,
       "name": "豆瓣 | 采集",
       "reason": "CMS response must contain a list"
@@ -39,7 +39,7 @@
     },
     "github": {
       "id": "cms_apiniuniuzyme",
-      "checked_at": 1792793615,
+      "checked_at": 1792796324,
       "accepted": false,
       "name": "牛牛 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -62,7 +62,7 @@
     },
     "github": {
       "id": "cms_zuidazyme",
-      "checked_at": 1792793615,
+      "checked_at": 1792796324,
       "accepted": false,
       "name": "最大 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -502,11 +502,11 @@
     },
     "github": {
       "id": "cms_wwwmdzyapicom",
-      "checked_at": 1792793615,
+      "checked_at": 1792796324,
       "accepted": true,
       "name": "魔都 | 采集",
       "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "latency_ms": 287,
+      "latency_ms": 652,
       "types": {
         "1": {
           "name": "国产动漫",
@@ -707,18 +707,18 @@
             "master",
             "media-segment"
           ],
-          "ms": 739,
+          "ms": 1225,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwmdzyapicom",
-        "checked_at": 1792793615,
+        "checked_at": 1792796324,
         "accepted": true,
         "name": "魔都 | 采集",
         "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-        "latency_ms": 287,
+        "latency_ms": 652,
         "types": {
           "1": {
             "name": "国产动漫",
@@ -919,7 +919,7 @@
               "master",
               "media-segment"
             ],
-            "ms": 739,
+            "ms": 1225,
             "decode_tested": false
           }
         ],
@@ -1115,7 +1115,7 @@
     },
     "github": {
       "id": "cms_p2100net",
-      "checked_at": 1792793618,
+      "checked_at": 1792796329,
       "accepted": false,
       "name": "飘零 ⚠勿信广告",
       "reason": "HTTP Error 403: Forbidden"
@@ -1607,11 +1607,11 @@
     },
     "github": {
       "id": "cms_haohuazycom",
-      "checked_at": 1792793619,
+      "checked_at": 1792796329,
       "accepted": true,
       "name": "豪华 | 采集",
       "api": "https://haohuazy.com/api.php/provide/vod/",
-      "latency_ms": 305,
+      "latency_ms": 322,
       "types": {
         "1": {
           "name": "电视剧",
@@ -1837,18 +1837,18 @@
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 582,
+          "ms": 809,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_haohuazycom",
-        "checked_at": 1792793619,
+        "checked_at": 1792796329,
         "accepted": true,
         "name": "豪华 | 采集",
         "api": "https://haohuazy.com/api.php/provide/vod/",
-        "latency_ms": 305,
+        "latency_ms": 322,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2074,7 +2074,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 582,
+            "ms": 809,
             "decode_tested": false
           }
         ],
@@ -2561,11 +2561,11 @@
     },
     "github": {
       "id": "cms_huyazynet",
-      "checked_at": 1792793619,
+      "checked_at": 1792796330,
       "accepted": true,
       "name": "虎牙 | 采集",
       "api": "https://huyazy.net/api.php/provide/vod/",
-      "latency_ms": 228,
+      "latency_ms": 314,
       "types": {
         "1": {
           "name": "电视剧",
@@ -2776,18 +2776,18 @@
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 571,
+          "ms": 938,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_huyazynet",
-        "checked_at": 1792793619,
+        "checked_at": 1792796330,
         "accepted": true,
         "name": "虎牙 | 采集",
         "api": "https://huyazy.net/api.php/provide/vod/",
-        "latency_ms": 228,
+        "latency_ms": 314,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2998,7 +2998,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 571,
+            "ms": 938,
             "decode_tested": false
           }
         ],
@@ -3023,7 +3023,7 @@
     },
     "github": {
       "id": "cms_cjyayazynet",
-      "checked_at": 1792793620,
+      "checked_at": 1792796331,
       "accepted": false,
       "name": "鸭鸭 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -3541,7 +3541,7 @@
     },
     "github": {
       "id": "cms_360zycom",
-      "checked_at": 1792793621,
+      "checked_at": 1792796331,
       "accepted": false,
       "name": "360 ⚠勿信广告",
       "reason": "Media sample failed: invalid HLS media segment",
@@ -3823,7 +3823,7 @@
     },
     "github": {
       "id": "cms_apiwujinapinet",
-      "checked_at": 1792793622,
+      "checked_at": 1792796334,
       "accepted": false,
       "name": "无尽 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -4283,11 +4283,11 @@
     },
     "github": {
       "id": "cms_jyzyapicom",
-      "checked_at": 1792793624,
+      "checked_at": 1792796334,
       "accepted": true,
       "name": "金鹰 | 采集",
       "api": "https://jyzyapi.com/api.php/provide/vod/",
-      "latency_ms": 501,
+      "latency_ms": 207,
       "types": {
         "1": {
           "name": "电视剧",
@@ -4497,18 +4497,18 @@
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 2461,
+          "ms": 2814,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jyzyapicom",
-        "checked_at": 1792793624,
+        "checked_at": 1792796334,
         "accepted": true,
         "name": "金鹰 | 采集",
         "api": "https://jyzyapi.com/api.php/provide/vod/",
-        "latency_ms": 501,
+        "latency_ms": 207,
         "types": {
           "1": {
             "name": "电视剧",
@@ -4718,7 +4718,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 2461,
+            "ms": 2814,
             "decode_tested": false
           }
         ],
@@ -4743,7 +4743,7 @@
     },
     "github": {
       "id": "cms_suoniapicom",
-      "checked_at": 1792793626,
+      "checked_at": 1792796338,
       "accepted": false,
       "name": "索尼 | 采集 ",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5235,11 +5235,11 @@
     },
     "github": {
       "id": "cms_apixinlangapicom",
-      "checked_at": 1792793626,
+      "checked_at": 1792796339,
       "accepted": true,
       "name": "新浪资源(切)",
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-      "latency_ms": 203,
+      "latency_ms": 192,
       "types": {
         "1": {
           "name": "电影",
@@ -5460,29 +5460,23 @@
       "media_checks": [
         {
           "url": "https://play.xluuss.com/play/e31974Ab/index.m3u8",
-          "ok": false,
-          "reason": "<urlopen error timed out>",
-          "decode_tested": false
-        },
-        {
-          "url": "https://play.xluuss.com/play/e1wY9lGb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 543,
+          "ms": 8326,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apixinlangapicom",
-        "checked_at": 1792793626,
+        "checked_at": 1792796339,
         "accepted": true,
         "name": "新浪资源(切)",
         "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-        "latency_ms": 203,
+        "latency_ms": 192,
         "types": {
           "1": {
             "name": "电影",
@@ -5703,18 +5697,12 @@
         "media_checks": [
           {
             "url": "https://play.xluuss.com/play/e31974Ab/index.m3u8",
-            "ok": false,
-            "reason": "<urlopen error timed out>",
-            "decode_tested": false
-          },
-          {
-            "url": "https://play.xluuss.com/play/e1wY9lGb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 543,
+            "ms": 8326,
             "decode_tested": false
           }
         ],
@@ -5739,7 +5727,7 @@
     },
     "github": {
       "id": "cms_tyyszycom",
-      "checked_at": 1792793628,
+      "checked_at": 1792796340,
       "accepted": false,
       "name": "影视 | 天涯",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5762,7 +5750,7 @@
     },
     "github": {
       "id": "cms_1542191172329981",
-      "checked_at": 1792793632,
+      "checked_at": 1792796346,
       "accepted": false,
       "name": "影视 | 建安",
       "reason": "Search ignored nonmatching keyword"
@@ -6292,7 +6280,7 @@
     },
     "github": {
       "id": "cms_bfzyapicom",
-      "checked_at": 1792793635,
+      "checked_at": 1792796347,
       "accepted": false,
       "name": "暴風 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 404: Not Found",
@@ -6987,11 +6975,11 @@
     },
     "github": {
       "id": "cms_wwwhongniuzy2com",
-      "checked_at": 1792793640,
+      "checked_at": 1792796350,
       "accepted": true,
       "name": "红牛资源(切)",
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-      "latency_ms": 174,
+      "latency_ms": 224,
       "types": {
         "1": {
           "name": "电影",
@@ -7186,18 +7174,18 @@
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 3053,
+          "ms": 3505,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwhongniuzy2com",
-        "checked_at": 1792793640,
+        "checked_at": 1792796350,
         "accepted": true,
         "name": "红牛资源(切)",
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-        "latency_ms": 174,
+        "latency_ms": 224,
         "types": {
           "1": {
             "name": "电影",
@@ -7392,7 +7380,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 3053,
+            "ms": 3505,
             "decode_tested": false
           }
         ],
@@ -7417,7 +7405,7 @@
     },
     "github": {
       "id": "cms_sdzyapicom",
-      "checked_at": 1792793640,
+      "checked_at": 1792796356,
       "accepted": false,
       "name": "闪电资源(切)",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -7769,11 +7757,11 @@
     },
     "github": {
       "id": "cms_cjffzyapicom",
-      "checked_at": 1792793644,
+      "checked_at": 1792796356,
       "accepted": true,
       "name": "非凡 ⚠勿信广告",
       "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-      "latency_ms": 714,
+      "latency_ms": 1319,
       "types": {
         "1": {
           "name": "电影片",
@@ -7931,18 +7919,18 @@
             "master",
             "media-segment"
           ],
-          "ms": 1356,
+          "ms": 3078,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_cjffzyapicom",
-        "checked_at": 1792793644,
+        "checked_at": 1792796356,
         "accepted": true,
         "name": "非凡 ⚠勿信广告",
         "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-        "latency_ms": 714,
+        "latency_ms": 1319,
         "types": {
           "1": {
             "name": "电影片",
@@ -8100,7 +8088,7 @@
               "master",
               "media-segment"
             ],
-            "ms": 1356,
+            "ms": 3078,
             "decode_tested": false
           }
         ],
@@ -8825,7 +8813,7 @@
     },
     "github": {
       "id": "cms_jszyapicom",
-      "checked_at": 1792793645,
+      "checked_at": 1792796358,
       "accepted": false,
       "name": "影视 | 极速[直连]",
       "reason": "Media sample failed: <urlopen error [Errno 111] Connection refused>"
@@ -8848,7 +8836,7 @@
     },
     "github": {
       "id": "cms_apiapibdzycom",
-      "checked_at": 1792793647,
+      "checked_at": 1792796359,
       "accepted": false,
       "name": "百度",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -9526,11 +9514,11 @@
     },
     "github": {
       "id": "cms_apiguangsuapicom",
-      "checked_at": 1792793650,
+      "checked_at": 1792796363,
       "accepted": true,
       "name": "光速资源(切)",
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "latency_ms": 100,
+      "latency_ms": 164,
       "types": {
         "1": {
           "name": "电影",
@@ -9741,18 +9729,18 @@
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 741,
+          "ms": 951,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apiguangsuapicom",
-        "checked_at": 1792793650,
+        "checked_at": 1792796363,
         "accepted": true,
         "name": "光速资源(切)",
         "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-        "latency_ms": 100,
+        "latency_ms": 164,
         "types": {
           "1": {
             "name": "电影",
@@ -9963,7 +9951,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 741,
+            "ms": 951,
             "decode_tested": false
           }
         ],
@@ -10429,10 +10417,10 @@
     },
     "github": {
       "id": "cms_cjlziapicom",
-      "checked_at": 1792793651,
+      "checked_at": 1792796364,
       "accepted": false,
       "name": "量子 ⚠勿信广告",
-      "reason": "Media sample failed: HTTP Error 404: Not Found",
+      "reason": "Exact normalized title search failed",
       "last_success": {
         "id": "cms_cjlziapicom",
         "checked_at": 1791326023,
@@ -12062,7 +12050,7 @@
     },
     "github": {
       "id": "cms_caijidyttzyapicom",
-      "checked_at": 1792793652,
+      "checked_at": 1792796366,
       "accepted": false,
       "name": "天堂 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -12253,7 +12241,7 @@
     },
     "github": {
       "id": "cms_mtzyme",
-      "checked_at": 1792793652,
+      "checked_at": 1792796368,
       "accepted": false,
       "name": "茅台 | 采集",
       "reason": "CMS response must contain a list"

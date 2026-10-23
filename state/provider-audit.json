@@ -16,10 +16,10 @@
     },
     "github": {
       "id": "cms_dbzytv",
-      "checked_at": 1792190539,
+      "checked_at": 1792793615,
       "accepted": false,
       "name": "豆瓣 | 采集",
-      "reason": "No approved current category ids"
+      "reason": "CMS response must contain a list"
     }
   },
   "cms_apiniuniuzyme": {
@@ -39,7 +39,7 @@
     },
     "github": {
       "id": "cms_apiniuniuzyme",
-      "checked_at": 1792190539,
+      "checked_at": 1792793615,
       "accepted": false,
       "name": "牛牛 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -62,7 +62,7 @@
     },
     "github": {
       "id": "cms_zuidazyme",
-      "checked_at": 1792190539,
+      "checked_at": 1792793615,
       "accepted": false,
       "name": "最大 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -502,11 +502,11 @@
     },
     "github": {
       "id": "cms_wwwmdzyapicom",
-      "checked_at": 1792190539,
+      "checked_at": 1792793615,
       "accepted": true,
       "name": "魔都 | 采集",
       "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "latency_ms": 398,
+      "latency_ms": 287,
       "types": {
         "1": {
           "name": "国产动漫",
@@ -696,29 +696,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 72,
-      "blocked_item_count": 8,
-      "sample_title": "女儿受辱，杀猪老爹出山了",
+      "safe_sample_count": 80,
+      "blocked_item_count": 0,
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://play.modujx17.com/20261016/IntzXane/index.m3u8",
+          "url": "https://play.modujx17.com/20261017/b5ITNzTI/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "media-segment"
           ],
-          "ms": 1369,
+          "ms": 739,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwmdzyapicom",
-        "checked_at": 1792190539,
+        "checked_at": 1792793615,
         "accepted": true,
         "name": "魔都 | 采集",
         "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-        "latency_ms": 398,
+        "latency_ms": 287,
         "types": {
           "1": {
             "name": "国产动漫",
@@ -908,18 +908,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 72,
-        "blocked_item_count": 8,
-        "sample_title": "女儿受辱，杀猪老爹出山了",
+        "safe_sample_count": 80,
+        "blocked_item_count": 0,
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://play.modujx17.com/20261016/IntzXane/index.m3u8",
+            "url": "https://play.modujx17.com/20261017/b5ITNzTI/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 1369,
+            "ms": 739,
             "decode_tested": false
           }
         ],
@@ -1115,7 +1115,7 @@
     },
     "github": {
       "id": "cms_p2100net",
-      "checked_at": 1792190540,
+      "checked_at": 1792793618,
       "accepted": false,
       "name": "飘零 ⚠勿信广告",
       "reason": "HTTP Error 403: Forbidden"
@@ -1607,11 +1607,11 @@
     },
     "github": {
       "id": "cms_haohuazycom",
-      "checked_at": 1792190540,
+      "checked_at": 1792793619,
       "accepted": true,
       "name": "豪华 | 采集",
       "api": "https://haohuazy.com/api.php/provide/vod/",
-      "latency_ms": 747,
+      "latency_ms": 305,
       "types": {
         "1": {
           "name": "电视剧",
@@ -1826,29 +1826,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "嫁金钗",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "妈妈发疯了",
       "media_checks": [
         {
-          "url": "https://play.hhuus.com/play/e1wY9Pob/index.m3u8",
+          "url": "https://play.hhuus.com/play/bo2OgKBa/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 639,
+          "ms": 582,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_haohuazycom",
-        "checked_at": 1792190540,
+        "checked_at": 1792793619,
         "accepted": true,
         "name": "豪华 | 采集",
         "api": "https://haohuazy.com/api.php/provide/vod/",
-        "latency_ms": 747,
+        "latency_ms": 305,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2063,18 +2063,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "嫁金钗",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "妈妈发疯了",
         "media_checks": [
           {
-            "url": "https://play.hhuus.com/play/e1wY9Pob/index.m3u8",
+            "url": "https://play.hhuus.com/play/bo2OgKBa/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 639,
+            "ms": 582,
             "decode_tested": false
           }
         ],
@@ -2561,11 +2561,11 @@
     },
     "github": {
       "id": "cms_huyazynet",
-      "checked_at": 1792190543,
+      "checked_at": 1792793619,
       "accepted": true,
       "name": "虎牙 | 采集",
       "api": "https://huyazy.net/api.php/provide/vod/",
-      "latency_ms": 303,
+      "latency_ms": 228,
       "types": {
         "1": {
           "name": "电视剧",
@@ -2765,29 +2765,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 43,
-      "blocked_item_count": 0,
-      "sample_title": "惠 s CLUB-郑秀彬",
+      "safe_sample_count": 42,
+      "blocked_item_count": 1,
+      "sample_title": "妈妈发疯了",
       "media_checks": [
         {
-          "url": "https://1080p.huyall.com/play/5eVwnr1a/index.m3u8",
+          "url": "https://1080p.huyall.com/play/en5z9XWd/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 797,
+          "ms": 571,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_huyazynet",
-        "checked_at": 1792190543,
+        "checked_at": 1792793619,
         "accepted": true,
         "name": "虎牙 | 采集",
         "api": "https://huyazy.net/api.php/provide/vod/",
-        "latency_ms": 303,
+        "latency_ms": 228,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2987,18 +2987,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 43,
-        "blocked_item_count": 0,
-        "sample_title": "惠 s CLUB-郑秀彬",
+        "safe_sample_count": 42,
+        "blocked_item_count": 1,
+        "sample_title": "妈妈发疯了",
         "media_checks": [
           {
-            "url": "https://1080p.huyall.com/play/5eVwnr1a/index.m3u8",
+            "url": "https://1080p.huyall.com/play/en5z9XWd/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 797,
+            "ms": 571,
             "decode_tested": false
           }
         ],
@@ -3023,7 +3023,7 @@
     },
     "github": {
       "id": "cms_cjyayazynet",
-      "checked_at": 1792190546,
+      "checked_at": 1792793620,
       "accepted": false,
       "name": "鸭鸭 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -3541,7 +3541,7 @@
     },
     "github": {
       "id": "cms_360zycom",
-      "checked_at": 1792190546,
+      "checked_at": 1792793621,
       "accepted": false,
       "name": "360 ⚠勿信广告",
       "reason": "Media sample failed: invalid HLS media segment",
@@ -3823,7 +3823,7 @@
     },
     "github": {
       "id": "cms_apiwujinapinet",
-      "checked_at": 1792190547,
+      "checked_at": 1792793622,
       "accepted": false,
       "name": "无尽 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -4283,11 +4283,11 @@
     },
     "github": {
       "id": "cms_jyzyapicom",
-      "checked_at": 1792190548,
+      "checked_at": 1792793624,
       "accepted": true,
       "name": "金鹰 | 采集",
       "api": "https://jyzyapi.com/api.php/provide/vod/",
-      "latency_ms": 175,
+      "latency_ms": 501,
       "types": {
         "1": {
           "name": "电视剧",
@@ -4486,29 +4486,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "嫁金钗",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "妈妈发疯了",
       "media_checks": [
         {
-          "url": "https://hd.kuktxu.com/play/eZ6wWNEe/index.m3u8",
+          "url": "https://hd.kuktxu.com/play/en5z9XWd/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 2575,
+          "ms": 2461,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jyzyapicom",
-        "checked_at": 1792190548,
+        "checked_at": 1792793624,
         "accepted": true,
         "name": "金鹰 | 采集",
         "api": "https://jyzyapi.com/api.php/provide/vod/",
-        "latency_ms": 175,
+        "latency_ms": 501,
         "types": {
           "1": {
             "name": "电视剧",
@@ -4707,18 +4707,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "嫁金钗",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "妈妈发疯了",
         "media_checks": [
           {
-            "url": "https://hd.kuktxu.com/play/eZ6wWNEe/index.m3u8",
+            "url": "https://hd.kuktxu.com/play/en5z9XWd/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 2575,
+            "ms": 2461,
             "decode_tested": false
           }
         ],
@@ -4743,7 +4743,7 @@
     },
     "github": {
       "id": "cms_suoniapicom",
-      "checked_at": 1792190553,
+      "checked_at": 1792793626,
       "accepted": false,
       "name": "索尼 | 采集 ",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5235,11 +5235,11 @@
     },
     "github": {
       "id": "cms_apixinlangapicom",
-      "checked_at": 1792190554,
+      "checked_at": 1792793626,
       "accepted": true,
       "name": "新浪资源(切)",
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-      "latency_ms": 222,
+      "latency_ms": 203,
       "types": {
         "1": {
           "name": "电影",
@@ -5454,35 +5454,35 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "嫁金钗",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "某暗部的少女共栖",
       "media_checks": [
         {
-          "url": "https://play.xluuss.com/play/bYEQMN9b/index.m3u8",
+          "url": "https://play.xluuss.com/play/e31974Ab/index.m3u8",
           "ok": false,
           "reason": "<urlopen error timed out>",
           "decode_tested": false
         },
         {
-          "url": "https://play.xluuss.com/play/dR6MLqYd/index.m3u8",
+          "url": "https://play.xluuss.com/play/e1wY9lGb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 752,
+          "ms": 543,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apixinlangapicom",
-        "checked_at": 1792190554,
+        "checked_at": 1792793626,
         "accepted": true,
         "name": "新浪资源(切)",
         "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-        "latency_ms": 222,
+        "latency_ms": 203,
         "types": {
           "1": {
             "name": "电影",
@@ -5697,24 +5697,24 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "嫁金钗",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "某暗部的少女共栖",
         "media_checks": [
           {
-            "url": "https://play.xluuss.com/play/bYEQMN9b/index.m3u8",
+            "url": "https://play.xluuss.com/play/e31974Ab/index.m3u8",
             "ok": false,
             "reason": "<urlopen error timed out>",
             "decode_tested": false
           },
           {
-            "url": "https://play.xluuss.com/play/dR6MLqYd/index.m3u8",
+            "url": "https://play.xluuss.com/play/e1wY9lGb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 752,
+            "ms": 543,
             "decode_tested": false
           }
         ],
@@ -5739,7 +5739,7 @@
     },
     "github": {
       "id": "cms_tyyszycom",
-      "checked_at": 1792190554,
+      "checked_at": 1792793628,
       "accepted": false,
       "name": "影视 | 天涯",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5762,7 +5762,7 @@
     },
     "github": {
       "id": "cms_1542191172329981",
-      "checked_at": 1792190561,
+      "checked_at": 1792793632,
       "accepted": false,
       "name": "影视 | 建安",
       "reason": "Search ignored nonmatching keyword"
@@ -6292,268 +6292,10 @@
     },
     "github": {
       "id": "cms_bfzyapicom",
-      "checked_at": 1792190561,
-      "accepted": true,
+      "checked_at": 1792793635,
+      "accepted": false,
       "name": "暴風 ⚠勿信广告",
-      "api": "https://bfzyapi.com/api.php/provide/vod/",
-      "latency_ms": 813,
-      "types": {
-        "20": {
-          "name": "电影片",
-          "genre": "电影"
-        },
-        "21": {
-          "name": "动作片",
-          "genre": "电影"
-        },
-        "22": {
-          "name": "喜剧片",
-          "genre": "电影"
-        },
-        "23": {
-          "name": "恐怖片",
-          "genre": "电影"
-        },
-        "24": {
-          "name": "科幻片",
-          "genre": "电影"
-        },
-        "25": {
-          "name": "爱情片",
-          "genre": "电影"
-        },
-        "26": {
-          "name": "剧情片",
-          "genre": "电影"
-        },
-        "27": {
-          "name": "战争片",
-          "genre": "电影"
-        },
-        "28": {
-          "name": "纪录片",
-          "genre": "纪录片"
-        },
-        "30": {
-          "name": "连续剧",
-          "genre": "电视剧"
-        },
-        "31": {
-          "name": "国产剧",
-          "genre": "电视剧"
-        },
-        "32": {
-          "name": "欧美剧",
-          "genre": "电视剧"
-        },
-        "33": {
-          "name": "香港剧",
-          "genre": "电视剧"
-        },
-        "34": {
-          "name": "韩国剧",
-          "genre": "电视剧"
-        },
-        "35": {
-          "name": "台湾剧",
-          "genre": "电视剧"
-        },
-        "36": {
-          "name": "日本剧",
-          "genre": "电视剧"
-        },
-        "37": {
-          "name": "海外剧",
-          "genre": "电视剧"
-        },
-        "38": {
-          "name": "泰国剧",
-          "genre": "电视剧"
-        },
-        "39": {
-          "name": "动漫片",
-          "genre": "动漫"
-        },
-        "40": {
-          "name": "国产动漫",
-          "genre": "动漫"
-        },
-        "41": {
-          "name": "日韩动漫",
-          "genre": "动漫"
-        },
-        "42": {
-          "name": "欧美动漫",
-          "genre": "动漫"
-        },
-        "43": {
-          "name": "港台动漫",
-          "genre": "动漫"
-        },
-        "44": {
-          "name": "海外动漫",
-          "genre": "动漫"
-        },
-        "45": {
-          "name": "综艺片",
-          "genre": "综艺"
-        },
-        "46": {
-          "name": "大陆综艺",
-          "genre": "综艺"
-        },
-        "47": {
-          "name": "港台综艺",
-          "genre": "综艺"
-        },
-        "48": {
-          "name": "日韩综艺",
-          "genre": "综艺"
-        },
-        "49": {
-          "name": "欧美综艺",
-          "genre": "综艺"
-        },
-        "50": {
-          "name": "动画片",
-          "genre": "动漫"
-        },
-        "58": {
-          "name": "短剧大全",
-          "genre": "短剧"
-        }
-      },
-      "media_hosts": [
-        "bfeng11.com",
-        "c1.rrcdnbf2.com",
-        "c1.rrcdnbf3.com",
-        "c1.rrcdnbf4.com",
-        "c1.rrcdnbf5.com",
-        "c1.rrcdnbf6.com",
-        "fengbao12.com",
-        "fengbao13.com",
-        "p.bvvvvvvvvv1f.com",
-        "v.fengbao14.com"
-      ],
-      "blocked_categories": [
-        {
-          "type_id": 29,
-          "type_pid": 20,
-          "type_name": "理论片"
-        },
-        {
-          "type_id": 51,
-          "type_pid": 0,
-          "type_name": "电影解说"
-        },
-        {
-          "type_id": 52,
-          "type_pid": 0,
-          "type_name": "预告片"
-        },
-        {
-          "type_id": 53,
-          "type_pid": 0,
-          "type_name": "体育赛事"
-        },
-        {
-          "type_id": 54,
-          "type_pid": 53,
-          "type_name": "足球"
-        },
-        {
-          "type_id": 55,
-          "type_pid": 53,
-          "type_name": "篮球"
-        },
-        {
-          "type_id": 56,
-          "type_pid": 53,
-          "type_name": "网球"
-        },
-        {
-          "type_id": 57,
-          "type_pid": 53,
-          "type_name": "斯诺克"
-        },
-        {
-          "type_id": 65,
-          "type_pid": 58,
-          "type_name": "重生民国"
-        },
-        {
-          "type_id": 66,
-          "type_pid": 58,
-          "type_name": "穿越年代"
-        },
-        {
-          "type_id": 67,
-          "type_pid": 58,
-          "type_name": "现代言情"
-        },
-        {
-          "type_id": 68,
-          "type_pid": 58,
-          "type_name": "反转爽文"
-        },
-        {
-          "type_id": 69,
-          "type_pid": 58,
-          "type_name": "女恋总裁"
-        },
-        {
-          "type_id": 70,
-          "type_pid": 58,
-          "type_name": "闪婚离婚"
-        },
-        {
-          "type_id": 71,
-          "type_pid": 58,
-          "type_name": "都市脑洞"
-        },
-        {
-          "type_id": 72,
-          "type_pid": 58,
-          "type_name": "古装仙侠"
-        },
-        {
-          "type_id": 73,
-          "type_pid": 0,
-          "type_name": "福利"
-        },
-        {
-          "type_id": 74,
-          "type_pid": 58,
-          "type_name": "AI漫剧"
-        }
-      ],
-      "safe_sample_count": 43,
-      "blocked_item_count": 16,
-      "sample_title": "乌鸦俱乐部",
-      "media_checks": [
-        {
-          "url": "https://fengbao12.com/video/wuyajulebu/6136cc9fdba9/index.m3u8",
-          "ok": false,
-          "reason": "HTTP Error 404: Not Found",
-          "decode_tested": false
-        },
-        {
-          "url": "https://fengbao12.com/video/wuyajulebu/4408e044a67d/index.m3u8",
-          "ok": false,
-          "reason": "HTTP Error 404: Not Found",
-          "decode_tested": false
-        },
-        {
-          "url": "https://fengbao13.com/video/wuyajulebu/2f042340352b/index.m3u8",
-          "ok": true,
-          "level": [
-            "media-segment"
-          ],
-          "ms": 1926,
-          "decode_tested": false
-        }
-      ],
-      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
+      "reason": "Media sample failed: HTTP Error 404: Not Found",
       "last_success": {
         "id": "cms_bfzyapicom",
         "checked_at": 1792190561,
@@ -7245,11 +6987,11 @@
     },
     "github": {
       "id": "cms_wwwhongniuzy2com",
-      "checked_at": 1792190565,
+      "checked_at": 1792793640,
       "accepted": true,
       "name": "红牛资源(切)",
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-      "latency_ms": 146,
+      "latency_ms": 174,
       "types": {
         "1": {
           "name": "电影",
@@ -7433,29 +7175,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 62,
-      "blocked_item_count": 0,
-      "sample_title": "璀璨之城国语版",
+      "safe_sample_count": 61,
+      "blocked_item_count": 1,
+      "sample_title": "塔尔萨之王第四季",
       "media_checks": [
         {
-          "url": "https://hn.bfvvs.com/play/bmZ2YqOd/index.m3u8",
+          "url": "https://hn.bfvvs.com/play/bo2vOrka/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 2936,
+          "ms": 3053,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwhongniuzy2com",
-        "checked_at": 1792190565,
+        "checked_at": 1792793640,
         "accepted": true,
         "name": "红牛资源(切)",
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-        "latency_ms": 146,
+        "latency_ms": 174,
         "types": {
           "1": {
             "name": "电影",
@@ -7639,18 +7381,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 62,
-        "blocked_item_count": 0,
-        "sample_title": "璀璨之城国语版",
+        "safe_sample_count": 61,
+        "blocked_item_count": 1,
+        "sample_title": "塔尔萨之王第四季",
         "media_checks": [
           {
-            "url": "https://hn.bfvvs.com/play/bmZ2YqOd/index.m3u8",
+            "url": "https://hn.bfvvs.com/play/bo2vOrka/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 2936,
+            "ms": 3053,
             "decode_tested": false
           }
         ],
@@ -7675,7 +7417,7 @@
     },
     "github": {
       "id": "cms_sdzyapicom",
-      "checked_at": 1792190569,
+      "checked_at": 1792793640,
       "accepted": false,
       "name": "闪电资源(切)",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -8027,17 +7769,180 @@
     },
     "github": {
       "id": "cms_cjffzyapicom",
-      "checked_at": 1792190570,
-      "accepted": false,
+      "checked_at": 1792793644,
+      "accepted": true,
       "name": "非凡 ⚠勿信广告",
-      "reason": "Media sample failed: HTTP Error 403: Forbidden",
+      "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+      "latency_ms": 714,
+      "types": {
+        "1": {
+          "name": "电影片",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺片",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫片",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "记录片",
+          "genre": "纪录片"
+        },
+        "21": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "22": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "23": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "24": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "25": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "26": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "27": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "28": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "29": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "31": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "32": {
+          "name": "港台动漫",
+          "genre": "动漫"
+        },
+        "33": {
+          "name": "海外动漫",
+          "genre": "动漫"
+        },
+        "36": {
+          "name": "短剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "super.ffzy-online6.com",
+        "svip.feifei-play.com",
+        "vip.ffzy-online3.com",
+        "vip.ffzy-play10.com",
+        "vip.ffzy-play6.com",
+        "vip.ffzy-play7.com",
+        "vip.ffzy-play9.com",
+        "vip.ffzy-plays.com",
+        "vod.ffzy-bofang.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 34,
+          "type_pid": 1,
+          "type_name": "伦理片"
+        }
+      ],
+      "safe_sample_count": 80,
+      "blocked_item_count": 0,
+      "sample_title": "萤火虫之婚",
+      "media_checks": [
+        {
+          "url": "https://vip.ffzy-plays.com/20261010/59288_a4f39211/index.m3u8",
+          "ok": false,
+          "reason": "HTTP Error 403: Forbidden",
+          "decode_tested": false
+        },
+        {
+          "url": "https://vod.ffzy-bofang.com/20261017/3984_7059b7de/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "media-segment"
+          ],
+          "ms": 1356,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_cjffzyapicom",
-        "checked_at": 1791050805,
+        "checked_at": 1792793644,
         "accepted": true,
-        "name": "非凡 | 采集",
+        "name": "非凡 ⚠勿信广告",
         "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-        "latency_ms": 898,
+        "latency_ms": 714,
         "types": {
           "1": {
             "name": "电影片",
@@ -8163,16 +8068,12 @@
         "media_hosts": [
           "super.ffzy-online6.com",
           "svip.feifei-play.com",
-          "vip.ffzy-online1.com",
           "vip.ffzy-online3.com",
-          "vip.ffzy-online5.com",
           "vip.ffzy-play10.com",
-          "vip.ffzy-play5.com",
           "vip.ffzy-play6.com",
           "vip.ffzy-play7.com",
           "vip.ffzy-play9.com",
           "vip.ffzy-plays.com",
-          "vod.feifei-kan.com",
           "vod.ffzy-bofang.com"
         ],
         "blocked_categories": [
@@ -8184,40 +8085,22 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "魔法★探险家",
+        "sample_title": "萤火虫之婚",
         "media_checks": [
           {
-            "url": "https://vip.ffzy-plays.com/20261004/59030_696ca064/index.m3u8",
+            "url": "https://vip.ffzy-plays.com/20261010/59288_a4f39211/index.m3u8",
             "ok": false,
             "reason": "HTTP Error 403: Forbidden",
             "decode_tested": false
           },
           {
-            "url": "https://vip.ffzy-plays.com/20261004/59029_cf37a52a/index.m3u8",
-            "ok": false,
-            "reason": "HTTP Error 403: Forbidden",
-            "decode_tested": false
-          },
-          {
-            "url": "https://vip.ffzy-plays.com/20260926/58764_7f51ce8c/index.m3u8",
-            "ok": false,
-            "reason": "HTTP Error 403: Forbidden",
-            "decode_tested": false
-          },
-          {
-            "url": "https://vip.ffzy-plays.com/20261003/59028_03b857b5/index.m3u8",
-            "ok": false,
-            "reason": "HTTP Error 403: Forbidden",
-            "decode_tested": false
-          },
-          {
-            "url": "https://vod.ffzy-bofang.com/20260926/3456_def7924e/index.m3u8",
+            "url": "https://vod.ffzy-bofang.com/20261017/3984_7059b7de/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 1759,
+            "ms": 1356,
             "decode_tested": false
           }
         ],
@@ -8942,7 +8825,7 @@
     },
     "github": {
       "id": "cms_jszyapicom",
-      "checked_at": 1792190571,
+      "checked_at": 1792793645,
       "accepted": false,
       "name": "影视 | 极速[直连]",
       "reason": "Media sample failed: <urlopen error [Errno 111] Connection refused>"
@@ -8965,7 +8848,7 @@
     },
     "github": {
       "id": "cms_apiapibdzycom",
-      "checked_at": 1792190572,
+      "checked_at": 1792793647,
       "accepted": false,
       "name": "百度",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -9643,11 +9526,11 @@
     },
     "github": {
       "id": "cms_apiguangsuapicom",
-      "checked_at": 1792190576,
+      "checked_at": 1792793650,
       "accepted": true,
       "name": "光速资源(切)",
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "latency_ms": 298,
+      "latency_ms": 100,
       "types": {
         "1": {
           "name": "电影",
@@ -9846,30 +9729,30 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 61,
-      "blocked_item_count": 0,
-      "sample_title": "嫁金钗",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "妈妈发疯了",
       "media_checks": [
         {
-          "url": "https://v.gsuus.com/play/eXD7M2le/index.m3u8",
+          "url": "https://v.gsuus.com/play/elYp9Lga/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 639,
+          "ms": 741,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apiguangsuapicom",
-        "checked_at": 1792190576,
+        "checked_at": 1792793650,
         "accepted": true,
         "name": "光速资源(切)",
         "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-        "latency_ms": 298,
+        "latency_ms": 100,
         "types": {
           "1": {
             "name": "电影",
@@ -10068,19 +9951,19 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 61,
-        "blocked_item_count": 0,
-        "sample_title": "嫁金钗",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "妈妈发疯了",
         "media_checks": [
           {
-            "url": "https://v.gsuus.com/play/eXD7M2le/index.m3u8",
+            "url": "https://v.gsuus.com/play/elYp9Lga/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 639,
+            "ms": 741,
             "decode_tested": false
           }
         ],
@@ -10546,7 +10429,7 @@
     },
     "github": {
       "id": "cms_cjlziapicom",
-      "checked_at": 1792190577,
+      "checked_at": 1792793651,
       "accepted": false,
       "name": "量子 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 404: Not Found",
@@ -12179,7 +12062,7 @@
     },
     "github": {
       "id": "cms_caijidyttzyapicom",
-      "checked_at": 1792190580,
+      "checked_at": 1792793652,
       "accepted": false,
       "name": "天堂 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -12370,7 +12253,7 @@
     },
     "github": {
       "id": "cms_mtzyme",
-      "checked_at": 1792190581,
+      "checked_at": 1792793652,
       "accepted": false,
       "name": "茅台 | 采集",
       "reason": "CMS response must contain a list"

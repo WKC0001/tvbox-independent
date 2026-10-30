@@ -16,7 +16,7 @@
     },
     "github": {
       "id": "cms_dbzytv",
-      "checked_at": 1793226321,
+      "checked_at": 1793401187,
       "accepted": false,
       "name": "豆瓣 | 采集",
       "reason": "CMS response must contain a list"
@@ -39,7 +39,7 @@
     },
     "github": {
       "id": "cms_apiniuniuzyme",
-      "checked_at": 1793226321,
+      "checked_at": 1793401187,
       "accepted": false,
       "name": "牛牛 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -62,7 +62,7 @@
     },
     "github": {
       "id": "cms_zuidazyme",
-      "checked_at": 1793226321,
+      "checked_at": 1793401187,
       "accepted": false,
       "name": "最大 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -502,11 +502,11 @@
     },
     "github": {
       "id": "cms_wwwmdzyapicom",
-      "checked_at": 1793226321,
+      "checked_at": 1793401187,
       "accepted": true,
       "name": "魔都 | 采集",
       "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "latency_ms": 1816,
+      "latency_ms": 504,
       "types": {
         "1": {
           "name": "国产动漫",
@@ -654,6 +654,7 @@
         "play.modujx11.com",
         "play.modujx12.com",
         "play.modujx13.com",
+        "play.modujx14.com",
         "play.modujx15.com",
         "play.modujx16.com",
         "play.modujx17.com"
@@ -697,27 +698,27 @@
       ],
       "safe_sample_count": 80,
       "blocked_item_count": 0,
-      "sample_title": "筑爱于心",
+      "sample_title": "神秘的声音",
       "media_checks": [
         {
-          "url": "https://play.modujx17.com/20261021/38VjXmFV/index.m3u8",
+          "url": "https://play.modujx17.com/20260919/Z4kDqHlP/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "media-segment"
           ],
-          "ms": 1518,
+          "ms": 1361,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwmdzyapicom",
-        "checked_at": 1793226321,
+        "checked_at": 1793401187,
         "accepted": true,
         "name": "魔都 | 采集",
         "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-        "latency_ms": 1816,
+        "latency_ms": 504,
         "types": {
           "1": {
             "name": "国产动漫",
@@ -865,6 +866,7 @@
           "play.modujx11.com",
           "play.modujx12.com",
           "play.modujx13.com",
+          "play.modujx14.com",
           "play.modujx15.com",
           "play.modujx16.com",
           "play.modujx17.com"
@@ -908,16 +910,16 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "筑爱于心",
+        "sample_title": "神秘的声音",
         "media_checks": [
           {
-            "url": "https://play.modujx17.com/20261021/38VjXmFV/index.m3u8",
+            "url": "https://play.modujx17.com/20260919/Z4kDqHlP/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 1518,
+            "ms": 1361,
             "decode_tested": false
           }
         ],
@@ -1113,7 +1115,7 @@
     },
     "github": {
       "id": "cms_p2100net",
-      "checked_at": 1793226324,
+      "checked_at": 1793401191,
       "accepted": false,
       "name": "飘零 ⚠勿信广告",
       "reason": "HTTP Error 403: Forbidden"
@@ -1605,11 +1607,11 @@
     },
     "github": {
       "id": "cms_haohuazycom",
-      "checked_at": 1793226324,
+      "checked_at": 1793401191,
       "accepted": true,
       "name": "豪华 | 采集",
       "api": "https://haohuazy.com/api.php/provide/vod/",
-      "latency_ms": 1190,
+      "latency_ms": 633,
       "types": {
         "1": {
           "name": "电视剧",
@@ -1826,27 +1828,27 @@
       ],
       "safe_sample_count": 61,
       "blocked_item_count": 0,
-      "sample_title": "燃烧吧！爸爸",
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://play.hhuus.com/play/egJxqEYd/index.m3u8",
+          "url": "https://play.hhuus.com/play/e5ylAzKe/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 921,
+          "ms": 574,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_haohuazycom",
-        "checked_at": 1793226324,
+        "checked_at": 1793401191,
         "accepted": true,
         "name": "豪华 | 采集",
         "api": "https://haohuazy.com/api.php/provide/vod/",
-        "latency_ms": 1190,
+        "latency_ms": 633,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2063,16 +2065,16 @@
         ],
         "safe_sample_count": 61,
         "blocked_item_count": 0,
-        "sample_title": "燃烧吧！爸爸",
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://play.hhuus.com/play/egJxqEYd/index.m3u8",
+            "url": "https://play.hhuus.com/play/e5ylAzKe/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 921,
+            "ms": 574,
             "decode_tested": false
           }
         ],
@@ -2559,11 +2561,11 @@
     },
     "github": {
       "id": "cms_huyazynet",
-      "checked_at": 1793226333,
+      "checked_at": 1793401192,
       "accepted": true,
       "name": "虎牙 | 采集",
       "api": "https://huyazy.net/api.php/provide/vod/",
-      "latency_ms": 1242,
+      "latency_ms": 196,
       "types": {
         "1": {
           "name": "电视剧",
@@ -2765,27 +2767,27 @@
       ],
       "safe_sample_count": 43,
       "blocked_item_count": 0,
-      "sample_title": "妈妈发疯了",
+      "sample_title": "多伦多法律与秩序：犯罪倾向第四季",
       "media_checks": [
         {
-          "url": "https://1080p.huyall.com/play/en5z9XWd/index.m3u8",
+          "url": "https://1080p.huyall.com/play/elYp3Kra/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 997,
+          "ms": 697,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_huyazynet",
-        "checked_at": 1793226333,
+        "checked_at": 1793401192,
         "accepted": true,
         "name": "虎牙 | 采集",
         "api": "https://huyazy.net/api.php/provide/vod/",
-        "latency_ms": 1242,
+        "latency_ms": 196,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2987,16 +2989,16 @@
         ],
         "safe_sample_count": 43,
         "blocked_item_count": 0,
-        "sample_title": "妈妈发疯了",
+        "sample_title": "多伦多法律与秩序：犯罪倾向第四季",
         "media_checks": [
           {
-            "url": "https://1080p.huyall.com/play/en5z9XWd/index.m3u8",
+            "url": "https://1080p.huyall.com/play/elYp3Kra/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 997,
+            "ms": 697,
             "decode_tested": false
           }
         ],
@@ -3021,7 +3023,7 @@
     },
     "github": {
       "id": "cms_cjyayazynet",
-      "checked_at": 1793226334,
+      "checked_at": 1793401194,
       "accepted": false,
       "name": "鸭鸭 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -3539,7 +3541,7 @@
     },
     "github": {
       "id": "cms_360zycom",
-      "checked_at": 1793226334,
+      "checked_at": 1793401195,
       "accepted": false,
       "name": "360 ⚠勿信广告",
       "reason": "Media sample failed: invalid HLS media segment",
@@ -3821,7 +3823,7 @@
     },
     "github": {
       "id": "cms_apiwujinapinet",
-      "checked_at": 1793226335,
+      "checked_at": 1793401195,
       "accepted": false,
       "name": "无尽 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -4281,11 +4283,11 @@
     },
     "github": {
       "id": "cms_jyzyapicom",
-      "checked_at": 1793226343,
+      "checked_at": 1793401196,
       "accepted": true,
       "name": "金鹰 | 采集",
       "api": "https://jyzyapi.com/api.php/provide/vod/",
-      "latency_ms": 964,
+      "latency_ms": 548,
       "types": {
         "1": {
           "name": "电视剧",
@@ -4486,27 +4488,27 @@
       ],
       "safe_sample_count": 61,
       "blocked_item_count": 0,
-      "sample_title": "燃烧吧！爸爸",
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://hd.kuktxu.com/play/dwpENvMe/index.m3u8",
+          "url": "https://hd.kuktxu.com/play/b4xkWyVb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 3596,
+          "ms": 2652,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jyzyapicom",
-        "checked_at": 1793226343,
+        "checked_at": 1793401196,
         "accepted": true,
         "name": "金鹰 | 采集",
         "api": "https://jyzyapi.com/api.php/provide/vod/",
-        "latency_ms": 964,
+        "latency_ms": 548,
         "types": {
           "1": {
             "name": "电视剧",
@@ -4707,16 +4709,16 @@
         ],
         "safe_sample_count": 61,
         "blocked_item_count": 0,
-        "sample_title": "燃烧吧！爸爸",
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://hd.kuktxu.com/play/dwpENvMe/index.m3u8",
+            "url": "https://hd.kuktxu.com/play/b4xkWyVb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 3596,
+            "ms": 2652,
             "decode_tested": false
           }
         ],
@@ -4741,7 +4743,7 @@
     },
     "github": {
       "id": "cms_suoniapicom",
-      "checked_at": 1793226347,
+      "checked_at": 1793401199,
       "accepted": false,
       "name": "索尼 | 采集 ",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5233,11 +5235,11 @@
     },
     "github": {
       "id": "cms_apixinlangapicom",
-      "checked_at": 1793226349,
+      "checked_at": 1793401200,
       "accepted": true,
       "name": "新浪资源(切)",
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-      "latency_ms": 1049,
+      "latency_ms": 200,
       "types": {
         "1": {
           "name": "电影",
@@ -5454,27 +5456,27 @@
       ],
       "safe_sample_count": 61,
       "blocked_item_count": 0,
-      "sample_title": "燃烧吧！爸爸",
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://play.xluuss.com/play/av2YMrXa/index.m3u8",
+          "url": "https://play.xluuss.com/play/e31jYxOb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 8526,
+          "ms": 8160,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apixinlangapicom",
-        "checked_at": 1793226349,
+        "checked_at": 1793401200,
         "accepted": true,
         "name": "新浪资源(切)",
         "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-        "latency_ms": 1049,
+        "latency_ms": 200,
         "types": {
           "1": {
             "name": "电影",
@@ -5691,16 +5693,16 @@
         ],
         "safe_sample_count": 61,
         "blocked_item_count": 0,
-        "sample_title": "燃烧吧！爸爸",
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://play.xluuss.com/play/av2YMrXa/index.m3u8",
+            "url": "https://play.xluuss.com/play/e31jYxOb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 8526,
+            "ms": 8160,
             "decode_tested": false
           }
         ],
@@ -5725,7 +5727,7 @@
     },
     "github": {
       "id": "cms_tyyszycom",
-      "checked_at": 1793226353,
+      "checked_at": 1793401201,
       "accepted": false,
       "name": "影视 | 天涯",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5748,7 +5750,7 @@
     },
     "github": {
       "id": "cms_1542191172329981",
-      "checked_at": 1793226360,
+      "checked_at": 1793401205,
       "accepted": false,
       "name": "影视 | 建安",
       "reason": "Search ignored nonmatching keyword"
@@ -6278,261 +6280,10 @@
     },
     "github": {
       "id": "cms_bfzyapicom",
-      "checked_at": 1793226365,
-      "accepted": true,
+      "checked_at": 1793401208,
+      "accepted": false,
       "name": "暴風 ⚠勿信广告",
-      "api": "https://bfzyapi.com/api.php/provide/vod/",
-      "latency_ms": 846,
-      "types": {
-        "20": {
-          "name": "电影片",
-          "genre": "电影"
-        },
-        "21": {
-          "name": "动作片",
-          "genre": "电影"
-        },
-        "22": {
-          "name": "喜剧片",
-          "genre": "电影"
-        },
-        "23": {
-          "name": "恐怖片",
-          "genre": "电影"
-        },
-        "24": {
-          "name": "科幻片",
-          "genre": "电影"
-        },
-        "25": {
-          "name": "爱情片",
-          "genre": "电影"
-        },
-        "26": {
-          "name": "剧情片",
-          "genre": "电影"
-        },
-        "27": {
-          "name": "战争片",
-          "genre": "电影"
-        },
-        "28": {
-          "name": "纪录片",
-          "genre": "纪录片"
-        },
-        "30": {
-          "name": "连续剧",
-          "genre": "电视剧"
-        },
-        "31": {
-          "name": "国产剧",
-          "genre": "电视剧"
-        },
-        "32": {
-          "name": "欧美剧",
-          "genre": "电视剧"
-        },
-        "33": {
-          "name": "香港剧",
-          "genre": "电视剧"
-        },
-        "34": {
-          "name": "韩国剧",
-          "genre": "电视剧"
-        },
-        "35": {
-          "name": "台湾剧",
-          "genre": "电视剧"
-        },
-        "36": {
-          "name": "日本剧",
-          "genre": "电视剧"
-        },
-        "37": {
-          "name": "海外剧",
-          "genre": "电视剧"
-        },
-        "38": {
-          "name": "泰国剧",
-          "genre": "电视剧"
-        },
-        "39": {
-          "name": "动漫片",
-          "genre": "动漫"
-        },
-        "40": {
-          "name": "国产动漫",
-          "genre": "动漫"
-        },
-        "41": {
-          "name": "日韩动漫",
-          "genre": "动漫"
-        },
-        "42": {
-          "name": "欧美动漫",
-          "genre": "动漫"
-        },
-        "43": {
-          "name": "港台动漫",
-          "genre": "动漫"
-        },
-        "44": {
-          "name": "海外动漫",
-          "genre": "动漫"
-        },
-        "45": {
-          "name": "综艺片",
-          "genre": "综艺"
-        },
-        "46": {
-          "name": "大陆综艺",
-          "genre": "综艺"
-        },
-        "47": {
-          "name": "港台综艺",
-          "genre": "综艺"
-        },
-        "48": {
-          "name": "日韩综艺",
-          "genre": "综艺"
-        },
-        "49": {
-          "name": "欧美综艺",
-          "genre": "综艺"
-        },
-        "50": {
-          "name": "动画片",
-          "genre": "动漫"
-        },
-        "58": {
-          "name": "短剧大全",
-          "genre": "短剧"
-        }
-      },
-      "media_hosts": [
-        "bfeng10.com",
-        "bfeng11.com",
-        "c1.ddbbffcdn.com",
-        "c1.rrcdnbf2.com",
-        "c1.rrcdnbf3.com",
-        "c1.rrcdnbf4.com",
-        "c1.rrcdnbf5.com",
-        "c1.rrcdnbf6.com",
-        "fengbao12.com",
-        "fengbao13.com",
-        "p.bvvvvvvv7f.com",
-        "p.bvvvvvvvvv1f.com",
-        "v.baofeng9.com",
-        "v.fengbao14.com",
-        "v.fengbao8.com"
-      ],
-      "blocked_categories": [
-        {
-          "type_id": 29,
-          "type_pid": 20,
-          "type_name": "理论片"
-        },
-        {
-          "type_id": 51,
-          "type_pid": 0,
-          "type_name": "电影解说"
-        },
-        {
-          "type_id": 52,
-          "type_pid": 0,
-          "type_name": "预告片"
-        },
-        {
-          "type_id": 53,
-          "type_pid": 0,
-          "type_name": "体育赛事"
-        },
-        {
-          "type_id": 54,
-          "type_pid": 53,
-          "type_name": "足球"
-        },
-        {
-          "type_id": 55,
-          "type_pid": 53,
-          "type_name": "篮球"
-        },
-        {
-          "type_id": 56,
-          "type_pid": 53,
-          "type_name": "网球"
-        },
-        {
-          "type_id": 57,
-          "type_pid": 53,
-          "type_name": "斯诺克"
-        },
-        {
-          "type_id": 65,
-          "type_pid": 58,
-          "type_name": "重生民国"
-        },
-        {
-          "type_id": 66,
-          "type_pid": 58,
-          "type_name": "穿越年代"
-        },
-        {
-          "type_id": 67,
-          "type_pid": 58,
-          "type_name": "现代言情"
-        },
-        {
-          "type_id": 68,
-          "type_pid": 58,
-          "type_name": "反转爽文"
-        },
-        {
-          "type_id": 69,
-          "type_pid": 58,
-          "type_name": "女恋总裁"
-        },
-        {
-          "type_id": 70,
-          "type_pid": 58,
-          "type_name": "闪婚离婚"
-        },
-        {
-          "type_id": 71,
-          "type_pid": 58,
-          "type_name": "都市脑洞"
-        },
-        {
-          "type_id": 72,
-          "type_pid": 58,
-          "type_name": "古装仙侠"
-        },
-        {
-          "type_id": 73,
-          "type_pid": 0,
-          "type_name": "福利"
-        },
-        {
-          "type_id": 74,
-          "type_pid": 58,
-          "type_name": "AI漫剧"
-        }
-      ],
-      "safe_sample_count": 43,
-      "blocked_item_count": 16,
-      "sample_title": "彭彭丁满历险记第二季",
-      "media_checks": [
-        {
-          "url": "https://v.fengbao14.com/video/pengpengdingmanlixianjidierji/9e7b71a0cf40/index.m3u8",
-          "ok": true,
-          "level": [
-            "media-segment"
-          ],
-          "ms": 2078,
-          "decode_tested": false
-        }
-      ],
-      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
+      "reason": "Search ignored nonmatching keyword",
       "last_success": {
         "id": "cms_bfzyapicom",
         "checked_at": 1793226365,
@@ -7217,11 +6968,11 @@
     },
     "github": {
       "id": "cms_wwwhongniuzy2com",
-      "checked_at": 1793226365,
+      "checked_at": 1793401211,
       "accepted": true,
       "name": "红牛资源(切)",
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-      "latency_ms": 484,
+      "latency_ms": 218,
       "types": {
         "1": {
           "name": "电影",
@@ -7407,27 +7158,27 @@
       ],
       "safe_sample_count": 62,
       "blocked_item_count": 0,
-      "sample_title": "燃烧吧！爸爸",
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://hn.bfvvs.com/play/bqxVEmGa/index.m3u8",
+          "url": "https://hn.bfvvs.com/play/e1wYVvVb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 3612,
+          "ms": 2999,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwhongniuzy2com",
-        "checked_at": 1793226365,
+        "checked_at": 1793401211,
         "accepted": true,
         "name": "红牛资源(切)",
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-        "latency_ms": 484,
+        "latency_ms": 218,
         "types": {
           "1": {
             "name": "电影",
@@ -7613,16 +7364,16 @@
         ],
         "safe_sample_count": 62,
         "blocked_item_count": 0,
-        "sample_title": "燃烧吧！爸爸",
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://hn.bfvvs.com/play/bqxVEmGa/index.m3u8",
+            "url": "https://hn.bfvvs.com/play/e1wYVvVb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 3612,
+            "ms": 2999,
             "decode_tested": false
           }
         ],
@@ -7647,7 +7398,7 @@
     },
     "github": {
       "id": "cms_sdzyapicom",
-      "checked_at": 1793226366,
+      "checked_at": 1793401215,
       "accepted": false,
       "name": "闪电资源(切)",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -7999,7 +7750,7 @@
     },
     "github": {
       "id": "cms_cjffzyapicom",
-      "checked_at": 1793226369,
+      "checked_at": 1793401222,
       "accepted": false,
       "name": "非凡 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -8892,11 +8643,11 @@
     },
     "github": {
       "id": "cms_jszyapicom",
-      "checked_at": 1793226375,
+      "checked_at": 1793401222,
       "accepted": true,
       "name": "影视 | 极速[直连]",
       "api": "https://jszyapi.com/api.php/provide/vod/?ac=list",
-      "latency_ms": 653,
+      "latency_ms": 200,
       "types": {
         "1": {
           "name": "电视剧",
@@ -9113,27 +8864,27 @@
       ],
       "safe_sample_count": 61,
       "blocked_item_count": 0,
-      "sample_title": "燃烧吧！爸爸",
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://vv.jisuzyv.com/play/ejRvwKRe/index.m3u8",
+          "url": "https://vv.jisuzyv.com/play/b68mYAVe/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 1307,
+          "ms": 659,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jszyapicom",
-        "checked_at": 1793226375,
+        "checked_at": 1793401222,
         "accepted": true,
         "name": "影视 | 极速[直连]",
         "api": "https://jszyapi.com/api.php/provide/vod/?ac=list",
-        "latency_ms": 653,
+        "latency_ms": 200,
         "types": {
           "1": {
             "name": "电视剧",
@@ -9350,16 +9101,16 @@
         ],
         "safe_sample_count": 61,
         "blocked_item_count": 0,
-        "sample_title": "燃烧吧！爸爸",
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://vv.jisuzyv.com/play/ejRvwKRe/index.m3u8",
+            "url": "https://vv.jisuzyv.com/play/b68mYAVe/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 1307,
+            "ms": 659,
             "decode_tested": false
           }
         ],
@@ -9384,7 +9135,7 @@
     },
     "github": {
       "id": "cms_apiapibdzycom",
-      "checked_at": 1793226376,
+      "checked_at": 1793401225,
       "accepted": false,
       "name": "百度",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -10062,11 +9813,11 @@
     },
     "github": {
       "id": "cms_apiguangsuapicom",
-      "checked_at": 1793226379,
+      "checked_at": 1793401228,
       "accepted": true,
       "name": "光速资源(切)",
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "latency_ms": 475,
+      "latency_ms": 183,
       "types": {
         "1": {
           "name": "电影",
@@ -10267,27 +10018,27 @@
       ],
       "safe_sample_count": 61,
       "blocked_item_count": 0,
-      "sample_title": "燃烧吧！爸爸",
+      "sample_title": "LOST10",
       "media_checks": [
         {
-          "url": "https://v.gsuus.com/play/erkEGnKa/index.m3u8",
+          "url": "https://v.gsuus.com/play/b2kgGw1d/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 835,
+          "ms": 590,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apiguangsuapicom",
-        "checked_at": 1793226379,
+        "checked_at": 1793401228,
         "accepted": true,
         "name": "光速资源(切)",
         "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-        "latency_ms": 475,
+        "latency_ms": 183,
         "types": {
           "1": {
             "name": "电影",
@@ -10488,16 +10239,16 @@
         ],
         "safe_sample_count": 61,
         "blocked_item_count": 0,
-        "sample_title": "燃烧吧！爸爸",
+        "sample_title": "LOST10",
         "media_checks": [
           {
-            "url": "https://v.gsuus.com/play/erkEGnKa/index.m3u8",
+            "url": "https://v.gsuus.com/play/b2kgGw1d/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 835,
+            "ms": 590,
             "decode_tested": false
           }
         ],
@@ -10963,7 +10714,7 @@
     },
     "github": {
       "id": "cms_cjlziapicom",
-      "checked_at": 1793226383,
+      "checked_at": 1793401231,
       "accepted": false,
       "name": "量子 ⚠勿信广告",
       "reason": "Search ignored nonmatching keyword",
@@ -12596,7 +12347,7 @@
     },
     "github": {
       "id": "cms_caijidyttzyapicom",
-      "checked_at": 1793226386,
+      "checked_at": 1793401233,
       "accepted": false,
       "name": "天堂 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -12787,7 +12538,7 @@
     },
     "github": {
       "id": "cms_mtzyme",
-      "checked_at": 1793226386,
+      "checked_at": 1793401238,
       "accepted": false,
       "name": "茅台 | 采集",
       "reason": "CMS response must contain a list"

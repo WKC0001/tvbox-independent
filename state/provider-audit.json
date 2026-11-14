@@ -16,7 +16,7 @@
     },
     "github": {
       "id": "cms_dbzytv",
-      "checked_at": 1794008644,
+      "checked_at": 1794615673,
       "accepted": false,
       "name": "豆瓣 | 采集",
       "reason": "<urlopen error [Errno -2] Name or service not known>"
@@ -39,7 +39,7 @@
     },
     "github": {
       "id": "cms_apiniuniuzyme",
-      "checked_at": 1794008644,
+      "checked_at": 1794615673,
       "accepted": false,
       "name": "牛牛 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -62,10 +62,10 @@
     },
     "github": {
       "id": "cms_zuidazyme",
-      "checked_at": 1794008644,
+      "checked_at": 1794615673,
       "accepted": false,
       "name": "最大 | 采集",
-      "reason": "Media sample failed: HTTP Error 403: Forbidden"
+      "reason": "The read operation timed out"
     }
   },
   "cms_wwwmdzyapicom": {
@@ -502,11 +502,11 @@
     },
     "github": {
       "id": "cms_wwwmdzyapicom",
-      "checked_at": 1794008644,
+      "checked_at": 1794615673,
       "accepted": true,
       "name": "魔都 | 采集",
       "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "latency_ms": 677,
+      "latency_ms": 385,
       "types": {
         "1": {
           "name": "国产动漫",
@@ -698,27 +698,27 @@
       ],
       "safe_sample_count": 80,
       "blocked_item_count": 0,
-      "sample_title": "LOST10",
+      "sample_title": "拉纳巴利",
       "media_checks": [
         {
-          "url": "https://play.modujx17.com/20261017/b5ITNzTI/index.m3u8",
+          "url": "https://play.modujx17.com/20261113/a7um0Ynl/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "media-segment"
           ],
-          "ms": 1449,
+          "ms": 2618,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwmdzyapicom",
-        "checked_at": 1794008644,
+        "checked_at": 1794615673,
         "accepted": true,
         "name": "魔都 | 采集",
         "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-        "latency_ms": 677,
+        "latency_ms": 385,
         "types": {
           "1": {
             "name": "国产动漫",
@@ -910,16 +910,16 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "LOST10",
+        "sample_title": "拉纳巴利",
         "media_checks": [
           {
-            "url": "https://play.modujx17.com/20261017/b5ITNzTI/index.m3u8",
+            "url": "https://play.modujx17.com/20261113/a7um0Ynl/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 1449,
+            "ms": 2618,
             "decode_tested": false
           }
         ],
@@ -1115,7 +1115,7 @@
     },
     "github": {
       "id": "cms_p2100net",
-      "checked_at": 1794008646,
+      "checked_at": 1794615674,
       "accepted": false,
       "name": "飘零 ⚠勿信广告",
       "reason": "HTTP Error 403: Forbidden"
@@ -1607,11 +1607,11 @@
     },
     "github": {
       "id": "cms_haohuazycom",
-      "checked_at": 1794008646,
+      "checked_at": 1794615674,
       "accepted": true,
       "name": "豪华 | 采集",
       "api": "https://haohuazy.com/api.php/provide/vod/",
-      "latency_ms": 821,
+      "latency_ms": 839,
       "types": {
         "1": {
           "name": "电视剧",
@@ -1826,29 +1826,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 56,
-      "blocked_item_count": 5,
-      "sample_title": "谷雨",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://play.hhuus.com/play/azpBr9qd/index.m3u8",
+          "url": "https://play.hhuus.com/play/dL9Yywge/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 773,
+          "ms": 1133,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_haohuazycom",
-        "checked_at": 1794008646,
+        "checked_at": 1794615674,
         "accepted": true,
         "name": "豪华 | 采集",
         "api": "https://haohuazy.com/api.php/provide/vod/",
-        "latency_ms": 821,
+        "latency_ms": 839,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2063,18 +2063,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 56,
-        "blocked_item_count": 5,
-        "sample_title": "谷雨",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://play.hhuus.com/play/azpBr9qd/index.m3u8",
+            "url": "https://play.hhuus.com/play/dL9Yywge/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 773,
+            "ms": 1133,
             "decode_tested": false
           }
         ],
@@ -2561,11 +2561,11 @@
     },
     "github": {
       "id": "cms_huyazynet",
-      "checked_at": 1794008649,
+      "checked_at": 1794615678,
       "accepted": true,
       "name": "虎牙 | 采集",
       "api": "https://huyazy.net/api.php/provide/vod/",
-      "latency_ms": 303,
+      "latency_ms": 414,
       "types": {
         "1": {
           "name": "电视剧",
@@ -2765,29 +2765,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 37,
-      "blocked_item_count": 6,
-      "sample_title": "青之花器之森",
+      "safe_sample_count": 42,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://1080p.huyall.com/play/en5YAjEd/index.m3u8",
+          "url": "https://1080p.huyall.com/play/aKrYxvre/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 955,
+          "ms": 969,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_huyazynet",
-        "checked_at": 1794008649,
+        "checked_at": 1794615678,
         "accepted": true,
         "name": "虎牙 | 采集",
         "api": "https://huyazy.net/api.php/provide/vod/",
-        "latency_ms": 303,
+        "latency_ms": 414,
         "types": {
           "1": {
             "name": "电视剧",
@@ -2987,18 +2987,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 37,
-        "blocked_item_count": 6,
-        "sample_title": "青之花器之森",
+        "safe_sample_count": 42,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://1080p.huyall.com/play/en5YAjEd/index.m3u8",
+            "url": "https://1080p.huyall.com/play/aKrYxvre/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 955,
+            "ms": 969,
             "decode_tested": false
           }
         ],
@@ -3023,7 +3023,7 @@
     },
     "github": {
       "id": "cms_cjyayazynet",
-      "checked_at": 1794008652,
+      "checked_at": 1794615681,
       "accepted": false,
       "name": "鸭鸭 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -3541,17 +3541,263 @@
     },
     "github": {
       "id": "cms_360zycom",
-      "checked_at": 1794008652,
-      "accepted": false,
+      "checked_at": 1794615681,
+      "accepted": true,
       "name": "360 ⚠勿信广告",
-      "reason": "Media sample failed: invalid HLS media segment",
+      "api": "https://360zy.com/api.php/provide/vod/",
+      "latency_ms": 869,
+      "types": {
+        "1": {
+          "name": "电影",
+          "genre": "电影"
+        },
+        "2": {
+          "name": "连续剧",
+          "genre": "电视剧"
+        },
+        "3": {
+          "name": "综艺",
+          "genre": "综艺"
+        },
+        "4": {
+          "name": "动漫",
+          "genre": "动漫"
+        },
+        "6": {
+          "name": "动作片",
+          "genre": "电影"
+        },
+        "7": {
+          "name": "喜剧片",
+          "genre": "电影"
+        },
+        "8": {
+          "name": "爱情片",
+          "genre": "电影"
+        },
+        "9": {
+          "name": "科幻片",
+          "genre": "电影"
+        },
+        "10": {
+          "name": "恐怖片",
+          "genre": "电影"
+        },
+        "11": {
+          "name": "剧情片",
+          "genre": "电影"
+        },
+        "12": {
+          "name": "战争片",
+          "genre": "电影"
+        },
+        "13": {
+          "name": "国产剧",
+          "genre": "电视剧"
+        },
+        "14": {
+          "name": "香港剧",
+          "genre": "电视剧"
+        },
+        "15": {
+          "name": "韩国剧",
+          "genre": "电视剧"
+        },
+        "16": {
+          "name": "欧美剧",
+          "genre": "电视剧"
+        },
+        "20": {
+          "name": "惊悚片",
+          "genre": "电影"
+        },
+        "22": {
+          "name": "古装片",
+          "genre": "电影"
+        },
+        "23": {
+          "name": "历史片",
+          "genre": "电影"
+        },
+        "24": {
+          "name": "悬疑片",
+          "genre": "电影"
+        },
+        "25": {
+          "name": "犯罪片",
+          "genre": "电影"
+        },
+        "26": {
+          "name": "灾难片",
+          "genre": "电影"
+        },
+        "27": {
+          "name": "纪录片",
+          "genre": "纪录片"
+        },
+        "29": {
+          "name": "动画片",
+          "genre": "动漫"
+        },
+        "30": {
+          "name": "台湾剧",
+          "genre": "电视剧"
+        },
+        "31": {
+          "name": "日本剧",
+          "genre": "电视剧"
+        },
+        "32": {
+          "name": "海外剧",
+          "genre": "电视剧"
+        },
+        "33": {
+          "name": "泰国剧",
+          "genre": "电视剧"
+        },
+        "34": {
+          "name": "大陆综艺",
+          "genre": "综艺"
+        },
+        "35": {
+          "name": "港台综艺",
+          "genre": "综艺"
+        },
+        "36": {
+          "name": "日韩综艺",
+          "genre": "综艺"
+        },
+        "37": {
+          "name": "欧美综艺",
+          "genre": "综艺"
+        },
+        "38": {
+          "name": "国产动漫",
+          "genre": "动漫"
+        },
+        "39": {
+          "name": "欧美动漫",
+          "genre": "动漫"
+        },
+        "40": {
+          "name": "日韩动漫",
+          "genre": "动漫"
+        },
+        "46": {
+          "name": "爽文短剧",
+          "genre": "短剧"
+        },
+        "51": {
+          "name": "反转爽剧",
+          "genre": "短剧"
+        }
+      },
+      "media_hosts": [
+        "vod1.maowushi.com"
+      ],
+      "blocked_categories": [
+        {
+          "type_id": 5,
+          "type_pid": 0,
+          "type_name": "伦理片"
+        },
+        {
+          "type_id": 17,
+          "type_pid": 0,
+          "type_name": "体育"
+        },
+        {
+          "type_id": 18,
+          "type_pid": 17,
+          "type_name": "NBA"
+        },
+        {
+          "type_id": 21,
+          "type_pid": 1,
+          "type_name": "家庭篇"
+        },
+        {
+          "type_id": 28,
+          "type_pid": 1,
+          "type_name": "短片"
+        },
+        {
+          "type_id": 41,
+          "type_pid": 17,
+          "type_name": "足球"
+        },
+        {
+          "type_id": 42,
+          "type_pid": 17,
+          "type_name": "篮球"
+        },
+        {
+          "type_id": 43,
+          "type_pid": 1,
+          "type_name": "未分类"
+        },
+        {
+          "type_id": 45,
+          "type_pid": 1,
+          "type_name": "西部片"
+        },
+        {
+          "type_id": 47,
+          "type_pid": 46,
+          "type_name": "现代都市"
+        },
+        {
+          "type_id": 48,
+          "type_pid": 46,
+          "type_name": "脑洞悬疑"
+        },
+        {
+          "type_id": 49,
+          "type_pid": 46,
+          "type_name": "年代穿越"
+        },
+        {
+          "type_id": 50,
+          "type_pid": 46,
+          "type_name": "古装仙侠"
+        },
+        {
+          "type_id": 52,
+          "type_pid": 46,
+          "type_name": "女频恋爱"
+        },
+        {
+          "type_id": 53,
+          "type_pid": 46,
+          "type_name": "成长逆袭"
+        }
+      ],
+      "safe_sample_count": 80,
+      "blocked_item_count": 0,
+      "sample_title": "拉纳巴利",
+      "media_checks": [
+        {
+          "url": "https://vod1.maowushi.com/20261113/DrnwvxNu/index.m3u8",
+          "ok": true,
+          "level": [
+            "master",
+            "aes128-key",
+            "aes128-key",
+            "aes128-key",
+            "encrypted-segment"
+          ],
+          "ms": 4022,
+          "decode_tested": false
+        }
+      ],
+      "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_360zycom",
-        "checked_at": 1791080925,
+        "checked_at": 1794615681,
         "accepted": true,
-        "name": "360 | 采集",
+        "name": "360 ⚠勿信广告",
         "api": "https://360zy.com/api.php/provide/vod/",
-        "latency_ms": 655,
+        "latency_ms": 869,
         "types": {
           "1": {
             "name": "电影",
@@ -3780,16 +4026,10 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "消息发错，社死老板面前     Ai漫剧",
+        "sample_title": "拉纳巴利",
         "media_checks": [
           {
-            "url": "https://vod1.maowushi.com/20261003/TAjTmEU9/index.m3u8",
-            "ok": false,
-            "reason": "invalid HLS media segment",
-            "decode_tested": false
-          },
-          {
-            "url": "https://vod1.maowushi.com/20261003/elxBkwC1/index.m3u8",
+            "url": "https://vod1.maowushi.com/20261113/DrnwvxNu/index.m3u8",
             "ok": true,
             "level": [
               "master",
@@ -3798,7 +4038,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 1464,
+            "ms": 4022,
             "decode_tested": false
           }
         ],
@@ -3823,7 +4063,7 @@
     },
     "github": {
       "id": "cms_apiwujinapinet",
-      "checked_at": 1794008653,
+      "checked_at": 1794615683,
       "accepted": false,
       "name": "无尽 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -4283,11 +4523,11 @@
     },
     "github": {
       "id": "cms_jyzyapicom",
-      "checked_at": 1794008653,
+      "checked_at": 1794615689,
       "accepted": true,
       "name": "金鹰 | 采集",
       "api": "https://jyzyapi.com/api.php/provide/vod/",
-      "latency_ms": 285,
+      "latency_ms": 179,
       "types": {
         "1": {
           "name": "电视剧",
@@ -4486,29 +4726,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 56,
-      "blocked_item_count": 5,
-      "sample_title": "青之花器之森",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://hd.kuktxu.com/play/en5YAjEd/index.m3u8",
+          "url": "https://hd.kuktxu.com/play/aKrYxvre/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 2275,
+          "ms": 2907,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jyzyapicom",
-        "checked_at": 1794008653,
+        "checked_at": 1794615689,
         "accepted": true,
         "name": "金鹰 | 采集",
         "api": "https://jyzyapi.com/api.php/provide/vod/",
-        "latency_ms": 285,
+        "latency_ms": 179,
         "types": {
           "1": {
             "name": "电视剧",
@@ -4707,18 +4947,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 56,
-        "blocked_item_count": 5,
-        "sample_title": "青之花器之森",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://hd.kuktxu.com/play/en5YAjEd/index.m3u8",
+            "url": "https://hd.kuktxu.com/play/aKrYxvre/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 2275,
+            "ms": 2907,
             "decode_tested": false
           }
         ],
@@ -4743,7 +4983,7 @@
     },
     "github": {
       "id": "cms_suoniapicom",
-      "checked_at": 1794008658,
+      "checked_at": 1794615690,
       "accepted": false,
       "name": "索尼 | 采集 ",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5235,11 +5475,11 @@
     },
     "github": {
       "id": "cms_apixinlangapicom",
-      "checked_at": 1794008659,
+      "checked_at": 1794615692,
       "accepted": true,
       "name": "新浪资源(切)",
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-      "latency_ms": 247,
+      "latency_ms": 194,
       "types": {
         "1": {
           "name": "电影",
@@ -5454,29 +5694,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 56,
-      "blocked_item_count": 5,
-      "sample_title": "谷雨",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://play.xluuss.com/play/axkVp9le/index.m3u8",
+          "url": "https://play.xluuss.com/play/dJ6YwrDd/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 815,
+          "ms": 8634,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apixinlangapicom",
-        "checked_at": 1794008659,
+        "checked_at": 1794615692,
         "accepted": true,
         "name": "新浪资源(切)",
         "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-        "latency_ms": 247,
+        "latency_ms": 194,
         "types": {
           "1": {
             "name": "电影",
@@ -5691,18 +5931,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 56,
-        "blocked_item_count": 5,
-        "sample_title": "谷雨",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://play.xluuss.com/play/axkVp9le/index.m3u8",
+            "url": "https://play.xluuss.com/play/dJ6YwrDd/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 815,
+            "ms": 8634,
             "decode_tested": false
           }
         ],
@@ -5727,7 +5967,7 @@
     },
     "github": {
       "id": "cms_tyyszycom",
-      "checked_at": 1794008660,
+      "checked_at": 1794615694,
       "accepted": false,
       "name": "影视 | 天涯",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5750,7 +5990,7 @@
     },
     "github": {
       "id": "cms_1542191172329981",
-      "checked_at": 1794008663,
+      "checked_at": 1794615694,
       "accepted": false,
       "name": "影视 | 建安",
       "reason": "Search ignored nonmatching keyword"
@@ -6280,7 +6520,7 @@
     },
     "github": {
       "id": "cms_bfzyapicom",
-      "checked_at": 1794008666,
+      "checked_at": 1794615698,
       "accepted": false,
       "name": "暴風 ⚠勿信广告",
       "reason": "Search ignored nonmatching keyword",
@@ -6968,11 +7208,11 @@
     },
     "github": {
       "id": "cms_wwwhongniuzy2com",
-      "checked_at": 1794008667,
+      "checked_at": 1794615701,
       "accepted": true,
       "name": "红牛资源(切)",
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-      "latency_ms": 283,
+      "latency_ms": 262,
       "types": {
         "1": {
           "name": "电影",
@@ -7156,29 +7396,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 55,
-      "blocked_item_count": 7,
-      "sample_title": "青之花器之森",
+      "safe_sample_count": 61,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://hn.bfvvs.com/play/bkRwxNEa/index.m3u8",
+          "url": "https://hn.bfvvs.com/play/eERZoBNa/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 2658,
+          "ms": 3318,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwhongniuzy2com",
-        "checked_at": 1794008667,
+        "checked_at": 1794615701,
         "accepted": true,
         "name": "红牛资源(切)",
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-        "latency_ms": 283,
+        "latency_ms": 262,
         "types": {
           "1": {
             "name": "电影",
@@ -7362,18 +7602,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 55,
-        "blocked_item_count": 7,
-        "sample_title": "青之花器之森",
+        "safe_sample_count": 61,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://hn.bfvvs.com/play/bkRwxNEa/index.m3u8",
+            "url": "https://hn.bfvvs.com/play/eERZoBNa/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 2658,
+            "ms": 3318,
             "decode_tested": false
           }
         ],
@@ -7398,7 +7638,7 @@
     },
     "github": {
       "id": "cms_sdzyapicom",
-      "checked_at": 1794008671,
+      "checked_at": 1794615703,
       "accepted": false,
       "name": "闪电资源(切)",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -7750,7 +7990,7 @@
     },
     "github": {
       "id": "cms_cjffzyapicom",
-      "checked_at": 1794008671,
+      "checked_at": 1794615703,
       "accepted": false,
       "name": "非凡 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -8643,11 +8883,11 @@
     },
     "github": {
       "id": "cms_jszyapicom",
-      "checked_at": 1794008672,
+      "checked_at": 1794615708,
       "accepted": true,
       "name": "影视 | 极速[直连]",
       "api": "https://jszyapi.com/api.php/provide/vod/?ac=list",
-      "latency_ms": 345,
+      "latency_ms": 85,
       "types": {
         "1": {
           "name": "电视剧",
@@ -8862,29 +9102,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 56,
-      "blocked_item_count": 5,
-      "sample_title": "谷雨",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://vv.jisuzyv.com/play/aADQRA9e/index.m3u8",
+          "url": "https://vv.jisuzyv.com/play/aM8EzxQe/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 917,
+          "ms": 1030,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_jszyapicom",
-        "checked_at": 1794008672,
+        "checked_at": 1794615708,
         "accepted": true,
         "name": "影视 | 极速[直连]",
         "api": "https://jszyapi.com/api.php/provide/vod/?ac=list",
-        "latency_ms": 345,
+        "latency_ms": 85,
         "types": {
           "1": {
             "name": "电视剧",
@@ -9099,18 +9339,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 56,
-        "blocked_item_count": 5,
-        "sample_title": "谷雨",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://vv.jisuzyv.com/play/aADQRA9e/index.m3u8",
+            "url": "https://vv.jisuzyv.com/play/aM8EzxQe/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 917,
+            "ms": 1030,
             "decode_tested": false
           }
         ],
@@ -9135,7 +9375,7 @@
     },
     "github": {
       "id": "cms_apiapibdzycom",
-      "checked_at": 1794008674,
+      "checked_at": 1794615710,
       "accepted": false,
       "name": "百度",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -9813,11 +10053,11 @@
     },
     "github": {
       "id": "cms_apiguangsuapicom",
-      "checked_at": 1794008679,
+      "checked_at": 1794615710,
       "accepted": true,
       "name": "光速资源(切)",
       "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-      "latency_ms": 268,
+      "latency_ms": 155,
       "types": {
         "1": {
           "name": "电影",
@@ -10016,29 +10256,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 56,
-      "blocked_item_count": 5,
-      "sample_title": "谷雨",
+      "safe_sample_count": 60,
+      "blocked_item_count": 1,
+      "sample_title": "谎言",
       "media_checks": [
         {
-          "url": "https://v.gsuus.com/play/dwpEoZre/index.m3u8",
+          "url": "https://v.gsuus.com/play/dG6YqEyb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 833,
+          "ms": 1052,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_apiguangsuapicom",
-        "checked_at": 1794008679,
+        "checked_at": 1794615710,
         "accepted": true,
         "name": "光速资源(切)",
         "api": "https://api.guangsuapi.com/api.php/provide/vod/",
-        "latency_ms": 268,
+        "latency_ms": 155,
         "types": {
           "1": {
             "name": "电影",
@@ -10237,18 +10477,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 56,
-        "blocked_item_count": 5,
-        "sample_title": "谷雨",
+        "safe_sample_count": 60,
+        "blocked_item_count": 1,
+        "sample_title": "谎言",
         "media_checks": [
           {
-            "url": "https://v.gsuus.com/play/dwpEoZre/index.m3u8",
+            "url": "https://v.gsuus.com/play/dG6YqEyb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 833,
+            "ms": 1052,
             "decode_tested": false
           }
         ],
@@ -10714,7 +10954,7 @@
     },
     "github": {
       "id": "cms_cjlziapicom",
-      "checked_at": 1794008682,
+      "checked_at": 1794615714,
       "accepted": false,
       "name": "量子 ⚠勿信广告",
       "reason": "Search ignored nonmatching keyword",
@@ -12347,7 +12587,7 @@
     },
     "github": {
       "id": "cms_caijidyttzyapicom",
-      "checked_at": 1794008684,
+      "checked_at": 1794615715,
       "accepted": false,
       "name": "天堂 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -12538,10 +12778,10 @@
     },
     "github": {
       "id": "cms_mtzyme",
-      "checked_at": 1794008685,
+      "checked_at": 1794615721,
       "accepted": false,
       "name": "茅台 | 采集",
-      "reason": "CMS response must contain a list"
+      "reason": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1035)>"
     }
   }
 }

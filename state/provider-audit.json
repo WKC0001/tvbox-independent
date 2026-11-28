@@ -16,7 +16,7 @@
     },
     "github": {
       "id": "cms_dbzytv",
-      "checked_at": 1795831228,
+      "checked_at": 1795860090,
       "accepted": false,
       "name": "豆瓣 | 采集",
       "reason": "<urlopen error [Errno -2] Name or service not known>"
@@ -39,7 +39,7 @@
     },
     "github": {
       "id": "cms_apiniuniuzyme",
-      "checked_at": 1795831228,
+      "checked_at": 1795860090,
       "accepted": false,
       "name": "牛牛 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -62,7 +62,7 @@
     },
     "github": {
       "id": "cms_zuidazyme",
-      "checked_at": 1795831228,
+      "checked_at": 1795860090,
       "accepted": false,
       "name": "最大 | 采集",
       "reason": "Search ignored nonmatching keyword"
@@ -502,11 +502,11 @@
     },
     "github": {
       "id": "cms_wwwmdzyapicom",
-      "checked_at": 1795831228,
+      "checked_at": 1795860090,
       "accepted": true,
       "name": "魔都 | 采集",
       "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-      "latency_ms": 639,
+      "latency_ms": 520,
       "types": {
         "1": {
           "name": "国产动漫",
@@ -698,27 +698,27 @@
       ],
       "safe_sample_count": 80,
       "blocked_item_count": 0,
-      "sample_title": "爱恨交织",
+      "sample_title": "晚酌的流派5：秋・冬篇",
       "media_checks": [
         {
-          "url": "https://play.modujx17.com/20261106/WE5OpvDd/index.m3u8",
+          "url": "https://play.modujx17.com/20261003/MgntBqNu/index.m3u8",
           "ok": true,
           "level": [
             "master",
             "media-segment"
           ],
-          "ms": 2229,
+          "ms": 1031,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwmdzyapicom",
-        "checked_at": 1795831228,
+        "checked_at": 1795860090,
         "accepted": true,
         "name": "魔都 | 采集",
         "api": "https://www.mdzyapi.com/api.php/provide/vod/",
-        "latency_ms": 639,
+        "latency_ms": 520,
         "types": {
           "1": {
             "name": "国产动漫",
@@ -910,16 +910,16 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "爱恨交织",
+        "sample_title": "晚酌的流派5：秋・冬篇",
         "media_checks": [
           {
-            "url": "https://play.modujx17.com/20261106/WE5OpvDd/index.m3u8",
+            "url": "https://play.modujx17.com/20261003/MgntBqNu/index.m3u8",
             "ok": true,
             "level": [
               "master",
               "media-segment"
             ],
-            "ms": 2229,
+            "ms": 1031,
             "decode_tested": false
           }
         ],
@@ -1115,7 +1115,7 @@
     },
     "github": {
       "id": "cms_p2100net",
-      "checked_at": 1795831229,
+      "checked_at": 1795860091,
       "accepted": false,
       "name": "飘零 ⚠勿信广告",
       "reason": "HTTP Error 403: Forbidden"
@@ -1607,7 +1607,7 @@
     },
     "github": {
       "id": "cms_haohuazycom",
-      "checked_at": 1795831229,
+      "checked_at": 1795860091,
       "accepted": false,
       "name": "豪华 | 采集",
       "reason": "Media sample failed: Remote end closed connection without response",
@@ -2330,7 +2330,7 @@
     },
     "github": {
       "id": "cms_huyazynet",
-      "checked_at": 1795831231,
+      "checked_at": 1795860092,
       "accepted": false,
       "name": "虎牙 | 采集",
       "reason": "Media sample failed: Remote end closed connection without response",
@@ -2576,7 +2576,7 @@
     },
     "github": {
       "id": "cms_cjyayazynet",
-      "checked_at": 1795831235,
+      "checked_at": 1795860094,
       "accepted": false,
       "name": "鸭鸭 | 采集",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -3094,11 +3094,11 @@
     },
     "github": {
       "id": "cms_360zycom",
-      "checked_at": 1795831236,
+      "checked_at": 1795860097,
       "accepted": true,
       "name": "360 ⚠勿信广告",
       "api": "https://360zy.com/api.php/provide/vod/",
-      "latency_ms": 1438,
+      "latency_ms": 1434,
       "types": {
         "1": {
           "name": "电影",
@@ -3246,7 +3246,8 @@
         }
       },
       "media_hosts": [
-        "vod1.maowushi.com"
+        "vod1.maowushi.com",
+        "vod2.maowushi.com"
       ],
       "blocked_categories": [
         {
@@ -3327,10 +3328,10 @@
       ],
       "safe_sample_count": 80,
       "blocked_item_count": 0,
-      "sample_title": "漫漫时光听见你",
+      "sample_title": "针线缘",
       "media_checks": [
         {
-          "url": "https://vod1.maowushi.com/20261127/4adRjA7E/index.m3u8",
+          "url": "https://vod1.maowushi.com/20261015/4d6lZOJx/index.m3u8",
           "ok": true,
           "level": [
             "master",
@@ -3341,18 +3342,18 @@
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 8128,
+          "ms": 18447,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_360zycom",
-        "checked_at": 1795831236,
+        "checked_at": 1795860097,
         "accepted": true,
         "name": "360 ⚠勿信广告",
         "api": "https://360zy.com/api.php/provide/vod/",
-        "latency_ms": 1438,
+        "latency_ms": 1434,
         "types": {
           "1": {
             "name": "电影",
@@ -3500,7 +3501,8 @@
           }
         },
         "media_hosts": [
-          "vod1.maowushi.com"
+          "vod1.maowushi.com",
+          "vod2.maowushi.com"
         ],
         "blocked_categories": [
           {
@@ -3581,10 +3583,10 @@
         ],
         "safe_sample_count": 80,
         "blocked_item_count": 0,
-        "sample_title": "漫漫时光听见你",
+        "sample_title": "针线缘",
         "media_checks": [
           {
-            "url": "https://vod1.maowushi.com/20261127/4adRjA7E/index.m3u8",
+            "url": "https://vod1.maowushi.com/20261015/4d6lZOJx/index.m3u8",
             "ok": true,
             "level": [
               "master",
@@ -3595,7 +3597,7 @@
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 8128,
+            "ms": 18447,
             "decode_tested": false
           }
         ],
@@ -3620,7 +3622,7 @@
     },
     "github": {
       "id": "cms_apiwujinapinet",
-      "checked_at": 1795831238,
+      "checked_at": 1795860099,
       "accepted": false,
       "name": "无尽 | 采集",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -4080,7 +4082,7 @@
     },
     "github": {
       "id": "cms_jyzyapicom",
-      "checked_at": 1795831239,
+      "checked_at": 1795860101,
       "accepted": false,
       "name": "金鹰 | 采集",
       "reason": "HTTP Error 403: Forbidden",
@@ -4325,7 +4327,7 @@
     },
     "github": {
       "id": "cms_suoniapicom",
-      "checked_at": 1795831239,
+      "checked_at": 1795860102,
       "accepted": false,
       "name": "索尼 | 采集 ",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -4817,7 +4819,7 @@
     },
     "github": {
       "id": "cms_apixinlangapicom",
-      "checked_at": 1795831242,
+      "checked_at": 1795860102,
       "accepted": false,
       "name": "新浪资源(切)",
       "reason": "Media sample failed: Remote end closed connection without response",
@@ -5078,7 +5080,7 @@
     },
     "github": {
       "id": "cms_tyyszycom",
-      "checked_at": 1795831247,
+      "checked_at": 1795860108,
       "accepted": false,
       "name": "影视 | 天涯",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -5101,7 +5103,7 @@
     },
     "github": {
       "id": "cms_1542191172329981",
-      "checked_at": 1795831249,
+      "checked_at": 1795860109,
       "accepted": false,
       "name": "影视 | 建安",
       "reason": "Search ignored nonmatching keyword"
@@ -5631,7 +5633,7 @@
     },
     "github": {
       "id": "cms_bfzyapicom",
-      "checked_at": 1795831255,
+      "checked_at": 1795860109,
       "accepted": false,
       "name": "暴風 ⚠勿信广告",
       "reason": "Search ignored nonmatching keyword",
@@ -6319,11 +6321,11 @@
     },
     "github": {
       "id": "cms_wwwhongniuzy2com",
-      "checked_at": 1795831259,
+      "checked_at": 1795860114,
       "accepted": true,
       "name": "红牛资源(切)",
       "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-      "latency_ms": 226,
+      "latency_ms": 231,
       "types": {
         "1": {
           "name": "电影",
@@ -6507,29 +6509,29 @@
           "type_name": "AI漫剧"
         }
       ],
-      "safe_sample_count": 62,
-      "blocked_item_count": 0,
-      "sample_title": "好搭档2",
+      "safe_sample_count": 53,
+      "blocked_item_count": 9,
+      "sample_title": "京城十二时辰第6季",
       "media_checks": [
         {
-          "url": "https://hn.bfvvs.com/play/e73DORAe/index.m3u8",
+          "url": "https://hn.bfvvs.com/play/bYEQ8Enb/index.m3u8",
           "ok": true,
           "level": [
             "aes128-key",
             "encrypted-segment"
           ],
-          "ms": 3361,
+          "ms": 4176,
           "decode_tested": false
         }
       ],
       "verification": "metadata + exact search + details + HLS media bytes; not exhaustive visual review",
       "last_success": {
         "id": "cms_wwwhongniuzy2com",
-        "checked_at": 1795831259,
+        "checked_at": 1795860114,
         "accepted": true,
         "name": "红牛资源(切)",
         "api": "https://www.hongniuzy2.com/api.php/provide/vod/",
-        "latency_ms": 226,
+        "latency_ms": 231,
         "types": {
           "1": {
             "name": "电影",
@@ -6713,18 +6715,18 @@
             "type_name": "AI漫剧"
           }
         ],
-        "safe_sample_count": 62,
-        "blocked_item_count": 0,
-        "sample_title": "好搭档2",
+        "safe_sample_count": 53,
+        "blocked_item_count": 9,
+        "sample_title": "京城十二时辰第6季",
         "media_checks": [
           {
-            "url": "https://hn.bfvvs.com/play/e73DORAe/index.m3u8",
+            "url": "https://hn.bfvvs.com/play/bYEQ8Enb/index.m3u8",
             "ok": true,
             "level": [
               "aes128-key",
               "encrypted-segment"
             ],
-            "ms": 3361,
+            "ms": 4176,
             "decode_tested": false
           }
         ],
@@ -6749,7 +6751,7 @@
     },
     "github": {
       "id": "cms_sdzyapicom",
-      "checked_at": 1795831260,
+      "checked_at": 1795860115,
       "accepted": false,
       "name": "闪电资源(切)",
       "reason": "CMS response was not JSON after 3 attempts: Expecting value: line 1 column 1 (char 0)"
@@ -7101,7 +7103,7 @@
     },
     "github": {
       "id": "cms_cjffzyapicom",
-      "checked_at": 1795831260,
+      "checked_at": 1795860117,
       "accepted": false,
       "name": "非凡 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -7994,7 +7996,7 @@
     },
     "github": {
       "id": "cms_jszyapicom",
-      "checked_at": 1795831261,
+      "checked_at": 1795860121,
       "accepted": false,
       "name": "影视 | 极速[直连]",
       "reason": "HTTP Error 403: Forbidden",
@@ -8255,7 +8257,7 @@
     },
     "github": {
       "id": "cms_apiapibdzycom",
-      "checked_at": 1795831261,
+      "checked_at": 1795860121,
       "accepted": false,
       "name": "百度",
       "reason": "Media sample failed: HTTP Error 403: Forbidden"
@@ -8933,7 +8935,7 @@
     },
     "github": {
       "id": "cms_apiguangsuapicom",
-      "checked_at": 1795831265,
+      "checked_at": 1795860123,
       "accepted": false,
       "name": "光速资源(切)",
       "reason": "HTTP Error 403: Forbidden",
@@ -9619,7 +9621,7 @@
     },
     "github": {
       "id": "cms_cjlziapicom",
-      "checked_at": 1795831265,
+      "checked_at": 1795860123,
       "accepted": false,
       "name": "量子 ⚠勿信广告",
       "reason": "Search ignored nonmatching keyword",
@@ -11252,7 +11254,7 @@
     },
     "github": {
       "id": "cms_caijidyttzyapicom",
-      "checked_at": 1795831267,
+      "checked_at": 1795860129,
       "accepted": false,
       "name": "天堂 ⚠勿信广告",
       "reason": "Media sample failed: HTTP Error 403: Forbidden",
@@ -11443,7 +11445,7 @@
     },
     "github": {
       "id": "cms_mtzyme",
-      "checked_at": 1795831271,
+      "checked_at": 1795860130,
       "accepted": false,
       "name": "茅台 | 采集",
       "reason": "<urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1035)>"
